@@ -1,0 +1,45 @@
+<!-- AtomTabl.DTD -->
+<!-- Prepared by John S. Garavelli 2009-04-10 -->
+<!-- provisional, validated version 01.00 2009-04-13 -->
+<!-- provisional, validated version 02.00 2010-12-31 -->
+<!-- The psimod namespace is emulated in DTD. -->
+<!ELEMENT psimod:isotope_table (psimod:version,psimod:date,psimod:element+)>
+<!ATTLIST psimod:isotope_table
+  xmlns:psimod CDATA #FIXED "http://psidev.sourceforge.net/mod/data/PSI-MOD">
+
+<!ELEMENT psimod:version          (#PCDATA)>
+<!ELEMENT psimod:date             (#PCDATA)>
+<!ELEMENT psimod:element (
+  psimod:element.atom_no,
+  psimod:element.name,
+  psimod:element.symbol,
+  psimod:element.avg_mass?,
+  psimod:element.avg_mass_range?,
+  psimod:element.isotope*)
+>
+<!ATTLIST psimod:element iso_count CDATA #REQUIRED>
+
+<!ELEMENT psimod:element.atom_no  (#PCDATA)>
+<!ELEMENT psimod:element.name     (#PCDATA)>
+<!ELEMENT psimod:element.symbol   (#PCDATA)>
+<!ELEMENT psimod:element.avg_mass (#PCDATA)>
+<!ELEMENT psimod:element.avg_mass_range (#PCDATA)>
+<!-- The following formats are found in the avg_mass record
+     f "(" d ")" - the number in parentheses indicates the uncertainty in the final decimal places
+     f - the "conventional" average mass is provided and an avg_mass_range record follows
+     "[" d "]" - the atomic number of the longest lived isotope is provided -->
+<!-- The format of avg_mass_range is "[" f ";" f "]" -->
+<!ELEMENT psimod:element.isotope  (
+  psimod:element.isotope.mass_no,
+  psimod:element.isotope.name?,
+  psimod:element.isotope.symbol,
+  psimod:element.isotope.mass,
+  psimod:element.isotope.fract)
+>
+<!ATTLIST psimod:element.isotope most_common (TRUE|FALSE) "FALSE">
+
+<!ELEMENT psimod:element.isotope.mass_no (#PCDATA)>
+<!ELEMENT psimod:element.isotope.name    (#PCDATA)>
+<!ELEMENT psimod:element.isotope.symbol  (#PCDATA)>
+<!ELEMENT psimod:element.isotope.mass    (#PCDATA)>
+<!ELEMENT psimod:element.isotope.fract   (#PCDATA)>
