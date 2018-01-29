@@ -8246,7 +8246,7 @@ xref: MassAvg: "482.35"
 xref: MassMono: "482.106346"
 xref: Origin: "H"
 xref: Source: "natural"
-xref: TermSpec: "none
+xref: TermSpec: "none"
 xref: UniMod: "UniMod:413"
 is_a: MOD:00909 ! modified L-histidine residue
 is_a: MOD:01163 ! guanylated residue
