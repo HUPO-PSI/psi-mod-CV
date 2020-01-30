@@ -17101,6 +17101,7 @@ xref: TermSpec: "none"
 is_a: MOD:00672 ! S-acylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01155 ! lipoconjugated residue
+is_a: MOD:02001 ! stearoylated residue
 
 [Term]
 id: MOD:00817
@@ -39363,6 +39364,23 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00912 ! modified L-lysine residue
+
+[Term]
+id: MOD:02001
+name: stearoylated residue
+def: "A protein modification that effectively replaces a hydrogen atom with a stearoyl group." []
+subset: PSI-MOD-slim
+xref: DiffAvg: "266.46"
+xref: DiffFormula: "C 18 H 34 O 1"
+xref: DiffMono: "266.260965"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "natural"
+xref: TermSpec: "none"
+is_a: MOD:00649 ! acylated residue
+is_a: MOD:01155 ! lipoconjugated residue
 
 [Typedef]
 id: contains
