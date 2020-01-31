@@ -2256,6 +2256,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniMod: "UniMod:47"
 is_a: MOD:00652 ! O-palmitoylated residue
+is_a: MOD:02004 ! O3-acylated L-threonine
 
 [Term]
 id: MOD:00089
