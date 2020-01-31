@@ -38053,8 +38053,8 @@ is_a: MOD:01047 ! monohydroxylated lysine
 
 [Term]
 id: MOD:01936
-name: N6-oleyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-oleyl-L-lysine." [PubMed:20942504, RESID:AA0590]
+name: N6-oleoyl-L-lysine
+def: "A protein modification that effectively converts an L-lysine residue to N6-oleoyl-L-lysine." [PubMed:20942504, RESID:AA0590]
 synonym: "(2S)-2-amino-6-([(9Z)-octadec-9-enoyl]amino)hexanoic acid" EXACT RESID-systematic []
 synonym: "N6-[(9Z)-1-oxo-9-octadecenyl]lysine" EXACT RESID-alternate []
 synonym: "N6-oleoyl-L-lysine" EXACT RESID-name []
