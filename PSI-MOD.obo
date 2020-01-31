@@ -39751,7 +39751,7 @@ is_a: MOD:02024 ! cervonoylated residue
 
 [Term]
 id: MOD:02024
-name: timnodonoylated residue
+name: cervonoylated residue
 def: "A protein modification that effectively replaces a hydrogen atom with a cervonoyl group." []
 subset: PSI-MOD-slim
 xref: DiffAvg: "310.53"
