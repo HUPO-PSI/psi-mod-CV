@@ -23983,7 +23983,7 @@ xref: MassMono: "284.046692"
 xref: Origin: "E"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-xref: UinMo: "UniMod:285"
+xref: UniMod: "UniMod:285"
 is_a: MOD:00605 ! Sulfanilic Acid (SA), light C12
 
 [Term]
