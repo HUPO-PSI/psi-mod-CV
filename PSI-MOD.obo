@@ -39766,7 +39766,20 @@ xref: TermSpec: "none"
 is_a: MOD:00649 ! acylated residue
 is_a: MOD:01155 ! lipoconjugated residue
 
-
+[Term]
+id: MOD:02025
+name: 5-glutaminyl glutamic acid
+def: "A protein modification that effectively converts an L-glutamic acid residue to 5-glutaminyl glutamic acid, forming an isopeptide bond with a free glutamic acid." [PubMed:28801462]
+xref: DiffAvg: "128.13"
+xref: DiffFormula: "C 5 H 8 N 2 O 2"
+xref: DiffMono: "128.058576"
+xref: Formula: "C 10 H 15 N 3 O 5"
+xref: MassAvg: "257.24"
+xref: MassMono: "257.101167"
+xref: Origin: "E"
+xref: Source: "natural"
+xref: TermSpec: "none"
+is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Typedef]
 id: contains
