@@ -1,5 +1,6 @@
-# PSI-MOD psidev-cvs-legacy final github repository
-This repository contains the final versions of files captured by the psidev cvs repository on SourceForge. It is the source repository of the PSI-MOD obo file, main deliverable PSI-MOD, which is reactivated in this repository.
+# PSI-MOD Mass Modifications Ontology
+
+This repository contains the Human Proteome Organization (HUPO) Proteomics Standards Initiative (PSI) Mass Modifications Ontology (PSI-MOD). The content here was moved from the old SourceForge CVS site (https://sourceforge.net/projects/psidev/). It is the source repository of the PSI-MOD obo file, main deliverable PSI-MOD, which is reactivated in this repository.
 
 ## The PSI working group PSI-MOD  
 The joint activies PSI-MOD working group is reactivated after a long stand-by period. Description on the project can be found [here].(http://www.psidev.info/groups/protein-modifications).
