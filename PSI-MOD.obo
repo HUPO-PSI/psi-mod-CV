@@ -879,7 +879,7 @@ xref: MassMono: "112.039853"
 xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UnimMod: "UniMod:28"
+xref: UniMod: "UniMod:28"
 is_a: MOD:00907 ! modified L-glutamine residue
 is_a: MOD:01048 ! 2-pyrrolidone-5-carboxylic acid
 is_a: MOD:01160 ! deaminated residue
