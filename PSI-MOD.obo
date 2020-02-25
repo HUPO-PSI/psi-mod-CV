@@ -39787,7 +39787,7 @@ is_a: MOD:00906 ! modified L-glutamic acid residue
 id: MOD:02026
 name: S-(cysteinyl-glycyl)-L-cysteine 
 def: "A protein modification that effectively cross-links an L-cysteinyl-L-glycine dipeptide and an L-cysteine residue by a disulfide bond to form S-(cysteinyl-glycyl)-L-cysteine." [PubMed:27936627, PubMed: 20594348, PubMed: 29627744]
-comment: Glutamyl-transpeptidase cleaves glutathione into cysteinylglycine (Cys-Gly) and a Glu residue. [PubMed: 28537416]
+comment: Glutamyl-transpeptidase cleaves glutathione into cysteinylglycine (Cys-Gly) and a Glu residue. [PubMed:28537416]
 xref: DiffAvg: "176.17"
 xref: DiffFormula: "C 5 H 8 N 2 O 3 S 1"
 xref: DiffMono: "176.025563"
