@@ -879,7 +879,7 @@ xref: MassMono: "112.039853"
 xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UnimMod: "UniMod:28"
+xref: UniMod: "UniMod:28"
 is_a: MOD:00907 ! modified L-glutamine residue
 is_a: MOD:01048 ! 2-pyrrolidone-5-carboxylic acid
 is_a: MOD:01160 ! deaminated residue
@@ -6211,7 +6211,7 @@ xref: Origin: "C, G"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00908 ! modified glycine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -6233,7 +6233,7 @@ xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00916 ! modified L-serine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -6255,7 +6255,7 @@ xref: Origin: "C, F"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00914 ! modified L-phenylalanine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -6276,7 +6276,7 @@ xref: MassMono: "185.992155"
 xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -6297,7 +6297,7 @@ xref: Origin: "C, K"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00912 ! modified L-lysine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -6991,7 +6991,7 @@ is_a: MOD:00722 ! monomethylated L-glutamine
 [Term]
 id: MOD:00279
 name: N-pyruvic acid 2-iminyl-L-cysteine
-def: "A protein modification that effectively converts an Lcysteline residue to N-pyruvic acid 2-iminyl-L-cysteine." [PubMed:1388164, RESID:AA0274, UniMod:422#C]
+def: "A protein modification that effectively converts an L-cysteine residue to N-pyruvic acid 2-iminyl-L-cysteine." [PubMed:1388164, RESID:AA0274, UniMod:422#C]
 subset: PSI-MOD-slim
 synonym: "(R)-2-(1-carboxy-2-sulfanylethanimino)propanoic acid" EXACT RESID-systematic []
 synonym: "MOD_RES N-pyruvate 2-iminyl-cysteine" EXACT UniProt-feature []
@@ -27347,7 +27347,7 @@ xref: Origin: "C, I"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00910 ! modified L-isoleucine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -27369,7 +27369,7 @@ xref: Origin: "C, V"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00920 ! modified L-valine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -27391,7 +27391,7 @@ xref: Origin: "C, V"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00920 ! modified L-valine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -27413,7 +27413,7 @@ xref: Origin: "C, N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00903 ! modified L-asparagine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 relationship: derives_from MOD:00656 ! C-methylated residue
 
@@ -27673,7 +27673,7 @@ xref: Origin: "C, N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00903 ! modified L-asparagine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -27694,7 +27694,7 @@ xref: Origin: "C, P"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00915 ! modified L-proline residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -27716,7 +27716,7 @@ xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00917 ! modified L-threonine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -27738,7 +27738,7 @@ xref: Origin: "C, F"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00914 ! modified L-phenylalanine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 
 [Term]
 id: MOD:01408
@@ -27759,7 +27759,7 @@ xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00917 ! modified L-threonine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 
 [Term]
 id: MOD:01409
@@ -27939,7 +27939,7 @@ is_a: MOD:00690 ! oxazole/thiazole ring crosslinked residues
 
 [Term]
 id: MOD:01420
-name: thiazole/thiazoline ring croslinked residues
+name: thiazole/thiazoline ring crosslinked residues
 def: "A protein modification that crosslinks two residues by condensation of a cysteine thiol with the carbonyl of the preceding residue to form a thiazole or thiazoline ring." [PubMed:18688235]
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -35747,7 +35747,7 @@ xref: Origin: "C, E"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00906 ! modified L-glutamic acid residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -37306,7 +37306,7 @@ xref: Origin: "C, R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00902 ! modified L-arginine residue
-is_a: MOD:01420 ! thiazole/thiazoline ring croslinked residues
+is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
@@ -39771,7 +39771,7 @@ is_a: MOD:01155 ! lipoconjugated residue
 [Term]
 id: MOD:02025
 name: 5-glutaminyl glutamic acid
-def: "A protein modification that effectively converts an L-glutamic acid residue to 5-glutaminyl glutamic acid, forming an isopeptide bond with a free glutamic acid." [PubMed:28801462]
+def: "A protein modification that effectively converts the alpha amino group of a glutamine residue to glutaminyl glutamic acid by forming an isopeptide bond with the side chain carboxyl group of a free glutamic acid." [PubMed:28801462]
 xref: DiffAvg: "128.13"
 xref: DiffFormula: "C 5 H 8 N 2 O 2"
 xref: DiffMono: "128.058576"
