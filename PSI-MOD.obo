@@ -5920,7 +5920,7 @@ xref: TermSpec: "none"
 xref: UniMod: "UniMod:55"
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01862 ! disulfide conjugated residue
-relationship: contains: MOD:02026 ! S-(cysteinyl-glycyl)-L-cysteine
+relationship: contains MOD:02026 ! S-(cysteinyl-glycyl)-L-cysteine
 
 [Term]
 id: MOD:00235
