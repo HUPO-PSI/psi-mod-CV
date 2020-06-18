@@ -1,7 +1,6 @@
 format-version: 1.2
-date: 30:05:2014 00:48
-saved-by: John S. Garavelli
-auto-generated-by: FormulaOBO.PL
+date: 18:06:2020 16:32
+saved-by: Paul M. Thomas
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
 synonymtypedef: OMSSA-label "Short label from OMSSA" EXACT
@@ -17,9 +16,9 @@ synonymtypedef: UniMod-description "Description (full_name) from UniMod" RELATED
 synonymtypedef: UniMod-interim "Interim label from UniMod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.013.0
+remark: PSI-MOD version: 1.014.0
 remark: RESID release: 75.00
-remark: ISO-8601 date: 2014-01-28 14:22Z
+remark: ISO-8601 date: 2020-06-18 16:32Z
 remark: Annotation note 1 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
 remark: Annotation note 2 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol "#" and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag "#var".
 remark: Annotation note 3 - When an entry in the UniMod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the UniMod cross-reference followed by a hash symbol and an amino acid code, "N-term" or "C-term".
@@ -109,7 +108,7 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-xref: Unimod: "UniMod:162"
+xref: UniMod: "UniMod:162"
 is_a: MOD:00745 ! selenium containing residue
 
 [Term]
@@ -646,7 +645,7 @@ xref: MassMono: "160.043225"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: Unimod: "UniMod:107"
+xref: UniMod: "UniMod:107"
 is_a: MOD:00409 ! N-formylated residue
 is_a: MOD:00868 ! natural, non-standard encoded residue
 is_a: MOD:01696 ! alpha-amino acylated residue
@@ -14456,7 +14455,7 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-xref: Uniod: "UniMod:337"
+xref: UniMod: "UniMod:337"
 is_a: MOD:00003 ! UniMod
 
 [Term]
@@ -29581,7 +29580,7 @@ is_a: MOD:01863 ! mTRAQ reporter+balance reagent acylated residue
 [Term]
 id: MOD:01507
 name: iTRAQ4plex-117, mTRAQ heavy, reporter+balance reagent acylated N-terminal
-def: "A protein modification that effectively replaces a hydrogen atom of a protein N-terminal with the Applied Biosystems iTRAQ4plex-117 reporter+balance group." [OMSSA:176, OMSSA:211, UniMod:214#N-term, UniMod:889N-term]
+def: "A protein modification that effectively replaces a hydrogen atom of a protein N-terminal with the Applied Biosystems iTRAQ4plex-117 reporter+balance group." [OMSSA:176, OMSSA:211, UniMod:214#N-term, UniMod:889#N-term]
 comment: The reagent consists of a reporter group, a balance group and a protein reactive N-oxysuccinimide group. The reporter group, an isotopically labeled 1,4-dimethylpiperazine, is connected to a carbonyl balance group that is isotopically labeled to produce a nominally isobaric combined modification.
 subset: PSI-MOD-slim
 synonym: "(4-methylpiperazin-1-yl)acetyl" EXACT PSI-MOD-alternate []
