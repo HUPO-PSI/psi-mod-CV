@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 25:06:2020 21:07
+date: 21:07:2020 19:47
 saved-by: Paul M. Thomas
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
@@ -16,9 +16,9 @@ synonymtypedef: UniMod-description "Description (full_name) from UniMod" RELATED
 synonymtypedef: UniMod-interim "Interim label from UniMod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.015.0
+remark: PSI-MOD version: 1.016.0
 remark: RESID release: 75.00
-remark: ISO-8601 date: 2020-06-25 21:07Z
+remark: ISO-8601 date: 2020-07-21 19:48Z
 remark: Annotation note 1 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
 remark: Annotation note 2 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol "#" and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag "#var".
 remark: Annotation note 3 - When an entry in the UniMod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the UniMod cross-reference followed by a hash symbol and an amino acid code, "N-term" or "C-term".
@@ -39799,6 +39799,18 @@ xref: TermSpec: "none"
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01862 ! disulfide conjugated residue
 part_of: MOD:00234 ! L-cysteine glutathione disulfide
+
+[Term]
+id: MOD:02027
+name: urmylated lysine
+def: "A protein modification that effectively crosslinks the N6-amino of a peptidyl lysine with the carboxyl-terminal glycine of a URM1 protein." [PubMed:10713047, PubMed:21209336]
+subset: PSI-MOD-slim
+xref: Origin: "K"
+xref: Source: "natural"
+xref: TermSpec: "none"
+is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:01875 ! N6-acylated L-lysine
+relationship: contains MOD:00134 ! N6-glycyl-L-lysine
 
 [Typedef]
 id: contains
