@@ -16,7 +16,7 @@ synonymtypedef: UniMod-description "Description (full_name) from UniMod" RELATED
 synonymtypedef: UniMod-interim "Interim label from UniMod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.016.0
+remark: PSI-MOD version: 1.017.0
 remark: RESID release: 75.00
 remark: ISO-8601 date: 2020-07-21 19:48Z
 remark: Annotation note 1 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
