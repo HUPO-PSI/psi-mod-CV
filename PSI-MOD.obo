@@ -17772,9 +17772,9 @@ comment: For amino acids residues, amine trimethylation can effectively only be 
 subset: PSI-MOD-slim
 synonym: "N6Me3Lys" EXACT PSI-MOD-label []
 synonym: "trimethylk" EXACT OMSSA-label []
-xref: DiffAvg: "42.08"
-xref: DiffFormula: "C 3 H 6 N 0 O 0"
-xref: DiffMono: "42.046402"
+xref: DiffAvg: "43.09"
+xref: DiffFormula: "C 3 H 7 N 0 O 0"
+xref: DiffMono: "43.054775"
 xref: FormalCharge: "1+"
 xref: Formula: "C 9 H 19 N 2 O 1"
 xref: MassAvg: "171.26"
@@ -17811,9 +17811,9 @@ def: "A protein modification that effectively converts an L-alaninium (protonate
 comment: For amino acids residues, amine trimethylation can effectively only be accomplished with an aminium, protonated primary amino, group. This process accounts only for trimethylation and not protonation. The alternative N2Me3+Ala process (MOD:00071) accounts for both protonation and trimethylation.
 subset: PSI-MOD-slim
 synonym: "N2Me3Ala" EXACT PSI-MOD-label []
-xref: DiffAvg: "42.08"
-xref: DiffFormula: "C 3 H 6 N 0 O 0"
-xref: DiffMono: "42.046402"
+xref: DiffAvg: "43.09"
+xref: DiffFormula: "C 3 H 7 N 0 O 0"
+xref: DiffMono: "43.054775"
 xref: FormalCharge: "1+"
 xref: Formula: "C 6 H 13 N 1 O 1"
 xref: MassAvg: "115.18"
@@ -28698,9 +28698,9 @@ def: "A protein modification that effectively converts an L-methioninium (proton
 comment: For amino acids residues, amine trimethylation can effectively only be accomplished with an aminium, protonated primary amino, group. This process accounts only for trimethylation and not protonation. The alternative N2Me3+Met process (MOD:01382) accounts for both protonation and trimethylation.
 subset: PSI-MOD-slim
 synonym: "N2Me3Met" EXACT PSI-MOD-label []
-xref: DiffAvg: "42.08"
-xref: DiffFormula: "C 3 H 6 N 0 O 0 S 0"
-xref: DiffMono: "42.046402"
+xref: DiffAvg: "43.09"
+xref: DiffFormula: "C 3 H 7 N 0 O 0"
+xref: DiffMono: "43.054775"
 xref: FormalCharge: "1+"
 xref: Formula: "C 8 H 17 N 1 O 1 S 1"
 xref: MassAvg: "175.29"
@@ -33173,9 +33173,9 @@ synonym: "N2Me3Res" EXACT PSI-MOD-label []
 synonym: "ntermtrimethyl" EXACT OMSSA-label []
 synonym: "tri-Methylation" RELATED UniMod-description []
 synonym: "Trimethyl" RELATED PSI-MS-label []
-xref: DiffAvg: "42.08"
-xref: DiffFormula: "C 3 H 6 N 0 O 0"
-xref: DiffMono: "42.046402"
+xref: DiffAvg: "43.09"
+xref: DiffFormula: "C 3 H 7 N 0 O 0"
+xref: DiffMono: "43.054775"
 xref: FormalCharge: "1+"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -35496,9 +35496,9 @@ def: "A protein modification that effectively converts an L-serinium (protonated
 comment: For amino acids residues, amine trimethylation can effectively only be accomplished with an aminium, protonated primary amino, group. This process accounts only for trimethylation and not protonation. The alternative N2Me3+Ser process (MOD:00071) accounts for both protonation and trimethylation.
 subset: PSI-MOD-slim
 synonym: "N2Me3Ala" EXACT PSI-MOD-label []
-xref: DiffAvg: "42.08"
-xref: DiffFormula: "C 3 H 6 N 0 O 0"
-xref: DiffMono: "42.046402"
+xref: DiffAvg: "43.09"
+xref: DiffFormula: "C 3 H 7 N 0 O 0"
+xref: DiffMono: "43.054775"
 xref: FormalCharge: "1+"
 xref: Formula: "C 6 H 13 N 1 O 2"
 xref: MassAvg: "131.17"
@@ -39055,6 +39055,7 @@ synonym: "N2Me3+Gly" EXACT PSI-MOD-label []
 xref: DiffAvg: "43.09"
 xref: DiffFormula: "C 3 H 7 N 0 O 0"
 xref: DiffMono: "43.054775"
+xref: FormalCharge: "1+"
 xref: Formula: "C 5 H 11 N 1 O 1"
 xref: MassAvg: "101.15"
 xref: MassMono: "101.084064"
@@ -39230,9 +39231,9 @@ def: "A protein modification that effectively converts a glycinium (protonated g
 comment: For amino acids residues, amine trimethylation can effectively only be accomplished with an aminium, protonated primary amino, group. This process accounts only for trimethylation and not protonation. The alternative N2Me3+Gly process (MOD:01982) accounts for both protonation and trimethylation.
 subset: PSI-MOD-slim
 synonym: "N2Me3Gly" EXACT PSI-MOD-label []
-xref: DiffAvg: "42.08"
-xref: DiffFormula: "C 3 H 6 N 0 O 0"
-xref: DiffMono: "42.046402"
+xref: DiffAvg: "43.09"
+xref: DiffFormula: "C 3 H 7 N 0 O 0"
+xref: DiffMono: "43.054775"
 xref: FormalCharge: "1+"
 xref: Formula: "C 5 H 11 N 1 O 1"
 xref: MassAvg: "101.15"
