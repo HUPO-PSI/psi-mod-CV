@@ -16,7 +16,7 @@ synonymtypedef: UniMod-description "Description (full_name) from UniMod" RELATED
 synonymtypedef: UniMod-interim "Interim label from UniMod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.016.0
+remark: PSI-MOD version: 1.017.0
 remark: RESID release: 75.00
 remark: ISO-8601 date: 2020-07-21 19:48Z
 remark: Annotation note 1 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
@@ -39055,6 +39055,7 @@ synonym: "N2Me3+Gly" EXACT PSI-MOD-label []
 xref: DiffAvg: "43.09"
 xref: DiffFormula: "C 3 H 7 N 0 O 0"
 xref: DiffMono: "43.054775"
+xref: FormalCharge: "1+"
 xref: Formula: "C 5 H 11 N 1 O 1"
 xref: MassAvg: "101.15"
 xref: MassMono: "101.084064"
