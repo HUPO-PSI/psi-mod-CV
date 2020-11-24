@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 20:10:2020 16:30
+date: 24:11:2020 15:23
 saved-by: Paul M. Thomas
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
@@ -16,9 +16,9 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.018.0
+remark: PSI-MOD version: 1.019.0
 remark: RESID release: 75.00
-remark: ISO-8601 date: 2020-10-20 16:30Z
+remark: ISO-8601 date: 2020-11-24 15:23Z
 remark: Annotation note 1 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
 remark: Annotation note 2 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol "#" and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag "#var".
 remark: Annotation note 3 - When an entry in the Unimod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the Unimod cross-reference followed by a hash symbol and an amino acid code, "N-term" or "C-term".
@@ -39812,6 +39812,28 @@ xref: TermSpec: "none"
 is_a: MOD:00908 ! modified glycine residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 relationship: contains MOD:00134 ! N6-glycyl-L-lysine
+
+[Term]
+id: MOD:02028
+name: iTRAQ4plex reporter+balance reagent acylated residue, average mass modification
+def: "A protein modification that effectively replaces a hydrogen atom of a residue with one of the Applied Biosystems iTRAQ4plex reagent reporter+balance groups." [Unimod:214]
+comment: The reagent consists of a reporter group, a balance group and a protein reactive N-oxysuccinimide group. The reporter group, an isotopically labeled 1,4-dimethylpiperazine, is connected to a carbonyl balance group that is isotopically labeled to produce a nominally isobaric combined modification. Four versions of chemically identical iTRAQ4plex moyeties, but with different isotope distribution. This modification is calculated as the average of the four species. It has no isotopic distribution reality, the exact mass does not correspond to any real isotopic distribution.
+subset: PSI-MOD-slim
+synonym: "(4-methylpiperazin-1-yl)acetyl" EXACT PSI-MOD-alternate []
+synonym: "iTRAQ" RELATED Unimod-interim []
+xref: DiffAvg: "144.10"
+xref: DiffFormula: "none"
+xref: DiffMono: "144.102411"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:01426 ! isotope tagged reagent derivatized residue
+is_a: MOD:01705 ! isotope tagged reagent acylated residue
+is_a: MOD:01709 ! iTRAQ4plex reporter+balance reagent N-acylated residue
+is_a: MOD:01513 ! modifications with monoisotopic mass differences that are nominally equal at a resolution below 0.1 Da
 
 [Typedef]
 id: contains
