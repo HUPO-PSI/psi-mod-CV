@@ -15381,7 +15381,7 @@ xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "natural"
-xref: TermSpec: "N-term"
+xref: TermSpec: "none"
 is_a: MOD:00430 ! trimethylated residue
 
 [Term]
