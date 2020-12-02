@@ -2074,7 +2074,7 @@ xref: MassMono: "151.074562"
 xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00724 ! N-methylated L-histidine
+is_a: MOD:02038 ! monomethylated L-histidine
 
 [Term]
 id: MOD:00083
@@ -8062,7 +8062,7 @@ xref: MassMono: "151.074562"
 xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00724 ! N-methylated L-histidine
+is_a: MOD:02038 ! monomethylated L-histidine
 
 [Term]
 id: MOD:00323
@@ -39984,6 +39984,27 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:1480"
 is_a: MOD:00725 ! complex glycosylation
 is_a: MOD:00903 ! modified L-asparagine residue
+
+[Term]
+id: MOD:02038
+name: monomethylated L-histidine
+def: "A protein modification that effectively replaces one hydrogen atom of an L-histidine residue with one methyl group." [DeltaMass:215, OMSSA:77, Unimod:34#H]
+subset: PSI-MOD-slim
+synonym: "Me1His" EXACT PSI-MOD-label []
+synonym: "Methyl" RELATED PSI-MS-label []
+synonym: "methylh" EXACT OMSSA-label []
+xref: DiffAvg: "14.03"
+xref: DiffFormula: "C 1 H 2 N 0 O 0"
+xref: DiffMono: "14.015650"
+xref: Formula: "C 7 H 9 N 3 O 1"
+xref: MassAvg: "151.17"
+xref: MassMono: "151.074562"
+xref: Origin: "H"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:34"
+is_a: MOD:00599 ! monomethylated residue
+is_a: MOD:00724 ! N-methylated L-histidine
 
 [Typedef]
 id: contains
