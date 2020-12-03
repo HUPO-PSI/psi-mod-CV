@@ -39838,7 +39838,7 @@ is_a: MOD:01513 ! modifications with monoisotopic mass differences that are nomi
 [Term]
 id: MOD:02029
 name: cis-peptidyl-L-proline
-def: "A protein modification that effectively specifies the boundary conformation of two adjacent source amino acid residues, the second (C-term side) being a L-proline, where the carbonyl group of the amide bond of the N-side of the L-proline is positioned such that the organodiyl group is in the cis orientation (omega=0)" [ChEBI:83833, PubMed:15735342, PubMed:15311922, PubMed:24116866]
+def: "A protein modification that effectively specifies the boundary conformation of two adjacent source amino acid residues, the second (C-term side) being a L-proline, where the carbonyl group of the amide bond of the N-side of the L-proline is positioned such that the organodiyl group is in the cis orientation (omega=0)" [ChEBI:83833, PubMed:15735342, PubMed:15311922, PubMed:24116866, PubMed:5485910]
 xref: DiffAvg: "0.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 0"
 xref: DiffMono: "0.000000"
@@ -39850,7 +39850,7 @@ is_a: MOD:00915 ! modified L-proline residue
 [Term]
 id: MOD:02030
 name: trans-peptidyl-L-proline
-def: "A protein modification that effectively specifies the boundary conformation of two adjacent source amino acid residues, the second (C-term side) being a L-proline, where the carbonyl group of the amide bond of the N-side of the L-proline is positioned such that the organodiyl group is in the trans orientation (omega=180)" [ChEBI:83834, PubMed:15735342, PubMed:15311922, PubMed:24116866]
+def: "A protein modification that effectively specifies the boundary conformation of two adjacent source amino acid residues, the second (C-term side) being a L-proline, where the carbonyl group of the amide bond of the N-side of the L-proline is positioned such that the organodiyl group is in the trans orientation (omega=180)" [ChEBI:83834, PubMed:15735342, PubMed:15311922, PubMed:24116866, PubMed:5485910]
 xref: DiffAvg: "0.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 0"
 xref: DiffMono: "0.000000"
