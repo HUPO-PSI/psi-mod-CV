@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 24:11:2020 15:23
+date: 03:12:2020 14:14
 saved-by: Paul M. Thomas
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
@@ -16,9 +16,9 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.019.0
+remark: PSI-MOD version: 1.021.0
 remark: RESID release: 75.00
-remark: ISO-8601 date: 2020-11-24 15:23Z
+remark: ISO-8601 date: 2020-12-03 14:14Z
 remark: Annotation note 1 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
 remark: Annotation note 2 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol "#" and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag "#var".
 remark: Annotation note 3 - When an entry in the Unimod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the Unimod cross-reference followed by a hash symbol and an amino acid code, "N-term" or "C-term".
@@ -39838,7 +39838,7 @@ is_a: MOD:01513 ! modifications with monoisotopic mass differences that are nomi
 [Term]
 id: MOD:02029
 name: cis-peptidyl-L-proline
-def: "A protein modification that effectively specifies the boundary conformation of two adjacent source amino acid residues, the second (C-term side) being a L-proline, where the carbonyl group of the amide bond of the N-side of the L-proline is positioned such that the organodiyl group is in the cis orientation (omega=0)" [ChEBI:83833, PubMed:15735342, PubMed:15311922, PubMed:24116866]
+def: "A protein modification that effectively specifies the boundary conformation of two adjacent source amino acid residues, the second (C-term side) being a L-proline, where the carbonyl group of the amide bond of the N-side of the L-proline is positioned such that the organodiyl group is in the cis orientation (omega=0)" [ChEBI:83833, PubMed:15735342, PubMed:15311922, PubMed:24116866, PubMed:5485910]
 xref: DiffAvg: "0.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 0"
 xref: DiffMono: "0.000000"
@@ -39850,7 +39850,7 @@ is_a: MOD:00915 ! modified L-proline residue
 [Term]
 id: MOD:02030
 name: trans-peptidyl-L-proline
-def: "A protein modification that effectively specifies the boundary conformation of two adjacent source amino acid residues, the second (C-term side) being a L-proline, where the carbonyl group of the amide bond of the N-side of the L-proline is positioned such that the organodiyl group is in the trans orientation (omega=180)" [ChEBI:83834, PubMed:15735342, PubMed:15311922, PubMed:24116866]
+def: "A protein modification that effectively specifies the boundary conformation of two adjacent source amino acid residues, the second (C-term side) being a L-proline, where the carbonyl group of the amide bond of the N-side of the L-proline is positioned such that the organodiyl group is in the trans orientation (omega=180)" [ChEBI:83834, PubMed:15735342, PubMed:15311922, PubMed:24116866, PubMed:5485910]
 xref: DiffAvg: "0.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 0"
 xref: DiffMono: "0.000000"
