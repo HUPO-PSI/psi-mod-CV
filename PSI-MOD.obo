@@ -19609,6 +19609,7 @@ xref: Source: "none"
 xref: TermSpec: "none"
 xref: Remap: "MOD:01933"
 is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:00950
