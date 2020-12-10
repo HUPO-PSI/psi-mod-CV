@@ -1,6 +1,6 @@
 format-version: 1.2
 ontology: mod
-date: 07:12:2020 15:09
+date: 10:12:2020 17:06
 saved-by: Paul M. Thomas
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
@@ -17,9 +17,9 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.024.0
+remark: PSI-MOD version: 1.025.0
 remark: RESID release: 75.00
-remark: ISO-8601 date: 2020-12-07 15:09Z
+remark: ISO-8601 date: 2020-12-10 17:06Z
 remark: Annotation note 01 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
 remark: Annotation note 02 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol "#" and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag "#var".
 remark: Annotation note 03 - When an entry in the Unimod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the Unimod cross-reference followed by a hash symbol and an amino acid code, "N-term" or "C-term".
@@ -108,7 +108,7 @@ xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
-xref: Source: "artifact"
+xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:162"
 is_a: MOD:00745 ! selenium containing residue
@@ -1755,7 +1755,7 @@ xref: MassAvg: "85.11"
 xref: MassMono: "85.052764"
 xref: Origin: "A"
 xref: Source: "natural"
-xref: TermSpec: "none"
+xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0214"
 is_a: MOD:01461 ! N-methylated alanine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
@@ -1816,7 +1816,7 @@ xref: MassAvg: "71.08"
 xref: MassMono: "71.037114"
 xref: Origin: "G"
 xref: Source: "natural"
-xref: TermSpec: "none"
+xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0483"
 is_a: MOD:00570 ! residues isobaric at 71.037114 Da
 is_a: MOD:00714 ! methylated glycine
@@ -1846,7 +1846,7 @@ xref: MassAvg: "145.22"
 xref: MassMono: "145.056135"
 xref: Origin: "M"
 xref: Source: "natural"
-xref: TermSpec: "none"
+xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0217"
 is_a: MOD:01463 ! N-methylated methionine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
@@ -1873,7 +1873,7 @@ xref: MassAvg: "161.20"
 xref: MassMono: "161.084064"
 xref: Origin: "F"
 xref: Source: "natural"
-xref: TermSpec: "none"
+xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0218"
 is_a: MOD:01063 ! monomethylated phenylalanine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
@@ -3672,6 +3672,7 @@ xref: Formula: "C 15 H 15 N 2 O 4"
 xref: MassAvg: "287.29"
 xref: MassMono: "287.103182"
 xref: Origin: "W"
+xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:64"
 xref: UniProt: "PTM-0181"
@@ -4057,7 +4058,7 @@ is_a: MOD:00919 ! modified L-tyrosine residue
 
 [Term]
 id: MOD:00155
-name: 3'-hydroxylation of L-tyrosine to L-3',4'-dihydroxyphenylalanine
+name: L-3',4'-dihydroxyphenylalanine
 def: "A protein modification that effectively converts an L-tyrosine residue to L-3',4'-dihydroxyphenylalanine." [DeltaMass:0, OMSSA:194, OMSSA:64, PubMed:1610822, PubMed:1903612, PubMed:3734192, RESID:AA0146, Unimod:35#Y, ChEBI:141815]
 comment: incidental to RESID:AA0368 From DeltaMass: Average Mass: 16
 subset: PSI-MOD-slim
@@ -4087,7 +4088,7 @@ is_a: MOD:00707 ! hydroxylated tyrosine
 
 [Term]
 id: MOD:00156
-name: oxidation of tyrosine to L-2',4',5'-topaquinone
+name: L-2',4',5'-topaquinone
 def: "A protein modification that effectively converts an L-tyrosine residue to an L-2',4',5'-topaquinone." [ChEBI:21187, PubMed:10387067, PubMed:1457410, PubMed:1569055, PubMed:2111581, RESID:AA0147, Unimod:392#Y]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-(5-hydroxy-2,5-cyclohexadien-1,4-dion-2-yl)propanoic acid" EXACT RESID-systematic []
@@ -4116,7 +4117,7 @@ is_a: MOD:00919 ! modified L-tyrosine residue
 
 [Term]
 id: MOD:00157
-name: oxidation of tryptophan to L-tryptophyl quinone
+name: L-tryptophyl quinone
 def: "A protein modification that effectively converts an L-tryptophan residue to an L-tryptophan quinone." [DeltaMass:0, PubMed:2028257, RESID:AA0148, Unimod:392#W]
 comment: incidental to RESID:AA0149; incidental to RESID:AA0313; From DeltaMass: Average Mass: 30.
 subset: PSI-MOD-slim
@@ -5359,12 +5360,6 @@ def: "A protein modification that effectively converts an L-glutamic acid residu
 synonym: "gamma-glutamylpolyglycine" EXACT RESID-alternate []
 synonym: "L-isoglutamyl-polyglycine" EXACT RESID-name []
 synonym: "MOD_RES 5-glutamyl polyglycine" EXACT UniProt-feature []
-xref: DiffAvg: "57.05"
-xref: DiffFormula: "C 2 H 3 N 1 O 1"
-xref: DiffMono: "57.021464"
-xref: Formula: "C 7 H 10 N 2 O 4"
-xref: MassAvg: "186.17"
-xref: MassMono: "186.064057"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5377,12 +5372,6 @@ name: L-isoglutamyl-polyglutamic acid
 def: "A protein modification that effectively converts an L-glutamic acid residue to isoglutamyl-polyglutamic acid, forming an isopeptide bond with a polyglutamic acid." [PubMed:10747868, PubMed:1680872, RESID:AA0202]
 synonym: "gamma-glutamylpolyglutamic acid" EXACT RESID-alternate []
 synonym: "L-isoglutamyl-polyglutamic acid" EXACT RESID-name []
-xref: DiffAvg: "129.12"
-xref: DiffFormula: "C 5 H 7 N 1 O 3"
-xref: DiffMono: "129.042593"
-xref: Formula: "C 10 H 14 N 2 O 6"
-xref: MassAvg: "258.23"
-xref: MassMono: "258.085186"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5538,12 +5527,6 @@ synonym: "chondroitin 4-sulfate (chondroitin sulfate A)" EXACT RESID-alternate [
 synonym: "chondroitin 6-sulfate (chondroitin sulfate C)" EXACT RESID-alternate []
 synonym: "chondroitin sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-serine" EXACT RESID-name []
 synonym: "poly[beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-4-sulfate-D-galactosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine; poly[beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-6-sulfate D-galactosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine" EXACT RESID-systematic []
-xref: DiffAvg: "-1.01"
-xref: DiffFormula: "C 0 H -1 N 0 O 0"
-xref: DiffMono: "-1.007825"
-xref: Formula: "C 3 H 4 N 1 O 2"
-xref: MassAvg: "86.07"
-xref: MassMono: "86.024203"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5557,12 +5540,6 @@ synonym: "beta-heparin" EXACT RESID-alternate []
 synonym: "chondroitin sulfate B" EXACT RESID-alternate []
 synonym: "dermatan 4-sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-serine" EXACT RESID-name []
 synonym: "poly[beta-1,4-L-idopyranuronosyl-alpha-1,3-(2-acetamido-2-deoxy-4-sulfate D-galactosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine" EXACT RESID-systematic []
-xref: DiffAvg: "-1.01"
-xref: DiffFormula: "C 0 H -1 N 0 O 0"
-xref: DiffMono: "-1.007825"
-xref: Formula: "C 3 H 4 N 1 O 2"
-xref: MassAvg: "86.07"
-xref: MassMono: "86.024203"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5576,12 +5553,6 @@ synonym: "heparan sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-s
 synonym: "heparin" EXACT RESID-alternate []
 synonym: "heparitin sulfate" EXACT RESID-alternate []
 synonym: "poly[alpha-1,4-(2-sulfate D-glucopyranuronosyl)-beta-1,4-(2-sulfamino-2-deoxy-6-sulfate D-glucosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine" EXACT RESID-systematic []
-xref: DiffAvg: "-1.01"
-xref: DiffFormula: "C 0 H -1 N 0 O 0"
-xref: DiffMono: "-1.007825"
-xref: Formula: "C 3 H 4 N 1 O 2"
-xref: MassAvg: "86.07"
-xref: MassMono: "86.024203"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5654,12 +5625,6 @@ synonym: "MOD_RES O-(5'-phospho-RNA)-serine" EXACT UniProt-feature []
 synonym: "O-(phospho-5'-RNA)-L-serine" EXACT RESID-name []
 synonym: "O3-(phospho-5'-RNA)-L-serine" EXACT RESID-alternate []
 synonym: "O3-L-serine 5'-RNA phosphodiester" EXACT RESID-alternate []
-xref: DiffAvg: "78.97"
-xref: DiffFormula: "C 0 H 0 N 0 O 3 P 1"
-xref: DiffMono: "78.958505"
-xref: Formula: "C 3 H 5 N 1 O 5 P 1"
-xref: MassAvg: "166.05"
-xref: MassMono: "165.990534"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5787,12 +5752,6 @@ def: "A protein modification that effectively converts an L-lysine residue to N6
 synonym: "MOD_RES N6-murein peptidoglycan lysine" EXACT UniProt-feature []
 synonym: "N6-[(2R,6S)-2-(N-(N-mureinyl-(R)-alanyl)-(S)-glutamyl)amino-6-amino-6-carboxy-1-oxohex-1-yl]lysine" EXACT RESID-alternate []
 synonym: "N6-mureinyl-L-lysine" EXACT RESID-name []
-xref: DiffAvg: "-1.01"
-xref: DiffFormula: "C 0 H -1 N 0 O 0"
-xref: DiffMono: "-1.007825"
-xref: Formula: "C 6 H 11 N 2 O 1"
-xref: MassAvg: "127.17"
-xref: MassMono: "127.087138"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5809,12 +5768,6 @@ synonym: "1-chondroitin sulfate-L-aspartic acid ester" EXACT RESID-name []
 synonym: "MOD_RES Aspartate 1-(chondroitin 4-sulfate)-ester" EXACT UniProt-feature []
 synonym: "poly[beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-4-sulfate D-galactosyl)]beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-4-sulfate-6-(1-L-aspartyl)-D-galactose)" EXACT RESID-alternate []
 synonym: "protein-glycosaminoglycan-protein cross-link" EXACT RESID-alternate []
-xref: DiffAvg: "441.36"
-xref: DiffFormula: "C 14 H 19 N 1 O 13 S 1"
-xref: DiffMono: "441.057711"
-xref: Formula: "C 18 H 25 N 2 O 17 S 1"
-xref: MassAvg: "573.45"
-xref: MassMono: "573.087393"
 xref: Origin: "D"
 xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0334"
@@ -6501,12 +6454,6 @@ synonym: "MOD_RES O-(5'-phospho-DNA)-serine" EXACT UniProt-feature []
 synonym: "O-(phospho-5'-DNA)-L-serine" EXACT RESID-name []
 synonym: "O3-(phospho-5'-DNA)-L-serine" EXACT RESID-alternate []
 synonym: "O3-L-serine 5'-DNA phosphodiester" EXACT RESID-alternate []
-xref: DiffAvg: "78.97"
-xref: DiffFormula: "C 0 H 0 N 0 O 3 P 1"
-xref: DiffMono: "78.958505"
-xref: Formula: "C 3 H 5 N 1 O 5 P 1"
-xref: MassAvg: "166.05"
-xref: MassMono: "165.990534"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -6521,12 +6468,6 @@ def: "A protein modification that effectively cross-links an L-threonine residue
 synonym: "keratan sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-threonine" EXACT RESID-name []
 synonym: "keratosulfate" EXACT RESID-alternate []
 synonym: "poly[beta-1,4-(2-acetamido-2-deoxy-6-sulfate D-glucosyl)-beta-1,3-D-galactosyl]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-threonine" EXACT RESID-systematic []
-xref: DiffAvg: "-1.01"
-xref: DiffFormula: "C 0 H -1 N 0 O 0"
-xref: DiffMono: "-1.007825"
-xref: Formula: "C 4 H 6 N 1 O 2"
-xref: MassAvg: "100.10"
-xref: MassMono: "100.039853"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -6557,12 +6498,6 @@ synonym: "(S)-2-amino-3-[4-(5'-ribonucleic acid phosphonoxy)phenyl]propanoic aci
 synonym: "MOD_RES O-(5'-phospho-RNA)-tyrosine" EXACT UniProt-feature []
 synonym: "O4'-(phospho-5'-RNA)-L-tyrosine" EXACT RESID-name []
 synonym: "O4'-L-tyrosine 5'-RNA phosphodiester" EXACT RESID-alternate []
-xref: DiffAvg: "79.98"
-xref: DiffFormula: "C 0 H 1 N 0 O 3 P 1"
-xref: DiffMono: "79.966331"
-xref: Formula: "C 9 H 10 N 1 O 5 P 1"
-xref: MassAvg: "243.15"
-xref: MassMono: "243.029659"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -6688,12 +6623,6 @@ synonym: "ACT_SITE O-(5'-phospho-DNA)-tyrosine intermediate" EXACT UniProt-featu
 synonym: "MOD_RES O-(5'-phospho-DNA)-tyrosine" EXACT UniProt-feature []
 synonym: "O4'-(phospho-5'-DNA)-L-tyrosine" EXACT RESID-name []
 synonym: "O4'-L-tyrosine 5'-DNA phosphodiester" EXACT RESID-alternate []
-xref: DiffAvg: "79.98"
-xref: DiffFormula: "C 0 H 1 N 0 O 3 P 1"
-xref: DiffMono: "79.966331"
-xref: Formula: "C 9 H 10 N 1 O 5 P 1"
-xref: MassAvg: "243.15"
-xref: MassMono: "243.029659"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -6851,12 +6780,6 @@ is_a: MOD:00905 ! modified L-cysteine residue
 id: MOD:00266
 name: N-L-glutamyl-poly-L-glutamic acid
 def: "A protein modification that effectively forms a peptide bond between a C-terminal L-glutamic acid residue and one or more free L-glutamic acid molecules to form N-(L-glutamyl)-poly-L-glutamic acid." [PubMed:2570347, PubMed:328274, RESID:AA0261]
-xref: DiffAvg: "0.00"
-xref: DiffFormula: "C 0 H 0 N 0 O 0"
-xref: DiffMono: "0.000000"
-xref: Formula: "C 10 H 15 N 2 O 7"
-xref: MassAvg: "275.24"
-xref: MassMono: "275.087926"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
@@ -7310,12 +7233,6 @@ synonym: "MOD_RES N6-poly(methylaminopropyl)lysine" EXACT UniProt-feature []
 synonym: "N6-[3-([(omega)-(dimethyl)aminopropyl-poly(3-[methylamino]propyl)]amino)propyl]lysine" EXACT RESID-alternate []
 synonym: "N6-propylamino-poly(propylmethylamino)-propyldimethylamine-L-lysine" EXACT RESID-name []
 synonym: "silaffin polycationic lysine derivative" EXACT RESID-alternate []
-xref: DiffAvg: "426.74"
-xref: DiffFormula: "C 24 H 54 N 6 O 0"
-xref: DiffMono: "426.440996"
-xref: Formula: "C 30 H 66 N 8 O 1"
-xref: MassAvg: "554.91"
-xref: MassMono: "554.535959"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -7724,12 +7641,6 @@ synonym: "L-glutamyl-5-poly(ADP-ribose)" EXACT RESID-name []
 synonym: "L-isoglutamyl-poly(ADP-ribose)" EXACT RESID-alternate []
 synonym: "MOD_RES PolyADP-ribosyl glutamic acid" EXACT UniProt-feature []
 synonym: "O-ADP-ribosylation (on Glutamate or C terminus)" EXACT DeltaMass-label []
-xref: DiffAvg: "541.30"
-xref: DiffFormula: "C 15 H 21 N 5 O 13 P 2"
-xref: DiffMono: "541.061109"
-xref: Formula: "C 20 H 28 N 6 O 16 P 2"
-xref: MassAvg: "670.42"
-xref: MassMono: "670.103702"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -8429,12 +8340,6 @@ synonym: "(S)-2-amino-3-[4-(3'-deoxyribonucleic acid phosphonoxy)phenyl]propanoi
 synonym: "ACT_SITE O-(3'-phospho-DNA)-tyrosine intermediate" EXACT UniProt-feature []
 synonym: "O4'-(phospho-3'-DNA)-L-tyrosine" EXACT RESID-name []
 synonym: "O4'-L-tyrosine 3'-DNA phosphodiester" EXACT RESID-alternate []
-xref: DiffAvg: "79.98"
-xref: DiffFormula: "C 0 H 1 N 0 O 3 P 1"
-xref: DiffMono: "79.966331"
-xref: Formula: "C 9 H 10 N 1 O 5 P 1"
-xref: MassAvg: "243.15"
-xref: MassMono: "243.029659"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -8986,12 +8891,6 @@ def: "A protein modification that effectively attaches an L-threonine residue to
 synonym: "(2R,6S)-2-(N-mureinyl-(R)-alanyl-(S)-isoglutamyl)amino-6-(threonyl-pentaglycyl)amino-pimeloyl-(S)-alanyl-(S)-alanine" EXACT RESID-alternate []
 synonym: "L-threonyl-pentaglycyl-murein peptidoglycan" EXACT RESID-name []
 synonym: "MOD_RES Pentaglycyl murein peptidoglycan amidated threonine" EXACT UniProt-feature []
-xref: DiffAvg: "268.25"
-xref: DiffFormula: "C 10 H 14 N 5 O 4"
-xref: DiffMono: "268.104579"
-xref: Formula: "C 14 H 22 N 6 O 7"
-xref: MassAvg: "386.37"
-xref: MassMono: "386.154997"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
@@ -9970,12 +9869,6 @@ def: "A protein modification that effectively attaches an L-alanine residue to m
 synonym: "(2R,6S)-2-(N-mureinyl-(R)-alanyl-(S)-isoglutamyl)amino-6-(alanyl-pentaglycyl)amino-pimeloyl-(S)-alanyl-(S)-alanine" EXACT RESID-alternate []
 synonym: "L-alanyl-pentaglycyl-murein peptidoglycan" EXACT RESID-name []
 synonym: "MOD_RES Pentaglycyl murein peptidoglycan amidated alanine" EXACT UniProt-feature []
-xref: DiffAvg: "268.25"
-xref: DiffFormula: "C 10 H 14 N 5 O 4"
-xref: DiffMono: "268.104579"
-xref: Formula: "C 13 H 20 N 6 O 6"
-xref: MassAvg: "356.34"
-xref: MassMono: "356.144432"
 xref: Origin: "A"
 xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
@@ -14166,7 +14059,7 @@ is_a: MOD:01075 ! mercury containing modified residue
 [Term]
 id: MOD:00611
 name: iodouridine monophosphate derivatized residue
-def: "A protein modification that is produced by reaction of iodouridine monophosphate, or a polynucleotide containing iodouridine, with a residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292]
+def: "A protein modification that is produced by reaction of iodouridine monophosphate with a residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292]
 synonym: "Cross-link of (Iodo)-uracil MP with W,F,Y" RELATED Unimod-description []
 synonym: "IodoU-AMP" RELATED PSI-MS-label []
 xref: DiffAvg: "322.17"
@@ -24958,7 +24851,7 @@ is_obsolete: true
 [Term]
 id: MOD:01248
 name: iodouridine monophosphate derivatized tyrosine
-def: "A protein modification that is produced by reaction of iodouridine monophosphate, or a polynucleotide containing iodouridine, with an L-tyrosine residue to form an ether linkage." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#Y]
+def: "A protein modification that is produced by reaction of iodouridine monophosphate with an L-tyrosine residue to form an ether linkage." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#Y]
 comment: This has an ether linkage and not a phosphodiester linkage with UMP.
 synonym: "Cross-link of (Iodo)-uracil MP with W,F,Y" RELATED Unimod-description []
 synonym: "IodoU-AMP" RELATED PSI-MS-label []
@@ -24978,7 +24871,7 @@ is_a: MOD:00919 ! modified L-tyrosine residue
 [Term]
 id: MOD:01249
 name: iodouridine monophosphate derivatized tryptophan
-def: "A protein modification that is produced by reaction of iodouridine monophosphate, or a polynucleotide containing iodouridine, with an L-tryptophan residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#W]
+def: "A protein modification that is produced by reaction of iodouridine monophosphate with an L-tryptophan residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#W]
 comment: This has a carbon-nitrogen linkage and not a phosphodiester linkage with UMP.
 synonym: "Cross-link of (Iodo)-uracil MP with W,F,Y" RELATED Unimod-description []
 synonym: "IodoU-AMP" RELATED PSI-MS-label []
@@ -24998,7 +24891,7 @@ is_a: MOD:00918 ! modified L-tryptophan residue
 [Term]
 id: MOD:01250
 name: iodouridine monophosphate derivatized phenylalanine
-def: "A protein modification that is produced by reaction of iodouridine monophosphate, or a polynucleotide containing iodouridine, with an L-phenylalanine residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#F]
+def: "A protein modification that is produced by reaction of iodouridine monophosphate with an L-phenylalanine residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#F]
 comment: This has a carbon-carbon linkage and not a phosphodiester linkage with UMP.
 synonym: "Cross-link of (Iodo)-uracil MP with W,F,Y" RELATED Unimod-description []
 synonym: "IodoU-AMP" RELATED PSI-MS-label []
@@ -28006,12 +27899,6 @@ def: "A protein modification that effectively converts an L-lysine residue to an
 synonym: "L-lysyl-poly(ADP-ribose)" EXACT RESID-name []
 synonym: "MOD_RES Lysyl poly(ADP-ribose)" EXACT UniProt-feature []
 synonym: "poly[2'-adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with 1alpha-D-ribofuranosyl] (2S)-2,6-diaminohexanoate" EXACT RESID-systematic []
-xref: DiffAvg: "541.30"
-xref: DiffFormula: "C 15 H 21 N 5 O 13 P 2"
-xref: DiffMono: "541.061109"
-xref: Formula: "C 21 H 34 N 7 O 15 P 2"
-xref: MassAvg: "686.48"
-xref: MassMono: "686.158812"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
@@ -28963,13 +28850,7 @@ comment: This linkage is not a Schiff-base [JSG].
 synonym: "(1Z,2S)-2-carboxy-1-[(3R,4R)-3,4-dihydroxy-5-(phosphonooxy)pentylidene]pyrrolidinium" EXACT RESID-systematic []
 synonym: "DNA glycosylase proline Schiff base intermediate" RELATED RESID-misnomer []
 synonym: "N-(DNA-1',2'-dideoxyribos-1'-ylidene)-L-prolinium" EXACT RESID-name []
-xref: DiffAvg: "179.09"
-xref: DiffFormula: "C 5 H 8 N 0 O 5 P 1"
-xref: DiffMono: "179.010386"
 xref: FormalCharge: "1+"
-xref: Formula: "C 10 H 16 N 1 O 6 P 1"
-xref: MassAvg: "277.21"
-xref: MassMono: "277.070975"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
@@ -33150,12 +33031,6 @@ synonym: "(2S)-2-[(3R,4R)-3,4-dihydroxy-5-(phosphonooxy)pentylidene]amino-3-meth
 synonym: "ACT_SITE Schiff-base intermediate with DNA; via amino nitrogen" EXACT UniProt-feature []
 synonym: "DNA glycosylase valine Schiff base intermediate" EXACT RESID-alternate []
 synonym: "N-(DNA-1',2'-dideoxyribos-1'-ylidene)-L-valine" EXACT RESID-name []
-xref: DiffAvg: "178.08"
-xref: DiffFormula: "C 5 H 7 N 0 O 5 P 1"
-xref: DiffMono: "178.003110"
-xref: Formula: "C 10 H 17 N 1 O 6 P 1"
-xref: MassAvg: "278.22"
-xref: MassMono: "278.079349"
 xref: Origin: "V"
 xref: Source: "hypothetical"
 xref: TermSpec: "N-term"
@@ -39432,12 +39307,6 @@ synonym: "S-poly(3-hydroxybutyric acid)cysteine" EXACT RESID-alternate []
 synonym: "S-poly(beta-hydroxybutyrate)cysteine" EXACT RESID-alternate []
 synonym: "S-poly[(R)-3-hydroxybutyrate]cysteine" EXACT RESID-alternate []
 synonym: "MOD_RES S-poly(beta-hydroxybutyryl)lysine" EXACT UniProt-feature []
-xref: DiffAvg: "172.18"
-xref: DiffFormula: "C 8 H 12 N 0 O 4 S 0"
-xref: DiffMono: "172.073559"
-xref: Formula: "C 11 H 17 N 1 O 5 S 1"
-xref: MassAvg: "275.32"
-xref: MassMono: "275.082744"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -39459,12 +39328,6 @@ synonym: "O3-poly(3-hydroxybutyric acid)serine" EXACT RESID-alternate []
 synonym: "O3-poly(beta-hydroxybutyrate)serine" EXACT RESID-alternate []
 synonym: "O3-poly[(R)-3-hydroxybutyrate]serine" EXACT RESID-alternate []
 synonym: "MOD_RES O3-poly(beta-hydroxybutyryl)lysine" EXACT UniProt-feature []
-xref: DiffAvg: "172.18"
-xref: DiffFormula: "C 8 H 12 N 0 O 4"
-xref: DiffMono: "172.073559"
-xref: Formula: "C 11 H 17 N 1 O 6"
-xref: MassAvg: "259.26"
-xref: MassMono: "259.105587"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
