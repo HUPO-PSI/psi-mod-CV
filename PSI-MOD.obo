@@ -40236,7 +40236,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01862 ! disulfide conjugated residue
-relationship: part_of: MOD:00234 ! L-cysteine glutathione disulfide
+relationship: part_of MOD:00234 ! L-cysteine glutathione disulfide
 
 [Term]
 id: MOD:02027
