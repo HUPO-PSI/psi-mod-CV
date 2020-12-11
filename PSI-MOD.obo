@@ -1,6 +1,6 @@
 format-version: 1.2
 ontology: mod
-date: 07:12:2020 15:09
+date: 10:12:2020 17:06
 saved-by: Paul M. Thomas
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
@@ -17,9 +17,9 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.024.0
+remark: PSI-MOD version: 1.025.0
 remark: RESID release: 75.00
-remark: ISO-8601 date: 2020-12-07 15:09Z
+remark: ISO-8601 date: 2020-12-10 17:06Z
 remark: Annotation note 01 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
 remark: Annotation note 02 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol "#" and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag "#var".
 remark: Annotation note 03 - When an entry in the Unimod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the Unimod cross-reference followed by a hash symbol and an amino acid code, "N-term" or "C-term".
@@ -108,7 +108,7 @@ xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
-xref: Source: "artifact"
+xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:162"
 is_a: MOD:00745 ! selenium containing residue
@@ -1755,7 +1755,7 @@ xref: MassAvg: "85.11"
 xref: MassMono: "85.052764"
 xref: Origin: "A"
 xref: Source: "natural"
-xref: TermSpec: "none"
+xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0214"
 is_a: MOD:01461 ! N-methylated alanine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
@@ -1816,7 +1816,7 @@ xref: MassAvg: "71.08"
 xref: MassMono: "71.037114"
 xref: Origin: "G"
 xref: Source: "natural"
-xref: TermSpec: "none"
+xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0483"
 is_a: MOD:00570 ! residues isobaric at 71.037114 Da
 is_a: MOD:00714 ! methylated glycine
@@ -1846,7 +1846,7 @@ xref: MassAvg: "145.22"
 xref: MassMono: "145.056135"
 xref: Origin: "M"
 xref: Source: "natural"
-xref: TermSpec: "none"
+xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0217"
 is_a: MOD:01463 ! N-methylated methionine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
@@ -1873,7 +1873,7 @@ xref: MassAvg: "161.20"
 xref: MassMono: "161.084064"
 xref: Origin: "F"
 xref: Source: "natural"
-xref: TermSpec: "none"
+xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0218"
 is_a: MOD:01063 ! monomethylated phenylalanine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
@@ -3069,7 +3069,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0156"
 is_a: MOD:00395 ! thioester crosslinked residues
-is_a: MOD:00907 ! modified L-glutamine residue
+is_a: MOD:02046 ! crosslinked L-glutamine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 
 [Term]
@@ -3095,7 +3095,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0005"
 is_a: MOD:00687 ! thioether crosslinked residues
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02048 ! crosslinked L-histidine residue
 
 [Term]
 id: MOD:00119
@@ -3120,7 +3120,7 @@ xref: MassMono: "172.030649"
 xref: Origin: "C, S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01839 ! L-lanthionine
 
@@ -3153,7 +3153,7 @@ xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0164"
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01841 ! lanthionine
 
@@ -3210,7 +3210,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0019"
 is_a: MOD:00687 ! thioether crosslinked residues
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
 [Term]
 id: MOD:00123
@@ -3497,9 +3497,11 @@ xref: MassAvg: "197.24"
 xref: MassMono: "197.116427"
 xref: Origin: "K, S"
 xref: Source: "natural"
+xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0172"
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01853 ! L-lysinoalanine
 
@@ -3527,7 +3529,7 @@ xref: Origin: "K, Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0158"
-is_a: MOD:00907 ! modified L-glutamine residue
+is_a: MOD:02046 ! crosslinked L-glutamine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 is_a: MOD:01630 ! N6-(L-isoglutamyl)-L-lysine
 
@@ -3554,7 +3556,8 @@ xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0134"
 is_a: MOD:00688 ! isopeptide crosslinked residues
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01875 ! N6-acylated L-lysine
 
@@ -3582,7 +3585,7 @@ xref: Origin: "G, N"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0489"
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 is_a: MOD:01928 ! N-(L-isoaspartyl)-glycine
 
@@ -3672,6 +3675,7 @@ xref: Formula: "C 15 H 15 N 2 O 4"
 xref: MassAvg: "287.29"
 xref: MassMono: "287.103182"
 xref: Origin: "W"
+xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:64"
 xref: UniProt: "PTM-0181"
@@ -3778,7 +3782,7 @@ xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00699 ! porphyrin modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00144
@@ -3806,7 +3810,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:390"
 is_a: MOD:00699 ! porphyrin modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00145
@@ -3827,7 +3831,7 @@ xref: Origin: "C, C, C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00738 ! iron containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00146
@@ -3849,7 +3853,7 @@ xref: Origin: "C, C, C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00147
@@ -3870,7 +3874,7 @@ xref: Origin: "C, C, C, C, C, C"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00148
@@ -3896,7 +3900,7 @@ xref: Origin: "C, C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00149
@@ -3919,7 +3923,7 @@ xref: Origin: "C, C, C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00150
@@ -3940,8 +3944,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
 is_a: MOD:00743 ! molybdenum containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00151
@@ -3969,7 +3973,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:391"
 is_a: MOD:00744 ! molybdenum pterin containing modification
 is_a: MOD:00861 ! phosphorus containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00152
@@ -4057,7 +4061,7 @@ is_a: MOD:00919 ! modified L-tyrosine residue
 
 [Term]
 id: MOD:00155
-name: 3'-hydroxylation of L-tyrosine to L-3',4'-dihydroxyphenylalanine
+name: L-3',4'-dihydroxyphenylalanine
 def: "A protein modification that effectively converts an L-tyrosine residue to L-3',4'-dihydroxyphenylalanine." [DeltaMass:0, OMSSA:194, OMSSA:64, PubMed:1610822, PubMed:1903612, PubMed:3734192, RESID:AA0146, Unimod:35#Y, ChEBI:141815]
 comment: incidental to RESID:AA0368 From DeltaMass: Average Mass: 16
 subset: PSI-MOD-slim
@@ -4087,7 +4091,7 @@ is_a: MOD:00707 ! hydroxylated tyrosine
 
 [Term]
 id: MOD:00156
-name: oxidation of tyrosine to L-2',4',5'-topaquinone
+name: L-2',4',5'-topaquinone
 def: "A protein modification that effectively converts an L-tyrosine residue to an L-2',4',5'-topaquinone." [ChEBI:21187, PubMed:10387067, PubMed:1457410, PubMed:1569055, PubMed:2111581, RESID:AA0147, Unimod:392#Y]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-(5-hydroxy-2,5-cyclohexadien-1,4-dion-2-yl)propanoic acid" EXACT RESID-systematic []
@@ -4116,7 +4120,7 @@ is_a: MOD:00919 ! modified L-tyrosine residue
 
 [Term]
 id: MOD:00157
-name: oxidation of tryptophan to L-tryptophyl quinone
+name: L-tryptophyl quinone
 def: "A protein modification that effectively converts an L-tryptophan residue to an L-tryptophan quinone." [DeltaMass:0, PubMed:2028257, RESID:AA0148, Unimod:392#W]
 comment: incidental to RESID:AA0149; incidental to RESID:AA0313; From DeltaMass: Average Mass: 30.
 subset: PSI-MOD-slim
@@ -4171,7 +4175,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0298"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00918 ! modified L-tryptophan residue
+is_a: MOD:02057 ! crosslinked L-tryptophan residue
 
 [Term]
 id: MOD:00159
@@ -5033,8 +5037,8 @@ xref: Origin: "G, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0049"
-is_a: MOD:00908 ! modified glycine residue
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
@@ -5111,8 +5115,8 @@ xref: Origin: "A, G"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0045"
-is_a: MOD:00901 ! modified L-alanine residue
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02040 ! crosslinked L-alanine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
@@ -5138,8 +5142,8 @@ xref: Origin: "C, G"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0047"
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
@@ -5166,8 +5170,8 @@ xref: Origin: "G, Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0013"
-is_a: MOD:00907 ! modified L-glutamine residue
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02046 ! crosslinked L-glutamine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
@@ -5359,12 +5363,6 @@ def: "A protein modification that effectively converts an L-glutamic acid residu
 synonym: "gamma-glutamylpolyglycine" EXACT RESID-alternate []
 synonym: "L-isoglutamyl-polyglycine" EXACT RESID-name []
 synonym: "MOD_RES 5-glutamyl polyglycine" EXACT UniProt-feature []
-xref: DiffAvg: "57.05"
-xref: DiffFormula: "C 2 H 3 N 1 O 1"
-xref: DiffMono: "57.021464"
-xref: Formula: "C 7 H 10 N 2 O 4"
-xref: MassAvg: "186.17"
-xref: MassMono: "186.064057"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5377,17 +5375,10 @@ name: L-isoglutamyl-polyglutamic acid
 def: "A protein modification that effectively converts an L-glutamic acid residue to isoglutamyl-polyglutamic acid, forming an isopeptide bond with a polyglutamic acid." [PubMed:10747868, PubMed:1680872, RESID:AA0202]
 synonym: "gamma-glutamylpolyglutamic acid" EXACT RESID-alternate []
 synonym: "L-isoglutamyl-polyglutamic acid" EXACT RESID-name []
-xref: DiffAvg: "129.12"
-xref: DiffFormula: "C 5 H 7 N 1 O 3"
-xref: DiffMono: "129.042593"
-xref: Formula: "C 10 H 14 N 2 O 6"
-xref: MassAvg: "258.23"
-xref: MassMono: "258.085186"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0395"
-is_a: MOD:00674 ! amidated residue
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Term]
@@ -5439,7 +5430,7 @@ xref: MassMono: "143.027909"
 xref: Origin: "C, S"
 xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0268"
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01850 ! S-(2-aminovinyl)-D-cysteine
 
 [Term]
@@ -5484,7 +5475,7 @@ is_a: MOD:01854 ! sulfur monooxygenated residue
 id: MOD:00211
 name: S-(glycyl)-L-cysteine (Cys-Gly)
 def: "A protein modification that effectively crosslinks an L-cysteine residue and a glycine residue by a thioester bond to form S-glycyl-L-cysteine." [ChEBI:22050, PubMed:3306404, RESID:AA0206]
-comment: Cross-link 2. For the modification of a C-terminal glycine by formation of a thioester bond with free L-cycteine see MOD:01777 [JSG].
+comment: Cross-link 2. For the modification of a C-terminal glycine by formation of a thioester bond with free L-cysteine see MOD:01777 [JSG].
 subset: PSI-MOD-slim
 synonym: "(2R)-2-amino-3-[(aminoacetyl)sulfanyl]propanoic acid" EXACT RESID-systematic []
 synonym: "1-(cystein-S-yl)-glycinate" EXACT RESID-alternate []
@@ -5503,7 +5494,7 @@ xref: Origin: "C, G"
 xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0429"
 is_a: MOD:00395 ! thioester crosslinked residues
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -5538,12 +5529,6 @@ synonym: "chondroitin 4-sulfate (chondroitin sulfate A)" EXACT RESID-alternate [
 synonym: "chondroitin 6-sulfate (chondroitin sulfate C)" EXACT RESID-alternate []
 synonym: "chondroitin sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-serine" EXACT RESID-name []
 synonym: "poly[beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-4-sulfate-D-galactosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine; poly[beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-6-sulfate D-galactosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine" EXACT RESID-systematic []
-xref: DiffAvg: "-1.01"
-xref: DiffFormula: "C 0 H -1 N 0 O 0"
-xref: DiffMono: "-1.007825"
-xref: Formula: "C 3 H 4 N 1 O 2"
-xref: MassAvg: "86.07"
-xref: MassMono: "86.024203"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5557,12 +5542,6 @@ synonym: "beta-heparin" EXACT RESID-alternate []
 synonym: "chondroitin sulfate B" EXACT RESID-alternate []
 synonym: "dermatan 4-sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-serine" EXACT RESID-name []
 synonym: "poly[beta-1,4-L-idopyranuronosyl-alpha-1,3-(2-acetamido-2-deoxy-4-sulfate D-galactosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine" EXACT RESID-systematic []
-xref: DiffAvg: "-1.01"
-xref: DiffFormula: "C 0 H -1 N 0 O 0"
-xref: DiffMono: "-1.007825"
-xref: Formula: "C 3 H 4 N 1 O 2"
-xref: MassAvg: "86.07"
-xref: MassMono: "86.024203"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5576,12 +5555,6 @@ synonym: "heparan sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-s
 synonym: "heparin" EXACT RESID-alternate []
 synonym: "heparitin sulfate" EXACT RESID-alternate []
 synonym: "poly[alpha-1,4-(2-sulfate D-glucopyranuronosyl)-beta-1,4-(2-sulfamino-2-deoxy-6-sulfate D-glucosyl)]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-serine" EXACT RESID-systematic []
-xref: DiffAvg: "-1.01"
-xref: DiffFormula: "C 0 H -1 N 0 O 0"
-xref: DiffMono: "-1.007825"
-xref: Formula: "C 3 H 4 N 1 O 2"
-xref: MassAvg: "86.07"
-xref: MassMono: "86.024203"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5654,12 +5627,6 @@ synonym: "MOD_RES O-(5'-phospho-RNA)-serine" EXACT UniProt-feature []
 synonym: "O-(phospho-5'-RNA)-L-serine" EXACT RESID-name []
 synonym: "O3-(phospho-5'-RNA)-L-serine" EXACT RESID-alternate []
 synonym: "O3-L-serine 5'-RNA phosphodiester" EXACT RESID-alternate []
-xref: DiffAvg: "78.97"
-xref: DiffFormula: "C 0 H 0 N 0 O 3 P 1"
-xref: DiffMono: "78.958505"
-xref: Formula: "C 3 H 5 N 1 O 5 P 1"
-xref: MassAvg: "166.05"
-xref: MassMono: "165.990534"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5750,8 +5717,8 @@ xref: Origin: "C, N"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0151"
-is_a: MOD:00903 ! modified L-asparagine residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02042 ! crosslinked L-asparagine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 
 [Term]
 id: MOD:00222
@@ -5787,12 +5754,6 @@ def: "A protein modification that effectively converts an L-lysine residue to N6
 synonym: "MOD_RES N6-murein peptidoglycan lysine" EXACT UniProt-feature []
 synonym: "N6-[(2R,6S)-2-(N-(N-mureinyl-(R)-alanyl)-(S)-glutamyl)amino-6-amino-6-carboxy-1-oxohex-1-yl]lysine" EXACT RESID-alternate []
 synonym: "N6-mureinyl-L-lysine" EXACT RESID-name []
-xref: DiffAvg: "-1.01"
-xref: DiffFormula: "C 0 H -1 N 0 O 0"
-xref: DiffMono: "-1.007825"
-xref: Formula: "C 6 H 11 N 2 O 1"
-xref: MassAvg: "127.17"
-xref: MassMono: "127.087138"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -5809,12 +5770,6 @@ synonym: "1-chondroitin sulfate-L-aspartic acid ester" EXACT RESID-name []
 synonym: "MOD_RES Aspartate 1-(chondroitin 4-sulfate)-ester" EXACT UniProt-feature []
 synonym: "poly[beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-4-sulfate D-galactosyl)]beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-4-sulfate-6-(1-L-aspartyl)-D-galactose)" EXACT RESID-alternate []
 synonym: "protein-glycosaminoglycan-protein cross-link" EXACT RESID-alternate []
-xref: DiffAvg: "441.36"
-xref: DiffFormula: "C 14 H 19 N 1 O 13 S 1"
-xref: DiffMono: "441.057711"
-xref: Formula: "C 18 H 25 N 2 O 17 S 1"
-xref: MassAvg: "573.45"
-xref: MassMono: "573.087393"
 xref: Origin: "D"
 xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0334"
@@ -5954,7 +5909,7 @@ xref: MassMono: "204.002720"
 xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 
 [Term]
 id: MOD:00230
@@ -5977,8 +5932,8 @@ xref: Origin: "C, C, H, H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00231
@@ -6000,7 +5955,7 @@ xref: Origin: "C, C, C, C, C, C"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00232
@@ -6203,8 +6158,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0171"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00912 ! modified L-lysine residue
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
 [Term]
 id: MOD:00239
@@ -6281,7 +6236,7 @@ xref: Origin: "N"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:414"
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00242
@@ -6330,7 +6285,7 @@ xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0376"
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -6353,7 +6308,7 @@ xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0381"
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
 
 [Term]
@@ -6375,7 +6330,7 @@ xref: Origin: "G, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0377"
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -6398,7 +6353,7 @@ xref: Origin: "C, G"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0378"
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -6421,7 +6376,7 @@ xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0363"
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -6444,7 +6399,7 @@ xref: Origin: "C, F"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0375"
-is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -6487,7 +6442,7 @@ xref: MassMono: "211.077933"
 xref: Origin: "C, K"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-is_a: MOD:00912 ! modified L-lysine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -6501,12 +6456,6 @@ synonym: "MOD_RES O-(5'-phospho-DNA)-serine" EXACT UniProt-feature []
 synonym: "O-(phospho-5'-DNA)-L-serine" EXACT RESID-name []
 synonym: "O3-(phospho-5'-DNA)-L-serine" EXACT RESID-alternate []
 synonym: "O3-L-serine 5'-DNA phosphodiester" EXACT RESID-alternate []
-xref: DiffAvg: "78.97"
-xref: DiffFormula: "C 0 H 0 N 0 O 3 P 1"
-xref: DiffMono: "78.958505"
-xref: Formula: "C 3 H 5 N 1 O 5 P 1"
-xref: MassAvg: "166.05"
-xref: MassMono: "165.990534"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -6521,12 +6470,6 @@ def: "A protein modification that effectively cross-links an L-threonine residue
 synonym: "keratan sulfate D-glucuronosyl-D-galactosyl-D-galactosyl-D-xylosyl-L-threonine" EXACT RESID-name []
 synonym: "keratosulfate" EXACT RESID-alternate []
 synonym: "poly[beta-1,4-(2-acetamido-2-deoxy-6-sulfate D-glucosyl)-beta-1,3-D-galactosyl]-beta-1,4-D-glucopyranuronosyl-beta-1,3-D-galactosyl-beta-1,3-D-galactosyl-beta-1,4-D-xylosyl-beta-1,3-L-threonine" EXACT RESID-systematic []
-xref: DiffAvg: "-1.01"
-xref: DiffFormula: "C 0 H -1 N 0 O 0"
-xref: DiffMono: "-1.007825"
-xref: Formula: "C 4 H 6 N 1 O 2"
-xref: MassAvg: "100.10"
-xref: MassMono: "100.039853"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -6557,12 +6500,6 @@ synonym: "(S)-2-amino-3-[4-(5'-ribonucleic acid phosphonoxy)phenyl]propanoic aci
 synonym: "MOD_RES O-(5'-phospho-RNA)-tyrosine" EXACT UniProt-feature []
 synonym: "O4'-(phospho-5'-RNA)-L-tyrosine" EXACT RESID-name []
 synonym: "O4'-L-tyrosine 5'-RNA phosphodiester" EXACT RESID-alternate []
-xref: DiffAvg: "79.98"
-xref: DiffFormula: "C 0 H 1 N 0 O 3 P 1"
-xref: DiffMono: "79.966331"
-xref: Formula: "C 9 H 10 N 1 O 5 P 1"
-xref: MassAvg: "243.15"
-xref: MassMono: "243.029659"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -6594,8 +6531,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0027"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00909 ! modified L-histidine residue
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02048 ! crosslinked L-histidine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
 [Term]
 id: MOD:00256
@@ -6677,7 +6614,7 @@ xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0267"
 is_a: MOD:00687 ! thioether crosslinked residues
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 
 [Term]
 id: MOD:00259
@@ -6688,12 +6625,6 @@ synonym: "ACT_SITE O-(5'-phospho-DNA)-tyrosine intermediate" EXACT UniProt-featu
 synonym: "MOD_RES O-(5'-phospho-DNA)-tyrosine" EXACT UniProt-feature []
 synonym: "O4'-(phospho-5'-DNA)-L-tyrosine" EXACT RESID-name []
 synonym: "O4'-L-tyrosine 5'-DNA phosphodiester" EXACT RESID-alternate []
-xref: DiffAvg: "79.98"
-xref: DiffFormula: "C 0 H 1 N 0 O 3 P 1"
-xref: DiffMono: "79.966331"
-xref: Formula: "C 9 H 10 N 1 O 5 P 1"
-xref: MassAvg: "243.15"
-xref: MassMono: "243.029659"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -6769,7 +6700,7 @@ xref: MassMono: "292.105922"
 xref: Origin: "E, Y"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-is_a: MOD:00906 ! modified L-glutamic acid residue
+is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 is_a: MOD:00919 ! modified L-tyrosine residue
 
 [Term]
@@ -6822,7 +6753,7 @@ xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00700 ! tetrapyrrole modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 
 [Term]
 id: MOD:00265
@@ -6845,18 +6776,12 @@ xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00700 ! tetrapyrrole modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 
 [Term]
 id: MOD:00266
 name: N-L-glutamyl-poly-L-glutamic acid
 def: "A protein modification that effectively forms a peptide bond between a C-terminal L-glutamic acid residue and one or more free L-glutamic acid molecules to form N-(L-glutamyl)-poly-L-glutamic acid." [PubMed:2570347, PubMed:328274, RESID:AA0261]
-xref: DiffAvg: "0.00"
-xref: DiffFormula: "C 0 H 0 N 0 O 0"
-xref: DiffMono: "0.000000"
-xref: Formula: "C 10 H 15 N 2 O 7"
-xref: MassAvg: "275.24"
-xref: MassMono: "275.087926"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
@@ -7000,8 +6925,8 @@ xref: Origin: "C, C, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00699 ! porphyrin modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02075 ! metal or metal cluster coordinated L-tyrosine residue
 
 [Term]
 id: MOD:00272
@@ -7057,9 +6982,9 @@ xref: Origin: "C, C, C, C, E, E, H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00274
@@ -7119,8 +7044,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0003"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00909 ! modified L-histidine residue
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02048 ! crosslinked L-histidine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
 [Term]
 id: MOD:00276
@@ -7141,8 +7066,8 @@ xref: Origin: "C, C, K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00699 ! porphyrin modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00912 ! modified L-lysine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02074 ! metal or metal cluster coordinated L-lysine residue
 
 [Term]
 id: MOD:00277
@@ -7267,7 +7192,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00699 ! porphyrin modified residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00282
@@ -7310,12 +7235,6 @@ synonym: "MOD_RES N6-poly(methylaminopropyl)lysine" EXACT UniProt-feature []
 synonym: "N6-[3-([(omega)-(dimethyl)aminopropyl-poly(3-[methylamino]propyl)]amino)propyl]lysine" EXACT RESID-alternate []
 synonym: "N6-propylamino-poly(propylmethylamino)-propyldimethylamine-L-lysine" EXACT RESID-name []
 synonym: "silaffin polycationic lysine derivative" EXACT RESID-alternate []
-xref: DiffAvg: "426.74"
-xref: DiffFormula: "C 24 H 54 N 6 O 0"
-xref: DiffMono: "426.440996"
-xref: Formula: "C 30 H 66 N 8 O 1"
-xref: MassAvg: "554.91"
-xref: MassMono: "554.535959"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -7342,8 +7261,8 @@ xref: Origin: "D, E"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00699 ! porphyrin modified residue
-is_a: MOD:00904 ! modified L-aspartic acid residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
+is_a: MOD:02066 ! metal or metal cluster coordinated L-aspartic acid residue
+is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
 
 [Term]
 id: MOD:00285
@@ -7366,9 +7285,9 @@ xref: Origin: "D, E, M"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00699 ! porphyrin modified residue
-is_a: MOD:00904 ! modified L-aspartic acid residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
-is_a: MOD:00913 ! modified L-methionine residue
+is_a: MOD:02066 ! metal or metal cluster coordinated L-aspartic acid residue
+is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
+is_a: MOD:02071 ! metal or metal cluster coordinated L-methionine residue
 
 [Term]
 id: MOD:00286
@@ -7389,7 +7308,7 @@ xref: Origin: "C"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:424"
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 is_a: MOD:01167 ! molybdopterin guanine dinucleotide
 
 [Term]
@@ -7444,8 +7363,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0263"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00906 ! modified L-glutamic acid residue
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02045 ! crosslinked L-glutamic acid residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
 [Term]
 id: MOD:00289
@@ -7467,8 +7386,8 @@ xref: Origin: "C, C, C, H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00290
@@ -7490,8 +7409,8 @@ xref: Origin: "C, C, C, H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00291
@@ -7512,8 +7431,8 @@ xref: Origin: "C, C, C, D"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00904 ! modified L-aspartic acid residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02066 ! metal or metal cluster coordinated L-aspartic acid residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00292
@@ -7555,8 +7474,8 @@ xref: Origin: "C, C, C, S"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02072 ! metal or metal cluster coordinated L-serine residue
 
 [Term]
 id: MOD:00294
@@ -7578,9 +7497,9 @@ xref: Origin: "C, C, H, S"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00909 ! modified L-histidine residue
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
+is_a: MOD:02072 ! metal or metal cluster coordinated L-serine residue
 
 [Term]
 id: MOD:00295
@@ -7656,9 +7575,9 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
 is_a: MOD:00741 ! nickel containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00298
@@ -7681,10 +7600,10 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
 is_a: MOD:00741 ! nickel containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
-is_a: MOD:00909 ! modified L-histidine residue
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
+is_a: MOD:02072 ! metal or metal cluster coordinated L-serine residue
 
 [Term]
 id: MOD:00299
@@ -7709,7 +7628,7 @@ xref: Origin: "K, N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0153"
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 is_a: MOD:01929 ! N6-(L-isoaspartyl)-L-lysine
 
@@ -7724,12 +7643,6 @@ synonym: "L-glutamyl-5-poly(ADP-ribose)" EXACT RESID-name []
 synonym: "L-isoglutamyl-poly(ADP-ribose)" EXACT RESID-alternate []
 synonym: "MOD_RES PolyADP-ribosyl glutamic acid" EXACT UniProt-feature []
 synonym: "O-ADP-ribosylation (on Glutamate or C terminus)" EXACT DeltaMass-label []
-xref: DiffAvg: "541.30"
-xref: DiffFormula: "C 15 H 21 N 5 O 13 P 2"
-xref: DiffMono: "541.061109"
-xref: Formula: "C 20 H 28 N 6 O 16 P 2"
-xref: MassAvg: "670.42"
-xref: MassMono: "670.103702"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -7810,7 +7723,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00742 ! copper containing modified residue
 is_a: MOD:00860 ! sulfur containing modified residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00304
@@ -7863,8 +7776,8 @@ xref: Origin: "C, C, C, C, C, C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02072 ! metal or metal cluster coordinated L-serine residue
 
 [Term]
 id: MOD:00306
@@ -8120,8 +8033,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
 is_a: MOD:00741 ! nickel containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00316
@@ -8197,7 +8110,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0041"
 is_a: MOD:00687 ! thioether crosslinked residues
-is_a: MOD:00918 ! modified L-tryptophan residue
+is_a: MOD:02057 ! crosslinked L-tryptophan residue
 
 [Term]
 id: MOD:00319
@@ -8219,7 +8132,7 @@ xref: Origin: "C, D"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0025"
-is_a: MOD:00904 ! modified L-aspartic acid residue
+is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:01993 ! beta-carbon thioether crosslinked residues
 
 [Term]
@@ -8242,7 +8155,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0040"
 is_a: MOD:00687 ! thioether crosslinked residues
-is_a: MOD:00906 ! modified L-glutamic acid residue
+is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 
 [Term]
 id: MOD:00321
@@ -8344,7 +8257,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00744 ! molybdenum pterin containing modification
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02072 ! metal or metal cluster coordinated L-serine residue
 
 [Term]
 id: MOD:00325
@@ -8429,12 +8342,6 @@ synonym: "(S)-2-amino-3-[4-(3'-deoxyribonucleic acid phosphonoxy)phenyl]propanoi
 synonym: "ACT_SITE O-(3'-phospho-DNA)-tyrosine intermediate" EXACT UniProt-feature []
 synonym: "O4'-(phospho-3'-DNA)-L-tyrosine" EXACT RESID-name []
 synonym: "O4'-L-tyrosine 3'-DNA phosphodiester" EXACT RESID-alternate []
-xref: DiffAvg: "79.98"
-xref: DiffFormula: "C 0 H 1 N 0 O 3 P 1"
-xref: DiffMono: "79.966331"
-xref: Formula: "C 9 H 10 N 1 O 5 P 1"
-xref: MassAvg: "243.15"
-xref: MassMono: "243.029659"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -8463,7 +8370,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:436"
 is_a: MOD:00699 ! porphyrin modified residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
+is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
 
 [Term]
 id: MOD:00330
@@ -8514,7 +8421,7 @@ xref: Origin: "C, C, C, C"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00332
@@ -8595,7 +8502,7 @@ xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:390"
 is_a: MOD:00699 ! porphyrin modified residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00335
@@ -8617,9 +8524,9 @@ xref: MassMono: "202.041213"
 xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00917 ! modified L-threonine residue
-is_a: MOD:01993 ! beta-carbon thioether crosslinked residues
 xref: UniProt: "PTM-0069"
+is_a: MOD:02056 ! crosslinked L-threonine residue
+is_a: MOD:01993 ! beta-carbon thioether crosslinked residues
 relationship: has_functional_parent MOD:01981 ! 3-methyllanthionine
 
 [Term]
@@ -8641,8 +8548,8 @@ xref: Origin: "C, C, C, D"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00904 ! modified L-aspartic acid residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02066 ! metal or metal cluster coordinated L-aspartic acid residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00337
@@ -8723,7 +8630,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:439"
 is_a: MOD:00738 ! iron containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00340
@@ -8879,7 +8786,7 @@ xref: Origin: "C, F"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0012"
-is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
 
 [Term]
@@ -8903,7 +8810,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0011"
 is_a: MOD:00664 ! stereoisomerized residue
-is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
 
 [Term]
@@ -8927,7 +8834,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0010"
 is_a: MOD:00664 ! stereoisomerized residue
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
 
 [Term]
@@ -8975,8 +8882,8 @@ xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0037"
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01861 ! isothiazolidinone ring crosslinked residues
 
 [Term]
@@ -8986,12 +8893,6 @@ def: "A protein modification that effectively attaches an L-threonine residue to
 synonym: "(2R,6S)-2-(N-mureinyl-(R)-alanyl-(S)-isoglutamyl)amino-6-(threonyl-pentaglycyl)amino-pimeloyl-(S)-alanyl-(S)-alanine" EXACT RESID-alternate []
 synonym: "L-threonyl-pentaglycyl-murein peptidoglycan" EXACT RESID-name []
 synonym: "MOD_RES Pentaglycyl murein peptidoglycan amidated threonine" EXACT UniProt-feature []
-xref: DiffAvg: "268.25"
-xref: DiffFormula: "C 10 H 14 N 5 O 4"
-xref: DiffMono: "268.104579"
-xref: Formula: "C 14 H 22 N 6 O 7"
-xref: MassAvg: "386.37"
-xref: MassMono: "386.154997"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
@@ -9060,9 +8961,9 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0328"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00913 ! modified L-methionine residue
-is_a: MOD:00918 ! modified L-tryptophan residue
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02052 ! crosslinked L-methionine residue
+is_a: MOD:02057 ! crosslinked L-tryptophan residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
 [Term]
 id: MOD:00354
@@ -9251,7 +9152,7 @@ xref: Unimod: "Unimod:444"
 is_a: MOD:00742 ! copper containing modified residue
 is_a: MOD:00744 ! molybdenum pterin containing modification
 is_a: MOD:00860 ! sulfur containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00361
@@ -9272,7 +9173,7 @@ xref: Origin: "C, C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00362
@@ -9293,8 +9194,8 @@ xref: Origin: "C, C, C, R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00902 ! modified L-arginine residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02076 ! metal or metal cluster coordinated L-arginine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:00363
@@ -9316,7 +9217,7 @@ xref: Origin: "C, U"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0109"
-is_a: MOD:01158 ! modified L-selenocysteine residue
+is_a: MOD:02061 ! crosslinked L-selenocysteine residue
 is_a: MOD:01627 ! L-cysteinyl-L-selenocysteine
 
 [Term]
@@ -9378,8 +9279,8 @@ xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0157"
 is_a: MOD:00688 ! isopeptide crosslinked residues
-is_a: MOD:00906 ! modified L-glutamic acid residue
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02045 ! crosslinked L-glutamic acid residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -9543,9 +9444,9 @@ xref: Origin: "D, D, E, E, E, H"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00740 ! manganese containing modified residue
-is_a: MOD:00904 ! modified L-aspartic acid residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02066 ! metal or metal cluster coordinated L-aspartic acid residue
+is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 is_a: MOD:01482 ! calcium containing modified residue
 
 [Term]
@@ -9570,7 +9471,7 @@ xref: Origin: "Y, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
 [Term]
 id: MOD:00373
@@ -9595,7 +9496,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0155"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
 [Term]
 id: MOD:00374
@@ -9784,7 +9685,7 @@ xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:424"
-is_a: MOD:00904 ! modified L-aspartic acid residue
+is_a: MOD:02066 ! metal or metal cluster coordinated L-aspartic acid residue
 is_a: MOD:01167 ! molybdopterin guanine dinucleotide
 
 [Term]
@@ -9802,7 +9703,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00746 ! tungsten containing modified residue
 is_a: MOD:00748 ! pterin modified residue
-is_a: MOD:01158 ! modified L-selenocysteine residue
+is_a: MOD:02073 ! metal or metal cluster coordinated L-selenocysteine residue
 
 [Term]
 id: MOD:00382
@@ -9823,8 +9724,8 @@ xref: MassMono: "275.085424"
 xref: Origin: "M, Y"
 xref: Source: "hypothetical"
 xref: TermSpec: "N-term"
-is_a: MOD:00913 ! modified L-methionine residue
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02052 ! crosslinked L-methionine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
 [Term]
 id: MOD:00383
@@ -9849,8 +9750,8 @@ xref: Origin: "E, G"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0014"
-is_a: MOD:00906 ! modified L-glutamic acid residue
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02045 ! crosslinked L-glutamic acid residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
@@ -9878,8 +9779,8 @@ xref: Origin: "G, M"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0015"
-is_a: MOD:00908 ! modified glycine residue
-is_a: MOD:00913 ! modified L-methionine residue
+is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:02052 ! crosslinked L-methionine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
@@ -9905,8 +9806,8 @@ xref: Origin: "G, N"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0046"
-is_a: MOD:00903 ! modified L-asparagine residue
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02042 ! crosslinked L-asparagine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
@@ -9932,8 +9833,8 @@ xref: Origin: "G, K"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0048"
-is_a: MOD:00908 ! modified glycine residue
-is_a: MOD:00912 ! modified L-lysine residue
+is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
@@ -9959,8 +9860,8 @@ xref: Origin: "G, K"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0018"
-is_a: MOD:00908 ! modified glycine residue
-is_a: MOD:00912 ! modified L-lysine residue
+is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
@@ -9970,12 +9871,6 @@ def: "A protein modification that effectively attaches an L-alanine residue to m
 synonym: "(2R,6S)-2-(N-mureinyl-(R)-alanyl-(S)-isoglutamyl)amino-6-(alanyl-pentaglycyl)amino-pimeloyl-(S)-alanyl-(S)-alanine" EXACT RESID-alternate []
 synonym: "L-alanyl-pentaglycyl-murein peptidoglycan" EXACT RESID-name []
 synonym: "MOD_RES Pentaglycyl murein peptidoglycan amidated alanine" EXACT UniProt-feature []
-xref: DiffAvg: "268.25"
-xref: DiffFormula: "C 10 H 14 N 5 O 4"
-xref: DiffMono: "268.104579"
-xref: Formula: "C 13 H 20 N 6 O 6"
-xref: MassAvg: "356.34"
-xref: MassMono: "356.144432"
 xref: Origin: "A"
 xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
@@ -10126,7 +10021,7 @@ name: thioester crosslinked residues
 def: "A protein modification that crosslinks two residues by formation of a thioester bond between a cysteine thiol and either an alpha-carbonyl, as in S-(L-methionyl-L-cysteine), or a sidechain carbonyl, as in S-(L-isoglutamyl)-L-cysteine." [PubMed:18688235]
 subset: PSI-MOD-slim
 is_a: MOD:00033 ! crosslinked residues
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 
 [Term]
 id: MOD:00396
@@ -10725,7 +10620,7 @@ xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "none"
-xref: TermSpec: "C-term"
+xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
 is_a: MOD:00677 ! hydroxylated residue
 
@@ -10886,7 +10781,7 @@ relationship: derives_from MOD:00046 ! O-phospho-L-serine
 
 [Term]
 id: MOD:00436
-name: N-acetylhexosaminylated
+name: N-acetylhexosaminylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with an N-acetylhexosamine group through a glycosidic bond." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "HexNAc" RELATED PSI-MS-label []
@@ -11642,9 +11537,8 @@ is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 
 [Term]
 id: MOD:00475
-name: tyrosine oxidation to 2-aminotyrosine
-def: "modification from Unimod Chemical derivative" [PubMed:8839040, PubMed:9252331, Unimod:342#Y]
-comment: May be misdescribed. Name (if not misdescribed) should be 2'-aminotyrosine [JSG].
+name: 2-amino-L-tyrosine
+def: "A protein modification that effectively converts an L-tyrosine residue to 2-amino-L-tyrosine." [PubMed:8839040, PubMed:9252331, Unimod:342#Y]
 synonym: "Amino" RELATED PSI-MS-label []
 synonym: "Tyrosine oxidation to 2-aminotyrosine" RELATED Unimod-description []
 xref: DiffAvg: "15.02"
@@ -11657,7 +11551,8 @@ xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:342"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02039 ! aminated residue
 
 [Term]
 id: MOD:00476
@@ -11989,7 +11884,8 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:121"
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 relationship: derives_from MOD:01148 ! ubiquitinylated lysine
 
@@ -12251,7 +12147,7 @@ is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00506
-name: N-linked glycan core
+name: N-linked glycan core N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, Hex(5) HexNAc(2)" [PubMed:111247, PubMed:1694179, PubMed:5490222, RESID:AA0151#var, Unimod:137#N]
 synonym: "Hex(5)HexNAc(2)" RELATED PSI-MS-label []
 synonym: "N-linked glycan core" RELATED Unimod-description []
@@ -12267,7 +12163,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:137"
 xref: GNOme: "GNO:G02815KT"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00507
@@ -12329,7 +12225,7 @@ is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00510
-name: HexNAc1dHex1
+name: HexNAc1dHex1 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, dHex HexNAc" [OMSSA:183, PubMed:111247, PubMed:1694179, PubMed:5490222, RESID:AA0151#var, Unimod:142]
 synonym: "dHexHexNAcN" EXACT OMSSA-label []
 synonym: "HexNAc(1)dHex(1)" RELATED PSI-MS-label []
@@ -12346,11 +12242,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:142"
 xref: GNOme: "GNO:G00194GV"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00511
-name: HexNAc2
+name: HexNAc2 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, HexNAc(2)" [PubMed:111247, PubMed:1694179, PubMed:5490222, RESID:AA0151#var, Unimod:143]
 synonym: "HexNAc(2)" RELATED PSI-MS-label []
 synonym: "HexNAc2" RELATED Unimod-description []
@@ -12366,11 +12262,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:143"
 xref: GNOme: "GNO:G27391WQ"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00512
-name: Hex3
+name: Hex3 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, Hex3" [PubMed:111247, PubMed:1694179, PubMed:5490222, RESID:AA0151#var, Unimod:144]
 synonym: "Hex(3)" RELATED PSI-MS-label []
 synonym: "Hex3" RELATED Unimod-description []
@@ -12386,11 +12282,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:144"
 xref: GNOme: "GNO:G39365VM"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00513
-name: HexNAc1dHex2
+name: HexNAc1dHex2 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, dHex(2) HexNAc" [PubMed:111247, PubMed:1694179, PubMed:5490222, RESID:AA0151#var, Unimod:145]
 synonym: "HexNAc(1)dHex(2)" RELATED PSI-MS-label []
 synonym: "HexNAc1dHex2" RELATED Unimod-description []
@@ -12406,11 +12302,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:145"
 xref: GNOme: "GNO:G74392IM"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00514
-name: Hex1HexNAc1dHex1
+name: Hex1HexNAc1dHex1 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, dHex Hex HexNAc" [PubMed:111247, PubMed:1694179, PubMed:5490222, RESID:AA0151#var, Unimod:146]
 synonym: "Hex(1)HexNAc(1)dHex(1)" RELATED PSI-MS-label []
 synonym: "Hex1HexNAc1dHex1" RELATED Unimod-description []
@@ -12426,11 +12322,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:146"
 xref: GNOme: "GNO:G54129SE"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00515
-name: HexNAc2dHex1
+name: HexNAc2dHex1 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, dHex HexNAc(2)" [PubMed:111247, PubMed:1694179, PubMed:5490222, RESID:AA0151#var, Unimod:147]
 synonym: "HexNAc(2)dHex(1)" RELATED PSI-MS-label []
 synonym: "HexNAc2dHex1" RELATED Unimod-description []
@@ -12446,11 +12342,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:147"
 xref: GNOme: "GNO:G06042JP"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00516
-name: Hex1HexNAc2
+name: Hex1HexNAc2 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [RESID:AA0151#var, Unimod:148]
 synonym: "Hex(1)HexNAc(2)" RELATED PSI-MS-label []
 synonym: "Hex1HexNAc2" RELATED Unimod-description []
@@ -12466,7 +12362,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:148"
 xref: GNOme: "GNO:G58001LT"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00517
@@ -12490,7 +12386,7 @@ is_a: MOD:00725 ! complex glycosylation
 
 [Term]
 id: MOD:00518
-name: HexNAc2dHex2
+name: HexNAc2dHex2 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [RESID:AA0151#var, Unimod:150]
 synonym: "HexNAc(2)dHex(2)" RELATED PSI-MS-label []
 synonym: "HexNAc2dHex2" RELATED Unimod-description []
@@ -12506,10 +12402,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:150"
 xref: GNOme: "GNO:G90423UY"
 is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00519
-name: Hex1HexNAc2Pent1
+name: Hex1HexNAc2Pent1 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [RESID:AA0151#var, Unimod:151]
 synonym: "Hex(1)HexNAc(2)Pent(1)" RELATED PSI-MS-label []
 synonym: "Hex1HexNAc2Pent1" RELATED Unimod-description []
@@ -12525,10 +12422,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:151"
 xref: GNOme: "GNO:G54968WM"
 is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00520
-name: Hex1HexNAc2dHex1
+name: Hex1HexNAc2dHex1 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [RESID:AA0151#var, Unimod:152]
 synonym: "Hex(1)HexNAc(2)dHex(1)" RELATED PSI-MS-label []
 synonym: "Hex1HexNAc2dHex1" RELATED Unimod-description []
@@ -12544,10 +12442,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:152"
 xref: GNOme: "GNO:G94583DZ"
 is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00521
-name: Hex2HexNAc2
+name: Hex2HexNAc2 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [RESID:AA0151#var, Unimod:153]
 synonym: "Hex(2)HexNAc(2)" RELATED PSI-MS-label []
 synonym: "Hex2HexNAc2" RELATED Unimod-description []
@@ -12563,10 +12462,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:153"
 xref: GNOme: "GNO:G53434XO"
 is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00522
-name: Hex3HexNAc1Pent1
+name: Hex3HexNAc1Pent1 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [RESID:AA0151#var, Unimod:154]
 synonym: "Hex(3)HexNAc(1)Pent(1)" RELATED PSI-MS-label []
 synonym: "Hex3HexNAc1Pent1" RELATED Unimod-description []
@@ -12582,10 +12482,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:154"
 xref: GNOme: "GNO:G64686LL"
 is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00523
-name: Hex1HexNAc2dHex1Pent1
+name: Hex1HexNAc2dHex1Pent1 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [RESID:AA0151#var, Unimod:155]
 synonym: "Hex(1)HexNAc(2)dHex(1)Pent(1)" RELATED PSI-MS-label []
 synonym: "Hex1HexNAc2dHex1Pent1" RELATED Unimod-description []
@@ -12593,18 +12494,19 @@ xref: DiffAvg: "846.79"
 xref: DiffFormula: "C 33 H 54 N 2 O 23"
 xref: DiffMono: "846.311736"
 xref: Formula: "C 35 H 57 N 3 O 26"
-xref: MassAvg: "935.84"
-xref: MassMono: "935.323029"
+xref: MassAvg: "960.89"
+xref: MassMono: "960.354663"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:155"
 xref: GNOme: "GNO:G84825UQ"
 is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00524
-name: Hex1HexNAc2dHex2
+name: Hex1HexNAc2dHex2 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [RESID:AA0151#var, Unimod:156]
 synonym: "Hex(1)HexNAc(2)dHex(2)" RELATED PSI-MS-label []
 synonym: "Hex1HexNAc2dHex2" RELATED Unimod-description []
@@ -12620,10 +12522,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:156"
 xref: GNOme: "GNO:G05460KC"
 is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00525
-name: Hex2HexNAc2Pent1
+name: Hex2HexNAc2Pent1 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [RESID:AA0151#var, Unimod:157]
 synonym: "Hex(2)HexNAc(2)Pent(1)" RELATED PSI-MS-label []
 synonym: "Hex2HexNAc2Pent1" RELATED Unimod-description []
@@ -12639,10 +12542,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:157"
 xref: GNOme: "GNO:G18999EB"
 is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00526
-name: Hex2HexNAc2dHex1
+name: Hex2HexNAc2dHex1 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [RESID:AA0151#var, Unimod:158]
 synonym: "Hex(2)HexNAc(2)dHex(1)" RELATED PSI-MS-label []
 synonym: "Hex2HexNAc2dHex1" RELATED Unimod-description []
@@ -12658,10 +12562,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:158"
 xref: GNOme: "GNO:G93579XB"
 is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00527
-name: Hex3HexNAc2
+name: Hex3HexNAc2 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [DeltaMass:0, RESID:AA0151#var, Unimod:159]
 comment: From DeltaMass: Average Mass: 893
 synonym: "(Hex)3-HexNAc-HexNAc" EXACT DeltaMass-label []
@@ -12679,9 +12584,10 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:159"
 xref: GNOme: "GNO:G28681TP"
 is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
-id: MOD:00528
+id: MOD:00528 
 name: Hex1HexNAc1NeuAc2 glycosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a carbohydrate-like group composed of Hex1HexNAc1NeuAc2 linked through a glycosidic bond." [Unimod:160]
 synonym: "Hex(1)HexNAc(1)NeuAc(2)" RELATED PSI-MS-label []
@@ -12701,7 +12607,7 @@ is_a: MOD:00725 ! complex glycosylation
 
 [Term]
 id: MOD:00529
-name: Hex3HexNAc2P1
+name: Hex3HexNAc2P1 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [RESID:AA0151#var, Unimod:161]
 synonym: "Hex(3)HexNAc(2)P(1)" RELATED PSI-MS-label []
 synonym: "Hex3HexNAc2P1" RELATED Unimod-description []
@@ -12717,6 +12623,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:161"
 xref: GNOme: "GNO:G88520YF"
 is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00530
@@ -14160,13 +14067,13 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:291"
 is_a: MOD:00848 ! reagent derivatized residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 is_a: MOD:01075 ! mercury containing modified residue
 
 [Term]
 id: MOD:00611
 name: iodouridine monophosphate derivatized residue
-def: "A protein modification that is produced by reaction of iodouridine monophosphate, or a polynucleotide containing iodouridine, with a residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292]
+def: "A protein modification that is produced by reaction of iodouridine monophosphate with a residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292]
 synonym: "Cross-link of (Iodo)-uracil MP with W,F,Y" RELATED Unimod-description []
 synonym: "IodoU-AMP" RELATED PSI-MS-label []
 xref: DiffAvg: "322.17"
@@ -14381,7 +14288,7 @@ is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
 id: MOD:00623
-name: fucosylated biantennary (-2 galactose)
+name: fucosylated biantennary (-2 galactose) N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [Unimod:305]
 synonym: "dHex(1)Hex(3)HexNAc(4)" RELATED PSI-MS-label []
 synonym: "Fucosylated biantennary (-2 galactose)" RELATED Unimod-description []
@@ -14397,7 +14304,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:305"
 xref: GNOme: "GNO:G25987BV"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00624
@@ -15412,7 +15319,7 @@ id: MOD:00687
 name: thioether crosslinked residues
 def: "A protein modification that crosslinks two residues by formation of a thioether bond between a cysteine thiol and either an alkyl C as in lanthionine, or an aryl C as 2'-(S-cysteinyl)-L-histidine." [PubMed:18688235]
 is_a: MOD:00033 ! crosslinked residues
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 
 [Term]
 id: MOD:00688
@@ -16356,7 +16263,7 @@ is_a: MOD:01677 ! O4-(N-acetylamino)hexosyl-L-hydroxyproline
 
 [Term]
 id: MOD:00759
-name: fucosylated biantennary (-1 galactose)
+name: fucosylated biantennary (-1 galactose) N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [Unimod:307]
 synonym: "dHex(1)Hex(4)HexNAc(4)" RELATED PSI-MS-label []
 synonym: "Fucosylated biantennary (-1 galactose)" RELATED Unimod-description []
@@ -16372,11 +16279,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:307"
 xref: GNOme: "GNO:G59937CP"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00760
-name: biantennary
+name: biantennary N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation - missing ref" [Unimod:311]
 synonym: "Biantennary" RELATED Unimod-description []
 synonym: "Hex(5)HexNAc(4)" RELATED PSI-MS-label []
@@ -16392,7 +16299,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:311"
 xref: GNOme: "GNO:G10486CT"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00761
@@ -16413,7 +16320,7 @@ is_a: MOD:00434 ! hexosylated residue
 
 [Term]
 id: MOD:00762
-name: biantennary (-2 galactose)
+name: biantennary (-2 galactose) N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation - missing ref" [Unimod:309]
 synonym: "Biantennary (-2 galactose)" RELATED Unimod-description []
 synonym: "Hex(3)HexNAc(4)" RELATED PSI-MS-label []
@@ -16429,11 +16336,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:309"
 xref: GNOme: "GNO:G35029YA"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00763
-name: biantennary (-1 galactose)
+name: biantennary (-1 galactose) N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation - missing ref" [Unimod:310]
 synonym: "Biantennary (-1 galactose)" RELATED Unimod-description []
 synonym: "Hex(4)HexNAc(4)" RELATED PSI-MS-label []
@@ -16449,7 +16356,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:310"
 xref: GNOme: "GNO:G72787SB"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00764
@@ -17056,8 +16963,8 @@ xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
 is_a: MOD:00772 ! vanadium containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00801
@@ -17078,8 +16985,8 @@ xref: Origin: "C, H"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00802
@@ -17108,7 +17015,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00772 ! vanadium containing modified residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00803
@@ -17131,7 +17038,7 @@ xref: Origin: "C, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0020"
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 is_a: MOD:01993 ! beta-carbon thioether crosslinked residues
 
 [Term]
@@ -17567,8 +17474,8 @@ xref: MassMono: "108.032363"
 xref: Origin: "D, G"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00904 ! modified L-aspartic acid residue
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02043 ! crosslinked L-aspartic acid residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 
 [Term]
@@ -17592,7 +17499,7 @@ xref: Origin: "A, C"
 xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
 is_a: MOD:00395 ! thioester crosslinked residues
-is_a: MOD:00901 ! modified L-alanine residue
+is_a: MOD:02040 ! crosslinked L-alanine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -17616,7 +17523,7 @@ xref: Origin: "C, L"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 is_a: MOD:00395 ! thioester crosslinked residues
-is_a: MOD:00911 ! modified L-leucine residue
+is_a: MOD:02050 ! crosslinked L-leucine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -17640,7 +17547,7 @@ xref: Origin: "C, M"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 is_a: MOD:00395 ! thioester crosslinked residues
-is_a: MOD:00913 ! modified L-methionine residue
+is_a: MOD:02052 ! crosslinked L-methionine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -17691,7 +17598,7 @@ xref: Origin: "C, F"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 is_a: MOD:00395 ! thioester crosslinked residues
-is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -17715,7 +17622,7 @@ xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 is_a: MOD:00395 ! thioester crosslinked residues
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -17739,7 +17646,7 @@ xref: Origin: "C, Y"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 is_a: MOD:00395 ! thioester crosslinked residues
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -17763,7 +17670,7 @@ xref: Origin: "C, W"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 is_a: MOD:00395 ! thioester crosslinked residues
-is_a: MOD:00918 ! modified L-tryptophan residue
+is_a: MOD:02057 ! crosslinked L-tryptophan residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -17787,8 +17694,8 @@ xref: Origin: "F, S"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 is_a: MOD:00885 ! ester crosslinked residues
-is_a: MOD:00914 ! modified L-phenylalanine residue
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02053 ! crosslinked L-phenylalanine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -18304,8 +18211,8 @@ xref: Origin: "C, C, C, H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:00865
@@ -19167,7 +19074,8 @@ xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0326"
 is_a: MOD:00688 ! isopeptide crosslinked residues
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01875 ! N6-acylated L-lysine
 
@@ -19608,7 +19516,7 @@ xref: Origin: "K"
 xref: Source: "none"
 xref: TermSpec: "none"
 xref: Remap: "MOD:01933"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:00950
@@ -19669,7 +19577,7 @@ xref: Origin: "D, G"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0312"
-is_a: MOD:00904 ! modified L-aspartic acid residue
+is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01628 ! (2-aminosuccinimidyl)acetic acid
 
@@ -19693,7 +19601,7 @@ xref: MassMono: "198.064057"
 xref: Origin: "E, S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00906 ! modified L-glutamic acid residue
+is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01977 ! O-(L-isoglutamyl)-L-serine
 
@@ -19719,8 +19627,8 @@ xref: MassMono: "206.080376"
 xref: Origin: "H, S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00909 ! modified L-histidine residue
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02048 ! crosslinked L-histidine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -19920,7 +19828,7 @@ xref: MassMono: "273.145047"
 xref: Origin: "K, K"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_a: MOD:02051 ! crosslinked L-lysine residue
 
 [Term]
 id: MOD:00968
@@ -22912,7 +22820,7 @@ xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00700 ! tetrapyrrole modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 
 [Term]
 id: MOD:01144
@@ -22997,7 +22905,8 @@ subset: PSI-MOD-slim
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 relationship: contains MOD:00134 ! N6-glycyl-L-lysine
 
@@ -23009,7 +22918,8 @@ subset: PSI-MOD-slim
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 relationship: contains MOD:00134 ! N6-glycyl-L-lysine
 
@@ -23021,7 +22931,8 @@ subset: PSI-MOD-slim
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 relationship: contains MOD:00134 ! N6-glycyl-L-lysine
 
@@ -23501,7 +23412,7 @@ xref: Origin: "K, K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00912 ! modified L-lysine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 
 [Term]
 id: MOD:01177
@@ -23649,8 +23560,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0681"
 is_a: MOD:00895 ! FAD modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02048 ! crosslinked L-histidine residue
 is_a: MOD:01621 ! flavin crosslinked residues
 
 [Term]
@@ -24160,7 +24071,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:160"
 is_a: MOD:00528 ! Hex1HexNAc1NeuAc2 glycosylated residue
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:01208
@@ -24199,7 +24110,7 @@ xref: Source: "none"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:531"
 is_a: MOD:00742 ! copper containing modified residue
-is_a: MOD:00904 ! modified L-aspartic acid residue
+is_a: MOD:02066 ! metal or metal cluster coordinated L-aspartic acid residue
 
 [Term]
 id: MOD:01210
@@ -24219,7 +24130,7 @@ xref: Source: "none"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:531"
 is_a: MOD:00742 ! copper containing modified residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
+is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
 
 [Term]
 id: MOD:01211
@@ -24815,7 +24726,8 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:535"
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 relationship: derives_from MOD:01148 ! ubiquitinylated lysine
 
@@ -24958,7 +24870,7 @@ is_obsolete: true
 [Term]
 id: MOD:01248
 name: iodouridine monophosphate derivatized tyrosine
-def: "A protein modification that is produced by reaction of iodouridine monophosphate, or a polynucleotide containing iodouridine, with an L-tyrosine residue to form an ether linkage." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#Y]
+def: "A protein modification that is produced by reaction of iodouridine monophosphate with an L-tyrosine residue to form an ether linkage." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#Y]
 comment: This has an ether linkage and not a phosphodiester linkage with UMP.
 synonym: "Cross-link of (Iodo)-uracil MP with W,F,Y" RELATED Unimod-description []
 synonym: "IodoU-AMP" RELATED PSI-MS-label []
@@ -24978,7 +24890,7 @@ is_a: MOD:00919 ! modified L-tyrosine residue
 [Term]
 id: MOD:01249
 name: iodouridine monophosphate derivatized tryptophan
-def: "A protein modification that is produced by reaction of iodouridine monophosphate, or a polynucleotide containing iodouridine, with an L-tryptophan residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#W]
+def: "A protein modification that is produced by reaction of iodouridine monophosphate with an L-tryptophan residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#W]
 comment: This has a carbon-nitrogen linkage and not a phosphodiester linkage with UMP.
 synonym: "Cross-link of (Iodo)-uracil MP with W,F,Y" RELATED Unimod-description []
 synonym: "IodoU-AMP" RELATED PSI-MS-label []
@@ -24998,7 +24910,7 @@ is_a: MOD:00918 ! modified L-tryptophan residue
 [Term]
 id: MOD:01250
 name: iodouridine monophosphate derivatized phenylalanine
-def: "A protein modification that is produced by reaction of iodouridine monophosphate, or a polynucleotide containing iodouridine, with an L-phenylalanine residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#F]
+def: "A protein modification that is produced by reaction of iodouridine monophosphate with an L-phenylalanine residue." [PubMed:11112526, PubMed:11567090, PubMed:6540775, Unimod:292#F]
 comment: This has a carbon-carbon linkage and not a phosphodiester linkage with UMP.
 synonym: "Cross-link of (Iodo)-uracil MP with W,F,Y" RELATED Unimod-description []
 synonym: "IodoU-AMP" RELATED PSI-MS-label []
@@ -25230,7 +25142,7 @@ is_a: MOD:00916 ! modified L-serine residue
 
 [Term]
 id: MOD:01262
-name: nucleophilic addtion to cytopiloyne - site R
+name: nucleophilic addition to cytopiloyne - site R
 def: "modification from Unimod Chemical derivative -" [PubMed:12590383, PubMed:15549660, Unimod:270#R]
 synonym: "Cytopiloyne" RELATED PSI-MS-label []
 synonym: "nucleophilic addtion to cytopiloyne" RELATED Unimod-description []
@@ -27033,7 +26945,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:149"
 is_a: MOD:00517 ! Hex1HexNAc1NeuAc1 glycosylated residue
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:01355
@@ -27544,7 +27456,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0338"
 is_a: MOD:00687 ! thioether crosslinked residues
-is_a: MOD:00918 ! modified L-tryptophan residue
+is_a: MOD:02057 ! crosslinked L-tryptophan residue
 
 [Term]
 id: MOD:01381
@@ -27618,6 +27530,7 @@ xref: Origin: "C, C"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0324"
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:00689 ! disulfide crosslinked residues
 
 [Term]
@@ -27762,7 +27675,7 @@ xref: Origin: "C, I"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0361"
-is_a: MOD:00910 ! modified L-isoleucine residue
+is_a: MOD:02049 ! crosslinked L-isoleucine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -27785,7 +27698,7 @@ xref: Origin: "C, V"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0365"
-is_a: MOD:00920 ! modified L-valine residue
+is_a: MOD:02059 ! crosslinked L-valine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -27808,7 +27721,7 @@ xref: Origin: "C, V"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0373"
-is_a: MOD:00920 ! modified L-valine residue
+is_a: MOD:02059 ! crosslinked L-valine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -27831,7 +27744,7 @@ xref: Origin: "C, N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0352"
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 relationship: derives_from MOD:00656 ! C-methylated residue
@@ -27853,6 +27766,8 @@ xref: Origin: "C, S, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0358"
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01425 ! pyridinyl ring crosslinked residues
 
 [Term]
@@ -27874,6 +27789,8 @@ xref: Origin: "C, S, S"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0348"
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01425 ! pyridinyl ring crosslinked residues
 
 [Term]
@@ -27893,8 +27810,8 @@ xref: MassMono: "430.197811"
 xref: Origin: "I, T"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-is_a: MOD:00910 ! modified L-isoleucine residue
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02049 ! crosslinked L-isoleucine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01424 ! quinaldate modified residue
 
 [Term]
@@ -27940,7 +27857,7 @@ xref: Origin: "S, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0386"
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01422 ! oxazole/oxazoline ring crosslinked residues (Thr)
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -28006,12 +27923,6 @@ def: "A protein modification that effectively converts an L-lysine residue to an
 synonym: "L-lysyl-poly(ADP-ribose)" EXACT RESID-name []
 synonym: "MOD_RES Lysyl poly(ADP-ribose)" EXACT UniProt-feature []
 synonym: "poly[2'-adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with 1alpha-D-ribofuranosyl] (2S)-2,6-diaminohexanoate" EXACT RESID-systematic []
-xref: DiffAvg: "541.30"
-xref: DiffFormula: "C 15 H 21 N 5 O 13 P 2"
-xref: DiffMono: "541.061109"
-xref: Formula: "C 21 H 34 N 7 O 15 P 2"
-xref: MassAvg: "686.48"
-xref: MassMono: "686.158812"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
@@ -28102,7 +28013,7 @@ xref: Origin: "C, N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0359"
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -28123,7 +28034,7 @@ xref: MassMono: "180.035734"
 xref: Origin: "C, P"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00915 ! modified L-proline residue
+is_a: MOD:02054 ! crosslinked L-proline residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -28146,7 +28057,7 @@ xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0364"
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -28169,7 +28080,7 @@ xref: Origin: "C, F"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0366"
-is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 
 [Term]
@@ -28191,7 +28102,7 @@ xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0392"
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 
 [Term]
@@ -28399,7 +28310,7 @@ xref: MassMono: "none"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01419 ! oxazole/oxazoline ring crosslinked residues
 
 [Term]
@@ -28415,7 +28326,7 @@ xref: MassMono: "none"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01419 ! oxazole/oxazoline ring crosslinked residues
 
 [Term]
@@ -28453,12 +28364,10 @@ xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
-xref: Origin: "C, S, S"
+xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00033 ! crosslinked residues
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00916 ! modified L-serine residue
 
 [Term]
 id: MOD:01426
@@ -28597,8 +28506,8 @@ xref: Origin: "C, E"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00672 ! S-acylated residue
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 
 [Term]
 id: MOD:01436
@@ -28638,8 +28547,8 @@ xref: Origin: "C, P, S"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0380"
-is_a: MOD:00915 ! modified L-proline residue
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02054 ! crosslinked L-proline residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01629 ! cyclo[(prolylserin)-O-yl] cysteinate
 
 [Term]
@@ -28730,8 +28639,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0390"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00919 ! modified L-tyrosine residue
-is_a: MOD:00920 ! modified L-valine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
+is_a: MOD:02059 ! crosslinked L-valine residue
 
 [Term]
 id: MOD:01443
@@ -28751,8 +28660,8 @@ xref: TermSpec: "none"
 is_a: MOD:00438 ! myristoylated residue
 is_a: MOD:00738 ! iron containing modified residue
 is_a: MOD:00740 ! manganese containing modified residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:01444
@@ -28963,13 +28872,7 @@ comment: This linkage is not a Schiff-base [JSG].
 synonym: "(1Z,2S)-2-carboxy-1-[(3R,4R)-3,4-dihydroxy-5-(phosphonooxy)pentylidene]pyrrolidinium" EXACT RESID-systematic []
 synonym: "DNA glycosylase proline Schiff base intermediate" RELATED RESID-misnomer []
 synonym: "N-(DNA-1',2'-dideoxyribos-1'-ylidene)-L-prolinium" EXACT RESID-name []
-xref: DiffAvg: "179.09"
-xref: DiffFormula: "C 5 H 8 N 0 O 5 P 1"
-xref: DiffMono: "179.010386"
 xref: FormalCharge: "1+"
-xref: Formula: "C 10 H 16 N 1 O 6 P 1"
-xref: MassAvg: "277.21"
-xref: MassMono: "277.070975"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
@@ -29212,7 +29115,7 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:415"
 is_a: MOD:00744 ! molybdenum pterin containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02073 ! metal or metal cluster coordinated L-selenocysteine residue
 
 [Term]
 id: MOD:01469
@@ -29230,7 +29133,7 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00746 ! tungsten containing modified residue
 is_a: MOD:00748 ! pterin modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02073 ! metal or metal cluster coordinated L-selenocysteine residue
 
 [Term]
 id: MOD:01470
@@ -29498,7 +29401,7 @@ xref: MassMono: "239.126991"
 xref: Origin: "K, E"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00906 ! modified L-glutamic acid residue
+is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01630 ! N6-(L-isoglutamyl)-L-lysine
 
@@ -31625,8 +31528,8 @@ xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0422"
 is_a: MOD:00885 ! ester crosslinked residues
-is_a: MOD:00908 ! modified glycine residue
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -31651,7 +31554,7 @@ xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0423"
 is_a: MOD:00885 ! ester crosslinked residues
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:00917 ! modified L-threonine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
@@ -31943,8 +31846,8 @@ xref: Origin: "K, M"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0401"
-is_a: MOD:00912 ! modified L-lysine residue
-is_a: MOD:00913 ! modified L-methionine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
+is_a: MOD:02052 ! crosslinked L-methionine residue
 
 [Term]
 id: MOD:01603
@@ -32133,8 +32036,8 @@ xref: Origin: "C, H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00896 ! FMN modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02048 ! crosslinked L-histidine residue
 is_a: MOD:01621 ! flavin crosslinked residues
 
 [Term]
@@ -32234,7 +32137,7 @@ xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0410"
 is_a: MOD:00395 ! thioester crosslinked residues
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 
 [Term]
@@ -32299,8 +32202,8 @@ xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0418"
 is_a: MOD:00688 ! isopeptide crosslinked residues
-is_a: MOD:00901 ! modified L-alanine residue
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:02040 ! crosslinked L-alanine residue
+is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 
 [Term]
@@ -32309,7 +32212,7 @@ name: multisulfide crosslinked residues
 def: "A protein modification that crosslinks two cysteine residues by formation of a chain of two or more bonded sulfur atoms." [PubMed:18688235]
 subset: PSI-MOD-slim
 is_a: MOD:00033 ! crosslinked residues
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 
 [Term]
 id: MOD:01620
@@ -32384,7 +32287,7 @@ xref: Origin: "G, N"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0450"
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 is_a: MOD:01628 ! (2-aminosuccinimidyl)acetic acid
 
@@ -32461,7 +32364,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 
 [Term]
 id: MOD:01628
@@ -32478,7 +32381,7 @@ xref: MassMono: "154.037842"
 xref: Origin: "G, X"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01944 ! 2-aminosuccinimide ring crosslinked residues
 
 [Term]
@@ -32499,7 +32402,7 @@ xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 
 [Term]
 id: MOD:01630
@@ -32523,9 +32426,10 @@ xref: Origin: "K, X"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0397"
+is_a: MOD:02051 ! crosslinked L-lysine residue
+is_a: MOD:01875 ! N6-acylated L-lysine
 is_a: MOD:00688 ! isopeptide crosslinked residues
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
-is_a: MOD:01875 ! N6-acylated L-lysine
 
 [Term]
 id: MOD:01631
@@ -33150,12 +33054,6 @@ synonym: "(2S)-2-[(3R,4R)-3,4-dihydroxy-5-(phosphonooxy)pentylidene]amino-3-meth
 synonym: "ACT_SITE Schiff-base intermediate with DNA; via amino nitrogen" EXACT UniProt-feature []
 synonym: "DNA glycosylase valine Schiff base intermediate" EXACT RESID-alternate []
 synonym: "N-(DNA-1',2'-dideoxyribos-1'-ylidene)-L-valine" EXACT RESID-name []
-xref: DiffAvg: "178.08"
-xref: DiffFormula: "C 5 H 7 N 0 O 5 P 1"
-xref: DiffMono: "178.003110"
-xref: Formula: "C 10 H 17 N 1 O 6 P 1"
-xref: MassAvg: "278.22"
-xref: MassMono: "278.079349"
 xref: Origin: "V"
 xref: Source: "hypothetical"
 xref: TermSpec: "N-term"
@@ -35716,7 +35614,7 @@ xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0320"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
 [Term]
 id: MOD:01788
@@ -36038,7 +35936,7 @@ xref: Origin: "D, G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0490"
-is_a: MOD:00904 ! modified L-aspartic acid residue
+is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01928 ! N-(L-isoaspartyl)-glycine
 
@@ -36211,6 +36109,8 @@ xref: Origin: "C, S, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0454"
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01425 ! pyridinyl ring crosslinked residues
 
 [Term]
@@ -36232,7 +36132,7 @@ xref: Origin: "C, E"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0456"
-is_a: MOD:00906 ! modified L-glutamic acid residue
+is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -36299,7 +36199,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0544"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00918 ! modified L-tryptophan residue
+is_a: MOD:02057 ! crosslinked L-tryptophan residue
 
 [Term]
 id: MOD:01819
@@ -36817,8 +36717,8 @@ xref: Origin: "C, L"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0448"
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00911 ! modified L-leucine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02050 ! crosslinked L-leucine residue
 is_a: MOD:01856 ! oxazole/oxazoline ring crosslinked residues (Cys)
 
 [Term]
@@ -36840,8 +36740,8 @@ xref: Origin: "C, P"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0449"
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00915 ! modified L-proline residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02054 ! crosslinked L-proline residue
 is_a: MOD:01856 ! oxazole/oxazoline ring crosslinked residues (Cys)
 
 [Term]
@@ -36862,7 +36762,7 @@ xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 is_a: MOD:00742 ! copper containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:01847
@@ -36977,7 +36877,8 @@ xref: Origin: "C, K"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01853 ! L-lysinoalanine
 
 [Term]
@@ -37028,8 +36929,8 @@ xref: Origin: "C, M"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0495"
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00913 ! modified L-methionine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02052 ! crosslinked L-methionine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
 
 [Term]
@@ -37078,8 +36979,8 @@ xref: Origin: "C, F"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0451"
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:01861 ! isothiazolidinone ring crosslinked residues
 
 [Term]
@@ -37402,8 +37303,8 @@ xref: Origin: "C, R"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0457"
-is_a: MOD:00902 ! modified L-arginine residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02041 ! crosslinked L-arginine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:01883 ! 5-imidazolinone ring crosslinked residues (Cys)
 
 [Term]
@@ -37425,8 +37326,8 @@ xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0458"
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01856 ! oxazole/oxazoline ring crosslinked residues (Cys)
 
 [Term]
@@ -37447,7 +37348,7 @@ xref: Origin: "C, C, R, T"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 is_a: MOD:00742 ! copper containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:01880
@@ -37489,8 +37390,8 @@ xref: Origin: "F, V"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00692 ! uncategorized crosslinked residues
-is_a: MOD:00914 ! modified L-phenylalanine residue
-is_a: MOD:00920 ! modified L-valine residue
+is_a: MOD:02053 ! crosslinked L-phenylalanine residue
+is_a: MOD:02059 ! crosslinked L-valine residue
 
 [Term]
 id: MOD:01882
@@ -37623,8 +37524,8 @@ xref: MassMono: "281.107222"
 xref: Origin: "H, MOD:00030"
 xref: Source: "hypothetical"
 xref: TermSpec: "N-term"
-is_a: MOD:00909 ! modified L-histidine residue
-is_a: MOD:01450 ! modified N-formyl-L-methionine residue
+is_a: MOD:02048 ! crosslinked L-histidine residue
+is_a: MOD:02062 ! crosslinked N-formyl-L-methionine residue
 
 [Term]
 id: MOD:01891
@@ -37642,8 +37543,8 @@ xref: MassMono: "281.107222"
 xref: Origin: "H, M"
 xref: Source: "hypothetical"
 xref: TermSpec: "N-term"
-is_a: MOD:00909 ! modified L-histidine residue
-is_a: MOD:00913 ! modified L-methionine residue
+is_a: MOD:02048 ! crosslinked L-histidine residue
+is_a: MOD:02052 ! crosslinked L-methionine residue
 
 [Term]
 id: MOD:01892
@@ -37815,7 +37716,7 @@ xref: Origin: "C, R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0460"
-is_a: MOD:00902 ! modified L-arginine residue
+is_a: MOD:02041 ! crosslinked L-arginine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -37838,7 +37739,7 @@ xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0461"
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:01422 ! oxazole/oxazoline ring crosslinked residues (Thr)
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -37883,7 +37784,7 @@ xref: Origin: "I, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0463"
-is_a: MOD:00910 ! modified L-isoleucine residue
+is_a: MOD:02049 ! crosslinked L-isoleucine residue
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -37929,7 +37830,7 @@ xref: Origin: "S, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0465"
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01422 ! oxazole/oxazoline ring crosslinked residues (Thr)
 
 [Term]
@@ -38188,7 +38089,7 @@ xref: Origin: "D, K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0486"
-is_a: MOD:00904 ! modified L-aspartic acid residue
+is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:01929 ! N6-(L-isoaspartyl)-L-lysine
 
 [Term]
@@ -38321,7 +38222,7 @@ xref: Origin: "D, K"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 is_a: MOD:00688 ! isopeptide crosslinked residues
-is_a: MOD:00904 ! modified L-aspartic acid residue
+is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01875 ! N6-acylated L-lysine
 
@@ -38432,7 +38333,7 @@ xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 is_a: MOD:00688 ! isopeptide crosslinked residues
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
 
 [Term]
 id: MOD:01929
@@ -38526,7 +38427,7 @@ xref: MassMono: "239.163377"
 xref: Origin: "K, K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00912 ! modified L-lysine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 
 [Term]
@@ -38547,7 +38448,7 @@ xref: MassMono: "454.244881"
 xref: Origin: "K, K, K, K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00912 ! modified L-lysine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01425 ! pyridinyl ring crosslinked residues
 
 [Term]
@@ -38568,7 +38469,7 @@ xref: MassMono: "454.244881"
 xref: Origin: "K, K, K, K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00912 ! modified L-lysine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01425 ! pyridinyl ring crosslinked residues
 
 [Term]
@@ -38647,7 +38548,7 @@ xref: MassMono: "200.025563"
 xref: Origin: "C, N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:01945 ! 2-(2-aminosuccinimidyl)-3-sulfanylpropanoic acid
 
 [Term]
@@ -38667,7 +38568,7 @@ xref: MassMono: "200.025563"
 xref: Origin: "C, D"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00904 ! modified L-aspartic acid residue
+is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:01945 ! 2-(2-aminosuccinimidyl)-3-sulfanylpropanoic acid
 
 [Term]
@@ -38687,7 +38588,7 @@ xref: MassMono: "226.058971"
 xref: Origin: "E, N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:01946 ! 2-(2-aminosuccinimidyl)pentanedioic acid
 
 [Term]
@@ -38707,7 +38608,7 @@ xref: MassMono: "226.058971"
 xref: Origin: "D, E"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00904 ! modified L-aspartic acid residue
+is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:01946 ! 2-(2-aminosuccinimidyl)pentanedioic acid
 
 [Term]
@@ -38768,7 +38669,7 @@ xref: MassMono: "154.037842"
 xref: Origin: "C, X"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:01944 ! 2-aminosuccinimide ring crosslinked residues
 
 [Term]
@@ -38785,7 +38686,7 @@ xref: MassMono: "154.037842"
 xref: Origin: "E, X"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-is_a: MOD:00906 ! modified L-glutamic acid residue
+is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 is_a: MOD:01944 ! 2-aminosuccinimide ring crosslinked residues
 
 [Term]
@@ -38809,7 +38710,7 @@ xref: Origin: "D, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00885 ! ester crosslinked residues
-is_a: MOD:00904 ! modified L-aspartic acid residue
+is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01978 ! O-(L-isoaspartyl)-L-threonine
 
@@ -38831,7 +38732,7 @@ xref: MassMono: "241.052112"
 xref: Origin: "C, S, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01993 ! beta-carbon thioether crosslinked residues
 
 [Term]
@@ -38852,8 +38753,8 @@ xref: Origin: "F, Y, Y"
 xref: Source: "hypothetical"
 xref: TermSpec: "N-term"
 is_a: MOD:00033 ! crosslinked residues
-is_a: MOD:00914 ! modified L-phenylalanine residue
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02053 ! crosslinked L-phenylalanine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
 [Term]
 id: MOD:01950
@@ -38892,13 +38793,13 @@ xref: MassMono: "198.064057"
 xref: Origin: "Q, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00907 ! modified L-glutamine residue
+is_a: MOD:02046 ! crosslinked L-glutamine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 is_a: MOD:01977 ! O-(L-isoglutamyl)-L-serine
 
 [Term]
 id: MOD:01952
-name: O-(L-isoglutamyl)-L-threonine (cross-link)
+name: O-(L-isoglutamyl)-L-threonine (Gln-Thr)
 def: "A protein modification that effectively cross-links an L-threonine residue and an L-glutamine residue with an ester bond releasing ammonia to form O-(L-isoglutamyl)-L-threonine." [PubMed:17051152, RESID:AA0536#TQX]
 comment: Cross-link 2.
 synonym: "(2S)-2-amino-5-([(1S,2R)-1-amino-1-carboxypropan-2-yl]oxy)-5-oxopentanoic acid" EXACT RESID-systematic []
@@ -38916,9 +38817,10 @@ xref: MassMono: "212.079707"
 xref: Origin: "Q, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00885 ! ester crosslinked residues
-is_a: MOD:00907 ! modified L-glutamine residue
+is_a: MOD:02046 ! crosslinked L-glutamine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01979 ! O-(L-isoglutamyl)-L-threonine
+is_a: MOD:00885 ! ester crosslinked residues
 
 [Term]
 id: MOD:01953
@@ -38935,7 +38837,7 @@ xref: Origin: "C, C, C, C"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00738 ! iron containing modified residue
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:01954
@@ -38979,11 +38881,11 @@ xref: Origin: "A, D, D, E, E, E, H"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 is_a: MOD:00740 ! manganese containing modified residue
-is_a: MOD:00901 ! modified L-alanine residue
-is_a: MOD:00904 ! modified L-aspartic acid residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
-is_a: MOD:00909 ! modified L-histidine residue
 is_a: MOD:01482 ! calcium containing modified residue
+is_a: MOD:02065 ! metal or metal cluster coordinated L-alanine residue
+is_a: MOD:02066 ! metal or metal cluster coordinated L-aspartic acid residue
+is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
+is_a: MOD:02070 ! metal or metal cluster coordinated L-histidine residue
 
 [Term]
 id: MOD:01956
@@ -39049,7 +38951,7 @@ xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 
 [Term]
 id: MOD:01959
@@ -39068,8 +38970,8 @@ xref: Origin: "C, C, C, E"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00906 ! modified L-glutamic acid residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
 
 [Term]
 id: MOD:01960
@@ -39089,8 +38991,8 @@ xref: Origin: "C, C, C, Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00739 ! iron-sulfur cluster containing modification
-is_a: MOD:00905 ! modified L-cysteine residue
-is_a: MOD:00907 ! modified L-glutamine residue
+is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
+is_a: MOD:02069 ! metal or metal cluster coordinated L-glutamine residue
 
 [Term]
 id: MOD:01961
@@ -39432,12 +39334,6 @@ synonym: "S-poly(3-hydroxybutyric acid)cysteine" EXACT RESID-alternate []
 synonym: "S-poly(beta-hydroxybutyrate)cysteine" EXACT RESID-alternate []
 synonym: "S-poly[(R)-3-hydroxybutyrate]cysteine" EXACT RESID-alternate []
 synonym: "MOD_RES S-poly(beta-hydroxybutyryl)lysine" EXACT UniProt-feature []
-xref: DiffAvg: "172.18"
-xref: DiffFormula: "C 8 H 12 N 0 O 4 S 0"
-xref: DiffMono: "172.073559"
-xref: Formula: "C 11 H 17 N 1 O 5 S 1"
-xref: MassAvg: "275.32"
-xref: MassMono: "275.082744"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -39459,12 +39355,6 @@ synonym: "O3-poly(3-hydroxybutyric acid)serine" EXACT RESID-alternate []
 synonym: "O3-poly(beta-hydroxybutyrate)serine" EXACT RESID-alternate []
 synonym: "O3-poly[(R)-3-hydroxybutyrate]serine" EXACT RESID-alternate []
 synonym: "MOD_RES O3-poly(beta-hydroxybutyryl)lysine" EXACT UniProt-feature []
-xref: DiffAvg: "172.18"
-xref: DiffFormula: "C 8 H 12 N 0 O 4"
-xref: DiffMono: "172.073559"
-xref: Formula: "C 11 H 17 N 1 O 6"
-xref: MassAvg: "259.26"
-xref: MassMono: "259.105587"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -39492,7 +39382,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
 is_a: MOD:00885 ! ester crosslinked residues
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 
 [Term]
 id: MOD:01978
@@ -39514,7 +39404,7 @@ xref: Origin: "T, X"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 
 [Term]
 id: MOD:01979
@@ -39537,7 +39427,7 @@ xref: Origin: "T, X"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 
 [Term]
 id: MOD:01980
@@ -39577,7 +39467,7 @@ xref: MassMono: "186.046299"
 xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01993 ! beta-carbon thioether crosslinked residues
 
@@ -39650,7 +39540,7 @@ xref: MassMono: "172.030649"
 xref: Origin: "A, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00901 ! modified L-alanine residue
+is_a: MOD:02040 ! crosslinked L-alanine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
 
 [Term]
@@ -39670,7 +39560,7 @@ xref: Origin: "C, N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00664 ! stereoisomerized residue
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:02060 ! crosslinked D-asparagine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
 
 [Term]
@@ -39689,7 +39579,7 @@ xref: MassMono: "188.025563"
 xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
 
 [Term]
@@ -39709,7 +39599,7 @@ xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00664 ! stereoisomerized residue
-is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:02064 ! crosslinked D-serine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
 
 [Term]
@@ -39729,7 +39619,7 @@ xref: MassMono: "202.041213"
 xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
 
 [Term]
@@ -39750,7 +39640,7 @@ xref: Origin: "C, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00664 ! stereoisomerized residue
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02058 ! crosslinked L-tyrosine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
 
 [Term]
@@ -40356,7 +40246,8 @@ subset: PSI-MOD-slim
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00908 ! modified glycine residue
+is_a: MOD:02047 ! crosslinked glycine residue
+is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 relationship: contains MOD:00134 ! N6-glycyl-L-lysine
 
@@ -40408,7 +40299,7 @@ is_a: MOD:00915 ! modified L-proline residue
 
 [Term]
 id: MOD:02031
-name: dHex1Hex4HexNAc5
+name: dHex1Hex4HexNAc5 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, dHex Hex(4) HexNAc(5)" [PubMed:33135055, Unimod:1519]
 synonym: "dHex Hex(4) HexNAc(5)" RELATED Unimod-description []
 xref: DiffAvg: "1810.68"
@@ -40423,11 +40314,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:1519"
 xref: GNOme: "GNO:G03382KH"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:02032
-name: dHex2Hex4HexNAc5
+name: dHex2Hex4HexNAc5 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, dHex(2) Hex(4) HexNAc(5)" [PubMed:33135055, Unimod:1785]
 synonym: "dHex(2) Hex(4) HexNAc(5)" RELATED Unimod-description []
 xref: DiffAvg: "1956.82"
@@ -40442,11 +40333,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:1785"
 xref: GNOme: "GNO:G70418MS"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:02033
-name: dHex1Hex5HexNAc3
+name: dHex1Hex5HexNAc3 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, dHex Hex(5) HexNAc(3)" [PubMed:33135055, Unimod:1484]
 synonym: "dHex Hex(5) HexNAc(3)" RELATED Unimod-description []
 xref: DiffAvg: "1566.43"
@@ -40461,11 +40352,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:1484"
 xref: GNOme: "GNO:G82119TF"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:02034
-name: dHex1Hex3HexNAc6
+name: dHex1Hex3HexNAc6 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, dHex Hex(3) HexNAc(6)" [PubMed:33135055, Unimod:1781]
 synonym: "dHex Hex(3) HexNAc(6)" RELATED Unimod-description []
 xref: DiffAvg: "1851.73"
@@ -40480,11 +40371,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:1781"
 xref: GNOme: "GNO:G50757KG"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:02035
-name: dHex1Hex6HexNAc3
+name: dHex1Hex6HexNAc3 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, dHex Hex(6) HexNAc(3)" [PubMed:33135055, Unimod:1509]
 synonym: "dHex Hex(6) HexNAc(3)" RELATED Unimod-description []
 xref: DiffAvg: "1728.57"
@@ -40499,11 +40390,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:1509"
 xref: GNOme: "GNO:G84820NF"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:02036
-name: Hex9HexNAc2
+name: Hex9HexNAc2 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, Hex(9)HexNAc(2)" [PubMed:33135055, Unimod:1531]
 synonym: "M9/Man9" RELATED Unimod-description []
 xref: DiffAvg: "1865.66"
@@ -40518,11 +40409,11 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:1531"
 xref: GNOme: "GNO:G70101JE"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:02037
-name: Hex7HexNAc2
+name: Hex7HexNAc2 N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation, Hex(7) HexNAc(2)" [PubMed:33135055, Unimod:1480]
 synonym: "M7/Man7" RELATED Unimod-description []
 xref: DiffAvg: "1541.38"
@@ -40531,13 +40422,14 @@ xref: DiffMono: "1540.528509"
 xref: Formula: "C 62 H 102 N 4 O 47"
 xref: MassAvg: "1655.48"
 xref: MassMono: "1654.571436"
+xref: MassMono: "1654.571436"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1480"
 xref: GNOme: "GNO:G05724UK"
 is_a: MOD:00725 ! complex glycosylation
-is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:02038
@@ -40561,6 +40453,335 @@ xref: Unimod: "Unimod:34"
 xref: UniProt: "PTM-0176"
 is_a: MOD:00599 ! monomethylated residue
 is_a: MOD:00661 ! methylated histidine
+
+[Term]
+id: MOD:02039
+name: aminated residue
+def: "A protein modification that effectively replaces a hydrogen group with a amino group" []
+synonym: "AmRes" EXACT PSI-MOD-label []
+xref: Origin: "X"
+xref: Source: "none"
+xref: TermSpec: "none"
+is_a: MOD:01156 ! protein modification categorized by chemical process
+
+[Term]
+id: MOD:02040
+name: crosslinked L-alanine residue
+def: "A protein modification that contains an L-alanine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkAla" EXACT PSI-MOD-label []
+xref: Origin: "A"
+is_a: MOD:00901 ! modified L-alanine residue
+
+[Term]
+id: MOD:02041
+name: crosslinked L-arginine residue
+def: "A protein modification that contains an L-arginine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkArg" EXACT PSI-MOD-label []
+xref: Origin: "R"
+is_a: MOD:00902 ! modified L-arginine residue
+
+[Term]
+id: MOD:02042
+name: crosslinked L-asparagine residue
+def: "A protein modification that contains an L-asparagine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkAsn" EXACT PSI-MOD-label []
+xref: Origin: "N"
+is_a: MOD:00903 ! modified L-asparagine residue
+
+[Term]
+id: MOD:02043
+name: crosslinked L-aspartic acid residue
+def: "A protein modification that contains an L-aspartic acid residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkAsp" EXACT PSI-MOD-label []
+xref: Origin: "D"
+is_a: MOD:00904 ! modified L-aspartic acid residue
+
+[Term]
+id: MOD:02044
+name: crosslinked L-cysteine residue
+def: "A protein modification that contains an L-cysteine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkCys" EXACT PSI-MOD-label []
+xref: Origin: "C"
+is_a: MOD:00905 ! modified L-cysteine residue
+
+[Term]
+id: MOD:02045
+name: crosslinked L-glutamic acid residue
+def: "A protein modification that contains an L-glutamic acid residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkGlu" EXACT PSI-MOD-label []
+xref: Origin: "E"
+is_a: MOD:00906 ! modified L-glutamic acid residue
+
+[Term]
+id: MOD:02046
+name: crosslinked L-glutamine residue
+def: "A protein modification that contains an L-glutamine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkGln" EXACT PSI-MOD-label []
+xref: Origin: "Q"
+is_a: MOD:00907 ! modified L-glutamine residue
+
+[Term]
+id: MOD:02047
+name: crosslinked glycine residue
+def: "A protein modification that contains a glycine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkGly" EXACT PSI-MOD-label []
+xref: Origin: "G"
+is_a: MOD:00908 ! modified glycine residue
+
+[Term]
+id: MOD:02048
+name: crosslinked L-histidine residue
+def: "A protein modification that contains an L-histidine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkHis" EXACT PSI-MOD-label []
+xref: Origin: "H"
+is_a: MOD:00909 ! modified L-histidine residue
+
+[Term]
+id: MOD:02049
+name: crosslinked L-isoleucine residue
+def: "A protein modification that contains an L-isoleucine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkIle" EXACT PSI-MOD-label []
+xref: Origin: "I"
+is_a: MOD:00910 ! modified L-isoleucine residue
+
+[Term]
+id: MOD:02050
+name: crosslinked L-leucine residue
+def: "A protein modification that contains an L-leucine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkLeu" EXACT PSI-MOD-label []
+xref: Origin: "L"
+is_a: MOD:00911 ! modified L-leucine residue
+
+[Term]
+id: MOD:02051
+name: crosslinked L-lysine residue
+def: "A protein modification that contains an L-lysine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkLys" EXACT PSI-MOD-label []
+xref: Origin: "K"
+is_a: MOD:00912 ! modified L-lysine residue
+
+[Term]
+id: MOD:02052
+name: crosslinked L-methionine residue
+def: "A protein modification that contains an L-methionine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkMet" EXACT PSI-MOD-label []
+xref: Origin: "M"
+is_a: MOD:00913 ! modified L-methionine residue
+
+[Term]
+id: MOD:02053
+name: crosslinked L-phenylalanine residue
+def: "A protein modification that contains an L-phenylalanine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkPhe" EXACT PSI-MOD-label []
+xref: Origin: "F"
+is_a: MOD:00914 ! modified L-phenylalanine residue
+
+[Term]
+id: MOD:02054
+name: crosslinked L-proline residue
+def: "A protein modification that contains an L-proline residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkPro" EXACT PSI-MOD-label []
+xref: Origin: "P"
+is_a: MOD:00915 ! modified L-proline residue
+
+[Term]
+id: MOD:02055
+name: crosslinked L-serine residue
+def: "A protein modification that contains an L-serine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkSer" EXACT PSI-MOD-label []
+xref: Origin: "S"
+is_a: MOD:00916 ! modified L-serine residue
+
+[Term]
+id: MOD:02056
+name: crosslinked L-threonine residue
+def: "A protein modification that contains an L-threonine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkThr" EXACT PSI-MOD-label []
+xref: Origin: "T"
+is_a: MOD:00917 ! modified L-threonine residue
+
+[Term]
+id: MOD:02057
+name: crosslinked L-tryptophan residue
+def: "A protein modification that contains an L-tryptophan residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkTrp" EXACT PSI-MOD-label []
+xref: Origin: "W"
+is_a: MOD:00918 ! modified L-tryptophan residue
+
+[Term]
+id: MOD:02058
+name: crosslinked L-tyrosine residue
+def: "A protein modification that contains an L-tyrosine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkTyr" EXACT PSI-MOD-label []
+xref: Origin: "Y"
+is_a: MOD:00919 ! modified L-tyrosine residue
+
+[Term]
+id: MOD:02059
+name: crosslinked L-valine residue
+def: "A protein modification that contains an L-valine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkVal" EXACT PSI-MOD-label []
+xref: Origin: "V"
+is_a: MOD:00920 ! modified L-valine residue
+
+[Term]
+id: MOD:02060
+name: crosslinked D-asparagine residue
+def: "A protein modification that contains an D-asparagine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkDAsn" EXACT PSI-MOD-label []
+xref: Origin: "N"
+is_a: MOD:00203 ! D-asparagine
+
+[Term]
+id: MOD:02061
+name: crosslinked L-selenocysteine residue
+def: "A protein modification that contains an L-selenocysteine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "U"
+is_a: MOD:01158 ! modified L-selenocysteine residue
+
+[Term]
+id: MOD:02062
+name: crosslinked N-formyl-L-methionine residue
+def: "A protein modification that contains an N-formyl-L-methionine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "MOD:00030"
+is_a: MOD:01450 ! modified N-formyl-L-methionine residue
+
+[Term]
+id: MOD:02063
+name: crosslinked D-phenylalanine residue
+def: "A protein modification that contains an D-phenylalanine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkDPhe" EXACT PSI-MOD-label []
+xref: Origin: "F"
+is_a: MOD:00201 ! D-phenylalanine
+
+[Term]
+id: MOD:02064
+name: crosslinked D-serine residue
+def: "A protein modification that contains an D-serine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "XlnkDSer" EXACT PSI-MOD-label []
+xref: Origin: "S"
+is_a: MOD:00202 ! D-serine (Ser)
+
+[Term]
+id: MOD:02065
+name: metal or metal cluster coordinated L-alanine residue
+def: "A protein modification that contains an L-alanine residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "A"
+is_a: MOD:00901 ! modified L-alanine residue
+
+[Term]
+id: MOD:02066
+name: metal or metal cluster coordinated L-aspartic acid residue
+def: "A protein modification that contains an L-aspartic acid residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "D"
+is_a: MOD:00904 ! modified L-aspartic acid residue
+
+[Term]
+id: MOD:02067
+name: metal or metal cluster coordinated L-cysteine residue
+def: "A protein modification that contains an L-cysteine residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "C"
+is_a: MOD:00905 ! modified L-cysteine residue
+
+[Term]
+id: MOD:02068
+name: metal or metal cluster coordinated L-glutamic acid residue
+def: "A protein modification that contains an L-glutamic acid residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "E"
+is_a: MOD:00906 ! modified L-glutamic acid residue
+
+[Term]
+id: MOD:02069
+name: metal or metal cluster coordinated L-glutamine residue
+def: "A protein modification that contains an L-glutamine residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "Q"
+is_a: MOD:00907 ! modified L-glutamine residue
+
+[Term]
+id: MOD:02070
+name: metal or metal cluster coordinated L-histidine residue
+def: "A protein modification that contains an L-histidine residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "H"
+is_a: MOD:00909 ! modified L-histidine residue
+
+[Term]
+id: MOD:02071
+name: metal or metal cluster coordinated L-methionine residue
+def: "A protein modification that contains an L-methionine residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "M"
+is_a: MOD:00913 ! modified L-methionine residue
+
+[Term]
+id: MOD:02072
+name: metal or metal cluster coordinated L-serine residue
+def: "A protein modification that contains an L-serine residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "S"
+is_a: MOD:00916 ! modified L-serine residue
+
+[Term]
+id: MOD:02073
+name: metal or metal cluster coordinated L-selenocysteine residue
+def: "A protein modification that contains an L-selenocysteine residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "U"
+is_a: MOD:01158 ! modified L-selenocysteine residue
+
+[Term]
+id: MOD:02074
+name: metal or metal cluster coordinated L-lysine residue
+def: "A protein modification that contains an L-lysine residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "K"
+is_a: MOD:00912 ! modified L-lysine residue
+
+[Term]
+id: MOD:02075
+name: metal or metal cluster coordinated L-tyrosine residue
+def: "A protein modification that contains an L-tyrosine residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "Y"
+is_a: MOD:00919 ! modified L-tyrosine residue
+
+[Term]
+id: MOD:02076
+name: metal or metal cluster coordinated L-arginine residue
+def: "A protein modification that contains an L-arginine residue coordinated to one or more metal atoms or metal clusters." [PubMed:18688235]
+subset: PSI-MOD-slim
+xref: Origin: "R"
+is_a: MOD:00902 ! modified L-arginine residue
 
 [Typedef]
 id: contains
