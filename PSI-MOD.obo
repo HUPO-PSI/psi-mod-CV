@@ -3497,7 +3497,6 @@ xref: MassAvg: "197.24"
 xref: MassMono: "197.116427"
 xref: Origin: "K, S"
 xref: Source: "natural"
-xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0172"
 is_a: MOD:02055 ! crosslinked L-serine residue
