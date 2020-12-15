@@ -1,6 +1,6 @@
 format-version: 1.2
 ontology: mod
-date: 14:12:2020 19:11
+date: 15:12:2020 21:31
 saved-by: Paul M. Thomas
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
@@ -17,9 +17,9 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.026.1
+remark: PSI-MOD version: 1.027.0
 remark: RESID release: 75.00
-remark: ISO-8601 date: 2020-12-14 19:11Z
+remark: ISO-8601 date: 2020-12-15 21:31Z
 remark: Annotation note 01 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
 remark: Annotation note 02 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol "#" and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag "#var".
 remark: Annotation note 03 - When an entry in the Unimod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the Unimod cross-reference followed by a hash symbol and an amino acid code, "N-term" or "C-term".
@@ -1615,8 +1615,8 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1"
-is_a: MOD:00645 ! S-acetylated residue
-is_a: MOD:00646 ! acetylated L-cysteine
+is_a: MOD:00645 ! mono S-acetylated residue
+is_a: MOD:00646 ! monoacetylated L-cysteine
 
 [Term]
 id: MOD:00066
@@ -6077,6 +6077,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:275"
 xref: UniProt: "PTM-0280"
 is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:02077 ! nitrosylated residue
 
 [Term]
 id: MOD:00236
@@ -8989,7 +8990,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:442"
 xref: UniProt: "PTM-0126"
 is_a: MOD:00917 ! modified L-threonine residue
-is_a: MOD:01164 ! riboflavin-phosphoryl
+is_a: MOD:01164 ! riboflavin-phosphorylated residue
 
 [Term]
 id: MOD:00355
@@ -9016,7 +9017,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:442"
 xref: UniProt: "PTM-0125"
 is_a: MOD:00916 ! modified L-serine residue
-is_a: MOD:01164 ! riboflavin-phosphoryl
+is_a: MOD:01164 ! riboflavin-phosphorylated residue
 
 [Term]
 id: MOD:00356
@@ -9391,8 +9392,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1"
 xref: UniProt: "PTM-0232"
-is_a: MOD:00644 ! O-acetylated residue
-is_a: MOD:00647 ! acetylated L-serine
+is_a: MOD:00644 ! mono O-acetylated residue
+is_a: MOD:00647 ! monoacetylated L-serine
 is_a: MOD:02003 ! O3-acylated L-serine
 
 [Term]
@@ -9994,14 +9995,14 @@ is_a: MOD:00427 ! methylated residue
 
 [Term]
 id: MOD:00394
-name: acetylated residue
-def: "A protein modification that effectively replaces a hydrogen atom with an acetyl group." [DeltaMass:0, PubMed:11857757, PubMed:11999733, PubMed:12175151, PubMed:14730666, PubMed:15350136, Unimod:1]
+name: monoacetylated residue
+def: "A protein modification that effectively replaces one hydrogen atom with one acetyl group." [DeltaMass:0, PubMed:11857757, PubMed:11999733, PubMed:12175151, PubMed:14730666, PubMed:15350136, Unimod:1]
 comment: Amino hydrogens are replaced to produce amides; hydroxyl hydrogens are replaced to produce esters; and hydrosulfanyl (thiol) hydrogens are replaced to produce sulfanyl esters (thiol esters). From DeltaMass: Average Mass: 42
 subset: PSI-MOD-slim
 synonym: "Acetyl" RELATED PSI-MS-label []
 synonym: "Acetylation" RELATED Unimod-description []
 synonym: "Acetylation (N terminus, N epsilon of Lysine, O of Serine) (Ac)" EXACT DeltaMass-label []
-synonym: "AcRes" EXACT PSI-MOD-label []
+synonym: "Ac1Res" EXACT PSI-MOD-label []
 xref: DiffAvg: "42.04"
 xref: DiffFormula: "C 2 H 2 O 1"
 xref: DiffMono: "42.010565"
@@ -10012,7 +10013,7 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1"
-is_a: MOD:00649 ! acylated residue
+is_a: MOD:02078 ! acetylated residue
 
 [Term]
 id: MOD:00395
@@ -10256,7 +10257,7 @@ is_obsolete: true
 
 [Term]
 id: MOD:00408
-name: N-acetylated residue
+name: mono N-acetylated residue
 def: "A protein modification that effectively replaces a residue amino or imino hydrogen with an acetyl group." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "N-Acetyl" EXACT PSI-MOD-alternate []
@@ -10271,7 +10272,7 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00394 ! acetylated residue
+is_a: MOD:00394 ! monoacetylated residue
 is_a: MOD:00670 ! N-acylated residue
 
 [Term]
@@ -11272,7 +11273,7 @@ is_a: MOD:00708 ! sulfur oxygenated L-cysteine
 
 [Term]
 id: MOD:00461
-name: nitrosylation
+name: nitrated residue
 def: "A protein modification that effectively substitutes a nitrite (NO2) group for a hydrogen atom." [DeltaMass:0, PubMed:8839040, PubMed:9252331, Unimod:354]
 comment: Note, this is often misrepresented as the introduction of a nitrate (NO3) group [JSG].
 subset: PSI-MOD-slim
@@ -13445,7 +13446,7 @@ is_a: MOD:00003 ! Unimod
 
 [Term]
 id: MOD:00576
-name: crotonaldehyde
+name: crotonaldehyde modified residue
 def: "modification from Unimod Other" [PubMed:11283024, Unimod:253]
 synonym: "Crotonaldehyde" RELATED PSI-MS-label []
 synonym: "Crotonaldehyde" RELATED Unimod-description []
@@ -14332,7 +14333,7 @@ is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00626
-name: fluorescein-5-thiosemicarbazide
+name: fluorescein-5-thiosemicarbazide modified residue
 def: "modification from Unimod Chemical derivative" [PubMed:2883911, Unimod:478]
 synonym: "fluorescein-5-thiosemicarbazide" RELATED Unimod-description []
 synonym: "FTC" RELATED PSI-MS-label []
@@ -14678,7 +14679,7 @@ is_a: MOD:00003 ! Unimod
 
 [Term]
 id: MOD:00644
-name: O-acetylated residue
+name: mono O-acetylated residue
 def: "A protein modification that effectively replaces a residue hydroxyl group with an acetoxy group." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "OAcRes" EXACT PSI-MOD-label []
@@ -14691,12 +14692,12 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00394 ! acetylated residue
+is_a: MOD:00394 ! monoacetylated residue
 is_a: MOD:00671 ! O-acylated residue
 
 [Term]
 id: MOD:00645
-name: S-acetylated residue
+name: mono S-acetylated residue
 def: "A protein modification that effectively replaces a residue sulfanyl group with an acetylsulfanyl group." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "SAcRes" EXACT PSI-MOD-label []
@@ -14709,12 +14710,12 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00394 ! acetylated residue
+is_a: MOD:00394 ! monoacetylated residue
 is_a: MOD:00672 ! S-acylated residue
 
 [Term]
 id: MOD:00646
-name: acetylated L-cysteine
+name: monoacetylated L-cysteine
 def: "A protein modification that effectively converts an L-cysteine residue to either N-acetyl-L-cysteine or S-acetyl-L-cysteine." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "AcCys" EXACT PSI-MOD-label []
@@ -14726,12 +14727,12 @@ xref: MassAvg: "145.18"
 xref: MassMono: "145.019749"
 xref: Origin: "C"
 xref: Source: "natural"
-is_a: MOD:00394 ! acetylated residue
+is_a: MOD:00394 ! monoacetylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
 id: MOD:00647
-name: acetylated L-serine
+name: monoacetylated L-serine
 def: "A protein modification that effectively converts an L-serine residue to either N-acetyl-L-serine, O-acetyl-L-serine, or N,O-diacetyl-L-serine." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "AcSer" EXACT PSI-MOD-label []
@@ -14743,14 +14744,14 @@ xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "S"
 xref: Source: "natural"
-is_a: MOD:00394 ! acetylated residue
+is_a: MOD:00394 ! monoacetylated residue
 is_a: MOD:00916 ! modified L-serine residue
 
 [Term]
 id: MOD:00648
 name: N,O-diacetylated L-serine
 def: "A protein modification that effectively converts an L-serine residue to N,O-diacetyl-L-serine." [PubMed:16731519, PubMed:489587, PubMed:7309355, RESID:AA0051#var, RESID:AA0364#var]
-comment: The samples were prepared using glacial acetic acid, and were probably artifactual [JSG].
+comment: In one paper, the samples were prepared using glacial acetic acid, and were probably artifactual [JSG].
 synonym: "(S)-2-acetamido-3-acetyloxypropanoic acid" EXACT PSI-MOD-alternate []
 synonym: "N,O-diacetyl-L-serine" EXACT PSI-MOD-alternate []
 synonym: "N,O-diacetylserine" EXACT PSI-MOD-alternate []
@@ -14764,10 +14765,7 @@ xref: MassMono: "172.060983"
 xref: Origin: "S"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
-is_a: MOD:00408 ! N-acetylated residue
-is_a: MOD:00644 ! O-acetylated residue
-is_a: MOD:02003 ! O3-acylated L-serine
-is_a: MOD:00647 ! acetylated L-serine
+is_a: MOD:02080 ! diacetylated L-serine
 relationship: has_functional_parent MOD:00060 ! N-acetyl-L-serine
 relationship: has_functional_parent MOD:00369 ! O-acetyl-L-serine
 
@@ -15796,7 +15794,7 @@ xref: MassMono: "171.113353"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00408 ! N-acetylated residue
+is_a: MOD:00408 ! mono N-acetylated residue
 is_a: MOD:00912 ! modified L-lysine residue
 
 [Term]
@@ -15829,7 +15827,7 @@ is_a: MOD:00693 ! glycosylated residue
 
 [Term]
 id: MOD:00726
-name: glucosylated
+name: glucosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a glucose group through a glycosidic bond." [PubMed:18688235]
 synonym: "Glc" EXACT PSI-MOD-label []
 xref: DiffAvg: "162.14"
@@ -15845,7 +15843,7 @@ is_a: MOD:00693 ! glycosylated residue
 
 [Term]
 id: MOD:00727
-name: mannosylated
+name: mannosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a mannose group through a glycosidic bond," [PubMed:18688235]
 synonym: "Man" EXACT PSI-MOD-label []
 xref: DiffAvg: "162.14"
@@ -15861,7 +15859,7 @@ is_a: MOD:00693 ! glycosylated residue
 
 [Term]
 id: MOD:00728
-name: galactosylated
+name: galactosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a galactose group through a glycosidic bond." [PubMed:18688235]
 synonym: "Gal" EXACT PSI-MOD-label []
 xref: DiffAvg: "162.14"
@@ -15896,7 +15894,7 @@ is_a: MOD:00693 ! glycosylated residue
 
 [Term]
 id: MOD:00730
-name: arabinosylated
+name: arabinosylated residue
 def: "a protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a arabinose sugar group through a glycosidic bond" [PubMed:18688235]
 synonym: "Ara" EXACT PSI-MOD-label []
 xref: DiffAvg: "132.12"
@@ -15912,7 +15910,7 @@ is_a: MOD:00729 ! pentosylated residue
 
 [Term]
 id: MOD:00731
-name: ribosylated
+name: ribosylated residue
 def: "a protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a ribose sugar group through a glycosidic bond" [PubMed:18688235]
 synonym: "Rib" EXACT PSI-MOD-label []
 xref: DiffAvg: "132.12"
@@ -15928,7 +15926,7 @@ is_a: MOD:00729 ! pentosylated residue
 
 [Term]
 id: MOD:00732
-name: xylosylated
+name: xylosylated residue
 def: "a protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a xylose sugar group through a glycosidic bond" [PubMed:18688235]
 synonym: "Xyl" EXACT PSI-MOD-label []
 xref: DiffAvg: "132.12"
@@ -15944,7 +15942,7 @@ is_a: MOD:00729 ! pentosylated residue
 
 [Term]
 id: MOD:00733
-name: N-acetylaminoglucosylated
+name: N-acetylaminoglucosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with an N-acetylglucosamine group through a glycosidic bond." [PubMed:18688235]
 synonym: "GlcNAc" EXACT PSI-MOD-label []
 xref: DiffAvg: "203.19"
@@ -15956,11 +15954,11 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00436 ! N-acetylhexosaminylated
+is_a: MOD:00436 ! N-acetylhexosaminylated residue
 
 [Term]
 id: MOD:00734
-name: N-acetylaminogalactosylated
+name: N-acetylaminogalactosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with an N-acetylgalactosamine group through a glycosidic bond." [DeltaMass:247]
 comment: From DeltaMass: Average Mass: 203 Formula:C8H13O5N1 Monoisotopic Mass Change:203.079 Average Mass Change:203.196 References:PE Sciex
 synonym: "GalNAc" EXACT PSI-MOD-label []
@@ -15974,11 +15972,11 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00436 ! N-acetylhexosaminylated
+is_a: MOD:00436 ! N-acetylhexosaminylated residue
 
 [Term]
 id: MOD:00735
-name: hexosuronylated
+name: hexosuronylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a hexosuronic acid group through a glycosidic bond." [PubMed:18688235]
 synonym: "HexA" EXACT PSI-MOD-label []
 xref: DiffAvg: "176.12"
@@ -16014,7 +16012,7 @@ is_a: MOD:00693 ! glycosylated residue
 
 [Term]
 id: MOD:00737
-name: N-acetylneuraminylated
+name: N-acetylneuraminylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with an N-acetylneuraminic acid (sialic acid) group through a glycosidic bond." [DeltaMass:0]
 comment: From DeltaMass: Average Mass: 291
 synonym: "N-acetylneuraminic acid (Sialic acid, NeuAc, NANA, SA)" EXACT DeltaMass-label []
@@ -18753,6 +18751,16 @@ id: MOD:00895
 name: FAD modified residue
 def: "A protein modification that effectively results from forming an adduct with a compound containing a flavin adenine dinucleotide (FAD) group." [PubMed:18688235]
 subset: PSI-MOD-slim
+synonym: "FADRes" EXACT PSI-MOD-label []
+xref: DiffAvg: "783.54"
+xref: DiffFormula: "C 27 H 31 N 9 O 15 P 2"
+xref: DiffMono: "783.141485"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "natural"
+xref: TermSpec: "none"
 is_a: MOD:00697 ! flavin modified residue
 is_a: MOD:00861 ! phosphorus containing modified residue
 
@@ -18761,6 +18769,16 @@ id: MOD:00896
 name: FMN modified residue
 def: "A protein modification that effectively results from forming an adduct with a compound containing a riboflavin phosphate (flavin mononucleotide, FMN) group." [PubMed:18688235]
 subset: PSI-MOD-slim
+synonym: "FMNRes" EXACT PSI-MOD-label []
+xref: DiffAvg: "454.33"
+xref: DiffFormula: "C 17 H 19 N 4 O 9 P 1"
+xref: DiffMono: "454.088965"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "natural"
+xref: TermSpec: "none"
 is_a: MOD:00697 ! flavin modified residue
 is_a: MOD:00861 ! phosphorus containing modified residue
 
@@ -23130,7 +23148,7 @@ is_a: MOD:00701 ! nucleotide or nucleic acid modified residue
 
 [Term]
 id: MOD:01164
-name: riboflavin-phosphoryl
+name: riboflavin-phosphorylated residue
 def: "A protein modification that effectively results from forming an adduct with a compound containing a riboflavin phosphate (flavin mononucleotide, FMN) group through a phosphodiester bond." [Unimod:442]
 subset: PSI-MOD-slim
 synonym: "FMN" RELATED PSI-MS-label []
@@ -23145,7 +23163,7 @@ xref: Origin: "X"
 xref: Source: "none"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:442"
-is_a: MOD:00896 ! FMN modified residue
+is_a: MOD:00697 ! flavin modified residue
 
 [Term]
 id: MOD:01165
@@ -23299,8 +23317,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1"
 xref: UniProt: "PTM-0233"
-is_a: MOD:00644 ! O-acetylated residue
-is_a: MOD:01186 ! acetylated L-threonine
+is_a: MOD:00644 ! mono O-acetylated residue
+is_a: MOD:01186 ! monoacetylated L-threonine
 
 [Term]
 id: MOD:01172
@@ -23558,7 +23576,6 @@ xref: Origin: "C, H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0681"
-is_a: MOD:00895 ! FAD modified residue
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02048 ! crosslinked L-histidine residue
 is_a: MOD:01621 ! flavin crosslinked residues
@@ -23658,7 +23675,7 @@ is_a: MOD:00904 ! modified L-aspartic acid residue
 
 [Term]
 id: MOD:01186
-name: acetylated L-threonine
+name: monoacetylated L-threonine
 def: "A protein modification that effectively converts an L-threonine residue to either N-acetyl-L-threonne, or O-acetyl-Lthreonine." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "AcThr" EXACT PSI-MOD-label []
@@ -23670,7 +23687,7 @@ xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "T"
 xref: Source: "natural"
-is_a: MOD:00394 ! acetylated residue
+is_a: MOD:00394 ! monoacetylated residue
 is_a: MOD:00917 ! modified L-threonine residue
 
 [Term]
@@ -26882,7 +26899,7 @@ xref: Origin: "W"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:354"
-is_a: MOD:00461 ! nitrosylation
+is_a: MOD:00461 ! nitrated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
@@ -26905,7 +26922,7 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:354"
 xref: UniProt: "PTM-0213"
-is_a: MOD:00461 ! nitrosylation
+is_a: MOD:00461 ! nitrated residue
 is_a: MOD:00919 ! modified L-tyrosine residue
 
 [Term]
@@ -26948,7 +26965,7 @@ is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:01355
-name: Hex1HexNAc1NeuAc1O-glycosylated threonine
+name: Hex1HexNAc1NeuAc1 O-glycosylated threonine
 def: "A protein modification that effectively replaces an O3 hydrogen atom of a threonine residue with a carbohydrate-like group composed of Hex1HexNAc1NeuAc1 linked through a glycosidic bond." [Unimod:149#T]
 synonym: "Hex(1)HexNAc(1)NeuAc(1)" RELATED PSI-MS-label []
 synonym: "Hex1HexNAc1NeuAc1" RELATED Unimod-description []
@@ -27134,7 +27151,7 @@ xref: Origin: "S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:478"
-is_a: MOD:00626 ! fluorescein-5-thiosemicarbazide
+is_a: MOD:00626 ! fluorescein-5-thiosemicarbazide modified residue
 is_a: MOD:00916 ! modified L-serine residue
 
 [Term]
@@ -27153,7 +27170,7 @@ xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:478"
-is_a: MOD:00626 ! fluorescein-5-thiosemicarbazide
+is_a: MOD:00626 ! fluorescein-5-thiosemicarbazide modified residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
@@ -27172,7 +27189,7 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:478"
-is_a: MOD:00626 ! fluorescein-5-thiosemicarbazide
+is_a: MOD:00626 ! fluorescein-5-thiosemicarbazide modified residue
 is_a: MOD:00912 ! modified L-lysine residue
 
 [Term]
@@ -27191,7 +27208,7 @@ xref: Origin: "P"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:478"
-is_a: MOD:00626 ! fluorescein-5-thiosemicarbazide
+is_a: MOD:00626 ! fluorescein-5-thiosemicarbazide modified residue
 is_a: MOD:00915 ! modified L-proline residue
 
 [Term]
@@ -27210,7 +27227,7 @@ xref: Origin: "R"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:478"
-is_a: MOD:00626 ! fluorescein-5-thiosemicarbazide
+is_a: MOD:00626 ! fluorescein-5-thiosemicarbazide modified residue
 is_a: MOD:00902 ! modified L-arginine residue
 
 [Term]
@@ -28947,7 +28964,7 @@ xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:1"
-is_a: MOD:00408 ! N-acetylated residue
+is_a: MOD:00408 ! mono N-acetylated residue
 is_a: MOD:01696 ! alpha-amino acylated residue
 
 [Term]
@@ -32034,7 +32051,6 @@ xref: MassMono: "692.141411"
 xref: Origin: "C, H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00896 ! FMN modified residue
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02048 ! crosslinked L-histidine residue
 is_a: MOD:01621 ! flavin crosslinked residues
@@ -33219,7 +33235,7 @@ xref: Origin: "X"
 xref: Source: "none"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:43"
-is_a: MOD:00436 ! N-acetylhexosaminylated
+is_a: MOD:00436 ! N-acetylhexosaminylated residue
 
 [Term]
 id: MOD:01674
@@ -40781,6 +40797,72 @@ def: "A protein modification that contains an L-arginine residue coordinated to 
 subset: PSI-MOD-slim
 xref: Origin: "R"
 is_a: MOD:00902 ! modified L-arginine residue
+
+[Term]
+id: MOD:02077
+name: nitrosylated residue
+def: "A protein modification that effectively replaces a hydrogen atom with an nitrosyl (NO) group." [PubMed:10442087, PubMed:11562475, PubMed:15688001, PubMed:8626764, PubMed:8637569, Unimod:275]
+subset: PSI-MOD-slim
+synonym: "Nitrosyl" RELATED PSI-MS-label []
+xref: DiffAvg: "29.00"
+xref: DiffFormula: "C 0 H -1 N 1 O 1 S 0"
+xref: DiffMono: "28.990164"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:275"
+is_a: MOD:01156 ! protein modification categorized by chemical process
+
+[Term]
+id: MOD:02078
+name: acetylated residue
+def: "A protein modification that effectively replaces one or more hydrogen atoms with one or more acetyl groups." [PubMed:11857757, PubMed:11999733, PubMed:12175151, PubMed:14730666, PubMed:15350136]
+subset: PSI-MOD-slim
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "AcRes" EXACT PSI-MOD-label []
+xref: Origin: "X"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:00649 ! acylated residue
+
+[Term]
+id: MOD:02079
+name: diacetylated residue
+def: "A protein modification that effectively replaces one hydrogen atom with one acetyl group." [PubMed:11857757, PubMed:11999733, PubMed:12175151, PubMed:14730666, PubMed:15350136, Unimod:1]
+comment: Amino hydrogens are replaced to produce amides; hydroxyl hydrogens are replaced to produce esters; and hydrosulfanyl (thiol) hydrogens are replaced to produce sulfanyl esters (thiol esters). From DeltaMass: Average Mass: 42
+subset: PSI-MOD-slim
+synonym: "Diacetyl" RELATED PSI-MS-label []
+synonym: "Ac2Res" EXACT PSI-MOD-label []
+xref: DiffAvg: "84.07"
+xref: DiffFormula: "C 4 H 4 N 0 O 2"
+xref: DiffMono: "84.021129"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:02078 ! acetylated residue
+
+[Term]
+id: MOD:02080
+name: diacetylated L-serine
+def: "A protein modification that effectively converts an L-serine residue to either N-acetyl-L-serine, O-acetyl-L-serine, or N,O-diacetyl-L-serine." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "Ac2Ser" EXACT PSI-MOD-label []
+xref: DiffAvg: "84.07"
+xref: DiffFormula: "C 4 H 4 N 0 O 2"
+xref: DiffMono: "84.021129"
+xref: Formula: "C 7 H 10 N 1 O 4"
+xref: MassAvg: "172.16"
+xref: MassMono: "172.060983"
+xref: Origin: "S"
+xref: Source: "natural"
+is_a: MOD:02079 ! diacetylated residue
+is_a: MOD:00916 ! modified L-serine residue
 
 [Typedef]
 id: contains
