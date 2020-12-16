@@ -11532,7 +11532,7 @@ xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:97"
-is_a: MOD:00417 ! S-carboxamidoethyl-L-cysteine
+relationship: derives_from MOD:00417 ! S-carboxamidoethyl-L-cysteine
 is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 
 [Term]
