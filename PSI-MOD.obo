@@ -3675,7 +3675,7 @@ xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:64"
 xref: UniProt: "PTM-0181"
-is_a: MOD:00457 ! alpha-amino succinylated residue
+is_a: MOD:02081 ! alpha-amino succinylated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
@@ -11196,7 +11196,7 @@ xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:64"
-is_a: MOD:01029 ! succinylated residue
+relationship: derives_from MOD:01029 ! succinylated residue
 is_a: MOD:01696 ! alpha-amino acylated residue
 is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 
@@ -37278,9 +37278,7 @@ is_a: MOD:00912 ! modified L-lysine residue
 [Term]
 id: MOD:01876
 name: 4x(1)H,4x(12)C-labeled alpha-amino succinylated residue
-def: "A protein modification that effectively replaces a residue alpha-amino- or alpha-imino-hydrogen with a 4x(12)C labeled succinyl group." [PubMed:11857757, PubMed:12175151, PubMed:12716131, Unimod:64]
-synonym: "Succinic anhydride labeling reagent, light form (+4amu, 4H2) site N-term" RELATED Unimod-description []
-synonym: "Succinyl" RELATED PSI-MS-label []
+def: "OBSOLETE because identical to MOD:00457" [PubMed:18688235]
 xref: DiffAvg: "100.02"
 xref: DiffFormula: "(12)C 4 (1)H 4 O 3"
 xref: DiffMono: "100.016044"
@@ -37290,9 +37288,8 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
-xref: Unimod: "Unimod:64"
-is_a: MOD:00457 ! alpha-amino succinylated residue
-is_a: MOD:01426 ! isotope tagged reagent derivatized residue
+xref: Remap: "MOD:00457"
+is_obsolete: true
 
 [Term]
 id: MOD:01877
@@ -40859,6 +40856,25 @@ xref: Origin: "S"
 xref: Source: "natural"
 is_a: MOD:02079 ! diacetylated residue
 is_a: MOD:00916 ! modified L-serine residue
+
+[Term]
+id: MOD:02081
+name: alpha-amino succinylated residue
+def: "A protein modification that effectively replaces a residue alpha-amino- or alpha-imino-hydrogen with a succinyl group." [PubMed:11857757, PubMed:12175151, Unimod:64#N-term]
+synonym: "Succinyl" RELATED PSI-MS-label []
+xref: DiffAvg: "100.07"
+xref: DiffFormula: "C 4 H 4 O 3"
+xref: DiffMono: "100.016044"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "natural"
+xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:64"
+is_a: MOD:01029 ! succinylated residue
+is_a: MOD:01696 ! alpha-amino acylated residue
+is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 
 [Typedef]
 id: contains
