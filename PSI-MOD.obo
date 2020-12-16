@@ -625,7 +625,7 @@ is_a: MOD:01441 ! natural, standard, encoded residue
 [Term]
 id: MOD:00030
 name: N-formyl-L-methionine residue
-def: "A protein modification that effectively converts a source amino acid residue to an N-formyl-L-methionine, a natural pretranslational modification." [ChEBI:33718, OMSSA:22, PubMed:10825024, PubMed:11152118, PubMed:2165784, PubMed:3042771, PubMed:8758896, RESID:AA0021#FMET, Unimod:107#N-term]
+def: "A protein modification that effectively converts a source amino acid residue to an N-formyl-L-methionine, a natural pretranslational modification." [ChEBI:33718, OMSSA:22, PubMed:10825024, PubMed:11152118, PubMed:2165784, PubMed:3042771, PubMed:8758896, RESID:AA0021#FMET]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-formylamino-4-(methylsulfanyl)butanoic acid" EXACT RESID-systematic []
 synonym: "2-formamido-4-(methylsulfanyl)butanoic acid" EXACT RESID-alternate []
@@ -647,7 +647,6 @@ xref: MassMono: "160.043225"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: Unimod: "Unimod:107"
 is_a: MOD:00868 ! natural, non-standard encoded residue
 
 [Term]
@@ -26178,7 +26177,7 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:64"
 is_a: MOD:01426 ! isotope tagged reagent derivatized residue
-is_a: MOD:01819 ! N6-succinyl-L-lysine
+relationship: derives_from MOD:01819 ! N6-succinyl-L-lysine
 
 [Term]
 id: MOD:01315
