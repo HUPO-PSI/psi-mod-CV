@@ -5793,7 +5793,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:409"
 xref: UniProt: "PTM-0271"
-is_a: MOD:00896 ! FMN modified residue
+is_a: MOD:02084 ! 6-FMN modified residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
@@ -9015,7 +9015,7 @@ is_a: MOD:01164 ! riboflavin-phosphorylated residue
 
 [Term]
 id: MOD:00356
-name: S-(4a-FMN)-L-cysteine
+name: S-(4alpha-FMN)-L-cysteine
 def: "A protein modification that effectively converts an L-cysteine residue to S-(4a-FMN)-L-cysteine." [PubMed:12668455, PubMed:12846567, PubMed:7692961, RESID:AA0351, Unimod:443#C]
 subset: PSI-MOD-slim
 synonym: "(R)-2-amino-3-(4a-riboflavin 5'-dihydrogen phosphate)sulfanylpropanoic acid" EXACT RESID-systematic []
@@ -9037,7 +9037,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:443"
 xref: UniProt: "PTM-0270"
-is_a: MOD:00896 ! FMN modified residue
+is_a: MOD:02083 ! 4alpha-FMN modified residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
@@ -9066,7 +9066,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:409"
 xref: UniProt: "PTM-0289"
-is_a: MOD:00896 ! FMN modified residue
+is_a: MOD:02085 ! 8alpha-FMN modified residue
 is_a: MOD:00909 ! modified L-histidine residue
 
 [Term]
@@ -9094,7 +9094,7 @@ xref: Origin: "H"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:409"
-is_a: MOD:00896 ! FMN modified residue
+is_a: MOD:02085 ! 8alpha-FMN modified residue
 is_a: MOD:00909 ! modified L-histidine residue
 
 [Term]
@@ -18767,9 +18767,9 @@ name: FMN modified residue
 def: "A protein modification that effectively results from forming an adduct with a compound containing a riboflavin phosphate (flavin mononucleotide, FMN) group." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "FMNRes" EXACT PSI-MOD-label []
-xref: DiffAvg: "454.33"
-xref: DiffFormula: "C 17 H 19 N 4 O 9 P 1"
-xref: DiffMono: "454.088965"
+xref: DiffAvg: "none"
+xref: DiffFormula: "none"
+xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
@@ -40897,6 +40897,57 @@ xref: Origin: "X"
 xref: Source: "none"
 xref: TermSpec: "none"
 is_a: MOD:00683 ! dehydrogenated residue
+
+[Term]
+id: MOD:02083
+name: 4alpha-FMN modified residue
+def: "A protein modification that effectively results from forming an adduct with a compound containing a riboflavin phosphate (flavin mononucleotide, FMN) group through the 4-alpha position of FMN." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "4aFMNRes" EXACT PSI-MOD-label []
+xref: DiffFormula: "C 17 H 21 N 4 O 9 P 1"
+xref: DiffAvg: "456.35"
+xref: DiffMono: "456.104615"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "natural"
+xref: TermSpec: "none"
+is_a: MOD:00896 ! FMN modified residue
+
+[Term]
+id: MOD:02084
+name: 6-FMN modified residue
+def: "A protein modification that effectively results from forming an adduct with a compound containing a riboflavin phosphate (flavin mononucleotide, FMN) group through the 6 position of FMN." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "6-FMNRes" EXACT PSI-MOD-label []
+xref: DiffAvg: "454.33"
+xref: DiffFormula: "C 17 H 19 N 4 O 9 P 1"
+xref: DiffMono: "454.088965"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "natural"
+xref: TermSpec: "none"
+is_a: MOD:00896 ! FMN modified residue
+
+[Term]
+id: MOD:02085
+name: 8alpha-FMN modified residue
+def: "A protein modification that effectively results from forming an adduct with a compound containing a riboflavin phosphate (flavin mononucleotide, FMN) group through the 8-alpha position of FMN." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "8a-FMNRes" EXACT PSI-MOD-label []
+xref: DiffAvg: "454.33"
+xref: DiffFormula: "C 17 H 19 N 4 O 9 P 1"
+xref: DiffMono: "454.088965"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "natural"
+xref: TermSpec: "none"
+is_a: MOD:00896 ! FMN modified residue
 
 [Typedef]
 id: contains
