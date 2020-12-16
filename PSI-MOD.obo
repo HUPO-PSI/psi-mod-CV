@@ -648,9 +648,7 @@ xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:107"
-is_a: MOD:00409 ! N-formylated residue
 is_a: MOD:00868 ! natural, non-standard encoded residue
-is_a: MOD:01696 ! alpha-amino acylated residue
 
 [Term]
 id: MOD:00031
