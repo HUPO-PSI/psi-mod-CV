@@ -6282,7 +6282,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0376"
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:00244
@@ -6327,7 +6327,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0377"
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:00246
@@ -6350,7 +6350,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0378"
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:00247
@@ -6373,7 +6373,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0363"
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:00248
@@ -6396,7 +6396,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0375"
 is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:00249
@@ -6418,7 +6418,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0360"
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:00250
@@ -6439,7 +6439,7 @@ xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:00251
@@ -27695,7 +27695,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0361"
 is_a: MOD:02049 ! crosslinked L-isoleucine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01390
@@ -27718,7 +27718,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0365"
 is_a: MOD:02059 ! crosslinked L-valine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01391
@@ -28033,7 +28033,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0359"
 is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01405
@@ -28054,7 +28054,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:02054 ! crosslinked L-proline residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01406
@@ -28077,7 +28077,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0364"
 is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01407
@@ -36151,7 +36151,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0456"
 is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01816
@@ -37732,7 +37732,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0460"
 is_a: MOD:02041 ! crosslinked L-arginine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01900
@@ -37755,7 +37755,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0461"
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:01422 ! oxazole/oxazoline ring crosslinked residues (Thr)
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01901
@@ -37777,7 +37777,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0462"
 is_a: MOD:01422 ! oxazole/oxazoline ring crosslinked residues (Thr)
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01902
@@ -37800,7 +37800,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0463"
 is_a: MOD:02049 ! crosslinked L-isoleucine residue
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01903
@@ -37822,7 +37822,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0464"
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01904
@@ -40881,6 +40881,23 @@ xref: Unimod: "Unimod:64"
 is_a: MOD:01029 ! succinylated residue
 is_a: MOD:01696 ! alpha-amino acylated residue
 is_a: MOD:01426 ! isotope tagged reagent derivatized residue
+
+[Term]
+id: MOD:02082
+name: didehydrogenated and dehydrated residue
+def: "A protein modification that effectively removes two neutral hydrogen atoms (proton and electron) and a water moiety from a residue." [Unimod:401]
+subset: PSI-MOD-slim
+synonym: "2dHdH2ORes" EXACT PSI-MOD-label []
+xref: DiffAvg: "-20.03"
+xref: DiffFormula: "C 0 H -4 N 0 O -1"
+xref: DiffMono: "-20.026215"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "none"
+xref: TermSpec: "none"
+is_a: MOD:00683 ! dehydrogenated residue
 
 [Typedef]
 id: contains
