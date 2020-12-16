@@ -16492,7 +16492,6 @@ xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:348"
-is_a: MOD:00012 ! L-asparagine residue
 is_a: MOD:00909 ! modified L-histidine residue
 
 [Term]
@@ -16513,7 +16512,6 @@ xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:349"
-is_a: MOD:00013 ! L-aspartic acid residue
 is_a: MOD:00909 ! modified L-histidine residue
 
 [Term]
@@ -18298,7 +18296,6 @@ xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0314"
-is_a: MOD:00010 ! L-alanine residue
 is_a: MOD:00904 ! modified L-aspartic acid residue
 
 [Term]
@@ -19561,7 +19558,6 @@ xref: MassMono: "129.042593"
 xref: Origin: "E"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00015 ! L-glutamic acid residue
 is_a: MOD:00906 ! modified L-glutamic acid residue
 is_a: MOD:00957 ! modified residue with neutral loss of carbon dioxide
 is_a: MOD:00960 ! decarboxylated residue
@@ -20092,7 +20088,6 @@ xref: MassMono: "150.953635"
 xref: Origin: "S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00031 ! L-selenocysteine residue
 is_a: MOD:00916 ! modified L-serine residue
 
 [Term]
@@ -23663,7 +23658,6 @@ xref: MassMono: "114.042927"
 xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00012 ! L-asparagine residue
 is_a: MOD:00674 ! amidated residue
 is_a: MOD:00904 ! modified L-aspartic acid residue
 
@@ -28826,7 +28820,7 @@ xref: MassMono: "166.998359"
 xref: Origin: "S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00046 ! O-phospho-L-serine
+is_a: MOD:00916 ! modified L-serine
 is_a: MOD:00431 ! modified residue with a secondary neutral loss
 relationship: derives_from MOD:00159 ! O-phosphopantetheine-L-serine
 
@@ -28845,7 +28839,7 @@ xref: MassMono: "166.998359"
 xref: Origin: "MOD:00159"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00046 ! O-phospho-L-serine
+is_a: MOD:00916 ! modified L-serine
 is_a: MOD:00431 ! modified residue with a secondary neutral loss
 relationship: derives_from MOD:00159 ! O-phosphopantetheine-L-serine
 
