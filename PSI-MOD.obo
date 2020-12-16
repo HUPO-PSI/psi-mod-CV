@@ -15602,7 +15602,7 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00430 ! trimethylated residue
+is_a: MOD:00427 ! methylated residue
 
 [Term]
 id: MOD:00712
