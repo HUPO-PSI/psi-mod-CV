@@ -11691,7 +11691,6 @@ xref: Origin: "M"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 xref: UniProt: "PTM-0212"
-is_a: MOD:00030 ! N-formyl-L-methionine residue
 is_a: MOD:00913 ! modified L-methionine residue
 
 [Term]
