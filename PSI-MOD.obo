@@ -11216,7 +11216,9 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:65"
-is_a: MOD:00457 ! alpha-amino succinylated residue
+relationship: derives_from MOD:01029 ! succinylated residue
+is_a: MOD:01696 ! alpha-amino acylated residue
+is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 
 [Term]
 id: MOD:00459
@@ -11233,7 +11235,9 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:66"
-is_a: MOD:00457 ! alpha-amino succinylated residue
+relationship: derives_from MOD:01029 ! succinylated residue
+is_a: MOD:01696 ! alpha-amino acylated residue
+is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 
 [Term]
 id: MOD:00460
@@ -22053,7 +22057,6 @@ xref: Origin: "D"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 is_a: MOD:00904 ! modified L-aspartic acid residue
-is_a: MOD:01029 ! succinylated residue
 
 [Term]
 id: MOD:01100
@@ -26175,8 +26178,9 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:64"
-is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 relationship: derives_from MOD:01819 ! N6-succinyl-L-lysine
+is_a: MOD:00670 ! N-acylated residue
+is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 
 [Term]
 id: MOD:01315
@@ -26194,7 +26198,9 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:65"
-is_a: MOD:01819 ! N6-succinyl-L-lysine
+relationship: derives_from MOD:01819 ! N6-succinyl-L-lysine
+is_a: MOD:00670 ! N-acylated residue
+is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 
 [Term]
 id: MOD:01316
@@ -26212,7 +26218,9 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:66"
-is_a: MOD:01819 ! N6-succinyl-L-lysine
+relationship: derives_from MOD:01819 ! N6-succinyl-L-lysine
+is_a: MOD:00670 ! N-acylated residue
+is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 
 [Term]
 id: MOD:01317
