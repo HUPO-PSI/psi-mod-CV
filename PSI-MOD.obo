@@ -15413,21 +15413,20 @@ is_a: MOD:00861 ! phosphorus containing modified residue
 [Term]
 id: MOD:00697
 name: flavin modified residue
-def: "A protein modification that effectively results from forming an adduct with a compound containing a flavin group." [Unimod:50]
+def: "A protein modification that effectively results from forming an adduct with a compound containing a flavin group." []
 subset: PSI-MOD-slim
 synonym: "FAD" RELATED PSI-MS-label []
 synonym: "Flavin adenine dinucleotide" RELATED Unimod-description []
 synonym: "FlavRes" EXACT PSI-MOD-label []
-xref: DiffAvg: "783.54"
-xref: DiffFormula: "C 27 H 31 N 9 O 15 P 2 S 0"
-xref: DiffMono: "783.141485"
+xref: DiffAvg: "none"
+xref: DiffFormula: "none"
+xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: Unimod: "Unimod:50"
 is_a: MOD:01156 ! protein modification categorized by chemical process
 
 [Term]
