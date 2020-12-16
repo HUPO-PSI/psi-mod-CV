@@ -4262,10 +4262,9 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:393"
-is_a: MOD:00037 ! 5-hydroxy-L-lysine
+relationship: derives_from MOD:00037 ! 5-hydroxy-L-lysine
+is_a: MOD:00912 ! modified L-lysine residue
 is_a: MOD:00396 ! O-glycosylated residue
-is_a: MOD:00476 ! galactosylated residue
-is_a: MOD:00726 ! glucosylated
 
 [Term]
 id: MOD:00163
@@ -4823,8 +4822,8 @@ is_a: MOD:00972 ! monobrominated L-phenylalanine
 
 [Term]
 id: MOD:00186
-name: 3',3'',5'-triiodo-L-thyronine
-def: "A protein modification that effectively substitutes an L-tyrosine residue with 3',3'',5'-triiodo-L-thyronine." [ChEBI:18258, DeltaMass:0, RESID:AA0177, Unimod:397]
+name: 3,3',5-triiodo-L-thyronine
+def: "A protein modification that effectively substitutes an L-tyrosine residue with 3,3',5-triiodo-L-thyronine." [ChEBI:18258, DeltaMass:0, RESID:AA0177, Unimod:397]
 comment: From DeltaMass: Average Mass: 470.
 subset: PSI-MOD-slim
 synonym: "(S)-2-amino-3-[4-(4-hydroxy-3-iodophenoxy)-3,5-diiodophenyl]propanoic acid" EXACT RESID-systematic []
@@ -4851,7 +4850,6 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:397"
 xref: UniProt: "PTM-0295"
-is_a: MOD:00502 ! triiodinated residue
 is_a: MOD:00998 ! iodinated tyrosine
 
 [Term]
@@ -10733,7 +10731,7 @@ xref: Origin: "X"
 xref: Source: "none"
 xref: TermSpec: "none"
 is_a: MOD:00434 ! hexosylated residue
-is_a: MOD:00726 ! glucosylated
+is_a: MOD:00726 ! glucosylated residue
 
 [Term]
 id: MOD:00434
