@@ -15250,7 +15250,6 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:7"
 xref: UniProt: "PTM-0116"
-is_a: MOD:00013 ! L-aspartic acid residue
 is_a: MOD:00400 ! deamidated residue
 is_a: MOD:00903 ! modified L-asparagine residue
 
@@ -15279,8 +15278,8 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:7"
 xref: UniProt: "PTM-0117"
-is_a: MOD:00015 ! L-glutamic acid residue
 is_a: MOD:00400 ! deamidated residue
+is_a: MOD:00907 ! modified L-glutamine residue
 
 [Term]
 id: MOD:00686
@@ -15306,7 +15305,6 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:162"
 is_a: MOD:00007 ! selenium substitution for sulfur
-is_a: MOD:00031 ! L-selenocysteine residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
