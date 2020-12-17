@@ -37630,7 +37630,8 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:58"
-is_a: MOD:00451 ! alpha-amino propanoylated residue
+relationship: derives_from MOD:00451 ! alpha-amino propanoylated residue
+is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 
 [Term]
 id: MOD:01896
