@@ -27873,7 +27873,7 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0386"
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01422 ! oxazole/oxazoline ring crosslinked residues (Thr)
-is_a: MOD:01888 ! didehydrogenated residue
+is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
 [Term]
 id: MOD:01398
