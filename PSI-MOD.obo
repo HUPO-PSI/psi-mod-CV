@@ -19955,7 +19955,7 @@ xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 relationship: derives_from MOD:01046 ! 3'-chloro-L-tyrosine
-is_a: MOD:00753 ! chlorinated residue
+is_a: MOD:00987 ! chlorinated tyrosine
 
 [Term]
 id: MOD:00975
@@ -19972,7 +19972,7 @@ xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 relationship: derives_from MOD:01046 ! 3'-chloro-L-tyrosine
-is_a: MOD:00753 ! chlorinated residue
+is_a: MOD:00987 ! chlorinated tyrosine
 
 [Term]
 id: MOD:00976
@@ -20123,7 +20123,8 @@ xref: MassMono: "230.985384"
 xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:01045 ! 3',5'-dichloro-L-tyrosine
+relationship: derives_from MOD:01045 ! 3',5'-dichloro-L-tyrosine
+is_a: MOD:00987 ! chlorinated tyrosine
 
 [Term]
 id: MOD:00985
@@ -20151,7 +20152,8 @@ xref: MassMono: "232.982434"
 xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:01045 ! 3',5'-dichloro-L-tyrosine
+relationship: derives_from MOD:01045 ! 3',5'-dichloro-L-tyrosine
+is_a: MOD:00987 ! chlorinated tyrosine
 
 [Term]
 id: MOD:00987
@@ -20206,7 +20208,8 @@ xref: MassMono: "234.979484"
 xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:01045 ! 3',5'-dichloro-L-tyrosine
+relationship: derives_from MOD:01045 ! 3',5'-dichloro-L-tyrosine
+is_a: MOD:00987 ! chlorinated tyrosine
 
 [Term]
 id: MOD:00991
