@@ -36072,7 +36072,7 @@ xref: Origin: "M"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:268"
-is_a: MOD:00719 ! L-methionine sulfoxide
+relationship: derives_from MOD:00719 ! L-methionine sulfoxide
 is_a: MOD:01809 ! 5x(13)C,1x(15)N labeled residue
 
 [Term]
