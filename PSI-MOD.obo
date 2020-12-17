@@ -28940,7 +28940,6 @@ xref: MassMono: "103.009185"
 xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00014 ! L-cysteine residue
 is_a: MOD:00749 ! sulfur substitution for oxygen
 is_a: MOD:00916 ! modified L-serine residue
 
