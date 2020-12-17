@@ -36440,7 +36440,6 @@ xref: MassMono: "177.009579"
 xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00399 ! iodoacetic acid derivatized residue
 is_a: MOD:00708 ! sulfur oxygenated L-cysteine
 is_a: MOD:01855 ! sulfur dioxygenated residue
 relationship: derives_from MOD:01061 ! S-carboxymethyl-L-cysteine
@@ -36460,7 +36459,6 @@ xref: MassMono: "192.020478"
 xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00397 ! iodoacetamide derivatized residue
 is_a: MOD:00708 ! sulfur oxygenated L-cysteine
 is_a: MOD:01855 ! sulfur dioxygenated residue
 relationship: derives_from MOD:01060 ! S-carboxamidomethyl-L-cysteine
