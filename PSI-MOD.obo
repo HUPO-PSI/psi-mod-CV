@@ -19463,7 +19463,7 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:477"
-is_a: MOD:00943 ! 4-trimethylammoniumbutanoyl derivatized residue
+relationship: derives_from MOD:00943 ! 4-trimethylammoniumbutanoyl derivatized residue
 is_a: MOD:01431 ! (2)H deuterium tagged reagent
 
 [Term]
