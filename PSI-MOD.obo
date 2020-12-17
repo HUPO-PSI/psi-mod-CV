@@ -29241,7 +29241,7 @@ xref: MassMono: "485.123302"
 xref: Origin: "S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00399 ! iodoacetic acid derivatized residue
+relationship: derives_from MOD:00399 ! iodoacetic acid derivatized residue
 is_a: MOD:00861 ! phosphorus containing modified residue
 is_a: MOD:00916 ! modified L-serine residue
 relationship: derives_from MOD:00159 ! O-phosphopantetheine-L-serine
@@ -29260,7 +29260,7 @@ xref: MassMono: "484.139286"
 xref: Origin: "S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00397 ! iodoacetamide derivatized residue
+relationship: derives_from MOD:00397 ! iodoacetamide derivatized residue
 is_a: MOD:00861 ! phosphorus containing modified residue
 is_a: MOD:00916 ! modified L-serine residue
 relationship: derives_from MOD:00159 ! O-phosphopantetheine-L-serine
