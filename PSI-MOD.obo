@@ -27739,7 +27739,6 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0373"
 is_a: MOD:02059 ! crosslinked L-valine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
 
 [Term]
 id: MOD:01392
@@ -27762,7 +27761,6 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0352"
 is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
-is_a: MOD:01888 ! didehydrogenated residue
 relationship: derives_from MOD:00656 ! C-methylated residue
 
 [Term]
