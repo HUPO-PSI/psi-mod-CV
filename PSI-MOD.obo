@@ -32188,7 +32188,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0596"
 is_a: MOD:00005 ! O-glycosyl-L-threonine
-is_a: MOD:00595 ! mannosylated residue
+is_a: MOD:01804 ! glycosylphosphorylated residue
 
 [Term]
 id: MOD:01618
