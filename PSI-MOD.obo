@@ -23633,7 +23633,6 @@ xref: MassMono: "299.891620"
 xref: Origin: "C, C"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-is_a: MOD:00007 ! selenium substitution for sulfur
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
