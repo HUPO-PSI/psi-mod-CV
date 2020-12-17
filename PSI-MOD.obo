@@ -28477,7 +28477,6 @@ xref: TermSpec: "C-term"
 xref: UniProt: "PTM-0379"
 is_a: MOD:00683 ! dehydrogenated residue
 is_a: MOD:00917 ! modified L-threonine residue
-is_a: MOD:00960 ! decarboxylated residue
 
 [Term]
 id: MOD:01434
