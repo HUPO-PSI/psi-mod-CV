@@ -24561,7 +24561,8 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:59"
-is_a: MOD:01398 ! N6-propanoyl-L-lysine
+relationship: derives_from MOD:01398 ! N6-propanoyl-L-lysine
+is_a: MOD:01428 ! (13)C isotope tagged reagent
 
 [Term]
 id: MOD:01232
@@ -24580,7 +24581,8 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:58"
-is_a: MOD:01398 ! N6-propanoyl-L-lysine
+relationship: derives_from MOD:01398 ! N6-propanoyl-L-lysine
+is_a: MOD:01426 ! isotope tagged reagent derivatized residue
 
 [Term]
 id: MOD:01233
@@ -24599,7 +24601,7 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:56"
-is_a: MOD:00064 ! N6-acetyl-L-lysine
+relationship: derives_from MOD:00064 ! N6-acetyl-L-lysine
 is_a: MOD:00449 ! acetate labeling reagent (N-term) (heavy form, +3amu)
 
 [Term]
