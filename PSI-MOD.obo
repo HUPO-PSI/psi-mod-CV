@@ -33337,7 +33337,7 @@ xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00915 ! modified L-proline residue
-is_a: MOD:01673 ! N-acetylaminohexosylated residue
+relationship: contains MOD:01673 ! N-acetylaminohexosylated residue
 
 [Term]
 id: MOD:01678
