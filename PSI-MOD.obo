@@ -37674,7 +37674,6 @@ xref: UniProt: "PTM-0466"
 is_a: MOD:00601 ! cyclized residue
 is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00910 ! modified L-isoleucine residue
-is_a: MOD:01888 ! didehydrogenated residue
 is_a: MOD:01905 ! 5-hydroxy-3-methyl-L-proline
 
 [Term]
