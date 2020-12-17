@@ -37186,8 +37186,8 @@ xref: Origin: "MOD:01060"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:26"
-is_a: MOD:00397 ! iodoacetamide derivatized residue
-is_a: MOD:00419 ! (R)-5-oxo-1,4-tetrahydrothiazine-3-carboxylic acid
+is_a: MOD:01160 ! deaminated residue
+relationship: contains MOD:00419 ! (R)-5-oxo-1,4-tetrahydrothiazine-3-carboxylic acid
 relationship: derives_from MOD:01060 ! S-carboxamidomethyl-L-cysteine
 
 [Term]
@@ -37211,8 +37211,8 @@ xref: Origin: "MOD:01061"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:26"
-is_a: MOD:00399 ! iodoacetic acid derivatized residue
-is_a: MOD:00419 ! (R)-5-oxo-1,4-tetrahydrothiazine-3-carboxylic acid
+is_a: MOD:00704 ! dehydrated residue
+relationship: contains MOD:00419 ! (R)-5-oxo-1,4-tetrahydrothiazine-3-carboxylic acid
 relationship: derives_from MOD:01061 ! S-carboxymethyl-L-cysteine
 
 [Term]
