@@ -4605,7 +4605,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
 xref: UniProt: "PTM-0053"
-is_a: MOD:00752 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
+is_a: MOD:00752 ! monoadenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00902 ! modified L-arginine residue
 
 [Term]
@@ -4634,7 +4634,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
 xref: UniProt: "PTM-0055"
-is_a: MOD:00752 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
+is_a: MOD:00752 ! monoadenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
@@ -6096,7 +6096,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
 xref: UniProt: "PTM-0054"
-is_a: MOD:00752 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
+is_a: MOD:00752 ! monoadenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00903 ! modified L-asparagine residue
 
 [Term]
@@ -6258,7 +6258,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
 xref: UniProt: "PTM-0056"
-is_a: MOD:00752 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
+is_a: MOD:00752 ! monoadenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00916 ! modified L-serine residue
 
 [Term]
@@ -7642,7 +7642,7 @@ xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
-is_a: MOD:00752 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
+is_a: MOD:02087 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Term]
@@ -16132,12 +16132,12 @@ is_a: MOD:00701 ! nucleotide or nucleic acid modified residue
 
 [Term]
 id: MOD:00752
-name: adenosine diphosphoribosyl (ADP-ribosyl) modified residue
-def: "A protein modification that effectively results from forming an adduct with ADP-ribose through formation of a glycosidic bond." [DeltaMass:0]
+name: monoadenosine diphosphoribosyl (ADP-ribosyl) modified residue
+def: "A protein modification that effectively results from forming an adduct with one ADP-ribose through formation of a glycosidic bond." [DeltaMass:0]
 comment: From DeltaMass: Average Mass: 541.
 subset: PSI-MOD-slim
 synonym: "ADP-rybosylation (from NAD)" EXACT DeltaMass-label []
-synonym: "ADPRibRes" EXACT PSI-MOD-label []
+synonym: "ADPRib1Res" EXACT PSI-MOD-label []
 xref: DiffAvg: "541.30"
 xref: DiffFormula: "C 15 H 21 N 5 O 13 P 2"
 xref: DiffMono: "541.061109"
@@ -16147,7 +16147,7 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00701 ! nucleotide or nucleic acid modified residue
+is_a: MOD:02087 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
 
 [Term]
 id: MOD:00753
@@ -22869,7 +22869,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0672"
-is_a: MOD:00752 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
+is_a: MOD:02087 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00909 ! modified L-histidine residue
 relationship: derives_from MOD:00049 ! 2'-[3-carboxamido-3-(trimethylammonio)propyl]-L-histidine
 
@@ -27941,7 +27941,7 @@ synonym: "poly[2'-adenosine 5'-(trihydrogen diphosphate) 5'->5'-ester with 1alph
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-is_a: MOD:00752 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
+is_a: MOD:02087 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00912 ! modified L-lysine residue
 
 [Term]
@@ -40957,6 +40957,17 @@ xref: Source: "none"
 xref: TermSpec: "none"
 is_a: MOD:00754 ! brominated residue
 is_a: MOD:01066 ! halogenated phenylalanine
+
+[Term]
+id: MOD:02087
+name: adenosine diphosphoribosyl (ADP-ribosyl) modified residue
+def: "A protein modification that effectively results from forming an adduct with one or more ADP-ribose moieties or to modified residues through formation of a glycosidic bond." [DeltaMass:0]
+subset: PSI-MOD-slim
+synonym: "ADPRibRes" EXACT PSI-MOD-label []
+xref: Origin: "X"
+xref: Source: "natural"
+xref: TermSpec: "none"
+is_a: MOD:00701 ! nucleotide or nucleic acid modified residue
 
 [Typedef]
 id: contains
