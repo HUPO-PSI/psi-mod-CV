@@ -35778,7 +35778,6 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00839 ! (2)H deuterium labeled residue
 is_a: MOD:00913 ! modified L-methionine residue
-is_a: MOD:01794 ! 1x(13)C,3x(2)H labeled monomethylated residue
 
 [Term]
 id: MOD:01796
@@ -35795,7 +35794,6 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00839 ! (2)H deuterium labeled residue
 is_a: MOD:00913 ! modified L-methionine residue
-is_a: MOD:01794 ! 1x(13)C,3x(2)H labeled monomethylated residue
 
 [Term]
 id: MOD:01797
