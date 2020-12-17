@@ -20571,8 +20571,8 @@ xref: MassMono: "301.987857"
 xref: Origin: "MOD:00034"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00460 ! L-cysteic acid (L-cysteine sulfonic acid)
 relationship: derives_from MOD:00034 ! L-cystine (cross-link)
+is_a: MOD:00675 ! oxidized residue
 
 [Term]
 id: MOD:01013
