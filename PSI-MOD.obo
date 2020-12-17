@@ -20462,12 +20462,6 @@ def: "A protein modification that effectively substitutes two hydrogen atoms of 
 synonym: "Br2Tyr" EXACT PSI-MOD-label []
 synonym: "Dibromo" RELATED PSI-MS-label []
 synonym: "Dibromo" RELATED Unimod-description []
-xref: DiffAvg: "157.79"
-xref: DiffFormula: "Br 2 C 0 H -2 N 0 O 0"
-xref: DiffMono: "155.821024"
-xref: Formula: "Br 2 C 9 H 7 N 1 O 2"
-xref: MassAvg: "320.97"
-xref: MassMono: "318.884353"
 xref: Origin: "Y"
 xref: Source: "none"
 xref: TermSpec: "none"
@@ -21325,7 +21319,8 @@ xref: MassMono: "318.884353"
 xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:01023 ! 3',5'-dibromo-L-tyrosine
+relationship: derives_from MOD:01023 ! 3',5'-dibromo-L-tyrosine
+is_a: MOD:01006 ! dibrominated tyrosine
 
 [Term]
 id: MOD:01057
@@ -21341,7 +21336,8 @@ xref: MassMono: "320.882306"
 xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:01023 ! 3',5'-dibromo-L-tyrosine
+relationship: derives_from MOD:01023 ! 3',5'-dibromo-L-tyrosine
+is_a: MOD:01006 ! dibrominated tyrosine
 
 [Term]
 id: MOD:01058
@@ -21374,7 +21370,8 @@ xref: MassMono: "322.880260"
 xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:01023 ! 3',5'-dibromo-L-tyrosine
+relationship: derives_from MOD:01023 ! 3',5'-dibromo-L-tyrosine
+is_a: MOD:01006 ! dibrominated tyrosine
 
 [Term]
 id: MOD:01060
