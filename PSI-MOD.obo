@@ -1906,6 +1906,7 @@ xref: Unimod: "Unimod:529"
 xref: UniProt: "PTM-0179"
 is_a: MOD:00710 ! protonated-dimethylated residue
 is_a: MOD:01462 ! N-methylated proline
+is_a: MOD:01686 ! alpha-amino dimethylated residue
 
 [Term]
 id: MOD:00076
@@ -18656,8 +18657,11 @@ xref: Origin: "MOD:00888"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:36"
-is_a: MOD:00075 ! N,N-dimethyl-L-proline
+relationship: derives_from MOD:00075 ! N,N-dimethyl-L-proline
 relationship: derives_from MOD:00888 ! protonated L-proline (L-prolinium) residue
+is_a: MOD:00712 ! methylated proline
+is_a: MOD:00710 ! protonated-dimethylated residue
+is_a: MOD:01686 ! alpha-amino dimethylated residue
 
 [Term]
 id: MOD:00890
