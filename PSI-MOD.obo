@@ -31915,7 +31915,6 @@ xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0406"
-is_a: MOD:00674 ! amidated residue
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Term]
@@ -31933,7 +31932,6 @@ xref: MassMono: "352.067167"
 xref: Origin: "E"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-is_a: MOD:00674 ! amidated residue
 is_a: MOD:00861 ! phosphorus containing modified residue
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
@@ -31956,7 +31954,6 @@ xref: MassMono: "256.105922"
 xref: Origin: "E"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-is_a: MOD:00674 ! amidated residue
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Term]
