@@ -28670,7 +28670,7 @@ xref: MassMono: "1140.326447"
 xref: Origin: "E, E, E, E, H, H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00438 ! myristoylated residue
+relationship: contains MOD:00438 ! myristoylated residue
 is_a: MOD:00738 ! iron containing modified residue
 is_a: MOD:00740 ! manganese containing modified residue
 is_a: MOD:02068 ! metal or metal cluster coordinated L-glutamic acid residue
