@@ -39254,7 +39254,6 @@ xref: Origin: "E"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0478"
-is_a: MOD:00674 ! amidated residue
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Term]
