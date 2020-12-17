@@ -18334,7 +18334,7 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:412"
-is_a: MOD:00870 ! phenyl isocyanate derivatized residue
+relationship: derives_from MOD:00870 ! phenyl isocyanate derivatized residue
 is_a: MOD:01431 ! (2)H deuterium tagged reagent
 
 [Term]
