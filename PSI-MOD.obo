@@ -19954,7 +19954,8 @@ xref: MassMono: "197.024356"
 xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:01046 ! 3'-chloro-L-tyrosine
+relationship: derives_from MOD:01046 ! 3'-chloro-L-tyrosine
+is_a: MOD:00753 ! chlorinated residue
 
 [Term]
 id: MOD:00975
@@ -19970,7 +19971,8 @@ xref: MassMono: "199.021406"
 xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:01046 ! 3'-chloro-L-tyrosine
+relationship: derives_from MOD:01046 ! 3'-chloro-L-tyrosine
+is_a: MOD:00753 ! chlorinated residue
 
 [Term]
 id: MOD:00976
