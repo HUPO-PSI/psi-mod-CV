@@ -35452,7 +35452,7 @@ xref: Origin: "K"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0474"
-is_a: MOD:00037 ! 5-hydroxy-L-lysine
+relationship: derives_from MOD:00037 ! 5-hydroxy-L-lysine
 is_a: MOD:01875 ! N6-acylated L-lysine
 
 [Term]
