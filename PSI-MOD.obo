@@ -39105,7 +39105,7 @@ xref: MassMono: "175.131068"
 xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00064 ! N6-acetyl-L-lysine
+relationship: derives_from MOD:00064 ! N6-acetyl-L-lysine
 is_a: MOD:01428 ! (13)C isotope tagged reagent
 is_a: MOD:01431 ! (2)H deuterium tagged reagent
 
