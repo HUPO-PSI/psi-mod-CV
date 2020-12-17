@@ -26624,7 +26624,7 @@ xref: Origin: "N"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:528"
-is_a: MOD:01181 ! L-aspartic acid 4-methyl ester
+relationship: derives_from MOD:01181 ! L-aspartic acid 4-methyl ester
 is_a: MOD:01369 ! deamidated and methyl esterified residue
 
 [Term]
