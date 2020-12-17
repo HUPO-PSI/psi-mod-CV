@@ -19921,7 +19921,7 @@ xref: Origin: "F"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:340"
-is_a: MOD:01066 ! halogenated phenylalanine
+is_a: MOD:02086 ! brominated phenylalanine
 is_a: MOD:01912 ! monobrominated residue
 
 [Term]
@@ -20274,7 +20274,8 @@ xref: MassMono: "240.973841"
 xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:01025 ! 3'-bromo-L-tyrosine
+relationship: derives_from MOD:01025 ! 3'-bromo-L-tyrosine
+is_a: MOD:01000 ! monobrominated tyrosine
 
 [Term]
 id: MOD:00995
@@ -20290,7 +20291,8 @@ xref: MassMono: "226.976879"
 xref: Origin: "F"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00183 ! L-2'-bromophenylalanine
+relationship: derives_from MOD:00183 ! L-2'-bromophenylalanine
+is_a: MOD:02086 ! brominated phenylalanine
 
 [Term]
 id: MOD:00996
@@ -20306,7 +20308,8 @@ xref: MassMono: "242.971794"
 xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:01025 ! 3'-bromo-L-tyrosine
+relationship: derives_from MOD:01025 ! 3'-bromo-L-tyrosine
+is_a: MOD:01000 ! monobrominated tyrosine
 
 [Term]
 id: MOD:00997
@@ -40946,6 +40949,17 @@ xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00896 ! FMN modified residue
+
+[Term]
+id: MOD:02086
+name: brominated phenylalanine
+def: "A protein modification that effectively substitutes a hydrogen atom of an L-phenylalanine residue with a bromine atom." [PubMed:18688235]
+synonym: "BrPhe" EXACT PSI-MOD-label []
+xref: Origin: "F"
+xref: Source: "none"
+xref: TermSpec: "none"
+is_a: MOD:00754 ! brominated residue
+is_a: MOD:01066 ! halogenated phenylalanine
 
 [Typedef]
 id: contains
