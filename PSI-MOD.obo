@@ -27248,7 +27248,7 @@ xref: Source: "none"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:528"
 is_a: MOD:00393 ! O-methylated residue
-is_a: MOD:00400 ! deamidated residue
+relationship: contains MOD:00400 ! deamidated residue
 
 [Term]
 id: MOD:01370
