@@ -36569,7 +36569,7 @@ xref: MassMono: "172.030649"
 xref: Origin: "C, C"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-is_a: MOD:01839 ! L-lanthionine
+is_a: MOD:00687 ! thioether crosslinked residues
 
 [Term]
 id: MOD:01838
