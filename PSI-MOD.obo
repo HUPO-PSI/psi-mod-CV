@@ -1906,7 +1906,6 @@ xref: Unimod: "Unimod:529"
 xref: UniProt: "PTM-0179"
 is_a: MOD:00710 ! protonated-dimethylated residue
 is_a: MOD:01462 ! N-methylated proline
-is_a: MOD:01686 ! alpha-amino dimethylated residue
 
 [Term]
 id: MOD:00076
