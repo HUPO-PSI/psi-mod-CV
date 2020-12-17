@@ -36501,32 +36501,32 @@ is_a: MOD:01832 ! 5x(13)C-labeled residue
 id: MOD:01834
 name: 5x(13)C-labeled L-methionine sulfoxide
 def: "A protein modification that effectively converts an L-methionine residue containing common isotopes to 5x(13)C-labeled L-methionine sulfoxide." [PubMed:18688235]
-xref: DiffAvg: "21.01"
-xref: DiffFormula: "(12)C -5 (13)C 5 H 0 N 0 O 1 S 0"
-xref: DiffMono: "21.011689"
+xref: DiffAvg: "5.02"
+xref: DiffFormula: "(12)C -5 (13)C 5 H 0 N 0 O 0 S 0"
+xref: DiffMono: "5.016774"
 xref: Formula: "(13)C 5 H 9 N 1 O 2 S 1"
 xref: MassAvg: "152.05"
 xref: MassMono: "152.052174"
-xref: Origin: "M"
+xref: Origin: "MOD:00719"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00719 ! L-methionine sulfoxide
+relationship: derives_from MOD:00719 ! L-methionine sulfoxide
 is_a: MOD:01832 ! 5x(13)C-labeled residue
 
 [Term]
 id: MOD:01835
 name: 5x(13)C-labeled L-methionine sulfone
 def: "A protein modification that effectively converts an L-methionine residue containing common isotopes to 5x(13)C-labeled L-methionine sulfone." [PubMed:18688235]
-xref: DiffAvg: "37.01"
-xref: DiffFormula: "(12)C -5 (13)C 5 H 0 N 0 O 2 S 0"
-xref: DiffMono: "37.006603"
+xref: DiffAvg: "5.02"
+xref: DiffFormula: "(12)C -5 (13)C 5 H 0 N 0 O 0 S 0"
+xref: DiffMono: "5.016774"
 xref: Formula: "(13)C 5 H 9 N 1 O 3 S 1"
 xref: MassAvg: "168.05"
 xref: MassMono: "168.047088"
-xref: Origin: "M"
+xref: Origin: "MOD:00256"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00256 ! L-methionine sulfone
+relationship: derives_from MOD:00256 ! L-methionine sulfone
 is_a: MOD:01832 ! 5x(13)C-labeled residue
 
 [Term]
