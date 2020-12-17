@@ -13963,8 +13963,8 @@ name: Sulfanilic Acid (SA), light C12
 def: "modification from Unimod Chemical derivative, C-Terminal/Glutamate/Aspartate sulfonation" [Unimod:285]
 synonym: "Light Sulfanilic Acid (SA) C12" RELATED Unimod-description []
 synonym: "SulfanilicAcid" RELATED PSI-MS-label []
-xref: DiffAvg: "155.17"
-xref: DiffFormula: "C 6 H 5 N 1 O 2 S 1"
+xref: DiffAvg: "155.00"
+xref: DiffFormula: "(12)C 6 H 5 N 1 O 2 S 1"
 xref: DiffMono: "155.004099"
 xref: Formula: "none"
 xref: MassAvg: "none"
