@@ -13933,7 +13933,7 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
-xref: Remap: "MOD:00110"
+xref: Remap: "MOD:00600"
 xref: Unimod: "Unimod:283"
 is_obsolete: true
 
