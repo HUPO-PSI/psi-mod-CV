@@ -40993,6 +40993,50 @@ xref: TermSpec: "none"
 is_a: MOD:00009 ! natural residue
 is_a: MOD:01156 ! protein modification categorized by chemical process
 
+[Term]
+id: MOD:02089
+name: O-(phospho-5'-uridine)-L-serine
+def: "A protein modification that effectively crosslinks an L-serine residue and 5'-phosphouridine through a phosphodiester bond to form O-(phospho-5'-uridine)-L-serine." [DeltaMass:0, PubMed:22504181, Unimod:417#S, ChEBI:156051]
+subset: PSI-MOD-slim
+synonym: "MOD_RES O-UMP-serine" EXACT UniProt-feature []
+synonym: "OUMPSer" EXACT PSI-MOD-label []
+synonym: "PhosphoUridine" RELATED PSI-MS-label []
+xref: DiffAvg: "306.17"
+xref: DiffFormula: "C 9 H 11 N 2 O 8 P 1"
+xref: DiffMono: "306.025302"
+xref: Formula: "C 12 H 16 N 3 O 9 P 1"
+xref: MassAvg: "377.24"
+xref: MassMono: "377.062416"
+xref: Origin: "S"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:417"
+xref: UniProt: "PTM-0501"
+is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:01166 ! uridylated residue
+
+[Term]
+id: MOD:02090
+name: O-(phospho-5'-uridine)-L-threonine
+def: "A protein modification that effectively crosslinks an L-threonine residue and 5'-phosphouridine through a phosphodiester bond to form O-(phospho-5'-uridine)-L-threonine." [DeltaMass:0, PubMed:22504181, Unimod:417#T, ChEBI:156052]
+subset: PSI-MOD-slim
+synonym: "MOD_RES O-UMP-threonine" EXACT UniProt-feature []
+synonym: "OUMPThr" EXACT PSI-MOD-label []
+synonym: "PhosphoUridine" RELATED PSI-MS-label []
+xref: DiffAvg: "306.17"
+xref: DiffFormula: "C 9 H 11 N 2 O 8 P 1"
+xref: DiffMono: "306.025302"
+xref: Formula: "C 13 H 18 N 3 O 9 P 1"
+xref: MassAvg: "391.27"
+xref: MassMono: "391.078066"
+xref: Origin: "T"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:417"
+xref: UniProt: "PTM-0502"
+is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:01166 ! uridylated residue
+
 [Typedef]
 id: contains
 name: contains
