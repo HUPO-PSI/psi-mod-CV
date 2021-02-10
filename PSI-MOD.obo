@@ -38036,8 +38036,8 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:907"
 xref: UniProt: "PTM-0556"
 relationship: derives_from MOD:00037 ! 5-hydroxy-L-lysine
+relationship: derives_from MOD:00476 ! monogalactosylated residue
 is_a: MOD:00396 ! O-glycosylated residue
-is_a: MOD:00476 ! monogalactosylated residue
 
 [Term]
 id: MOD:01915
