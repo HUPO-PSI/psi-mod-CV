@@ -41095,6 +41095,23 @@ xref: Unimod: "Unimod:1849"
 xref: UniProt: "PTM-0638"
 is_a: MOD:01875 ! N6-acylated L-lysine
 
+[Term]
+id: MOD:02094
+name: N6-((3R)-3-hydroxybutanoyl)-L-lysine
+def: "A protein modification that effectively converts an L-lysine residue to N6-((3R)-3-hydroxybutanoyl)-L-lysine." [PubMed:27105115, ChEBI:149490]
+synonym: "MOD_RES N6-(beta-hydroxybutyryl)lysine" EXACT UniProt-feature []
+xref: DiffAvg: "87.10"
+xref: DiffFormula: "C 4 H 7 N 0 O 2"
+xref: DiffMono: "87.044604"
+xref: Formula: "C 10 H 19 N 2 O 3"
+xref: MassAvg: "215.27"
+xref: MassMono: "215.139567"
+xref: Origin: "K"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: UniProt: "PTM-0499"
+is_a: MOD:01875 ! N6-acylated L-lysine
+
 [Typedef]
 id: contains
 name: contains
