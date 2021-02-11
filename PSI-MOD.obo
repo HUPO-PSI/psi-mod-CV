@@ -41112,6 +41112,23 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0499"
 is_a: MOD:01875 ! N6-acylated L-lysine
 
+[Term]
+id: MOD:02095
+name: N6-glutaryl-L-lysine
+def: "A protein modification that effectively converts an L-lysine residue to N6-glutaryl-L-lysine." [PubMed:24703693, ChEBI:87828]
+synonym: "MOD_RES N6-glutaryllysine" EXACT UniProt-feature []
+xref: DiffAvg: "114.10"
+xref: DiffFormula: "C 5 H 6 N 0 O 3"
+xref: DiffMono: "114.031694"
+xref: Formula: "C 11 H 18 N 2 O 4"
+xref: MassAvg: "242.28"
+xref: MassMono: "242.126657"
+xref: Origin: "K"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: UniProt: "PTM-0487"
+is_a: MOD:01875 ! N6-acylated L-lysine
+
 [Typedef]
 id: contains
 name: contains
