@@ -33352,7 +33352,7 @@ relationship: contains MOD:01673 ! N-acetylaminohexosylated residue
 [Term]
 id: MOD:01678
 name: N6-carbamoyl-L-lysine
-def: "A protein modification that effectively coverts L-lysine to N6-carbamoyl-L-lysine." [DeltaMass:56, OMSSA:31, PubMed:10978403, PubMed:12203680, Unimod:5#K]
+def: "A protein modification that effectively coverts L-lysine to N6-carbamoyl-L-lysine." [DeltaMass:56, OMSSA:31, PubMed:10978403, PubMed:12203680, Unimod:5#K, ChEBI:144369]
 comment: This modification can be produced by hydrogen cyanate, either as a reagent or as released by urea degradation in solution [JSG].
 subset: PSI-MOD-slim
 synonym: "2-amino-6-ureido-hexanoic acid" EXACT PSI-MOD-alternate []
@@ -33362,6 +33362,7 @@ synonym: "carbamylk" EXACT OMSSA-label []
 synonym: "homocitrulline" EXACT PSI-MOD-alternate []
 synonym: "N6-(aminocarbonyl)-L-lysine" EXACT PSI-MOD-alternate []
 synonym: "N6CbmLys" EXACT PSI-MOD-label []
+synonym: "MOD_RES N6-carbamoyllysine" EXACT UniProt-feature []
 xref: DiffAvg: "43.02"
 xref: DiffFormula: "C 1 H 1 N 1 O 1"
 xref: DiffMono: "43.005814"
@@ -33372,6 +33373,8 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:5"
+xref: UniProt: "PTM-0675"
+is_a: MOD:00912 ! modified L-lysine residue
 is_a: MOD:00398 ! carbamoylated residue
 
 [Term]
