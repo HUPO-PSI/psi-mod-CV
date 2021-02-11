@@ -41132,6 +41132,29 @@ xref: TermSpec: "none"
 xref: UniProt: "PTM-0487"
 is_a: MOD:01875 ! N6-acylated L-lysine
 
+[Term]
+id: MOD:02096
+name: N4-methyl-D-asparagine
+def: "A protein modification that effectively converts a D-asparagine residue to N4-methyl-D-asparagine." [PubMed:22983711, ChEBI:149514]
+subset: PSI-MOD-slim
+synonym: "MOD_RES N4-methyl-D-asparagine" EXACT UniProt-feature []
+synonym: "N4-methylated D-asparagine" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "14.03"
+xref: DiffFormula: "C 1 H 2 N 0 O 0"
+xref: DiffMono: "14.015650"
+xref: Formula: "C 5 H 8 N 2 O 2"
+xref: MassAvg: "128.13"
+xref: MassMono: "128.058578"
+xref: Origin: "N"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: UniProt: "PTM-0691"
+is_a: MOD:00599 ! monomethylated residue
+is_a: MOD:00602 ! N-methylated residue
+is_a: MOD:00673 ! methylated asparagine
+is_a: MOD:00203 ! D-asparagine
+is_a: MOD:00894 ! residues isobaric at 128.058578 Da
+
 [Typedef]
 id: contains
 name: contains
