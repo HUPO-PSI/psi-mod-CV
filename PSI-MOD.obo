@@ -41058,6 +41058,25 @@ xref: UniProt: "PTM-0651"
 is_a: MOD:00916 ! modified L-serine residue
 is_a: MOD:01165 ! adenylated residue
 
+[Term]
+id: MOD:02092
+name: S-methylbutanedioic acid-L-cysteine
+def: "A protein modification that effectively converts an L-cysteine residue to form S-methylbutanedioic acid-L-cysteine through a thioether bond." [PubMed:29590092]
+subset: PSI-MOD-slim
+synonym: "MOD_RES S-(2,3-dicarboxypropyl)cysteine" EXACT UniProt-feature []
+xref: DiffAvg: "130.10"
+xref: DiffFormula: "C 5 H 6 N 0 O 4 P 0 S 0"
+xref: DiffMono: "130.026609"
+xref: Formula: "C 8 H 11 N 1 O 5 P 0 S 1"
+xref: MassAvg: "233.24"
+xref: MassMono: "233.035793"
+xref: Origin: "C"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: UniProt: "PTM-0676"
+is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:00001 ! alkylated residue
+
 [Typedef]
 id: contains
 name: contains
