@@ -41077,6 +41077,24 @@ xref: UniProt: "PTM-0676"
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:00001 ! alkylated residue
 
+[Term]
+id: MOD:02093
+name: N6-(2-hydroxyisobutanoyl)-L-lysine
+def: "A protein modification that effectively converts an L-lysine residue to N6-(2-hydroxyisobutanoyl)-L-lysine." [PubMed:29775581, PubMed:24681537, ChEBI:144968, Unimod:1849]
+synonym: "MOD_RES N6-(2-hydroxyisobutyryl)lysine" EXACT UniProt-feature []
+xref: DiffAvg: "86.09"
+xref: DiffFormula: "C 4 H 6 N 0 O 2"
+xref: DiffMono: "86.036779"
+xref: Formula: "C 10 H 18 N 2 O 3"
+xref: MassAvg: "214.27"
+xref: MassMono: "214.131742"
+xref: Origin: "K"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:1849"
+xref: UniProt: "PTM-0638"
+is_a: MOD:01875 ! N6-acylated L-lysine
+
 [Typedef]
 id: contains
 name: contains
