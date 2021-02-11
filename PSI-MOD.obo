@@ -41037,6 +41037,27 @@ xref: UniProt: "PTM-0502"
 is_a: MOD:00917 ! modified L-threonine residue
 is_a: MOD:01166 ! uridylated residue
 
+[Term]
+id: MOD:02091
+name: O-(phospho-5'-adenosine)-L-serine
+def: "A protein modification that effectively crosslinks an L-serine residue and 5'-phosphoadenosine through a phosphodiester bond to form O-(phospho-5'-adenosine)-L-serine." [PubMed:21472612, Unimod:405#S]
+subset: PSI-MOD-slim
+synonym: "MOD_RES O-AMP-serine" EXACT UniProt-feature []
+synonym: "Phosphoadenosine" RELATED PSI-MS-label []
+xref: DiffAvg: "329.21"
+xref: DiffFormula: "C 10 H 12 N 5 O 6 P 1"
+xref: DiffMono: "329.052520"
+xref: Formula: "C 13 H 17 N 6 O 8 P 1"
+xref: MassAvg: "416.28"
+xref: MassMono: "416.084549"
+xref: Origin: "S"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:405"
+xref: UniProt: "PTM-0651"
+is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:01165 ! adenylated residue
+
 [Typedef]
 id: contains
 name: contains
