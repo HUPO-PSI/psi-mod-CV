@@ -1,6 +1,6 @@
 format-version: 1.2
 ontology: mod
-date: 29:01:2021 17:38
+date: 10:02:2021 14:33
 saved-by: Paul M. Thomas
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
@@ -17,9 +17,9 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.029.0
+remark: PSI-MOD version: 1.030.0
 remark: RESID release: 75.00
-remark: ISO-8601 date: 2021-01-29 17:38Z
+remark: ISO-8601 date: 2021-02-10 14:33Z
 remark: Annotation note 01 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
 remark: Annotation note 02 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol "#" and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag "#var".
 remark: Annotation note 03 - When an entry in the Unimod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the Unimod cross-reference followed by a hash symbol and an amino acid code, "N-term" or "C-term".
@@ -4235,8 +4235,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:41"
 xref: UniProt: "PTM-0626"
 is_a: MOD:00426 ! S-glycosylated residue
-is_a: MOD:00433 ! glucosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00433 ! monoglucosylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
@@ -4287,7 +4286,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0564"
-is_a: MOD:00563 ! N-acetylaminogalactosylated residue
+is_a: MOD:00563 ! mono-N-acetylaminogalactosylated residue
 is_a: MOD:01675 ! O-(N-acetylamino)hexosyl-L-serine
 
 [Term]
@@ -4313,7 +4312,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0567"
-is_a: MOD:00563 ! N-acetylaminogalactosylated residue
+is_a: MOD:00563 ! mono-N-acetylaminogalactosylated residue
 is_a: MOD:01676 ! O-(N-acetylamino)hexosyl-L-threonine
 
 [Term]
@@ -4339,8 +4338,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0535"
 is_a: MOD:00006 ! N-glycosylated residue
-is_a: MOD:00595 ! mannosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00595 ! monomannosylated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
@@ -4365,8 +4363,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:41"
 xref: UniProt: "PTM-0575"
-is_a: MOD:00433 ! glucosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00433 ! monoglucosylated residue
 is_a: MOD:01927 ! O-glycosyl-L-tyrosine
 
 [Term]
@@ -5741,8 +5738,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:41"
 xref: UniProt: "PTM-0505"
 is_a: MOD:00421 ! C-glycosylated residue
-is_a: MOD:00595 ! mannosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00595 ! monomannosylated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
@@ -8445,8 +8441,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:41"
 xref: UniProt: "PTM-0515"
-is_a: MOD:00433 ! glucosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00433 ! monoglucosylated residue
 is_a: MOD:01980 ! omega-N-glycosyl-L-arginine
 
 [Term]
@@ -10723,7 +10718,7 @@ is_a: MOD:00431 ! modified residue with a secondary neutral loss
 
 [Term]
 id: MOD:00433
-name: glucosylated residue
+name: monoglucosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom with an glucose group through a glycosidic bond." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "GlcRes" EXACT PSI-MOD-label []
@@ -10736,7 +10731,7 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00434 ! hexosylated residue
+is_a: MOD:00761 ! monohexosylated residue
 is_a: MOD:00726 ! glucosylated residue
 
 [Term]
@@ -11026,7 +11021,7 @@ is_a: MOD:00764 ! glycoconjugated residue
 
 [Term]
 id: MOD:00448
-name: N-acetylaminoglucosylated residue
+name: mono-N-acetylaminoglucosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom with an N-acetylaminoglucose group through a glycosidic bond." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "GlcNAcRes" EXACT PSI-MOD-label []
@@ -11565,12 +11560,21 @@ is_a: MOD:02039 ! aminated residue
 
 [Term]
 id: MOD:00476
-name: galactosylated residue
+name: monogalactosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom with an galactose group through a glycosidic bond." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "GalRes" EXACT PSI-MOD-label []
-is_a: MOD:00434 ! hexosylated residue
-is_a: MOD:00728 ! galactosylated
+xref: DiffAvg: "162.14"
+xref: DiffFormula: "C 6 H 10 O 5"
+xref: DiffMono: "162.052823"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "natural"
+xref: TermSpec: "none"
+is_a: MOD:00761 ! monohexosylated residue
+is_a: MOD:00728 ! galactosylated residue
 
 [Term]
 id: MOD:00477
@@ -12197,13 +12201,13 @@ is_obsolete: true
 [Term]
 id: MOD:00508
 name: ISD a-series (C-Term)
-def: "modification from Unimod Other" [PubMed:14588022, Unimod:140]
+def: "OBSOLETE because this is an ion type and is not a biological or chemical modification to a polypeptide, can be handled by PSI-MS CV term, MS:1001229" [PubMed:14588022, Unimod:140]
 comment: Virtual Modification for MS/MS of a-type ions, by decarboxylation of C-terminus as reaction inside the mass spectrometer.
 synonym: "a-type-ion" RELATED PSI-MS-label []
 synonym: "ISD a-series (C-Term)" RELATED Unimod-description []
-xref: DiffAvg: "-29.02"
-xref: DiffFormula: "C -1 H -1 O -1"
-xref: DiffMono: "-29.002740"
+xref: DiffAvg: "none"
+xref: DiffFormula: "none"
+xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
@@ -12211,7 +12215,8 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "C-term"
 xref: Unimod: "Unimod:140"
-is_a: MOD:00003 ! Unimod
+is_obsolete: true
+
 
 [Term]
 id: MOD:00509
@@ -12862,7 +12867,8 @@ xref: Origin: "R"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:186"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00902 ! modified L-arginine residue
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00543
@@ -12881,7 +12887,8 @@ xref: Origin: "R"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:187"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00902 ! modified L-arginine residue
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00544
@@ -12935,7 +12942,7 @@ is_a: MOD:00847 ! (18)O disubstituted residue
 [Term]
 id: MOD:00547
 name: 6-aminoquinolyl-N-hydroxysuccinimidyl carbamate
-def: "modification from Unimod Chemical derivative" [PubMed:14997490, Unimod:194]
+def: "modification from Unimod Chemical derivative used for amino acid analysis" [PubMed:14997490, Unimod:194]
 synonym: "6-aminoquinolyl-N-hydroxysuccinimidyl carbamate" RELATED Unimod-description []
 synonym: "AccQTag" RELATED PSI-MS-label []
 xref: DiffAvg: "170.17"
@@ -12948,11 +12955,11 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:194"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00548
-name: APTA-d0
+name: APTA
 def: "modification from Unimod Chemical derivative" [PubMed:15283597, Unimod:195]
 comment: Derivatization of cysteine with 3-acrylamidopropyl)trimethylammonium chloride [JSG].
 synonym: "APTA-d0" RELATED Unimod-description []
@@ -12967,7 +12974,7 @@ xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:195"
-is_a: MOD:01426 ! isotope tagged reagent derivatized residue
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00549
@@ -13102,7 +13109,7 @@ is_obsolete: true
 [Term]
 id: MOD:00556
 name: acrolein addition +94
-def: "modification from Unimod Other" [Unimod:205]
+def: "OBSOLETE because this modification not supported by any literature that I can find[PMT]" [Unimod:205]
 synonym: "Acrolein addition +94" RELATED Unimod-description []
 synonym: "Delta:H(6)C(6)O(1)" RELATED PSI-MS-label []
 xref: DiffAvg: "94.11"
@@ -13115,12 +13122,12 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:205"
-is_a: MOD:00003 ! Unimod
+is_obsolete: true
 
 [Term]
 id: MOD:00557
 name: acrolein addition +56
-def: "modification from Unimod Other" [PubMed:10825247, PubMed:15541752, Unimod:206]
+def: "OBSOLETE because this modification not supported by the papers listed or any other that I can find[PMT]" [PubMed:10825247, PubMed:15541752, Unimod:206]
 synonym: "Acrolein addition +56" RELATED Unimod-description []
 synonym: "Delta:H(4)C(3)O(1)" RELATED PSI-MS-label []
 xref: DiffAvg: "56.06"
@@ -13133,12 +13140,12 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:206"
-is_a: MOD:00003 ! Unimod
+is_obsolete: true
 
 [Term]
 id: MOD:00558
 name: acrolein addition +38
-def: "modification from Unimod Other" [Unimod:207]
+def: "OBSOLETE because this modification not supported by any literature that I can find[PMT]" [Unimod:207]
 synonym: "Acrolein addition +38" RELATED Unimod-description []
 synonym: "Delta:H(2)C(3)" RELATED PSI-MS-label []
 xref: DiffAvg: "38.05"
@@ -13151,12 +13158,12 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:207"
-is_a: MOD:00003 ! Unimod
+is_obsolete: true
 
 [Term]
 id: MOD:00559
 name: acrolein addition +76
-def: "modification from Unimod Other" [Unimod:208]
+def: "OBSOLETE because this modification not supported by any literature that I can find[PMT]" [Unimod:208]
 synonym: "Acrolein addition +76" RELATED Unimod-description []
 synonym: "Delta:H(4)C(6)" RELATED PSI-MS-label []
 xref: DiffAvg: "76.10"
@@ -13169,12 +13176,12 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:208"
-is_a: MOD:00003 ! Unimod
+is_obsolete: true
 
 [Term]
 id: MOD:00560
 name: acrolein addition +112
-def: "modification from Unimod Other" [Unimod:209]
+def: "OBSOLETE because this modification not supported by any literature that I can find[PMT]" [Unimod:209]
 synonym: "Acrolein addition +112" RELATED Unimod-description []
 synonym: "Delta:H(8)C(6)O(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "112.13"
@@ -13187,11 +13194,11 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:209"
-is_a: MOD:00003 ! Unimod
+is_obsolete: true
 
 [Term]
 id: MOD:00561
-name: N-ethyl iodoacetamide-d0
+name: N-ethyl iodoacetamide-
 def: "modification from Unimod Isotopic label" [PubMed:12766232, Unimod:211]
 synonym: "N-ethyl iodoacetamide-d0" RELATED Unimod-description []
 synonym: "NEIAA" RELATED PSI-MS-label []
@@ -13205,7 +13212,7 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:211"
-is_a: MOD:01426 ! isotope tagged reagent derivatized residue
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00562
@@ -13227,7 +13234,7 @@ is_a: MOD:01431 ! (2)H deuterium tagged reagent
 
 [Term]
 id: MOD:00563
-name: N-acetylaminogalactosylated residue
+name: mono-N-acetylaminogalactosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom with an N-acetylaminogalactose group through a glycosidic bond." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "GalNAcRes" EXACT PSI-MOD-label []
@@ -13293,7 +13300,8 @@ xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:243"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00567
@@ -13381,7 +13389,8 @@ xref: Origin: "R"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:343"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00848 ! reagent derivatized residue
+is_a: MOD:00902 ! modified L-arginine residue
 
 [Term]
 id: MOD:00573
@@ -13400,7 +13409,8 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:353"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00848 ! reagent derivatized residue
+is_a: MOD:00912 ! modified L-lysine residue
 
 [Term]
 id: MOD:00574
@@ -13419,7 +13429,8 @@ xref: Origin: "P"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:357"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00848 ! reagent derivatized residue
+is_a: MOD:00915 ! modified L-proline residue
 
 [Term]
 id: MOD:00575
@@ -13438,12 +13449,13 @@ xref: Origin: "T"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:361"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00848 ! reagent derivatized residue
+is_a: MOD:00917 ! modified L-threonine residue
 
 [Term]
 id: MOD:00576
-name: crotonaldehyde modified residue
-def: "modification from Unimod Other" [PubMed:11283024, Unimod:253]
+name: crotonylated residue
+def: "modification from Unimod Other" [PubMed:11283024, PubMed:25907603, Unimod:253]
 synonym: "Crotonaldehyde" RELATED PSI-MS-label []
 synonym: "Crotonaldehyde" RELATED Unimod-description []
 xref: DiffAvg: "70.09"
@@ -13456,48 +13468,49 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:253"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00649 ! acylated residue
 
 [Term]
 id: MOD:00577
-name: acetaldehyde +26
-def: "modification from Unimod Other" [PubMed:7744761, Unimod:254]
+name: acetaldehyde crosslinked penta-L-lysine
+def: "modification occurs as a Schiff base in the presence of pentalysine" [PubMed:7744761, Unimod:254]
 synonym: "Acetaldehyde +26" RELATED Unimod-description []
 synonym: "Delta:H(2)C(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "26.04"
 xref: DiffFormula: "C 2 H 2"
 xref: DiffMono: "26.015650"
-xref: Formula: "none"
-xref: MassAvg: "none"
-xref: MassMono: "none"
-xref: Origin: "X"
+xref: Formula: "C 8 H 14 N 2 O 1"
+xref: MassAvg: "666.91"
+xref: MassMono: "666.490465"
+xref: Origin: "K, K, K, K, K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:254"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:02051 ! crosslinked L-lysine residue
+is_a: MOD:00692 ! uncategorized crosslinked residues
 
 [Term]
 id: MOD:00578
 name: acetaldehyde +28
-def: "modification from Unimod Other" [Unimod:255]
+def: "OBSOLETE because this modification not supported by any literature that I can find [PMT]" [Unimod:255]
 synonym: "Acetaldehyde +28" RELATED Unimod-description []
 synonym: "Delta:H(4)C(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "28.05"
 xref: DiffFormula: "C 2 H 4"
 xref: DiffMono: "28.031300"
-xref: Formula: "none"
+xref: Formula: "C "
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:255"
-is_a: MOD:00003 ! Unimod
+is_obsolete: true
 
 [Term]
 id: MOD:00579
 name: propionaldehyde +40
-def: "modification from Unimod Other" [Unimod:256]
+def: "OBSOLETE because not supported by the linked literature [PMT]. modification from Unimod Other" [Unimod:256]
 synonym: "Delta:H(4)C(3)" RELATED PSI-MS-label []
 synonym: "Propionaldehyde +40" RELATED Unimod-description []
 xref: DiffAvg: "40.06"
@@ -13510,7 +13523,7 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:256"
-is_a: MOD:00003 ! Unimod
+is_obsolete: true
 
 [Term]
 id: MOD:00580
@@ -13628,7 +13641,7 @@ is_a: MOD:00786 ! deuterium substituted residue
 
 [Term]
 id: MOD:00586
-name: phosphorylation to pyridyl thiol
+name: pyridyl thiol modified residue
 def: "modification from Unimod Chemical derivative" [Unimod:264]
 synonym: "PET" RELATED PSI-MS-label []
 synonym: "phosphorylation to pyridyl thiol" RELATED Unimod-description []
@@ -13642,7 +13655,7 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:264"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00587
@@ -13708,7 +13721,7 @@ is_a: MOD:00914 ! modified L-phenylalanine residue
 [Term]
 id: MOD:00590
 name: nucleophilic addtion to cytopiloyne
-def: "modification from Unimod Chemical derivative" [PubMed:15549660, Unimod:270]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative" [PubMed:15549660, Unimod:270]
 synonym: "Cytopiloyne" RELATED PSI-MS-label []
 synonym: "nucleophilic addtion to cytopiloyne" RELATED Unimod-description []
 xref: DiffAvg: "362.38"
@@ -13721,12 +13734,12 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:270"
-is_a: MOD:00003 ! Unimod
+is_obsolete: true
 
 [Term]
 id: MOD:00591
 name: nucleophilic addition to cytopiloyne+H2O
-def: "modification from Unimod Chemical derivative" [PubMed:15549660, Unimod:271]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative" [PubMed:15549660, Unimod:271]
 synonym: "Cytopiloyne+water" RELATED PSI-MS-label []
 synonym: "nucleophilic addition to cytopiloyne+H2O" RELATED Unimod-description []
 xref: DiffAvg: "380.39"
@@ -13739,7 +13752,7 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:271"
-is_a: MOD:00003 ! Unimod
+is_obsolete: true
 
 [Term]
 id: MOD:00592
@@ -13757,12 +13770,12 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:272"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00593
 name: covalent modification of lysine by omega-maleimido alkanoyl N-hydroxysuccinimido esters
-def: "modification from Unimod Chemical derivative" [Unimod:273]
+def: "OBSOLETE because removed from Unimod. modification from Unimod Chemical derivative" [Unimod:273]
 comment: J. Prot. Chem. 2, 263-277, 1983
 synonym: "covalent modification of lysine by cross-linking reagent" RELATED Unimod-description []
 synonym: "Xlink:SSD" RELATED PSI-MS-label []
@@ -13776,7 +13789,7 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:273"
-is_a: MOD:00003 ! Unimod
+is_obsolete: true
 
 [Term]
 id: MOD:00594
@@ -13788,21 +13801,21 @@ is_a: MOD:00624 ! residues isobaric at 113.0-113.1 Da
 
 [Term]
 id: MOD:00595
-name: mannosylated residue
+name: monomannosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom with an manose group through a glycosidic bond" [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "ManRes" EXACT PSI-MOD-label []
 xref: DiffAvg: "162.14"
-xref: DiffFormula: "C 6 H 10 N 0 O 5"
+xref: DiffFormula: "C 6 H 10 O 5"
 xref: DiffMono: "162.052823"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
-xref: Source: "none"
+xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00434 ! hexosylated residue
-is_a: MOD:00727 ! mannosylated
+is_a: MOD:00727 ! mannosylated residue
+is_a: MOD:00761 ! monohexosylated residue
 
 [Term]
 id: MOD:00596
@@ -14016,9 +14029,9 @@ name: biotin polyethyleneoxide amine
 def: "modification from Unimod Chemical derivative" [Unimod:289]
 synonym: "Biotin polyethyleneoxide amine" RELATED Unimod-description []
 synonym: "Biotin-PEO-Amine" RELATED Unimod-interim []
-xref: DiffAvg: "356.49"
-xref: DiffFormula: "C 16 H 28 N 4 O 3 S 1"
-xref: DiffMono: "356.188212"
+xref: DiffAvg: "none"
+xref: DiffFormula: "none"
+xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
@@ -14026,11 +14039,11 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:289"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00609
-name: Pierce EZ-Link Biotin-HPDP
+name: Pierce EZ-Link Biotin-HPDP modified L-cysteine
 def: "modification from Unimod Chemical derivative" [Unimod:290]
 synonym: "Biotin-HPDP" RELATED Unimod-interim []
 synonym: "Pierce EZ-Link Biotin-HPDP" RELATED Unimod-description []
@@ -14044,7 +14057,8 @@ xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:290"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00610
@@ -14124,7 +14138,7 @@ is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
 id: MOD:00614
-name: fucosylated
+name: fucosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a fucose (6-deoxy-D-galactose) group through a glycosidic bond." [PubMed:11344537, PubMed:15189151, Unimod:295]
 subset: PSI-MOD-slim
 synonym: "dHex" RELATED PSI-MS-label []
@@ -14141,7 +14155,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:295"
 xref: GNOme: "GNO:G49112ZN"
-is_a: MOD:00736 ! deoxyhexosylated
+is_a: MOD:00736 ! deoxyhexosylated residue
 
 [Term]
 id: MOD:00615
@@ -14495,7 +14509,7 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:324"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00635
@@ -14671,7 +14685,7 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:337"
-is_a: MOD:00003 ! Unimod
+is_a: MOD:00848 ! reagent derivatized residue
 
 [Term]
 id: MOD:00644
@@ -15823,15 +15837,16 @@ id: MOD:00726
 name: glucosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a glucose group through a glycosidic bond." [PubMed:18688235]
 synonym: "Glc" EXACT PSI-MOD-label []
-xref: DiffAvg: "162.14"
-xref: DiffFormula: "C 6 H 10 O 5"
-xref: DiffMono: "162.052823"
+xref: DiffAvg: "none"
+xref: DiffFormula: "none"
+xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "none"
+xref: Remap: "MOD:00433"
 is_a: MOD:00693 ! glycosylated residue
 
 [Term]
@@ -15839,9 +15854,9 @@ id: MOD:00727
 name: mannosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a mannose group through a glycosidic bond," [PubMed:18688235]
 synonym: "Man" EXACT PSI-MOD-label []
-xref: DiffAvg: "162.14"
-xref: DiffFormula: "C 6 H 10 O 5"
-xref: DiffMono: "162.052823"
+xref: DiffAvg: "none"
+xref: DiffFormula: "none"
+xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
@@ -15855,9 +15870,9 @@ id: MOD:00728
 name: galactosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a galactose group through a glycosidic bond." [PubMed:18688235]
 synonym: "Gal" EXACT PSI-MOD-label []
-xref: DiffAvg: "162.14"
-xref: DiffFormula: "C 6 H 10 O 5"
-xref: DiffMono: "162.052823"
+xref: DiffAvg: "none"
+xref: DiffFormula: "none"
+xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
@@ -15985,7 +16000,7 @@ is_a: MOD:00693 ! glycosylated residue
 
 [Term]
 id: MOD:00736
-name: deoxyhexosylated
+name: deoxyhexosylated residue
 def: "a protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a deoxyhexose group through a glycosidic bond" [DeltaMass:0]
 comment: From DeltaMass: Average Mass: 146
 subset: PSI-MOD-slim
@@ -16292,7 +16307,7 @@ is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:00761
-name: monohexosylated (Hex1)
+name: monohexosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with one hexose sugar group through a glycosidic bond." [PubMed:18688235]
 synonym: "Hex1" EXACT PSI-MOD-alternate []
 xref: DiffAvg: "162.14"
@@ -16393,7 +16408,7 @@ is_a: MOD:01862 ! disulfide conjugated residue
 [Term]
 id: MOD:00766
 name: C terminal -K from HC of MAb
-def: "modification from Unimod Post-translational - C-terminal loss of lysine" [PubMed:16078144, Unimod:313]
+def: "modification from Unimod Post-translational - C-terminal loss of lysine OBSOLETE because the idenical to MOD:01642. Remap to MOD:01642" [PubMed:16078144, Unimod:313]
 synonym: "Loss of C-terminal K from Heavy Chain of MAb" RELATED Unimod-description []
 synonym: "Lys-loss" RELATED PSI-MS-label []
 xref: DiffAvg: "-128.18"
@@ -16405,7 +16420,8 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: TermSpec: "C-term"
 xref: Unimod: "Unimod:313"
-is_a: MOD:00003 ! Unimod
+xref: Remap: "MOD:01642"
+is_obsolete: true
 
 [Term]
 id: MOD:00767
@@ -16929,8 +16945,7 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0624"
 is_a: MOD:00426 ! S-glycosylated residue
-is_a: MOD:00476 ! galactosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00476 ! monogalactosylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
@@ -17053,8 +17068,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0573"
 is_a: MOD:00002 ! O-glycosyl-L-serine
-is_a: MOD:00433 ! glucosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00433 ! monoglucosylated residue
 
 [Term]
 id: MOD:00805
@@ -17083,7 +17097,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0580"
-is_a: MOD:00448 ! N-acetylaminoglucosylated residue
+is_a: MOD:00448 ! mono-N-acetylaminoglucosylated residue
 is_a: MOD:01675 ! O-(N-acetylamino)hexosyl-L-serine
 
 [Term]
@@ -17113,7 +17127,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0582"
-is_a: MOD:00448 ! N-acetylaminoglucosylated residue
+is_a: MOD:00448 ! mono-N-acetylaminoglucosylated residue
 is_a: MOD:01676 ! O-(N-acetylamino)hexosyl-L-threonine
 
 [Term]
@@ -17164,8 +17178,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0560"
 is_a: MOD:00002 ! O-glycosyl-L-serine
-is_a: MOD:00476 ! galactosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00476 ! monogalactosylated residue
 
 [Term]
 id: MOD:00809
@@ -17188,8 +17201,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0562"
-is_a: MOD:00476 ! galactosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00476 ! monogalactosylated residue
 is_a: MOD:01348 ! O-hexosylated threonine
 
 [Term]
@@ -17215,8 +17227,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0588"
 is_a: MOD:00002 ! O-glycosyl-L-serine
-is_a: MOD:00595 ! mannosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00595 ! monomannosylated residue
 
 [Term]
 id: MOD:00811
@@ -17239,8 +17250,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0591"
-is_a: MOD:00595 ! mannosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00595 ! monomannosylated residue
 is_a: MOD:01348 ! O-hexosylated threonine
 
 [Term]
@@ -17270,7 +17280,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:295"
 xref: UniProt: "PTM-0550"
 is_a: MOD:00002 ! O-glycosyl-L-serine
-is_a: MOD:00614 ! fucosylated
+is_a: MOD:00614 ! fucosylated residue
 
 [Term]
 id: MOD:00813
@@ -17298,7 +17308,7 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:295"
 xref: UniProt: "PTM-0552"
 is_a: MOD:00005 ! O-glycosyl-L-threonine
-is_a: MOD:00614 ! fucosylated
+is_a: MOD:00614 ! fucosylated residue
 
 [Term]
 id: MOD:00814
@@ -17732,7 +17742,7 @@ xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0527"
-is_a: MOD:00448 ! N-acetylaminoglucosylated residue
+is_a: MOD:00448 ! mono-N-acetylaminoglucosylated residue
 is_a: MOD:01674 ! N4-(N-acetylamino)hexosyl-L-asparagine
 
 [Term]
@@ -17760,7 +17770,7 @@ xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0512"
-is_a: MOD:00563 ! N-acetylaminogalactosylated residue
+is_a: MOD:00563 ! mono-N-acetylaminogalactosylated residue
 is_a: MOD:01674 ! N4-(N-acetylamino)hexosyl-L-asparagine
 
 [Term]
@@ -17787,8 +17797,7 @@ xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0517"
-is_a: MOD:00433 ! glucosylated residue
-is_a: MOD:00761 ! monohexosylated (Hex1)
+is_a: MOD:00433 ! monoglucosylated residue
 is_a: MOD:01346 ! N4-hexosylated asparagine
 
 [Term]
@@ -19499,7 +19508,7 @@ is_a: MOD:00032 ! uncategorized protein modification
 [Term]
 id: MOD:00948
 name: 5'-dephospho
-def: "modification from DeltaMass" [DeltaMass:0]
+def: "OBSOLETE because this is a modification that occurs to DNA/RNA and not proteins. modification from DeltaMass" [DeltaMass:0]
 comment: From DeltaMass: Average Mass: -79
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -19510,7 +19519,7 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:00949
@@ -19532,7 +19541,7 @@ is_obsolete: true
 [Term]
 id: MOD:00950
 name: decomposed carboxymethylated methionine
-def: "modification from DeltaMass" [DeltaMass:3]
+def: "OBSOLETE because this modification has not been seen/reported on since this original publication in 1994 and carboxymethylation of proteins is common enough for this mass shift to have been seen in the intervening 25+ years. modification from DeltaMass" [DeltaMass:3]
 comment: From DeltaMass: Average Mass: -48 Average Mass Change:-48 References:Anal. Biochem. Vol 216 No.1 p141
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -19543,7 +19552,7 @@ xref: MassMono: "none"
 xref: Origin: "M"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:00951
@@ -19687,7 +19696,7 @@ xref: MassMono: "none"
 xref: Origin: "H, R"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_a: MOD:00692 ! uncategorized crosslinked residues
 
 [Term]
 id: MOD:00959
@@ -19843,7 +19852,7 @@ is_a: MOD:02051 ! crosslinked L-lysine residue
 [Term]
 id: MOD:00968
 name: CM-Cys vs PAM-Cys
-def: "modification from DeltaMass" [DeltaMass:347]
+def: "OBSOLETE because this isn't a protein modification, but rather the difference between two known modifications. modification from DeltaMass" [DeltaMass:347]
 comment: From DeltaMass: Average Mass: 13 Formula:C2H2O2 vs C3H5ON Monoisotopic Mass Change:13.03 Average Mass Change:13.05 Notes:Residual acrylamide in SDS gels can partly label cysteine residues in proteins (propionamido-Cys, PAM-Cys, DeltaMass +71Da; see entry). Subsequent alkylation of protein bands with iodoacetic acid e.g. in preparation for proteomic analysis, will convert remaining free cysteines into carboxymethyl-Cys (CM-Cys, DeltaMass +58Da; see entry). Peptide mass fingerprinting may therefore potentially reveal the same cysteine-containing peptide in two forms, differing in mass by 13Da. The relative ratios of the peaks will depend on the initial degree of labelling with acrylamide. Use of high quality, deionised acrylamide in the SDS gel will minimise modification of cysteine through this route. Where it remains a problem, deliberate alkylation using acrylamide instead of iodoacetamide will ensure chemical homogeneity of the final product.
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -19854,12 +19863,12 @@ xref: MassMono: "none"
 xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:00969
 name: CAM-Cys vs PAM-Cys
-def: "modification from DeltaMass" [DeltaMass:346]
+def: "OBSOLETE because this isn't a protein modification, but rather the difference between two known modifications. modification from DeltaMass" [DeltaMass:346]
 comment: From DeltaMass: Average Mass: 14 Formula:CH2 Monoisotopic Mass Change:14.016 Average Mass Change:14.027 Notes: Residual acrylamide in SDS gels can partly label cysteine residues in proteins (propionamido-Cys, PAM-Cys, DeltaMass +71Da; see entry). Subsequent alkylation of protein bands with iodoacetamide e.g. in preparation for proteomic analysis, will convert remaining free cysteines into carboxamidomethyl-Cys (CAM-Cys, DeltaMass +57Da; see entry). Peptide mass fingerprinting may therefore potentially reveal the same cysteine-containing peptide in two forms, differing in mass by 14Da. The relative ratios of the peaks will depend on the initial degree of labelling with acrylamide. Use of high quality, deionised acrylamide in the SDS gel will minimise modification of cysteine through this route. Where it remains a problem, deliberate alkylation using acrylamide instead of iodoacetamide will ensure chemical homogeneity of the final product.
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -19870,7 +19879,7 @@ xref: MassMono: "none"
 xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:00970
@@ -19890,19 +19899,20 @@ is_a: MOD:00947 ! DeltaMass
 
 [Term]
 id: MOD:00971
-name: Oxohistidine (from histidine)
-def: "modification from DeltaMass" [DeltaMass:38]
+name: 2-Oxohistidine
+def: "A protein modification that effectively converts an L-histidine residue to 2-oxohistidine." [PubMed:8405458, DeltaMass:38]
 comment: From DeltaMass: Average Mass: 16 Average Mass Change:16 References:Lewisch, S. A. and Levine, R. L. (1995) Anal. Biochem. 231, 440-446. Determination of 2-oxo-histidine by amino acid analysis Notes:Rod LevineNIHBldg 3, Room 106 MSC 0320Bethesda, MD 20892-0320email: rlevine@nih.govvoice: 1 (301) 496-2310fax: 1 (301) 496-0599
-xref: DiffAvg: "none"
-xref: DiffFormula: "none"
-xref: DiffMono: "none"
-xref: Formula: "none"
-xref: MassAvg: "none"
-xref: MassMono: "none"
+xref: DiffAvg: "16"
+xref: DiffFormula: "C 0 H 0 N 0 O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 6 H 7 N 3 O 2"
+xref: MassAvg: "153.14"
+xref: MassMono: "153.053826"
 xref: Origin: "H"
-xref: Source: "none"
+xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:00677 ! hydroxylated residue
 
 [Term]
 id: MOD:00972
@@ -21720,7 +21730,7 @@ is_a: MOD:00905 ! modified L-cysteine residue
 [Term]
 id: MOD:01080
 name: acrylamidyl cysteinyl
-def: "modification from DeltaMass" [DeltaMass:219]
+def: "OBSOLETE because this is identical to MOD:00417.  modification from DeltaMass" [DeltaMass:219]
 comment: From DeltaMass: (name misspelled "Acrylamidyl Cystenyl") Average Mass: 174 Formula: C6H10O2N2S1 Monoisotopic Mass Change: 174.046 Average Mass Change: 174.221
 synonym: "Acrylamidyl Cystenyl" EXACT DeltaMass-label []
 xref: DiffAvg: "none"
@@ -21730,9 +21740,9 @@ xref: Formula: "C 6 H 10 N 2 O 2 S 1"
 xref: MassAvg: "174.22"
 xref: MassMono: "174.046299"
 xref: Origin: "C"
-xref: Source: "artifact"
-xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+xref: Source: "artifact
+xref: Remap: "MOD:00417"
+is_obsolete: true
 
 [Term]
 id: MOD:01081
@@ -21753,7 +21763,7 @@ is_a: MOD:00947 ! DeltaMass
 [Term]
 id: MOD:01082
 name: 4-glycosyloxy- (hexosyl, C6) (of proline)
-def: "modification from DeltaMass" [DeltaMass:0]
+def: "OBSOLETE because redundant with MOD:00757, remap. modification from DeltaMass" [DeltaMass:0]
 comment: From DeltaMass: Average Mass: 177. Caution: Formula does not match mass. The natural glycosylating sugar of hydroxyproline is galactose.
 xref: DiffAvg: "178.14"
 xref: DiffFormula: "C 6 H 10 O 6"
@@ -21764,7 +21774,8 @@ xref: MassMono: "259.105587"
 xref: Origin: "P"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+xref: Remap: "MOD:00757"
+is_obsolete: true
 
 [Term]
 id: MOD:01083
@@ -21804,19 +21815,20 @@ is_a: MOD:00399 ! iodoacetic acid derivatized residue
 
 [Term]
 id: MOD:01085
-name: alpha-N-gluconoylation (His Tagged proteins)
-def: "modification from DeltaMass" [DeltaMass:226]
-comment: From DeltaMass: Average Mass: 178 Formula: C6H10O6 Monoisotopic Mass Change: 178.05 Average Mass Change: 178.14 References: Geoghegan, K. F., H. B. Dixon, et al. (1999). Spontaneous alpha-N-6-phosphogluconoylation of a His tag in Escherichia coli: the cause of extra mass of 258 or 178 Da in fusion proteins. Anal Biochem 267(1): 169-84.
-xref: DiffAvg: "none"
-xref: DiffFormula: "none"
-xref: DiffMono: "none"
-xref: Formula: "none"
-xref: MassAvg: "none"
-xref: MassMono: "none"
-xref: Origin: "none"
-xref: Source: "none"
-xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+name: alpha-N-gluconoylated L-histidine
+def: "A protein modification that effectively replaces the N-terminal hydrogen atom of a N-terminal histidine residue with a gluconoyl group linked through a glycosidic bond. modification from DeltaMass" [PubMed:9918669, DeltaMass:226]
+comment: Occurs on His-tagged proteins expresssed in E. coli. From DeltaMass: Average Mass: 178 Formula: C6H10O6 Monoisotopic Mass Change: 178.05 Average Mass Change: 178.14 References: Geoghegan, K. F., H. B. Dixon, et al. (1999). Spontaneous alpha-N-6-phosphogluconoylation of a His tag in Escherichia coli: the cause of extra mass of 258 or 178 Da in fusion proteins. Anal Biochem 267(1): 169-84. Mass listed here is 179 because it's N-terminal.
+xref: DiffAvg: "179.15"
+xref: DiffFormula: "C 6 H 11 O 6"
+xref: DiffMono: "179.055563"
+xref: Formula: "C 12 H 18 N 3 O 7"
+xref: MassAvg: "316.29"
+xref: MassMono: "316.114475"
+xref: Origin: "H"
+xref: Source: "natural"
+xref: TermSpec: "N-term"
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:00006 ! N-glycosylated residue
 
 [Term]
 id: MOD:01086
@@ -22371,19 +22383,20 @@ is_a: MOD:00947 ! DeltaMass
 
 [Term]
 id: MOD:01118
-name: alpha-N-6-phosphogluconoylation (His Tagged proteins)
-def: "modification from DeltaMass" [DeltaMass:275]
-comment: From DeltaMass: Average Mass: 258 Formula: C6H10O6HPO3 Monoisotopic Mass Change: 258.01 Average Mass Change: 258.12 References: Geoghegan, K. F., H. B. Dixon, et al. (1999). Spontaneous alpha-N-6-phosphogluconoylation of a His tag in Escherichia coli: the cause of extra mass of 258 or 178 Da in fusion proteins. Anal Biochem 267(1): 169-84.
-xref: DiffAvg: "none"
-xref: DiffFormula: "none"
-xref: DiffMono: "none"
-xref: Formula: "none"
-xref: MassAvg: "none"
-xref: MassMono: "none"
-xref: Origin: "none"
-xref: Source: "none"
-xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+name: alpha-N-6-phosphogluconoylated L-histidine
+def: "A protein modification that effectively replaces the N-terminal hydrogen atom of a N-terminal histidine residue with a 6-phosphogluconoyl group linked through a glycosidic bond. modification from DeltaMass" [PubMed:9918669, DeltaMass:275]
+comment: Occurs on His-tagged proteins expresssed in E. coli.From DeltaMass: Average Mass: 258 Formula: C6H10O6HPO3 Monoisotopic Mass Change: 258.01 Average Mass Change: 258.12 References: Geoghegan, K. F., H. B. Dixon, et al. (1999). Spontaneous alpha-N-6-phosphogluconoylation of a His tag in Escherichia coli: the cause of extra mass of 258 or 178 Da in fusion proteins. Anal Biochem 267(1): 169-84. Mass is one Da higher because this is an N-terminal modification
+xref: DiffAvg: "259.12"
+xref: DiffFormula: "C 6 H 12 O 9 P 1"
+xref: DiffMono: "259.021894"
+xref: Formula: "C 12 H 19 N 3 O 10 P 1"
+xref: MassAvg: "396.27"
+xref: MassMono: "396.080806"
+xref: Origin: "H"
+xref: Source: "natural"
+xref: TermSpec: "N-term"
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:00006 ! N-glycosylated residue
 
 [Term]
 id: MOD:01119
@@ -22448,7 +22461,7 @@ is_a: MOD:00947 ! DeltaMass
 [Term]
 id: MOD:01122
 name: 5'phos dCytidinyl
-def: "modification from DeltaMass" [DeltaMass:0]
+def: "OBSOLETE because this is a modification that occurs to DNA/RNA and not proteins. modification from DeltaMass" [DeltaMass:0]
 comment: From DeltaMass: Average Mass: 289 with no citation.
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -22459,7 +22472,7 @@ xref: MassMono: "none"
 xref: Origin: "none"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:01123
@@ -22497,7 +22510,7 @@ is_a: MOD:00947 ! DeltaMass
 [Term]
 id: MOD:01125
 name: 5'phos dThymidinyl
-def: "modification from DeltaMass" [DeltaMass:0]
+def: "OBSOLETE because this is a modification that occurs to DNA/RNA and not proteins. modification from DeltaMass" [DeltaMass:0]
 comment: From DeltaMass: Average Mass: 304 with no citation.
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -22508,12 +22521,12 @@ xref: MassMono: "none"
 xref: Origin: "none"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:01126
 name: 5'phos Cytidinyl
-def: "modification from DeltaMass" [DeltaMass:0]
+def: "OBSOLETE because this is a modification that occurs to DNA/RNA and not proteins. modification from DeltaMass" [DeltaMass:0]
 comment: From DeltaMass: Average Mass: 305 with no citation.
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -22524,7 +22537,7 @@ xref: MassMono: "none"
 xref: Origin: "none"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:01127
@@ -22563,7 +22576,7 @@ is_a: MOD:00947 ! DeltaMass
 [Term]
 id: MOD:01129
 name: 5'phos dAdenosyl
-def: "modification from DeltaMass" [DeltaMass:295]
+def: "OBSOLETE because this is a modification that occurs to DNA/RNA and not proteins. modification from DeltaMass" [DeltaMass:295]
 comment: From DeltaMass: Average Mass: 313 Formula: C10H12O5N5P1 Monoisotopic Mass Change: 313.058 Average Mass Change: 313.211
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -22574,7 +22587,7 @@ xref: MassMono: "none"
 xref: Origin: "none"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:01130
@@ -22595,7 +22608,7 @@ is_a: MOD:00947 ! DeltaMass
 [Term]
 id: MOD:01131
 name: 5'phos dGuanosyl
-def: "modification from DeltaMass" [DeltaMass:0]
+def: "OBSOLETE because this is a modification that occurs to DNA/RNA and not proteins. modification from DeltaMass" [DeltaMass:0]
 comment: From DeltaMass: Average Mass: 329
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -22606,7 +22619,7 @@ xref: MassMono: "none"
 xref: Origin: "none"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:01132
@@ -22678,7 +22691,7 @@ is_a: MOD:00947 ! DeltaMass
 [Term]
 id: MOD:01136
 name: dioctyl phthalate
-def: "modification from DeltaMass" [DeltaMass:309]
+def: "OBSOLETE because this is a small molecule contaminant and not a modification to a polypeptide. modification from DeltaMass" [DeltaMass:309]
 comment: From DeltaMass: Average Mass: 391 Average Mass Change: 391 Notes: A common plasticizer, and, unfortunaltely, a common contaminate. A sodium adduct is often associated with this peak at 413.
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -22689,7 +22702,7 @@ xref: MassMono: "none"
 xref: Origin: "none"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:01137
@@ -22713,7 +22726,7 @@ is_a: MOD:01120 ! 2,2,5,7,8-pentamethylchroman-6-sulfonyl chloride derivatized r
 [Term]
 id: MOD:01138
 name: Aedans Cystenyl
-def: "modification from DeltaMass" [DeltaMass:311]
+def: "OBSOLETE because no evidence has been seen for this protein modification. modification from DeltaMass" [DeltaMass:311]
 comment: [probably aminoethyldansyl, JSG] From DeltaMass: (name misspelled "Aedans Cystenyl", and formula incorrect, N and O reversed) Average Mass: 409 Abbreviation: Aedans-Cys Formula: C17H19O3N5S2 Monoisotopic Mass Change: 409.077 Average Mass Change: 409.482
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -22724,12 +22737,12 @@ xref: MassMono: "none"
 xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:01139
 name: dioctyl phthalate sodium adduct
-def: "modification from DeltaMass" [DeltaMass:312]
+def: "OBSOLETE because this is a MS contaminant, not a known modification to a polypeptide. modification from DeltaMass" [DeltaMass:312]
 comment: From DeltaMass: Mass: Average Mass Change: 413 Notes: A common plasticizer, and, unfortunaltely, a common contaminate. A sodium adduct is often associated with this peak at 413.
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
@@ -22740,7 +22753,7 @@ xref: MassMono: "none"
 xref: Origin: "none"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+is_obsolete: true
 
 [Term]
 id: MOD:01140
@@ -22898,19 +22911,22 @@ is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
 id: MOD:01147
-name: (Hex)3-HexNAc-(dHex)HexNAc
-def: "modification from DeltaMass" [DeltaMass:0]
+name: dHex1Hex3HexNAc2 N4-glycosylated asparagine
+def: "modification from DeltaMass" [DeltaMass:0, Unimod:1761]
 comment: From DeltaMass: Average Mass: 1,039
-xref: DiffAvg: "none"
-xref: DiffFormula: "none"
-xref: DiffMono: "none"
-xref: Formula: "none"
-xref: MassAvg: "none"
-xref: MassMono: "none"
-xref: Origin: "none"
-xref: Source: "none"
+xref: DiffAvg: "1038.95"
+xref: DiffFormula: "C 40 H 66 N 2 O 29"
+xref: DiffMono: "1038.375124"
+xref: Formula: "C 44 H 72 N 4 O 31"
+xref: MassAvg: "1153.06"
+xref: MassMono: "1152.418052"
+xref: Origin: "N"
+xref: Source: "natural"
 xref: TermSpec: "none"
-is_a: MOD:00947 ! DeltaMass
+xref: Unimod: "Unimod:1761"
+xref: GNOme: "GNO:G20956ZV"
+is_a: MOD:00725 ! complex glycosylation
+is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
 id: MOD:01148
@@ -23805,7 +23821,7 @@ is_a: MOD:00561 ! N-ethyl iodoacetamide-d0
 
 [Term]
 id: MOD:01193
-name: phosphorylation to pyridyl thiol - site T
+name: pyridyl thiol modified L-threonine
 def: "modification from Unimod Chemical derivative -" [PubMed:1093385, Unimod:264#T]
 synonym: "PET" RELATED PSI-MS-label []
 synonym: "phosphorylation to pyridyl thiol" RELATED Unimod-description []
@@ -23819,11 +23835,12 @@ xref: Origin: "T"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:264"
-is_a: MOD:00586 ! phosphorylation to pyridyl thiol
+is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:00586 ! pyridyl thiol modified residue
 
 [Term]
 id: MOD:01194
-name: phosphorylation to pyridyl thiol - site S
+name: pyridyl thiol modified L-serine
 def: "modification from Unimod Chemical derivative -" [PubMed:15279557, Unimod:264#S]
 synonym: "PET" RELATED PSI-MS-label []
 synonym: "phosphorylation to pyridyl thiol" RELATED Unimod-description []
@@ -23837,7 +23854,8 @@ xref: Origin: "S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:264"
-is_a: MOD:00586 ! phosphorylation to pyridyl thiol
+is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:00586 ! pyridyl thiol modified residue
 
 [Term]
 id: MOD:01195
@@ -25080,7 +25098,7 @@ is_a: MOD:00547 ! 6-aminoquinolyl-N-hydroxysuccinimidyl carbamate
 
 [Term]
 id: MOD:01258
-name: N-methylmaleimide - site C
+name: N-methylmaleimide modified L-cysteine
 def: "modification from Unimod Chemical derivative -" [PubMed:9448752, Unimod:314#C]
 synonym: "Nmethylmaleimide" RELATED PSI-MS-label []
 synonym: "Nmethylmaleimide" RELATED Unimod-description []
@@ -25099,7 +25117,7 @@ is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
 id: MOD:01259
-name: N-methylmaleimide - site K
+name: N-methylmaleimide modified L-lysine
 def: "modification from Unimod Chemical derivative -" [PubMed:9448752, Unimod:314#K]
 synonym: "Nmethylmaleimide" RELATED PSI-MS-label []
 synonym: "Nmethylmaleimide" RELATED Unimod-description []
@@ -25119,7 +25137,7 @@ is_a: MOD:00912 ! modified L-lysine residue
 [Term]
 id: MOD:01260
 name: nucleophilic addtion to cytopiloyne - site Y
-def: "modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:270#Y]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:270#Y]
 synonym: "Cytopiloyne" RELATED PSI-MS-label []
 synonym: "nucleophilic addtion to cytopiloyne" RELATED Unimod-description []
 xref: DiffAvg: "362.38"
@@ -25132,13 +25150,12 @@ xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:270"
-is_a: MOD:00590 ! nucleophilic addtion to cytopiloyne
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01261
 name: nucleophilic addtion to cytopiloyne - site S
-def: "modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:270#C]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:270#C]
 synonym: "Cytopiloyne" RELATED PSI-MS-label []
 synonym: "nucleophilic addtion to cytopiloyne" RELATED Unimod-description []
 xref: DiffAvg: "362.38"
@@ -25151,13 +25168,12 @@ xref: Origin: "S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:270"
-is_a: MOD:00590 ! nucleophilic addtion to cytopiloyne
-is_a: MOD:00916 ! modified L-serine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01262
 name: nucleophilic addition to cytopiloyne - site R
-def: "modification from Unimod Chemical derivative -" [PubMed:12590383, PubMed:15549660, Unimod:270#R]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:12590383, PubMed:15549660, Unimod:270#R]
 synonym: "Cytopiloyne" RELATED PSI-MS-label []
 synonym: "nucleophilic addtion to cytopiloyne" RELATED Unimod-description []
 xref: DiffAvg: "362.38"
@@ -25170,13 +25186,12 @@ xref: Origin: "R"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:270"
-is_a: MOD:00590 ! nucleophilic addtion to cytopiloyne
-is_a: MOD:00902 ! modified L-arginine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01263
 name: nucleophilic addtion to cytopiloyne - site K
-def: "modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:270#K]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:270#K]
 synonym: "Cytopiloyne" RELATED PSI-MS-label []
 synonym: "nucleophilic addtion to cytopiloyne" RELATED Unimod-description []
 xref: DiffAvg: "362.38"
@@ -25189,13 +25204,12 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:270"
-is_a: MOD:00590 ! nucleophilic addtion to cytopiloyne
-is_a: MOD:00912 ! modified L-lysine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01264
 name: nucleophilic addtion to cytopiloyne - site C
-def: "modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:270#C]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:270#C]
 synonym: "Cytopiloyne" RELATED PSI-MS-label []
 synonym: "nucleophilic addtion to cytopiloyne" RELATED Unimod-description []
 xref: DiffAvg: "362.38"
@@ -25208,13 +25222,12 @@ xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:270"
-is_a: MOD:00590 ! nucleophilic addtion to cytopiloyne
-is_a: MOD:00905 ! modified L-cysteine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01265
 name: nucleophilic addtion to cytopiloyne - site P
-def: "modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:270#P]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:270#P]
 synonym: "Cytopiloyne" RELATED PSI-MS-label []
 synonym: "nucleophilic addtion to cytopiloyne" RELATED Unimod-description []
 xref: DiffAvg: "362.38"
@@ -25227,13 +25240,12 @@ xref: Origin: "P"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:270"
-is_a: MOD:00590 ! nucleophilic addtion to cytopiloyne
-is_a: MOD:00915 ! modified L-proline residue
+is_obsolete: true
 
 [Term]
 id: MOD:01266
 name: nucleophilic addition to cytopiloyne+H2O - site C
-def: "modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:271#C]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:271#C]
 synonym: "Cytopiloyne+water" RELATED PSI-MS-label []
 synonym: "nucleophilic addition to cytopiloyne+H2O" RELATED Unimod-description []
 xref: DiffAvg: "380.39"
@@ -25246,13 +25258,12 @@ xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:271"
-is_a: MOD:00591 ! nucleophilic addition to cytopiloyne+H2O
-is_a: MOD:00905 ! modified L-cysteine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01267
 name: nucleophilic addition to cytopiloyne+H2O - site K
-def: "modification from Unimod Chemical derivative -" [PubMed:11746907, PubMed:15549660, Unimod:271#K]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:11746907, PubMed:15549660, Unimod:271#K]
 synonym: "Cytopiloyne+water" RELATED PSI-MS-label []
 synonym: "nucleophilic addition to cytopiloyne+H2O" RELATED Unimod-description []
 xref: DiffAvg: "380.39"
@@ -25265,13 +25276,12 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:271"
-is_a: MOD:00591 ! nucleophilic addition to cytopiloyne+H2O
-is_a: MOD:00912 ! modified L-lysine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01268
 name: nucleophilic addition to cytopiloyne+H2O - site T
-def: "modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:271#T]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:271#T]
 synonym: "Cytopiloyne+water" RELATED PSI-MS-label []
 synonym: "nucleophilic addition to cytopiloyne+H2O" RELATED Unimod-description []
 xref: DiffAvg: "380.39"
@@ -25284,13 +25294,12 @@ xref: Origin: "T"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:271"
-is_a: MOD:00591 ! nucleophilic addition to cytopiloyne+H2O
-is_a: MOD:00917 ! modified L-threonine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01269
 name: nucleophilic addition to cytopiloyne+H2O - site R
-def: "modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:271#R]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:271#R]
 synonym: "Cytopiloyne+water" RELATED PSI-MS-label []
 synonym: "nucleophilic addition to cytopiloyne+H2O" RELATED Unimod-description []
 xref: DiffAvg: "380.39"
@@ -25303,13 +25312,12 @@ xref: Origin: "R"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:271"
-is_a: MOD:00591 ! nucleophilic addition to cytopiloyne+H2O
-is_a: MOD:00902 ! modified L-arginine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01270
 name: nucleophilic addition to cytopiloyne+H2O - site S
-def: "modification from Unimod Chemical derivative -" [PubMed:14670044, PubMed:15549660, Unimod:271#S]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:14670044, PubMed:15549660, Unimod:271#S]
 synonym: "Cytopiloyne+water" RELATED PSI-MS-label []
 synonym: "nucleophilic addition to cytopiloyne+H2O" RELATED Unimod-description []
 xref: DiffAvg: "380.39"
@@ -25322,13 +25330,12 @@ xref: Origin: "S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:271"
-is_a: MOD:00591 ! nucleophilic addition to cytopiloyne+H2O
-is_a: MOD:00916 ! modified L-serine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01271
 name: nucleophilic addition to cytopiloyne+H2O - site Y
-def: "modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:271#Y]
+def: "OBSOLETE because there is no evidence in the literature of covalent modification of polypeptides with cytopiloyne or cytopiloyne+H2O.  Modifications could potentially happen, but are not experimentally verified. [PMT] modification from Unimod Chemical derivative -" [PubMed:15549660, Unimod:271#Y]
 synonym: "Cytopiloyne+water" RELATED PSI-MS-label []
 synonym: "nucleophilic addition to cytopiloyne+H2O" RELATED Unimod-description []
 xref: DiffAvg: "380.39"
@@ -25341,8 +25348,7 @@ xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:271"
-is_a: MOD:00591 ! nucleophilic addition to cytopiloyne+H2O
-is_a: MOD:00919 ! modified L-tyrosine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01272
@@ -25441,7 +25447,7 @@ is_a: MOD:00919 ! modified L-tyrosine residue
 
 [Term]
 id: MOD:01277
-name: crotonaldehyde - site C
+name: crotonylated L-cysteine
 def: "modification from Unimod Other -" [PubMed:11283024, Unimod:253#C]
 synonym: "Crotonaldehyde" RELATED PSI-MS-label []
 synonym: "Crotonaldehyde" RELATED Unimod-description []
@@ -25455,12 +25461,12 @@ xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:253"
-is_a: MOD:00576 ! crotonaldehyde
+is_a: MOD:00576 ! crotonylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
 id: MOD:01278
-name: crotonaldehyde - site K
+name: crotonylated L-lysine
 def: "modification from Unimod Other -" [PubMed:11283024, Unimod:253#K]
 synonym: "Crotonaldehyde" RELATED PSI-MS-label []
 synonym: "Crotonaldehyde" RELATED Unimod-description []
@@ -25474,12 +25480,12 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:253"
-is_a: MOD:00576 ! crotonaldehyde
+is_a: MOD:00576 ! crotonylated residue
 is_a: MOD:00912 ! modified L-lysine residue
 
 [Term]
 id: MOD:01279
-name: crotonaldehyde - site H
+name: crotonylated L-histidine
 def: "modification from Unimod Other -" [PubMed:11283024, PubMed:1443554, Unimod:253#H]
 synonym: "Crotonaldehyde" RELATED PSI-MS-label []
 synonym: "Crotonaldehyde" RELATED Unimod-description []
@@ -25493,7 +25499,7 @@ xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:253"
-is_a: MOD:00576 ! crotonaldehyde
+is_a: MOD:00576 ! crotonylated residue
 is_a: MOD:00909 ! modified L-histidine residue
 
 [Term]
@@ -25537,7 +25543,7 @@ is_a: MOD:00916 ! modified L-serine residue
 [Term]
 id: MOD:01282
 name: acrolein addition +56 - site H
-def: "modification from Unimod Other -" [PubMed:10825247, PubMed:15541752, Unimod:206#H]
+def: "OBSOLETE because this modification is not supported by the linked literature [PMT]" [PubMed:10825247, PubMed:15541752, Unimod:206#H]
 synonym: "Acrolein addition +56" RELATED Unimod-description []
 synonym: "Delta:H(4)C(3)O(1)" RELATED PSI-MS-label []
 xref: DiffAvg: "56.06"
@@ -25550,13 +25556,12 @@ xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:206"
-is_a: MOD:00557 ! acrolein addition +56
-is_a: MOD:00909 ! modified L-histidine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01283
 name: acrolein addition +56 - site K
-def: "modification from Unimod Other -" [PubMed:10825247, PubMed:15541752, Unimod:206#K]
+def: "OBSOLETE because this modification is not supported by the linked literature [PMT]" [PubMed:10825247, PubMed:15541752, Unimod:206#K]
 synonym: "Acrolein addition +56" RELATED Unimod-description []
 synonym: "Delta:H(4)C(3)O(1)" RELATED PSI-MS-label []
 xref: DiffAvg: "56.06"
@@ -25569,13 +25574,12 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:206"
-is_a: MOD:00557 ! acrolein addition +56
-is_a: MOD:00912 ! modified L-lysine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01284
 name: acrolein addition +56 - site C
-def: "modification from Unimod Other -" [PubMed:10825247, PubMed:15541752, PubMed:9254591, Unimod:206#C]
+def: "OBSOLETE because this modification is not supported by the linked literature [PMT]" [PubMed:10825247, PubMed:15541752, PubMed:9254591, Unimod:206#C]
 synonym: "Acrolein addition +56" RELATED Unimod-description []
 synonym: "Delta:H(4)C(3)O(1)" RELATED PSI-MS-label []
 xref: DiffAvg: "56.06"
@@ -25588,8 +25592,7 @@ xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:206"
-is_a: MOD:00557 ! acrolein addition +56
-is_a: MOD:00905 ! modified L-cysteine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01285
@@ -25651,7 +25654,7 @@ is_a: MOD:00912 ! modified L-lysine residue
 [Term]
 id: MOD:01288
 name: acetaldehyde +28 - site H
-def: "modification from Unimod Other -" [Unimod:255#H]
+def: "OBSOLETE because this is not supported by the literature [PMT]" [Unimod:255#H]
 synonym: "Acetaldehyde +28" RELATED Unimod-description []
 synonym: "Delta:H(4)C(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "28.05"
@@ -25664,13 +25667,12 @@ xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:255"
-is_a: MOD:00578 ! acetaldehyde +28
-is_a: MOD:00909 ! modified L-histidine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01289
 name: acetaldehyde +28 - site K
-def: "modification from Unimod Other -" [Unimod:255#K]
+def: "OBSOLETE because this is not supported by the literature [PMT]" [Unimod:255#K]
 synonym: "Acetaldehyde +28" RELATED Unimod-description []
 synonym: "Delta:H(4)C(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "28.05"
@@ -25683,8 +25685,7 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:255"
-is_a: MOD:00578 ! acetaldehyde +28
-is_a: MOD:00912 ! modified L-lysine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01290
@@ -26322,7 +26323,7 @@ is_a: MOD:00905 ! modified L-cysteine residue
 [Term]
 id: MOD:01322
 name: propionaldehyde +40 - site K
-def: "modification from Unimod Other -" [PubMed:15549660, Unimod:256#K]
+def: "OBSOLETE because not supported by the linked literature [PMT]. modification from Unimod Other -" [PubMed:15549660, Unimod:256#K]
 synonym: "Delta:H(4)C(3)" RELATED PSI-MS-label []
 synonym: "Propionaldehyde +40" RELATED Unimod-description []
 xref: DiffAvg: "40.06"
@@ -26335,13 +26336,12 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:256"
-is_a: MOD:00579 ! propionaldehyde +40
-is_a: MOD:00912 ! modified L-lysine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01323
 name: propionaldehyde +40 - site H
-def: "modification from Unimod Other -" [Unimod:256#H]
+def: "OBSOLETE because not supported by the linked literature [PMT]. modification from Unimod Other -" [Unimod:256#H]
 synonym: "Delta:H(4)C(3)" RELATED PSI-MS-label []
 synonym: "Propionaldehyde +40" RELATED Unimod-description []
 xref: DiffAvg: "40.06"
@@ -26354,13 +26354,12 @@ xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:256"
-is_a: MOD:00579 ! propionaldehyde +40
-is_a: MOD:00909 ! modified L-histidine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01324
 name: acetaldehyde +26 - site H
-def: "modification from Unimod Other -" [PubMed:7744761, Unimod:254#H]
+def: "OBSOLETE because this is not supported by the linked literature [PMT]" [PubMed:7744761, Unimod:254#H]
 synonym: "Acetaldehyde +26" RELATED Unimod-description []
 synonym: "Delta:H(2)C(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "26.04"
@@ -26373,13 +26372,12 @@ xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:254"
-is_a: MOD:00577 ! acetaldehyde +26
-is_a: MOD:00909 ! modified L-histidine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01325
 name: acetaldehyde +26 - site K
-def: "modification from Unimod Other -" [PubMed:7744761, Unimod:254#K]
+def: "OBSOLETE because this is not supported by the linked literature [PMT]" [PubMed:7744761, Unimod:254#K]
 synonym: "Acetaldehyde +26" RELATED Unimod-description []
 synonym: "Delta:H(2)C(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "26.04"
@@ -26392,8 +26390,7 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:254"
-is_a: MOD:00577 ! acetaldehyde +26
-is_a: MOD:00912 ! modified L-lysine residue
+is_obsolete: true
 
 [Term]
 id: MOD:01326
@@ -36177,7 +36174,7 @@ is_a: MOD:01622 ! monohydroxylated tryptophan
 
 [Term]
 id: MOD:01817
-name: oxidation of tryptophan to 2'-oxo-L-tryptophan
+name: 2'-oxo-L-tryptophan
 def: "A protein modification that effectively converts an L-tryptophan residue to a 2'-oxo-L-tryptophan." [PubMed:9461080, RESID:AA0543]
 synonym: "(2S)-2-amino-3-[(3S)-2-oxo-2,3-dihydro-1H-indol-3-yl]propanoic acid" EXACT RESID-systematic []
 synonym: "2'-oxo-L-tryptophan" EXACT RESID-name []
@@ -36973,7 +36970,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0628"
 is_a: MOD:00426 ! S-glycosylated residue
-is_a: MOD:00448 ! N-acetylaminoglucosylated residue
+is_a: MOD:00448 ! mono-N-acetylaminoglucosylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
@@ -38040,7 +38037,7 @@ xref: Unimod: "Unimod:907"
 xref: UniProt: "PTM-0556"
 relationship: derives_from MOD:00037 ! 5-hydroxy-L-lysine
 is_a: MOD:00396 ! O-glycosylated residue
-is_a: MOD:00476 ! galactosylated residue
+is_a: MOD:00476 ! monogalactosylated residue
 
 [Term]
 id: MOD:01915
@@ -38082,7 +38079,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0570"
-is_a: MOD:00563 ! N-acetylaminogalactosylated residue
+is_a: MOD:00563 ! mono-N-acetylaminogalactosylated residue
 is_a: MOD:01927 ! O-glycosyl-L-tyrosine
 
 [Term]
@@ -38179,6 +38176,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0477"
+is_a: MOD:00909 ! modified L-histidine residue
 is_a: MOD:00677 ! hydroxylated residue
 
 [Term]
@@ -39179,7 +39177,7 @@ xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0518"
-is_a: MOD:00448 ! N-acetylaminoglucosylated residue
+is_a: MOD:00448 ! mono-N-acetylaminoglucosylated residue
 is_a: MOD:01980 ! omega-N-glycosyl-L-arginine
 
 [Term]
