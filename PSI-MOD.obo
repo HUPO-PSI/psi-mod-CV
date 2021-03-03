@@ -1,6 +1,6 @@
 format-version: 1.2
 ontology: mod
-date: 03:03:2021 19:06
+date: 03:03:2021 19:49
 saved-by: Paul M. Thomas
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
@@ -17,9 +17,9 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.031.0
+remark: PSI-MOD version: 1.031.1
 remark: RESID release: 75.00
-remark: ISO-8601 date: 2021-03-03 19:06Z
+remark: ISO-8601 date: 2021-03-03 19:49Z
 remark: Annotation note 01 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
 remark: Annotation note 02 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol "#" and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag "#var".
 remark: Annotation note 03 - When an entry in the Unimod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the Unimod cross-reference followed by a hash symbol and an amino acid code, "N-term" or "C-term".
@@ -41154,25 +41154,6 @@ is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00673 ! methylated asparagine
 is_a: MOD:00203 ! D-asparagine
 is_a: MOD:00894 ! residues isobaric at 128.058578 Da
-
-[Term]
-id: MOD:02097
-name: S-geranylgeranyl-L-cysteine methyl ester
-def: "A protein modification that effectively converts an L-cysteine residue to S-geranylgeranyl-L-cysteine methyl ester." [PubMed:7999771]
-subset: PSI-MOD-slim
-synonym: "SGerGerOMeCys" EXACT PSI-MOD-label []
-xref: DiffAvg: "286.50"
-xref: DiffFormula: "C 21 H 34 N 0 O 0 S 0"
-xref: DiffMono: "286.266051"
-xref: Formula: "C 24 H 40 N 1 O 2 S 1"
-xref: MassAvg: "406.65"
-xref: MassMono: "406.277976"
-xref: Origin: "C"
-xref: Source: "natural"
-xref: TermSpec: "C-term"
-is_a: MOD:00905 ! modified L-cysteine residue
-relationship: has_functional_parent MOD:00113 ! S-geranylgeranyl-L-cysteine
-relationship: has_functional_parent MOD:00114 ! L-cysteine methyl ester
 
 [Typedef]
 id: contains
