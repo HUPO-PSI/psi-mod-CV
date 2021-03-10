@@ -41022,7 +41022,7 @@ is_a: MOD:01166 ! uridylated residue
 [Term]
 id: MOD:02090
 name: O-(phospho-5'-uridine)-L-threonine
-def: "A protein modification that effectively crosslinks an L-threonine residue and 5'-phosphouridine through a phosphodiester bond to form O-(phospho-5'-uridine)-L-threonine." [DeltaMass:0, PubMed:22504181, Unimod:417#T, ChEBI:156052]
+def: "A protein modification that effectively modifies an L-threonine residue with 5'-phosphouridine through a phosphodiester bond to form O-(phospho-5'-uridine)-L-threonine." [DeltaMass:0, PubMed:22504181, Unimod:417#T, ChEBI:156052]
 subset: PSI-MOD-slim
 synonym: "MOD_RES O-UMP-threonine" EXACT UniProt-feature []
 synonym: "OUMPThr" EXACT PSI-MOD-label []
@@ -41044,7 +41044,7 @@ is_a: MOD:01166 ! uridylated residue
 [Term]
 id: MOD:02091
 name: O-(phospho-5'-adenosine)-L-serine
-def: "A protein modification that effectively crosslinks an L-serine residue and 5'-phosphoadenosine through a phosphodiester bond to form O-(phospho-5'-adenosine)-L-serine." [PubMed:21472612, Unimod:405#S]
+def: "A protein modification that effectively modifies an L-serine residue with 5'-phosphoadenosine through a phosphodiester bond to form O-(phospho-5'-adenosine)-L-serine." [PubMed:21472612, Unimod:405#S]
 subset: PSI-MOD-slim
 synonym: "MOD_RES O-AMP-serine" EXACT UniProt-feature []
 synonym: "Phosphoadenosine" RELATED PSI-MS-label []
