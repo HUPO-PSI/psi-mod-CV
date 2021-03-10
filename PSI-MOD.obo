@@ -1,6 +1,6 @@
 format-version: 1.2
 ontology: mod
-date: 10:02:2021 14:33
+date: 10:03:2021 14:36
 saved-by: Paul M. Thomas
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
@@ -17,9 +17,9 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-remark: PSI-MOD version: 1.030.0
+remark: PSI-MOD version: 1.031.2
 remark: RESID release: 75.00
-remark: ISO-8601 date: 2021-02-10 14:33Z
+remark: ISO-8601 date: 2021-03-10 14:36Z
 remark: Annotation note 01 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
 remark: Annotation note 02 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol "#" and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag "#var".
 remark: Annotation note 03 - When an entry in the Unimod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the Unimod cross-reference followed by a hash symbol and an amino acid code, "N-term" or "C-term".
@@ -5299,6 +5299,7 @@ xref: MassAvg: "114.10"
 xref: MassMono: "114.042927"
 xref: Origin: "N"
 xref: Source: "natural"
+xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0115"
 is_a: MOD:00664 ! stereoisomerized residue
@@ -6231,7 +6232,7 @@ xref: Origin: "N"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:414"
-is_a: MOD:00160 ! N4-glycosyl-L-asparagine
+is_a: MOD:00903 ! modified L-asparagine residue
 
 [Term]
 id: MOD:00242
@@ -21740,7 +21741,7 @@ xref: Formula: "C 6 H 10 N 2 O 2 S 1"
 xref: MassAvg: "174.22"
 xref: MassMono: "174.046299"
 xref: Origin: "C"
-xref: Source: "artifact
+xref: Source: "artifact"
 xref: Remap: "MOD:00417"
 is_obsolete: true
 
@@ -33352,7 +33353,7 @@ relationship: contains MOD:01673 ! N-acetylaminohexosylated residue
 [Term]
 id: MOD:01678
 name: N6-carbamoyl-L-lysine
-def: "A protein modification that effectively coverts L-lysine to N6-carbamoyl-L-lysine." [DeltaMass:56, OMSSA:31, PubMed:10978403, PubMed:12203680, Unimod:5#K]
+def: "A protein modification that effectively coverts L-lysine to N6-carbamoyl-L-lysine." [DeltaMass:56, OMSSA:31, PubMed:10978403, PubMed:12203680, Unimod:5#K, ChEBI:144369]
 comment: This modification can be produced by hydrogen cyanate, either as a reagent or as released by urea degradation in solution [JSG].
 subset: PSI-MOD-slim
 synonym: "2-amino-6-ureido-hexanoic acid" EXACT PSI-MOD-alternate []
@@ -33362,6 +33363,7 @@ synonym: "carbamylk" EXACT OMSSA-label []
 synonym: "homocitrulline" EXACT PSI-MOD-alternate []
 synonym: "N6-(aminocarbonyl)-L-lysine" EXACT PSI-MOD-alternate []
 synonym: "N6CbmLys" EXACT PSI-MOD-label []
+synonym: "MOD_RES N6-carbamoyllysine" EXACT UniProt-feature []
 xref: DiffAvg: "43.02"
 xref: DiffFormula: "C 1 H 1 N 1 O 1"
 xref: DiffMono: "43.005814"
@@ -33372,6 +33374,8 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:5"
+xref: UniProt: "PTM-0675"
+is_a: MOD:00912 ! modified L-lysine residue
 is_a: MOD:00398 ! carbamoylated residue
 
 [Term]
@@ -38018,26 +38022,25 @@ is_a: MOD:01911 ! monochlorinated residue
 [Term]
 id: MOD:01914
 name: O5-galactosyl-L-hydroxylysine
-def: "A protein modification that effectively converts an L-lysine residue to O5-galactosyl-L-hydroxylysine." [PMID:743239, PubMed:17516569, Unimod:907]
+def: "A protein modification that effectively converts a 5-hydroxy-L-lysine residue to O5-galactosyl-L-hydroxylysine." [PMID:743239, PubMed:17516569, Unimod:907]
 comment: Secondary to RESID:AA0028. This intermediate is rarely observed [JSG].
 subset: PSI-MOD-slim
 synonym: "Galactosyl hydroxylysine" RELATED Unimod-description []
 synonym: "OGal5HyLys" EXACT PSI-MOD-label []
 synonym: "CARBOHYD O-linked (Gal) hydroxylysine" EXACT UniProt-feature []
-xref: DiffAvg: "178.14"
-xref: DiffFormula: "C 6 H 10 N 0 O 6"
-xref: DiffMono: "178.047738"
+xref: DiffAvg: "162.14"
+xref: DiffFormula: "C 6 H 10 O 5"
+xref: DiffMono: "162.052823"
 xref: Formula: "C 16 H 22 N 2 O 7"
 xref: MassAvg: "354.36"
 xref: MassMono: "354.142701"
-xref: Origin: "K"
+xref: Origin: "MOD:00037"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:907"
 xref: UniProt: "PTM-0556"
-relationship: derives_from MOD:00037 ! 5-hydroxy-L-lysine
-is_a: MOD:00396 ! O-glycosylated residue
 is_a: MOD:00476 ! monogalactosylated residue
+is_a: MOD:00396 ! O-glycosylated residue
 
 [Term]
 id: MOD:01915
@@ -40673,8 +40676,8 @@ name: crosslinked D-asparagine residue
 def: "A protein modification that contains an D-asparagine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "XlnkDAsn" EXACT PSI-MOD-label []
-xref: Origin: "N"
-is_a: MOD:00203 ! D-asparagine
+xref: Origin: "MOD:00203"
+is_a: MOD:02097 ! modified D-asparagine residue
 
 [Term]
 id: MOD:02061
@@ -40992,6 +40995,173 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00009 ! natural residue
 is_a: MOD:01156 ! protein modification categorized by chemical process
+
+[Term]
+id: MOD:02089
+name: O-(phospho-5'-uridine)-L-serine
+def: "A protein modification that effectively crosslinks an L-serine residue and 5'-phosphouridine through a phosphodiester bond to form O-(phospho-5'-uridine)-L-serine." [DeltaMass:0, PubMed:22504181, Unimod:417#S, ChEBI:156051]
+subset: PSI-MOD-slim
+synonym: "MOD_RES O-UMP-serine" EXACT UniProt-feature []
+synonym: "OUMPSer" EXACT PSI-MOD-label []
+synonym: "PhosphoUridine" RELATED PSI-MS-label []
+xref: DiffAvg: "306.17"
+xref: DiffFormula: "C 9 H 11 N 2 O 8 P 1"
+xref: DiffMono: "306.025302"
+xref: Formula: "C 12 H 16 N 3 O 9 P 1"
+xref: MassAvg: "377.24"
+xref: MassMono: "377.062416"
+xref: Origin: "S"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:417"
+xref: UniProt: "PTM-0501"
+is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:01166 ! uridylated residue
+
+[Term]
+id: MOD:02090
+name: O-(phospho-5'-uridine)-L-threonine
+def: "A protein modification that effectively modifies an L-threonine residue with 5'-phosphouridine through a phosphodiester bond to form O-(phospho-5'-uridine)-L-threonine." [DeltaMass:0, PubMed:22504181, Unimod:417#T, ChEBI:156052]
+subset: PSI-MOD-slim
+synonym: "MOD_RES O-UMP-threonine" EXACT UniProt-feature []
+synonym: "OUMPThr" EXACT PSI-MOD-label []
+synonym: "PhosphoUridine" RELATED PSI-MS-label []
+xref: DiffAvg: "306.17"
+xref: DiffFormula: "C 9 H 11 N 2 O 8 P 1"
+xref: DiffMono: "306.025302"
+xref: Formula: "C 13 H 18 N 3 O 9 P 1"
+xref: MassAvg: "391.27"
+xref: MassMono: "391.078066"
+xref: Origin: "T"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:417"
+xref: UniProt: "PTM-0502"
+is_a: MOD:00917 ! modified L-threonine residue
+is_a: MOD:01166 ! uridylated residue
+
+[Term]
+id: MOD:02091
+name: O-(phospho-5'-adenosine)-L-serine
+def: "A protein modification that effectively modifies an L-serine residue with 5'-phosphoadenosine through a phosphodiester bond to form O-(phospho-5'-adenosine)-L-serine." [PubMed:21472612, Unimod:405#S]
+subset: PSI-MOD-slim
+synonym: "MOD_RES O-AMP-serine" EXACT UniProt-feature []
+synonym: "Phosphoadenosine" RELATED PSI-MS-label []
+xref: DiffAvg: "329.21"
+xref: DiffFormula: "C 10 H 12 N 5 O 6 P 1"
+xref: DiffMono: "329.052520"
+xref: Formula: "C 13 H 17 N 6 O 8 P 1"
+xref: MassAvg: "416.28"
+xref: MassMono: "416.084549"
+xref: Origin: "S"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:405"
+xref: UniProt: "PTM-0651"
+is_a: MOD:00916 ! modified L-serine residue
+is_a: MOD:01165 ! adenylated residue
+
+[Term]
+id: MOD:02092
+name: S-methylbutanedioic acid-L-cysteine
+def: "A protein modification that effectively converts an L-cysteine residue to form S-methylbutanedioic acid-L-cysteine by alkylation with itaconate through a thioether bond." [PubMed:29590092]
+subset: PSI-MOD-slim
+synonym: "MOD_RES S-(2,3-dicarboxypropyl)cysteine" EXACT UniProt-feature []
+xref: DiffAvg: "130.10"
+xref: DiffFormula: "C 5 H 6 N 0 O 4 P 0 S 0"
+xref: DiffMono: "130.026609"
+xref: Formula: "C 8 H 11 N 1 O 5 P 0 S 1"
+xref: MassAvg: "233.24"
+xref: MassMono: "233.035793"
+xref: Origin: "C"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: UniProt: "PTM-0676"
+is_a: MOD:00905 ! modified L-cysteine residue
+is_a: MOD:00001 ! alkylated residue
+
+[Term]
+id: MOD:02093
+name: N6-(2-hydroxyisobutanoyl)-L-lysine
+def: "A protein modification that effectively converts an L-lysine residue to N6-(2-hydroxyisobutanoyl)-L-lysine." [PubMed:29775581, PubMed:24681537, ChEBI:144968, Unimod:1849]
+synonym: "MOD_RES N6-(2-hydroxyisobutyryl)lysine" EXACT UniProt-feature []
+xref: DiffAvg: "86.09"
+xref: DiffFormula: "C 4 H 6 N 0 O 2"
+xref: DiffMono: "86.036779"
+xref: Formula: "C 10 H 18 N 2 O 3"
+xref: MassAvg: "214.27"
+xref: MassMono: "214.131742"
+xref: Origin: "K"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:1849"
+xref: UniProt: "PTM-0638"
+is_a: MOD:01875 ! N6-acylated L-lysine
+
+[Term]
+id: MOD:02094
+name: N6-((3R)-3-hydroxybutanoyl)-L-lysine
+def: "A protein modification that effectively converts an L-lysine residue to N6-((3R)-3-hydroxybutanoyl)-L-lysine." [PubMed:27105115, ChEBI:149490]
+synonym: "MOD_RES N6-(beta-hydroxybutyryl)lysine" EXACT UniProt-feature []
+xref: DiffAvg: "86.09"
+xref: DiffFormula: "C 4 H 6 N 0 O 2"
+xref: DiffMono: "86.036779"
+xref: Formula: "C 10 H 18 N 2 O 3"
+xref: MassAvg: "214.27"
+xref: MassMono: "214.131742"
+xref: Origin: "K"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: UniProt: "PTM-0499"
+is_a: MOD:01875 ! N6-acylated L-lysine
+
+[Term]
+id: MOD:02095
+name: N6-glutaryl-L-lysine
+def: "A protein modification that effectively converts an L-lysine residue to N6-glutaryl-L-lysine." [PubMed:24703693, ChEBI:87828]
+synonym: "MOD_RES N6-glutaryllysine" EXACT UniProt-feature []
+xref: DiffAvg: "114.10"
+xref: DiffFormula: "C 5 H 6 N 0 O 3"
+xref: DiffMono: "114.031694"
+xref: Formula: "C 11 H 18 N 2 O 4"
+xref: MassAvg: "242.28"
+xref: MassMono: "242.126657"
+xref: Origin: "K"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: UniProt: "PTM-0487"
+is_a: MOD:01875 ! N6-acylated L-lysine
+
+[Term]
+id: MOD:02096
+name: N4-methyl-D-asparagine
+def: "A protein modification that effectively converts a D-asparagine residue to N4-methyl-D-asparagine." [PubMed:22983711, ChEBI:149514]
+subset: PSI-MOD-slim
+synonym: "MOD_RES N4-methyl-D-asparagine" EXACT UniProt-feature []
+synonym: "N4-methylated D-asparagine" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "14.03"
+xref: DiffFormula: "C 1 H 2 N 0 O 0"
+xref: DiffMono: "14.015650"
+xref: Formula: "C 5 H 8 N 2 O 2"
+xref: MassAvg: "128.13"
+xref: MassMono: "128.058578"
+xref: Origin: "N"
+xref: Source: "natural"
+xref: TermSpec: "none"
+xref: UniProt: "PTM-0691"
+is_a: MOD:00599 ! monomethylated residue
+is_a: MOD:00602 ! N-methylated residue
+is_a: MOD:00673 ! methylated asparagine
+is_a: MOD:02097 ! modified D-asparagine residue
+is_a: MOD:00894 ! residues isobaric at 128.058578 Da
+
+[Term]
+id: MOD:02097
+name: modified D-asparagine residue
+def: "A protein modification that modifies a D-asparagine residue." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "ModDAsn" EXACT PSI-MOD-label []
+is_a: MOD:00203 ! D-asparagine
 
 [Typedef]
 id: contains
