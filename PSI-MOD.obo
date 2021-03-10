@@ -38022,25 +38022,24 @@ is_a: MOD:01911 ! monochlorinated residue
 [Term]
 id: MOD:01914
 name: O5-galactosyl-L-hydroxylysine
-def: "A protein modification that effectively converts an L-lysine residue to O5-galactosyl-L-hydroxylysine." [PMID:743239, PubMed:17516569, Unimod:907]
+def: "A protein modification that effectively converts a 5-hydroxy-L-lysine residue to O5-galactosyl-L-hydroxylysine." [PMID:743239, PubMed:17516569, Unimod:907]
 comment: Secondary to RESID:AA0028. This intermediate is rarely observed [JSG].
 subset: PSI-MOD-slim
 synonym: "Galactosyl hydroxylysine" RELATED Unimod-description []
 synonym: "OGal5HyLys" EXACT PSI-MOD-label []
 synonym: "CARBOHYD O-linked (Gal) hydroxylysine" EXACT UniProt-feature []
-xref: DiffAvg: "178.14"
-xref: DiffFormula: "C 6 H 10 N 0 O 6"
-xref: DiffMono: "178.047738"
+xref: DiffAvg: "162.14"
+xref: DiffFormula: "C 6 H 10 O 5"
+xref: DiffMono: "162.052823"
 xref: Formula: "C 16 H 22 N 2 O 7"
 xref: MassAvg: "354.36"
 xref: MassMono: "354.142701"
-xref: Origin: "K"
+xref: Origin: "MOD:00037"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:907"
 xref: UniProt: "PTM-0556"
-relationship: derives_from MOD:00037 ! 5-hydroxy-L-lysine
-relationship: derives_from MOD:00476 ! monogalactosylated residue
+is_a: MOD:00476 ! monogalactosylated residue
 is_a: MOD:00396 ! O-glycosylated residue
 
 [Term]
