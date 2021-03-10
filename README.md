@@ -13,3 +13,5 @@ This link (http://psidev.cvs.sourceforge.net/viewvc/*checkout*/psidev/psi/mod/da
 The OBO-XML [file format](http://www-legacy.geneontology.org/GO.format.shtml#OBO-XML) has been deprecated in favor of the more highly supported OWL [file format](https://www.w3.org/OWL/). Pull Requests MUST include updated OBO and OWL files. The [ROBOT Tool](http://robot.obolibrary.org/) is used to create compliant OWL files from the OBO using this syntax:
 
 	robot.bat convert --input "path-to-obo-file\psi-mod.obo" --output "path-to-obo-file\psi-mod.owl"
+
+Note that the master source file for this ontology is the obo file and the OWL file is a derivative of it.
