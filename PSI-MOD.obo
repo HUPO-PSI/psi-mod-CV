@@ -5299,6 +5299,7 @@ xref: MassAvg: "114.10"
 xref: MassMono: "114.042927"
 xref: Origin: "N"
 xref: Source: "natural"
+xref: Source: "natural"
 xref: TermSpec: "none"
 xref: UniProt: "PTM-0115"
 is_a: MOD:00664 ! stereoisomerized residue
@@ -40676,8 +40677,8 @@ name: crosslinked D-asparagine residue
 def: "A protein modification that contains an D-asparagine residue crosslinked to one or more amino acid residues." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "XlnkDAsn" EXACT PSI-MOD-label []
-xref: Origin: "N"
-is_a: MOD:00203 ! D-asparagine
+xref: Origin: "MOD:00203"
+is_a: MOD:02097 ! modified D-asparagine residue
 
 [Term]
 id: MOD:02061
@@ -41152,8 +41153,16 @@ xref: UniProt: "PTM-0691"
 is_a: MOD:00599 ! monomethylated residue
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00673 ! methylated asparagine
-is_a: MOD:00203 ! D-asparagine
+is_a: MOD:02097 ! modified D-asparagine residue
 is_a: MOD:00894 ! residues isobaric at 128.058578 Da
+
+[Term]
+id: MOD:02097
+name: modified D-asparagine residue
+def: "A protein modification that modifies a D-asparagine residue." [PubMed:18688235]
+subset: PSI-MOD-slim
+synonym: "ModDAsn" EXACT PSI-MOD-label []
+is_a: MOD:00203 ! D-asparagine
 
 [Typedef]
 id: contains
