@@ -41065,7 +41065,7 @@ is_a: MOD:01165 ! adenylated residue
 [Term]
 id: MOD:02092
 name: S-methylbutanedioic acid-L-cysteine
-def: "A protein modification that effectively converts an L-cysteine residue to form S-methylbutanedioic acid-L-cysteine through a thioether bond." [PubMed:29590092]
+def: "A protein modification that effectively converts an L-cysteine residue to form S-methylbutanedioic acid-L-cysteine by alkylation with itaconate through a thioether bond." [PubMed:29590092]
 subset: PSI-MOD-slim
 synonym: "MOD_RES S-(2,3-dicarboxypropyl)cysteine" EXACT UniProt-feature []
 xref: DiffAvg: "130.10"
