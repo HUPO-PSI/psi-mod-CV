@@ -24,6 +24,12 @@ with open(args.input) as f:
     doc = fastobo.loads(contents)
 
 for frame in doc:
+
+    for i, clause in reversed(list(enumerate(frame))):
+        if isinstance(clause, fastobo.term.XrefClause):
+            if clause.xref.desc == "none":
+                frame.pop(i)
+
     for i, clause in enumerate(frame):
         if isinstance(clause, fastobo.term.XrefClause):
             property = clause.xref.id.prefix
