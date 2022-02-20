@@ -13334,7 +13334,7 @@ xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Remap: "MOD:00776"
-xref: UinMod: "Unimod:245"
+xref: Unimod: "Unimod:245"
 is_obsolete: true
 
 [Term]
@@ -19152,7 +19152,7 @@ xref: MassMono: "none"
 xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-xref: UnMod: "Unimod:510"
+xref: Unimod: "Unimod:510"
 is_a: MOD:00839 ! (2)H deuterium labeled residue
 is_a: MOD:00842 ! (13)C labeled residue
 
@@ -24285,7 +24285,7 @@ xref: MassMono: "186.064057"
 xref: Origin: "E"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-xref: UniMo: "Unimod:4"
+xref: Unimod: "Unimod:4"
 is_a: MOD:00397 ! iodoacetamide derivatized residue
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
