@@ -17,6 +17,7 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
+data-version: 1.031.2
 remark: PSI-MOD version: 1.031.2
 remark: RESID release: 75.00
 remark: ISO-8601 date: 2021-03-10 14:36Z
@@ -37533,4 +37534,3 @@ id: part_of
 name: part of
 def: "'Entity A' part_of 'Entity B' implies that 'Entity A' is a part of the structure of 'Entity B'." [PubMed:18688235]
 is_transitive: true
-

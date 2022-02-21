@@ -17,6 +17,7 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
+data-version: 1.031.2
 remark: PSI-MOD version: 1.031.2
 remark: RESID release: 75.00
 remark: ISO-8601 date: 2021-03-10 14:36Z
@@ -12601,7 +12602,7 @@ is_a: MOD:00725 ! complex glycosylation
 is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
-id: MOD:00528 
+id: MOD:00528
 name: Hex1HexNAc1NeuAc2 glycosylated residue
 def: "A protein modification that effectively replaces a hydrogen atom of an amino acid residue or of a modifying group with a carbohydrate-like group composed of Hex1HexNAc1NeuAc2 linked through a glycosidic bond." [Unimod:160]
 synonym: "Hex(1)HexNAc(1)NeuAc(2)" RELATED PSI-MS-label []
@@ -31641,7 +31642,7 @@ synonym: "O-(2,4-diacetamido-2,4-dideoxy-D-glucosyl)-L-serine" EXACT RESID-name 
 synonym: "O-[2,4-bis(acetylamino)]glucosyl-L-serine" EXACT RESID-alternate []
 synonym: "O-seryl-beta-2,4-bis(acetylamino)glucoside" EXACT RESID-alternate []
 synonym: "O3-(2,4-diacetamido-2,4-dideoxy-beta-D-glucopyranosyl)-L-serine" EXACT RESID-alternate []
-synonym: "CARBOHYD O-linked (DADDGlc) serine" EXACT UniProt-feature [] 
+synonym: "CARBOHYD O-linked (DADDGlc) serine" EXACT UniProt-feature []
 xref: DiffAvg: "244.25"
 xref: DiffFormula: "C 10 H 16 N 2 O 5"
 xref: DiffMono: "244.105922"
