@@ -715,7 +715,7 @@ property_value: MassAvg "130.10" xsd:float
 property_value: MassMono "130.037842" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0369
+xref: uniprot.ptm:0369
 is_a: MOD:01688
 
 [Term]
@@ -743,7 +743,7 @@ property_value: MassMono "131.021858" xsd:float
 property_value: Origin "D" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:35
-xref: PTM-0371
+xref: uniprot.ptm:0371
 is_a: MOD:01926
 
 [Term]
@@ -761,7 +761,7 @@ property_value: MassAvg "144.17" xsd:float
 property_value: MassMono "144.089878" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0044
+xref: uniprot.ptm:0044
 is_a: MOD:01047
 
 [Term]
@@ -785,7 +785,7 @@ property_value: MassAvg "113.12" xsd:float
 property_value: MassMono "113.047678" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0030
+xref: uniprot.ptm:0030
 is_a: MOD:01024
 
 [Term]
@@ -810,7 +810,7 @@ property_value: MassAvg "113.12" xsd:float
 property_value: MassMono "113.047678" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0043
+xref: uniprot.ptm:0043
 is_a: MOD:01024
 
 [Term]
@@ -845,7 +845,7 @@ property_value: Origin "Q" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:28
-xref: PTM-0261
+xref: uniprot.ptm:0261
 is_a: MOD:00907
 is_a: MOD:01048
 is_a: MOD:01160
@@ -880,7 +880,7 @@ property_value: MassMono "173.032422" xsd:float
 property_value: Origin "E" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:299
-xref: PTM-0039
+xref: uniprot.ptm:0039
 is_a: MOD:00906
 is_a: MOD:01152
 
@@ -910,7 +910,7 @@ property_value: MassMono "194.993274" xsd:float
 property_value: Origin "D" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:21
-xref: PTM-0038
+xref: uniprot.ptm:0038
 is_a: MOD:00904
 is_a: MOD:01455
 
@@ -939,7 +939,7 @@ property_value: MassMono "182.975515" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:21
-xref: PTM-0251
+xref: uniprot.ptm:0251
 is_a: MOD:00696
 is_a: MOD:00777
 is_a: MOD:00905
@@ -973,7 +973,7 @@ property_value: MassAvg "217.12" xsd:float
 property_value: MassMono "217.025242" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0325
+xref: uniprot.ptm:0325
 is_a: MOD:00890
 
 [Term]
@@ -1005,7 +1005,7 @@ property_value: MassAvg "217.12" xsd:float
 property_value: MassMono "217.025242" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0260
+xref: uniprot.ptm:0260
 is_a: MOD:00890
 
 [Term]
@@ -1037,7 +1037,7 @@ property_value: MassMono "166.998359" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:21
-xref: PTM-0253
+xref: uniprot.ptm:0253
 is_a: MOD:00771
 is_a: MOD:00916
 is_a: MOD:01455
@@ -1069,7 +1069,7 @@ property_value: MassMono "181.014009" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:21
-xref: PTM-0254
+xref: uniprot.ptm:0254
 is_a: MOD:00773
 is_a: MOD:00917
 is_a: MOD:01455
@@ -1101,7 +1101,7 @@ property_value: MassMono "243.029659" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:21
-xref: PTM-0255
+xref: uniprot.ptm:0255
 is_a: MOD:00774
 is_a: MOD:00919
 is_a: MOD:01455
@@ -1135,7 +1135,7 @@ property_value: MassMono "280.176801" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:375
-xref: PTM-0118
+xref: uniprot.ptm:0118
 is_a: MOD:00909
 
 [Term]
@@ -1160,7 +1160,7 @@ property_value: MassMono "114.055504" xsd:float
 property_value: Origin "A" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0199
+xref: uniprot.ptm:0199
 is_a: MOD:00901
 is_a: MOD:01458
 
@@ -1186,7 +1186,7 @@ property_value: MassMono "158.045333" xsd:float
 property_value: Origin "D" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0200
+xref: uniprot.ptm:0200
 is_a: MOD:00904
 is_a: MOD:01458
 
@@ -1215,7 +1215,7 @@ property_value: MassMono "146.027574" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0201
+xref: uniprot.ptm:0201
 is_a: MOD:00646
 is_a: MOD:01458
 
@@ -1241,7 +1241,7 @@ property_value: MassMono "172.060983" xsd:float
 property_value: Origin "E" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0202
+xref: uniprot.ptm:0202
 is_a: MOD:00906
 is_a: MOD:01458
 
@@ -1293,7 +1293,7 @@ property_value: MassMono "100.039853" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0203
+xref: uniprot.ptm:0203
 is_a: MOD:00908
 is_a: MOD:01458
 
@@ -1318,7 +1318,7 @@ property_value: MassMono "156.102454" xsd:float
 property_value: Origin "I" xsd:string
 property_value: Source "artifact" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0204
+xref: uniprot.ptm:0204
 is_a: MOD:00910
 is_a: MOD:01458
 
@@ -1371,7 +1371,7 @@ property_value: MassMono "174.058875" xsd:float
 property_value: Origin "M" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0205
+xref: uniprot.ptm:0205
 is_a: MOD:00913
 is_a: MOD:01458
 
@@ -1397,7 +1397,7 @@ property_value: MassMono "140.071154" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0206
+xref: uniprot.ptm:0206
 is_a: MOD:00915
 is_a: MOD:01458
 
@@ -1424,7 +1424,7 @@ property_value: MassMono "130.050418" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0207
+xref: uniprot.ptm:0207
 is_a: MOD:00647
 is_a: MOD:01458
 
@@ -1453,7 +1453,7 @@ property_value: MassMono "144.066068" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0208
+xref: uniprot.ptm:0208
 is_a: MOD:01186
 is_a: MOD:01458
 
@@ -1479,7 +1479,7 @@ property_value: MassMono "206.081718" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0209
+xref: uniprot.ptm:0209
 is_a: MOD:00919
 is_a: MOD:01458
 
@@ -1505,7 +1505,7 @@ property_value: MassMono "142.086804" xsd:float
 property_value: Origin "V" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0210
+xref: uniprot.ptm:0210
 is_a: MOD:00920
 is_a: MOD:01458
 
@@ -1535,7 +1535,7 @@ property_value: MassMono "170.105528" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:1
-xref: PTM-0190
+xref: uniprot.ptm:0190
 is_a: MOD:00723
 is_a: MOD:01875
 
@@ -1589,7 +1589,7 @@ property_value: MassMono "86.024203" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0211
+xref: uniprot.ptm:0211
 is_a: MOD:00409
 is_a: MOD:00908
 is_a: MOD:01696
@@ -1614,7 +1614,7 @@ property_value: MassMono "234.061377" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0331
+xref: uniprot.ptm:0331
 is_a: MOD:00447
 is_a: MOD:00908
 
@@ -1645,7 +1645,7 @@ property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:45
-xref: PTM-0221
+xref: uniprot.ptm:0221
 is_a: MOD:00650
 is_a: MOD:00908
 is_a: MOD:01696
@@ -1676,7 +1676,7 @@ property_value: MassMono "342.246675" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0222
+xref: uniprot.ptm:0222
 is_a: MOD:01684
 is_a: MOD:01685
 
@@ -1704,7 +1704,7 @@ property_value: MassMono "85.052764" xsd:float
 property_value: Origin "A" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0214
+xref: uniprot.ptm:0214
 is_a: MOD:01461
 is_a: MOD:01680
 
@@ -1735,7 +1735,7 @@ property_value: MassMono "115.099165" xsd:float
 property_value: Origin "A" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0177
+xref: uniprot.ptm:0177
 is_a: MOD:01461
 is_a: MOD:01698
 
@@ -1765,7 +1765,7 @@ property_value: MassMono "71.037114" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0483
+xref: uniprot.ptm:0483
 is_a: MOD:00570
 is_a: MOD:00714
 is_a: MOD:01680
@@ -1795,7 +1795,7 @@ property_value: MassMono "145.056135" xsd:float
 property_value: Origin "M" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0217
+xref: uniprot.ptm:0217
 is_a: MOD:01463
 is_a: MOD:01680
 
@@ -1822,7 +1822,7 @@ property_value: MassMono "161.084064" xsd:float
 property_value: Origin "F" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0218
+xref: uniprot.ptm:0218
 is_a: MOD:01063
 is_a: MOD:01680
 
@@ -1854,7 +1854,7 @@ property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:529
-xref: PTM-0179
+xref: uniprot.ptm:0179
 is_a: MOD:00710
 is_a: MOD:01462
 
@@ -1884,7 +1884,7 @@ property_value: MassMono "184.132411" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:36
-xref: PTM-0287
+xref: uniprot.ptm:0287
 is_a: MOD:00602
 is_a: MOD:00783
 
@@ -1913,7 +1913,7 @@ property_value: MassMono "184.132411" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:36
-xref: PTM-0066
+xref: uniprot.ptm:0066
 is_a: MOD:00602
 is_a: MOD:00783
 
@@ -1939,7 +1939,7 @@ property_value: MassAvg "170.22" xsd:float
 property_value: MassMono "170.116761" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0237
+xref: uniprot.ptm:0237
 is_a: MOD:00414
 is_a: MOD:00602
 
@@ -1969,7 +1969,7 @@ property_value: MassMono "128.058578" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:34
-xref: PTM-0183
+xref: uniprot.ptm:0183
 is_a: MOD:00599
 is_a: MOD:00602
 is_a: MOD:00673
@@ -1999,7 +1999,7 @@ property_value: MassAvg "142.16" xsd:float
 property_value: MassMono "142.074228" xsd:float
 property_value: Origin "Q" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0185
+xref: uniprot.ptm:0185
 is_a: MOD:00602
 is_a: MOD:00722
 
@@ -2035,7 +2035,7 @@ property_value: MassMono "143.058243" xsd:float
 property_value: Origin "E" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:34
-xref: PTM-0128
+xref: uniprot.ptm:0128
 is_a: MOD:01453
 
 [Term]
@@ -2062,7 +2062,7 @@ property_value: MassAvg "151.17" xsd:float
 property_value: MassMono "151.074562" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0259
+xref: uniprot.ptm:0259
 is_a: MOD:02038
 is_a: MOD:00724
 
@@ -2095,7 +2095,7 @@ property_value: MassAvg "171.26" xsd:float
 property_value: MassMono "171.149190" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0187
+xref: uniprot.ptm:0187
 is_a: MOD:00602
 is_a: MOD:00663
 is_a: MOD:00711
@@ -2125,7 +2125,7 @@ property_value: MassMono "156.126263" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:36
-xref: PTM-0188
+xref: uniprot.ptm:0188
 is_a: MOD:00429
 is_a: MOD:00602
 is_a: MOD:00663
@@ -2154,7 +2154,7 @@ property_value: MassMono "142.110613" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:34
-xref: PTM-0194
+xref: uniprot.ptm:0194
 is_a: MOD:00602
 is_a: MOD:01683
 
@@ -2185,7 +2185,7 @@ property_value: MassMono "366.324629" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:47
-xref: PTM-0197
+xref: uniprot.ptm:0197
 is_a: MOD:00651
 is_a: MOD:01875
 
@@ -2216,7 +2216,7 @@ property_value: MassMono "338.293328" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:45
-xref: PTM-0196
+xref: uniprot.ptm:0196
 is_a: MOD:00650
 is_a: MOD:01875
 
@@ -2246,7 +2246,7 @@ property_value: MassMono "339.277344" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:47
-xref: PTM-0242
+xref: uniprot.ptm:0242
 is_a: MOD:00652
 is_a: MOD:02004
 
@@ -2277,7 +2277,7 @@ property_value: MassMono "325.261694" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:47
-xref: PTM-0241
+xref: uniprot.ptm:0241
 is_a: MOD:00652
 is_a: MOD:02003
 
@@ -2301,7 +2301,7 @@ property_value: MassMono "87.055838" xsd:float
 property_value: Origin "A" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0057
+xref: uniprot.ptm:0057
 is_a: MOD:00883
 is_a: MOD:00901
 
@@ -2327,7 +2327,7 @@ property_value: MassMono "172.119835" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0060
+xref: uniprot.ptm:0060
 is_a: MOD:00883
 is_a: MOD:00902
 
@@ -2351,7 +2351,7 @@ property_value: MassMono "130.061652" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0062
+xref: uniprot.ptm:0062
 is_a: MOD:00883
 is_a: MOD:00903
 
@@ -2378,7 +2378,7 @@ property_value: MassMono "131.045667" xsd:float
 property_value: Origin "D" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0063
+xref: uniprot.ptm:0063
 is_a: MOD:00883
 is_a: MOD:00904
 
@@ -2403,7 +2403,7 @@ property_value: MassMono "119.027909" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0102
+xref: uniprot.ptm:0102
 is_a: MOD:00883
 is_a: MOD:00905
 
@@ -2427,7 +2427,7 @@ property_value: MassMono "144.077302" xsd:float
 property_value: Origin "Q" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0130
+xref: uniprot.ptm:0130
 is_a: MOD:00883
 is_a: MOD:00907
 
@@ -2452,7 +2452,7 @@ property_value: MassMono "145.061317" xsd:float
 property_value: Origin "E" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0129
+xref: uniprot.ptm:0129
 is_a: MOD:00883
 is_a: MOD:00906
 
@@ -2478,7 +2478,7 @@ property_value: MassMono "73.040188" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0132
+xref: uniprot.ptm:0132
 is_a: MOD:00883
 is_a: MOD:00908
 
@@ -2502,7 +2502,7 @@ property_value: MassMono "153.077636" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0148
+xref: uniprot.ptm:0148
 is_a: MOD:00883
 is_a: MOD:00909
 
@@ -2526,7 +2526,7 @@ property_value: MassMono "129.102788" xsd:float
 property_value: Origin "I" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0161
+xref: uniprot.ptm:0161
 is_a: MOD:00883
 is_a: MOD:00910
 
@@ -2553,7 +2553,7 @@ property_value: MassMono "129.102788" xsd:float
 property_value: Origin "L" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0166
+xref: uniprot.ptm:0166
 is_a: MOD:00883
 is_a: MOD:00911
 
@@ -2577,7 +2577,7 @@ property_value: MassMono "144.113687" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0168
+xref: uniprot.ptm:0168
 is_a: MOD:00883
 is_a: MOD:00912
 
@@ -2602,7 +2602,7 @@ property_value: MassMono "147.059209" xsd:float
 property_value: Origin "M" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0164
+xref: uniprot.ptm:0164
 is_a: MOD:00883
 is_a: MOD:00913
 
@@ -2626,7 +2626,7 @@ property_value: MassMono "163.087138" xsd:float
 property_value: Origin "F" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0248
+xref: uniprot.ptm:0248
 is_a: MOD:00883
 is_a: MOD:00914
 
@@ -2650,7 +2650,7 @@ property_value: MassMono "113.071488" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0257
+xref: uniprot.ptm:0257
 is_a: MOD:00883
 is_a: MOD:00915
 
@@ -2674,7 +2674,7 @@ property_value: MassMono "103.050752" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0275
+xref: uniprot.ptm:0275
 is_a: MOD:00883
 is_a: MOD:00916
 
@@ -2698,7 +2698,7 @@ property_value: MassMono "117.066403" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0293
+xref: uniprot.ptm:0293
 is_a: MOD:00883
 is_a: MOD:00917
 
@@ -2722,7 +2722,7 @@ property_value: MassMono "202.098037" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0296
+xref: uniprot.ptm:0296
 is_a: MOD:00883
 is_a: MOD:00918
 
@@ -2746,7 +2746,7 @@ property_value: MassMono "179.082053" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0302
+xref: uniprot.ptm:0302
 is_a: MOD:00883
 is_a: MOD:00919
 
@@ -2769,7 +2769,7 @@ property_value: MassMono "115.087138" xsd:float
 property_value: Origin "V" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0303
+xref: uniprot.ptm:0303
 is_a: MOD:00883
 is_a: MOD:00920
 
@@ -2803,7 +2803,7 @@ property_value: MassMono "148.996906" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:39
-xref: PTM-0104
+xref: uniprot.ptm:0104
 is_a: MOD:00848
 is_a: MOD:00905
 is_a: MOD:01153
@@ -2833,7 +2833,7 @@ property_value: MassMono "307.196986" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:44
-xref: PTM-0277
+xref: uniprot.ptm:0277
 is_a: MOD:00437
 is_a: MOD:01110
 
@@ -2857,7 +2857,7 @@ property_value: MassMono "323.191900" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:376
-xref: PTM-0269
+xref: uniprot.ptm:0269
 is_a: MOD:01110
 
 [Term]
@@ -2884,7 +2884,7 @@ property_value: MassMono "375.259586" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:48
-xref: PTM-0278
+xref: uniprot.ptm:0278
 is_a: MOD:00441
 is_a: MOD:01110
 
@@ -2915,7 +2915,7 @@ property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
 xref: Unimod:34
-xref: PTM-0105
+xref: uniprot.ptm:0105
 is_a: MOD:01682
 is_a: MOD:01689
 
@@ -2947,7 +2947,7 @@ property_value: MassMono "341.238850" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:47
-xref: PTM-0281
+xref: uniprot.ptm:0281
 is_a: MOD:00653
 is_a: MOD:01684
 
@@ -2966,7 +2966,7 @@ synonym: "S-(1-2'-oleoyl-3'-palmitoyl-glycerol)cysteine" EXACT RESID-alternate [
 synonym: "S-(2',3'-diacylglycerol)-L-cysteine" EXACT PSI-MOD-alternate []
 synonym: "S-diacylglycerol-L-cysteine" EXACT RESID-name []
 synonym: "SAcyl2GlyceroCys" EXACT PSI-MOD-label []
-xref: PTM-0274
+xref: uniprot.ptm:0274
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 is_a: MOD:00905
@@ -2994,7 +2994,7 @@ property_value: MassAvg "214.24" xsd:float
 property_value: MassMono "214.041213" xsd:float
 property_value: Origin "C, Q" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0156
+xref: uniprot.ptm:0156
 is_a: MOD:00395
 is_a: MOD:02046
 is_a: MOD:00946
@@ -3019,7 +3019,7 @@ property_value: MassAvg "238.26" xsd:float
 property_value: MassMono "238.052447" xsd:float
 property_value: Origin "C, H" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0005
+xref: uniprot.ptm:0005
 is_a: MOD:00687
 is_a: MOD:02048
 
@@ -3076,7 +3076,7 @@ property_value: MassAvg "172.20" xsd:float
 property_value: MassMono "172.030649" xsd:float
 property_value: Origin "C, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0164
+xref: uniprot.ptm:0164
 is_a: MOD:02055
 is_a: MOD:00954
 is_a: MOD:01841
@@ -3105,7 +3105,7 @@ property_value: MassAvg "186.23" xsd:float
 property_value: MassMono "186.046299" xsd:float
 property_value: Origin "C, T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0067
+xref: uniprot.ptm:0067
 is_a: MOD:01981
 
 [Term]
@@ -3130,7 +3130,7 @@ property_value: MassAvg "264.30" xsd:float
 property_value: MassMono "264.056863" xsd:float
 property_value: Origin "C, Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0019
+xref: uniprot.ptm:0019
 is_a: MOD:00687
 is_a: MOD:02058
 
@@ -3158,7 +3158,7 @@ property_value: MassMono "172.084792" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:299
-xref: PTM-0191
+xref: uniprot.ptm:0191
 is_a: MOD:00912
 is_a: MOD:01152
 
@@ -3184,7 +3184,7 @@ property_value: MassMono "200.116092" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:378
-xref: PTM-0189
+xref: uniprot.ptm:0189
 is_a: MOD:00912
 
 [Term]
@@ -3213,7 +3213,7 @@ property_value: MassMono "215.163377" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:379
-xref: PTM-0150
+xref: uniprot.ptm:0150
 is_a: MOD:00912
 is_a: MOD:01884
 relationship: derives_from MOD:01880
@@ -3245,7 +3245,7 @@ property_value: MassMono "354.172562" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:3
-xref: PTM-0382
+xref: uniprot.ptm:0382
 is_a: MOD:01875
 is_a: MOD:01885
 
@@ -3276,7 +3276,7 @@ property_value: MassMono "316.127920" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:42
-xref: PTM-0383
+xref: uniprot.ptm:0383
 is_a: MOD:01875
 
 [Term]
@@ -3301,7 +3301,7 @@ property_value: MassMono "357.108972" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:46
-xref: PTM-0387
+xref: uniprot.ptm:0387
 is_a: MOD:00912
 
 [Term]
@@ -3326,7 +3326,7 @@ property_value: MassMono "394.298414" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:380
-xref: PTM-0388
+xref: uniprot.ptm:0388
 is_a: MOD:00912
 
 [Term]
@@ -3359,7 +3359,7 @@ property_value: MassMono "127.063329" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:352
-xref: PTM-0059
+xref: uniprot.ptm:0059
 is_a: MOD:00912
 
 [Term]
@@ -3410,7 +3410,7 @@ property_value: MassAvg "197.24" xsd:float
 property_value: MassMono "197.116427" xsd:float
 property_value: Origin "K, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0172
+xref: uniprot.ptm:0172
 is_a: MOD:02055
 is_a: MOD:02051
 is_a: MOD:00954
@@ -3438,7 +3438,7 @@ property_value: MassAvg "239.27" xsd:float
 property_value: MassMono "239.126991" xsd:float
 property_value: Origin "K, Q" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0158
+xref: uniprot.ptm:0158
 is_a: MOD:02046
 is_a: MOD:00946
 is_a: MOD:01630
@@ -3464,7 +3464,7 @@ property_value: MassMono "184.108602" xsd:float
 property_value: Origin "G, K" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0134
+xref: uniprot.ptm:0134
 is_a: MOD:00688
 is_a: MOD:02047
 is_a: MOD:02051
@@ -3494,7 +3494,7 @@ property_value: MassMono "155.045667" xsd:float
 property_value: Origin "G, N" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0489
+xref: uniprot.ptm:0489
 is_a: MOD:02042
 is_a: MOD:00946
 is_a: MOD:01928
@@ -3518,7 +3518,7 @@ property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:382
-xref: PTM-0265
+xref: uniprot.ptm:0265
 is_a: MOD:00905
 is_a: MOD:01154
 
@@ -3541,7 +3541,7 @@ property_value: MassMono "149.060255" xsd:float
 property_value: Origin "F" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:7
-xref: PTM-0035
+xref: uniprot.ptm:0035
 is_a: MOD:00914
 
 [Term]
@@ -3564,7 +3564,7 @@ property_value: MassMono "85.028954" xsd:float
 property_value: Origin "T" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:385
-xref: PTM-0017
+xref: uniprot.ptm:0017
 is_a: MOD:00917
 is_a: MOD:01160
 
@@ -3588,7 +3588,7 @@ property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:64
-xref: PTM-0181
+xref: uniprot.ptm:0181
 is_a: MOD:02081
 is_a: MOD:00918
 
@@ -3894,7 +3894,7 @@ property_value: MassMono "886.150669" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:50
-xref: PTM-0272
+xref: uniprot.ptm:0272
 is_a: MOD:00895
 is_a: MOD:00905
 
@@ -3923,7 +3923,7 @@ property_value: MassMono "920.200396" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:50
-xref: PTM-0258
+xref: uniprot.ptm:0258
 is_a: MOD:00895
 is_a: MOD:00909
 
@@ -3950,7 +3950,7 @@ property_value: MassMono "946.204813" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:50
-xref: PTM-0231
+xref: uniprot.ptm:0231
 is_a: MOD:00895
 is_a: MOD:00919
 
@@ -3979,7 +3979,7 @@ property_value: MassMono "179.058243" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:35
-xref: PTM-0023
+xref: uniprot.ptm:0023
 is_a: MOD:00425
 is_a: MOD:00707
 
@@ -4007,7 +4007,7 @@ property_value: MassMono "193.037508" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:392
-xref: PTM-0009
+xref: uniprot.ptm:0009
 is_a: MOD:00679
 is_a: MOD:00919
 
@@ -4036,7 +4036,7 @@ property_value: MassMono "216.053492" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:392
-xref: PTM-0299
+xref: uniprot.ptm:0299
 is_a: MOD:00679
 is_a: MOD:00918
 
@@ -4064,7 +4064,7 @@ property_value: MassAvg "400.39" xsd:float
 property_value: MassMono "400.117155" xsd:float
 property_value: Origin "W, W" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0298
+xref: uniprot.ptm:0298
 is_a: MOD:00692
 is_a: MOD:02057
 
@@ -4090,7 +4090,7 @@ property_value: MassMono "427.117822" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:49
-xref: PTM-0391
+xref: uniprot.ptm:0391
 is_a: MOD:00861
 is_a: MOD:00916
 
@@ -4126,7 +4126,7 @@ property_value: MassMono "265.062008" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:41
-xref: PTM-0626
+xref: uniprot.ptm:0626
 is_a: MOD:00426
 is_a: MOD:00433
 is_a: MOD:00905
@@ -4176,7 +4176,7 @@ property_value: MassAvg "290.27" xsd:float
 property_value: MassMono "290.111401" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0564
+xref: uniprot.ptm:0564
 is_a: MOD:00563
 is_a: MOD:01675
 
@@ -4201,7 +4201,7 @@ property_value: MassAvg "304.30" xsd:float
 property_value: MassMono "304.127051" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0567
+xref: uniprot.ptm:0567
 is_a: MOD:00563
 is_a: MOD:01676
 
@@ -4225,7 +4225,7 @@ property_value: MassAvg "348.36" xsd:float
 property_value: MassMono "348.132136" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0535
+xref: uniprot.ptm:0535
 is_a: MOD:00006
 is_a: MOD:00595
 is_a: MOD:00918
@@ -4250,7 +4250,7 @@ property_value: MassMono "325.116152" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:41
-xref: PTM-0575
+xref: uniprot.ptm:0575
 is_a: MOD:00433
 is_a: MOD:01927
 
@@ -4270,7 +4270,7 @@ property_value: MassMono "254.054197" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0137
+xref: uniprot.ptm:0137
 is_a: MOD:00818
 is_a: MOD:00903
 
@@ -4290,7 +4290,7 @@ property_value: MassMono "255.038212" xsd:float
 property_value: Origin "D" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0138
+xref: uniprot.ptm:0138
 is_a: MOD:00818
 is_a: MOD:00904
 
@@ -4310,7 +4310,7 @@ property_value: MassMono "243.020454" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0140
+xref: uniprot.ptm:0140
 is_a: MOD:00818
 is_a: MOD:00905
 
@@ -4330,7 +4330,7 @@ property_value: MassMono "197.032733" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0141
+xref: uniprot.ptm:0141
 is_a: MOD:00818
 is_a: MOD:00908
 
@@ -4350,7 +4350,7 @@ property_value: MassMono "227.043298" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0142
+xref: uniprot.ptm:0142
 is_a: MOD:00818
 is_a: MOD:00916
 
@@ -4370,7 +4370,7 @@ property_value: MassMono "211.048383" xsd:float
 property_value: Origin "A" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0136
+xref: uniprot.ptm:0136
 is_a: MOD:00818
 is_a: MOD:00901
 
@@ -4390,7 +4390,7 @@ property_value: MassMono "241.058948" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "hypothetical" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0143
+xref: uniprot.ptm:0143
 is_a: MOD:00818
 is_a: MOD:00917
 
@@ -4410,7 +4410,7 @@ property_value: MassMono "197.032733" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "hypothetical" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0146
+xref: uniprot.ptm:0146
 is_a: MOD:00466
 is_a: MOD:00908
 
@@ -4430,7 +4430,7 @@ property_value: MassMono "227.043298" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0147
+xref: uniprot.ptm:0147
 is_a: MOD:00466
 is_a: MOD:00916
 
@@ -4457,7 +4457,7 @@ property_value: MassMono "968.178931" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:395
-xref: PTM-0389
+xref: uniprot.ptm:0389
 is_a: MOD:00860
 is_a: MOD:00861
 is_a: MOD:00916
@@ -4486,7 +4486,7 @@ property_value: MassMono "697.162220" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:213
-xref: PTM-0053
+xref: uniprot.ptm:0053
 is_a: MOD:00752
 is_a: MOD:00902
 
@@ -4514,7 +4514,7 @@ property_value: MassMono "644.070294" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:213
-xref: PTM-0055
+xref: uniprot.ptm:0055
 is_a: MOD:00752
 is_a: MOD:00905
 
@@ -4542,7 +4542,7 @@ property_value: MassMono "326.087902" xsd:float
 property_value: Origin "E" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:396
-xref: PTM-0403
+xref: uniprot.ptm:0403
 is_a: MOD:00906
 
 [Term]
@@ -4602,7 +4602,7 @@ property_value: MassMono "243.020143" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:40
-xref: PTM-0286
+xref: uniprot.ptm:0286
 is_a: MOD:00695
 is_a: MOD:00774
 is_a: MOD:00919
@@ -4625,7 +4625,7 @@ property_value: MassMono "214.969424" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:340
-xref: PTM-0089
+xref: uniprot.ptm:0089
 is_a: MOD:01049
 is_a: MOD:01912
 
@@ -4722,7 +4722,7 @@ property_value: MassMono "632.779486" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:397
-xref: PTM-0295
+xref: uniprot.ptm:0295
 is_a: MOD:00998
 
 [Term]
@@ -4751,7 +4751,7 @@ property_value: MassMono "758.676134" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:398
-xref: PTM-0294
+xref: uniprot.ptm:0294
 is_a: MOD:00998
 
 [Term]
@@ -4773,7 +4773,7 @@ property_value: MassMono "263.989825" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:398
-xref: PTM-0051
+xref: uniprot.ptm:0051
 is_a: MOD:01068
 is_a: MOD:01912
 
@@ -4804,7 +4804,7 @@ property_value: MassMono "69.021464" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:23
-xref: PTM-0006
+xref: uniprot.ptm:0006
 is_a: MOD:00416
 is_a: MOD:00916
 is_a: MOD:01168
@@ -4842,7 +4842,7 @@ property_value: MassMono "83.037114" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:23
-xref: PTM-0007
+xref: uniprot.ptm:0007
 is_a: MOD:00416
 is_a: MOD:00917
 is_a: MOD:01703
@@ -4873,7 +4873,7 @@ property_value: MassAvg "161.16" xsd:float
 property_value: MassMono "161.047678" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0002
+xref: uniprot.ptm:0002
 is_a: MOD:00706
 
 [Term]
@@ -4897,7 +4897,7 @@ property_value: MassAvg "126.11" xsd:float
 property_value: MassMono "126.042927" xsd:float
 property_value: Origin "G, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0049
+xref: uniprot.ptm:0049
 is_a: MOD:02047
 is_a: MOD:02055
 is_a: MOD:01882
@@ -4926,7 +4926,7 @@ property_value: MassMono "85.016378" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:402
-xref: PTM-0034
+xref: uniprot.ptm:0034
 is_a: MOD:01169
 
 [Term]
@@ -4950,7 +4950,7 @@ property_value: MassMono "73.028954" xsd:float
 property_value: Origin "S" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:403
-xref: PTM-0163
+xref: uniprot.ptm:0163
 is_a: MOD:00916
 
 [Term]
@@ -4974,7 +4974,7 @@ property_value: MassAvg "110.12" xsd:float
 property_value: MassMono "110.048013" xsd:float
 property_value: Origin "A, G" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0045
+xref: uniprot.ptm:0045
 is_a: MOD:02040
 is_a: MOD:02047
 is_a: MOD:01882
@@ -5001,7 +5001,7 @@ property_value: MassAvg "142.18" xsd:float
 property_value: MassMono "142.020084" xsd:float
 property_value: Origin "C, G" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0047
+xref: uniprot.ptm:0047
 is_a: MOD:02044
 is_a: MOD:02047
 is_a: MOD:01882
@@ -5029,7 +5029,7 @@ property_value: MassAvg "165.15" xsd:float
 property_value: MassMono "165.053826" xsd:float
 property_value: Origin "G, Q" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0013
+xref: uniprot.ptm:0013
 is_a: MOD:02046
 is_a: MOD:02047
 is_a: MOD:01882
@@ -5050,7 +5050,7 @@ property_value: MassAvg "71.08" xsd:float
 property_value: MassMono "71.037114" xsd:float
 property_value: Origin "A" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0112
+xref: uniprot.ptm:0112
 is_a: MOD:00570
 is_a: MOD:00862
 is_a: MOD:00901
@@ -5076,7 +5076,7 @@ property_value: MassAvg "113.16" xsd:float
 property_value: MassMono "113.084064" xsd:float
 property_value: Origin "I" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0114
+xref: uniprot.ptm:0114
 is_a: MOD:00306
 is_a: MOD:00664
 is_a: MOD:00910
@@ -5099,7 +5099,7 @@ property_value: MassAvg "131.19" xsd:float
 property_value: MassMono "131.040485" xsd:float
 property_value: Origin "M" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0120
+xref: uniprot.ptm:0120
 is_a: MOD:00664
 is_a: MOD:00913
 
@@ -5119,7 +5119,7 @@ property_value: MassAvg "147.18" xsd:float
 property_value: MassMono "147.068414" xsd:float
 property_value: Origin "F" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0121
+xref: uniprot.ptm:0121
 is_a: MOD:00664
 is_a: MOD:00914
 
@@ -5139,7 +5139,7 @@ property_value: MassAvg "87.08" xsd:float
 property_value: MassMono "87.032028" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0308
+xref: uniprot.ptm:0308
 is_a: MOD:00891
 is_a: MOD:00916
 
@@ -5162,7 +5162,7 @@ property_value: MassMono "114.042927" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0115
+xref: uniprot.ptm:0115
 is_a: MOD:00664
 is_a: MOD:00903
 
@@ -5183,7 +5183,7 @@ property_value: MassAvg "113.16" xsd:float
 property_value: MassMono "113.084064" xsd:float
 property_value: Origin "L" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0119
+xref: uniprot.ptm:0119
 is_a: MOD:00306
 is_a: MOD:00664
 is_a: MOD:00911
@@ -5205,7 +5205,7 @@ property_value: MassAvg "186.21" xsd:float
 property_value: MassMono "186.079313" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0123
+xref: uniprot.ptm:0123
 is_a: MOD:00664
 is_a: MOD:00918
 
@@ -5218,7 +5218,7 @@ synonym: "L-isoglutamyl-polyglycine" EXACT RESID-name []
 synonym: "MOD_RES 5-glutamyl polyglycine" EXACT UniProt-feature []
 property_value: Origin "E" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0394
+xref: uniprot.ptm:0394
 is_a: MOD:00906
 
 [Term]
@@ -5229,7 +5229,7 @@ synonym: "gamma-glutamylpolyglutamic acid" EXACT RESID-alternate []
 synonym: "L-isoglutamyl-polyglutamic acid" EXACT RESID-name []
 property_value: Origin "E" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0395
+xref: uniprot.ptm:0395
 is_a: MOD:00906
 
 [Term]
@@ -5257,7 +5257,7 @@ property_value: MassMono "492.115848" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:405
-xref: PTM-0332
+xref: uniprot.ptm:0332
 is_a: MOD:00919
 is_a: MOD:01165
 
@@ -5279,7 +5279,7 @@ property_value: MassAvg "143.18" xsd:float
 property_value: MassMono "143.027909" xsd:float
 property_value: Origin "C, S" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0268
+xref: uniprot.ptm:0268
 is_a: MOD:02055
 is_a: MOD:01850
 
@@ -5316,7 +5316,7 @@ property_value: MassMono "119.004099" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:35
-xref: PTM-0107
+xref: uniprot.ptm:0107
 is_a: MOD:00708
 is_a: MOD:01854
 
@@ -5341,7 +5341,7 @@ property_value: MassAvg "159.18" xsd:float
 property_value: MassMono "159.022823" xsd:float
 property_value: Origin "C, G" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0429
+xref: uniprot.ptm:0429
 is_a: MOD:00395
 is_a: MOD:02047
 is_a: MOD:00954
@@ -5366,7 +5366,7 @@ property_value: MassMono "249.045964" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:407
-xref: PTM-0414
+xref: uniprot.ptm:0414
 is_a: MOD:00905
 
 [Term]
@@ -5429,7 +5429,7 @@ property_value: MassMono "156.089878" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:122
-xref: PTM-0192
+xref: uniprot.ptm:0192
 is_a: MOD:00409
 is_a: MOD:01875
 
@@ -5457,7 +5457,7 @@ property_value: MassMono "245.089937" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:408
-xref: PTM-0545
+xref: uniprot.ptm:0545
 is_a: MOD:00396
 is_a: MOD:00915
 
@@ -5472,7 +5472,7 @@ synonym: "O3-(phospho-5'-RNA)-L-serine" EXACT RESID-alternate []
 synonym: "O3-L-serine 5'-RNA phosphodiester" EXACT RESID-alternate []
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0227
+xref: uniprot.ptm:0227
 is_a: MOD:00751
 is_a: MOD:00916
 
@@ -5506,7 +5506,7 @@ property_value: MassMono "157.085127" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:7
-xref: PTM-0092
+xref: uniprot.ptm:0092
 is_a: MOD:00902
 
 [Term]
@@ -5531,7 +5531,7 @@ property_value: MassAvg "172.19" xsd:float
 property_value: MassMono "172.096026" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0042
+xref: uniprot.ptm:0042
 is_a: MOD:00425
 is_a: MOD:00682
 
@@ -5556,7 +5556,7 @@ property_value: MassMono "201.033388" xsd:float
 property_value: Origin "C, N" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0151
+xref: uniprot.ptm:0151
 is_a: MOD:02042
 is_a: MOD:02044
 is_a: MOD:00946
@@ -5582,7 +5582,7 @@ property_value: MassMono "348.132136" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:41
-xref: PTM-0505
+xref: uniprot.ptm:0505
 is_a: MOD:00421
 is_a: MOD:00595
 is_a: MOD:00918
@@ -5596,7 +5596,7 @@ synonym: "N6-[(2R,6S)-2-(N-(N-mureinyl-(R)-alanyl)-(S)-glutamyl)amino-6-amino-6-
 synonym: "N6-mureinyl-L-lysine" EXACT RESID-name []
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0195
+xref: uniprot.ptm:0195
 is_a: MOD:01159
 is_a: MOD:01875
 
@@ -5611,7 +5611,7 @@ synonym: "poly[beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-4-sul
 synonym: "protein-glycosaminoglycan-protein cross-link" EXACT RESID-alternate []
 property_value: Origin "D" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0334
+xref: uniprot.ptm:0334
 is_a: MOD:00904
 
 [Term]
@@ -5636,7 +5636,7 @@ property_value: MassMono "557.098150" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:409
-xref: PTM-0271
+xref: uniprot.ptm:0271
 is_a: MOD:02084
 is_a: MOD:00905
 
@@ -5667,7 +5667,7 @@ property_value: MassMono "920.200396" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:50
-xref: PTM-0288
+xref: uniprot.ptm:0288
 is_a: MOD:00895
 is_a: MOD:00909
 
@@ -5697,7 +5697,7 @@ property_value: MassMono "236.067442" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:21
-xref: PTM-0250
+xref: uniprot.ptm:0250
 is_a: MOD:00902
 is_a: MOD:01456
 
@@ -5724,7 +5724,7 @@ property_value: MassMono "737.671967" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:410
-xref: PTM-0273
+xref: uniprot.ptm:0273
 is_a: MOD:00905
 is_a: MOD:01155
 
@@ -5877,7 +5877,7 @@ property_value: MassMono "408.077341" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:55
-xref: PTM-0311
+xref: uniprot.ptm:0311
 is_a: MOD:00905
 is_a: MOD:01862
 relationship: contains MOD:02026
@@ -5904,7 +5904,7 @@ property_value: MassMono "131.999348" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:275
-xref: PTM-0280
+xref: uniprot.ptm:0280
 is_a: MOD:00905
 is_a: MOD:02077
 
@@ -5928,7 +5928,7 @@ property_value: MassMono "655.104036" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:213
-xref: PTM-0054
+xref: uniprot.ptm:0054
 is_a: MOD:00752
 is_a: MOD:00903
 
@@ -5958,7 +5958,7 @@ property_value: MassMono "161.014664" xsd:float
 property_value: Origin "D" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:39
-xref: PTM-0032
+xref: uniprot.ptm:0032
 is_a: MOD:00904
 is_a: MOD:01153
 
@@ -5982,7 +5982,7 @@ property_value: MassAvg "303.32" xsd:float
 property_value: MassMono "303.121906" xsd:float
 property_value: Origin "K, Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0171
+xref: uniprot.ptm:0171
 is_a: MOD:00692
 is_a: MOD:02051
 is_a: MOD:02058
@@ -6010,7 +6010,7 @@ property_value: MassMono "117.024835" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:34
-xref: PTM-0636
+xref: uniprot.ptm:0636
 is_a: MOD:00654
 is_a: MOD:01682
 
@@ -6034,7 +6034,7 @@ property_value: MassAvg "144.17" xsd:float
 property_value: MassMono "144.089878" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "artifact" xsd:string
-xref: PTM-0664
+xref: uniprot.ptm:0664
 is_a: MOD:01047
 
 [Term]
@@ -6084,7 +6084,7 @@ property_value: MassMono "628.093137" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:213
-xref: PTM-0056
+xref: uniprot.ptm:0056
 is_a: MOD:00752
 is_a: MOD:00916
 
@@ -6105,7 +6105,7 @@ property_value: MassAvg "170.19" xsd:float
 property_value: MassMono "170.014998" xsd:float
 property_value: Origin "C, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0376
+xref: uniprot.ptm:0376
 is_a: MOD:02044
 is_a: MOD:01421
 is_a: MOD:02082
@@ -6127,7 +6127,7 @@ property_value: MassAvg "172.20" xsd:float
 property_value: MassMono "172.030649" xsd:float
 property_value: Origin "C, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0381
+xref: uniprot.ptm:0381
 is_a: MOD:02044
 is_a: MOD:01421
 is_a: MOD:00954
@@ -6149,7 +6149,7 @@ property_value: MassAvg "124.10" xsd:float
 property_value: MassMono "124.027277" xsd:float
 property_value: Origin "G, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0377
+xref: uniprot.ptm:0377
 is_a: MOD:02047
 is_a: MOD:01421
 is_a: MOD:02082
@@ -6171,7 +6171,7 @@ property_value: MassAvg "140.16" xsd:float
 property_value: MassMono "140.004434" xsd:float
 property_value: Origin "C, G" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0378
+xref: uniprot.ptm:0378
 is_a: MOD:02047
 is_a: MOD:01420
 is_a: MOD:02082
@@ -6193,7 +6193,7 @@ property_value: MassAvg "170.19" xsd:float
 property_value: MassMono "170.014998" xsd:float
 property_value: Origin "C, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0363
+xref: uniprot.ptm:0363
 is_a: MOD:02055
 is_a: MOD:01420
 is_a: MOD:02082
@@ -6215,7 +6215,7 @@ property_value: MassAvg "230.29" xsd:float
 property_value: MassMono "230.051384" xsd:float
 property_value: Origin "C, F" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0375
+xref: uniprot.ptm:0375
 is_a: MOD:02053
 is_a: MOD:01420
 is_a: MOD:02082
@@ -6237,7 +6237,7 @@ property_value: MassAvg "186.25" xsd:float
 property_value: MassMono "185.992155" xsd:float
 property_value: Origin "C, C" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0360
+xref: uniprot.ptm:0360
 is_a: MOD:01420
 is_a: MOD:02082
 
@@ -6273,7 +6273,7 @@ synonym: "O3-(phospho-5'-DNA)-L-serine" EXACT RESID-alternate []
 synonym: "O3-L-serine 5'-DNA phosphodiester" EXACT RESID-alternate []
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0226
+xref: uniprot.ptm:0226
 is_a: MOD:00750
 is_a: MOD:00916
 
@@ -6314,7 +6314,7 @@ synonym: "O4'-(phospho-5'-RNA)-L-tyrosine" EXACT RESID-name []
 synonym: "O4'-L-tyrosine 5'-RNA phosphodiester" EXACT RESID-alternate []
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0229
+xref: uniprot.ptm:0229
 is_a: MOD:00751
 is_a: MOD:00919
 
@@ -6339,7 +6339,7 @@ property_value: MassAvg "298.30" xsd:float
 property_value: MassMono "298.106590" xsd:float
 property_value: Origin "H, Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0027
+xref: uniprot.ptm:0027
 is_a: MOD:00692
 is_a: MOD:02048
 is_a: MOD:02058
@@ -6370,7 +6370,7 @@ property_value: MassMono "163.030314" xsd:float
 property_value: Origin "M" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:425
-xref: PTM-0175
+xref: uniprot.ptm:0175
 is_a: MOD:00709
 is_a: MOD:01855
 
@@ -6397,7 +6397,7 @@ property_value: MassMono "521.146800" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:416
-xref: PTM-0421
+xref: uniprot.ptm:0421
 is_a: MOD:00905
 
 [Term]
@@ -6419,7 +6419,7 @@ property_value: MassMono "157.043559" xsd:float
 property_value: Origin "C, T" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0267
+xref: uniprot.ptm:0267
 is_a: MOD:00687
 is_a: MOD:02056
 
@@ -6434,7 +6434,7 @@ synonym: "O4'-(phospho-5'-DNA)-L-tyrosine" EXACT RESID-name []
 synonym: "O4'-L-tyrosine 5'-DNA phosphodiester" EXACT RESID-alternate []
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0228
+xref: uniprot.ptm:0228
 is_a: MOD:00750
 is_a: MOD:00919
 
@@ -6482,7 +6482,7 @@ property_value: MassMono "469.088630" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:417
-xref: PTM-0333
+xref: uniprot.ptm:0333
 is_a: MOD:00919
 is_a: MOD:01166
 
@@ -6619,7 +6619,7 @@ property_value: MassMono "134.999014" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:425
-xref: PTM-0108
+xref: uniprot.ptm:0108
 is_a: MOD:00708
 is_a: MOD:01855
 
@@ -6645,7 +6645,7 @@ property_value: MassMono "195.053158" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:425
-xref: PTM-0667
+xref: uniprot.ptm:0667
 is_a: MOD:00428
 is_a: MOD:00707
 
@@ -6673,7 +6673,7 @@ property_value: MassMono "241.035138" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:419
-xref: PTM-0230
+xref: uniprot.ptm:0230
 is_a: MOD:00916
 
 [Term]
@@ -6700,7 +6700,7 @@ property_value: MassAvg "73.11" xsd:float
 property_value: MassMono "72.998620" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0004
+xref: uniprot.ptm:0004
 is_a: MOD:01625
 
 [Term]
@@ -6750,7 +6750,7 @@ property_value: MassMono "430.100198" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:405
-xref: PTM-0393
+xref: uniprot.ptm:0393
 is_a: MOD:00917
 is_a: MOD:01165
 
@@ -6809,7 +6809,7 @@ property_value: MassMono "134.981256" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:421
-xref: PTM-0106
+xref: uniprot.ptm:0106
 is_a: MOD:00905
 is_a: MOD:01886
 
@@ -6834,7 +6834,7 @@ property_value: MassAvg "298.30" xsd:float
 property_value: MassMono "298.106590" xsd:float
 property_value: Origin "H, Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0003
+xref: uniprot.ptm:0003
 is_a: MOD:00692
 is_a: MOD:02048
 is_a: MOD:02058
@@ -6882,7 +6882,7 @@ property_value: MassAvg "170.22" xsd:float
 property_value: MassMono "170.116761" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0050
+xref: uniprot.ptm:0050
 is_a: MOD:00414
 is_a: MOD:00656
 
@@ -6907,7 +6907,7 @@ property_value: MassAvg "142.16" xsd:float
 property_value: MassMono "142.074228" xsd:float
 property_value: Origin "Q" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0016
+xref: uniprot.ptm:0016
 is_a: MOD:00656
 is_a: MOD:00722
 
@@ -6931,7 +6931,7 @@ property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:422
-xref: PTM-0224
+xref: uniprot.ptm:0224
 is_a: MOD:00905
 is_a: MOD:01170
 
@@ -6955,7 +6955,7 @@ property_value: Origin "V" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:422
-xref: PTM-0225
+xref: uniprot.ptm:0225
 is_a: MOD:00920
 is_a: MOD:01170
 
@@ -7007,7 +7007,7 @@ property_value: MassMono "182.925706" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "hypothetical" xsd:string
 xref: Unimod:423
-xref: PTM-0282
+xref: uniprot.ptm:0282
 is_a: MOD:00745
 is_a: MOD:00778
 is_a: MOD:00905
@@ -7024,7 +7024,7 @@ synonym: "N6-propylamino-poly(propylmethylamino)-propyldimethylamine-L-lysine" E
 synonym: "silaffin polycationic lysine derivative" EXACT RESID-alternate []
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0198
+xref: uniprot.ptm:0198
 is_a: MOD:00912
 
 [Term]
@@ -7119,7 +7119,7 @@ property_value: MassMono "129.042593" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:425
-xref: PTM-0306
+xref: uniprot.ptm:0306
 is_a: MOD:00866
 
 [Term]
@@ -7142,7 +7142,7 @@ property_value: MassAvg "330.21" xsd:float
 property_value: MassMono "330.012415" xsd:float
 property_value: Origin "E, Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0263
+xref: uniprot.ptm:0263
 is_a: MOD:00692
 is_a: MOD:02045
 is_a: MOD:02058
@@ -7299,7 +7299,7 @@ property_value: MassMono "213.136493" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:426
-xref: PTM-0239
+xref: uniprot.ptm:0239
 is_a: MOD:00669
 is_a: MOD:02003
 
@@ -7323,7 +7323,7 @@ property_value: MassMono "263.064116" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:54
-xref: PTM-0577
+xref: uniprot.ptm:0577
 is_a: MOD:00447
 is_a: MOD:00916
 
@@ -7397,7 +7397,7 @@ property_value: MassAvg "225.25" xsd:float
 property_value: MassMono "225.111341" xsd:float
 property_value: Origin "K, N" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0153
+xref: uniprot.ptm:0153
 is_a: MOD:02042
 is_a: MOD:00946
 is_a: MOD:01929
@@ -7441,7 +7441,7 @@ property_value: MassMono "370.077731" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:428
-xref: PTM-0586
+xref: uniprot.ptm:0586
 is_a: MOD:00916
 is_a: MOD:01804
 
@@ -7466,7 +7466,7 @@ property_value: MassMono "329.051182" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:429
-xref: PTM-0594
+xref: uniprot.ptm:0594
 is_a: MOD:00916
 is_a: MOD:01804
 
@@ -7517,7 +7517,7 @@ property_value: Origin "L" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
 xref: Unimod:34
-xref: PTM-0167
+xref: uniprot.ptm:0167
 is_a: MOD:00599
 is_a: MOD:00662
 is_a: MOD:01689
@@ -7664,7 +7664,7 @@ property_value: MassAvg "170.22" xsd:float
 property_value: MassMono "170.116761" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0185
+xref: uniprot.ptm:0185
 is_a: MOD:00414
 is_a: MOD:00602
 
@@ -7738,7 +7738,7 @@ property_value: MassMono "339.223200" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "hypothetical" xsd:string
 xref: Unimod:431
-xref: PTM-0645
+xref: uniprot.ptm:0645
 is_a: MOD:02002
 is_a: MOD:00905
 
@@ -7765,7 +7765,7 @@ property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
 xref: Unimod:432
-xref: PTM-0090
+xref: uniprot.ptm:0090
 is_a: MOD:00908
 is_a: MOD:01155
 
@@ -7816,7 +7816,7 @@ property_value: MassMono "142.074228" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "hypothetical" xsd:string
 xref: Unimod:36
-xref: PTM-0182
+xref: uniprot.ptm:0182
 is_a: MOD:00429
 is_a: MOD:00602
 is_a: MOD:00673
@@ -7862,7 +7862,7 @@ property_value: MassAvg "317.32" xsd:float
 property_value: MassMono "317.047027" xsd:float
 property_value: Origin "C, W" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0041
+xref: uniprot.ptm:0041
 is_a: MOD:00687
 is_a: MOD:02057
 
@@ -7884,7 +7884,7 @@ property_value: MassAvg "216.21" xsd:float
 property_value: MassMono "216.020478" xsd:float
 property_value: Origin "C, D" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0025
+xref: uniprot.ptm:0025
 is_a: MOD:02043
 is_a: MOD:01993
 
@@ -7905,7 +7905,7 @@ property_value: MassAvg "230.24" xsd:float
 property_value: MassMono "230.036128" xsd:float
 property_value: Origin "C, E" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0040
+xref: uniprot.ptm:0040
 is_a: MOD:00687
 is_a: MOD:02045
 
@@ -7928,7 +7928,7 @@ property_value: MassMono "409.210052" xsd:float
 property_value: Origin "D" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:434
-xref: PTM-0091
+xref: uniprot.ptm:0091
 is_a: MOD:00904
 is_a: MOD:01155
 
@@ -7957,7 +7957,7 @@ property_value: MassAvg "151.17" xsd:float
 property_value: MassMono "151.074562" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0290
+xref: uniprot.ptm:0290
 is_a: MOD:02038
 is_a: MOD:00724
 
@@ -7986,7 +7986,7 @@ property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
 xref: Unimod:34
-xref: PTM-0170
+xref: uniprot.ptm:0170
 is_a: MOD:01683
 is_a: MOD:01689
 
@@ -8076,7 +8076,7 @@ property_value: MassAvg "202.21" xsd:float
 property_value: MassMono "202.074228" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0031
+xref: uniprot.ptm:0031
 is_a: MOD:01622
 
 [Term]
@@ -8185,7 +8185,7 @@ property_value: MassMono "318.153934" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:41
-xref: PTM-0515
+xref: uniprot.ptm:0515
 is_a: MOD:00433
 is_a: MOD:01980
 
@@ -8212,7 +8212,7 @@ property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
 xref: Unimod:437
-xref: PTM-0335
+xref: uniprot.ptm:0335
 is_a: MOD:00701
 is_a: MOD:00903
 
@@ -8261,7 +8261,7 @@ property_value: MassAvg "202.23" xsd:float
 property_value: MassMono "202.041213" xsd:float
 property_value: Origin "C, T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0069
+xref: uniprot.ptm:0069
 is_a: MOD:02056
 is_a: MOD:01993
 relationship: has_functional_parent MOD:01981
@@ -8312,7 +8312,7 @@ property_value: MassMono "146.014998" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:5
-xref: PTM-0649
+xref: uniprot.ptm:0649
 is_a: MOD:00398
 is_a: MOD:00905
 
@@ -8338,7 +8338,7 @@ property_value: MassMono "128.004434" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:438
-xref: PTM-0650
+xref: uniprot.ptm:0650
 is_a: MOD:00893
 is_a: MOD:00905
 
@@ -8412,7 +8412,7 @@ property_value: MassAvg "127.19" xsd:float
 property_value: MassMono "127.099714" xsd:float
 property_value: Origin "I" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0215
+xref: uniprot.ptm:0215
 is_a: MOD:00715
 is_a: MOD:01680
 
@@ -8438,7 +8438,7 @@ property_value: MassAvg "127.19" xsd:float
 property_value: MassMono "127.099714" xsd:float
 property_value: Origin "L" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0216
+xref: uniprot.ptm:0216
 is_a: MOD:01680
 is_a: MOD:01808
 
@@ -8463,7 +8463,7 @@ property_value: MassAvg "177.20" xsd:float
 property_value: MassMono "177.078979" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0220
+xref: uniprot.ptm:0220
 is_a: MOD:00718
 is_a: MOD:01680
 
@@ -8491,7 +8491,7 @@ property_value: MassMono "296.258954" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0223
+xref: uniprot.ptm:0223
 is_a: MOD:00908
 is_a: MOD:01685
 
@@ -8513,7 +8513,7 @@ property_value: MassAvg "248.30" xsd:float
 property_value: MassMono "248.061949" xsd:float
 property_value: Origin "C, F" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0012
+xref: uniprot.ptm:0012
 is_a: MOD:02053
 is_a: MOD:01992
 
@@ -8535,7 +8535,7 @@ property_value: MassAvg "248.30" xsd:float
 property_value: MassMono "248.061949" xsd:float
 property_value: Origin "C, F" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0011
+xref: uniprot.ptm:0011
 is_a: MOD:00664
 is_a: MOD:02053
 is_a: MOD:01992
@@ -8558,7 +8558,7 @@ property_value: MassAvg "202.23" xsd:float
 property_value: MassMono "202.041213" xsd:float
 property_value: Origin "C, T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0010
+xref: uniprot.ptm:0010
 is_a: MOD:00664
 is_a: MOD:02056
 is_a: MOD:01992
@@ -8582,7 +8582,7 @@ property_value: MassMono "115.050752" xsd:float
 property_value: Origin "A" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0374
+xref: uniprot.ptm:0374
 is_a: MOD:00901
 is_a: MOD:01679
 
@@ -8606,7 +8606,7 @@ property_value: MassAvg "188.20" xsd:float
 property_value: MassMono "188.025563" xsd:float
 property_value: Origin "C, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0037
+xref: uniprot.ptm:0037
 is_a: MOD:02044
 is_a: MOD:02055
 is_a: MOD:01861
@@ -8621,7 +8621,7 @@ synonym: "MOD_RES Pentaglycyl murein peptidoglycan amidated threonine" EXACT Uni
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0246
+xref: uniprot.ptm:0246
 is_a: MOD:00917
 is_a: MOD:01159
 
@@ -8642,7 +8642,7 @@ property_value: MassMono "773.544494" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0249
+xref: uniprot.ptm:0249
 is_a: MOD:00908
 is_a: MOD:01155
 
@@ -8662,7 +8662,7 @@ property_value: MassAvg "889.44" xsd:float
 property_value: MassMono "888.789439" xsd:float
 property_value: Origin "Q" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0236
+xref: uniprot.ptm:0236
 is_a: MOD:00907
 is_a: MOD:01155
 
@@ -8682,7 +8682,7 @@ property_value: MassAvg "477.56" xsd:float
 property_value: MassMono "477.159103" xsd:float
 property_value: Origin "M, W, Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0328
+xref: uniprot.ptm:0328
 is_a: MOD:00692
 is_a: MOD:02052
 is_a: MOD:02057
@@ -8710,7 +8710,7 @@ property_value: MassMono "539.141729" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:442
-xref: PTM-0126
+xref: uniprot.ptm:0126
 is_a: MOD:00917
 is_a: MOD:01164
 
@@ -8736,7 +8736,7 @@ property_value: MassMono "525.126079" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:442
-xref: PTM-0125
+xref: uniprot.ptm:0125
 is_a: MOD:00916
 is_a: MOD:01164
 
@@ -8762,7 +8762,7 @@ property_value: MassMono "559.113800" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:443
-xref: PTM-0270
+xref: uniprot.ptm:0270
 is_a: MOD:02083
 is_a: MOD:00905
 
@@ -8790,7 +8790,7 @@ property_value: MassMono "591.147877" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:409
-xref: PTM-0289
+xref: uniprot.ptm:0289
 is_a: MOD:02085
 is_a: MOD:00909
 
@@ -8844,7 +8844,7 @@ property_value: MassMono "199.119501" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0180
+xref: uniprot.ptm:0180
 is_a: MOD:00902
 is_a: MOD:01458
 
@@ -8930,7 +8930,7 @@ property_value: MassAvg "251.17" xsd:float
 property_value: MassMono "251.947170" xsd:float
 property_value: Origin "C, U" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0109
+xref: uniprot.ptm:0109
 is_a: MOD:02061
 is_a: MOD:01627
 
@@ -8964,7 +8964,7 @@ property_value: MassMono "187.144104" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:445
-xref: PTM-0186
+xref: uniprot.ptm:0186
 is_a: MOD:00602
 is_a: MOD:00912
 relationship: has_functional_parent MOD:00037
@@ -8990,7 +8990,7 @@ property_value: MassMono "169.061317" xsd:float
 property_value: Origin "E, G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0157
+xref: uniprot.ptm:0157
 is_a: MOD:00688
 is_a: MOD:02045
 is_a: MOD:02047
@@ -9019,7 +9019,7 @@ property_value: MassMono "166.988843" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:40
-xref: PTM-0284
+xref: uniprot.ptm:0284
 is_a: MOD:00695
 is_a: MOD:00771
 is_a: MOD:00916
@@ -9047,7 +9047,7 @@ property_value: MassMono "181.004493" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:40
-xref: PTM-0285
+xref: uniprot.ptm:0285
 is_a: MOD:00695
 is_a: MOD:00773
 is_a: MOD:00917
@@ -9101,7 +9101,7 @@ property_value: MassMono "129.042593" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:1
-xref: PTM-0232
+xref: uniprot.ptm:0232
 is_a: MOD:00644
 is_a: MOD:00647
 is_a: MOD:02003
@@ -9131,7 +9131,7 @@ property_value: MassAvg "161.16" xsd:float
 property_value: MassMono "161.047678" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0001
+xref: uniprot.ptm:0001
 is_a: MOD:00706
 
 [Term]
@@ -9200,7 +9200,7 @@ property_value: MassAvg "324.34" xsd:float
 property_value: MassMono "324.111007" xsd:float
 property_value: Origin "Y, Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0155
+xref: uniprot.ptm:0155
 is_a: MOD:00692
 is_a: MOD:02058
 
@@ -9226,7 +9226,7 @@ property_value: MassMono "188.090940" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:425
-xref: PTM-0022
+xref: uniprot.ptm:0022
 is_a: MOD:00428
 is_a: MOD:00682
 
@@ -9252,7 +9252,7 @@ property_value: MassMono "160.084792" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:425
-xref: PTM-0036
+xref: uniprot.ptm:0036
 is_a: MOD:00428
 is_a: MOD:00681
 
@@ -9308,7 +9308,7 @@ property_value: MassMono "443.084214" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:417
-xref: PTM-0500
+xref: uniprot.ptm:0500
 is_a: MOD:00909
 is_a: MOD:01166
 
@@ -9338,7 +9338,7 @@ property_value: MassMono "99.032028" xsd:float
 property_value: Origin "D" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:447
-xref: PTM-0064
+xref: uniprot.ptm:0064
 is_a: MOD:00904
 is_a: MOD:01161
 
@@ -9362,7 +9362,7 @@ property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
 xref: Unimod:448
-xref: PTM-0276
+xref: uniprot.ptm:0276
 is_a: MOD:00916
 
 [Term]
@@ -9447,7 +9447,7 @@ property_value: MassAvg "166.14" xsd:float
 property_value: MassMono "166.037842" xsd:float
 property_value: Origin "E, G" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0014
+xref: uniprot.ptm:0014
 is_a: MOD:02045
 is_a: MOD:02047
 is_a: MOD:01882
@@ -9475,7 +9475,7 @@ property_value: MassAvg "168.21" xsd:float
 property_value: MassMono "168.035734" xsd:float
 property_value: Origin "G, M" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0015
+xref: uniprot.ptm:0015
 is_a: MOD:02047
 is_a: MOD:02052
 is_a: MOD:01882
@@ -9501,7 +9501,7 @@ property_value: MassAvg "153.14" xsd:float
 property_value: MassMono "153.053826" xsd:float
 property_value: Origin "G, N" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0046
+xref: uniprot.ptm:0046
 is_a: MOD:02042
 is_a: MOD:02047
 is_a: MOD:01882
@@ -9528,7 +9528,7 @@ property_value: MassAvg "167.21" xsd:float
 property_value: MassMono "167.105862" xsd:float
 property_value: Origin "G, K" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0048
+xref: uniprot.ptm:0048
 is_a: MOD:02047
 is_a: MOD:02051
 is_a: MOD:01882
@@ -9556,7 +9556,7 @@ property_value: MassMono "149.071488" xsd:float
 property_value: Origin "G, K" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0018
+xref: uniprot.ptm:0018
 is_a: MOD:02047
 is_a: MOD:02051
 is_a: MOD:01882
@@ -9571,7 +9571,7 @@ synonym: "MOD_RES Pentaglycyl murein peptidoglycan amidated alanine" EXACT UniPr
 property_value: Origin "A" xsd:string
 property_value: Source "hypothetical" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0245
+xref: uniprot.ptm:0245
 is_a: MOD:00901
 is_a: MOD:01159
 
@@ -9622,7 +9622,7 @@ property_value: MassMono "241.167794" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:449
-xref: PTM-0234
+xref: uniprot.ptm:0234
 is_a: MOD:00668
 is_a: MOD:02003
 
@@ -9649,7 +9649,7 @@ property_value: MassMono "227.152144" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:426
-xref: PTM-0240
+xref: uniprot.ptm:0240
 is_a: MOD:00669
 is_a: MOD:02004
 
@@ -9675,7 +9675,7 @@ property_value: MassMono "255.183444" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:449
-xref: PTM-0235
+xref: uniprot.ptm:0235
 is_a: MOD:00668
 is_a: MOD:02004
 
@@ -10152,7 +10152,7 @@ property_value: Origin "E" xsd:string
 property_value: Source "artifact" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:27
-xref: PTM-0262
+xref: uniprot.ptm:0262
 is_a: MOD:00906
 is_a: MOD:01048
 
@@ -10790,7 +10790,7 @@ property_value: MassMono "150.993929" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "artifact" xsd:string
 xref: Unimod:345
-xref: PTM-0634
+xref: uniprot.ptm:0634
 is_a: MOD:00708
 
 [Term]
@@ -11181,7 +11181,7 @@ property_value: Origin "M" xsd:string
 property_value: Source "artifact" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:122
-xref: PTM-0212
+xref: uniprot.ptm:0212
 is_a: MOD:00913
 
 [Term]
@@ -14016,7 +14016,7 @@ property_value: MassMono "143.058243" xsd:float
 property_value: Origin "Q" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:528
-xref: PTM-0127
+xref: uniprot.ptm:0127
 is_a: MOD:01369
 is_a: MOD:01453
 relationship: has_functional_parent MOD:00659
@@ -14028,7 +14028,7 @@ def: "A protein modification that effectively converts an L-arginine residue to 
 subset: PSI-MOD-slim
 synonym: "MeArg" EXACT PSI-MOD-label []
 property_value: Origin "R" xsd:string
-xref: PTM-0238
+xref: uniprot.ptm:0238
 is_a: MOD:00427
 is_a: MOD:00902
 
@@ -14084,7 +14084,7 @@ subset: PSI-MOD-slim
 synonym: "MeLys" EXACT PSI-MOD-label []
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0193
+xref: uniprot.ptm:0193
 is_a: MOD:00427
 is_a: MOD:00912
 
@@ -14283,7 +14283,7 @@ name: hydroxylated arginine
 def: "A protein modification that effectively converts an L-arginine residue to a hydroxylated L-arginine." [PubMed:18688235]
 synonym: "HyArg" EXACT PSI-MOD-label []
 property_value: Origin "R" xsd:string
-xref: PTM-0498
+xref: uniprot.ptm:0498
 is_a: MOD:00677
 is_a: MOD:00902
 
@@ -14317,7 +14317,7 @@ property_value: MassMono "115.026943" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:7
-xref: PTM-0116
+xref: uniprot.ptm:0116
 is_a: MOD:00400
 is_a: MOD:00903
 
@@ -14344,7 +14344,7 @@ property_value: MassMono "129.042593" xsd:float
 property_value: Origin "Q" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:7
-xref: PTM-0117
+xref: uniprot.ptm:0117
 is_a: MOD:00400
 is_a: MOD:00907
 
@@ -14561,7 +14561,7 @@ property_value: MassAvg "99.13" xsd:float
 property_value: MassMono "99.068414" xsd:float
 property_value: Origin "V" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0124
+xref: uniprot.ptm:0124
 is_a: MOD:00664
 
 [Term]
@@ -14580,7 +14580,7 @@ property_value: MassMono "161.047678" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:401
-xref: PTM-0008
+xref: uniprot.ptm:0008
 is_a: MOD:00919
 is_a: MOD:01888
 
@@ -14742,7 +14742,7 @@ property_value: MassMono "147.035400" xsd:float
 property_value: Origin "M" xsd:string
 property_value: Source "artifact" xsd:string
 xref: Unimod:35
-xref: PTM-0469
+xref: uniprot.ptm:0469
 is_a: MOD:00709
 is_a: MOD:01854
 
@@ -14763,7 +14763,7 @@ property_value: MassAvg "147.19" xsd:float
 property_value: MassMono "147.035400" xsd:float
 property_value: Origin "M" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0480
+xref: uniprot.ptm:0480
 is_a: MOD:00719
 
 [Term]
@@ -14780,7 +14780,7 @@ property_value: MassAvg "147.19" xsd:float
 property_value: MassMono "147.035400" xsd:float
 property_value: Origin "M" xsd:string
 property_value: Source "artifact" xsd:string
-xref: PTM-0481
+xref: uniprot.ptm:0481
 is_a: MOD:00719
 
 [Term]
@@ -15155,7 +15155,7 @@ property_value: MassAvg "115.13" xsd:float
 property_value: MassMono "115.063329" xsd:float
 property_value: Origin "V" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0111
+xref: uniprot.ptm:0111
 is_a: MOD:00425
 is_a: MOD:00664
 
@@ -15179,7 +15179,7 @@ property_value: MassAvg "275.26" xsd:float
 property_value: MassMono "275.100502" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0558
+xref: uniprot.ptm:0558
 is_a: MOD:00915
 
 [Term]
@@ -15204,7 +15204,7 @@ property_value: MassAvg "316.31" xsd:float
 property_value: MassMono "316.127051" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0578
+xref: uniprot.ptm:0578
 is_a: MOD:01677
 
 [Term]
@@ -15334,7 +15334,7 @@ property_value: MassMono "222.013284" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:312
-xref: PTM-0415
+xref: uniprot.ptm:0415
 is_a: MOD:00905
 is_a: MOD:01862
 
@@ -15556,7 +15556,7 @@ property_value: MassMono "184.132411" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:36
-xref: PTM-0341
+xref: uniprot.ptm:0341
 is_a: MOD:00429
 is_a: MOD:00658
 
@@ -15724,7 +15724,7 @@ property_value: MassMono "69.021464" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:368
-xref: PTM-0468
+xref: uniprot.ptm:0468
 is_a: MOD:00905
 is_a: MOD:01168
 
@@ -15807,7 +15807,7 @@ property_value: MassAvg "271.18" xsd:float
 property_value: MassMono "270.991559" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0424
+xref: uniprot.ptm:0424
 is_a: MOD:00861
 is_a: MOD:00905
 
@@ -15846,7 +15846,7 @@ property_value: MassAvg "265.28" xsd:float
 property_value: MassMono "265.062008" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "artifact" xsd:string
-xref: PTM-0624
+xref: uniprot.ptm:0624
 is_a: MOD:00426
 is_a: MOD:00476
 is_a: MOD:00905
@@ -15940,7 +15940,7 @@ property_value: MassAvg "264.30" xsd:float
 property_value: MassMono "264.056863" xsd:float
 property_value: Origin "C, Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0020
+xref: uniprot.ptm:0020
 is_a: MOD:02058
 is_a: MOD:01993
 
@@ -15964,7 +15964,7 @@ property_value: MassAvg "249.22" xsd:float
 property_value: MassMono "249.084852" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0573
+xref: uniprot.ptm:0573
 is_a: MOD:00002
 is_a: MOD:00433
 
@@ -15993,7 +15993,7 @@ property_value: MassAvg "290.27" xsd:float
 property_value: MassMono "290.111401" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0580
+xref: uniprot.ptm:0580
 is_a: MOD:00448
 is_a: MOD:01675
 
@@ -16022,7 +16022,7 @@ property_value: MassAvg "304.30" xsd:float
 property_value: MassMono "304.127051" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0582
+xref: uniprot.ptm:0582
 is_a: MOD:00448
 is_a: MOD:01676
 
@@ -16047,7 +16047,7 @@ property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
 xref: Unimod:385
-xref: PTM-0266
+xref: uniprot.ptm:0266
 is_a: MOD:00916
 is_a: MOD:01154
 is_a: MOD:01160
@@ -16071,7 +16071,7 @@ property_value: MassAvg "249.22" xsd:float
 property_value: MassMono "249.084852" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0560
+xref: uniprot.ptm:0560
 is_a: MOD:00002
 is_a: MOD:00476
 
@@ -16094,7 +16094,7 @@ property_value: MassAvg "263.25" xsd:float
 property_value: MassMono "263.100502" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0562
+xref: uniprot.ptm:0562
 is_a: MOD:00476
 is_a: MOD:01348
 
@@ -16118,7 +16118,7 @@ property_value: MassAvg "249.22" xsd:float
 property_value: MassMono "249.084852" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0588
+xref: uniprot.ptm:0588
 is_a: MOD:00002
 is_a: MOD:00595
 
@@ -16141,7 +16141,7 @@ property_value: MassAvg "263.25" xsd:float
 property_value: MassMono "263.100502" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0591
+xref: uniprot.ptm:0591
 is_a: MOD:00595
 is_a: MOD:01348
 
@@ -16169,7 +16169,7 @@ property_value: MassMono "233.089937" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:295
-xref: PTM-0550
+xref: uniprot.ptm:0550
 is_a: MOD:00002
 is_a: MOD:00614
 
@@ -16196,7 +16196,7 @@ property_value: MassMono "247.105587" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:295
-xref: PTM-0552
+xref: uniprot.ptm:0552
 is_a: MOD:00005
 is_a: MOD:00614
 
@@ -16220,7 +16220,7 @@ property_value: MassAvg "219.19" xsd:float
 property_value: MassMono "219.074287" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "artifact" xsd:string
-xref: PTM-0598
+xref: uniprot.ptm:0598
 is_a: MOD:00002
 
 [Term]
@@ -16257,7 +16257,7 @@ property_value: MassAvg "369.61" xsd:float
 property_value: MassMono "369.270150" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0283
+xref: uniprot.ptm:0283
 is_a: MOD:02005
 is_a: MOD:02006
 
@@ -16278,7 +16278,7 @@ property_value: MassAvg "322.45" xsd:float
 property_value: MassMono "322.204513" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0026
+xref: uniprot.ptm:0026
 is_a: MOD:00601
 is_a: MOD:01115
 
@@ -16297,7 +16297,7 @@ property_value: Origin "X" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
 xref: Unimod:394
-xref: PTM-0139
+xref: uniprot.ptm:0139
 is_a: MOD:00764
 is_a: MOD:00861
 is_a: MOD:01155
@@ -16449,7 +16449,7 @@ property_value: MassMono "69.021464" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:400
-xref: PTM-0647
+xref: uniprot.ptm:0647
 is_a: MOD:00919
 is_a: MOD:01168
 
@@ -16596,7 +16596,7 @@ property_value: MassMono "112.076239" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0219
+xref: uniprot.ptm:0219
 is_a: MOD:01417
 is_a: MOD:01462
 is_a: MOD:01680
@@ -16617,7 +16617,7 @@ property_value: MassAvg "317.30" xsd:float
 property_value: MassMono "317.122300" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0527
+xref: uniprot.ptm:0527
 is_a: MOD:00448
 is_a: MOD:01674
 
@@ -16644,7 +16644,7 @@ property_value: MassAvg "317.30" xsd:float
 property_value: MassMono "317.122300" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0512
+xref: uniprot.ptm:0512
 is_a: MOD:00563
 is_a: MOD:01674
 
@@ -16670,7 +16670,7 @@ property_value: MassAvg "276.25" xsd:float
 property_value: MassMono "276.095751" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0517
+xref: uniprot.ptm:0517
 is_a: MOD:00433
 is_a: MOD:01346
 
@@ -16696,7 +16696,7 @@ property_value: MassAvg "274.27" xsd:float
 property_value: MassMono "274.116486" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0553
+xref: uniprot.ptm:0553
 is_a: MOD:00002
 
 [Term]
@@ -16977,7 +16977,7 @@ property_value: MassAvg "71.08" xsd:float
 property_value: MassMono "71.037114" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0113
+xref: uniprot.ptm:0113
 is_a: MOD:00862
 is_a: MOD:00916
 is_a: MOD:01161
@@ -17037,7 +17037,7 @@ property_value: MassAvg "101.10" xsd:float
 property_value: MassMono "101.047678" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0310
+xref: uniprot.ptm:0310
 is_a: MOD:00664
 is_a: MOD:00917
 
@@ -17080,7 +17080,7 @@ property_value: MassMono "255.038212" xsd:float
 property_value: Origin "D" xsd:string
 property_value: Source "hypothetical" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0322
+xref: uniprot.ptm:0322
 is_a: MOD:00466
 is_a: MOD:00904
 
@@ -17097,7 +17097,7 @@ property_value: MassAvg "129.12" xsd:float
 property_value: MassMono "129.042593" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0024
+xref: uniprot.ptm:0024
 is_a: MOD:00428
 is_a: MOD:00678
 
@@ -17151,7 +17151,7 @@ property_value: MassAvg "71.08" xsd:float
 property_value: MassMono "71.037114" xsd:float
 property_value: Origin "D" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0314
+xref: uniprot.ptm:0314
 is_a: MOD:00904
 is_a: MOD:02088
 
@@ -17431,7 +17431,7 @@ property_value: MassMono "220.040341" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:936
-xref: PTM-0052
+xref: uniprot.ptm:0052
 is_a: MOD:01913
 
 [Term]
@@ -17499,7 +17499,7 @@ property_value: MassMono "217.025242" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:21
-xref: PTM-0252
+xref: uniprot.ptm:0252
 is_a: MOD:00909
 is_a: MOD:01456
 
@@ -17533,7 +17533,7 @@ property_value: MassAvg "87.08" xsd:float
 property_value: MassMono "87.032028" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0309
+xref: uniprot.ptm:0309
 is_a: MOD:00891
 is_a: MOD:00905
 
@@ -17881,7 +17881,7 @@ property_value: MassMono "228.134816" xsd:float
 property_value: Origin "K, T" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0326
+xref: uniprot.ptm:0326
 is_a: MOD:00688
 is_a: MOD:02056
 is_a: MOD:02051
@@ -17964,7 +17964,7 @@ property_value: MassMono "470.211175" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:512
-xref: PTM-0511
+xref: uniprot.ptm:0511
 is_a: MOD:00767
 is_a: MOD:00912
 
@@ -18305,7 +18305,7 @@ property_value: MassAvg "154.13" xsd:float
 property_value: MassMono "154.037842" xsd:float
 property_value: Origin "D, G" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0312
+xref: uniprot.ptm:0312
 is_a: MOD:02043
 is_a: MOD:00954
 is_a: MOD:01628
@@ -19221,7 +19221,7 @@ property_value: MassMono "113.047678" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:35
-xref: PTM-0149
+xref: uniprot.ptm:0149
 is_a: MOD:00425
 is_a: MOD:00594
 is_a: MOD:00678
@@ -20760,7 +20760,7 @@ property_value: MassAvg "821.65" xsd:float
 property_value: MassMono "821.237910" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0672
+xref: uniprot.ptm:0672
 is_a: MOD:02087
 is_a: MOD:00909
 relationship: derives_from MOD:00049
@@ -21133,7 +21133,7 @@ property_value: MassMono "143.058243" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:1
-xref: PTM-0233
+xref: uniprot.ptm:0233
 is_a: MOD:00644
 is_a: MOD:01186
 
@@ -21153,7 +21153,7 @@ property_value: MassMono "211.048383" xsd:float
 property_value: Origin "A" xsd:string
 property_value: Source "hypothetical" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0144
+xref: uniprot.ptm:0144
 is_a: MOD:00466
 is_a: MOD:00901
 
@@ -21173,7 +21173,7 @@ property_value: MassMono "254.054197" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "hypothetical" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0145
+xref: uniprot.ptm:0145
 is_a: MOD:00466
 is_a: MOD:00903
 
@@ -21194,7 +21194,7 @@ property_value: MassAvg "419.58" xsd:float
 property_value: MassMono "419.213030" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0447
+xref: uniprot.ptm:0447
 is_a: MOD:00905
 is_a: MOD:01155
 
@@ -21265,7 +21265,7 @@ property_value: MassAvg "227.22" xsd:float
 property_value: MassMono "227.090606" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0416
+xref: uniprot.ptm:0416
 is_a: MOD:00909
 
 [Term]
@@ -21307,7 +21307,7 @@ property_value: MassMono "100.076239" xsd:float
 property_value: Origin "A" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0178
+xref: uniprot.ptm:0178
 is_a: MOD:01461
 is_a: MOD:01686
 
@@ -21384,7 +21384,7 @@ property_value: MassAvg "1021.81" xsd:float
 property_value: MassMono "1021.193931" xsd:float
 property_value: Origin "C, H" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0681
+xref: uniprot.ptm:0681
 is_a: MOD:02044
 is_a: MOD:02048
 is_a: MOD:01621
@@ -24504,7 +24504,7 @@ property_value: MassMono "208.048407" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "artifact" xsd:string
 xref: Unimod:354
-xref: PTM-0213
+xref: uniprot.ptm:0213
 is_a: MOD:00461
 is_a: MOD:00919
 
@@ -24855,7 +24855,7 @@ property_value: MassAvg "129.16" xsd:float
 property_value: MassMono "129.078979" xsd:float
 property_value: Origin "L" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0665
+xref: uniprot.ptm:0665
 is_a: MOD:01411
 
 [Term]
@@ -24875,7 +24875,7 @@ property_value: MassAvg "129.16" xsd:float
 property_value: MassMono "129.078979" xsd:float
 property_value: Origin "L" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0491
+xref: uniprot.ptm:0491
 is_a: MOD:01411
 
 [Term]
@@ -24893,7 +24893,7 @@ property_value: MassAvg "127.14" xsd:float
 property_value: MassMono "127.063329" xsd:float
 property_value: Origin "L" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0492
+xref: uniprot.ptm:0492
 is_a: MOD:00679
 is_a: MOD:00911
 
@@ -24914,7 +24914,7 @@ property_value: MassAvg "145.16" xsd:float
 property_value: MassMono "145.073893" xsd:float
 property_value: Origin "L" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0340
+xref: uniprot.ptm:0340
 is_a: MOD:01412
 
 [Term]
@@ -24934,7 +24934,7 @@ property_value: MassAvg "145.16" xsd:float
 property_value: MassMono "145.073893" xsd:float
 property_value: Origin "I" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0343
+xref: uniprot.ptm:0343
 is_a: MOD:01416
 
 [Term]
@@ -24955,7 +24955,7 @@ property_value: MassAvg "129.16" xsd:float
 property_value: MassMono "129.078979" xsd:float
 property_value: Origin "I" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0337
+xref: uniprot.ptm:0337
 is_a: MOD:01415
 
 [Term]
@@ -24975,7 +24975,7 @@ property_value: MassAvg "145.16" xsd:float
 property_value: MassMono "145.073893" xsd:float
 property_value: Origin "I" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0336
+xref: uniprot.ptm:0336
 is_a: MOD:01416
 
 [Term]
@@ -24993,7 +24993,7 @@ property_value: MassAvg "264.30" xsd:float
 property_value: MassMono "264.056863" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0304
+xref: uniprot.ptm:0304
 is_a: MOD:00918
 
 [Term]
@@ -25013,7 +25013,7 @@ property_value: MassAvg "319.33" xsd:float
 property_value: MassMono "319.062677" xsd:float
 property_value: Origin "C, W" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0338
+xref: uniprot.ptm:0338
 is_a: MOD:00687
 is_a: MOD:02057
 
@@ -25036,7 +25036,7 @@ property_value: MassAvg "323.48" xsd:float
 property_value: MassMono "323.246044" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0493
+xref: uniprot.ptm:0493
 is_a: MOD:02003
 is_a: MOD:01768
 
@@ -25063,7 +25063,7 @@ property_value: MassMono "175.102537" xsd:float
 property_value: Origin "M" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0503
+xref: uniprot.ptm:0503
 is_a: MOD:01463
 is_a: MOD:01698
 
@@ -25086,7 +25086,7 @@ property_value: MassAvg "220.26" xsd:float
 property_value: MassMono "219.997634" xsd:float
 property_value: Origin "C, C" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0324
+xref: uniprot.ptm:0324
 is_a: MOD:02044
 is_a: MOD:00689
 
@@ -25107,7 +25107,7 @@ property_value: MassAvg "101.06" xsd:float
 property_value: MassMono "101.011293" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0321
+xref: uniprot.ptm:0321
 is_a: MOD:00916
 
 [Term]
@@ -25132,7 +25132,7 @@ property_value: MassAvg "163.18" xsd:float
 property_value: MassMono "163.063329" xsd:float
 property_value: Origin "F" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0346
+xref: uniprot.ptm:0346
 is_a: MOD:00677
 is_a: MOD:00914
 
@@ -25153,7 +25153,7 @@ property_value: MassAvg "115.13" xsd:float
 property_value: MassMono "115.063329" xsd:float
 property_value: Origin "V" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0347
+xref: uniprot.ptm:0347
 is_a: MOD:00677
 is_a: MOD:00920
 
@@ -25175,7 +25175,7 @@ property_value: MassAvg "115.13" xsd:float
 property_value: MassMono "115.063329" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0356
+xref: uniprot.ptm:0356
 is_a: MOD:01803
 
 [Term]
@@ -25205,7 +25205,7 @@ property_value: MassMono "74.060589" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0354
+xref: uniprot.ptm:0354
 is_a: MOD:00917
 is_a: MOD:00960
 
@@ -25226,7 +25226,7 @@ property_value: MassAvg "196.27" xsd:float
 property_value: MassMono "196.067034" xsd:float
 property_value: Origin "C, I" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0361
+xref: uniprot.ptm:0361
 is_a: MOD:02049
 is_a: MOD:01420
 is_a: MOD:02082
@@ -25248,7 +25248,7 @@ property_value: MassAvg "182.24" xsd:float
 property_value: MassMono "182.051384" xsd:float
 property_value: Origin "C, V" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0365
+xref: uniprot.ptm:0365
 is_a: MOD:02059
 is_a: MOD:01420
 is_a: MOD:02082
@@ -25270,7 +25270,7 @@ property_value: MassAvg "226.29" xsd:float
 property_value: MassMono "226.077599" xsd:float
 property_value: Origin "C, V" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0373
+xref: uniprot.ptm:0373
 is_a: MOD:02059
 is_a: MOD:01420
 
@@ -25291,7 +25291,7 @@ property_value: MassAvg "211.24" xsd:float
 property_value: MassMono "211.041548" xsd:float
 property_value: Origin "C, N" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0352
+xref: uniprot.ptm:0352
 is_a: MOD:02042
 is_a: MOD:01420
 relationship: derives_from MOD:00656
@@ -25311,7 +25311,7 @@ property_value: MassAvg "207.23" xsd:float
 property_value: MassMono "207.022823" xsd:float
 property_value: Origin "C, S, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0358
+xref: uniprot.ptm:0358
 is_a: MOD:02044
 is_a: MOD:02055
 is_a: MOD:01425
@@ -25334,7 +25334,7 @@ property_value: MassMono "225.057198" xsd:float
 property_value: Origin "C, S, S" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0348
+xref: uniprot.ptm:0348
 is_a: MOD:02044
 is_a: MOD:02055
 is_a: MOD:01425
@@ -25400,7 +25400,7 @@ property_value: MassAvg "168.15" xsd:float
 property_value: MassMono "168.053492" xsd:float
 property_value: Origin "S, T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0386
+xref: uniprot.ptm:0386
 is_a: MOD:02055
 is_a: MOD:01422
 is_a: MOD:02082
@@ -25429,7 +25429,7 @@ property_value: MassMono "184.121178" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:58
-xref: PTM-0642
+xref: uniprot.ptm:0642
 is_a: MOD:01155
 is_a: MOD:01875
 is_a: MOD:01894
@@ -25454,7 +25454,7 @@ property_value: MassAvg "669.48" xsd:float
 property_value: MassMono "669.156072" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0355
+xref: uniprot.ptm:0355
 is_a: MOD:00752
 is_a: MOD:00912
 
@@ -25490,7 +25490,7 @@ property_value: MassAvg "130.10" xsd:float
 property_value: MassMono "130.037842" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0370
+xref: uniprot.ptm:0370
 is_a: MOD:01688
 
 [Term]
@@ -25510,7 +25510,7 @@ property_value: MassAvg "129.12" xsd:float
 property_value: MassMono "129.042593" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0368
+xref: uniprot.ptm:0368
 is_a: MOD:00866
 
 [Term]
@@ -25530,7 +25530,7 @@ property_value: MassAvg "161.16" xsd:float
 property_value: MassMono "161.068808" xsd:float
 property_value: Origin "L" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0372
+xref: uniprot.ptm:0372
 is_a: MOD:01413
 
 [Term]
@@ -25550,7 +25550,7 @@ property_value: MassAvg "197.21" xsd:float
 property_value: MassMono "197.025897" xsd:float
 property_value: Origin "C, N" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0359
+xref: uniprot.ptm:0359
 is_a: MOD:02042
 is_a: MOD:01420
 is_a: MOD:02082
@@ -25592,7 +25592,7 @@ property_value: MassAvg "184.21" xsd:float
 property_value: MassMono "184.030649" xsd:float
 property_value: Origin "C, T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0364
+xref: uniprot.ptm:0364
 is_a: MOD:02056
 is_a: MOD:01420
 is_a: MOD:02082
@@ -25614,7 +25614,7 @@ property_value: MassAvg "232.30" xsd:float
 property_value: MassMono "232.067034" xsd:float
 property_value: Origin "C, F" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0366
+xref: uniprot.ptm:0366
 is_a: MOD:02053
 is_a: MOD:01420
 is_a: MOD:00954
@@ -25636,7 +25636,7 @@ property_value: MassAvg "186.23" xsd:float
 property_value: MassMono "186.046299" xsd:float
 property_value: Origin "C, T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0392
+xref: uniprot.ptm:0392
 is_a: MOD:02056
 is_a: MOD:01420
 is_a: MOD:00954
@@ -25908,7 +25908,7 @@ property_value: MassAvg "145.16" xsd:float
 property_value: MassMono "145.073893" xsd:float
 property_value: Origin "L" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0666
+xref: uniprot.ptm:0666
 is_a: MOD:01412
 
 [Term]
@@ -25929,7 +25929,7 @@ property_value: MassMono "72.044939" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0379
+xref: uniprot.ptm:0379
 is_a: MOD:00683
 is_a: MOD:00917
 
@@ -25950,7 +25950,7 @@ property_value: MassAvg "145.11" xsd:float
 property_value: MassMono "145.037508" xsd:float
 property_value: Origin "E" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0453
+xref: uniprot.ptm:0453
 is_a: MOD:00425
 is_a: MOD:00906
 
@@ -26012,7 +26012,7 @@ property_value: MassMono "286.086152" xsd:float
 property_value: Origin "C, P, S" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0380
+xref: uniprot.ptm:0380
 is_a: MOD:02054
 is_a: MOD:02055
 is_a: MOD:01629
@@ -26091,7 +26091,7 @@ property_value: MassAvg "260.29" xsd:float
 property_value: MassMono "260.116092" xsd:float
 property_value: Origin "V, Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0390
+xref: uniprot.ptm:0390
 is_a: MOD:00692
 is_a: MOD:02058
 is_a: MOD:02059
@@ -26581,7 +26581,7 @@ property_value: MassAvg "83.09" xsd:float
 property_value: MassMono "83.037114" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0441
+xref: uniprot.ptm:0441
 is_a: MOD:00190
 
 [Term]
@@ -26612,7 +26612,7 @@ property_value: MassAvg "83.09" xsd:float
 property_value: MassMono "83.037114" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0440
+xref: uniprot.ptm:0440
 is_a: MOD:00190
 
 [Term]
@@ -28755,7 +28755,7 @@ property_value: MassMono "143.045667" xsd:float
 property_value: Origin "G, S" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0422
+xref: uniprot.ptm:0422
 is_a: MOD:00885
 is_a: MOD:02047
 is_a: MOD:02055
@@ -28781,7 +28781,7 @@ property_value: MassMono "157.061317" xsd:float
 property_value: Origin "G, T" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0423
+xref: uniprot.ptm:0423
 is_a: MOD:00885
 is_a: MOD:02047
 is_a: MOD:00917
@@ -28806,7 +28806,7 @@ property_value: MassAvg "210.13" xsd:float
 property_value: MassMono "210.040558" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0399
+xref: uniprot.ptm:0399
 is_a: MOD:00861
 is_a: MOD:00916
 
@@ -28831,7 +28831,7 @@ property_value: MassAvg "253.21" xsd:float
 property_value: MassMono "253.094785" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0400
+xref: uniprot.ptm:0400
 is_a: MOD:00861
 is_a: MOD:00916
 
@@ -28855,7 +28855,7 @@ property_value: MassAvg "331.33" xsd:float
 property_value: MassMono "331.137950" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0547
+xref: uniprot.ptm:0547
 is_a: MOD:00002
 
 [Term]
@@ -29037,7 +29037,7 @@ property_value: MassAvg "257.35" xsd:float
 property_value: MassMono "257.119798" xsd:float
 property_value: Origin "K, M" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0401
+xref: uniprot.ptm:0401
 is_a: MOD:02051
 is_a: MOD:02052
 
@@ -29091,7 +29091,7 @@ property_value: MassAvg "272.26" xsd:float
 property_value: MassMono "272.100836" xsd:float
 property_value: Origin "E" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0406
+xref: uniprot.ptm:0406
 is_a: MOD:00906
 
 [Term]
@@ -29150,7 +29150,7 @@ property_value: MassAvg "257.29" xsd:float
 property_value: MassMono "257.137556" xsd:float
 property_value: Origin "E" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0407
+xref: uniprot.ptm:0407
 is_a: MOD:00906
 
 [Term]
@@ -29168,7 +29168,7 @@ property_value: MassAvg "364.35" xsd:float
 property_value: MassMono "364.127051" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0504
+xref: uniprot.ptm:0504
 is_a: MOD:00918
 relationship: has_functional_parent MOD:00222
 relationship: has_functional_parent MOD:01664
@@ -29190,7 +29190,7 @@ property_value: MassMono "132.066068" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0412
+xref: uniprot.ptm:0412
 is_a: MOD:01689
 is_a: MOD:01803
 
@@ -29240,7 +29240,7 @@ property_value: MassAvg "289.07" xsd:float
 property_value: MassMono "288.959976" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0411
+xref: uniprot.ptm:0411
 is_a: MOD:01228
 
 [Term]
@@ -29263,7 +29263,7 @@ property_value: MassAvg "414.97" xsd:float
 property_value: MassMono "414.856624" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0408
+xref: uniprot.ptm:0408
 is_a: MOD:01140
 
 [Term]
@@ -29289,7 +29289,7 @@ property_value: MassMono "403.076723" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0409
+xref: uniprot.ptm:0409
 is_a: MOD:00908
 is_a: MOD:01165
 
@@ -29313,7 +29313,7 @@ property_value: MassMono "190.994894" xsd:float
 property_value: Origin "C, G" xsd:string
 property_value: Source "hypothetical" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0410
+xref: uniprot.ptm:0410
 is_a: MOD:00395
 is_a: MOD:02047
 is_a: MOD:00954
@@ -29335,7 +29335,7 @@ property_value: MassAvg "300.44" xsd:float
 property_value: MassMono "299.918933" xsd:float
 property_value: Origin "C, C" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0417
+xref: uniprot.ptm:0417
 is_a: MOD:01620
 
 [Term]
@@ -29354,7 +29354,7 @@ property_value: MassAvg "343.22" xsd:float
 property_value: MassMono "343.066832" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0596
+xref: uniprot.ptm:0596
 is_a: MOD:00005
 is_a: MOD:01804
 
@@ -29376,7 +29376,7 @@ property_value: MassMono "169.061317" xsd:float
 property_value: Origin "A, N" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0418
+xref: uniprot.ptm:0418
 is_a: MOD:00688
 is_a: MOD:02040
 is_a: MOD:02042
@@ -29460,7 +29460,7 @@ property_value: MassAvg "154.13" xsd:float
 property_value: MassMono "154.037842" xsd:float
 property_value: Origin "G, N" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0450
+xref: uniprot.ptm:0450
 is_a: MOD:02042
 is_a: MOD:00946
 is_a: MOD:01628
@@ -29576,7 +29576,7 @@ property_value: MassAvg "239.27" xsd:float
 property_value: MassMono "239.126991" xsd:float
 property_value: Origin "K, X" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0397
+xref: uniprot.ptm:0397
 is_a: MOD:02051
 is_a: MOD:01875
 is_a: MOD:00688
@@ -30030,7 +30030,7 @@ property_value: MassMono "71.013304" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0662
+xref: uniprot.ptm:0662
 is_a: MOD:00919
 is_a: MOD:01154
 
@@ -30088,7 +30088,7 @@ property_value: MassAvg "202.21" xsd:float
 property_value: MassMono "202.074228" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0427
+xref: uniprot.ptm:0427
 is_a: MOD:01622
 
 [Term]
@@ -30379,7 +30379,7 @@ property_value: MassMono "171.100777" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "artifact" xsd:string
 xref: Unimod:5
-xref: PTM-0675
+xref: uniprot.ptm:0675
 is_a: MOD:00912
 is_a: MOD:00398
 
@@ -30620,7 +30620,7 @@ property_value: MassMono "330.210290" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0419
+xref: uniprot.ptm:0419
 is_a: MOD:00905
 is_a: MOD:01696
 
@@ -30641,7 +30641,7 @@ property_value: MassMono "328.194640" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0420
+xref: uniprot.ptm:0420
 is_a: MOD:00905
 is_a: MOD:01696
 
@@ -30700,7 +30700,7 @@ property_value: MassAvg "524.60" xsd:float
 property_value: MassMono "524.151826" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0428
+xref: uniprot.ptm:0428
 is_a: MOD:00905
 
 [Term]
@@ -32190,7 +32190,7 @@ property_value: MassMono "177.033388" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "hypothetical" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0433
+xref: uniprot.ptm:0433
 is_a: MOD:00908
 
 [Term]
@@ -32230,7 +32230,7 @@ property_value: MassAvg "272.35" xsd:float
 property_value: MassMono "272.184841" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0474
+xref: uniprot.ptm:0474
 relationship: derives_from MOD:00037
 is_a: MOD:01875
 
@@ -32258,7 +32258,7 @@ property_value: MassMono "198.136828" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "hypothetical" xsd:string
 xref: Unimod:1289
-xref: PTM-0637
+xref: uniprot.ptm:0637
 is_a: MOD:01875
 is_a: MOD:01997
 
@@ -32279,7 +32279,7 @@ property_value: MassAvg "101.10" xsd:float
 property_value: MassMono "101.047678" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0432
+xref: uniprot.ptm:0432
 is_a: MOD:01680
 is_a: MOD:01800
 
@@ -32300,7 +32300,7 @@ property_value: MassMono "116.071154" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0431
+xref: uniprot.ptm:0431
 is_a: MOD:01686
 is_a: MOD:01800
 
@@ -32326,7 +32326,7 @@ property_value: MassMono "131.094080" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0430
+xref: uniprot.ptm:0430
 is_a: MOD:01698
 is_a: MOD:01800
 
@@ -32372,7 +32372,7 @@ property_value: MassAvg "208.17" xsd:float
 property_value: MassMono "208.048407" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0434
+xref: uniprot.ptm:0434
 is_a: MOD:01352
 
 [Term]
@@ -32394,7 +32394,7 @@ property_value: MassAvg "339.35" xsd:float
 property_value: MassMono "339.121906" xsd:float
 property_value: Origin "Y, Y" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0320
+xref: uniprot.ptm:0320
 is_a: MOD:00692
 is_a: MOD:02058
 
@@ -32694,7 +32694,7 @@ property_value: MassMono "155.045667" xsd:float
 property_value: Origin "D, G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0490
+xref: uniprot.ptm:0490
 is_a: MOD:02043
 is_a: MOD:00954
 is_a: MOD:01928
@@ -32718,7 +32718,7 @@ property_value: MassMono "142.123189" xsd:float
 property_value: Origin "L" xsd:string
 property_value: Source "hypothetical" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0435
+xref: uniprot.ptm:0435
 is_a: MOD:01686
 is_a: MOD:01808
 
@@ -32856,7 +32856,7 @@ property_value: MassAvg "223.23" xsd:float
 property_value: MassMono "223.017738" xsd:float
 property_value: Origin "C, S, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0454
+xref: uniprot.ptm:0454
 is_a: MOD:02044
 is_a: MOD:02055
 is_a: MOD:01425
@@ -32878,7 +32878,7 @@ property_value: MassAvg "212.22" xsd:float
 property_value: MassMono "212.025563" xsd:float
 property_value: Origin "C, E" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0456
+xref: uniprot.ptm:0456
 is_a: MOD:02045
 is_a: MOD:01420
 is_a: MOD:02082
@@ -32941,7 +32941,7 @@ property_value: MassAvg "370.41" xsd:float
 property_value: MassMono "370.142976" xsd:float
 property_value: Origin "W, W" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0544
+xref: uniprot.ptm:0544
 is_a: MOD:00692
 is_a: MOD:02057
 
@@ -32965,7 +32965,7 @@ property_value: MassAvg "228.25" xsd:float
 property_value: MassMono "228.111007" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0438
+xref: uniprot.ptm:0438
 is_a: MOD:01029
 is_a: MOD:01875
 
@@ -33304,7 +33304,7 @@ property_value: MassAvg "215.25" xsd:float
 property_value: MassMono "215.126991" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0439
+xref: uniprot.ptm:0439
 is_a: MOD:01853
 
 [Term]
@@ -33344,7 +33344,7 @@ property_value: MassAvg "113.16" xsd:float
 property_value: MassMono "113.084064" xsd:float
 property_value: Origin "I" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0442
+xref: uniprot.ptm:0442
 is_a: MOD:00664
 is_a: MOD:00910
 is_a: MOD:00306
@@ -33389,7 +33389,7 @@ property_value: MassMono "143.027909" xsd:float
 property_value: Origin "C, C" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0443
+xref: uniprot.ptm:0443
 is_a: MOD:01851
 
 [Term]
@@ -33407,7 +33407,7 @@ property_value: MassAvg "220.66" xsd:float
 property_value: MassMono "220.040341" xsd:float
 property_value: Origin "W" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0444
+xref: uniprot.ptm:0444
 is_a: MOD:01913
 
 [Term]
@@ -33428,7 +33428,7 @@ property_value: MassMono "212.038139" xsd:float
 property_value: Origin "C, L" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0448
+xref: uniprot.ptm:0448
 is_a: MOD:02044
 is_a: MOD:02050
 is_a: MOD:01856
@@ -33450,7 +33450,7 @@ property_value: MassAvg "196.22" xsd:float
 property_value: MassMono "196.030649" xsd:float
 property_value: Origin "C, P" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0449
+xref: uniprot.ptm:0449
 is_a: MOD:02044
 is_a: MOD:02054
 is_a: MOD:01856
@@ -33530,7 +33530,7 @@ property_value: MassMono "143.027909" xsd:float
 property_value: Origin "C, C" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "C-term" xsd:string
-xref: PTM-0446
+xref: uniprot.ptm:0446
 is_a: MOD:01850
 
 [Term]
@@ -33628,7 +33628,7 @@ property_value: MassAvg "232.32" xsd:float
 property_value: MassMono "232.034020" xsd:float
 property_value: Origin "C, M" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0495
+xref: uniprot.ptm:0495
 is_a: MOD:02044
 is_a: MOD:02052
 is_a: MOD:01992
@@ -33650,7 +33650,7 @@ property_value: MassAvg "306.33" xsd:float
 property_value: MassMono "306.088557" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0628
+xref: uniprot.ptm:0628
 is_a: MOD:00426
 is_a: MOD:00448
 is_a: MOD:00905
@@ -33676,7 +33676,7 @@ property_value: MassAvg "248.30" xsd:float
 property_value: MassMono "248.061949" xsd:float
 property_value: Origin "C, F" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0451
+xref: uniprot.ptm:0451
 is_a: MOD:02044
 is_a: MOD:02053
 is_a: MOD:01861
@@ -33697,7 +33697,7 @@ property_value: MassAvg "499.51" xsd:float
 property_value: MassMono "499.093051" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0452
+xref: uniprot.ptm:0452
 is_a: MOD:00905
 is_a: MOD:01862
 
@@ -33971,7 +33971,7 @@ property_value: MassMono "254.071171" xsd:float
 property_value: Origin "C, R" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0457
+xref: uniprot.ptm:0457
 is_a: MOD:02041
 is_a: MOD:02044
 is_a: MOD:01883
@@ -33993,7 +33993,7 @@ property_value: MassAvg "200.21" xsd:float
 property_value: MassMono "200.025563" xsd:float
 property_value: Origin "C, T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0458
+xref: uniprot.ptm:0458
 is_a: MOD:02044
 is_a: MOD:02056
 is_a: MOD:01856
@@ -34035,7 +34035,7 @@ property_value: MassAvg "199.30" xsd:float
 property_value: MassMono "199.168462" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0684
+xref: uniprot.ptm:0684
 is_a: MOD:00912
 is_a: MOD:01884
 
@@ -34157,7 +34157,7 @@ property_value: MassMono "219.020143" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:957
-xref: PTM-0674
+xref: uniprot.ptm:0674
 is_a: MOD:00001
 is_a: MOD:00905
 
@@ -34221,7 +34221,7 @@ property_value: MassAvg "196.25" xsd:float
 property_value: MassMono "196.121178" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0475
+xref: uniprot.ptm:0475
 is_a: MOD:01875
 
 [Term]
@@ -34244,7 +34244,7 @@ property_value: MassAvg "214.22" xsd:float
 property_value: MassMono "214.095357" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0467
+xref: uniprot.ptm:0467
 is_a: MOD:01875
 
 [Term]
@@ -34308,7 +34308,7 @@ property_value: MassAvg "127.14" xsd:float
 property_value: MassMono "127.063329" xsd:float
 property_value: Origin "I" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0466
+xref: uniprot.ptm:0466
 is_a: MOD:00601
 is_a: MOD:00679
 is_a: MOD:00910
@@ -34333,7 +34333,7 @@ property_value: MassMono "185.140236" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0459
+xref: uniprot.ptm:0459
 is_a: MOD:00783
 
 [Term]
@@ -34352,7 +34352,7 @@ property_value: MassAvg "239.30" xsd:float
 property_value: MassMono "239.084081" xsd:float
 property_value: Origin "C, R" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0460
+xref: uniprot.ptm:0460
 is_a: MOD:02041
 is_a: MOD:01420
 is_a: MOD:02082
@@ -34374,7 +34374,7 @@ property_value: MassAvg "184.21" xsd:float
 property_value: MassMono "184.030649" xsd:float
 property_value: Origin "C, T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0461
+xref: uniprot.ptm:0461
 is_a: MOD:02044
 is_a: MOD:01422
 is_a: MOD:02082
@@ -34396,7 +34396,7 @@ property_value: MassAvg "182.18" xsd:float
 property_value: MassMono "182.069142" xsd:float
 property_value: Origin "T, T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0462
+xref: uniprot.ptm:0462
 is_a: MOD:01422
 is_a: MOD:02082
 
@@ -34417,7 +34417,7 @@ property_value: MassAvg "180.21" xsd:float
 property_value: MassMono "180.089878" xsd:float
 property_value: Origin "I, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0463
+xref: uniprot.ptm:0463
 is_a: MOD:02049
 is_a: MOD:01421
 is_a: MOD:02082
@@ -34439,7 +34439,7 @@ property_value: MassAvg "154.13" xsd:float
 property_value: MassMono "154.037842" xsd:float
 property_value: Origin "S, S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0464
+xref: uniprot.ptm:0464
 is_a: MOD:01421
 is_a: MOD:02082
 
@@ -34461,7 +34461,7 @@ property_value: MassAvg "170.17" xsd:float
 property_value: MassMono "170.069142" xsd:float
 property_value: Origin "S, T" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0465
+xref: uniprot.ptm:0465
 is_a: MOD:02055
 is_a: MOD:01422
 is_a: MOD:00954
@@ -34626,7 +34626,7 @@ property_value: MassMono "354.142701" xsd:float
 property_value: Origin "MOD:00037" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:907
-xref: PTM-0556
+xref: uniprot.ptm:0556
 is_a: MOD:00476
 is_a: MOD:00396
 
@@ -34668,7 +34668,7 @@ property_value: MassAvg "366.37" xsd:float
 property_value: MassMono "366.142701" xsd:float
 property_value: Origin "Y" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0570
+xref: uniprot.ptm:0570
 is_a: MOD:00563
 is_a: MOD:01927
 
@@ -34692,7 +34692,7 @@ property_value: MassAvg "225.25" xsd:float
 property_value: MassMono "225.111341" xsd:float
 property_value: Origin "D, K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0486
+xref: uniprot.ptm:0486
 is_a: MOD:02043
 is_a: MOD:01929
 is_a: MOD:00954
@@ -34718,7 +34718,7 @@ property_value: MassAvg "144.17" xsd:float
 property_value: MassMono "144.089878" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0472
+xref: uniprot.ptm:0472
 is_a: MOD:00037
 
 [Term]
@@ -34743,7 +34743,7 @@ property_value: MassAvg "131.09" xsd:float
 property_value: MassMono "131.021858" xsd:float
 property_value: Origin "D" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0473
+xref: uniprot.ptm:0473
 is_a: MOD:01926
 
 [Term]
@@ -34761,7 +34761,7 @@ property_value: MassAvg "153.14" xsd:float
 property_value: MassMono "153.053826" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0477
+xref: uniprot.ptm:0477
 is_a: MOD:00909
 is_a: MOD:00677
 
@@ -34870,7 +34870,7 @@ property_value: MassAvg "144.17" xsd:float
 property_value: MassMono "144.089878" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0471
+xref: uniprot.ptm:0471
 is_a: MOD:00037
 
 [Term]
@@ -35072,7 +35072,7 @@ property_value: MassAvg "306.32" xsd:float
 property_value: MassMono "306.142701" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0572
+xref: uniprot.ptm:0572
 relationship: derives_from MOD:01047
 is_a: MOD:00396
 is_a: MOD:00912
@@ -35335,7 +35335,7 @@ property_value: MassAvg "222.25" xsd:float
 property_value: MassMono "222.111676" xsd:float
 property_value: Origin "Q" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0488
+xref: uniprot.ptm:0488
 is_a: MOD:00907
 
 [Term]
@@ -35467,7 +35467,7 @@ property_value: MassAvg "172.19" xsd:float
 property_value: MassMono "172.096026" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0476
+xref: uniprot.ptm:0476
 is_a: MOD:00682
 
 [Term]
@@ -35487,7 +35487,7 @@ property_value: MassAvg "113.12" xsd:float
 property_value: MassMono "113.047678" xsd:float
 property_value: Origin "P" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0668
+xref: uniprot.ptm:0668
 is_a: MOD:01024
 
 [Term]
@@ -35591,7 +35591,7 @@ property_value: MassAvg "342.35" xsd:float
 property_value: MassMono "342.153934" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0506
+xref: uniprot.ptm:0506
 is_a: MOD:00160
 
 [Term]
@@ -35615,7 +35615,7 @@ property_value: MassAvg "315.33" xsd:float
 property_value: MassMono "315.143035" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0548
+xref: uniprot.ptm:0548
 is_a: MOD:00002
 
 [Term]
@@ -35636,7 +35636,7 @@ property_value: MassAvg "361.35" xsd:float
 property_value: MassMono "361.148515" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0549
+xref: uniprot.ptm:0549
 is_a: MOD:00002
 
 [Term]
@@ -35700,7 +35700,7 @@ property_value: MassAvg "359.38" xsd:float
 property_value: MassMono "359.180484" xsd:float
 property_value: Origin "R" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0518
+xref: uniprot.ptm:0518
 is_a: MOD:00448
 is_a: MOD:01980
 
@@ -35771,7 +35771,7 @@ property_value: MassMono "258.085186" xsd:float
 property_value: Origin "E" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:450
-xref: PTM-0479
+xref: uniprot.ptm:0479
 is_a: MOD:00207
 
 [Term]
@@ -35795,7 +35795,7 @@ property_value: MassAvg "243.26" xsd:float
 property_value: MassMono "243.121906" xsd:float
 property_value: Origin "E" xsd:string
 property_value: Source "hypothetical" xsd:string
-xref: PTM-0478
+xref: uniprot.ptm:0478
 is_a: MOD:00906
 
 [Term]
@@ -35858,7 +35858,7 @@ property_value: MassAvg "146.23" xsd:float
 property_value: MassMono "146.063411" xsd:float
 property_value: Origin "M" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0636
+xref: uniprot.ptm:0636
 is_a: MOD:00716
 
 [Term]
@@ -35876,7 +35876,7 @@ synonym: "S-poly[(R)-3-hydroxybutyrate]cysteine" EXACT RESID-alternate []
 synonym: "MOD_RES S-poly(beta-hydroxybutyryl)lysine" EXACT UniProt-feature []
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0641
+xref: uniprot.ptm:0641
 is_a: MOD:00672
 is_a: MOD:00905
 
@@ -35896,7 +35896,7 @@ synonym: "O3-poly[(R)-3-hydroxybutyrate]serine" EXACT RESID-alternate []
 synonym: "MOD_RES O3-poly(beta-hydroxybutyryl)lysine" EXACT UniProt-feature []
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0640
+xref: uniprot.ptm:0640
 is_a: MOD:00671
 is_a: MOD:00916
 
@@ -36021,7 +36021,7 @@ property_value: MassMono "101.084064" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0485
+xref: uniprot.ptm:0485
 is_a: MOD:00714
 is_a: MOD:01698
 
@@ -36043,7 +36043,7 @@ property_value: MassMono "86.060589" xsd:float
 property_value: Origin "G" xsd:string
 property_value: Source "natural" xsd:string
 property_value: TermSpec "N-term" xsd:string
-xref: PTM-0484
+xref: uniprot.ptm:0484
 is_a: MOD:00714
 is_a: MOD:01686
 
@@ -36865,7 +36865,7 @@ property_value: MassMono "151.074562" xsd:float
 property_value: Origin "H" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:34
-xref: PTM-0176
+xref: uniprot.ptm:0176
 is_a: MOD:00599
 is_a: MOD:00661
 
@@ -37367,7 +37367,7 @@ property_value: MassMono "377.062416" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:417
-xref: PTM-0501
+xref: uniprot.ptm:0501
 is_a: MOD:00916
 is_a: MOD:01166
 
@@ -37388,7 +37388,7 @@ property_value: MassMono "391.078066" xsd:float
 property_value: Origin "T" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:417
-xref: PTM-0502
+xref: uniprot.ptm:0502
 is_a: MOD:00917
 is_a: MOD:01166
 
@@ -37408,7 +37408,7 @@ property_value: MassMono "416.084549" xsd:float
 property_value: Origin "S" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:405
-xref: PTM-0651
+xref: uniprot.ptm:0651
 is_a: MOD:00916
 is_a: MOD:01165
 
@@ -37426,7 +37426,7 @@ property_value: MassAvg "233.24" xsd:float
 property_value: MassMono "233.035793" xsd:float
 property_value: Origin "C" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0676
+xref: uniprot.ptm:0676
 is_a: MOD:00905
 is_a: MOD:00001
 
@@ -37444,7 +37444,7 @@ property_value: MassMono "214.131742" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
 xref: Unimod:1849
-xref: PTM-0638
+xref: uniprot.ptm:0638
 is_a: MOD:01875
 
 [Term]
@@ -37460,7 +37460,7 @@ property_value: MassAvg "214.27" xsd:float
 property_value: MassMono "214.131742" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0499
+xref: uniprot.ptm:0499
 is_a: MOD:01875
 
 [Term]
@@ -37476,7 +37476,7 @@ property_value: MassAvg "242.28" xsd:float
 property_value: MassMono "242.126657" xsd:float
 property_value: Origin "K" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0487
+xref: uniprot.ptm:0487
 is_a: MOD:01875
 
 [Term]
@@ -37494,7 +37494,7 @@ property_value: MassAvg "128.13" xsd:float
 property_value: MassMono "128.058578" xsd:float
 property_value: Origin "N" xsd:string
 property_value: Source "natural" xsd:string
-xref: PTM-0691
+xref: uniprot.ptm:0691
 is_a: MOD:00599
 is_a: MOD:00602
 is_a: MOD:00673
