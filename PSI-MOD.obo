@@ -4958,7 +4958,7 @@ synonym: "Dehydroamino butyric acid" EXACT DeltaMass-label []
 synonym: "Dhb" EXACT RESID-alternate []
 synonym: "Dhb(Thr)" EXACT PSI-MOD-label []
 synonym: "methyl-dehydroalanine" EXACT RESID-alternate []
-synonym: "MOD_RES (Z)-2,3-didehydrobutyrine" EXACT UniProt-feature []
+synonym: "MOD_RES 2,3-didehydrobutyrine" EXACT UniProt-feature []
 synonym: "phospholosst" EXACT OMSSA-label []
 xref: DiffAvg: "-18.02"
 xref: DiffFormula: "C 0 H -2 N 0 O -1"
