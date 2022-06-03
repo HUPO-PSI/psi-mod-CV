@@ -31,6 +31,7 @@ remark: Annotation note 07 - The synonym cross-reference \"MOD:old name\" has be
 remark: Annotation note 08 - The DeltaMass listings for free amino acids have been removed. Most Unimod entries that have not been \"approved\" have by general agreement not been incorporated unless there has been a request for a specific term by a PRIDE submitter.
 remark: Annotation note 09 - The Open Mass Spectrometry Search Algorithm, OMSSA, enumerated list of modifications are being incorporated. The string values are synonyms with the synonymtypedef \"OMSSA-label\", and their integer values (which are supposed to be stable) are definition cross-references.
 remark: Annotation note 10 - GNOme is the Glycan Naming and Subsumption Ontology (https://gnome.glyomics.org/), an ontology for the support of glycomics.  PSI-MOD does not have all possible glycans in its entries, just the ones that are noted to be on proteins and have been requested for addition.  GNOme uses GlyTouCan (http://glytoucan.org/) to provide stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations).
+idspace: uniprot.ptm https://bioregistry.io/uniprot.ptm: "UniProt Post-Translational Modification"
 
 [Term]
 id: MOD:00000
