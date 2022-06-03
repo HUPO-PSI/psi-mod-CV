@@ -749,7 +749,7 @@ xref: MassMono: "130.037842"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0369"
+xref: uniprot.ptm:PTM-0369
 is_a: MOD:01688 ! 3-hydroxy-L-asparagine
 
 [Term]
@@ -778,7 +778,7 @@ xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
-xref: UniProt: "PTM-0371"
+xref: uniprot.ptm:PTM-0371
 is_a: MOD:01926 ! 3-hydroxy-L-aspartic acid
 
 [Term]
@@ -797,7 +797,7 @@ xref: MassMono: "144.089878"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0044"
+xref: uniprot.ptm:PTM-0044
 is_a: MOD:01047 ! monohydroxylated lysine
 
 [Term]
@@ -822,7 +822,7 @@ xref: MassMono: "113.047678"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0030"
+xref: uniprot.ptm:PTM-0030
 is_a: MOD:01024 ! monohydroxylated proline
 
 [Term]
@@ -848,7 +848,7 @@ xref: MassMono: "113.047678"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0043"
+xref: uniprot.ptm:PTM-0043
 is_a: MOD:01024 ! monohydroxylated proline
 
 [Term]
@@ -883,7 +883,7 @@ xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:28"
-xref: UniProt: "PTM-0261"
+xref: uniprot.ptm:PTM-0261
 is_a: MOD:00907 ! modified L-glutamine residue
 is_a: MOD:01048 ! 2-pyrrolidone-5-carboxylic acid
 is_a: MOD:01160 ! deaminated residue
@@ -919,7 +919,7 @@ xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:299"
-xref: UniProt: "PTM-0039"
+xref: uniprot.ptm:PTM-0039
 is_a: MOD:00906 ! modified L-glutamic acid residue
 is_a: MOD:01152 ! carboxylated residue
 
@@ -950,7 +950,7 @@ xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:21"
-xref: UniProt: "PTM-0038"
+xref: uniprot.ptm:PTM-0038
 is_a: MOD:00904 ! modified L-aspartic acid residue
 is_a: MOD:01455 ! O-phosphorylated residue
 
@@ -980,7 +980,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:21"
-xref: UniProt: "PTM-0251"
+xref: uniprot.ptm:PTM-0251
 is_a: MOD:00696 ! phosphorylated residue
 is_a: MOD:00777 ! residues isobaric at 182.96-182.98 Da
 is_a: MOD:00905 ! modified L-cysteine residue
@@ -1015,7 +1015,7 @@ xref: MassMono: "217.025242"
 xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0325"
+xref: uniprot.ptm:PTM-0325
 is_a: MOD:00890 ! phosphorylated L-histidine
 
 [Term]
@@ -1048,7 +1048,7 @@ xref: MassMono: "217.025242"
 xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0260"
+xref: uniprot.ptm:PTM-0260
 is_a: MOD:00890 ! phosphorylated L-histidine
 
 [Term]
@@ -1081,7 +1081,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:21"
-xref: UniProt: "PTM-0253"
+xref: uniprot.ptm:PTM-0253
 is_a: MOD:00771 ! residues isobaric at 166.98-167.00 Da
 is_a: MOD:00916 ! modified L-serine residue
 is_a: MOD:01455 ! O-phosphorylated residue
@@ -1114,7 +1114,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:21"
-xref: UniProt: "PTM-0254"
+xref: uniprot.ptm:PTM-0254
 is_a: MOD:00773 ! residues isobaric at 181.00-181.02 Da
 is_a: MOD:00917 ! modified L-threonine residue
 is_a: MOD:01455 ! O-phosphorylated residue
@@ -1147,7 +1147,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:21"
-xref: UniProt: "PTM-0255"
+xref: uniprot.ptm:PTM-0255
 is_a: MOD:00774 ! residues isobaric at 243.02-243.03 Da
 is_a: MOD:00919 ! modified L-tyrosine residue
 is_a: MOD:01455 ! O-phosphorylated residue
@@ -1182,7 +1182,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:375"
-xref: UniProt: "PTM-0118"
+xref: uniprot.ptm:PTM-0118
 is_a: MOD:00909 ! modified L-histidine residue
 
 [Term]
@@ -1207,7 +1207,7 @@ xref: MassMono: "114.055504"
 xref: Origin: "A"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0199"
+xref: uniprot.ptm:PTM-0199
 is_a: MOD:00901 ! modified L-alanine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1233,7 +1233,7 @@ xref: MassMono: "158.045333"
 xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0200"
+xref: uniprot.ptm:PTM-0200
 is_a: MOD:00904 ! modified L-aspartic acid residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1262,7 +1262,7 @@ xref: MassMono: "146.027574"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0201"
+xref: uniprot.ptm:PTM-0201
 is_a: MOD:00646 ! acetylated L-cysteine
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1288,7 +1288,7 @@ xref: MassMono: "172.060983"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0202"
+xref: uniprot.ptm:PTM-0202
 is_a: MOD:00906 ! modified L-glutamic acid residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1340,7 +1340,7 @@ xref: MassMono: "100.039853"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0203"
+xref: uniprot.ptm:PTM-0203
 is_a: MOD:00908 ! modified glycine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1365,7 +1365,7 @@ xref: MassMono: "156.102454"
 xref: Origin: "I"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0204"
+xref: uniprot.ptm:PTM-0204
 is_a: MOD:00910 ! modified L-isoleucine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1418,7 +1418,7 @@ xref: MassMono: "174.058875"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0205"
+xref: uniprot.ptm:PTM-0205
 is_a: MOD:00913 ! modified L-methionine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1444,7 +1444,7 @@ xref: MassMono: "140.071154"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0206"
+xref: uniprot.ptm:PTM-0206
 is_a: MOD:00915 ! modified L-proline residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1471,7 +1471,7 @@ xref: MassMono: "130.050418"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0207"
+xref: uniprot.ptm:PTM-0207
 is_a: MOD:00647 ! acetylated L-serine
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1500,7 +1500,7 @@ xref: MassMono: "144.066068"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0208"
+xref: uniprot.ptm:PTM-0208
 is_a: MOD:01186 ! acetylated L-threonine
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1526,7 +1526,7 @@ xref: MassMono: "206.081718"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0209"
+xref: uniprot.ptm:PTM-0209
 is_a: MOD:00919 ! modified L-tyrosine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1552,7 +1552,7 @@ xref: MassMono: "142.086804"
 xref: Origin: "V"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0210"
+xref: uniprot.ptm:PTM-0210
 is_a: MOD:00920 ! modified L-valine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1583,7 +1583,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1"
-xref: UniProt: "PTM-0190"
+xref: uniprot.ptm:PTM-0190
 is_a: MOD:00723 ! N-acetylated L-lysine
 is_a: MOD:01875 ! N6-acylated L-lysine
 
@@ -1638,7 +1638,7 @@ xref: MassMono: "86.024203"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0211"
+xref: uniprot.ptm:PTM-0211
 is_a: MOD:00409 ! N-formylated residue
 is_a: MOD:00908 ! modified glycine residue
 is_a: MOD:01696 ! alpha-amino acylated residue
@@ -1663,7 +1663,7 @@ xref: MassMono: "234.061377"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0331"
+xref: uniprot.ptm:PTM-0331
 is_a: MOD:00447 ! N-glucuronylated residue
 is_a: MOD:00908 ! modified glycine residue
 
@@ -1694,7 +1694,7 @@ xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:45"
-xref: UniProt: "PTM-0221"
+xref: uniprot.ptm:PTM-0221
 is_a: MOD:00650 ! N-myristoylated residue
 is_a: MOD:00908 ! modified glycine residue
 is_a: MOD:01696 ! alpha-amino acylated residue
@@ -1725,7 +1725,7 @@ xref: MassMono: "342.246675"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0222"
+xref: uniprot.ptm:PTM-0222
 is_a: MOD:01684 ! palmitoylated-L-cysteine
 is_a: MOD:01685 ! alpha-amino palmitoylated residue
 
@@ -1753,7 +1753,7 @@ xref: MassMono: "85.052764"
 xref: Origin: "A"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0214"
+xref: uniprot.ptm:PTM-0214
 is_a: MOD:01461 ! N-methylated alanine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
 
@@ -1784,7 +1784,7 @@ xref: MassMono: "115.099165"
 xref: Origin: "A"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0177"
+xref: uniprot.ptm:PTM-0177
 is_a: MOD:01461 ! N-methylated alanine
 is_a: MOD:01698 ! alpha-amino trimethylated protonated-residue
 
@@ -1814,7 +1814,7 @@ xref: MassMono: "71.037114"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0483"
+xref: uniprot.ptm:PTM-0483
 is_a: MOD:00570 ! residues isobaric at 71.037114 Da
 is_a: MOD:00714 ! methylated glycine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
@@ -1844,7 +1844,7 @@ xref: MassMono: "145.056135"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0217"
+xref: uniprot.ptm:PTM-0217
 is_a: MOD:01463 ! N-methylated methionine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
 
@@ -1871,7 +1871,7 @@ xref: MassMono: "161.084064"
 xref: Origin: "F"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0218"
+xref: uniprot.ptm:PTM-0218
 is_a: MOD:01063 ! monomethylated phenylalanine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
 
@@ -1903,7 +1903,7 @@ xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:529"
-xref: UniProt: "PTM-0179"
+xref: uniprot.ptm:PTM-0179
 is_a: MOD:00710 ! protonated-dimethylated residue
 is_a: MOD:01462 ! N-methylated proline
 
@@ -1934,7 +1934,7 @@ xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:36"
-xref: UniProt: "PTM-0287"
+xref: uniprot.ptm:PTM-0287
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00783 ! dimethylated L-arginine
 
@@ -1964,7 +1964,7 @@ xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:36"
-xref: UniProt: "PTM-0066"
+xref: uniprot.ptm:PTM-0066
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00783 ! dimethylated L-arginine
 
@@ -1991,7 +1991,7 @@ xref: MassMono: "170.116761"
 xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0237"
+xref: uniprot.ptm:PTM-0237
 is_a: MOD:00414 ! monomethylated L-arginine
 is_a: MOD:00602 ! N-methylated residue
 
@@ -2022,7 +2022,7 @@ xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:34"
-xref: UniProt: "PTM-0183"
+xref: uniprot.ptm:PTM-0183
 is_a: MOD:00599 ! monomethylated residue
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00673 ! methylated asparagine
@@ -2053,7 +2053,7 @@ xref: MassMono: "142.074228"
 xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0185"
+xref: uniprot.ptm:PTM-0185
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00722 ! monomethylated L-glutamine
 
@@ -2090,7 +2090,7 @@ xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:34"
-xref: UniProt: "PTM-0128"
+xref: uniprot.ptm:PTM-0128
 is_a: MOD:01453 ! L-glutamic acid 5-methyl ester
 
 [Term]
@@ -2118,7 +2118,7 @@ xref: MassMono: "151.074562"
 xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0259"
+xref: uniprot.ptm:PTM-0259
 is_a: MOD:02038 ! monomethylated L-histidine
 is_a: MOD:00724 ! N-methylated L-histidine
 
@@ -2152,7 +2152,7 @@ xref: MassMono: "171.149190"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0187"
+xref: uniprot.ptm:PTM-0187
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00663 ! methylated lysine
 is_a: MOD:00711 ! trimethylated protonated-residue
@@ -2183,7 +2183,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:36"
-xref: UniProt: "PTM-0188"
+xref: uniprot.ptm:PTM-0188
 is_a: MOD:00429 ! dimethylated residue
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00663 ! methylated lysine
@@ -2213,7 +2213,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:34"
-xref: UniProt: "PTM-0194"
+xref: uniprot.ptm:PTM-0194
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:01683 ! monomethylated L-lysine
 
@@ -2245,7 +2245,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:47"
-xref: UniProt: "PTM-0197"
+xref: uniprot.ptm:PTM-0197
 is_a: MOD:00651 ! N-palmitoylated residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 
@@ -2277,7 +2277,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:45"
-xref: UniProt: "PTM-0196"
+xref: uniprot.ptm:PTM-0196
 is_a: MOD:00650 ! N-myristoylated residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 
@@ -2308,7 +2308,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:47"
-xref: UniProt: "PTM-0242"
+xref: uniprot.ptm:PTM-0242
 is_a: MOD:00652 ! O-palmitoylated residue
 is_a: MOD:02004 ! O3-acylated L-threonine
 
@@ -2340,7 +2340,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:47"
-xref: UniProt: "PTM-0241"
+xref: uniprot.ptm:PTM-0241
 is_a: MOD:00652 ! O-palmitoylated residue
 is_a: MOD:02003 ! O3-acylated L-serine
 
@@ -2364,7 +2364,7 @@ xref: MassMono: "87.055838"
 xref: Origin: "A"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0057"
+xref: uniprot.ptm:PTM-0057
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00901 ! modified L-alanine residue
 
@@ -2390,7 +2390,7 @@ xref: MassMono: "172.119835"
 xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0060"
+xref: uniprot.ptm:PTM-0060
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00902 ! modified L-arginine residue
 
@@ -2414,7 +2414,7 @@ xref: MassMono: "130.061652"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0062"
+xref: uniprot.ptm:PTM-0062
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00903 ! modified L-asparagine residue
 
@@ -2441,7 +2441,7 @@ xref: MassMono: "131.045667"
 xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0063"
+xref: uniprot.ptm:PTM-0063
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00904 ! modified L-aspartic acid residue
 
@@ -2466,7 +2466,7 @@ xref: MassMono: "119.027909"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0102"
+xref: uniprot.ptm:PTM-0102
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -2490,7 +2490,7 @@ xref: MassMono: "144.077302"
 xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0130"
+xref: uniprot.ptm:PTM-0130
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00907 ! modified L-glutamine residue
 
@@ -2515,7 +2515,7 @@ xref: MassMono: "145.061317"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0129"
+xref: uniprot.ptm:PTM-0129
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
@@ -2541,7 +2541,7 @@ xref: MassMono: "73.040188"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0132"
+xref: uniprot.ptm:PTM-0132
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00908 ! modified glycine residue
 
@@ -2565,7 +2565,7 @@ xref: MassMono: "153.077636"
 xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0148"
+xref: uniprot.ptm:PTM-0148
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00909 ! modified L-histidine residue
 
@@ -2589,7 +2589,7 @@ xref: MassMono: "129.102788"
 xref: Origin: "I"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0161"
+xref: uniprot.ptm:PTM-0161
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00910 ! modified L-isoleucine residue
 
@@ -2616,7 +2616,7 @@ xref: MassMono: "129.102788"
 xref: Origin: "L"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0166"
+xref: uniprot.ptm:PTM-0166
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00911 ! modified L-leucine residue
 
@@ -2640,7 +2640,7 @@ xref: MassMono: "144.113687"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0168"
+xref: uniprot.ptm:PTM-0168
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00912 ! modified L-lysine residue
 
@@ -2665,7 +2665,7 @@ xref: MassMono: "147.059209"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0164"
+xref: uniprot.ptm:PTM-0164
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00913 ! modified L-methionine residue
 
@@ -2689,7 +2689,7 @@ xref: MassMono: "163.087138"
 xref: Origin: "F"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0248"
+xref: uniprot.ptm:PTM-0248
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
 
@@ -2713,7 +2713,7 @@ xref: MassMono: "113.071488"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0257"
+xref: uniprot.ptm:PTM-0257
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00915 ! modified L-proline residue
 
@@ -2737,7 +2737,7 @@ xref: MassMono: "103.050752"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0275"
+xref: uniprot.ptm:PTM-0275
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -2761,7 +2761,7 @@ xref: MassMono: "117.066403"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0293"
+xref: uniprot.ptm:PTM-0293
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00917 ! modified L-threonine residue
 
@@ -2785,7 +2785,7 @@ xref: MassMono: "202.098037"
 xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0296"
+xref: uniprot.ptm:PTM-0296
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
@@ -2809,7 +2809,7 @@ xref: MassMono: "179.082053"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0302"
+xref: uniprot.ptm:PTM-0302
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00919 ! modified L-tyrosine residue
 
@@ -2832,7 +2832,7 @@ xref: MassMono: "115.087138"
 xref: Origin: "V"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0303"
+xref: uniprot.ptm:PTM-0303
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00920 ! modified L-valine residue
 
@@ -2867,7 +2867,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:39"
-xref: UniProt: "PTM-0104"
+xref: uniprot.ptm:PTM-0104
 is_a: MOD:00848 ! reagent derivatized residue
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01153 ! methylthiolated residue
@@ -2898,7 +2898,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:44"
-xref: UniProt: "PTM-0277"
+xref: uniprot.ptm:PTM-0277
 is_a: MOD:00437 ! farnesylated residue
 is_a: MOD:01110 ! isoprenylated cysteine
 
@@ -2923,7 +2923,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:376"
-xref: UniProt: "PTM-0269"
+xref: uniprot.ptm:PTM-0269
 is_a: MOD:01110 ! isoprenylated cysteine
 
 [Term]
@@ -2951,7 +2951,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:48"
-xref: UniProt: "PTM-0278"
+xref: uniprot.ptm:PTM-0278
 is_a: MOD:00441 ! geranylgeranylated residue
 is_a: MOD:01110 ! isoprenylated cysteine
 
@@ -2982,7 +2982,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: Unimod: "Unimod:34"
-xref: UniProt: "PTM-0105"
+xref: uniprot.ptm:PTM-0105
 is_a: MOD:01682 ! monomethylated L-cysteine
 is_a: MOD:01689 ! alpha-carboxyl methylated residue
 
@@ -3015,7 +3015,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:47"
-xref: UniProt: "PTM-0281"
+xref: uniprot.ptm:PTM-0281
 is_a: MOD:00653 ! S-palmitoylated residue
 is_a: MOD:01684 ! palmitoylated-L-cysteine
 
@@ -3034,7 +3034,7 @@ synonym: "S-(1-2'-oleoyl-3'-palmitoyl-glycerol)cysteine" EXACT RESID-alternate [
 synonym: "S-(2',3'-diacylglycerol)-L-cysteine" EXACT PSI-MOD-alternate []
 synonym: "S-diacylglycerol-L-cysteine" EXACT RESID-name []
 synonym: "SAcyl2GlyceroCys" EXACT PSI-MOD-label []
-xref: UniProt: "PTM-0274"
+xref: uniprot.ptm:PTM-0274
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
@@ -3064,7 +3064,7 @@ xref: MassMono: "214.041213"
 xref: Origin: "C, Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0156"
+xref: uniprot.ptm:PTM-0156
 is_a: MOD:00395 ! thioester crosslinked residues
 is_a: MOD:02046 ! crosslinked L-glutamine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
@@ -3090,7 +3090,7 @@ xref: MassMono: "238.052447"
 xref: Origin: "C, H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0005"
+xref: uniprot.ptm:PTM-0005
 is_a: MOD:00687 ! thioether crosslinked residues
 is_a: MOD:02048 ! crosslinked L-histidine residue
 
@@ -3149,7 +3149,7 @@ xref: MassMono: "172.030649"
 xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0164"
+xref: uniprot.ptm:PTM-0164
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01841 ! lanthionine
@@ -3179,7 +3179,7 @@ xref: MassMono: "186.046299"
 xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0067"
+xref: uniprot.ptm:PTM-0067
 is_a: MOD:01981 ! 3-methyllanthionine
 
 [Term]
@@ -3205,7 +3205,7 @@ xref: MassMono: "264.056863"
 xref: Origin: "C, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0019"
+xref: uniprot.ptm:PTM-0019
 is_a: MOD:00687 ! thioether crosslinked residues
 is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
@@ -3234,7 +3234,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:299"
-xref: UniProt: "PTM-0191"
+xref: uniprot.ptm:PTM-0191
 is_a: MOD:00912 ! modified L-lysine residue
 is_a: MOD:01152 ! carboxylated residue
 
@@ -3261,7 +3261,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:378"
-xref: UniProt: "PTM-0189"
+xref: uniprot.ptm:PTM-0189
 is_a: MOD:00912 ! modified L-lysine residue
 
 [Term]
@@ -3291,7 +3291,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:379"
-xref: UniProt: "PTM-0150"
+xref: uniprot.ptm:PTM-0150
 is_a: MOD:00912 ! modified L-lysine residue
 is_a: MOD:01884 ! 4-aminobutylated residue
 relationship: derives_from MOD:01880 ! L-deoxyhypusine
@@ -3324,7 +3324,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:3"
-xref: UniProt: "PTM-0382"
+xref: uniprot.ptm:PTM-0382
 is_a: MOD:01875 ! N6-acylated L-lysine
 is_a: MOD:01885 ! biotinylated residue
 
@@ -3356,7 +3356,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:42"
-xref: UniProt: "PTM-0383"
+xref: uniprot.ptm:PTM-0383
 is_a: MOD:01875 ! N6-acylated L-lysine
 
 [Term]
@@ -3382,7 +3382,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:46"
-xref: UniProt: "PTM-0387"
+xref: uniprot.ptm:PTM-0387
 is_a: MOD:00912 ! modified L-lysine residue
 
 [Term]
@@ -3408,7 +3408,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:380"
-xref: UniProt: "PTM-0388"
+xref: uniprot.ptm:PTM-0388
 is_a: MOD:00912 ! modified L-lysine residue
 
 [Term]
@@ -3442,7 +3442,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:352"
-xref: UniProt: "PTM-0059"
+xref: uniprot.ptm:PTM-0059
 is_a: MOD:00912 ! modified L-lysine residue
 
 [Term]
@@ -3495,7 +3495,7 @@ xref: MassMono: "197.116427"
 xref: Origin: "K, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0172"
+xref: uniprot.ptm:PTM-0172
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
@@ -3524,7 +3524,7 @@ xref: MassMono: "239.126991"
 xref: Origin: "K, Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0158"
+xref: uniprot.ptm:PTM-0158
 is_a: MOD:02046 ! crosslinked L-glutamine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 is_a: MOD:01630 ! N6-(L-isoglutamyl)-L-lysine
@@ -3550,7 +3550,7 @@ xref: MassMono: "184.108602"
 xref: Origin: "G, K"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0134"
+xref: uniprot.ptm:PTM-0134
 is_a: MOD:00688 ! isopeptide crosslinked residues
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:02051 ! crosslinked L-lysine residue
@@ -3580,7 +3580,7 @@ xref: MassMono: "155.045667"
 xref: Origin: "G, N"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0489"
+xref: uniprot.ptm:PTM-0489
 is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 is_a: MOD:01928 ! N-(L-isoaspartyl)-glycine
@@ -3604,7 +3604,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:382"
-xref: UniProt: "PTM-0265"
+xref: uniprot.ptm:PTM-0265
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01154 ! pyruvic acid
 
@@ -3627,7 +3627,7 @@ xref: MassMono: "149.060255"
 xref: Origin: "F"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:7"
-xref: UniProt: "PTM-0035"
+xref: uniprot.ptm:PTM-0035
 is_a: MOD:00914 ! modified L-phenylalanine residue
 
 [Term]
@@ -3650,7 +3650,7 @@ xref: MassMono: "85.028954"
 xref: Origin: "T"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:385"
-xref: UniProt: "PTM-0017"
+xref: uniprot.ptm:PTM-0017
 is_a: MOD:00917 ! modified L-threonine residue
 is_a: MOD:01160 ! deaminated residue
 
@@ -3674,7 +3674,7 @@ xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:64"
-xref: UniProt: "PTM-0181"
+xref: uniprot.ptm:PTM-0181
 is_a: MOD:02081 ! alpha-amino succinylated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
@@ -3993,7 +3993,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:50"
-xref: UniProt: "PTM-0272"
+xref: uniprot.ptm:PTM-0272
 is_a: MOD:00895 ! FAD modified residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -4023,7 +4023,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:50"
-xref: UniProt: "PTM-0258"
+xref: uniprot.ptm:PTM-0258
 is_a: MOD:00895 ! FAD modified residue
 is_a: MOD:00909 ! modified L-histidine residue
 
@@ -4051,7 +4051,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:50"
-xref: UniProt: "PTM-0231"
+xref: uniprot.ptm:PTM-0231
 is_a: MOD:00895 ! FAD modified residue
 is_a: MOD:00919 ! modified L-tyrosine residue
 
@@ -4081,7 +4081,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
-xref: UniProt: "PTM-0023"
+xref: uniprot.ptm:PTM-0023
 is_a: MOD:00425 ! monohydroxylated residue
 is_a: MOD:00707 ! hydroxylated tyrosine
 
@@ -4110,7 +4110,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:392"
-xref: UniProt: "PTM-0009"
+xref: uniprot.ptm:PTM-0009
 is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00919 ! modified L-tyrosine residue
 
@@ -4140,7 +4140,7 @@ xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:392"
-xref: UniProt: "PTM-0299"
+xref: uniprot.ptm:PTM-0299
 is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
@@ -4169,7 +4169,7 @@ xref: MassMono: "400.117155"
 xref: Origin: "W, W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0298"
+xref: uniprot.ptm:PTM-0298
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:02057 ! crosslinked L-tryptophan residue
 
@@ -4196,7 +4196,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:49"
-xref: UniProt: "PTM-0391"
+xref: uniprot.ptm:PTM-0391
 is_a: MOD:00861 ! phosphorus containing modified residue
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -4234,7 +4234,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:41"
-xref: UniProt: "PTM-0626"
+xref: uniprot.ptm:PTM-0626
 is_a: MOD:00426 ! S-glycosylated residue
 is_a: MOD:00433 ! monoglucosylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
@@ -4286,7 +4286,7 @@ xref: MassMono: "290.111401"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0564"
+xref: uniprot.ptm:PTM-0564
 is_a: MOD:00563 ! mono-N-acetylaminogalactosylated residue
 is_a: MOD:01675 ! O-(N-acetylamino)hexosyl-L-serine
 
@@ -4312,7 +4312,7 @@ xref: MassMono: "304.127051"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0567"
+xref: uniprot.ptm:PTM-0567
 is_a: MOD:00563 ! mono-N-acetylaminogalactosylated residue
 is_a: MOD:01676 ! O-(N-acetylamino)hexosyl-L-threonine
 
@@ -4337,7 +4337,7 @@ xref: MassMono: "348.132136"
 xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0535"
+xref: uniprot.ptm:PTM-0535
 is_a: MOD:00006 ! N-glycosylated residue
 is_a: MOD:00595 ! monomannosylated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
@@ -4363,7 +4363,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:41"
-xref: UniProt: "PTM-0575"
+xref: uniprot.ptm:PTM-0575
 is_a: MOD:00433 ! monoglucosylated residue
 is_a: MOD:01927 ! O-glycosyl-L-tyrosine
 
@@ -4383,7 +4383,7 @@ xref: MassMono: "254.054197"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0137"
+xref: uniprot.ptm:PTM-0137
 is_a: MOD:00818 ! glycosylphosphatidylinositolated residue
 is_a: MOD:00903 ! modified L-asparagine residue
 
@@ -4403,7 +4403,7 @@ xref: MassMono: "255.038212"
 xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0138"
+xref: uniprot.ptm:PTM-0138
 is_a: MOD:00818 ! glycosylphosphatidylinositolated residue
 is_a: MOD:00904 ! modified L-aspartic acid residue
 
@@ -4423,7 +4423,7 @@ xref: MassMono: "243.020454"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0140"
+xref: uniprot.ptm:PTM-0140
 is_a: MOD:00818 ! glycosylphosphatidylinositolated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -4443,7 +4443,7 @@ xref: MassMono: "197.032733"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0141"
+xref: uniprot.ptm:PTM-0141
 is_a: MOD:00818 ! glycosylphosphatidylinositolated residue
 is_a: MOD:00908 ! modified glycine residue
 
@@ -4463,7 +4463,7 @@ xref: MassMono: "227.043298"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0142"
+xref: uniprot.ptm:PTM-0142
 is_a: MOD:00818 ! glycosylphosphatidylinositolated residue
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -4483,7 +4483,7 @@ xref: MassMono: "211.048383"
 xref: Origin: "A"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0136"
+xref: uniprot.ptm:PTM-0136
 is_a: MOD:00818 ! glycosylphosphatidylinositolated residue
 is_a: MOD:00901 ! modified L-alanine residue
 
@@ -4503,7 +4503,7 @@ xref: MassMono: "241.058948"
 xref: Origin: "T"
 xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0143"
+xref: uniprot.ptm:PTM-0143
 is_a: MOD:00818 ! glycosylphosphatidylinositolated residue
 is_a: MOD:00917 ! modified L-threonine residue
 
@@ -4523,7 +4523,7 @@ xref: MassMono: "197.032733"
 xref: Origin: "G"
 xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0146"
+xref: uniprot.ptm:PTM-0146
 is_a: MOD:00466 ! glycosylsphingolipidinositolated residue
 is_a: MOD:00908 ! modified glycine residue
 
@@ -4543,7 +4543,7 @@ xref: MassMono: "227.043298"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0147"
+xref: uniprot.ptm:PTM-0147
 is_a: MOD:00466 ! glycosylsphingolipidinositolated residue
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -4571,7 +4571,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:395"
-xref: UniProt: "PTM-0389"
+xref: uniprot.ptm:PTM-0389
 is_a: MOD:00860 ! sulfur containing modified residue
 is_a: MOD:00861 ! phosphorus containing modified residue
 is_a: MOD:00916 ! modified L-serine residue
@@ -4601,7 +4601,7 @@ xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
-xref: UniProt: "PTM-0053"
+xref: uniprot.ptm:PTM-0053
 is_a: MOD:00752 ! monoadenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00902 ! modified L-arginine residue
 
@@ -4630,7 +4630,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
-xref: UniProt: "PTM-0055"
+xref: uniprot.ptm:PTM-0055
 is_a: MOD:00752 ! monoadenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -4659,7 +4659,7 @@ xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:396"
-xref: UniProt: "PTM-0403"
+xref: uniprot.ptm:PTM-0403
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Term]
@@ -4721,7 +4721,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:40"
-xref: UniProt: "PTM-0286"
+xref: uniprot.ptm:PTM-0286
 is_a: MOD:00695 ! sulfated residue
 is_a: MOD:00774 ! residues isobaric at 243.02-243.03 Da
 is_a: MOD:00919 ! modified L-tyrosine residue
@@ -4745,7 +4745,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:340"
-xref: UniProt: "PTM-0089"
+xref: uniprot.ptm:PTM-0089
 is_a: MOD:01049 ! halogenated histidine
 is_a: MOD:01912 ! monobrominated residue
 
@@ -4846,7 +4846,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:397"
-xref: UniProt: "PTM-0295"
+xref: uniprot.ptm:PTM-0295
 is_a: MOD:00998 ! iodinated tyrosine
 
 [Term]
@@ -4876,7 +4876,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:398"
-xref: UniProt: "PTM-0294"
+xref: uniprot.ptm:PTM-0294
 is_a: MOD:00998 ! iodinated tyrosine
 
 [Term]
@@ -4899,7 +4899,7 @@ xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:398"
-xref: UniProt: "PTM-0051"
+xref: uniprot.ptm:PTM-0051
 is_a: MOD:01068 ! halogenated tryptophan
 is_a: MOD:01912 ! monobrominated residue
 
@@ -4931,7 +4931,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:23"
-xref: UniProt: "PTM-0006"
+xref: uniprot.ptm:PTM-0006
 is_a: MOD:00416 ! phosphorylation of an hydroxyl amino acid with prompt loss of phosphate
 is_a: MOD:00916 ! modified L-serine residue
 is_a: MOD:01168 ! dehydroalanine
@@ -4970,7 +4970,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:23"
-xref: UniProt: "PTM-0007"
+xref: uniprot.ptm:PTM-0007
 is_a: MOD:00416 ! phosphorylation of an hydroxyl amino acid with prompt loss of phosphate
 is_a: MOD:00917 ! modified L-threonine residue
 is_a: MOD:01703 ! dehydrobutyrine
@@ -5002,7 +5002,7 @@ xref: MassMono: "161.047678"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0002"
+xref: uniprot.ptm:PTM-0002
 is_a: MOD:00706 ! dehydrogenated tyrosine
 
 [Term]
@@ -5027,7 +5027,7 @@ xref: MassMono: "126.042927"
 xref: Origin: "G, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0049"
+xref: uniprot.ptm:PTM-0049
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
@@ -5057,7 +5057,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:402"
-xref: UniProt: "PTM-0034"
+xref: uniprot.ptm:PTM-0034
 is_a: MOD:01169 ! L-3-oxoalanine
 
 [Term]
@@ -5081,7 +5081,7 @@ xref: MassMono: "73.028954"
 xref: Origin: "S"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:403"
-xref: UniProt: "PTM-0163"
+xref: uniprot.ptm:PTM-0163
 is_a: MOD:00916 ! modified L-serine residue
 
 [Term]
@@ -5106,7 +5106,7 @@ xref: MassMono: "110.048013"
 xref: Origin: "A, G"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0045"
+xref: uniprot.ptm:PTM-0045
 is_a: MOD:02040 ! crosslinked L-alanine residue
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
@@ -5134,7 +5134,7 @@ xref: MassMono: "142.020084"
 xref: Origin: "C, G"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0047"
+xref: uniprot.ptm:PTM-0047
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
@@ -5163,7 +5163,7 @@ xref: MassMono: "165.053826"
 xref: Origin: "G, Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0013"
+xref: uniprot.ptm:PTM-0013
 is_a: MOD:02046 ! crosslinked L-glutamine residue
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
@@ -5185,7 +5185,7 @@ xref: MassMono: "71.037114"
 xref: Origin: "A"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0112"
+xref: uniprot.ptm:PTM-0112
 is_a: MOD:00570 ! residues isobaric at 71.037114 Da
 is_a: MOD:00862 ! D-alanine
 is_a: MOD:00901 ! modified L-alanine residue
@@ -5212,7 +5212,7 @@ xref: MassMono: "113.084064"
 xref: Origin: "I"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0114"
+xref: uniprot.ptm:PTM-0114
 is_a: MOD:00306 ! residues isobaric at 113.084064 Da
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:00910 ! modified L-isoleucine residue
@@ -5236,7 +5236,7 @@ xref: MassMono: "131.040485"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0120"
+xref: uniprot.ptm:PTM-0120
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:00913 ! modified L-methionine residue
 
@@ -5257,7 +5257,7 @@ xref: MassMono: "147.068414"
 xref: Origin: "F"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0121"
+xref: uniprot.ptm:PTM-0121
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
 
@@ -5278,7 +5278,7 @@ xref: MassMono: "87.032028"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0308"
+xref: uniprot.ptm:PTM-0308
 is_a: MOD:00891 ! D-serine
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -5302,7 +5302,7 @@ xref: Origin: "N"
 xref: Source: "natural"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0115"
+xref: uniprot.ptm:PTM-0115
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:00903 ! modified L-asparagine residue
 
@@ -5324,7 +5324,7 @@ xref: MassMono: "113.084064"
 xref: Origin: "L"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0119"
+xref: uniprot.ptm:PTM-0119
 is_a: MOD:00306 ! residues isobaric at 113.084064 Da
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:00911 ! modified L-leucine residue
@@ -5347,7 +5347,7 @@ xref: MassMono: "186.079313"
 xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0123"
+xref: uniprot.ptm:PTM-0123
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
@@ -5361,7 +5361,7 @@ synonym: "MOD_RES 5-glutamyl polyglycine" EXACT UniProt-feature []
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0394"
+xref: uniprot.ptm:PTM-0394
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Term]
@@ -5373,7 +5373,7 @@ synonym: "L-isoglutamyl-polyglutamic acid" EXACT RESID-name []
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0395"
+xref: uniprot.ptm:PTM-0395
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Term]
@@ -5402,7 +5402,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:405"
-xref: UniProt: "PTM-0332"
+xref: uniprot.ptm:PTM-0332
 is_a: MOD:00919 ! modified L-tyrosine residue
 is_a: MOD:01165 ! adenylated residue
 
@@ -5424,7 +5424,7 @@ xref: MassAvg: "143.18"
 xref: MassMono: "143.027909"
 xref: Origin: "C, S"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0268"
+xref: uniprot.ptm:PTM-0268
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01850 ! S-(2-aminovinyl)-D-cysteine
 
@@ -5462,7 +5462,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
-xref: UniProt: "PTM-0107"
+xref: uniprot.ptm:PTM-0107
 is_a: MOD:00708 ! sulfur oxygenated L-cysteine
 is_a: MOD:01854 ! sulfur monooxygenated residue
 
@@ -5487,7 +5487,7 @@ xref: MassAvg: "159.18"
 xref: MassMono: "159.022823"
 xref: Origin: "C, G"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0429"
+xref: uniprot.ptm:PTM-0429
 is_a: MOD:00395 ! thioester crosslinked residues
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
@@ -5513,7 +5513,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:407"
-xref: UniProt: "PTM-0414"
+xref: uniprot.ptm:PTM-0414
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
@@ -5580,7 +5580,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:122"
-xref: UniProt: "PTM-0192"
+xref: uniprot.ptm:PTM-0192
 is_a: MOD:00409 ! N-formylated residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 
@@ -5609,7 +5609,7 @@ xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:408"
-xref: UniProt: "PTM-0545"
+xref: uniprot.ptm:PTM-0545
 is_a: MOD:00396 ! O-glycosylated residue
 is_a: MOD:00915 ! modified L-proline residue
 
@@ -5625,7 +5625,7 @@ synonym: "O3-L-serine 5'-RNA phosphodiester" EXACT RESID-alternate []
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0227"
+xref: uniprot.ptm:PTM-0227
 is_a: MOD:00751 ! ribonucleic acid linked residue
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -5660,7 +5660,7 @@ xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:7"
-xref: UniProt: "PTM-0092"
+xref: uniprot.ptm:PTM-0092
 is_a: MOD:00902 ! modified L-arginine residue
 
 [Term]
@@ -5686,7 +5686,7 @@ xref: MassMono: "172.096026"
 xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0042"
+xref: uniprot.ptm:PTM-0042
 is_a: MOD:00425 ! monohydroxylated residue
 is_a: MOD:00682 ! hydroxylated arginine
 
@@ -5711,7 +5711,7 @@ xref: MassMono: "201.033388"
 xref: Origin: "C, N"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0151"
+xref: uniprot.ptm:PTM-0151
 is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
@@ -5738,7 +5738,7 @@ xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:41"
-xref: UniProt: "PTM-0505"
+xref: uniprot.ptm:PTM-0505
 is_a: MOD:00421 ! C-glycosylated residue
 is_a: MOD:00595 ! monomannosylated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
@@ -5753,7 +5753,7 @@ synonym: "N6-mureinyl-L-lysine" EXACT RESID-name []
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0195"
+xref: uniprot.ptm:PTM-0195
 is_a: MOD:01159 ! peptidoglycanated residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 
@@ -5768,7 +5768,7 @@ synonym: "poly[beta-1,4-D-glucopyranuronosyl-beta-1,3-(2-acetamido-2-deoxy-4-sul
 synonym: "protein-glycosaminoglycan-protein cross-link" EXACT RESID-alternate []
 xref: Origin: "D"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0334"
+xref: uniprot.ptm:PTM-0334
 is_a: MOD:00904 ! modified L-aspartic acid residue
 
 [Term]
@@ -5794,7 +5794,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:409"
-xref: UniProt: "PTM-0271"
+xref: uniprot.ptm:PTM-0271
 is_a: MOD:02084 ! 6-FMN modified residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -5826,7 +5826,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:50"
-xref: UniProt: "PTM-0288"
+xref: uniprot.ptm:PTM-0288
 is_a: MOD:00895 ! FAD modified residue
 is_a: MOD:00909 ! modified L-histidine residue
 
@@ -5857,7 +5857,7 @@ xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:21"
-xref: UniProt: "PTM-0250"
+xref: uniprot.ptm:PTM-0250
 is_a: MOD:00902 ! modified L-arginine residue
 is_a: MOD:01456 ! N-phosphorylated residue
 
@@ -5885,7 +5885,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:410"
-xref: UniProt: "PTM-0273"
+xref: uniprot.ptm:PTM-0273
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01155 ! lipoconjugated residue
 
@@ -6044,7 +6044,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:55"
-xref: UniProt: "PTM-0311"
+xref: uniprot.ptm:PTM-0311
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01862 ! disulfide conjugated residue
 relationship: contains MOD:02026 ! S-(cysteinyl-glycyl)-L-cysteine
@@ -6072,7 +6072,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:275"
-xref: UniProt: "PTM-0280"
+xref: uniprot.ptm:PTM-0280
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:02077 ! nitrosylated residue
 
@@ -6097,7 +6097,7 @@ xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
-xref: UniProt: "PTM-0054"
+xref: uniprot.ptm:PTM-0054
 is_a: MOD:00752 ! monoadenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00903 ! modified L-asparagine residue
 
@@ -6128,7 +6128,7 @@ xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:39"
-xref: UniProt: "PTM-0032"
+xref: uniprot.ptm:PTM-0032
 is_a: MOD:00904 ! modified L-aspartic acid residue
 is_a: MOD:01153 ! methylthiolated residue
 
@@ -6153,7 +6153,7 @@ xref: MassMono: "303.121906"
 xref: Origin: "K, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0171"
+xref: uniprot.ptm:PTM-0171
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:02058 ! crosslinked L-tyrosine residue
@@ -6182,7 +6182,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:34"
-xref: UniProt: "PTM-0636"
+xref: uniprot.ptm:PTM-0636
 is_a: MOD:00654 ! S-methylated residue
 is_a: MOD:01682 ! monomethylated L-cysteine
 
@@ -6207,7 +6207,7 @@ xref: MassMono: "144.089878"
 xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0664"
+xref: uniprot.ptm:PTM-0664
 is_a: MOD:01047 ! monohydroxylated lysine
 
 [Term]
@@ -6259,7 +6259,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
-xref: UniProt: "PTM-0056"
+xref: uniprot.ptm:PTM-0056
 is_a: MOD:00752 ! monoadenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -6281,7 +6281,7 @@ xref: MassMono: "170.014998"
 xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0376"
+xref: uniprot.ptm:PTM-0376
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -6304,7 +6304,7 @@ xref: MassMono: "172.030649"
 xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0381"
+xref: uniprot.ptm:PTM-0381
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
 is_a: MOD:00954 ! crosslinked residues with loss of water
@@ -6327,7 +6327,7 @@ xref: MassMono: "124.027277"
 xref: Origin: "G, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0377"
+xref: uniprot.ptm:PTM-0377
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -6350,7 +6350,7 @@ xref: MassMono: "140.004434"
 xref: Origin: "C, G"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0378"
+xref: uniprot.ptm:PTM-0378
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -6373,7 +6373,7 @@ xref: MassMono: "170.014998"
 xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0363"
+xref: uniprot.ptm:PTM-0363
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -6396,7 +6396,7 @@ xref: MassMono: "230.051384"
 xref: Origin: "C, F"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0375"
+xref: uniprot.ptm:PTM-0375
 is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -6419,7 +6419,7 @@ xref: MassMono: "185.992155"
 xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0360"
+xref: uniprot.ptm:PTM-0360
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
@@ -6457,7 +6457,7 @@ synonym: "O3-L-serine 5'-DNA phosphodiester" EXACT RESID-alternate []
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0226"
+xref: uniprot.ptm:PTM-0226
 is_a: MOD:00750 ! deoxyribonucleic acid linked residue
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -6501,7 +6501,7 @@ synonym: "O4'-L-tyrosine 5'-RNA phosphodiester" EXACT RESID-alternate []
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0229"
+xref: uniprot.ptm:PTM-0229
 is_a: MOD:00751 ! ribonucleic acid linked residue
 is_a: MOD:00919 ! modified L-tyrosine residue
 
@@ -6527,7 +6527,7 @@ xref: MassMono: "298.106590"
 xref: Origin: "H, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0027"
+xref: uniprot.ptm:PTM-0027
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:02048 ! crosslinked L-histidine residue
 is_a: MOD:02058 ! crosslinked L-tyrosine residue
@@ -6559,7 +6559,7 @@ xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
-xref: UniProt: "PTM-0175"
+xref: uniprot.ptm:PTM-0175
 is_a: MOD:00709 ! sulfur oxygenated L-methionine
 is_a: MOD:01855 ! sulfur dioxygenated residue
 
@@ -6588,7 +6588,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:416"
-xref: UniProt: "PTM-0421"
+xref: uniprot.ptm:PTM-0421
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
@@ -6610,7 +6610,7 @@ xref: MassMono: "157.043559"
 xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0267"
+xref: uniprot.ptm:PTM-0267
 is_a: MOD:00687 ! thioether crosslinked residues
 is_a: MOD:02056 ! crosslinked L-threonine residue
 
@@ -6626,7 +6626,7 @@ synonym: "O4'-L-tyrosine 5'-DNA phosphodiester" EXACT RESID-alternate []
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0228"
+xref: uniprot.ptm:PTM-0228
 is_a: MOD:00750 ! deoxyribonucleic acid linked residue
 is_a: MOD:00919 ! modified L-tyrosine residue
 
@@ -6676,7 +6676,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:417"
-xref: UniProt: "PTM-0333"
+xref: uniprot.ptm:PTM-0333
 is_a: MOD:00919 ! modified L-tyrosine residue
 is_a: MOD:01166 ! uridylated residue
 
@@ -6817,7 +6817,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
-xref: UniProt: "PTM-0108"
+xref: uniprot.ptm:PTM-0108
 is_a: MOD:00708 ! sulfur oxygenated L-cysteine
 is_a: MOD:01855 ! sulfur dioxygenated residue
 
@@ -6844,7 +6844,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
-xref: UniProt: "PTM-0667"
+xref: uniprot.ptm:PTM-0667
 is_a: MOD:00428 ! dihydroxylated residue
 is_a: MOD:00707 ! hydroxylated tyrosine
 
@@ -6873,7 +6873,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:419"
-xref: UniProt: "PTM-0230"
+xref: uniprot.ptm:PTM-0230
 is_a: MOD:00916 ! modified L-serine residue
 
 [Term]
@@ -6901,7 +6901,7 @@ xref: MassMono: "72.998620"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0004"
+xref: uniprot.ptm:PTM-0004
 is_a: MOD:01625 ! 1-thioglycine
 
 [Term]
@@ -6953,7 +6953,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:405"
-xref: UniProt: "PTM-0393"
+xref: uniprot.ptm:PTM-0393
 is_a: MOD:00917 ! modified L-threonine residue
 is_a: MOD:01165 ! adenylated residue
 
@@ -7014,7 +7014,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:421"
-xref: UniProt: "PTM-0106"
+xref: uniprot.ptm:PTM-0106
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01886 ! thiolated residue
 
@@ -7040,7 +7040,7 @@ xref: MassMono: "298.106590"
 xref: Origin: "H, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0003"
+xref: uniprot.ptm:PTM-0003
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:02048 ! crosslinked L-histidine residue
 is_a: MOD:02058 ! crosslinked L-tyrosine residue
@@ -7090,7 +7090,7 @@ xref: MassMono: "170.116761"
 xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0050"
+xref: uniprot.ptm:PTM-0050
 is_a: MOD:00414 ! monomethylated L-arginine
 is_a: MOD:00656 ! C-methylated residue
 
@@ -7116,7 +7116,7 @@ xref: MassMono: "142.074228"
 xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0016"
+xref: uniprot.ptm:PTM-0016
 is_a: MOD:00656 ! C-methylated residue
 is_a: MOD:00722 ! monomethylated L-glutamine
 
@@ -7140,7 +7140,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:422"
-xref: UniProt: "PTM-0224"
+xref: uniprot.ptm:PTM-0224
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01170 ! pyruvic acid iminylated residue
 
@@ -7164,7 +7164,7 @@ xref: Origin: "V"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:422"
-xref: UniProt: "PTM-0225"
+xref: uniprot.ptm:PTM-0225
 is_a: MOD:00920 ! modified L-valine residue
 is_a: MOD:01170 ! pyruvic acid iminylated residue
 
@@ -7218,7 +7218,7 @@ xref: Origin: "C"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:423"
-xref: UniProt: "PTM-0282"
+xref: uniprot.ptm:PTM-0282
 is_a: MOD:00745 ! selenium containing residue
 is_a: MOD:00778 ! residues isobaric at 182.9-183.0 Da
 is_a: MOD:00905 ! modified L-cysteine residue
@@ -7236,7 +7236,7 @@ synonym: "silaffin polycationic lysine derivative" EXACT RESID-alternate []
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0198"
+xref: uniprot.ptm:PTM-0198
 is_a: MOD:00912 ! modified L-lysine residue
 
 [Term]
@@ -7335,7 +7335,7 @@ xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
-xref: UniProt: "PTM-0306"
+xref: uniprot.ptm:PTM-0306
 is_a: MOD:00866 ! dihydroxylated proline
 
 [Term]
@@ -7359,7 +7359,7 @@ xref: MassMono: "330.012415"
 xref: Origin: "E, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0263"
+xref: uniprot.ptm:PTM-0263
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 is_a: MOD:02058 ! crosslinked L-tyrosine residue
@@ -7523,7 +7523,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:426"
-xref: UniProt: "PTM-0239"
+xref: uniprot.ptm:PTM-0239
 is_a: MOD:00669 ! O-octanoylated residue
 is_a: MOD:02003 ! O3-acylated L-serine
 
@@ -7548,7 +7548,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:54"
-xref: UniProt: "PTM-0577"
+xref: uniprot.ptm:PTM-0577
 is_a: MOD:00447 ! N-glucuronylated residue
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -7625,7 +7625,7 @@ xref: MassMono: "225.111341"
 xref: Origin: "K, N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0153"
+xref: uniprot.ptm:PTM-0153
 is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 is_a: MOD:01929 ! N6-(L-isoaspartyl)-L-lysine
@@ -7671,7 +7671,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:428"
-xref: UniProt: "PTM-0586"
+xref: uniprot.ptm:PTM-0586
 is_a: MOD:00916 ! modified L-serine residue
 is_a: MOD:01804 ! glycosylphosphorylated residue
 
@@ -7697,7 +7697,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:429"
-xref: UniProt: "PTM-0594"
+xref: uniprot.ptm:PTM-0594
 is_a: MOD:00916 ! modified L-serine residue
 is_a: MOD:01804 ! glycosylphosphorylated residue
 
@@ -7749,7 +7749,7 @@ xref: Origin: "L"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: Unimod: "Unimod:34"
-xref: UniProt: "PTM-0167"
+xref: uniprot.ptm:PTM-0167
 is_a: MOD:00599 ! monomethylated residue
 is_a: MOD:00662 ! methylated leucine
 is_a: MOD:01689 ! alpha-carboxyl methylated residue
@@ -7901,7 +7901,7 @@ xref: MassMono: "170.116761"
 xref: Origin: "R"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0185"
+xref: uniprot.ptm:PTM-0185
 is_a: MOD:00414 ! monomethylated L-arginine
 is_a: MOD:00602 ! N-methylated residue
 
@@ -7978,7 +7978,7 @@ xref: Origin: "C"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:431"
-xref: UniProt: "PTM-0645"
+xref: uniprot.ptm:PTM-0645
 is_a: MOD:02002 ! S-palmitoleylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -8005,7 +8005,7 @@ xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: Unimod: "Unimod:432"
-xref: UniProt: "PTM-0090"
+xref: uniprot.ptm:PTM-0090
 is_a: MOD:00908 ! modified glycine residue
 is_a: MOD:01155 ! lipoconjugated residue
 
@@ -8058,7 +8058,7 @@ xref: Origin: "N"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:36"
-xref: UniProt: "PTM-0182"
+xref: uniprot.ptm:PTM-0182
 is_a: MOD:00429 ! dimethylated residue
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00673 ! methylated asparagine
@@ -8106,7 +8106,7 @@ xref: MassMono: "317.047027"
 xref: Origin: "C, W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0041"
+xref: uniprot.ptm:PTM-0041
 is_a: MOD:00687 ! thioether crosslinked residues
 is_a: MOD:02057 ! crosslinked L-tryptophan residue
 
@@ -8129,7 +8129,7 @@ xref: MassMono: "216.020478"
 xref: Origin: "C, D"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0025"
+xref: uniprot.ptm:PTM-0025
 is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:01993 ! beta-carbon thioether crosslinked residues
 
@@ -8151,7 +8151,7 @@ xref: MassMono: "230.036128"
 xref: Origin: "C, E"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0040"
+xref: uniprot.ptm:PTM-0040
 is_a: MOD:00687 ! thioether crosslinked residues
 is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 
@@ -8175,7 +8175,7 @@ xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:434"
-xref: UniProt: "PTM-0091"
+xref: uniprot.ptm:PTM-0091
 is_a: MOD:00904 ! modified L-aspartic acid residue
 is_a: MOD:01155 ! lipoconjugated residue
 
@@ -8205,7 +8205,7 @@ xref: MassMono: "151.074562"
 xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0290"
+xref: uniprot.ptm:PTM-0290
 is_a: MOD:02038 ! monomethylated L-histidine
 is_a: MOD:00724 ! N-methylated L-histidine
 
@@ -8234,7 +8234,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: Unimod: "Unimod:34"
-xref: UniProt: "PTM-0170"
+xref: uniprot.ptm:PTM-0170
 is_a: MOD:01683 ! monomethylated L-lysine
 is_a: MOD:01689 ! alpha-carboxyl methylated residue
 
@@ -8328,7 +8328,7 @@ xref: MassMono: "202.074228"
 xref: Origin: "W"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0031"
+xref: uniprot.ptm:PTM-0031
 is_a: MOD:01622 ! monohydroxylated tryptophan
 
 [Term]
@@ -8442,7 +8442,7 @@ xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:41"
-xref: UniProt: "PTM-0515"
+xref: uniprot.ptm:PTM-0515
 is_a: MOD:00433 ! monoglucosylated residue
 is_a: MOD:01980 ! omega-N-glycosyl-L-arginine
 
@@ -8469,7 +8469,7 @@ xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: Unimod: "Unimod:437"
-xref: UniProt: "PTM-0335"
+xref: uniprot.ptm:PTM-0335
 is_a: MOD:00701 ! nucleotide or nucleic acid modified residue
 is_a: MOD:00903 ! modified L-asparagine residue
 
@@ -8520,7 +8520,7 @@ xref: MassMono: "202.041213"
 xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0069"
+xref: uniprot.ptm:PTM-0069
 is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01993 ! beta-carbon thioether crosslinked residues
 relationship: has_functional_parent MOD:01981 ! 3-methyllanthionine
@@ -8573,7 +8573,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:5"
-xref: UniProt: "PTM-0649"
+xref: uniprot.ptm:PTM-0649
 is_a: MOD:00398 ! carbamoylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -8600,7 +8600,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:438"
-xref: UniProt: "PTM-0650"
+xref: uniprot.ptm:PTM-0650
 is_a: MOD:00893 ! residues isobaric at 128.0-128.1
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -8677,7 +8677,7 @@ xref: MassMono: "127.099714"
 xref: Origin: "I"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0215"
+xref: uniprot.ptm:PTM-0215
 is_a: MOD:00715 ! methylated isoleucine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
 
@@ -8704,7 +8704,7 @@ xref: MassMono: "127.099714"
 xref: Origin: "L"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0216"
+xref: uniprot.ptm:PTM-0216
 is_a: MOD:01680 ! alpha-amino monomethylated residue
 is_a: MOD:01808 ! N-methylated leucine
 
@@ -8730,7 +8730,7 @@ xref: MassMono: "177.078979"
 xref: Origin: "Y"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0220"
+xref: uniprot.ptm:PTM-0220
 is_a: MOD:00718 ! methylated tyrosine
 is_a: MOD:01680 ! alpha-amino monomethylated residue
 
@@ -8758,7 +8758,7 @@ xref: MassMono: "296.258954"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0223"
+xref: uniprot.ptm:PTM-0223
 is_a: MOD:00908 ! modified glycine residue
 is_a: MOD:01685 ! alpha-amino palmitoylated residue
 
@@ -8781,7 +8781,7 @@ xref: MassMono: "248.061949"
 xref: Origin: "C, F"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0012"
+xref: uniprot.ptm:PTM-0012
 is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
 
@@ -8804,7 +8804,7 @@ xref: MassMono: "248.061949"
 xref: Origin: "C, F"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0011"
+xref: uniprot.ptm:PTM-0011
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
@@ -8828,7 +8828,7 @@ xref: MassMono: "202.041213"
 xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0010"
+xref: uniprot.ptm:PTM-0010
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
@@ -8852,7 +8852,7 @@ xref: MassMono: "115.050752"
 xref: Origin: "A"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0374"
+xref: uniprot.ptm:PTM-0374
 is_a: MOD:00901 ! modified L-alanine residue
 is_a: MOD:01679 ! alpha-aminocarbamoylated residue
 
@@ -8877,7 +8877,7 @@ xref: MassMono: "188.025563"
 xref: Origin: "C, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0037"
+xref: uniprot.ptm:PTM-0037
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01861 ! isothiazolidinone ring crosslinked residues
@@ -8892,7 +8892,7 @@ synonym: "MOD_RES Pentaglycyl murein peptidoglycan amidated threonine" EXACT Uni
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0246"
+xref: uniprot.ptm:PTM-0246
 is_a: MOD:00917 ! modified L-threonine residue
 is_a: MOD:01159 ! peptidoglycanated residue
 
@@ -8913,7 +8913,7 @@ xref: MassMono: "773.544494"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0249"
+xref: uniprot.ptm:PTM-0249
 is_a: MOD:00908 ! modified glycine residue
 is_a: MOD:01155 ! lipoconjugated residue
 
@@ -8934,7 +8934,7 @@ xref: MassMono: "888.789439"
 xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0236"
+xref: uniprot.ptm:PTM-0236
 is_a: MOD:00907 ! modified L-glutamine residue
 is_a: MOD:01155 ! lipoconjugated residue
 
@@ -8955,7 +8955,7 @@ xref: MassMono: "477.159103"
 xref: Origin: "M, W, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0328"
+xref: uniprot.ptm:PTM-0328
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:02052 ! crosslinked L-methionine residue
 is_a: MOD:02057 ! crosslinked L-tryptophan residue
@@ -8984,7 +8984,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:442"
-xref: UniProt: "PTM-0126"
+xref: uniprot.ptm:PTM-0126
 is_a: MOD:00917 ! modified L-threonine residue
 is_a: MOD:01164 ! riboflavin-phosphorylated residue
 
@@ -9011,7 +9011,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:442"
-xref: UniProt: "PTM-0125"
+xref: uniprot.ptm:PTM-0125
 is_a: MOD:00916 ! modified L-serine residue
 is_a: MOD:01164 ! riboflavin-phosphorylated residue
 
@@ -9038,7 +9038,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:443"
-xref: UniProt: "PTM-0270"
+xref: uniprot.ptm:PTM-0270
 is_a: MOD:02083 ! 4alpha-FMN modified residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -9067,7 +9067,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:409"
-xref: UniProt: "PTM-0289"
+xref: uniprot.ptm:PTM-0289
 is_a: MOD:02085 ! 8alpha-FMN modified residue
 is_a: MOD:00909 ! modified L-histidine residue
 
@@ -9122,7 +9122,7 @@ xref: MassMono: "199.119501"
 xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0180"
+xref: uniprot.ptm:PTM-0180
 is_a: MOD:00902 ! modified L-arginine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -9212,7 +9212,7 @@ xref: MassMono: "251.947170"
 xref: Origin: "C, U"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0109"
+xref: uniprot.ptm:PTM-0109
 is_a: MOD:02061 ! crosslinked L-selenocysteine residue
 is_a: MOD:01627 ! L-cysteinyl-L-selenocysteine
 
@@ -9247,7 +9247,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:445"
-xref: UniProt: "PTM-0186"
+xref: uniprot.ptm:PTM-0186
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00912 ! modified L-lysine residue
 relationship: has_functional_parent MOD:00037 ! 5-hydroxy-L-lysine
@@ -9273,7 +9273,7 @@ xref: MassMono: "169.061317"
 xref: Origin: "E, G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0157"
+xref: uniprot.ptm:PTM-0157
 is_a: MOD:00688 ! isopeptide crosslinked residues
 is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 is_a: MOD:02047 ! crosslinked glycine residue
@@ -9303,7 +9303,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:40"
-xref: UniProt: "PTM-0284"
+xref: uniprot.ptm:PTM-0284
 is_a: MOD:00695 ! sulfated residue
 is_a: MOD:00771 ! residues isobaric at 166.98-167.00 Da
 is_a: MOD:00916 ! modified L-serine residue
@@ -9332,7 +9332,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:40"
-xref: UniProt: "PTM-0285"
+xref: uniprot.ptm:PTM-0285
 is_a: MOD:00695 ! sulfated residue
 is_a: MOD:00773 ! residues isobaric at 181.00-181.02 Da
 is_a: MOD:00917 ! modified L-threonine residue
@@ -9387,7 +9387,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1"
-xref: UniProt: "PTM-0232"
+xref: uniprot.ptm:PTM-0232
 is_a: MOD:00644 ! mono O-acetylated residue
 is_a: MOD:00647 ! monoacetylated L-serine
 is_a: MOD:02003 ! O3-acylated L-serine
@@ -9418,7 +9418,7 @@ xref: MassMono: "161.047678"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0001"
+xref: uniprot.ptm:PTM-0001
 is_a: MOD:00706 ! dehydrogenated tyrosine
 
 [Term]
@@ -9490,7 +9490,7 @@ xref: MassMono: "324.111007"
 xref: Origin: "Y, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0155"
+xref: uniprot.ptm:PTM-0155
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
@@ -9517,7 +9517,7 @@ xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
-xref: UniProt: "PTM-0022"
+xref: uniprot.ptm:PTM-0022
 is_a: MOD:00428 ! dihydroxylated residue
 is_a: MOD:00682 ! hydroxylated arginine
 
@@ -9544,7 +9544,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
-xref: UniProt: "PTM-0036"
+xref: uniprot.ptm:PTM-0036
 is_a: MOD:00428 ! dihydroxylated residue
 is_a: MOD:00681 ! hydroxylated lysine
 
@@ -9602,7 +9602,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:417"
-xref: UniProt: "PTM-0500"
+xref: uniprot.ptm:PTM-0500
 is_a: MOD:00909 ! modified L-histidine residue
 is_a: MOD:01166 ! uridylated residue
 
@@ -9633,7 +9633,7 @@ xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:447"
-xref: UniProt: "PTM-0064"
+xref: uniprot.ptm:PTM-0064
 is_a: MOD:00904 ! modified L-aspartic acid residue
 is_a: MOD:01161 ! deoxygenated residue
 
@@ -9657,7 +9657,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: Unimod: "Unimod:448"
-xref: UniProt: "PTM-0276"
+xref: uniprot.ptm:PTM-0276
 is_a: MOD:00916 ! modified L-serine residue
 
 [Term]
@@ -9745,7 +9745,7 @@ xref: MassMono: "166.037842"
 xref: Origin: "E, G"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0014"
+xref: uniprot.ptm:PTM-0014
 is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
@@ -9774,7 +9774,7 @@ xref: MassMono: "168.035734"
 xref: Origin: "G, M"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0015"
+xref: uniprot.ptm:PTM-0015
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:02052 ! crosslinked L-methionine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
@@ -9801,7 +9801,7 @@ xref: MassMono: "153.053826"
 xref: Origin: "G, N"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0046"
+xref: uniprot.ptm:PTM-0046
 is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
@@ -9829,7 +9829,7 @@ xref: MassMono: "167.105862"
 xref: Origin: "G, K"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0048"
+xref: uniprot.ptm:PTM-0048
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
@@ -9857,7 +9857,7 @@ xref: MassMono: "149.071488"
 xref: Origin: "G, K"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0018"
+xref: uniprot.ptm:PTM-0018
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
@@ -9872,7 +9872,7 @@ synonym: "MOD_RES Pentaglycyl murein peptidoglycan amidated alanine" EXACT UniPr
 xref: Origin: "A"
 xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0245"
+xref: uniprot.ptm:PTM-0245
 is_a: MOD:00901 ! modified L-alanine residue
 is_a: MOD:01159 ! peptidoglycanated residue
 
@@ -9924,7 +9924,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:449"
-xref: UniProt: "PTM-0234"
+xref: uniprot.ptm:PTM-0234
 is_a: MOD:00668 ! O-decanoylated residue
 is_a: MOD:02003 ! O3-acylated L-serine
 
@@ -9952,7 +9952,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:426"
-xref: UniProt: "PTM-0240"
+xref: uniprot.ptm:PTM-0240
 is_a: MOD:00669 ! O-octanoylated residue
 is_a: MOD:02004 ! O3-acylated L-threonine
 
@@ -9979,7 +9979,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:449"
-xref: UniProt: "PTM-0235"
+xref: uniprot.ptm:PTM-0235
 is_a: MOD:00668 ! O-decanoylated residue
 is_a: MOD:02004 ! O3-acylated L-threonine
 
@@ -10524,7 +10524,7 @@ xref: Origin: "E"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:27"
-xref: UniProt: "PTM-0262"
+xref: uniprot.ptm:PTM-0262
 is_a: MOD:00906 ! modified L-glutamic acid residue
 is_a: MOD:01048 ! 2-pyrrolidone-5-carboxylic acid
 
@@ -11274,7 +11274,7 @@ xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:345"
-xref: UniProt: "PTM-0634"
+xref: uniprot.ptm:PTM-0634
 is_a: MOD:00708 ! sulfur oxygenated L-cysteine
 
 [Term]
@@ -11706,7 +11706,7 @@ xref: Origin: "M"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:122"
-xref: UniProt: "PTM-0212"
+xref: uniprot.ptm:PTM-0212
 is_a: MOD:00913 ! modified L-methionine residue
 
 [Term]
@@ -14925,7 +14925,7 @@ xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:528"
-xref: UniProt: "PTM-0127"
+xref: uniprot.ptm:PTM-0127
 is_a: MOD:01369 ! deamidated and methyl esterified residue
 is_a: MOD:01453 ! L-glutamic acid 5-methyl ester
 relationship: has_functional_parent MOD:00659 ! methylated glutamine
@@ -14937,7 +14937,7 @@ def: "A protein modification that effectively converts an L-arginine residue to 
 subset: PSI-MOD-slim
 synonym: "MeArg" EXACT PSI-MOD-label []
 xref: Origin: "R"
-xref: UniProt: "PTM-0238"
+xref: uniprot.ptm:PTM-0238
 is_a: MOD:00427 ! methylated residue
 is_a: MOD:00902 ! modified L-arginine residue
 
@@ -14998,7 +14998,7 @@ synonym: "MeLys" EXACT PSI-MOD-label []
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0193"
+xref: uniprot.ptm:PTM-0193
 is_a: MOD:00427 ! methylated residue
 is_a: MOD:00912 ! modified L-lysine residue
 
@@ -15228,7 +15228,7 @@ name: hydroxylated arginine
 def: "A protein modification that effectively converts an L-arginine residue to a hydroxylated L-arginine." [PubMed:18688235]
 synonym: "HyArg" EXACT PSI-MOD-label []
 xref: Origin: "R"
-xref: UniProt: "PTM-0498"
+xref: uniprot.ptm:PTM-0498
 is_a: MOD:00677 ! hydroxylated residue
 is_a: MOD:00902 ! modified L-arginine residue
 
@@ -15263,7 +15263,7 @@ xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:7"
-xref: UniProt: "PTM-0116"
+xref: uniprot.ptm:PTM-0116
 is_a: MOD:00400 ! deamidated residue
 is_a: MOD:00903 ! modified L-asparagine residue
 
@@ -15291,7 +15291,7 @@ xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:7"
-xref: UniProt: "PTM-0117"
+xref: uniprot.ptm:PTM-0117
 is_a: MOD:00400 ! deamidated residue
 is_a: MOD:00907 ! modified L-glutamine residue
 
@@ -15530,7 +15530,7 @@ xref: MassMono: "99.068414"
 xref: Origin: "V"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0124"
+xref: uniprot.ptm:PTM-0124
 is_a: MOD:00664 ! stereoisomerized residue
 
 [Term]
@@ -15550,7 +15550,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:401"
-xref: UniProt: "PTM-0008"
+xref: uniprot.ptm:PTM-0008
 is_a: MOD:00919 ! modified L-tyrosine residue
 is_a: MOD:01888 ! didehydrogenated residue
 
@@ -15725,7 +15725,7 @@ xref: Origin: "M"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
-xref: UniProt: "PTM-0469"
+xref: uniprot.ptm:PTM-0469
 is_a: MOD:00709 ! sulfur oxygenated L-methionine
 is_a: MOD:01854 ! sulfur monooxygenated residue
 
@@ -15747,7 +15747,7 @@ xref: MassMono: "147.035400"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0480"
+xref: uniprot.ptm:PTM-0480
 is_a: MOD:00719 ! L-methionine sulfoxide
 
 [Term]
@@ -15765,7 +15765,7 @@ xref: MassMono: "147.035400"
 xref: Origin: "M"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0481"
+xref: uniprot.ptm:PTM-0481
 is_a: MOD:00719 ! L-methionine sulfoxide
 
 [Term]
@@ -16213,7 +16213,7 @@ xref: MassMono: "115.063329"
 xref: Origin: "V"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0111"
+xref: uniprot.ptm:PTM-0111
 is_a: MOD:00425 ! monohydroxylated residue
 is_a: MOD:00664 ! stereoisomerized residue
 
@@ -16238,7 +16238,7 @@ xref: MassMono: "275.100502"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0558"
+xref: uniprot.ptm:PTM-0558
 is_a: MOD:00915 ! modified L-proline residue
 
 [Term]
@@ -16264,7 +16264,7 @@ xref: MassMono: "316.127051"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0578"
+xref: uniprot.ptm:PTM-0578
 is_a: MOD:01677 ! O4-(N-acetylamino)hexosyl-L-hydroxyproline
 
 [Term]
@@ -16403,7 +16403,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:312"
-xref: UniProt: "PTM-0415"
+xref: uniprot.ptm:PTM-0415
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01862 ! disulfide conjugated residue
 
@@ -16636,7 +16636,7 @@ xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:36"
-xref: UniProt: "PTM-0341"
+xref: uniprot.ptm:PTM-0341
 is_a: MOD:00429 ! dimethylated residue
 is_a: MOD:00658 ! methylated arginine
 
@@ -16816,7 +16816,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: Unimod: "Unimod:368"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0468"
+xref: uniprot.ptm:PTM-0468
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01168 ! dehydroalanine
 
@@ -16903,7 +16903,7 @@ xref: MassMono: "270.991559"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0424"
+xref: uniprot.ptm:PTM-0424
 is_a: MOD:00861 ! phosphorus containing modified residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -16945,7 +16945,7 @@ xref: MassMono: "265.062008"
 xref: Origin: "C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0624"
+xref: uniprot.ptm:PTM-0624
 is_a: MOD:00426 ! S-glycosylated residue
 is_a: MOD:00476 ! monogalactosylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
@@ -17043,7 +17043,7 @@ xref: MassMono: "264.056863"
 xref: Origin: "C, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0020"
+xref: uniprot.ptm:PTM-0020
 is_a: MOD:02058 ! crosslinked L-tyrosine residue
 is_a: MOD:01993 ! beta-carbon thioether crosslinked residues
 
@@ -17068,7 +17068,7 @@ xref: MassMono: "249.084852"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0573"
+xref: uniprot.ptm:PTM-0573
 is_a: MOD:00002 ! O-glycosyl-L-serine
 is_a: MOD:00433 ! monoglucosylated residue
 
@@ -17098,7 +17098,7 @@ xref: MassMono: "290.111401"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0580"
+xref: uniprot.ptm:PTM-0580
 is_a: MOD:00448 ! mono-N-acetylaminoglucosylated residue
 is_a: MOD:01675 ! O-(N-acetylamino)hexosyl-L-serine
 
@@ -17128,7 +17128,7 @@ xref: MassMono: "304.127051"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0582"
+xref: uniprot.ptm:PTM-0582
 is_a: MOD:00448 ! mono-N-acetylaminoglucosylated residue
 is_a: MOD:01676 ! O-(N-acetylamino)hexosyl-L-threonine
 
@@ -17153,7 +17153,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:385"
-xref: UniProt: "PTM-0266"
+xref: uniprot.ptm:PTM-0266
 is_a: MOD:00916 ! modified L-serine residue
 is_a: MOD:01154 ! pyruvic acid
 is_a: MOD:01160 ! deaminated residue
@@ -17178,7 +17178,7 @@ xref: MassMono: "249.084852"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0560"
+xref: uniprot.ptm:PTM-0560
 is_a: MOD:00002 ! O-glycosyl-L-serine
 is_a: MOD:00476 ! monogalactosylated residue
 
@@ -17202,7 +17202,7 @@ xref: MassMono: "263.100502"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0562"
+xref: uniprot.ptm:PTM-0562
 is_a: MOD:00476 ! monogalactosylated residue
 is_a: MOD:01348 ! O-hexosylated threonine
 
@@ -17227,7 +17227,7 @@ xref: MassMono: "249.084852"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0588"
+xref: uniprot.ptm:PTM-0588
 is_a: MOD:00002 ! O-glycosyl-L-serine
 is_a: MOD:00595 ! monomannosylated residue
 
@@ -17251,7 +17251,7 @@ xref: MassMono: "263.100502"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0591"
+xref: uniprot.ptm:PTM-0591
 is_a: MOD:00595 ! monomannosylated residue
 is_a: MOD:01348 ! O-hexosylated threonine
 
@@ -17280,7 +17280,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:295"
-xref: UniProt: "PTM-0550"
+xref: uniprot.ptm:PTM-0550
 is_a: MOD:00002 ! O-glycosyl-L-serine
 is_a: MOD:00614 ! fucosylated residue
 
@@ -17308,7 +17308,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:295"
-xref: UniProt: "PTM-0552"
+xref: uniprot.ptm:PTM-0552
 is_a: MOD:00005 ! O-glycosyl-L-threonine
 is_a: MOD:00614 ! fucosylated residue
 
@@ -17333,7 +17333,7 @@ xref: MassMono: "219.074287"
 xref: Origin: "S"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0598"
+xref: uniprot.ptm:PTM-0598
 is_a: MOD:00002 ! O-glycosyl-L-serine
 
 [Term]
@@ -17375,7 +17375,7 @@ xref: MassMono: "369.270150"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0283"
+xref: uniprot.ptm:PTM-0283
 is_a: MOD:02005 ! S-acylated L-cysteine
 is_a: MOD:02006 ! S-stearoylated residue
 
@@ -17397,7 +17397,7 @@ xref: MassMono: "322.204513"
 xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0026"
+xref: uniprot.ptm:PTM-0026
 is_a: MOD:00601 ! cyclized residue
 is_a: MOD:01115 ! isoprenylated tryptophan
 
@@ -17419,7 +17419,7 @@ xref: Origin: "X"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
 xref: Unimod: "Unimod:394"
-xref: UniProt: "PTM-0139"
+xref: uniprot.ptm:PTM-0139
 is_a: MOD:00764 ! glycoconjugated residue
 is_a: MOD:00861 ! phosphorus containing modified residue
 is_a: MOD:01155 ! lipoconjugated residue
@@ -17574,7 +17574,7 @@ xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:400"
-xref: UniProt: "PTM-0647"
+xref: uniprot.ptm:PTM-0647
 is_a: MOD:00919 ! modified L-tyrosine residue
 is_a: MOD:01168 ! dehydroalanine
 
@@ -17721,7 +17721,7 @@ xref: MassMono: "112.076239"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0219"
+xref: uniprot.ptm:PTM-0219
 is_a: MOD:01417 ! monomethylated proline
 is_a: MOD:01462 ! N-methylated proline
 is_a: MOD:01680 ! alpha-amino monomethylated residue
@@ -17743,7 +17743,7 @@ xref: MassMono: "317.122300"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0527"
+xref: uniprot.ptm:PTM-0527
 is_a: MOD:00448 ! mono-N-acetylaminoglucosylated residue
 is_a: MOD:01674 ! N4-(N-acetylamino)hexosyl-L-asparagine
 
@@ -17771,7 +17771,7 @@ xref: MassMono: "317.122300"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0512"
+xref: uniprot.ptm:PTM-0512
 is_a: MOD:00563 ! mono-N-acetylaminogalactosylated residue
 is_a: MOD:01674 ! N4-(N-acetylamino)hexosyl-L-asparagine
 
@@ -17798,7 +17798,7 @@ xref: MassMono: "276.095751"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0517"
+xref: uniprot.ptm:PTM-0517
 is_a: MOD:00433 ! monoglucosylated residue
 is_a: MOD:01346 ! N4-hexosylated asparagine
 
@@ -17825,7 +17825,7 @@ xref: MassMono: "274.116486"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0553"
+xref: uniprot.ptm:PTM-0553
 is_a: MOD:00002 ! O-glycosyl-L-serine
 
 [Term]
@@ -18120,7 +18120,7 @@ xref: MassMono: "71.037114"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0113"
+xref: uniprot.ptm:PTM-0113
 is_a: MOD:00862 ! D-alanine
 is_a: MOD:00916 ! modified L-serine residue
 is_a: MOD:01161 ! deoxygenated residue
@@ -18186,7 +18186,7 @@ xref: MassMono: "101.047678"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0310"
+xref: uniprot.ptm:PTM-0310
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:00917 ! modified L-threonine residue
 
@@ -18230,7 +18230,7 @@ xref: MassMono: "255.038212"
 xref: Origin: "D"
 xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0322"
+xref: uniprot.ptm:PTM-0322
 is_a: MOD:00466 ! glycosylsphingolipidinositolated residue
 is_a: MOD:00904 ! modified L-aspartic acid residue
 
@@ -18248,7 +18248,7 @@ xref: MassMono: "129.042593"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0024"
+xref: uniprot.ptm:PTM-0024
 is_a: MOD:00428 ! dihydroxylated residue
 is_a: MOD:00678 ! hydroxylated proline
 
@@ -18304,7 +18304,7 @@ xref: MassMono: "71.037114"
 xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0314"
+xref: uniprot.ptm:PTM-0314
 is_a: MOD:00904 ! modified L-aspartic acid residue
 is_a: MOD:02088 ! natural, standard, encoded residue substitution
 
@@ -18624,7 +18624,7 @@ xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:936"
-xref: UniProt: "PTM-0052"
+xref: uniprot.ptm:PTM-0052
 is_a: MOD:01913 ! monochlorinated L-tryptophan
 
 [Term]
@@ -18693,7 +18693,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:21"
-xref: UniProt: "PTM-0252"
+xref: uniprot.ptm:PTM-0252
 is_a: MOD:00909 ! modified L-histidine residue
 is_a: MOD:01456 ! N-phosphorylated residue
 
@@ -18732,7 +18732,7 @@ xref: MassMono: "87.032028"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0309"
+xref: uniprot.ptm:PTM-0309
 is_a: MOD:00891 ! D-serine
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -19094,7 +19094,7 @@ xref: MassMono: "228.134816"
 xref: Origin: "K, T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0326"
+xref: uniprot.ptm:PTM-0326
 is_a: MOD:00688 ! isopeptide crosslinked residues
 is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:02051 ! crosslinked L-lysine residue
@@ -19194,7 +19194,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:512"
-xref: UniProt: "PTM-0511"
+xref: uniprot.ptm:PTM-0511
 is_a: MOD:00767 ! glycated residue
 is_a: MOD:00912 ! modified L-lysine residue
 
@@ -19597,7 +19597,7 @@ xref: MassMono: "154.037842"
 xref: Origin: "D, G"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0312"
+xref: uniprot.ptm:PTM-0312
 is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01628 ! (2-aminosuccinimidyl)acetic acid
@@ -20787,7 +20787,7 @@ xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
-xref: UniProt: "PTM-0149"
+xref: uniprot.ptm:PTM-0149
 is_a: MOD:00425 ! monohydroxylated residue
 is_a: MOD:00594 ! residues isobaric at 113.047678 Da
 is_a: MOD:00678 ! hydroxylated proline
@@ -22886,7 +22886,7 @@ xref: MassMono: "821.237910"
 xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0672"
+xref: uniprot.ptm:PTM-0672
 is_a: MOD:02087 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00909 ! modified L-histidine residue
 relationship: derives_from MOD:00049 ! 2'-[3-carboxamido-3-(trimethylammonio)propyl]-L-histidine
@@ -23332,7 +23332,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1"
-xref: UniProt: "PTM-0233"
+xref: uniprot.ptm:PTM-0233
 is_a: MOD:00644 ! mono O-acetylated residue
 is_a: MOD:01186 ! monoacetylated L-threonine
 
@@ -23352,7 +23352,7 @@ xref: MassMono: "211.048383"
 xref: Origin: "A"
 xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0144"
+xref: uniprot.ptm:PTM-0144
 is_a: MOD:00466 ! glycosylsphingolipidinositolated residue
 is_a: MOD:00901 ! modified L-alanine residue
 
@@ -23372,7 +23372,7 @@ xref: MassMono: "254.054197"
 xref: Origin: "N"
 xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0145"
+xref: uniprot.ptm:PTM-0145
 is_a: MOD:00466 ! glycosylsphingolipidinositolated residue
 is_a: MOD:00903 ! modified L-asparagine residue
 
@@ -23394,7 +23394,7 @@ xref: MassMono: "419.213030"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0447"
+xref: uniprot.ptm:PTM-0447
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01155 ! lipoconjugated residue
 
@@ -23468,7 +23468,7 @@ xref: MassMono: "227.090606"
 xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0416"
+xref: uniprot.ptm:PTM-0416
 is_a: MOD:00909 ! modified L-histidine residue
 
 [Term]
@@ -23511,7 +23511,7 @@ xref: MassMono: "100.076239"
 xref: Origin: "A"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0178"
+xref: uniprot.ptm:PTM-0178
 is_a: MOD:01461 ! N-methylated alanine
 is_a: MOD:01686 ! alpha-amino dimethylated residue
 
@@ -23591,7 +23591,7 @@ xref: MassMono: "1021.193931"
 xref: Origin: "C, H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0681"
+xref: uniprot.ptm:PTM-0681
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02048 ! crosslinked L-histidine residue
 is_a: MOD:01621 ! flavin crosslinked residues
@@ -26923,7 +26923,7 @@ xref: Origin: "Y"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:354"
-xref: UniProt: "PTM-0213"
+xref: uniprot.ptm:PTM-0213
 is_a: MOD:00461 ! nitrated residue
 is_a: MOD:00919 ! modified L-tyrosine residue
 
@@ -27306,7 +27306,7 @@ xref: MassMono: "129.078979"
 xref: Origin: "L"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0665"
+xref: uniprot.ptm:PTM-0665
 is_a: MOD:01411 ! monohydroxylated leucine
 
 [Term]
@@ -27327,7 +27327,7 @@ xref: MassMono: "129.078979"
 xref: Origin: "L"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0491"
+xref: uniprot.ptm:PTM-0491
 is_a: MOD:01411 ! monohydroxylated leucine
 
 [Term]
@@ -27346,7 +27346,7 @@ xref: MassMono: "127.063329"
 xref: Origin: "L"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0492"
+xref: uniprot.ptm:PTM-0492
 is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00911 ! modified L-leucine residue
 
@@ -27368,7 +27368,7 @@ xref: MassMono: "145.073893"
 xref: Origin: "L"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0340"
+xref: uniprot.ptm:PTM-0340
 is_a: MOD:01412 ! dihydroxylated leucine
 
 [Term]
@@ -27389,7 +27389,7 @@ xref: MassMono: "145.073893"
 xref: Origin: "I"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0343"
+xref: uniprot.ptm:PTM-0343
 is_a: MOD:01416 ! dihydroxylated isoleucine
 
 [Term]
@@ -27411,7 +27411,7 @@ xref: MassMono: "129.078979"
 xref: Origin: "I"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0337"
+xref: uniprot.ptm:PTM-0337
 is_a: MOD:01415 ! monohydroxylated isoleucine
 
 [Term]
@@ -27432,7 +27432,7 @@ xref: MassMono: "145.073893"
 xref: Origin: "I"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0336"
+xref: uniprot.ptm:PTM-0336
 is_a: MOD:01416 ! dihydroxylated isoleucine
 
 [Term]
@@ -27451,7 +27451,7 @@ xref: MassMono: "264.056863"
 xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0304"
+xref: uniprot.ptm:PTM-0304
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
@@ -27472,7 +27472,7 @@ xref: MassMono: "319.062677"
 xref: Origin: "C, W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0338"
+xref: uniprot.ptm:PTM-0338
 is_a: MOD:00687 ! thioether crosslinked residues
 is_a: MOD:02057 ! crosslinked L-tryptophan residue
 
@@ -27496,7 +27496,7 @@ xref: MassMono: "323.246044"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0493"
+xref: uniprot.ptm:PTM-0493
 is_a: MOD:02003 ! O3-acylated L-serine
 is_a: MOD:01768 ! O-palmitoleylated residue
 
@@ -27523,7 +27523,7 @@ xref: MassMono: "175.102537"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0503"
+xref: uniprot.ptm:PTM-0503
 is_a: MOD:01463 ! N-methylated methionine
 is_a: MOD:01698 ! alpha-amino trimethylated protonated-residue
 
@@ -27547,7 +27547,7 @@ xref: MassMono: "219.997634"
 xref: Origin: "C, C"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0324"
+xref: uniprot.ptm:PTM-0324
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:00689 ! disulfide crosslinked residues
 
@@ -27569,7 +27569,7 @@ xref: MassMono: "101.011293"
 xref: Origin: "S"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0321"
+xref: uniprot.ptm:PTM-0321
 is_a: MOD:00916 ! modified L-serine residue
 
 [Term]
@@ -27595,7 +27595,7 @@ xref: MassMono: "163.063329"
 xref: Origin: "F"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0346"
+xref: uniprot.ptm:PTM-0346
 is_a: MOD:00677 ! hydroxylated residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
 
@@ -27617,7 +27617,7 @@ xref: MassMono: "115.063329"
 xref: Origin: "V"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0347"
+xref: uniprot.ptm:PTM-0347
 is_a: MOD:00677 ! hydroxylated residue
 is_a: MOD:00920 ! modified L-valine residue
 
@@ -27640,7 +27640,7 @@ xref: MassMono: "115.063329"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0356"
+xref: uniprot.ptm:PTM-0356
 is_a: MOD:01803 ! O-methylated threonine
 
 [Term]
@@ -27670,7 +27670,7 @@ xref: MassMono: "74.060589"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0354"
+xref: uniprot.ptm:PTM-0354
 is_a: MOD:00917 ! modified L-threonine residue
 is_a: MOD:00960 ! decarboxylated residue
 
@@ -27692,7 +27692,7 @@ xref: MassMono: "196.067034"
 xref: Origin: "C, I"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0361"
+xref: uniprot.ptm:PTM-0361
 is_a: MOD:02049 ! crosslinked L-isoleucine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -27715,7 +27715,7 @@ xref: MassMono: "182.051384"
 xref: Origin: "C, V"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0365"
+xref: uniprot.ptm:PTM-0365
 is_a: MOD:02059 ! crosslinked L-valine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -27738,7 +27738,7 @@ xref: MassMono: "226.077599"
 xref: Origin: "C, V"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0373"
+xref: uniprot.ptm:PTM-0373
 is_a: MOD:02059 ! crosslinked L-valine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 
@@ -27760,7 +27760,7 @@ xref: MassMono: "211.041548"
 xref: Origin: "C, N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0352"
+xref: uniprot.ptm:PTM-0352
 is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 relationship: derives_from MOD:00656 ! C-methylated residue
@@ -27781,7 +27781,7 @@ xref: MassMono: "207.022823"
 xref: Origin: "C, S, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0358"
+xref: uniprot.ptm:PTM-0358
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01425 ! pyridinyl ring crosslinked residues
@@ -27804,7 +27804,7 @@ xref: MassMono: "225.057198"
 xref: Origin: "C, S, S"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0348"
+xref: uniprot.ptm:PTM-0348
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01425 ! pyridinyl ring crosslinked residues
@@ -27872,7 +27872,7 @@ xref: MassMono: "168.053492"
 xref: Origin: "S, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0386"
+xref: uniprot.ptm:PTM-0386
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01422 ! oxazole/oxazoline ring crosslinked residues (Thr)
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -27902,7 +27902,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:58"
-xref: UniProt: "PTM-0642"
+xref: uniprot.ptm:PTM-0642
 is_a: MOD:01155 ! lipoconjugated residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 is_a: MOD:01894 ! propanoylated residue
@@ -27928,7 +27928,7 @@ xref: MassMono: "669.156072"
 xref: Origin: "K"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0355"
+xref: uniprot.ptm:PTM-0355
 is_a: MOD:00752 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
 is_a: MOD:00912 ! modified L-lysine residue
 
@@ -27965,7 +27965,7 @@ xref: MassMono: "130.037842"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0370"
+xref: uniprot.ptm:PTM-0370
 is_a: MOD:01688 ! 3-hydroxy-L-asparagine
 
 [Term]
@@ -27986,7 +27986,7 @@ xref: MassMono: "129.042593"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0368"
+xref: uniprot.ptm:PTM-0368
 is_a: MOD:00866 ! dihydroxylated proline
 
 [Term]
@@ -28007,7 +28007,7 @@ xref: MassMono: "161.068808"
 xref: Origin: "L"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0372"
+xref: uniprot.ptm:PTM-0372
 is_a: MOD:01413 ! trihydroxylated leucine
 
 [Term]
@@ -28028,7 +28028,7 @@ xref: MassMono: "197.025897"
 xref: Origin: "C, N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0359"
+xref: uniprot.ptm:PTM-0359
 is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -28072,7 +28072,7 @@ xref: MassMono: "184.030649"
 xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0364"
+xref: uniprot.ptm:PTM-0364
 is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -28095,7 +28095,7 @@ xref: MassMono: "232.067034"
 xref: Origin: "C, F"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0366"
+xref: uniprot.ptm:PTM-0366
 is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:00954 ! crosslinked residues with loss of water
@@ -28118,7 +28118,7 @@ xref: MassMono: "186.046299"
 xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0392"
+xref: uniprot.ptm:PTM-0392
 is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:00954 ! crosslinked residues with loss of water
@@ -28461,7 +28461,7 @@ xref: MassMono: "145.073893"
 xref: Origin: "L"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0666"
+xref: uniprot.ptm:PTM-0666
 is_a: MOD:01412 ! dihydroxylated leucine
 
 [Term]
@@ -28482,7 +28482,7 @@ xref: MassMono: "72.044939"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0379"
+xref: uniprot.ptm:PTM-0379
 is_a: MOD:00683 ! dehydrogenated residue
 is_a: MOD:00917 ! modified L-threonine residue
 
@@ -28504,7 +28504,7 @@ xref: MassMono: "145.037508"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0453"
+xref: uniprot.ptm:PTM-0453
 is_a: MOD:00425 ! monohydroxylated residue
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
@@ -28567,7 +28567,7 @@ xref: MassMono: "286.086152"
 xref: Origin: "C, P, S"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0380"
+xref: uniprot.ptm:PTM-0380
 is_a: MOD:02054 ! crosslinked L-proline residue
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01629 ! cyclo[(prolylserin)-O-yl] cysteinate
@@ -28660,7 +28660,7 @@ xref: MassMono: "260.116092"
 xref: Origin: "V, Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0390"
+xref: uniprot.ptm:PTM-0390
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:02058 ! crosslinked L-tyrosine residue
 is_a: MOD:02059 ! crosslinked L-valine residue
@@ -29187,7 +29187,7 @@ xref: MassMono: "83.037114"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0441"
+xref: uniprot.ptm:PTM-0441
 is_a: MOD:00190 ! dehydrobutyrine (Thr)
 
 [Term]
@@ -29219,7 +29219,7 @@ xref: MassMono: "83.037114"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0440"
+xref: uniprot.ptm:PTM-0440
 is_a: MOD:00190 ! dehydrobutyrine (Thr)
 
 [Term]
@@ -31549,7 +31549,7 @@ xref: MassMono: "143.045667"
 xref: Origin: "G, S"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0422"
+xref: uniprot.ptm:PTM-0422
 is_a: MOD:00885 ! ester crosslinked residues
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:02055 ! crosslinked L-serine residue
@@ -31575,7 +31575,7 @@ xref: MassMono: "157.061317"
 xref: Origin: "G, T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0423"
+xref: uniprot.ptm:PTM-0423
 is_a: MOD:00885 ! ester crosslinked residues
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:00917 ! modified L-threonine residue
@@ -31601,7 +31601,7 @@ xref: MassMono: "210.040558"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0399"
+xref: uniprot.ptm:PTM-0399
 is_a: MOD:00861 ! phosphorus containing modified residue
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -31627,7 +31627,7 @@ xref: MassMono: "253.094785"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0400"
+xref: uniprot.ptm:PTM-0400
 is_a: MOD:00861 ! phosphorus containing modified residue
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -31652,7 +31652,7 @@ xref: MassMono: "331.137950"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0547"
+xref: uniprot.ptm:PTM-0547
 is_a: MOD:00002 ! O-glycosyl-L-serine
 
 [Term]
@@ -31868,7 +31868,7 @@ xref: MassMono: "257.119798"
 xref: Origin: "K, M"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0401"
+xref: uniprot.ptm:PTM-0401
 is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:02052 ! crosslinked L-methionine residue
 
@@ -31925,7 +31925,7 @@ xref: MassMono: "272.100836"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0406"
+xref: uniprot.ptm:PTM-0406
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Term]
@@ -31987,7 +31987,7 @@ xref: MassMono: "257.137556"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0407"
+xref: uniprot.ptm:PTM-0407
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Term]
@@ -32006,7 +32006,7 @@ xref: MassMono: "364.127051"
 xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0504"
+xref: uniprot.ptm:PTM-0504
 is_a: MOD:00918 ! modified L-tryptophan residue
 relationship: has_functional_parent MOD:00222 ! 2'-alpha-mannosyl-L-tryptophan
 relationship: has_functional_parent MOD:01664 ! 7'-hydroxy-L-tryptophan
@@ -32028,7 +32028,7 @@ xref: MassMono: "132.066068"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0412"
+xref: uniprot.ptm:PTM-0412
 is_a: MOD:01689 ! alpha-carboxyl methylated residue
 is_a: MOD:01803 ! O-methylated threonine
 
@@ -32080,7 +32080,7 @@ xref: MassMono: "288.959976"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0411"
+xref: uniprot.ptm:PTM-0411
 is_a: MOD:01228 ! monoiodinated tyrosine
 
 [Term]
@@ -32104,7 +32104,7 @@ xref: MassMono: "414.856624"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0408"
+xref: uniprot.ptm:PTM-0408
 is_a: MOD:01140 ! diiodinated tyrosine
 
 [Term]
@@ -32130,7 +32130,7 @@ xref: MassMono: "403.076723"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0409"
+xref: uniprot.ptm:PTM-0409
 is_a: MOD:00908 ! modified glycine residue
 is_a: MOD:01165 ! adenylated residue
 
@@ -32154,7 +32154,7 @@ xref: MassMono: "190.994894"
 xref: Origin: "C, G"
 xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0410"
+xref: uniprot.ptm:PTM-0410
 is_a: MOD:00395 ! thioester crosslinked residues
 is_a: MOD:02047 ! crosslinked glycine residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
@@ -32177,7 +32177,7 @@ xref: MassMono: "299.918933"
 xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0417"
+xref: uniprot.ptm:PTM-0417
 is_a: MOD:01620 ! polysulfide crosslinked residues
 
 [Term]
@@ -32197,7 +32197,7 @@ xref: MassMono: "343.066832"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0596"
+xref: uniprot.ptm:PTM-0596
 is_a: MOD:00005 ! O-glycosyl-L-threonine
 is_a: MOD:01804 ! glycosylphosphorylated residue
 
@@ -32219,7 +32219,7 @@ xref: MassMono: "169.061317"
 xref: Origin: "A, N"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0418"
+xref: uniprot.ptm:PTM-0418
 is_a: MOD:00688 ! isopeptide crosslinked residues
 is_a: MOD:02040 ! crosslinked L-alanine residue
 is_a: MOD:02042 ! crosslinked L-asparagine residue
@@ -32305,7 +32305,7 @@ xref: MassMono: "154.037842"
 xref: Origin: "G, N"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0450"
+xref: uniprot.ptm:PTM-0450
 is_a: MOD:02042 ! crosslinked L-asparagine residue
 is_a: MOD:00946 ! crosslinked residues with loss of ammonia
 is_a: MOD:01628 ! (2-aminosuccinimidyl)acetic acid
@@ -32444,7 +32444,7 @@ xref: MassMono: "239.126991"
 xref: Origin: "K, X"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0397"
+xref: uniprot.ptm:PTM-0397
 is_a: MOD:02051 ! crosslinked L-lysine residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 is_a: MOD:00688 ! isopeptide crosslinked residues
@@ -33002,7 +33002,7 @@ xref: MassMono: "71.013304"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0662"
+xref: uniprot.ptm:PTM-0662
 is_a: MOD:00919 ! modified L-tyrosine residue
 is_a: MOD:01154 ! pyruvic acid
 
@@ -33063,7 +33063,7 @@ xref: MassMono: "202.074228"
 xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0427"
+xref: uniprot.ptm:PTM-0427
 is_a: MOD:01622 ! monohydroxylated tryptophan
 
 [Term]
@@ -33375,7 +33375,7 @@ xref: Origin: "K"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:5"
-xref: UniProt: "PTM-0675"
+xref: uniprot.ptm:PTM-0675
 is_a: MOD:00912 ! modified L-lysine residue
 is_a: MOD:00398 ! carbamoylated residue
 
@@ -33640,7 +33640,7 @@ xref: MassMono: "330.210290"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0419"
+xref: uniprot.ptm:PTM-0419
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01696 ! alpha-amino acylated residue
 
@@ -33661,7 +33661,7 @@ xref: MassMono: "328.194640"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0420"
+xref: uniprot.ptm:PTM-0420
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01696 ! alpha-amino acylated residue
 
@@ -33725,7 +33725,7 @@ xref: MassMono: "524.151826"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0428"
+xref: uniprot.ptm:PTM-0428
 is_a: MOD:00905 ! modified L-cysteine residue
 
 [Term]
@@ -35424,7 +35424,7 @@ xref: MassMono: "177.033388"
 xref: Origin: "G"
 xref: Source: "hypothetical"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0433"
+xref: uniprot.ptm:PTM-0433
 is_a: MOD:00908 ! modified glycine residue
 
 [Term]
@@ -35466,7 +35466,7 @@ xref: MassMono: "272.184841"
 xref: Origin: "K"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0474"
+xref: uniprot.ptm:PTM-0474
 relationship: derives_from MOD:00037 ! 5-hydroxy-L-lysine
 is_a: MOD:01875 ! N6-acylated L-lysine
 
@@ -35495,7 +35495,7 @@ xref: Origin: "K"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1289"
-xref: UniProt: "PTM-0637"
+xref: uniprot.ptm:PTM-0637
 is_a: MOD:01875 ! N6-acylated L-lysine
 is_a: MOD:01997 ! N-butanoylated residue
 
@@ -35517,7 +35517,7 @@ xref: MassMono: "101.047678"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0432"
+xref: uniprot.ptm:PTM-0432
 is_a: MOD:01680 ! alpha-amino monomethylated residue
 is_a: MOD:01800 ! N-methylated serine
 
@@ -35538,7 +35538,7 @@ xref: MassMono: "116.071154"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0431"
+xref: uniprot.ptm:PTM-0431
 is_a: MOD:01686 ! alpha-amino dimethylated residue
 is_a: MOD:01800 ! N-methylated serine
 
@@ -35564,7 +35564,7 @@ xref: MassMono: "131.094080"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0430"
+xref: uniprot.ptm:PTM-0430
 is_a: MOD:01698 ! alpha-amino trimethylated protonated-residue
 is_a: MOD:01800 ! N-methylated serine
 
@@ -35612,7 +35612,7 @@ xref: MassMono: "208.048407"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0434"
+xref: uniprot.ptm:PTM-0434
 is_a: MOD:01352 ! nitrated L-tyrosine
 
 [Term]
@@ -35635,7 +35635,7 @@ xref: MassMono: "339.121906"
 xref: Origin: "Y, Y"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0320"
+xref: uniprot.ptm:PTM-0320
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:02058 ! crosslinked L-tyrosine residue
 
@@ -35956,7 +35956,7 @@ xref: MassMono: "155.045667"
 xref: Origin: "D, G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0490"
+xref: uniprot.ptm:PTM-0490
 is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:00954 ! crosslinked residues with loss of water
 is_a: MOD:01928 ! N-(L-isoaspartyl)-glycine
@@ -35980,7 +35980,7 @@ xref: MassMono: "142.123189"
 xref: Origin: "L"
 xref: Source: "hypothetical"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0435"
+xref: uniprot.ptm:PTM-0435
 is_a: MOD:01686 ! alpha-amino dimethylated residue
 is_a: MOD:01808 ! N-methylated leucine
 
@@ -36129,7 +36129,7 @@ xref: MassMono: "223.017738"
 xref: Origin: "C, S, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0454"
+xref: uniprot.ptm:PTM-0454
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01425 ! pyridinyl ring crosslinked residues
@@ -36152,7 +36152,7 @@ xref: MassMono: "212.025563"
 xref: Origin: "C, E"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0456"
+xref: uniprot.ptm:PTM-0456
 is_a: MOD:02045 ! crosslinked L-glutamic acid residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -36218,7 +36218,7 @@ xref: MassMono: "370.142976"
 xref: Origin: "W, W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0544"
+xref: uniprot.ptm:PTM-0544
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:02057 ! crosslinked L-tryptophan residue
 
@@ -36243,7 +36243,7 @@ xref: MassMono: "228.111007"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0438"
+xref: uniprot.ptm:PTM-0438
 is_a: MOD:01029 ! succinylated residue
 is_a: MOD:01875 ! N6-acylated L-lysine
 
@@ -36610,7 +36610,7 @@ xref: MassMono: "215.126991"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0439"
+xref: uniprot.ptm:PTM-0439
 is_a: MOD:01853 ! L-lysinoalanine
 
 [Term]
@@ -36652,7 +36652,7 @@ xref: MassMono: "113.084064"
 xref: Origin: "I"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0442"
+xref: uniprot.ptm:PTM-0442
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:00910 ! modified L-isoleucine residue
 is_a: MOD:00306 ! residues isobaric at 113.084064 Da
@@ -36698,7 +36698,7 @@ xref: MassMono: "143.027909"
 xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0443"
+xref: uniprot.ptm:PTM-0443
 is_a: MOD:01851 ! S-(2-aminovinyl)-cysteine
 
 [Term]
@@ -36717,7 +36717,7 @@ xref: MassMono: "220.040341"
 xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0444"
+xref: uniprot.ptm:PTM-0444
 is_a: MOD:01913 ! monochlorinated L-tryptophan
 
 [Term]
@@ -36738,7 +36738,7 @@ xref: MassMono: "212.038139"
 xref: Origin: "C, L"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0448"
+xref: uniprot.ptm:PTM-0448
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02050 ! crosslinked L-leucine residue
 is_a: MOD:01856 ! oxazole/oxazoline ring crosslinked residues (Cys)
@@ -36761,7 +36761,7 @@ xref: MassMono: "196.030649"
 xref: Origin: "C, P"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0449"
+xref: uniprot.ptm:PTM-0449
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02054 ! crosslinked L-proline residue
 is_a: MOD:01856 ! oxazole/oxazoline ring crosslinked residues (Cys)
@@ -36843,7 +36843,7 @@ xref: MassMono: "143.027909"
 xref: Origin: "C, C"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: UniProt: "PTM-0446"
+xref: uniprot.ptm:PTM-0446
 is_a: MOD:01850 ! S-(2-aminovinyl)-D-cysteine
 
 [Term]
@@ -36950,7 +36950,7 @@ xref: MassMono: "232.034020"
 xref: Origin: "C, M"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0495"
+xref: uniprot.ptm:PTM-0495
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02052 ! crosslinked L-methionine residue
 is_a: MOD:01992 ! alpha-carbon thioether crosslinked residues
@@ -36973,7 +36973,7 @@ xref: MassMono: "306.088557"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0628"
+xref: uniprot.ptm:PTM-0628
 is_a: MOD:00426 ! S-glycosylated residue
 is_a: MOD:00448 ! mono-N-acetylaminoglucosylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
@@ -37000,7 +37000,7 @@ xref: MassMono: "248.061949"
 xref: Origin: "C, F"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0451"
+xref: uniprot.ptm:PTM-0451
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02053 ! crosslinked L-phenylalanine residue
 is_a: MOD:01861 ! isothiazolidinone ring crosslinked residues
@@ -37022,7 +37022,7 @@ xref: MassMono: "499.093051"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0452"
+xref: uniprot.ptm:PTM-0452
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:01862 ! disulfide conjugated residue
 
@@ -37321,7 +37321,7 @@ xref: MassMono: "254.071171"
 xref: Origin: "C, R"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0457"
+xref: uniprot.ptm:PTM-0457
 is_a: MOD:02041 ! crosslinked L-arginine residue
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:01883 ! 5-imidazolinone ring crosslinked residues (Cys)
@@ -37344,7 +37344,7 @@ xref: MassMono: "200.025563"
 xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0458"
+xref: uniprot.ptm:PTM-0458
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:02056 ! crosslinked L-threonine residue
 is_a: MOD:01856 ! oxazole/oxazoline ring crosslinked residues (Cys)
@@ -37387,7 +37387,7 @@ xref: MassMono: "199.168462"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0684"
+xref: uniprot.ptm:PTM-0684
 is_a: MOD:00912 ! modified L-lysine residue
 is_a: MOD:01884 ! 4-aminobutylated residue
 
@@ -37523,7 +37523,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:957"
-xref: UniProt: "PTM-0674"
+xref: uniprot.ptm:PTM-0674
 is_a: MOD:00001 ! alkylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -37588,7 +37588,7 @@ xref: MassMono: "196.121178"
 xref: Origin: "K"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0475"
+xref: uniprot.ptm:PTM-0475
 is_a: MOD:01875 ! N6-acylated L-lysine
 
 [Term]
@@ -37612,7 +37612,7 @@ xref: MassMono: "214.095357"
 xref: Origin: "K"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0467"
+xref: uniprot.ptm:PTM-0467
 is_a: MOD:01875 ! N6-acylated L-lysine
 
 [Term]
@@ -37689,7 +37689,7 @@ xref: MassMono: "127.063329"
 xref: Origin: "I"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0466"
+xref: uniprot.ptm:PTM-0466
 is_a: MOD:00601 ! cyclized residue
 is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00910 ! modified L-isoleucine residue
@@ -37714,7 +37714,7 @@ xref: MassMono: "185.140236"
 xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0459"
+xref: uniprot.ptm:PTM-0459
 is_a: MOD:00783 ! dimethylated L-arginine
 
 [Term]
@@ -37734,7 +37734,7 @@ xref: MassMono: "239.084081"
 xref: Origin: "C, R"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0460"
+xref: uniprot.ptm:PTM-0460
 is_a: MOD:02041 ! crosslinked L-arginine residue
 is_a: MOD:01420 ! thiazole/thiazoline ring crosslinked residues
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -37757,7 +37757,7 @@ xref: MassMono: "184.030649"
 xref: Origin: "C, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0461"
+xref: uniprot.ptm:PTM-0461
 is_a: MOD:02044 ! crosslinked L-cysteine residue
 is_a: MOD:01422 ! oxazole/oxazoline ring crosslinked residues (Thr)
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -37780,7 +37780,7 @@ xref: MassMono: "182.069142"
 xref: Origin: "T, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0462"
+xref: uniprot.ptm:PTM-0462
 is_a: MOD:01422 ! oxazole/oxazoline ring crosslinked residues (Thr)
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
@@ -37802,7 +37802,7 @@ xref: MassMono: "180.089878"
 xref: Origin: "I, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0463"
+xref: uniprot.ptm:PTM-0463
 is_a: MOD:02049 ! crosslinked L-isoleucine residue
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
@@ -37825,7 +37825,7 @@ xref: MassMono: "154.037842"
 xref: Origin: "S, S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0464"
+xref: uniprot.ptm:PTM-0464
 is_a: MOD:01421 ! oxazole/oxazoline ring crosslinked residues (Ser)
 is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 
@@ -37848,7 +37848,7 @@ xref: MassMono: "170.069142"
 xref: Origin: "S, T"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0465"
+xref: uniprot.ptm:PTM-0465
 is_a: MOD:02055 ! crosslinked L-serine residue
 is_a: MOD:01422 ! oxazole/oxazoline ring crosslinked residues (Thr)
 is_a: MOD:00954 ! crosslinked residues with loss of water
@@ -38039,7 +38039,7 @@ xref: Origin: "MOD:00037"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:907"
-xref: UniProt: "PTM-0556"
+xref: uniprot.ptm:PTM-0556
 is_a: MOD:00476 ! monogalactosylated residue
 is_a: MOD:00396 ! O-glycosylated residue
 
@@ -38082,7 +38082,7 @@ xref: MassMono: "366.142701"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0570"
+xref: uniprot.ptm:PTM-0570
 is_a: MOD:00563 ! mono-N-acetylaminogalactosylated residue
 is_a: MOD:01927 ! O-glycosyl-L-tyrosine
 
@@ -38107,7 +38107,7 @@ xref: MassMono: "225.111341"
 xref: Origin: "D, K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0486"
+xref: uniprot.ptm:PTM-0486
 is_a: MOD:02043 ! crosslinked L-aspartic acid residue
 is_a: MOD:01929 ! N6-(L-isoaspartyl)-L-lysine
 is_a: MOD:00954 ! crosslinked residues with loss of water
@@ -38134,7 +38134,7 @@ xref: MassMono: "144.089878"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0472"
+xref: uniprot.ptm:PTM-0472
 is_a: MOD:00037 ! 5-hydroxy-L-lysine
 
 [Term]
@@ -38160,7 +38160,7 @@ xref: MassMono: "131.021858"
 xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0473"
+xref: uniprot.ptm:PTM-0473
 is_a: MOD:01926 ! 3-hydroxy-L-aspartic acid
 
 [Term]
@@ -38179,7 +38179,7 @@ xref: MassMono: "153.053826"
 xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0477"
+xref: uniprot.ptm:PTM-0477
 is_a: MOD:00909 ! modified L-histidine residue
 is_a: MOD:00677 ! hydroxylated residue
 
@@ -38292,7 +38292,7 @@ xref: MassMono: "144.089878"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0471"
+xref: uniprot.ptm:PTM-0471
 is_a: MOD:00037 ! 5-hydroxy-L-lysine
 
 [Term]
@@ -38509,7 +38509,7 @@ xref: MassMono: "306.142701"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0572"
+xref: uniprot.ptm:PTM-0572
 relationship: derives_from MOD:01047 ! monohydroxylated lysine
 is_a: MOD:00396 ! O-glycosylated residue
 is_a: MOD:00912 ! modified L-lysine residue
@@ -38799,7 +38799,7 @@ xref: MassMono: "222.111676"
 xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0488"
+xref: uniprot.ptm:PTM-0488
 is_a: MOD:00907 ! modified L-glutamine residue
 
 [Term]
@@ -38936,7 +38936,7 @@ xref: MassMono: "172.096026"
 xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0476"
+xref: uniprot.ptm:PTM-0476
 is_a: MOD:00682 ! hydroxylated arginine
 
 [Term]
@@ -38957,7 +38957,7 @@ xref: MassMono: "113.047678"
 xref: Origin: "P"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0668"
+xref: uniprot.ptm:PTM-0668
 is_a: MOD:01024 ! monohydroxylated proline
 
 [Term]
@@ -39066,7 +39066,7 @@ xref: MassMono: "342.153934"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0506"
+xref: uniprot.ptm:PTM-0506
 is_a: MOD:00160 ! N4-glycosyl-L-asparagine
 
 [Term]
@@ -39091,7 +39091,7 @@ xref: MassMono: "315.143035"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0548"
+xref: uniprot.ptm:PTM-0548
 is_a: MOD:00002 ! O-glycosyl-L-serine
 
 [Term]
@@ -39113,7 +39113,7 @@ xref: MassMono: "361.148515"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0549"
+xref: uniprot.ptm:PTM-0549
 is_a: MOD:00002 ! O-glycosyl-L-serine
 
 [Term]
@@ -39180,7 +39180,7 @@ xref: MassMono: "359.180484"
 xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0518"
+xref: uniprot.ptm:PTM-0518
 is_a: MOD:00448 ! mono-N-acetylaminoglucosylated residue
 is_a: MOD:01980 ! omega-N-glycosyl-L-arginine
 
@@ -39254,7 +39254,7 @@ xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:450"
-xref: UniProt: "PTM-0479"
+xref: uniprot.ptm:PTM-0479
 is_a: MOD:00207 ! L-isoglutamyl-polyglutamic acid
 
 [Term]
@@ -39279,7 +39279,7 @@ xref: MassMono: "243.121906"
 xref: Origin: "E"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0478"
+xref: uniprot.ptm:PTM-0478
 is_a: MOD:00906 ! modified L-glutamic acid residue
 
 [Term]
@@ -39345,7 +39345,7 @@ xref: MassMono: "146.063411"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0636"
+xref: uniprot.ptm:PTM-0636
 is_a: MOD:00716 ! methylated methionine
 
 [Term]
@@ -39364,7 +39364,7 @@ synonym: "MOD_RES S-poly(beta-hydroxybutyryl)lysine" EXACT UniProt-feature []
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0641"
+xref: uniprot.ptm:PTM-0641
 is_a: MOD:00672 ! S-acylated residue
 is_a: MOD:00905 ! modified L-cysteine residue
 
@@ -39385,7 +39385,7 @@ synonym: "MOD_RES O3-poly(beta-hydroxybutyryl)lysine" EXACT UniProt-feature []
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0640"
+xref: uniprot.ptm:PTM-0640
 is_a: MOD:00671 ! O-acylated residue
 is_a: MOD:00916 ! modified L-serine residue
 
@@ -39524,7 +39524,7 @@ xref: MassMono: "101.084064"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0485"
+xref: uniprot.ptm:PTM-0485
 is_a: MOD:00714 ! methylated glycine
 is_a: MOD:01698 ! alpha-amino trimethylated protonated-residue
 
@@ -39546,7 +39546,7 @@ xref: MassMono: "86.060589"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
-xref: UniProt: "PTM-0484"
+xref: uniprot.ptm:PTM-0484
 is_a: MOD:00714 ! methylated glycine
 is_a: MOD:01686 ! alpha-amino dimethylated residue
 
@@ -40477,7 +40477,7 @@ xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:34"
-xref: UniProt: "PTM-0176"
+xref: uniprot.ptm:PTM-0176
 is_a: MOD:00599 ! monomethylated residue
 is_a: MOD:00661 ! methylated histidine
 
@@ -41015,7 +41015,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:417"
-xref: UniProt: "PTM-0501"
+xref: uniprot.ptm:PTM-0501
 is_a: MOD:00916 ! modified L-serine residue
 is_a: MOD:01166 ! uridylated residue
 
@@ -41037,7 +41037,7 @@ xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:417"
-xref: UniProt: "PTM-0502"
+xref: uniprot.ptm:PTM-0502
 is_a: MOD:00917 ! modified L-threonine residue
 is_a: MOD:01166 ! uridylated residue
 
@@ -41058,7 +41058,7 @@ xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:405"
-xref: UniProt: "PTM-0651"
+xref: uniprot.ptm:PTM-0651
 is_a: MOD:00916 ! modified L-serine residue
 is_a: MOD:01165 ! adenylated residue
 
@@ -41077,7 +41077,7 @@ xref: MassMono: "233.035793"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0676"
+xref: uniprot.ptm:PTM-0676
 is_a: MOD:00905 ! modified L-cysteine residue
 is_a: MOD:00001 ! alkylated residue
 
@@ -41096,7 +41096,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1849"
-xref: UniProt: "PTM-0638"
+xref: uniprot.ptm:PTM-0638
 is_a: MOD:01875 ! N6-acylated L-lysine
 
 [Term]
@@ -41113,7 +41113,7 @@ xref: MassMono: "214.131742"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0499"
+xref: uniprot.ptm:PTM-0499
 is_a: MOD:01875 ! N6-acylated L-lysine
 
 [Term]
@@ -41130,7 +41130,7 @@ xref: MassMono: "242.126657"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0487"
+xref: uniprot.ptm:PTM-0487
 is_a: MOD:01875 ! N6-acylated L-lysine
 
 [Term]
@@ -41149,7 +41149,7 @@ xref: MassMono: "128.058578"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: UniProt: "PTM-0691"
+xref: uniprot.ptm:PTM-0691
 is_a: MOD:00599 ! monomethylated residue
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00673 ! methylated asparagine
