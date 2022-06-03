@@ -58,7 +58,10 @@ for frame in doc:
             prop = check_spelling(clause.xref.id.prefix, words)
             value = clause.xref.desc
 
-            if prop in {"UniProt", "Unimod", "GNOme"}:
+            if prop in {"uniprot.ptm", "Unimod", "GNOme"}:
+                if value is None:
+                    print(f"error with missing value on {i}: {clause}")
+                    continue
                 xref = fastobo.xref.Xref(fastobo.id.parse(value))
                 new_clause = fastobo.term.XrefClause(xref)
             elif prop == "Remap":
