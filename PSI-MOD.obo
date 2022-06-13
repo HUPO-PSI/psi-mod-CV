@@ -1,7 +1,7 @@
 format-version: 1.2
 ontology: mod
 date: 13:06:2021 12:12
-saved-by: Charles Tapley Hoyt
+saved-by: Joshua Klein
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
 synonymtypedef: OMSSA-label "Short label from OMSSA" EXACT
@@ -17,8 +17,8 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-data-version: 1.031.5
-remark: PSI-MOD version: 1.031.5
+data-version: 1.031.6
+remark: PSI-MOD version: 1.031.6
 remark: RESID release: 75.00
 remark: ISO-8601 date: 2022-06-13 12:12Z
 remark: Annotation note 01 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
