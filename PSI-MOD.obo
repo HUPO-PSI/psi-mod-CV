@@ -41166,12 +41166,23 @@ synonym: "ModDAsn" EXACT PSI-MOD-label []
 is_a: MOD:00203 ! D-asparagine
 
 [Term]
-id: MOD:
-name: Formylasparagine
-def: "The transformation of the histidine side chain to that of Nω-formyl asparagine" [OSTI ID:6518101; doi:10.1016/0040-4039(91)80099-R]
+id: MOD:02098
+name: residue modified by radical mechanism
+def: "A chemical transformation driven by a radical reaction." []
+
+[Term]
+id: MOD:02099
+name: residue modified by radical hydroxylation
+def: "A hydroxyl substition induced by a radical reaction." []
+is_a: MOD:02098
+
+[Term]
+id: MOD:02100
+name: N2-Formyl-L-asparagine
+def: "A protein modification that effectively transforms a histidine side chain to that of Nω-formyl asparagine" [OSTI ID:6518101; doi:10.1016/0040-4039(91)80099-R]
 synonym: "Nω-formyl asparagine"
-synonym:"(2S)-4-amino-2-formamido-4-oxobutanoic acid"
-synonym:"N2-Formyl-L-asparagine"
+synonym: "(2S)-4-amino-2-formamido-4-oxobutanoic acid"
+synonym: "Formylasparagine"
 subset: PSI-MOD-slim
 xref: DiffAvg: "4.97"
 xref: DiffFormula: "H -1 C -1 N -1 O 2"
@@ -41183,11 +41194,13 @@ xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1917"
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02099 ! residue modified by radical hydroxylation
 
 [Term]
 id: MOD:
 name: 2-Amino-4,5-dioxopentanoic acid
-def: "The transformation of the histidine side chain to that of 2-Amino-4,5-dioxopentanoic acid" [PMID: 14670063]
+def: "A protein modification that effectively transforms a histidine side chain to that of 2-Amino-4,5-dioxopentanoic acid" [PMID:14670063]
 synonym: "Aspartylurea"
 subset: PSI-MOD-slim
 xref: DiffAvg: "-10.04"
@@ -41200,11 +41213,13 @@ xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1916"
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02099 ! residue modified by radical hydroxylation
 
 [Term]
 id: MOD:
 name: 2-Hydroxyphenylalanine
-def: "2-Hydroxyphenylalanine that is L-phenylalanine with a substituent hydroxy group at position 2" [PMID: 8509373]
+def: "A protein modification that effectively substitutes a hydroxy group at position 2 of L-phenylalanine" [PMID:8509373]
 synonym: "DL-o-Tyrosine"
 synonym:"2-amino-3-(2-hydroxyphenyl)propanoic acid"
 synonym:"O-Tyrosine"
@@ -41219,11 +41234,13 @@ xref: Origin: "F"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
+MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02099 ! residue modified by radical hydroxylation
 
 [Term]
 id: MOD:
 name: 3-Hydroxyphenylalanine
-def: "3-Hydroxyphenylalanine that is L-phenylalanine with a substituent hydroxy group at position 3" [PMID: 7408053]
+def: "A protein modification that effectively substitutes a hydroxy group at position 3 of L-phenylalanine" [PMID: 7408053]
 synonym: "L-m-Tyrosine"
 synonym:"(S)-2-amino-3-(3-hydroxyphenyl)propanoic acid"
 synonym:"Meta-Tyrosine"
@@ -41238,11 +41255,13 @@ xref: Origin: "F"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
+is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02099 ! residue modified by radical hydroxylation
 
 [Term]
 id: MOD:
 name: 4-Hydroxyphenylalanine
-def: "4-Hydroxyphenylalanine that is L-phenylalanine with a substituent hydroxy group at position 4" [PMID: 7408053]
+def: "A protein modification that effectively substitutes a hydroxy group at position 4 of L-phenylalanine" [PMID: 7408053]
 synonym: "L-Tyrosine"
 synonym:"(2S)-2-amino-3-(4-hydroxyphenyl)propanoic acid"
 synonym:"Phe->Tyr"
@@ -41257,15 +41276,17 @@ xref: Origin: "F"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
+is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02099 ! residue modified by radical hydroxylation
 
 [Term]
 id: MOD:
 name: L-2,5-dihydroxyphenylalanine (Phe)
 def: "A protein modification that effectively converts an L-tyrosine residue to L-2',5'-dihydroxyphenylalanine." [doi:10.1016/j.radphyschem.2003.11.008]
 subset: PSI-MOD-slim
-synonym: "2-amino-3-(2,5-dihydroxyphenyl)propanoic acid" 
+synonym: "2-amino-3-(2,5-dihydroxyphenyl)propanoic acid"
 synonym: "2,5-Dihydroxyphenylalanine"
-synonym: "2,5-Dioxyphenylalanin" 
+synonym: "2,5-Dioxyphenylalanin"
 xref: DiffAvg: "32.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 1"
 xref: DiffMono: "31.989828"
@@ -41282,7 +41303,7 @@ is_a: MOD:00914 ! modified L-phenylalanine residue
 id: MOD:
 name: 4-hydroxy-L-tryptophan
 def: "A protein modification that effectively converts an L-tryptophan residue to a 4-hydroxy-L-tryptophan." [PMID: 32911085]
-synonym: "(S)-2-Amino-3-(4-hydroxy-1H-indol-3-yl)propanoic acid" 
+synonym: "(S)-2-Amino-3-(4-hydroxy-1H-indol-3-yl)propanoic acid"
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 1"
 xref: DiffMono: "15.994915"
@@ -41298,7 +41319,7 @@ is_a: MOD:01622 ! monohydroxylated tryptophan
 id: MOD:
 name: 5-hydroxy-L-tryptophan
 def: "A protein modification that effectively converts an L-tryptophan residue to a 5-hydroxy-L-tryptophan." [PMID: 32911085]
-synonym: "(S)-2-Amino-3-(5-hydroxy-1H-indol-3-yl)propanoic acid" 
+synonym: "(S)-2-Amino-3-(5-hydroxy-1H-indol-3-yl)propanoic acid"
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 1"
 xref: DiffMono: "15.994915"
@@ -41314,7 +41335,7 @@ is_a: MOD:01622 ! monohydroxylated tryptophan
 id: MOD:
 name: 6-hydroxy-L-tryptophan
 def: "A protein modification that effectively converts an L-tryptophan residue to a 6-hydroxy-L-tryptophan." [PMID: 32911085]
-synonym: "(S)-2-Amino-3-(4-hydroxy-1H-indol-3-yl)propanoic acid" 
+synonym: "(S)-2-Amino-3-(4-hydroxy-1H-indol-3-yl)propanoic acid"
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 1"
 xref: DiffMono: "15.994915"
@@ -41330,7 +41351,7 @@ is_a: MOD:01622 ! monohydroxylated tryptophan
 id: MOD:
 name: oxindolylalanine
 def: "A protein modification that effectively converts an L-tryptophan residue to a oxindolylalanine." [PMID: 32911085]
-synonym: "Oxindolyl-L-alanine" 
+synonym: "Oxindolyl-L-alanine"
 synonym:"2-amino-3-(2-oxoindolin-3-yl)propanoic acid"
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 1"
@@ -41348,7 +41369,7 @@ id: MOD:
 name: 5-hydroxy-L-proline
 def: "A protein modification that effectively converts an L-proline residue to 5-hydroxy-L-proline" [ChEBI:18095, PubMed:11292863, PubMed:2400108, PubMed:3734192, RESID:AA0030]
 subset: PSI-MOD-slim
-synonym: "(2S,5S)-5-hydroxypyrrolidine-2-carboxylic acid" 
+synonym: "(2S,5S)-5-hydroxypyrrolidine-2-carboxylic acid"
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 1"
 xref: DiffMono: "15.994915"
@@ -41384,7 +41405,7 @@ subset: PSI-MOD-slim
 synonym: "dihydroxy" RELATED Unimod-description []
 synonym: "Dioxidation" RELATED PSI-MS-label []
 synonym: "Double oxidation of Trp" EXACT DeltaMass-label []
-synonym: "(2S)-2-amino-3-(4,5-dihydroxy-1H-indol-3-yl)propanoic acid" 
+synonym: "(2S)-2-amino-3-(4,5-dihydroxy-1H-indol-3-yl)propanoic acid"
 xref: DiffAvg: "32.00"
 xref: DiffFormula: "O 2"
 xref: DiffMono: "31.989829"
@@ -41406,7 +41427,7 @@ subset: PSI-MOD-slim
 synonym: "dihydroxy" RELATED Unimod-description []
 synonym: "Dioxidation" RELATED PSI-MS-label []
 synonym: "Double oxidation of Trp" EXACT DeltaMass-label []
-synonym: "(2S)-2-amino-3-(5,6-dihydroxy-1H-indol-3-yl)propanoic acid" 
+synonym: "(2S)-2-amino-3-(5,6-dihydroxy-1H-indol-3-yl)propanoic acid"
 xref: DiffAvg: "32.00"
 xref: DiffFormula: "O 2"
 xref: DiffMono: "31.989829"
@@ -41428,7 +41449,7 @@ subset: PSI-MOD-slim
 synonym: "dihydroxy" RELATED Unimod-description []
 synonym: "Dioxidation" RELATED PSI-MS-label []
 synonym: "Double oxidation of Trp" EXACT DeltaMass-label []
-synonym: "(2S)-2-amino-3-(5,7-dihydroxy-1H-indol-3-yl)propanoic acid" 
+synonym: "(2S)-2-amino-3-(5,7-dihydroxy-1H-indol-3-yl)propanoic acid"
 xref: DiffAvg: "32.00"
 xref: DiffFormula: "O 2"
 xref: DiffMono: "31.989829"
@@ -41450,9 +41471,9 @@ subset: PSI-MOD-slim
 synonym: "dihydroxy" RELATED Unimod-description []
 synonym: "Dioxidation" RELATED PSI-MS-label []
 synonym: "Double oxidation of Trp" EXACT DeltaMass-label []
-synonym: "(alphaS)-alpha-Amino-2,3-dihydro-3-hydroxy-2-oxo-1H-indole-3-propanoic acid" 
-synonym: "(2S)-2-amino-3-(3-hydroxy-2-oxo-1H-indol-3-yl)propanoic acid" 
-synonym: "Dioxindolyl-L-alanine" 
+synonym: "(alphaS)-alpha-Amino-2,3-dihydro-3-hydroxy-2-oxo-1H-indole-3-propanoic acid"
+synonym: "(2S)-2-amino-3-(3-hydroxy-2-oxo-1H-indol-3-yl)propanoic acid"
+synonym: "Dioxindolyl-L-alanine"
 xref: DiffAvg: "32.00"
 xref: DiffFormula: "O 2"
 xref: DiffMono: "31.989829"
