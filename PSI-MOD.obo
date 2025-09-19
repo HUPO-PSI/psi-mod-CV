@@ -41168,12 +41168,12 @@ is_a: MOD:00203 ! D-asparagine
 [Term]
 id: MOD:02098
 name: residue modified by radical mechanism
-def: "A chemical transformation driven by a radical reaction." []
+def: "A chemical transformation driven by a radical reaction." [doi:https://pubs.acs.org/doi/10.1021/ac035104h]
 
 [Term]
 id: MOD:02099
 name: residue modified by radical hydroxylation
-def: "A hydroxyl substition induced by a radical reaction." []
+def: "A hydroxyl substition induced by a radical reaction." [PMID:17683160]
 is_a: MOD:02098
 
 [Term]
@@ -41198,10 +41198,9 @@ is_a: MOD:00909 ! modified L-histidine residue
 is_a: MOD:02099 ! residue modified by radical hydroxylation
 
 [Term]
-id: MOD:
+id: MOD:02101
 name: 2-Amino-4,5-dioxopentanoic acid
 def: "A protein modification that effectively transforms a histidine side chain to that of 2-Amino-4,5-dioxopentanoic acid" [PMID:14670063]
-synonym: "Aspartylurea"
 subset: PSI-MOD-slim
 xref: DiffAvg: "-10.04"
 xref: DiffFormula: "H -2 C -1 N -2 O 2"
@@ -41212,12 +41211,11 @@ xref: MassMono: "127.026941"
 xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-xref: Unimod: "Unimod:1916"
 is_a: MOD:00909 ! modified L-histidine residue
 is_a: MOD:02099 ! residue modified by radical hydroxylation
 
 [Term]
-id: MOD:
+id: MOD:02102
 name: 2-Hydroxyphenylalanine
 def: "A protein modification that effectively substitutes a hydroxy group at position 2 of L-phenylalanine" [PMID:8509373]
 synonym: "DL-o-Tyrosine"
@@ -41238,7 +41236,7 @@ MOD:00914 ! modified L-phenylalanine residue
 is_a: MOD:02099 ! residue modified by radical hydroxylation
 
 [Term]
-id: MOD:
+id: MOD:02103
 name: 3-Hydroxyphenylalanine
 def: "A protein modification that effectively substitutes a hydroxy group at position 3 of L-phenylalanine" [PMID: 7408053]
 synonym: "L-m-Tyrosine"
@@ -41259,7 +41257,7 @@ is_a: MOD:00914 ! modified L-phenylalanine residue
 is_a: MOD:02099 ! residue modified by radical hydroxylation
 
 [Term]
-id: MOD:
+id: MOD:02104
 name: 4-Hydroxyphenylalanine
 def: "A protein modification that effectively substitutes a hydroxy group at position 4 of L-phenylalanine" [PMID: 7408053]
 synonym: "L-Tyrosine"
@@ -41280,7 +41278,7 @@ is_a: MOD:00914 ! modified L-phenylalanine residue
 is_a: MOD:02099 ! residue modified by radical hydroxylation
 
 [Term]
-id: MOD:
+id: MOD:02105
 name: L-2,5-dihydroxyphenylalanine (Phe)
 def: "A protein modification that effectively converts an L-tyrosine residue to L-2',5'-dihydroxyphenylalanine." [doi:10.1016/j.radphyschem.2003.11.008]
 subset: PSI-MOD-slim
@@ -41300,7 +41298,7 @@ is_a: MOD:00428 ! dihydroxylated residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
 
 [Term]
-id: MOD:
+id: MOD:02106
 name: 4-hydroxy-L-tryptophan
 def: "A protein modification that effectively converts an L-tryptophan residue to a 4-hydroxy-L-tryptophan." [PMID: 32911085]
 synonym: "(S)-2-Amino-3-(4-hydroxy-1H-indol-3-yl)propanoic acid"
@@ -41316,7 +41314,7 @@ xref: TermSpec: "none"
 is_a: MOD:01622 ! monohydroxylated tryptophan
 
 [Term]
-id: MOD:
+id: MOD:02107
 name: 5-hydroxy-L-tryptophan
 def: "A protein modification that effectively converts an L-tryptophan residue to a 5-hydroxy-L-tryptophan." [PMID: 32911085]
 synonym: "(S)-2-Amino-3-(5-hydroxy-1H-indol-3-yl)propanoic acid"
@@ -41332,7 +41330,7 @@ xref: TermSpec: "none"
 is_a: MOD:01622 ! monohydroxylated tryptophan
 
 [Term]
-id: MOD:
+id: MOD:02108
 name: 6-hydroxy-L-tryptophan
 def: "A protein modification that effectively converts an L-tryptophan residue to a 6-hydroxy-L-tryptophan." [PMID: 32911085]
 synonym: "(S)-2-Amino-3-(4-hydroxy-1H-indol-3-yl)propanoic acid"
@@ -41348,7 +41346,7 @@ xref: TermSpec: "none"
 is_a: MOD:01622 ! monohydroxylated tryptophan
 
 [Term]
-id: MOD:
+id: MOD:02109
 name: oxindolylalanine
 def: "A protein modification that effectively converts an L-tryptophan residue to a oxindolylalanine." [PMID: 32911085]
 synonym: "Oxindolyl-L-alanine"
@@ -41365,7 +41363,7 @@ xref: TermSpec: "none"
 is_a: MOD:01622 ! monohydroxylated tryptophan
 
 [Term]
-id: MOD:
+id: MOD:02110
 name: 5-hydroxy-L-proline
 def: "A protein modification that effectively converts an L-proline residue to 5-hydroxy-L-proline" [ChEBI:18095, PubMed:11292863, PubMed:2400108, PubMed:3734192, RESID:AA0030]
 subset: PSI-MOD-slim
@@ -41382,7 +41380,7 @@ xref: TermSpec: "none"
 is_a: MOD:01024 ! monohydroxylated proline
 
 [Term]
-id: MOD:
+id: MOD:02111
 name: (2S,4S)-5-hydroxyleucine
 def: "A protein modification that effectively converts an L-leucine residue to a (2S,4S)-5-hydroxyleucine." [PubMed:9164839]
 synonym: "(2S,4S)-2-amino-5-hydroxy-4-methylpentanoic acid"
@@ -41398,7 +41396,7 @@ xref: TermSpec: "none"
 is_a: MOD:01411 ! monohydroxylated leucine
 
 [Term]
-id: MOD:
+id: MOD:02112
 name: 4,5-Dihydroxytryptophan
 def: "A protein modification that converts an L-tryptophan residue to 4,5-Dihydroxytryptophan." [PubMed:16046449, PubMed:30267362]
 subset: PSI-MOD-slim
@@ -41420,7 +41418,7 @@ is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
-id: MOD:
+id: MOD:02113
 name: 5,6-Dihydroxytryptophan
 def: "A protein modification that converts an L-tryptophan residue to 5,6-Dihydroxytryptophan." [PubMed:16046449, PubMed:30267362]
 subset: PSI-MOD-slim
@@ -41442,7 +41440,7 @@ is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
-id: MOD:
+id: MOD:02114
 name: 5,7-Dihydroxytryptophan
 def: "A protein modification that converts an L-tryptophan residue to 5,7-Dihydroxytryptophan." [PubMed:16046449, PubMed:30267362]
 subset: PSI-MOD-slim
@@ -41464,7 +41462,7 @@ is_a: MOD:00679 ! carbon oxygenated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
-id: MOD:
+id: MOD:02115
 name: Dioxindolylalanine
 def: "A protein modification that converts an L-tryptophan residue to dioxindolylalanine." [PubMed:10554268, PubMed:32911085]
 subset: PSI-MOD-slim
