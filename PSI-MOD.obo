@@ -27587,6 +27587,9 @@ synonym: "beta-phenylserine" EXACT RESID-alternate []
 synonym: "hydroxylationf" EXACT OMSSA-label []
 synonym: "L-threo-3-phenylserine" EXACT RESID-alternate []
 synonym: "MOD_RES 3-hydroxyphenylalanine" EXACT UniProt-feature []
+synonym: "L-m-Tyrosine"
+synonym: "(S)-2-amino-3-(3-hydroxyphenyl)propanoic acid"
+synonym: "Meta-Tyrosine"
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 1"
 xref: DiffMono: "15.994915"
@@ -27599,6 +27602,7 @@ xref: TermSpec: "none"
 xref: uniprot.ptm:PTM-0346
 is_a: MOD:00677 ! hydroxylated residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02116 ! monohydroxylated phenylalanine
 
 [Term]
 id: MOD:01386
@@ -41164,6 +41168,137 @@ def: "A protein modification that modifies a D-asparagine residue." [PubMed:1868
 subset: PSI-MOD-slim
 synonym: "ModDAsn" EXACT PSI-MOD-label []
 is_a: MOD:00203 ! D-asparagine
+
+[Term]
+id: MOD:02098
+name: residue modified by radical mechanism
+def: "A chemical transformation driven by a radical reaction." [doi:https://pubs.acs.org/doi/10.1021/ac035104h]
+
+[Term]
+id: MOD:02099
+name: residue modified by radical hydroxylation
+def: "A hydroxyl substition induced by a radical reaction." [PMID:17683160]
+is_a: MOD:02098
+
+[Term]
+id: MOD:02100
+name: N2-Formyl-L-asparagine
+def: "A protein modification that effectively transforms an L-histidine residue to N2-formyl asparagine" [OSTI ID:6518101; doi:10.1016/0040-4039(91)80099-R]
+synonym: "Nω-formyl asparagine"
+synonym: "(2S)-4-amino-2-formamido-4-oxobutanoic acid"
+synonym: "Formylasparagine"
+subset: PSI-MOD-slim
+xref: DiffAvg: "4.97"
+xref: DiffFormula: "H -1 C -1 N -1 O 2"
+xref: DiffMono: "4.978930"
+xref: Formula: "C 5 H 6 N 2 O 3"
+xref: MassAvg: "142.04"
+xref: MassMono: "142.03784"
+xref: Origin: "H"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:1917"
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02099 ! residue modified by radical hydroxylation
+
+[Term]
+id: MOD:02101
+name: 2-Amino-4,5-dioxopentanoic acid
+def: "A protein modification that effectively transforms a histidine side chain to that of 2-Amino-4,5-dioxopentanoic acid" [PMID:14670063]
+subset: PSI-MOD-slim
+xref: DiffAvg: "-10.04"
+xref: DiffFormula: "H -2 C -1 N -2 O 2"
+xref: DiffMono: "-10.031969"
+xref: Formula: "C 5 H 5 N 1 O 3"
+xref: MassAvg: "127.03"
+xref: MassMono: "127.026941"
+xref: Origin: "H"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02099 ! residue modified by radical hydroxylation
+
+[Term]
+id: MOD:02102
+name: 2-hydroxy-L-phenylalanine
+def: "A protein modification that effectively converts a L-Phenylalanine residue to 2-hydroxy-L-phenylalanine." [PMID:8509373]
+synonym: "DL-o-Tyrosine"
+synonym: "2-amino-3-(2-hydroxyphenyl)propanoic acid"
+synonym: "O-Tyrosine"
+synonym: "o-tyrosine" EXACT [PSI-MOD-alternate]
+subset: PSI-MOD-slim
+xref: DiffAvg: "16.0"
+xref: DiffFormula: "O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 9 H 9 N 1 O 2"
+xref: MassAvg: "163.06"
+xref: MassMono: "163.063325"
+xref: Origin: "F"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:35"
+is_a: MOD:02116 ! monohydroxylated phenylalanine
+is_a: MOD:02099 ! residue modified by radical hydroxylation
+
+id: MOD:02104
+name: 4-hydroxy-L-phenylalanine
+def: "A protein modification that effectively substitutes a hydroxy group at position 4 of L-phenylalanine" [PMID:7408053]
+synonym: “L-tyrosine” EXACT PSI-MOD-name
+synonym: "L-Tyrosine"
+synonym:"(2S)-2-amino-3-(4-hydroxyphenyl)propanoic acid"
+synonym:"Phe->Tyr"
+subset: PSI-MOD-slim
+xref: DiffFormula: "O 1"
+xref: Origin: "F"
+xref: Unimod: "Unimod:35"
+xref: DiffAvg: "16.00"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 9 H 9 N 1 O 2"
+xref: MassAvg: "163.18"
+xref: MassMono: "163.063329"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02116 ! monohydroxylated phenylalanine
+
+[Term]
+id: MOD:02105
+name: L-2,5-dihydroxyphenylalanine (Phe)
+def: "A protein modification that effectively converts an L-tyrosine residue to L-2',5'-dihydroxyphenylalanine." [doi:10.1016/j.radphyschem.2003.11.008]
+subset: PSI-MOD-slim
+synonym: "2-amino-3-(2,5-dihydroxyphenyl)propanoic acid"
+synonym: "2,5-Dihydroxyphenylalanine"
+synonym: "2,5-Dioxyphenylalanin"
+xref: DiffAvg: "32.00"
+xref: DiffFormula: "C 0 H 0 N 0 O 1"
+xref: DiffMono: "31.989828"
+xref: Formula: "C 9 H 9 N 1 O 3"
+xref: MassAvg: "179.18"
+xref: MassMono: "179.058243"
+xref: Origin: "F"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:00428 ! dihydroxylated residue
+is_a: MOD:00914 ! modified L-phenylalanine residue
+
+[Term]
+id: MOD:02116
+name: monohydroxylated phenylalanine
+def: "A protein modification that effectively converts an L-phenylalanine residue to a monohydroxylated phenylalanine." [Unimod:35#F]
+subset: PSI-MOD-slim
+synonym: "Oxidation" RELATED PSI-MS-label []
+xref: DiffAvg: "16.00"
+xref: DiffFormula: "C 0 H 0 N 0 O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 6 H 12 N 2 O 2"
+xref: MassAvg: "144.17"
+xref: MassMono: "144.089878"
+xref: Origin: "F"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:35"
+is_a: MOD:00425 ! monohydroxylated residue
+is_a: MOD:00914 ! modified L-phenylalanine residue
 
 [Typedef]
 id: contains
