@@ -6021,12 +6021,12 @@ is_a: MOD:01163 ! guanylated residue
 id: MOD:00234
 name: L-cysteine glutathione disulfide
 def: "A protein modification that effectively converts an L-cysteine residue to S-glutathionyl-L-cysteine." [ChEBI:21264, DeltaMass:0, OMSSA:51, PubMed:3083866, PubMed:8344916, RESID:AA0229, Unimod:55]
-comment: From DeltaMass: Average Mass: 305
 comment: Glutamyl-transpeptidase cleaves glutathione into cysteinylglycine (Cys-Gly) and a Glu residue. [PubMed: 28537416]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-((2S)-2-((4R)-4-amino-4-carboxyl-1-oxobutyl)amino-3-(carboxylmethyl)amino-3-oxo-propyl)dithio-propanoic acid" EXACT RESID-systematic []
 synonym: "cysteinyl glutathione" EXACT RESID-alternate []
 synonym: "Glutathionation" EXACT DeltaMass-label []
+synonym: "Average Mass 305" RELATED DeltaMass-label []
 synonym: "Glutathione" RELATED PSI-MS-label []
 synonym: "glutathione disulfide" RELATED Unimod-description []
 synonym: "glutathionec" EXACT OMSSA-label []
