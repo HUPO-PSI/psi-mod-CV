@@ -2276,7 +2276,7 @@ synonym: "N-methyl Lysyl" EXACT DeltaMass-label []
 synonym: "N6-methyl-L-lysine" EXACT RESID-name []
 synonym: "N6-methylated L-lysine" EXACT PSI-MOD-alternate []
 synonym: "N6Me1Lys" EXACT PSI-MOD-label []
-xref: SMILES: "*N[C@@H](CCCCNC)C(=O)O*"
+xref: SMILES: "CNCCCC[C@H](N-*)C(-*)=O"
 xref: DiffAvg: "14.03"
 xref: DiffFormula: "C 1 H 2 N 0 O 0"
 xref: DiffMono: "14.015650"
