@@ -123,6 +123,8 @@
                       v-model="selectedOrigin"
                       :items="originOptions"
                       label="Filter by Origin (amino acid)"
+                      multiple
+                      chips
                       clearable
                       density="comfortable"
                       hide-details
@@ -446,7 +448,7 @@ const leafOnly = ref(false)
 const hasSmilesOnly = ref(false)
 
 // Origin filter state and options
-const selectedOrigin = ref<string | null>(null)
+const selectedOrigin = ref<string[]>([])
 const originOptions = computed<string[]>(() => {
   const set = new Set<string>()
   for (const m of modifications.value) {
@@ -459,7 +461,13 @@ const originOptions = computed<string[]>(() => {
       }
     }
   }
-  return Array.from(set).sort((a, b) => a.localeCompare(b))
+  // Sort so that single-character amino acids appear first, then others alphabetically
+  return Array.from(set).sort((a, b) => {
+    const aSingle = a.length === 1
+    const bSingle = b.length === 1
+    if (aSingle !== bSingle) return aSingle ? -1 : 1
+    return a.localeCompare(b)
+  })
 })
 
 const totalCount = computed(() => modifications.value.length)
@@ -496,10 +504,10 @@ const filteredItems = computed(() => {
     }
 
     // Origin filter
-    if (selectedOrigin.value) {
+    if (selectedOrigin.value.length) {
       const xr = findXref(mod, 'Origin')
       const originVal = xr ? String(xr.value).trim() : ''
-      if (originVal !== selectedOrigin.value) return false
+      if (!selectedOrigin.value.includes(originVal)) return false
     }
 
     // DiffMono filter
@@ -529,7 +537,7 @@ function resetFilters() {
   diffMonoRange.value = [diffMonoMinMax.value.min, diffMonoMinMax.value.max]
   massMonoRange.value = [massMonoMinMax.value.min, massMonoMinMax.value.max]
   // Reset Origin filter
-  selectedOrigin.value = null
+  selectedOrigin.value = []
   // Collapse any expanded rows
   expanded.value = []
 }
