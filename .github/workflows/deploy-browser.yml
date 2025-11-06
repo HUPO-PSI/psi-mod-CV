@@ -1,0 +1,74 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'yarn'
+          cache-dependency-path: psi-ms-CV-browser/yarn.lock
+
+      - name: Enable Corepack (Yarn)
+        run: corepack enable
+
+      - name: Install dependencies
+        working-directory: psi-ms-CV-browser
+        run: yarn install --frozen-lockfile
+
+      - name: Determine Vite base path for GitHub Pages
+        id: base
+        shell: bash
+        run: |
+          REPO="${GITHUB_REPOSITORY##*/}"
+          OWNER="${GITHUB_REPOSITORY%/*}"
+          if [[ "$REPO" == "${OWNER}.github.io" ]]; then
+            echo "BASE_PATH=/" >> "$GITHUB_OUTPUT"
+          else
+            echo "BASE_PATH=/$REPO/" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build site (with proper base)
+        working-directory: psi-ms-CV-browser
+        run: yarn build -- --base="${{ steps.base.outputs.BASE_PATH }}"
+
+      - name: Add SPA fallback (404.html)
+        working-directory: psi-ms-CV-browser
+        run: cp dist/index.html dist/404.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: psi-ms-CV-browser/dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
