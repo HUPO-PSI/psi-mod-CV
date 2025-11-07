@@ -208,7 +208,7 @@
                       :href="getChebiInfo(item)!.url"
                       target="_blank"
                       rel="noopener"
-                      color="secondary"
+                      color="deep-purple-lighten-1"
                       variant="tonal"
                       size="small"
                       class="font-weight-medium"
@@ -236,14 +236,32 @@
                   <span v-else class="text-medium-emphasis">N/A</span>
                 </template>
 
-                <!-- XRef text columns: Origin and TermSpec -->
+                <!-- XRef chip columns: Origin and TermSpec -->
                 <template v-slot:item.origin="{ item }">
-                  <span v-if="getXrefValue(item, 'Origin')">{{ getXrefValue(item, 'Origin') }}</span>
+                  <template v-if="getXrefValue(item, 'Origin')">
+                    <v-chip
+                      color="red-lighten-1"
+                      variant="tonal"
+                      size="small"
+                      class="font-weight-medium"
+                    >
+                      {{ getXrefValue(item, 'Origin') }}
+                    </v-chip>
+                  </template>
                   <span v-else class="text-medium-emphasis">N/A</span>
                 </template>
 
                 <template v-slot:item.termSpec="{ item }">
-                  <span v-if="getXrefValue(item, 'TermSpec')">{{ getXrefValue(item, 'TermSpec') }}</span>
+                  <template v-if="getXrefValue(item, 'TermSpec')">
+                    <v-chip
+                      color="secondary"
+                      variant="tonal"
+                      size="small"
+                      class="font-weight-medium"
+                    >
+                      {{ getXrefValue(item, 'TermSpec') }}
+                    </v-chip>
+                  </template>
                   <span v-else class="text-medium-emphasis">N/A</span>
                 </template>
 
@@ -554,7 +572,7 @@ const customKeySort: Record<string, any> = {}
 // Reset all filters and search to their initial values
 function resetFilters() {
   search.value = ''
-  leafOnly.value = false
+  leafOnly.value = true
   hasSmilesOnly.value = false
   // Reset ranges to the current global extents
   diffMonoRange.value = [diffMonoMinMax.value.min, diffMonoMinMax.value.max]
