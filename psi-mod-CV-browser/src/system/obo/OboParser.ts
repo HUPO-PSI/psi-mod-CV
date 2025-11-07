@@ -35,6 +35,11 @@ export class OboParser {
     let subset: string[] | undefined;
 
     function pushCurrent() {
+      // Skip obsolete terms entirely (do not include or link them)
+      if (isObsolete) {
+        reset();
+        return;
+      }
       if (!id || !name || !definition) {
         // Incomplete [Term] block; skip.
         reset();
@@ -50,7 +55,6 @@ export class OboParser {
         children: [],
       };
       if (definitionXrefs && definitionXrefs.length) term.definitionXrefs = definitionXrefs.slice();
-      if (isObsolete) term.isObsolete = true;
       if (comment) term.comment = comment;
       if (subset && subset.length) term.subset = subset.slice();
       terms.push(term);
