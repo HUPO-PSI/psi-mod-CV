@@ -45,52 +45,7 @@
               </div>
 
               <!-- Additional filters -->
-              <v-row class="align-center">
-                <v-col cols="12" md="6">
-                  <div class="mb-4">
-                    <div class="mb-1 d-flex align-center justify-space-between">
-                      <div class="text-subtitle-2">Filter by DiffMono</div>
-                      <div class="text-caption text-medium-emphasis">
-                        {{ diffMonoRangeDisplay }}
-                      </div>
-                    </div>
-                    <v-range-slider
-                      v-model="diffMonoRange"
-                      :min="diffMonoMinMax.min"
-                      :max="diffMonoMinMax.max"
-                      :step="10"
-                      color="primary"
-                      :thumb-label="true"
-                      density="comfortable"
-                      hide-details
-                    />
-                    <div class="text-caption text-medium-emphasis">
-                      Difference in monoisotopic mass relative to the unmodified residue (in Da). Move the handles to restrict modifications by mass delta.
-                    </div>
-                  </div>
-                  <div>
-                    <div class="mb-1 d-flex align-center justify-space-between">
-                      <div class="text-subtitle-2">Filter by MassMono</div>
-                      <div class="text-caption text-medium-emphasis">
-                        {{ massMonoRangeDisplay }}
-                      </div>
-                    </div>
-                    <v-range-slider
-                      v-model="massMonoRange"
-                      :min="massMonoMinMax.min"
-                      :max="massMonoMinMax.max"
-                      :step="10"
-                      color="primary"
-                      :thumb-label="true"
-                      density="comfortable"
-                      hide-details
-                    />
-                    <div class="text-caption text-medium-emphasis">
-                      Absolute monoisotopic mass of the modified residue or moiety (in Da). Move the handles to limit the mass window.
-                    </div>
-                  </div>
-                </v-col>
-
+              <v-row>
                 <v-col cols="12" md="6">
                   <div class="mb-4">
                     <v-checkbox
@@ -148,6 +103,51 @@
                     />
                     <div class="text-caption text-medium-emphasis">
                       Restrict to modifications with a specific TermSpec (e.g., N-term, C-term, Anywhere). Clear to include all.
+                    </div>
+                  </div>
+                </v-col>
+
+                <v-col cols="12" md="6">
+                  <div class="mb-4">
+                    <div class="mb-1 d-flex align-center justify-space-between">
+                      <div class="text-subtitle-2">Filter by DiffMono</div>
+                      <div class="text-caption text-medium-emphasis">
+                        {{ diffMonoRangeDisplay }}
+                      </div>
+                    </div>
+                    <v-range-slider
+                      v-model="diffMonoRange"
+                      :min="diffMonoMinMax.min"
+                      :max="diffMonoMinMax.max"
+                      :step="10"
+                      color="primary"
+                      :thumb-label="true"
+                      density="comfortable"
+                      hide-details
+                    />
+                    <div class="text-caption text-medium-emphasis">
+                      Difference in monoisotopic mass relative to the unmodified residue (in Da). Move the handles to restrict modifications by mass delta.
+                    </div>
+                  </div>
+                  <div>
+                    <div class="mb-1 d-flex align-center justify-space-between">
+                      <div class="text-subtitle-2">Filter by MassMono</div>
+                      <div class="text-caption text-medium-emphasis">
+                        {{ massMonoRangeDisplay }}
+                      </div>
+                    </div>
+                    <v-range-slider
+                      v-model="massMonoRange"
+                      :min="massMonoMinMax.min"
+                      :max="massMonoMinMax.max"
+                      :step="10"
+                      color="primary"
+                      :thumb-label="true"
+                      density="comfortable"
+                      hide-details
+                    />
+                    <div class="text-caption text-medium-emphasis">
+                      Absolute monoisotopic mass of the modified residue or moiety (in Da). Move the handles to limit the mass window.
                     </div>
                   </div>
                 </v-col>
@@ -254,7 +254,7 @@
                 <template v-slot:item.termSpec="{ item }">
                   <template v-if="getXrefValue(item, 'TermSpec')">
                     <v-chip
-                      color="secondary"
+                      color="orange-darken-2"
                       variant="tonal"
                       size="small"
                       class="font-weight-medium"
@@ -565,9 +565,25 @@ const augmentedItems = computed(() => {
   })
 })
 
-// Custom key sort placeholder (not strictly needed because augmentedItems exposes primitives)
-// Keeping it defined to avoid future warnings if extended
-const customKeySort: Record<string, any> = {}
+// Custom key sort: ensure N/A (empty) sorts first on ascending and last on descending for specific columns
+function compareNAFirst(a: unknown, b: unknown): number {
+  const av = (a ?? '').toString().trim()
+  const bv = (b ?? '').toString().trim()
+  const aEmpty = av.length === 0
+  const bEmpty = bv.length === 0
+  if (aEmpty && bEmpty) return 0
+  if (aEmpty) return 1
+  if (bEmpty) return -1
+  // Use localeCompare with numeric so strings like "CHEBI:2" < "CHEBI:10" numerically
+  return av.localeCompare(bv, undefined, { sensitivity: 'base', numeric: true })
+}
+
+const customKeySort: Record<string, (a: unknown, b: unknown) => number> = {
+  chebiId: compareNAFirst,
+  unimodId: compareNAFirst,
+  origin: compareNAFirst,
+  termSpec: compareNAFirst,
+}
 
 // Reset all filters and search to their initial values
 function resetFilters() {
