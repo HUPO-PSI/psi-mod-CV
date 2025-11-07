@@ -133,6 +133,23 @@
                       The amino acid of origin on which the modification takes place. Clear to include all.
                     </div>
                   </div>
+
+                  <!-- TermSpec filter -->
+                  <div class="mt-4">
+                    <v-select
+                      v-model="selectedTermSpec"
+                      :items="termSpecOptions"
+                      label="Filter by TermSpec"
+                      multiple
+                      chips
+                      clearable
+                      density="comfortable"
+                      hide-details
+                    />
+                    <div class="text-caption text-medium-emphasis">
+                      Restrict to modifications with a specific TermSpec (e.g., N-term, C-term, Anywhere). Clear to include all.
+                    </div>
+                  </div>
                 </v-col>
 
 
@@ -215,6 +232,17 @@
                       {{ getUnimodInfo(item)!.label }}
                     </v-chip>
                   </template>
+                  <span v-else class="text-medium-emphasis">N/A</span>
+                </template>
+
+                <!-- XRef text columns: Origin and TermSpec -->
+                <template v-slot:item.origin="{ item }">
+                  <span v-if="getXrefValue(item, 'Origin')">{{ getXrefValue(item, 'Origin') }}</span>
+                  <span v-else class="text-medium-emphasis">N/A</span>
+                </template>
+
+                <template v-slot:item.termSpec="{ item }">
+                  <span v-if="getXrefValue(item, 'TermSpec')">{{ getXrefValue(item, 'TermSpec') }}</span>
                   <span v-else class="text-medium-emphasis">N/A</span>
                 </template>
 
@@ -305,6 +333,18 @@ const headers = [
     sortable: false,
   },
   {
+    title: 'Origin',
+    key: 'origin',
+    width: '120px',
+    sortable: false,
+  },
+  {
+    title: 'TermSpec',
+    key: 'termSpec',
+    width: '140px',
+    sortable: false,
+  },
+  {
     title: 'Definition',
     key: 'definition',
     sortable: false,
@@ -332,6 +372,11 @@ function getNumericXref(item: any, key: string): number | undefined {
   if (!xr) return undefined
   const n = parseFloat(String(xr.value).replace(/,/g, ''))
   return Number.isFinite(n) ? n : undefined
+}
+
+function getXrefValue(item: any, key: string): string | null {
+  const xr = findXref(item, key)
+  return xr ? String(xr.value) : null
 }
 
 // ----- Ranges and filter state -----
@@ -409,6 +454,24 @@ const originOptions = computed<string[]>(() => {
   })
 })
 
+// TermSpec filter state and options (values from xrefs["TermSpec"])
+const selectedTermSpec = ref<string[]>([])
+const termSpecOptions = computed<string[]>(() => {
+  const set = new Set<string>()
+  for (const m of modifications.value) {
+    if (Array.isArray(m?.xrefs)) {
+      for (const xr of m.xrefs) {
+        if (typeof xr?.database === 'string' && xr.database.toLowerCase() === 'termspec') {
+          const val = String(xr.value).trim()
+          if (val) set.add(val)
+        }
+      }
+    }
+  }
+  // Simple alphabetical sort
+  return Array.from(set).sort((a, b) => a.localeCompare(b))
+})
+
 const totalCount = computed(() => modifications.value.length)
 
 // Apply search + filters
@@ -449,6 +512,13 @@ const filteredItems = computed(() => {
       if (!selectedOrigin.value.includes(originVal)) return false
     }
 
+    // TermSpec filter
+    if (selectedTermSpec.value.length) {
+      const xr = findXref(mod, 'TermSpec')
+      const termSpecVal = xr ? String(xr.value).trim() : ''
+      if (!selectedTermSpec.value.includes(termSpecVal)) return false
+    }
+
     // DiffMono filter
     if (applyDiff) {
       const v = getNumericXref(mod, 'DiffMono')
@@ -477,6 +547,8 @@ function resetFilters() {
   massMonoRange.value = [massMonoMinMax.value.min, massMonoMinMax.value.max]
   // Reset Origin filter
   selectedOrigin.value = []
+  // Reset TermSpec filter
+  selectedTermSpec.value = []
 }
 
 function getChebiInfo(item: any): { label: string; url: string } | null {
