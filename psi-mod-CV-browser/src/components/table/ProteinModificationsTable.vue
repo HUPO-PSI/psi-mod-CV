@@ -428,7 +428,7 @@ const massMonoRangeDisplay = computed(() => {
   return `${a.toFixed(0)} to ${b.toFixed(0)} Da`
 })
 
-const leafOnly = ref(false)
+const leafOnly = ref(true)
 const hasSmilesOnly = ref(false)
 
 // Origin filter state and options
