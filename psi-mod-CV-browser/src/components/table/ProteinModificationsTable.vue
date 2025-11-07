@@ -382,37 +382,37 @@ const headers = [
   {
     title: 'ID',
     key: 'id',
-    width: '150px',
+    width: '10%',
     sortable: true,
   },
   {
     title: 'Name',
     key: 'name',
-    width: '300px',
+    width: '30%',
     sortable: true,
   },
   {
     title: 'ChEBI ID',
     key: 'chebiId',
-    width: '140px',
+    width: '20%',
     sortable: true,
   },
   {
     title: 'Unimod ID',
     key: 'unimodId',
-    width: '140px',
+    width: '20%',
     sortable: true,
   },
   {
     title: 'Origin',
     key: 'origin',
-    width: '120px',
+    width: '20%',
     sortable: true,
   },
   {
     title: 'TermSpec',
     key: 'termSpec',
-    width: '140px',
+    width: '20%',
     sortable: true,
   }
 ]
