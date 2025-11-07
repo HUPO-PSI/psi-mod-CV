@@ -115,18 +115,46 @@
                         {{ diffMonoRangeDisplay }}
                       </div>
                     </div>
-                    <v-range-slider
-                      v-model="diffMonoRange"
-                      :min="diffMonoMinMax.min"
-                      :max="diffMonoMinMax.max"
-                      :step="10"
-                      color="primary"
-                      :thumb-label="true"
-                      density="comfortable"
-                      hide-details
-                    />
-                    <div class="text-caption text-medium-emphasis">
-                      Difference in monoisotopic mass relative to the unmodified residue (in Da). Move the handles to restrict modifications by mass delta.
+                    <div class="d-flex align-center">
+                      <v-text-field
+                        v-model.number="diffMonoMinVal"
+                        type="number"
+                        label="Min"
+                        :min="diffMonoMinMax.min"
+                        :max="diffMonoMinMax.max"
+                        :step="10"
+                        density="compact"
+                        hide-details
+                        class="mr-2"
+                        style="max-width: 100px"
+                      />
+                      <v-range-slider
+                        v-model="diffMonoRange"
+                        :min="diffMonoMinMax.min"
+                        :max="diffMonoMinMax.max"
+                        :step="10"
+                        color="primary"
+                        :thumb-label="true"
+                        density="comfortable"
+                        hide-details
+                        class="flex-grow-1 mx-2"
+                      />
+                      <v-text-field
+                        v-model.number="diffMonoMaxVal"
+                        type="number"
+                        label="Max"
+                        :min="diffMonoMinMax.min"
+                        :max="diffMonoMinMax.max"
+                        :step="10"
+                        density="compact"
+                        hide-details
+                        class="ml-2"
+                        style="max-width: 100px"
+                      />
+                    </div>
+
+                    <div class="text-caption text-medium-emphasis mt-1">
+                      Difference in monoisotopic mass relative to the unmodified residue (in Da). Move the handles or enter values to restrict modifications by mass delta.
                     </div>
                   </div>
                   <div>
@@ -136,18 +164,46 @@
                         {{ massMonoRangeDisplay }}
                       </div>
                     </div>
-                    <v-range-slider
-                      v-model="massMonoRange"
-                      :min="massMonoMinMax.min"
-                      :max="massMonoMinMax.max"
-                      :step="10"
-                      color="primary"
-                      :thumb-label="true"
-                      density="comfortable"
-                      hide-details
-                    />
-                    <div class="text-caption text-medium-emphasis">
-                      Absolute monoisotopic mass of the modified residue or moiety (in Da). Move the handles to limit the mass window.
+                    <div class="d-flex align-center gap-2">
+                      <v-text-field
+                        v-model.number="massMonoMinVal"
+                        type="number"
+                        label="Min"
+                        :min="massMonoMinMax.min"
+                        :max="massMonoMinMax.max"
+                        :step="10"
+                        density="compact"
+                        hide-details
+                        class="mr-2"
+                        style="max-width: 100px"
+                      />
+                      <v-range-slider
+                        v-model="massMonoRange"
+                        :min="massMonoMinMax.min"
+                        :max="massMonoMinMax.max"
+                        :step="10"
+                        color="primary"
+                        :thumb-label="true"
+                        density="comfortable"
+                        hide-details
+                        class="flex-grow-1 mx-2"
+                      />
+                      <v-text-field
+                        v-model.number="massMonoMaxVal"
+                        type="number"
+                        label="Max"
+                        :min="massMonoMinMax.min"
+                        :max="massMonoMinMax.max"
+                        :step="10"
+                        density="compact"
+                        hide-details
+                        class="ml-2"
+                        style="max-width: 100px"
+                      />
+                    </div>
+
+                    <div class="text-caption text-medium-emphasis mt-1">
+                      Absolute monoisotopic mass of the modified residue or moiety (in Da). Move the handles or enter values to limit the mass window.
                     </div>
                   </div>
                 </v-col>
@@ -436,6 +492,56 @@ const diffMonoRangeDisplay = computed(() => {
 const massMonoRangeDisplay = computed(() => {
   const [a, b] = massMonoRange.value
   return `${a.toFixed(0)} to ${b.toFixed(0)} Da`
+})
+
+// Numeric input proxies for manual editing of range endpoints, with clamping
+function clamp(val: number, min: number, max: number): number {
+  if (!Number.isFinite(val)) return min
+  return Math.min(Math.max(val, min), max)
+}
+
+const diffMonoMinVal = computed<number>({
+  get() {
+    return diffMonoRange.value[0]
+  },
+  set(v: number) {
+    const mm = diffMonoMinMax.value
+    const min = clamp(v, mm.min, mm.max)
+    // ensure min does not exceed current max
+    diffMonoRange.value = [Math.min(min, diffMonoRange.value[1]), diffMonoRange.value[1]]
+  }
+})
+const diffMonoMaxVal = computed<number>({
+  get() {
+    return diffMonoRange.value[1]
+  },
+  set(v: number) {
+    const mm = diffMonoMinMax.value
+    const max = clamp(v, mm.min, mm.max)
+    // ensure max is not below current min
+    diffMonoRange.value = [diffMonoRange.value[0], Math.max(max, diffMonoRange.value[0])]
+  }
+})
+
+const massMonoMinVal = computed<number>({
+  get() {
+    return massMonoRange.value[0]
+  },
+  set(v: number) {
+    const mm = massMonoMinMax.value
+    const min = clamp(v, mm.min, mm.max)
+    massMonoRange.value = [Math.min(min, massMonoRange.value[1]), massMonoRange.value[1]]
+  }
+})
+const massMonoMaxVal = computed<number>({
+  get() {
+    return massMonoRange.value[1]
+  },
+  set(v: number) {
+    const mm = massMonoMinMax.value
+    const max = clamp(v, mm.min, mm.max)
+    massMonoRange.value = [massMonoRange.value[0], Math.max(max, massMonoRange.value[0])]
+  }
 })
 
 const leafOnly = ref(true)
