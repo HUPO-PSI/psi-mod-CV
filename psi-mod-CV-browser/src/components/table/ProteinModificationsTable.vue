@@ -176,7 +176,8 @@
             <template v-if="!error">
               <v-data-table-virtual
                 :headers="headers"
-                :items="filteredItems"
+                :items="augmentedItems"
+                :custom-key-sort="customKeySort"
                 :search="''"
                 fixed-header
                 height="min(600px, max(300px, calc(100vh - 500px)))"
@@ -244,10 +245,6 @@
                 <template v-slot:item.termSpec="{ item }">
                   <span v-if="getXrefValue(item, 'TermSpec')">{{ getXrefValue(item, 'TermSpec') }}</span>
                   <span v-else class="text-medium-emphasis">N/A</span>
-                </template>
-
-                <template v-slot:item.definition="{ item }">
-                  <span class="text-medium-emphasis">{{ item.definition }}</span>
                 </template>
 
 
@@ -324,31 +321,26 @@ const headers = [
     title: 'ChEBI ID',
     key: 'chebiId',
     width: '140px',
-    sortable: false,
+    sortable: true,
   },
   {
     title: 'Unimod ID',
     key: 'unimodId',
     width: '140px',
-    sortable: false,
+    sortable: true,
   },
   {
     title: 'Origin',
     key: 'origin',
     width: '120px',
-    sortable: false,
+    sortable: true,
   },
   {
     title: 'TermSpec',
     key: 'termSpec',
     width: '140px',
-    sortable: false,
-  },
-  {
-    title: 'Definition',
-    key: 'definition',
-    sortable: false,
-  },
+    sortable: true,
+  }
 ]
 
 
@@ -537,6 +529,28 @@ const filteredItems = computed(() => {
   })
 })
 
+// Provide primitive fields on the items for columns that render from xrefs, so built-in sorting works
+const augmentedItems = computed(() => {
+  return filteredItems.value.map((m: any) => {
+    const chebi = getChebiInfo(m)
+    const unimod = getUnimodInfo(m)
+    const origin = getXrefValue(m, 'Origin') ?? ''
+    const termSpec = getXrefValue(m, 'TermSpec') ?? ''
+    // Keep original object props and add sortable primitive props
+    return {
+      ...m,
+      chebiId: chebi ? chebi.label : '',
+      unimodId: unimod ? unimod.label : '',
+      origin,
+      termSpec,
+    }
+  })
+})
+
+// Custom key sort placeholder (not strictly needed because augmentedItems exposes primitives)
+// Keeping it defined to avoid future warnings if extended
+const customKeySort: Record<string, any> = {}
+
 // Reset all filters and search to their initial values
 function resetFilters() {
   search.value = ''
@@ -575,6 +589,35 @@ function getUnimodInfo(item: any): { label: string; url: string } | null {
   const label = `Unimod:${unimodNum}`
   const url = `https://www.unimod.org/modifications_view.php?editid1=${encodeURIComponent(unimodNum!)}`
   return { label, url }
+}
+
+// ----- Helpers for sorting -----
+function extractChebiNumber(item: any): number | undefined {
+  const refs: string[] | undefined = item?.definitionXrefs
+  if (!Array.isArray(refs) || !refs.length) return undefined
+  const ref = refs.find(r => /^chebi:\s*/i.test(r))
+  if (!ref) return undefined
+  const m = ref.match(/chebi:\s*([0-9]+)/i)
+  if (!m) return undefined
+  const n = parseInt(m[1], 10)
+  return Number.isFinite(n) ? n : undefined
+}
+
+function extractUnimodNumber(item: any): number | undefined {
+  const refs: string[] | undefined = item?.definitionXrefs
+  if (!Array.isArray(refs) || !refs.length) return undefined
+  const ref = refs.find(r => /^unimod:\s*/i.test(r))
+  if (!ref) return undefined
+  const m = ref.match(/unimod:\s*([0-9]+)/i)
+  if (!m) return undefined
+  const n = parseInt(m[1], 10)
+  return Number.isFinite(n) ? n : undefined
+}
+
+function padNumber(n: number, width = 7): string {
+  const s = String(Math.floor(Math.abs(n)))
+  if (s.length >= width) return s
+  return '0'.repeat(width - s.length) + s
 }
 </script>
 
