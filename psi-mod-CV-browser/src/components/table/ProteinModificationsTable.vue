@@ -166,6 +166,7 @@
                 class="elevation-0"
                 hover
                 item-value="id"
+                @click:row="onRowClick"
               >
                 <template v-slot:item.id="{ item }">
                   <v-chip
@@ -221,11 +222,6 @@
                   <span class="text-medium-emphasis">{{ item.definition }}</span>
                 </template>
 
-                <template v-slot:item.actions="{ item }">
-                  <v-btn size="small" color="primary" variant="tonal" @click="openDetails(item)">
-                    Details
-                  </v-btn>
-                </template>
 
                 <template v-slot:no-data>
                   <v-alert type="info" variant="tonal" class="ma-4">
@@ -267,6 +263,18 @@ function openDetails(item: any) {
   detailsOpen.value = true
 }
 
+function onRowClick(ev: MouseEvent, row: any) {
+  // Ignore clicks on interactive elements (links, buttons, chips)
+  const target = ev.target as HTMLElement | null
+  if (target && target.closest('a, button, .v-btn, .v-chip, [role="button"]')) {
+    return
+  }
+  const item = row && (row.item ?? row.raw ?? row)
+  if (item) {
+    openDetails(item)
+  }
+}
+
 onMounted(() => {
   oboStore.loadFromOBO()
 })
@@ -300,13 +308,6 @@ const headers = [
     title: 'Definition',
     key: 'definition',
     sortable: false,
-  },
-  {
-    title: 'Actions',
-    key: 'actions',
-    width: '120px',
-    sortable: false,
-    align: 'end',
   },
 ]
 
@@ -512,6 +513,11 @@ function getUnimodInfo(item: any): { label: string; url: string } | null {
 
 :deep(.v-table) {
   border-radius: 0 0 12px 12px;
+}
+
+/* Make table rows feel interactive */
+:deep(.v-data-table__tr) {
+  cursor: pointer;
 }
 
 /* Soft hover color without relying on Vuetify CSS vars to appease type checking */

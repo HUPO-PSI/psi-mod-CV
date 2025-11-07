@@ -2,9 +2,8 @@
   <v-dialog
     :model-value="modelValue"
     @update:modelValue="(v: boolean) => emit('update:modelValue', v)"
-    max-width="900"
+    max-width="2000"
     transition="dialog-bottom-transition"
-    persistent
   >
     <v-card rounded="lg">
       <v-card-title class="d-flex align-center bg-primary text-white">
