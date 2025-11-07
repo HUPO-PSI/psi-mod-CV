@@ -18,6 +18,7 @@ declare module 'vue' {
     ProteinModificationsFilters: typeof import('./components/table/ProteinModificationsFilters.vue')['default']
     ProteinModificationsMainTable: typeof import('./components/ProteinModificationsMainTable.vue')['default']
     ProteinModificationsTable: typeof import('./components/table/ProteinModificationsTable.vue')['default']
+    RangeSliderInput: typeof import('./components/common/RangeSliderInput.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SmilesView: typeof import('./components/smiles/SmilesView.vue')['default']

@@ -103,104 +103,23 @@
           </v-col>
 
           <v-col cols="12" md="6">
-            <div class="mb-4">
-              <div class="mb-1 d-flex align-center justify-space-between">
-                <div class="text-subtitle-2">Filter by DiffMono</div>
-                <div class="text-caption text-medium-emphasis">
-                  {{ diffMonoRangeDisplay }}
-                </div>
-              </div>
-              <div class="d-flex align-center">
-                <v-text-field
-                  v-model.number="diffMonoMinVal"
-                  type="number"
-                  label="Min"
-                  :min="diffMonoMinMax.min"
-                  :max="diffMonoMinMax.max"
-                  :step="10"
-                  density="compact"
-                  hide-details
-                  class="mr-2"
-                  style="max-width: 100px"
-                />
-                <v-range-slider
-                  v-model="diffMonoRange"
-                  :min="diffMonoMinMax.min"
-                  :max="diffMonoMinMax.max"
-                  :step="10"
-                  color="primary"
-                  :thumb-label="true"
-                  density="comfortable"
-                  hide-details
-                  class="flex-grow-1 mx-2"
-                />
-                <v-text-field
-                  v-model.number="diffMonoMaxVal"
-                  type="number"
-                  label="Max"
-                  :min="diffMonoMinMax.min"
-                  :max="diffMonoMinMax.max"
-                  :step="10"
-                  density="compact"
-                  hide-details
-                  class="ml-2"
-                  style="max-width: 100px"
-                />
-              </div>
+            <RangeSliderInput
+              v-model="diffMonoRange"
+              label="Filter by DiffMono"
+              :min="diffMonoMinMax.min"
+              :max="diffMonoMinMax.max"
+              :step="10"
+              description="Difference in monoisotopic mass relative to the unmodified residue (in Da). Move the handles or enter values to restrict modifications by mass delta."
+            />
 
-              <div class="text-caption text-medium-emphasis mt-1">
-                Difference in monoisotopic mass relative to the unmodified residue (in Da). Move the handles or enter values to restrict modifications by mass delta.
-              </div>
-            </div>
-            <div>
-              <div class="mb-1 d-flex align-center justify-space-between">
-                <div class="text-subtitle-2">Filter by MassMono</div>
-                <div class="text-caption text-medium-emphasis">
-                  {{ massMonoRangeDisplay }}
-                </div>
-              </div>
-              <div class="d-flex align-center gap-2">
-                <v-text-field
-                  v-model.number="massMonoMinVal"
-                  type="number"
-                  label="Min"
-                  :min="massMonoMinMax.min"
-                  :max="massMonoMinMax.max"
-                  :step="10"
-                  density="compact"
-                  hide-details
-                  class="mr-2"
-                  style="max-width: 100px"
-                />
-                <v-range-slider
-                  v-model="massMonoRange"
-                  :min="massMonoMinMax.min"
-                  :max="massMonoMinMax.max"
-                  :step="10"
-                  color="primary"
-                  :thumb-label="true"
-                  density="comfortable"
-                  hide-details
-                  class="flex-grow-1 mx-2"
-                />
-                <v-text-field
-                  v-model.number="massMonoMaxVal"
-                  type="number"
-                  label="Max"
-                  :min="massMonoMinMax.min"
-                  :max="massMonoMinMax.max"
-                  :step="10"
-                  density="compact"
-                  hide-details
-                  class="ml-2"
-                  style="max-width: 100px"
-                />
-              </div>
-
-              <div class="text-caption text-medium-emphasis mt-1">
-                Absolute monoisotopic mass of the modified residue or moiety (in Da). Move the handles or enter values to limit the mass window.
-              </div>
-            </div>
+            <RangeSliderInput
+              v-model="massMonoRange"
+              label="Filter by MassMono"
+              :min="massMonoMinMax.min"
+              :max="massMonoMinMax.max"
+              :step="10"
+              description="Absolute monoisotopic mass of the modified residue or moiety (in Da). Move the handles or enter values to limit the mass window."
+            />
           </v-col>
 
           <!-- Small summary -->
@@ -217,6 +136,7 @@
 
 <script lang="ts" setup>
 import { useProteinModificationsFilters } from '@/composables/useProteinModificationsFilters'
+import RangeSliderInput from '@/components/common/RangeSliderInput.vue'
 
 const {
   search,
@@ -226,14 +146,8 @@ const {
   selectedTermSpec,
   diffMonoRange,
   massMonoRange,
-  diffMonoMinVal,
-  diffMonoMaxVal,
-  massMonoMinVal,
-  massMonoMaxVal,
   diffMonoMinMax,
   massMonoMinMax,
-  diffMonoRangeDisplay,
-  massMonoRangeDisplay,
   originOptions,
   termSpecOptions,
   totalCount,
