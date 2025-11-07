@@ -13,6 +13,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    ProteinModificationDetailsDialog: typeof import('./components/modifications/ProteinModificationDetailsDialog.vue')['default']
     ProteinModificationsFilters: typeof import('./components/ProteinModificationsFilters.vue')['default']
     ProteinModificationsMainTable: typeof import('./components/ProteinModificationsMainTable.vue')['default']
     ProteinModificationsTable: typeof import('./components/table/ProteinModificationsTable.vue')['default']

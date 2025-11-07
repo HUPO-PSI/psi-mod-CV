@@ -165,9 +165,7 @@
                 height="min(600px, max(300px, calc(100vh - 500px)))"
                 class="elevation-0"
                 hover
-                show-expand
                 item-value="id"
-                v-model:expanded="expanded"
               >
                 <template v-slot:item.id="{ item }">
                   <v-chip
@@ -223,95 +221,24 @@
                   <span class="text-medium-emphasis">{{ item.definition }}</span>
                 </template>
 
+                <template v-slot:item.actions="{ item }">
+                  <v-btn size="small" color="primary" variant="tonal" @click="openDetails(item)">
+                    Details
+                  </v-btn>
+                </template>
+
                 <template v-slot:no-data>
                   <v-alert type="info" variant="tonal" class="ma-4">
                     No modifications found in the database.
                   </v-alert>
                 </template>
 
-                <!-- Expanded row content -->
-                <template v-slot:expanded-row="{ item, columns }">
-                  <td :colspan="columns.length">
-                    <v-expand-transition>
-                      <div class="pa-4 expanded-row">
-                        <v-row>
-                          <v-col cols="12" md="4">
-                            <div class="text-subtitle-1 font-weight-medium mb-2">Cross-references</div>
-                            <div v-if="item.xrefs && item.xrefs.length">
-                              <v-table density="compact" class="bg-transparent">
-                                <tbody>
-                                <tr v-for="(xr, idx) in item.xrefs" :key="idx">
-                                  <td>
-                                    <span class="font-weight-medium">{{ xr.database }}</span>
-                                  </td>
-                                  <td>
-                                    <span>{{ xr.value }}</span>
-                                  </td>
-                                </tr>
-                                </tbody>
-                              </v-table>
-                            </div>
-                            <div v-else class="text-medium-emphasis">No xrefs available.</div>
-
-                            <div v-if="item.comment" class="mt-4">
-                              <div class="text-subtitle-1 font-weight-medium mb-1">Comment</div>
-                              <div class="text-body-2">{{ item.comment }}</div>
-                            </div>
-                          </v-col>
-                          <v-col md="4">
-                            <!-- Hierarchy section: Parents and Children IDs -->
-                            <div>
-                              <div class="text-subtitle-1 font-weight-medium mb-2">Hierarchy</div>
-
-                              <div class="mb-2">
-                                <div class="text-body-2 font-weight-medium mb-1">Direct parents</div>
-                                <div v-if="item.parents && item.parents.length" class="d-flex flex-wrap gap-2">
-                                  <v-chip
-                                    v-for="(p, idx) in item.parents"
-                                    :key="`parent-${idx}-${p.id}`"
-                                    size="small"
-                                    color="secondary"
-                                    variant="tonal"
-                                    class="mr-2 mb-2"
-                                    title="Parent term ID"
-                                  >
-                                    {{ p.id }}
-                                  </v-chip>
-                                </div>
-                                <div v-else class="text-medium-emphasis">None</div>
-                              </div>
-                              <div>
-                                <div class="text-body-2 font-weight-medium mb-1">Direct children</div>
-                                <div v-if="item.children && item.children.length" class="d-flex flex-wrap gap-2">
-                                  <v-chip
-                                    v-for="(c, idx) in item.children"
-                                    :key="`child-${idx}-${c.id}`"
-                                    size="small"
-                                    color="secondary"
-                                    variant="tonal"
-                                    class="mr-2 mb-2"
-                                    title="Child term ID"
-                                  >
-                                    {{ c.id }}
-                                  </v-chip>
-                                </div>
-                                <div v-else class="text-medium-emphasis">None</div>
-                              </div>
-                            </div>
-                          </v-col>
-                          <v-col cols="12" md="4">
-                            <div class="text-subtitle-1 font-weight-medium mb-2">Structure (SMILES)</div>
-                            <div class="d-flex justify-center bg-white">
-                              <SmilesView v-if="getSmiles(item)" :smiles="getSmiles(item)!" :width="300" :height="300" theme="light" />
-                              <div v-else class="text-medium-emphasis pa-4">No SMILES available in xrefs.</div>
-                            </div>
-                          </v-col>
-                        </v-row>
-                      </div>
-                    </v-expand-transition>
-                  </td>
-                </template>
               </v-data-table-virtual>
+
+              <ProteinModificationDetailsDialog
+                v-model="detailsOpen"
+                :item="selectedItem"
+              />
             </template>
             <template v-else>
               <v-alert type="error" variant="tonal" class="ma-4">
@@ -328,11 +255,17 @@
 <script lang="ts" setup>
 import { ref, computed, onMounted, watch } from 'vue'
 import { useOboStore } from '@/stores/obo'
-import SmilesView from '@/components/smiles/SmilesView.vue'
+import ProteinModificationDetailsDialog from '@/components/modifications/ProteinModificationDetailsDialog.vue'
 
 const oboStore = useOboStore()
 const search = ref('')
-const expanded = ref<string[]>([])
+const detailsOpen = ref(false)
+const selectedItem = ref<any | null>(null)
+
+function openDetails(item: any) {
+  selectedItem.value = item
+  detailsOpen.value = true
+}
 
 onMounted(() => {
   oboStore.loadFromOBO()
@@ -368,10 +301,15 @@ const headers = [
     key: 'definition',
     sortable: false,
   },
+  {
+    title: 'Actions',
+    key: 'actions',
+    width: '120px',
+    sortable: false,
+    align: 'end',
+  },
 ]
 
-// Virtual table viewport height (px)
-const tableHeight = 600
 
 const modifications = computed(() => oboStore.allTerms)
 const error = computed(() => oboStore.error)
@@ -538,8 +476,6 @@ function resetFilters() {
   massMonoRange.value = [massMonoMinMax.value.min, massMonoMinMax.value.max]
   // Reset Origin filter
   selectedOrigin.value = []
-  // Collapse any expanded rows
-  expanded.value = []
 }
 
 function getChebiInfo(item: any): { label: string; url: string } | null {
@@ -590,11 +526,5 @@ function getUnimodInfo(item: any): { label: string; url: string } | null {
 :deep(.v-list-item-title) {
   white-space: normal;
   word-break: break-word;
-}
-
-/* Optional soft background for expanded area */
-.expanded-row {
-  background-color: rgba(0, 0, 0, 0.02);
-  border-radius: 8px;
 }
 </style>
