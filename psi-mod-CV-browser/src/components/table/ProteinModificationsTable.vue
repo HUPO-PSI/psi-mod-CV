@@ -328,7 +328,7 @@
 <script lang="ts" setup>
 import { ref, computed, onMounted, watch } from 'vue'
 import { useOboStore } from '@/stores/obo'
-import SmilesView from '@/components/SmilesView.vue'
+import SmilesView from '@/components/smiles/SmilesView.vue'
 
 const oboStore = useOboStore()
 const search = ref('')
