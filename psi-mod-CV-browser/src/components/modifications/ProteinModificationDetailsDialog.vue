@@ -89,7 +89,7 @@
           <v-col cols="12" md="4">
             <div class="text-subtitle-1 font-weight-medium mb-2">Structure (SMILES)</div>
             <div class="d-flex bg-white">
-              <SmilesView v-if="smiles" :smiles="smiles" :width="300" :height="300" theme="light" />
+              <SmilesView v-if="smiles" :smiles="smiles" :width="300" :height="300" theme="light" :filename="filename" />
               <div v-else class="text-medium-emphasis">No SMILES available in xrefs.</div>
             </div>
           </v-col>
@@ -137,6 +137,13 @@ function findXref(item: ModItem | null | undefined, key: string) {
 const smiles = computed(() => {
   const xr = findXref(props.item, 'SMILES')
   return xr ? (xr as any).value as string : null
+})
+
+const filename = computed(() => {
+  if (!props.item) {
+    return 'smiles-visualization';
+  }
+  return `psimod-${props.item.id}-smiles-visualization`;
 })
 
 function close() {

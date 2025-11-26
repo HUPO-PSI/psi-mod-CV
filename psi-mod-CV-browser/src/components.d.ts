@@ -12,11 +12,9 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     ProteinModificationDetailsDialog: typeof import('./components/modifications/ProteinModificationDetailsDialog.vue')['default']
     ProteinModificationsDataTable: typeof import('./components/table/ProteinModificationsDataTable.vue')['default']
     ProteinModificationsFilters: typeof import('./components/table/ProteinModificationsFilters.vue')['default']
-    ProteinModificationsMainTable: typeof import('./components/ProteinModificationsMainTable.vue')['default']
     ProteinModificationsTable: typeof import('./components/table/ProteinModificationsTable.vue')['default']
     RangeSliderInput: typeof import('./components/common/RangeSliderInput.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
