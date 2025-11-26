@@ -79,3 +79,19 @@ This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library wi
 [MIT](http://opensource.org/licenses/MIT)
 
 Copyright (c) 2016-present Vuetify, LLC
+
+## SMILES Annotation Coverage Indicator
+
+The application displays a circular progress indicator in the top app bar showing the percentage of PSI-MOD terms annotated with a SMILES structure. The percentage is computed as:
+
+```
+SMILES % = (# terms having at least one xref with database === 'SMILES') / (total non‑obsolete terms) * 100
+```
+
+Behavior:
+- While the OBO file is loading: indeterminate spinner.
+- On error: red chip stating "SMILES error".
+- After load: circular progress with percentage label (precision 1 by default; values <0.1% shown as <0.1%).
+- Tooltip shows raw counts, e.g. `37 of 120 terms have SMILES structures (30.8%)`.
+
+Customization: Adjust precision via the `precision` prop on `<SmilesStatus />`.

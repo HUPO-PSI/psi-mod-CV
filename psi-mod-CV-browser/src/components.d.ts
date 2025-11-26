@@ -19,6 +19,7 @@ declare module 'vue' {
     RangeSliderInput: typeof import('./components/common/RangeSliderInput.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SmilesStatus: typeof import('./components/smiles/SmilesStatus.vue')['default']
     SmilesView: typeof import('./components/smiles/SmilesView.vue')['default']
   }
 }

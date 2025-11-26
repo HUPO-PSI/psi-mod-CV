@@ -8,6 +8,10 @@
       <v-app-bar-title class="font-weight-bold">
         PSI-MOD Peptide Modifications Browser
       </v-app-bar-title>
+
+      <!-- Spacer pushes status to right side -->
+      <v-spacer />
+      <SmilesStatus class="mr-4" />
     </v-app-bar>
 
     <v-main class="bg-grey-lighten-4">
@@ -19,5 +23,5 @@
 </template>
 
 <script lang="ts" setup>
-  //
+// Component auto-registered by unplugin-vue-components
 </script>
