@@ -1,13 +1,22 @@
 <template>
-  <div class="smiles-view d-inline-flex flex-column ga-2">
-    <svg
-      :id="svgId"
-      ref="svgRef"
-      :width="width"
-      :height="height"
-      xmlns="http://www.w3.org/2000/svg"
-    ></svg>
+  <div class="d-flex flex-column">
+    <v-card class="mb-2">
+      <v-card-text>
+        <div class="smiles-view d-inline-flex flex-column ga-2">
+          <svg
+            :id="svgId"
+            ref="svgRef"
+            :width="width"
+            :height="height"
+            xmlns="http://www.w3.org/2000/svg"
+          ></svg>
 
+          <div v-if="error" class="error">
+            {{ error }}
+          </div>
+        </div>
+      </v-card-text>
+    </v-card>
     <v-menu v-model="isMenuOpen" location="bottom" transition="fade-transition">
       <template #activator="{ props: menuProps }">
         <v-btn
@@ -17,7 +26,7 @@
           :loading="isRendering"
           prepend-icon="mdi-menu-down"
         >
-          Download visualization
+          Download image
         </v-btn>
       </template>
       <v-list>
@@ -33,10 +42,6 @@
         />
       </v-list>
     </v-menu>
-
-    <div v-if="error" class="error">
-      {{ error }}
-    </div>
   </div>
 </template>
 
