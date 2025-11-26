@@ -5,12 +5,12 @@
     transition="dialog-bottom-transition"
     @update:model-value="(v: boolean) => emit('update:modelValue', v)"
   >
-    <v-card rounded="lg">
+    <v-card rounded="lg" min-height="650">
       <v-card-title class="d-flex align-center bg-primary text-white">
         <v-icon class="mr-2">mdi-information</v-icon>
         <div class="d-flex flex-column">
-          <span class="text-subtitle-1 font-weight-bold">{{ item?.id || 'Modification' }}</span>
-          <span class="text-body-2">{{ item?.name }}</span>
+          <span class="text-subtitle-1 font-weight-bold">{{ currentItem?.id || 'Modification' }}</span>
+          <span class="text-body-2">{{ currentItem?.name }}</span>
         </div>
         <v-spacer />
         <v-btn color="white" icon variant="text" @click="close">
@@ -22,10 +22,10 @@
         <v-row>
           <v-col cols="12" md="4">
             <div class="text-subtitle-1 font-weight-medium mb-2">Cross-references</div>
-            <div v-if="item?.xrefs && item.xrefs.length > 0">
+            <div v-if="currentItem?.xrefs && currentItem.xrefs.length > 0">
               <v-table class="bg-transparent" density="compact">
                 <tbody>
-                  <tr v-for="(xr, idx) in item!.xrefs" :key="idx">
+                  <tr v-for="(xr, idx) in currentItem!.xrefs" :key="idx">
                     <td>
                       <span class="font-weight-medium">{{ xr.database }}</span>
                     </td>
@@ -38,9 +38,9 @@
             </div>
             <div v-else class="text-medium-emphasis">No xrefs available.</div>
 
-            <div v-if="item?.comment" class="mt-4">
+            <div v-if="currentItem?.comment" class="mt-4">
               <div class="text-subtitle-1 font-weight-medium mb-1">Comment</div>
-              <div class="text-body-2">{{ item.comment }}</div>
+              <div class="text-body-2">{{ currentItem.comment }}</div>
             </div>
           </v-col>
 
@@ -50,15 +50,16 @@
 
               <div class="mb-2">
                 <div class="text-body-2 font-weight-medium mb-1">Direct parents</div>
-                <div v-if="item?.parents && item.parents.length > 0" class="d-flex flex-wrap gap-2">
+                <div v-if="currentItem?.parents && currentItem.parents.length > 0" class="d-flex flex-wrap gap-2">
                   <v-chip
-                    v-for="(p, idx) in item!.parents"
+                    v-for="(p, idx) in currentItem!.parents"
                     :key="`parent-${idx}-${p.id}`"
-                    class="mr-2 mb-2"
+                    class="mr-2 mb-2 cursor-pointer"
                     color="secondary"
                     size="small"
                     title="Parent term ID"
                     variant="tonal"
+                    @click="openTerm(p.id)"
                   >
                     {{ p.id }}
                   </v-chip>
@@ -68,15 +69,16 @@
 
               <div>
                 <div class="text-body-2 font-weight-medium mb-1">Direct children</div>
-                <div v-if="item?.children && item.children.length > 0" class="d-flex flex-wrap gap-2">
+                <div v-if="currentItem?.children && currentItem.children.length > 0" class="d-flex flex-wrap gap-2">
                   <v-chip
-                    v-for="(c, idx) in item!.children"
+                    v-for="(c, idx) in currentItem!.children"
                     :key="`child-${idx}-${c.id}`"
-                    class="mr-2 mb-2"
+                    class="mr-2 mb-2 cursor-pointer"
                     color="secondary"
                     size="small"
                     title="Child term ID"
                     variant="tonal"
+                    @click="openTerm(c.id)"
                   >
                     {{ c.id }}
                   </v-chip>
@@ -103,7 +105,31 @@
         </v-row>
       </v-card-text>
 
-      <v-card-actions class="justify-end">
+      <v-card-actions class="align-center justify-space-between flex-wrap px-4 pb-4">
+        <div class="d-flex align-center flex-wrap gap-2">
+          <!-- Breadcrumb trail always full in actions -->
+          <div v-if="breadcrumbDisplay.length > 0" class="d-flex align-center flex-wrap">
+            <span class="text-caption text-medium-emphasis mr-2">Navigation history</span>
+            <template v-for="(bc, idx) in breadcrumbDisplay" :key="`bc-wrap-actions-${idx}-${bc.id}`">
+              <v-chip
+                class="cursor-pointer mr-1"
+                color="primary"
+                variant="tonal"
+                size="x-small"
+                :title="bc.term?.name || bc.id"
+                @click="jumpToBreadcrumb(idx)"
+              >
+                {{ bc.term?.id || bc.id }}
+              </v-chip>
+              <v-icon
+                v-if="idx < breadcrumbDisplay.length - 1"
+                class="mx-1"
+                size="14"
+              >mdi-chevron-right</v-icon>
+            </template>
+          </div>
+        </div>
+
         <v-btn color="primary" variant="tonal" @click="close">Close</v-btn>
       </v-card-actions>
     </v-card>
@@ -111,8 +137,10 @@
 </template>
 
 <script lang="ts" setup>
-  import { computed } from 'vue'
+  import { computed, watch } from 'vue'
   import SmilesView from '@/components/smiles/SmilesView.vue'
+  import { useOboStore } from '@/stores/obo'
+  import { useNavigationStore } from '@/stores/navigation'
 
   interface Xref { database: string, value: string }
   interface IdRef { id: string }
@@ -126,34 +154,45 @@
     comment?: string
   }
 
-  const props = defineProps<{
-    modelValue: boolean
-    item: ModItem | null
-  }>()
+  const props = defineProps<{ modelValue: boolean, item: ModItem | null }>()
+  const emit = defineEmits<{ (e: 'update:modelValue', v: boolean): void }>()
 
-  const emit = defineEmits<{
-    (e: 'update:modelValue', v: boolean): void
-  }>()
+  const oboStore = useOboStore()
+  const navigation = useNavigationStore()
 
-  function findXref (item: ModItem | null | undefined, key: string) {
-    if (!item?.xrefs) return null
-    const k = key.toLowerCase()
-    return item.xrefs.find((x: any) => typeof x?.database === 'string' && x.database.toLowerCase() === k) || null
-  }
+  // Initialize root when dialog opens with provided item
+  watch(() => props.item, newVal => {
+    if (newVal) {
+      navigation.setRoot(newVal.id)
+    } else {
+      navigation.reset()
+    }
+  }, { immediate: true })
+
+  // Reset navigation when dialog closes
+  watch(() => props.modelValue, open => { if (!open) navigation.reset() })
+
+  const currentItem = computed<ModItem | null>(() => {
+    if (!navigation.currentTermId) return null
+    const term = oboStore.byId(navigation.currentTermId!) as any
+    return term || null
+  })
 
   const smiles = computed(() => {
-    const xr = findXref(props.item, 'SMILES')
-    return xr ? (xr as any).value as string : null
+    const xr = currentItem.value?.xrefs?.find(x => x.database.toLowerCase() === 'smiles')
+    return xr ? String(xr.value) : null
   })
 
-  const filename = computed(() => {
-    if (!props.item) {
-      return 'smiles-visualization'
-    }
-    return `psimod-${props.item.id}-smiles-visualization`
-  })
+  const filename = computed(() => currentItem.value ? `psimod-${currentItem.value.id}-smiles-visualization` : 'smiles-visualization')
 
-  function close () {
-    emit('update:modelValue', false)
-  }
+  const breadcrumbDisplay = computed(() => navigation.breadcrumbTerms)
+
+  function openTerm (id: string) { navigation.openTerm(id) }
+  function jumpToBreadcrumb (index: number) { navigation.jumpTo(index) }
+
+  function close () { emit('update:modelValue', false) }
 </script>
+
+<style scoped>
+.cursor-pointer { cursor: pointer; }
+</style>
