@@ -8,41 +8,41 @@
     </div>
     <div class="d-flex align-center">
       <v-text-field
-        :model-value="modelValue[0]"
-        type="number"
-        label="Min"
-        :min="min"
-        :max="max"
-        :step="step"
+        class="mr-2"
         density="compact"
         hide-details
-        class="mr-2"
+        label="Min"
+        :max="max"
+        :min="min"
+        :model-value="modelValue[0]"
+        :step="step"
         style="max-width: 100px"
+        type="number"
         @update:model-value="updateMin"
       />
       <v-range-slider
-        :model-value="modelValue"
-        :min="min"
-        :max="max"
-        :step="step"
+        class="flex-grow-1 mx-2"
         color="primary"
-        :thumb-label="true"
         density="comfortable"
         hide-details
-        class="flex-grow-1 mx-2"
+        :max="max"
+        :min="min"
+        :model-value="modelValue"
+        :step="step"
+        :thumb-label="true"
         @update:model-value="updateRange"
       />
       <v-text-field
-        :model-value="modelValue[1]"
-        type="number"
-        label="Max"
-        :min="min"
-        :max="max"
-        :step="step"
+        class="ml-2"
         density="compact"
         hide-details
-        class="ml-2"
+        label="Max"
+        :max="max"
+        :min="min"
+        :model-value="modelValue[1]"
+        :step="step"
         style="max-width: 100px"
+        type="number"
         @update:model-value="updateMax"
       />
     </div>
@@ -53,45 +53,45 @@
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
+  import { computed } from 'vue'
 
-interface Props {
-  label: string
-  modelValue: [number, number]
-  min: number
-  max: number
-  step?: number
-  description?: string
-}
-
-const props = withDefaults(defineProps<Props>(), {
-  step: 10,
-  description: ''
-})
-
-const emit = defineEmits<{
-  'update:modelValue': [value: [number, number]]
-}>()
-
-const rangeDisplay = computed(() => {
-  return `${props.modelValue[0].toFixed(2)} - ${props.modelValue[1].toFixed(2)} Da`
-})
-
-const updateMin = (value: string | number) => {
-  const numValue = typeof value === 'string' ? parseFloat(value) : value
-  if (!isNaN(numValue)) {
-    emit('update:modelValue', [numValue, props.modelValue[1]])
+  interface Props {
+    label: string
+    modelValue: [number, number]
+    min: number
+    max: number
+    step?: number
+    description?: string
   }
-}
 
-const updateMax = (value: string | number) => {
-  const numValue = typeof value === 'string' ? parseFloat(value) : value
-  if (!isNaN(numValue)) {
-    emit('update:modelValue', [props.modelValue[0], numValue])
+  const props = withDefaults(defineProps<Props>(), {
+    step: 10,
+    description: '',
+  })
+
+  const emit = defineEmits<{
+    'update:modelValue': [value: [number, number]]
+  }>()
+
+  const rangeDisplay = computed(() => {
+    return `${props.modelValue[0].toFixed(2)} - ${props.modelValue[1].toFixed(2)} Da`
+  })
+
+  function updateMin (value: string | number) {
+    const numValue = typeof value === 'string' ? Number.parseFloat(value) : value
+    if (!isNaN(numValue)) {
+      emit('update:modelValue', [numValue, props.modelValue[1]])
+    }
   }
-}
 
-const updateRange = (value: [number, number]) => {
-  emit('update:modelValue', value)
-}
+  function updateMax (value: string | number) {
+    const numValue = typeof value === 'string' ? Number.parseFloat(value) : value
+    if (!isNaN(numValue)) {
+      emit('update:modelValue', [props.modelValue[0], numValue])
+    }
+  }
+
+  function updateRange (value: [number, number]) {
+    emit('update:modelValue', value)
+  }
 </script>

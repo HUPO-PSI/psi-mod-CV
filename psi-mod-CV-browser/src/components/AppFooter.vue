@@ -42,7 +42,7 @@
       title: 'GitHub',
       icon: `mdi-github`,
       href: 'https://github.com/HUPO-PSI/psi-ms-CV',
-    }
+    },
   ]
 </script>
 

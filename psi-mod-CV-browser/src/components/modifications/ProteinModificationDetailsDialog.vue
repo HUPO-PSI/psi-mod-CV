@@ -1,9 +1,9 @@
 <template>
   <v-dialog
-    :model-value="modelValue"
-    @update:modelValue="(v: boolean) => emit('update:modelValue', v)"
     max-width="2000"
+    :model-value="modelValue"
     transition="dialog-bottom-transition"
+    @update:model-value="(v: boolean) => emit('update:modelValue', v)"
   >
     <v-card rounded="lg">
       <v-card-title class="d-flex align-center bg-primary text-white">
@@ -13,7 +13,7 @@
           <span class="text-body-2">{{ item?.name }}</span>
         </div>
         <v-spacer />
-        <v-btn icon variant="text" color="white" @click="close">
+        <v-btn color="white" icon variant="text" @click="close">
           <v-icon>mdi-close</v-icon>
         </v-btn>
       </v-card-title>
@@ -22,17 +22,17 @@
         <v-row>
           <v-col cols="12" md="4">
             <div class="text-subtitle-1 font-weight-medium mb-2">Cross-references</div>
-            <div v-if="item?.xrefs && item.xrefs.length">
-              <v-table density="compact" class="bg-transparent">
+            <div v-if="item?.xrefs && item.xrefs.length > 0">
+              <v-table class="bg-transparent" density="compact">
                 <tbody>
-                <tr v-for="(xr, idx) in item!.xrefs" :key="idx">
-                  <td>
-                    <span class="font-weight-medium">{{ xr.database }}</span>
-                  </td>
-                  <td>
-                    <span>{{ xr.value }}</span>
-                  </td>
-                </tr>
+                  <tr v-for="(xr, idx) in item!.xrefs" :key="idx">
+                    <td>
+                      <span class="font-weight-medium">{{ xr.database }}</span>
+                    </td>
+                    <td>
+                      <span>{{ xr.value }}</span>
+                    </td>
+                  </tr>
                 </tbody>
               </v-table>
             </div>
@@ -50,15 +50,15 @@
 
               <div class="mb-2">
                 <div class="text-body-2 font-weight-medium mb-1">Direct parents</div>
-                <div v-if="item?.parents && item.parents.length" class="d-flex flex-wrap gap-2">
+                <div v-if="item?.parents && item.parents.length > 0" class="d-flex flex-wrap gap-2">
                   <v-chip
                     v-for="(p, idx) in item!.parents"
                     :key="`parent-${idx}-${p.id}`"
-                    size="small"
-                    color="secondary"
-                    variant="tonal"
                     class="mr-2 mb-2"
+                    color="secondary"
+                    size="small"
                     title="Parent term ID"
+                    variant="tonal"
                   >
                     {{ p.id }}
                   </v-chip>
@@ -68,15 +68,15 @@
 
               <div>
                 <div class="text-body-2 font-weight-medium mb-1">Direct children</div>
-                <div v-if="item?.children && item.children.length" class="d-flex flex-wrap gap-2">
+                <div v-if="item?.children && item.children.length > 0" class="d-flex flex-wrap gap-2">
                   <v-chip
                     v-for="(c, idx) in item!.children"
                     :key="`child-${idx}-${c.id}`"
-                    size="small"
-                    color="secondary"
-                    variant="tonal"
                     class="mr-2 mb-2"
+                    color="secondary"
+                    size="small"
                     title="Child term ID"
+                    variant="tonal"
                   >
                     {{ c.id }}
                   </v-chip>
@@ -89,7 +89,14 @@
           <v-col cols="12" md="4">
             <div class="text-subtitle-1 font-weight-medium mb-2">Structure (SMILES)</div>
             <div class="d-flex bg-white">
-              <SmilesView v-if="smiles" :smiles="smiles" :width="300" :height="300" theme="light" :filename="filename" />
+              <SmilesView
+                v-if="smiles"
+                :filename="filename"
+                :height="300"
+                :smiles="smiles"
+                theme="light"
+                :width="300"
+              />
               <div v-else class="text-medium-emphasis">No SMILES available in xrefs.</div>
             </div>
           </v-col>
@@ -97,56 +104,56 @@
       </v-card-text>
 
       <v-card-actions class="justify-end">
-        <v-btn variant="tonal" color="primary" @click="close">Close</v-btn>
+        <v-btn color="primary" variant="tonal" @click="close">Close</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
 </template>
 
 <script lang="ts" setup>
-import { computed } from 'vue'
-import SmilesView from '@/components/smiles/SmilesView.vue'
+  import { computed } from 'vue'
+  import SmilesView from '@/components/smiles/SmilesView.vue'
 
-interface Xref { database: string; value: string }
-interface IdRef { id: string }
-interface ModItem {
-  id: string
-  name: string
-  definition?: string
-  xrefs?: Xref[]
-  parents?: IdRef[]
-  children?: IdRef[]
-  comment?: string
-}
-
-const props = defineProps<{
-  modelValue: boolean
-  item: ModItem | null
-}>()
-
-const emit = defineEmits<{
-  (e: 'update:modelValue', v: boolean): void
-}>()
-
-function findXref(item: ModItem | null | undefined, key: string) {
-  if (!item?.xrefs) return null
-  const k = key.toLowerCase()
-  return item.xrefs.find((x: any) => typeof x?.database === 'string' && x.database.toLowerCase() === k) || null
-}
-
-const smiles = computed(() => {
-  const xr = findXref(props.item, 'SMILES')
-  return xr ? (xr as any).value as string : null
-})
-
-const filename = computed(() => {
-  if (!props.item) {
-    return 'smiles-visualization';
+  interface Xref { database: string, value: string }
+  interface IdRef { id: string }
+  interface ModItem {
+    id: string
+    name: string
+    definition?: string
+    xrefs?: Xref[]
+    parents?: IdRef[]
+    children?: IdRef[]
+    comment?: string
   }
-  return `psimod-${props.item.id}-smiles-visualization`;
-})
 
-function close() {
-  emit('update:modelValue', false)
-}
+  const props = defineProps<{
+    modelValue: boolean
+    item: ModItem | null
+  }>()
+
+  const emit = defineEmits<{
+    (e: 'update:modelValue', v: boolean): void
+  }>()
+
+  function findXref (item: ModItem | null | undefined, key: string) {
+    if (!item?.xrefs) return null
+    const k = key.toLowerCase()
+    return item.xrefs.find((x: any) => typeof x?.database === 'string' && x.database.toLowerCase() === k) || null
+  }
+
+  const smiles = computed(() => {
+    const xr = findXref(props.item, 'SMILES')
+    return xr ? (xr as any).value as string : null
+  })
+
+  const filename = computed(() => {
+    if (!props.item) {
+      return 'smiles-visualization'
+    }
+    return `psimod-${props.item.id}-smiles-visualization`
+  })
+
+  function close () {
+    emit('update:modelValue', false)
+  }
 </script>

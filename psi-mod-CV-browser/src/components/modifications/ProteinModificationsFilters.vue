@@ -1,5 +1,5 @@
 <template>
-  <v-card elevation="2" rounded="lg" class="mb-2">
+  <v-card class="mb-2" elevation="2" rounded="lg">
     <v-card-title class="bg-primary text-white d-flex align-end">
       <v-icon class="mr-2">mdi-magnify</v-icon>
       <div class="font-weight-bold">
@@ -7,11 +7,11 @@
       </div>
       <v-spacer />
       <v-btn
-        variant="outlined"
-        color="white"
-        size="small"
-        prepend-icon="mdi-restore"
         class="text-none"
+        color="white"
+        prepend-icon="mdi-restore"
+        size="small"
+        variant="outlined"
         @click="resetFilters"
       >
         Reset
@@ -26,13 +26,13 @@
         </div>
         <v-text-field
           v-model="search"
+          class="search-field mb-4"
+          clearable
           density="comfortable"
-          placeholder="Search modifications..."
-          prepend-inner-icon="mdi-magnify"
           flat
           hide-details
-          clearable
-          class="search-field mb-4"
+          placeholder="Search modifications..."
+          prepend-inner-icon="mdi-magnify"
         />
         <div class="text-caption text-medium-emphasis mt-n2 mb-4">
           The search field supports free text search across all PSI-MOD term properties, including ID, name,
@@ -46,9 +46,9 @@
               <v-checkbox
                 v-model="leafOnly"
                 color="primary"
-                label="Show only leaf nodes"
                 density="compact"
                 hide-details
+                label="Show only leaf nodes"
               />
               <div class="text-caption text-medium-emphasis">
                 Leaf terms are PSI-MOD entries without child terms. Enable this to hide higher-level grouping terms.
@@ -58,9 +58,9 @@
               <v-checkbox
                 v-model="hasSmilesOnly"
                 color="primary"
-                label="Show only terms with SMILES"
                 density="compact"
                 hide-details
+                label="Show only terms with SMILES"
               />
               <div class="text-caption text-medium-emphasis">
                 Keep only modifications that have a SMILES notation in their cross-references, so you can preview a structure.
@@ -71,13 +71,13 @@
             <div class="mt-4">
               <v-select
                 v-model="selectedOrigin"
-                :items="originOptions"
-                label="Filter by Origin (amino acid)"
-                multiple
                 chips
                 clearable
                 density="comfortable"
                 hide-details
+                :items="originOptions"
+                label="Filter by Origin (amino acid)"
+                multiple
               />
               <div class="text-caption text-medium-emphasis">
                 The amino acid of origin on which the modification takes place. Clear to include all.
@@ -88,13 +88,13 @@
             <div class="mt-4">
               <v-select
                 v-model="selectedTermSpec"
-                :items="termSpecOptions"
-                label="Filter by TermSpec"
-                multiple
                 chips
                 clearable
                 density="comfortable"
                 hide-details
+                :items="termSpecOptions"
+                label="Filter by TermSpec"
+                multiple
               />
               <div class="text-caption text-medium-emphasis">
                 Restrict to modifications with a specific TermSpec (e.g., N-term, C-term, Anywhere). Clear to include all.
@@ -105,20 +105,20 @@
           <v-col cols="12" md="6">
             <RangeSliderInput
               v-model="diffMonoRange"
-              label="Filter by DiffMono"
-              :min="diffMonoMinMax.min"
-              :max="diffMonoMinMax.max"
-              :step="10"
               description="Difference in monoisotopic mass relative to the unmodified residue (in Da). Move the handles or enter values to restrict modifications by mass delta."
+              label="Filter by DiffMono"
+              :max="diffMonoMinMax.max"
+              :min="diffMonoMinMax.min"
+              :step="10"
             />
 
             <RangeSliderInput
               v-model="massMonoRange"
-              label="Filter by MassMono"
-              :min="massMonoMinMax.min"
-              :max="massMonoMinMax.max"
-              :step="10"
               description="Absolute monoisotopic mass of the modified residue or moiety (in Da). Move the handles or enter values to limit the mass window."
+              label="Filter by MassMono"
+              :max="massMonoMinMax.max"
+              :min="massMonoMinMax.min"
+              :step="10"
             />
           </v-col>
 
@@ -135,25 +135,25 @@
 </template>
 
 <script lang="ts" setup>
-import { useProteinModificationsFilters } from '@/composables/useProteinModificationsFilters'
-import RangeSliderInput from '@/components/common/RangeSliderInput.vue'
+  import RangeSliderInput from '@/components/common/RangeSliderInput.vue'
+  import { useProteinModificationsFilters } from '@/composables/useProteinModificationsFilters'
 
-const {
-  search,
-  leafOnly,
-  hasSmilesOnly,
-  selectedOrigin,
-  selectedTermSpec,
-  diffMonoRange,
-  massMonoRange,
-  diffMonoMinMax,
-  massMonoMinMax,
-  originOptions,
-  termSpecOptions,
-  totalCount,
-  filteredItems,
-  resetFilters,
-} = useProteinModificationsFilters()
+  const {
+    search,
+    leafOnly,
+    hasSmilesOnly,
+    selectedOrigin,
+    selectedTermSpec,
+    diffMonoRange,
+    massMonoRange,
+    diffMonoMinMax,
+    massMonoMinMax,
+    originOptions,
+    termSpecOptions,
+    totalCount,
+    filteredItems,
+    resetFilters,
+  } = useProteinModificationsFilters()
 </script>
 
 <style scoped>

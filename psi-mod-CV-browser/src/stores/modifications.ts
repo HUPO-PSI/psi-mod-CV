@@ -87,6 +87,6 @@ export const useModificationsStore = defineStore('modifications', {
     ] as ProteinModification[],
   }),
   getters: {
-    getAllModifications: (state) => state.modifications,
+    getAllModifications: state => state.modifications,
   },
 })

@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <v-app-bar color="primary" elevation="2">
-      <template v-slot:prepend>
-        <v-img src="@/assets/logo.svg" width="35px" class="ml-2" />
+      <template #prepend>
+        <v-img class="ml-2" src="@/assets/logo.svg" width="35px" />
       </template>
 
       <v-app-bar-title class="font-weight-bold">
