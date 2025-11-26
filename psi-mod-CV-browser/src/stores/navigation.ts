@@ -1,6 +1,6 @@
 import type { OboTerm } from '@/system/obo/OboTerm.ts'
 import { defineStore } from 'pinia'
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted, watch } from 'vue'
 import { useOboStore } from '@/stores/obo'
 
 interface BreadcrumbPart {
@@ -11,11 +11,11 @@ interface BreadcrumbPart {
 
 export const useNavigationStore = defineStore('navigation', () => {
   const currentTermId = ref<string | null>(null)
-  const history = ref<string[]>([]) // stack of previously visited term IDs
+  const navStack = ref<string[]>([]) // stack of previously visited term IDs
 
   function setRoot (id: string | null) {
     currentTermId.value = id
-    history.value = []
+    navStack.value = []
   }
 
   function openTerm (id: string) {
@@ -26,23 +26,16 @@ export const useNavigationStore = defineStore('navigation', () => {
       return
     }
     if (currentTermId.value) {
-      const last = history.value[history.value.length - 1]
+      const last = navStack.value[navStack.value.length - 1]
       if (last !== currentTermId.value) {
-        history.value.push(currentTermId.value)
+        navStack.value.push(currentTermId.value)
       }
     }
     currentTermId.value = id
   }
 
-  function goBack () {
-    const prev = history.value.pop()
-    if (prev) {
-      currentTermId.value = prev
-    }
-  }
-
   function jumpTo (index: number) {
-    const path = [...history.value, currentTermId.value].filter(Boolean) as string[]
+    const path = [...navStack.value, currentTermId.value].filter(Boolean) as string[]
     if (index < 0 || index >= path.length) {
       return
     }
@@ -50,19 +43,19 @@ export const useNavigationStore = defineStore('navigation', () => {
       return
     } // already current
     currentTermId.value = path[index]!
-    history.value = path.slice(0, index)
+    navStack.value = path.slice(0, index)
   }
 
   function reset () {
     currentTermId.value = null
-    history.value = []
+    navStack.value = []
   }
 
   const fullPath = computed<string[]>(() => {
     if (!currentTermId.value) {
       return []
     }
-    return [...history.value, currentTermId.value]
+    return [...navStack.value, currentTermId.value]
   })
 
   const breadcrumb = computed<BreadcrumbPart[]>(() => {
@@ -78,12 +71,69 @@ export const useNavigationStore = defineStore('navigation', () => {
     return breadcrumb.value.map(part => ({ ...part, term: obo.byId(part.id) ?? null }))
   })
 
+  // Query param sync: allow opening by ?mod=NNNNN (numeric part). Keep URL updated when navigating.
+  function normalizeModId(input: string | null): string | null {
+    if (!input) return null
+    const trimmed = input.trim()
+    if (!trimmed) return null
+    const modMatch = /^MOD:(\d{1,})$/.exec(trimmed)
+    if (modMatch && modMatch[1]) {
+      const num = modMatch[1]
+      return `MOD:${num.padStart(5, '0')}`
+    }
+    const numMatch = /^(\d{1,})$/.exec(trimmed)
+    if (numMatch && numMatch[1]) {
+      const num = numMatch[1]
+      return `MOD:${num.padStart(5, '0')}`
+    }
+    return null
+  }
+
+  function readQueryParam(): string | null {
+    try {
+      const params = new URLSearchParams(window.location.search)
+      return params.get('mod')
+    } catch {
+      return null
+    }
+  }
+
+  function writeQueryParam(id: string | null) {
+    try {
+      const url = new URL(window.location.href)
+      if (id) {
+        const normalized = normalizeModId(id)
+        if (normalized) {
+          url.searchParams.set('mod', normalized.replace('MOD:', ''))
+        } else {
+          url.searchParams.delete('mod')
+        }
+      } else {
+        url.searchParams.delete('mod')
+      }
+      window.history.replaceState(null, '', url.toString())
+    } catch {
+      /* no-op */
+    }
+  }
+
+  onMounted(() => {
+    const qp = readQueryParam()
+    const normalized = normalizeModId(qp)
+    if (normalized) {
+      setRoot(normalized)
+    }
+  })
+
+  watch(currentTermId, (id) => {
+    writeQueryParam(id)
+  })
+
   return {
     currentTermId,
-    history,
+    history: navStack, // keep exported name for existing consumers
     setRoot,
     openTerm,
-    goBack,
     jumpTo,
     reset,
     fullPath,

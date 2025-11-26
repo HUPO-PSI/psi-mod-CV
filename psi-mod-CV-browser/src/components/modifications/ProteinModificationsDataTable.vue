@@ -121,9 +121,10 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref } from 'vue'
+  import { ref, onMounted, watch } from 'vue'
   import ProteinModificationDetailsDialog from '@/components/modifications/ProteinModificationDetailsDialog.vue'
   import { useProteinModificationsFilters } from '@/composables/useProteinModificationsFilters'
+  import { useOboStore } from '@/stores/obo'
 
   const {
     error,
@@ -134,54 +135,71 @@
     getUnimodInfo,
   } = useProteinModificationsFilters()
 
+  const oboStore = useOboStore()
+
   const detailsOpen = ref(false)
   const selectedItem = ref<any | null>(null)
 
   const headers = [
-    {
-      title: 'ID',
-      key: 'id',
-      width: '10%',
-      sortable: true,
-    },
-    {
-      title: 'Name',
-      key: 'name',
-      width: '30%',
-      sortable: true,
-    },
-    {
-      title: 'ChEBI ID',
-      key: 'chebiId',
-      width: '20%',
-      sortable: true,
-    },
-    {
-      title: 'Unimod ID',
-      key: 'unimodId',
-      width: '20%',
-      sortable: true,
-    },
-    {
-      title: 'Origin',
-      key: 'origin',
-      width: '20%',
-      sortable: true,
-    },
-    {
-      title: 'TermSpec',
-      key: 'termSpec',
-      width: '20%',
-      sortable: true,
-    },
+    { title: 'ID', key: 'id', width: '10%', sortable: true },
+    { title: 'Name', key: 'name', width: '30%', sortable: true },
+    { title: 'ChEBI ID', key: 'chebiId', width: '20%', sortable: true },
+    { title: 'Unimod ID', key: 'unimodId', width: '20%', sortable: true },
+    { title: 'Origin', key: 'origin', width: '20%', sortable: true },
+    { title: 'TermSpec', key: 'termSpec', width: '20%', sortable: true },
   ]
 
-  function openDetails (item: any) {
+  function normalizeModId(input: string | null): string | null {
+    if (!input) return null
+    const trimmed = input.trim()
+    if (!trimmed) return null
+    const modMatch = /^MOD:(\d{1,})$/.exec(trimmed)
+    if (modMatch && modMatch[1]) {
+      const num = modMatch[1]
+      return `MOD:${num.padStart(5, '0')}`
+    }
+    const numMatch = /^(\d{1,})$/.exec(trimmed)
+    if (numMatch && numMatch[1]) {
+      const num = numMatch[1]
+      return `MOD:${num.padStart(5, '0')}`
+    }
+    return null
+  }
+
+  function readQueryParam(): string | null {
+    try {
+      const params = new URLSearchParams(window.location.search)
+      return params.get('mod')
+    } catch {
+      return null
+    }
+  }
+
+  function writeQueryParam(id: string | null) {
+    try {
+      const url = new URL(window.location.href)
+      if (id) {
+        const normalized = normalizeModId(id)
+        if (normalized) {
+          url.searchParams.set('mod', normalized.replace('MOD:', ''))
+        } else {
+          url.searchParams.delete('mod')
+        }
+      } else {
+        url.searchParams.delete('mod')
+      }
+      history.replaceState(null, '', url.toString())
+    } catch {
+      /* no-op */
+    }
+  }
+
+  function openDetails(item: any) {
     selectedItem.value = item
     detailsOpen.value = true
   }
 
-  function onRowClick (ev: MouseEvent, row: any) {
+  function onRowClick(ev: MouseEvent, row: any) {
     // Ignore clicks on interactive elements (links, buttons, chips)
     const target = ev.target as HTMLElement | null
     if (target && target.closest('a, button, .v-btn, .v-chip, [role="button"]')) {
@@ -192,6 +210,28 @@
       openDetails(item)
     }
   }
+
+  onMounted(async () => {
+    if (!oboStore.loaded) {
+      await oboStore.loadFromOBO()
+    }
+    const qp = readQueryParam()
+    const normalized = normalizeModId(qp)
+    if (normalized) {
+      const term = oboStore.byId(normalized)
+      if (term) {
+        openDetails(term as any)
+      }
+    }
+  })
+
+  watch([detailsOpen, selectedItem], ([open, item]) => {
+    if (open && item?.id) {
+      writeQueryParam(item.id)
+    } else if (!open) {
+      writeQueryParam(null)
+    }
+  })
 </script>
 
 <style scoped>

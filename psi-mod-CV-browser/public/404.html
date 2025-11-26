@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Redirecting…</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="0; url=./index.html">
+  </head>
+  <body>
+    <script>
+      // GitHub Pages SPA fallback: preserve query and hash
+      (function() {
+        const redirect = '/index.html';
+        const url = new URL(window.location.href);
+        const target = redirect + (url.search || '') + (url.hash || '');
+        window.location.replace(target);
+      })();
+    </script>
+    <noscript>
+      If you are not redirected automatically, follow this <a href="./index.html">link to the app</a>.
+    </noscript>
+  </body>
+</html>
+
