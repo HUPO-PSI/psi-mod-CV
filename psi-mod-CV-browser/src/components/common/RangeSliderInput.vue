@@ -74,7 +74,7 @@ const emit = defineEmits<{
 }>()
 
 const rangeDisplay = computed(() => {
-  return `${props.modelValue[0].toFixed(2)} - ${props.modelValue[1].toFixed(2)}`
+  return `${props.modelValue[0].toFixed(2)} - ${props.modelValue[1].toFixed(2)} Da`
 })
 
 const updateMin = (value: string | number) => {

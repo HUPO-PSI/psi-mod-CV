@@ -136,7 +136,7 @@
 
 <script lang="ts" setup>
 import { useProteinModificationsFilters } from '@/composables/useProteinModificationsFilters'
-import RangeSliderInput from '@/components/common/RangeSliderInput'
+import RangeSliderInput from '@/components/common/RangeSliderInput.vue'
 
 const {
   search,
