@@ -1,13 +1,13 @@
 <template>
-  <div class="d-flex flex-column">
+  <div class="d-flex flex-column" style="width: 100%;">
     <v-card class="mb-2">
       <v-card-text>
         <div class="smiles-view d-inline-flex flex-column ga-2 bg-white">
           <svg
             :id="svgId"
             ref="svgRef"
-            :height="height"
-            :width="width"
+            height="100%"
+            width="100%"
             xmlns="http://www.w3.org/2000/svg"
           />
 
@@ -60,7 +60,7 @@
   }>()
 
   const width = computed(() => props.width ?? 500)
-  const height = computed(() => props.height ?? 500)
+  const height = computed(() => props.height ?? 300)
   const theme = computed(() => props.theme ?? 'light')
   const padding = computed(() => props.padding ?? 10)
 

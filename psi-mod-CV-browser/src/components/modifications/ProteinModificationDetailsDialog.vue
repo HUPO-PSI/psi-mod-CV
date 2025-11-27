@@ -94,10 +94,8 @@
               <SmilesView
                 v-if="smiles"
                 :filename="filename"
-                :height="300"
                 :smiles="smiles"
                 theme="light"
-                :width="300"
               />
               <div v-else class="text-medium-emphasis">No SMILES available in xrefs.</div>
             </div>
