@@ -29,7 +29,7 @@
               color="primary"
               :loading="isRendering"
               prepend-icon="mdi-download"
-              variant="outlined"
+              variant="tonal"
             >
               Save image
             </v-btn>
