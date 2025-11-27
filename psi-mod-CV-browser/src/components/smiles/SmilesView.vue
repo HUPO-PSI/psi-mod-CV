@@ -2,7 +2,7 @@
   <div class="d-flex flex-column">
     <v-card class="mb-2">
       <v-card-text>
-        <div class="smiles-view d-inline-flex flex-column ga-2">
+        <div class="smiles-view d-inline-flex flex-column ga-2 bg-white">
           <svg
             :id="svgId"
             ref="svgRef"

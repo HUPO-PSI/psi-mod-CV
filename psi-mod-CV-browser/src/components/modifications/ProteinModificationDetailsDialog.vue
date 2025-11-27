@@ -90,7 +90,7 @@
 
           <v-col cols="12" md="4">
             <div class="text-subtitle-1 font-weight-medium mb-2">Structure (SMILES)</div>
-            <div class="d-flex bg-white">
+            <div class="d-flex">
               <SmilesView
                 v-if="smiles"
                 :filename="filename"

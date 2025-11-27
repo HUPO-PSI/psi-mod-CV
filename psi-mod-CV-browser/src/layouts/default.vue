@@ -14,7 +14,7 @@
       <SmilesStatus class="mr-4" />
     </v-app-bar>
 
-    <v-main class="bg-grey-lighten-4">
+    <v-main>
       <router-view />
     </v-main>
 
