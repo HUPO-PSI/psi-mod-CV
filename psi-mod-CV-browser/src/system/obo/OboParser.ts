@@ -235,28 +235,16 @@ export class OboParser {
 
     // Second pass: wire up parents and children using collected is_a relations
     for (const [childId, parentIds] of childToParents.entries()) {
-      const child = idToTerm.get(childId)
-      if (!child) {
-        continue
-      }
+      const child = idToTerm.get(childId);
+      if (!child) continue;
       for (const parentId of parentIds) {
-        const parent = idToTerm.get(parentId)
-        if (!parent) {
-          continue
-        } // parent might be external or undefined
+        const parent = idToTerm.get(parentId);
+        if (!parent) continue; // parent might be external or undefined
         // Ensure arrays exist (defensive, though we initialize them on creation)
-        if (!child.parents) {
-          child.parents = []
-        }
-        if (!parent.children) {
-          parent.children = []
-        }
-        if (!child.parents.some(p => p.id === parent.id)) {
-          child.parents.push(parent)
-        }
-        if (!parent.children.some(c => c.id === child.id)) {
-          parent.children.push(child)
-        }
+        if (!child.parents) child.parents = [];
+        if (!parent.children) parent.children = [];
+        if (!child.parents.some(p => p.id === parent.id)) child.parents.push(parent);
+        if (!parent.children.some(c => c.id === child.id)) parent.children.push(child);
       }
     }
 

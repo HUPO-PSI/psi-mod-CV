@@ -48,67 +48,92 @@
             <div>
               <div class="text-subtitle-1 font-weight-medium mb-2">Cross-references</div>
 
-              <!-- Unimod section -->
-              <div class="mb-3">
-                <div class="text-body-2 font-weight-medium mb-1">Unimod</div>
-                <div v-if="unimodXrefs.length > 0" class="d-flex flex-wrap gap-2">
-                  <v-chip
-                    v-for="(xr, idx) in unimodXrefs"
-                    :key="`unimod-${idx}-${xr.value}`"
-                    class="mr-2 mb-2"
-                    color="secondary"
-                    size="small"
-                    variant="tonal"
-                    :href="buildUnimodUrl(xr) || undefined"
-                    rel="noopener"
-                    target="_blank"
-                  >
-                    {{ xr.value }}
-                  </v-chip>
-                </div>
-                <div v-else class="text-medium-emphasis">None</div>
-              </div>
+              <v-table class="bg-transparent" density="compact">
+                <tbody>
+                  <!-- Unimod row -->
+                  <tr>
+                    <td>
+                      <span class="font-weight-medium">Unimod</span>
+                    </td>
+                    <td>
+                      <template v-if="unimodXrefs.length > 0">
+                        <div class="d-flex flex-wrap gap-2">
+                          <v-chip
+                            v-for="(xr, idx) in unimodXrefs"
+                            :key="`unimod-${idx}-${xr.value}`"
+                            class="mr-2"
+                            color="secondary"
+                            size="small"
+                            variant="tonal"
+                            :href="buildUnimodUrl(xr) || undefined"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            {{ xr.value }}
+                          </v-chip>
+                        </div>
+                      </template>
+                      <span v-else class="text-medium-emphasis">None</span>
+                    </td>
+                  </tr>
 
-              <!-- UniProt PTM section -->
-              <div class="mb-3">
-                <div class="text-body-2 font-weight-medium mb-1">UniProt PTM</div>
-                <div v-if="uniprotPtmXrefs.length > 0" class="d-flex flex-wrap gap-2">
-                  <v-chip
-                    v-for="(xr, idx) in uniprotPtmXrefs"
-                    :key="`uniprot-${idx}-${xr.value}`"
-                    class="mr-2 mb-2"
-                    color="primary"
-                    size="small"
-                    variant="tonal"
-                  >
-                    UniProt:{{ xr.value }}
-                  </v-chip>
-                </div>
-                <div v-else class="text-medium-emphasis">None</div>
-              </div>
+                  <!-- UniProt PTM row -->
+                  <tr>
+                    <td>
+                      <span class="font-weight-medium">UniProt PTM</span>
+                    </td>
+                    <td>
+                      <template v-if="uniprotPtmXrefs.length > 0">
+                        <div class="d-flex flex-wrap gap-2">
+                          <v-chip
+                            v-for="(xr, idx) in uniprotPtmXrefs"
+                            :key="`uniprot-${idx}-${xr.value}`"
+                            class="mr-2"
+                            color="primary"
+                            size="small"
+                            variant="tonal"
+                          >
+                            UniProt:{{ xr.value }}
+                          </v-chip>
+                        </div>
+                      </template>
+                      <span v-else class="text-medium-emphasis">None</span>
+                    </td>
+                  </tr>
 
-              <!-- ChEBI section -->
-              <div class="mb-3">
-                <div class="text-body-2 font-weight-medium mb-1">ChEBI</div>
-                <div v-if="chebiXrefs.length > 0" class="d-flex flex-wrap gap-2">
-                  <v-chip
-                    v-for="(xr, idx) in chebiXrefs"
-                    :key="`chebi-${idx}-${xr}`"
-                    class="mr-2 mb-2"
-                    color="deep-purple-lighten-1"
-                    size="small"
-                    variant="tonal"
-                    :href="buildChebiUrl(xr) || undefined"
-                    rel="noopener"
-                    target="_blank"
-                  >
-                    {{ xr }}
-                  </v-chip>
-                </div>
-                <div v-else class="text-medium-emphasis">None</div>
-              </div>
+                  <!-- ChEBI row -->
+                  <tr>
+                    <td>
+                      <span class="font-weight-medium">ChEBI</span>
+                    </td>
+                    <td>
+                      <template v-if="chebiXrefs.length > 0">
+                        <div class="d-flex flex-wrap gap-2">
+                          <v-chip
+                            v-for="(xr, idx) in chebiXrefs"
+                            :key="`chebi-${idx}-${xr}`"
+                            class="mr-2"
+                            color="deep-purple-lighten-1"
+                            size="small"
+                            variant="tonal"
+                            :href="buildChebiUrl(xr) || undefined"
+                            rel="noopener"
+                            target="_blank"
+                          >
+                            {{ xr }}
+                          </v-chip>
+                        </div>
+                      </template>
+                      <span v-else class="text-medium-emphasis">None</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </v-table>
+            </div>
 
-              <!-- Hierarchy sections -->
+            <div class="mt-4">
+              <div class="text-subtitle-1 font-weight-medium mb-2">Hierarchy</div>
+
               <div class="mb-2">
                 <div class="text-body-2 font-weight-medium mb-1">Direct parents</div>
                 <div v-if="currentItem?.parents && currentItem.parents.length > 0" class="d-flex flex-wrap gap-2">
@@ -147,6 +172,8 @@
                 <div v-else class="text-medium-emphasis">None</div>
               </div>
             </div>
+
+
           </v-col>
 
           <v-col cols="12" md="4">

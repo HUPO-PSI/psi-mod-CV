@@ -3,13 +3,16 @@
     <v-card class="mb-2">
       <v-card-text>
         <div class="smiles-view ga-2 bg-white align-center justify-center">
-          <svg
-            :id="svgId"
-            ref="svgRef"
-            :height="height"
-            :width="`calc(min(${width}, 100%))`"
-            xmlns="http://www.w3.org/2000/svg"
-          />
+          <div :style="`width: calc(min(${width}, 100%))`">
+            <svg
+              :id="svgId"
+              ref="svgRef"
+              :height="height"
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+            />
+          </div>
+
 
           <div v-if="error" class="error">
             {{ error }}
