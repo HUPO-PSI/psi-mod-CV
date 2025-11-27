@@ -1,6 +1,6 @@
 import type { OboTerm } from '@/system/obo/OboTerm.ts'
 import { defineStore } from 'pinia'
-import { computed, ref, onMounted, watch } from 'vue'
+import { computed, onMounted, ref, watch } from 'vue'
 import { useOboStore } from '@/stores/obo'
 
 interface BreadcrumbPart {
@@ -26,7 +26,7 @@ export const useNavigationStore = defineStore('navigation', () => {
       return
     }
     if (currentTermId.value) {
-      const last = navStack.value[navStack.value.length - 1]
+      const last = navStack.value.at(-1)
       if (last !== currentTermId.value) {
         navStack.value.push(currentTermId.value)
       }
@@ -72,10 +72,14 @@ export const useNavigationStore = defineStore('navigation', () => {
   })
 
   // Query param sync: allow opening by ?mod=NNNNN (numeric part). Keep URL updated when navigating.
-  function normalizeModId(input: string | null): string | null {
-    if (!input) return null
+  function normalizeModId (input: string | null): string | null {
+    if (!input) {
+      return null
+    }
     const trimmed = input.trim()
-    if (!trimmed) return null
+    if (!trimmed) {
+      return null
+    }
     const modMatch = /^MOD:(\d{1,})$/.exec(trimmed)
     if (modMatch && modMatch[1]) {
       const num = modMatch[1]
@@ -89,7 +93,7 @@ export const useNavigationStore = defineStore('navigation', () => {
     return null
   }
 
-  function readQueryParam(): string | null {
+  function readQueryParam (): string | null {
     try {
       const params = new URLSearchParams(window.location.search)
       return params.get('mod')
@@ -98,7 +102,7 @@ export const useNavigationStore = defineStore('navigation', () => {
     }
   }
 
-  function writeQueryParam(id: string | null) {
+  function writeQueryParam (id: string | null) {
     try {
       const url = new URL(window.location.href)
       if (id) {
@@ -125,7 +129,7 @@ export const useNavigationStore = defineStore('navigation', () => {
     }
   })
 
-  watch(currentTermId, (id) => {
+  watch(currentTermId, id => {
     writeQueryParam(id)
   })
 

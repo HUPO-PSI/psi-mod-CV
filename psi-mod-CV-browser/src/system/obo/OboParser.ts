@@ -14,6 +14,13 @@ import type { OboXref } from '@/system/obo/OboXRef.ts'
  * @author Pieter Verschaffelt
  */
 export class OboParser {
+  /** Extracts the data-version value from an OBO file header (e.g., "data-version: 1.031.6"). */
+  public static parseDataVersion (input: string): string | null {
+    // Match the data-version line anywhere in the file; capture value until newline or an inline comment "! ..."
+    const m = input.match(/^\s*data-version:\s*([^\r\n!]+)(?:\s*!.*)?$/m)
+    return m ? m[1]!.trim() : null
+  }
+
   /** Parse OBO file content into a list of OboTerm objects. */
   public static parse (input: string): OboTerm[] {
     const lines = input.split(/\r?\n/)

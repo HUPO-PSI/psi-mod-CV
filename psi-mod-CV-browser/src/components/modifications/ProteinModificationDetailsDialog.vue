@@ -5,7 +5,7 @@
     transition="dialog-bottom-transition"
     @update:model-value="(v: boolean) => emit('update:modelValue', v)"
   >
-    <v-card rounded="lg" min-height="650">
+    <v-card min-height="650" rounded="lg">
       <v-card-title class="d-flex align-center bg-primary text-white">
         <v-icon class="mr-2">mdi-information</v-icon>
         <div class="d-flex flex-column">
@@ -114,9 +114,9 @@
               <v-chip
                 class="cursor-pointer mr-1"
                 color="primary"
-                variant="tonal"
                 size="x-small"
                 :title="bc.term?.name || bc.id"
+                variant="tonal"
                 @click="jumpToBreadcrumb(idx)"
               >
                 {{ bc.term?.id || bc.id }}
@@ -139,8 +139,8 @@
 <script lang="ts" setup>
   import { computed, watch } from 'vue'
   import SmilesView from '@/components/smiles/SmilesView.vue'
-  import { useOboStore } from '@/stores/obo'
   import { useNavigationStore } from '@/stores/navigation'
+  import { useOboStore } from '@/stores/obo'
 
   interface Xref { database: string, value: string }
   interface IdRef { id: string }
@@ -170,7 +170,9 @@
   }, { immediate: true })
 
   // Reset navigation when dialog closes
-  watch(() => props.modelValue, open => { if (!open) navigation.reset() })
+  watch(() => props.modelValue, open => {
+    if (!open) navigation.reset()
+  })
 
   const currentItem = computed<ModItem | null>(() => {
     if (!navigation.currentTermId) return null
@@ -187,10 +189,16 @@
 
   const breadcrumbDisplay = computed(() => navigation.breadcrumbTerms)
 
-  function openTerm (id: string) { navigation.openTerm(id) }
-  function jumpToBreadcrumb (index: number) { navigation.jumpTo(index) }
+  function openTerm (id: string) {
+    navigation.openTerm(id)
+  }
+  function jumpToBreadcrumb (index: number) {
+    navigation.jumpTo(index)
+  }
 
-  function close () { emit('update:modelValue', false) }
+  function close () {
+    emit('update:modelValue', false)
+  }
 </script>
 
 <style scoped>

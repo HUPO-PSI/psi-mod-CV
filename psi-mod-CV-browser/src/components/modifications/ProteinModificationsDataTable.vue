@@ -121,7 +121,7 @@
 </template>
 
 <script lang="ts" setup>
-  import { ref, onMounted, watch } from 'vue'
+  import { onMounted, ref, watch } from 'vue'
   import ProteinModificationDetailsDialog from '@/components/modifications/ProteinModificationDetailsDialog.vue'
   import { useProteinModificationsFilters } from '@/composables/useProteinModificationsFilters'
   import { useOboStore } from '@/stores/obo'
@@ -149,7 +149,7 @@
     { title: 'TermSpec', key: 'termSpec', width: '20%', sortable: true },
   ]
 
-  function normalizeModId(input: string | null): string | null {
+  function normalizeModId (input: string | null): string | null {
     if (!input) return null
     const trimmed = input.trim()
     if (!trimmed) return null
@@ -166,7 +166,7 @@
     return null
   }
 
-  function readQueryParam(): string | null {
+  function readQueryParam (): string | null {
     try {
       const params = new URLSearchParams(window.location.search)
       return params.get('mod')
@@ -175,7 +175,7 @@
     }
   }
 
-  function writeQueryParam(id: string | null) {
+  function writeQueryParam (id: string | null) {
     try {
       const url = new URL(window.location.href)
       if (id) {
@@ -194,12 +194,12 @@
     }
   }
 
-  function openDetails(item: any) {
+  function openDetails (item: any) {
     selectedItem.value = item
     detailsOpen.value = true
   }
 
-  function onRowClick(ev: MouseEvent, row: any) {
+  function onRowClick (ev: MouseEvent, row: any) {
     // Ignore clicks on interactive elements (links, buttons, chips)
     const target = ev.target as HTMLElement | null
     if (target && target.closest('a, button, .v-btn, .v-chip, [role="button"]')) {

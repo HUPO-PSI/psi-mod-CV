@@ -8,6 +8,7 @@ export const useOboStore = defineStore('obo', () => {
   const terms = ref<OboTerm[]>([])
   const loaded = ref<boolean>(false)
   const error = ref<string | null>(null)
+  const dataVersion = ref<string | null>(null)
 
   // Getters
   const allTerms = computed(() => terms.value)
@@ -43,14 +44,19 @@ export const useOboStore = defineStore('obo', () => {
     try {
       // Import the OBO file as raw text at build-time
       const oboText: string = (await import('@/assets/data/PSI-MOD.obo?raw')).default as unknown as string
-      const parsed = OboParser.parse(oboText)
-      terms.value = parsed
+
+      // Use OboParser to extract data-version
+      dataVersion.value = OboParser.parseDataVersion(oboText)
+
+      // Parse terms
+      terms.value = OboParser.parse(oboText)
       loaded.value = true
     } catch (error_: any) {
       console.error('Failed to load/parse OBO file:', error_)
       error.value = error_?.message ?? String(error_)
       loaded.value = false
       terms.value = []
+      dataVersion.value = null
     }
   }
 
@@ -59,6 +65,7 @@ export const useOboStore = defineStore('obo', () => {
     terms,
     loaded,
     error,
+    dataVersion,
     // getters
     allTerms,
     termCount,

@@ -2,6 +2,7 @@
   <v-footer
     app
     height="40"
+    class="d-flex justify-space-between"
   >
     <a
       v-for="item in items"
@@ -19,8 +20,13 @@
     </a>
 
     <div
+      v-if="obo.dataVersion"
+      class="text-caption text-medium-emphasis"
+    >
+      PSI-MOD data: {{ obo.dataVersion }}
+    </div>
+    <div
       class="text-caption text-disabled"
-      style="position: absolute; right: 16px;"
     >
       &copy; {{ (new Date()).getFullYear() }} <span class="d-none d-sm-inline-block">HUPO PSI</span>
       —
@@ -37,6 +43,9 @@
 </template>
 
 <script setup lang="ts">
+  import { useOboStore } from '@/stores/obo'
+  const obo = useOboStore()
+
   const items = [
     {
       title: 'GitHub',
