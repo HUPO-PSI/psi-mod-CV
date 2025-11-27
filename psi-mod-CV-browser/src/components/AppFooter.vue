@@ -23,7 +23,7 @@
       v-if="obo.dataVersion"
       class="text-caption text-medium-emphasis"
     >
-      PSI-MOD data: {{ obo.dataVersion }}
+      PSI-MOD data version: {{ obo.dataVersion }}
     </div>
     <div
       class="text-caption text-disabled"
