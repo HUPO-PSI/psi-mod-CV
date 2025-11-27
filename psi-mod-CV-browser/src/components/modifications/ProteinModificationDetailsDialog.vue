@@ -21,11 +21,11 @@
       <v-card-text class="pa-4">
         <v-row>
           <v-col cols="12" md="4">
-            <div class="text-subtitle-1 font-weight-medium mb-2">Cross-references</div>
-            <div v-if="currentItem?.xrefs && currentItem.xrefs.length > 0">
+            <div class="text-subtitle-1 font-weight-medium mb-2">Details</div>
+            <div v-if="detailsXrefs.length > 0">
               <v-table class="bg-transparent" density="compact">
                 <tbody>
-                  <tr v-for="(xr, idx) in currentItem!.xrefs" :key="idx">
+                  <tr v-for="(xr, idx) in detailsXrefs" :key="idx">
                     <td>
                       <span class="font-weight-medium">{{ xr.database }}</span>
                     </td>
@@ -36,7 +36,7 @@
                 </tbody>
               </v-table>
             </div>
-            <div v-else class="text-medium-emphasis">No xrefs available.</div>
+            <div v-else class="text-medium-emphasis">No details available.</div>
 
             <div v-if="currentItem?.comment" class="mt-4">
               <div class="text-subtitle-1 font-weight-medium mb-1">Comment</div>
@@ -46,8 +46,69 @@
 
           <v-col cols="12" md="4">
             <div>
-              <div class="text-subtitle-1 font-weight-medium mb-2">Hierarchy</div>
+              <div class="text-subtitle-1 font-weight-medium mb-2">Cross-references</div>
 
+              <!-- Unimod section -->
+              <div class="mb-3">
+                <div class="text-body-2 font-weight-medium mb-1">Unimod</div>
+                <div v-if="unimodXrefs.length > 0" class="d-flex flex-wrap gap-2">
+                  <v-chip
+                    v-for="(xr, idx) in unimodXrefs"
+                    :key="`unimod-${idx}-${xr.value}`"
+                    class="mr-2 mb-2"
+                    color="secondary"
+                    size="small"
+                    variant="tonal"
+                    :href="buildUnimodUrl(xr) || undefined"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    {{ xr.value }}
+                  </v-chip>
+                </div>
+                <div v-else class="text-medium-emphasis">None</div>
+              </div>
+
+              <!-- UniProt PTM section -->
+              <div class="mb-3">
+                <div class="text-body-2 font-weight-medium mb-1">UniProt PTM</div>
+                <div v-if="uniprotPtmXrefs.length > 0" class="d-flex flex-wrap gap-2">
+                  <v-chip
+                    v-for="(xr, idx) in uniprotPtmXrefs"
+                    :key="`uniprot-${idx}-${xr.value}`"
+                    class="mr-2 mb-2"
+                    color="primary"
+                    size="small"
+                    variant="tonal"
+                  >
+                    UniProt:{{ xr.value }}
+                  </v-chip>
+                </div>
+                <div v-else class="text-medium-emphasis">None</div>
+              </div>
+
+              <!-- ChEBI section -->
+              <div class="mb-3">
+                <div class="text-body-2 font-weight-medium mb-1">ChEBI</div>
+                <div v-if="chebiXrefs.length > 0" class="d-flex flex-wrap gap-2">
+                  <v-chip
+                    v-for="(xr, idx) in chebiXrefs"
+                    :key="`chebi-${idx}-${xr}`"
+                    class="mr-2 mb-2"
+                    color="deep-purple-lighten-1"
+                    size="small"
+                    variant="tonal"
+                    :href="buildChebiUrl(xr) || undefined"
+                    rel="noopener"
+                    target="_blank"
+                  >
+                    {{ xr }}
+                  </v-chip>
+                </div>
+                <div v-else class="text-medium-emphasis">None</div>
+              </div>
+
+              <!-- Hierarchy sections -->
               <div class="mb-2">
                 <div class="text-body-2 font-weight-medium mb-1">Direct parents</div>
                 <div v-if="currentItem?.parents && currentItem.parents.length > 0" class="d-flex flex-wrap gap-2">
@@ -139,20 +200,12 @@
   import SmilesView from '@/components/smiles/SmilesView.vue'
   import { useNavigationStore } from '@/stores/navigation'
   import { useOboStore } from '@/stores/obo'
+  import type {OboTerm} from "@/system/obo/OboTerm.ts";
 
   interface Xref { database: string, value: string }
   interface IdRef { id: string }
-  interface ModItem {
-    id: string
-    name: string
-    definition?: string
-    xrefs?: Xref[]
-    parents?: IdRef[]
-    children?: IdRef[]
-    comment?: string
-  }
 
-  const props = defineProps<{ modelValue: boolean, item: ModItem | null }>()
+  const props = defineProps<{ modelValue: boolean, item: OboTerm | null }>()
   const emit = defineEmits<{ (e: 'update:modelValue', v: boolean): void }>()
 
   const oboStore = useOboStore()
@@ -172,14 +225,21 @@
     if (!open) navigation.reset()
   })
 
-  const currentItem = computed<ModItem | null>(() => {
+  const currentItem = computed<OboTerm | null>(() => {
     if (!navigation.currentTermId) return null
     const term = oboStore.byId(navigation.currentTermId!) as any
     return term || null
   })
 
+  const allXrefs = computed<Xref[]>(() => Array.isArray(currentItem.value?.xrefs) ? currentItem.value!.xrefs as Xref[] : [])
+  const unimodXrefs = computed(() => allXrefs.value.filter(x => x.database?.toLowerCase() === 'unimod'))
+  const uniprotPtmXrefs = computed(() => allXrefs.value.filter(x => x.database?.toLowerCase() === 'uniprot.ptm'))
+  const chebiXrefs = computed(() => currentItem.value?.definitionXrefs?.filter(x => x.toLowerCase().includes('chebi')) || [])
+  const excludedSet = new Set(['unimod', 'uniprot.ptm', 'chebi'])
+  const detailsXrefs = computed(() => allXrefs.value.filter(x => !excludedSet.has(String(x.database).toLowerCase())))
+
   const smiles = computed(() => {
-    const xr = currentItem.value?.xrefs?.find(x => x.database.toLowerCase() === 'smiles')
+    const xr = allXrefs.value.find(x => x.database.toLowerCase() === 'smiles')
     return xr ? String(xr.value) : null
   })
 
@@ -196,6 +256,26 @@
 
   function close () {
     emit('update:modelValue', false)
+  }
+
+  function buildUnimodUrl (x: Xref): string {
+    const v = String(x?.value ?? '').trim()
+    if (!v) return ''
+    // value expected numeric, but allow embedded pattern
+    const m = v.match(/(\d{1,})/)
+    if (!m) return ''
+    const num = m[1]
+    if (!num) return ''
+    return `https://www.unimod.org/modifications_view.php?editid1=${encodeURIComponent(num)}`
+  }
+  function buildChebiUrl (x: string): string {
+    const v = String(x ?? '').trim()
+    if (!v) return ''
+    const m = v.match(/(\d{1,})/)
+    if (!m) return ''
+    const num = m[1]
+    if (!num) return ''
+    return `https://www.ebi.ac.uk/chebi/searchId.do?chebiId=${encodeURIComponent(num)}`
   }
 </script>
 

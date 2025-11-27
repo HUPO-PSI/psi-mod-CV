@@ -17,15 +17,15 @@
         </div>
       </v-card-text>
       <v-card-actions>
-        <v-spacer></v-spacer>
+        <v-spacer />
         <v-menu v-model="isMenuOpen" location="bottom" transition="fade-transition">
           <template #activator="{ props: menuProps }">
             <v-btn
               v-bind="menuProps"
+              append-icon="mdi-menu-down"
               color="primary"
               :loading="isRendering"
               prepend-icon="mdi-download"
-              append-icon="mdi-menu-down"
               variant="outlined"
             >
               Save image

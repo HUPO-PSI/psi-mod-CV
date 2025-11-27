@@ -1,8 +1,8 @@
 <template>
   <v-footer
     app
-    height="40"
     class="d-flex justify-space-between"
+    height="40"
   >
     <a
       v-for="item in items"
