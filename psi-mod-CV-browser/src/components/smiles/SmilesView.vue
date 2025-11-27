@@ -2,12 +2,12 @@
   <div class="d-flex flex-column" style="width: 100%;">
     <v-card class="mb-2">
       <v-card-text>
-        <div class="smiles-view d-inline-flex flex-column ga-2 bg-white">
+        <div class="smiles-view ga-2 bg-white align-center justify-center">
           <svg
             :id="svgId"
             ref="svgRef"
-            height="100%"
-            width="100%"
+            :height="height"
+            :width="`calc(min(${width}, 100%))`"
             xmlns="http://www.w3.org/2000/svg"
           />
 
@@ -242,10 +242,7 @@
   })
 </script>
 
-<style scoped>
-.smiles-view {
-  display: inline-block;
-}
+<style>
 .error {
   margin-top: 8px;
   color: #B00020; /* Vuetify default error color fallback */
