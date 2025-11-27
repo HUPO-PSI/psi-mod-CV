@@ -24,6 +24,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Copy PSI-MOD.obo into browser assets
+        run: |
+          if [ -f PSI-MOD.obo ]; then
+            mkdir -p psi-mod-CV-browser/src/assets/data
+            cp -f PSI-MOD.obo psi-mod-CV-browser/src/assets/data/PSI-MOD.obo
+            echo "Copied PSI-MOD.obo to psi-mod-CV-browser/src/assets/data/PSI-MOD.obo"
+          else
+            echo "Warning: PSI-MOD.obo not found in repository root. Skipping copy."
+          fi
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
