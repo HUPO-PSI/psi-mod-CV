@@ -16,32 +16,36 @@
           </div>
         </div>
       </v-card-text>
+      <v-card-actions>
+        <v-spacer></v-spacer>
+        <v-menu v-model="isMenuOpen" location="bottom" transition="fade-transition">
+          <template #activator="{ props: menuProps }">
+            <v-btn
+              v-bind="menuProps"
+              color="primary"
+              :loading="isRendering"
+              prepend-icon="mdi-download"
+              append-icon="mdi-menu-down"
+              variant="outlined"
+            >
+              Save image
+            </v-btn>
+          </template>
+          <v-list>
+            <v-list-item
+              :disabled="isRendering || !!error"
+              title="Save as SVG"
+              @click="onDownloadSVG"
+            />
+            <v-list-item
+              :disabled="isRendering || !!error"
+              title="Save as PNG"
+              @click="onDownloadPNG"
+            />
+          </v-list>
+        </v-menu>
+      </v-card-actions>
     </v-card>
-    <v-menu v-model="isMenuOpen" location="bottom" transition="fade-transition">
-      <template #activator="{ props: menuProps }">
-        <v-btn
-          v-bind="menuProps"
-          color="primary"
-          :loading="isRendering"
-          prepend-icon="mdi-menu-down"
-          variant="outlined"
-        >
-          Download image
-        </v-btn>
-      </template>
-      <v-list>
-        <v-list-item
-          :disabled="isRendering || !!error"
-          title="Download as SVG"
-          @click="onDownloadSVG"
-        />
-        <v-list-item
-          :disabled="isRendering || !!error"
-          title="Download as PNG"
-          @click="onDownloadPNG"
-        />
-      </v-list>
-    </v-menu>
   </div>
 </template>
 
