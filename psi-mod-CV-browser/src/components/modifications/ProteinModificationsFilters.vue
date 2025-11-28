@@ -18,7 +18,7 @@
       </v-btn>
     </v-card-title>
 
-    <v-card-text class="overflow-y-scroll d-flex flex-column" :style="lgAndUp ? 'height: calc(100vh - 200px);': ''">
+    <v-card-text class="overflow-y-scroll d-flex flex-column" :style="lgAndUp ? 'height: calc(100vh - 210px);': ''">
       <v-col sm="12" lg="12">
         <div class="text-xl-body-1 mb-4">
           Search and filter peptide modifications by ID, name, or definition.

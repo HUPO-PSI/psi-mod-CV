@@ -13,7 +13,7 @@
           :custom-key-sort="customKeySort"
           fixed-header
           :headers="headers"
-          :height="lgAndUp ? 'calc(100vh - 200px)': ''"
+          :height="lgAndUp ? 'calc(100vh - 210px)': ''"
           hover
           item-value="id"
           :items="augmentedItems"
