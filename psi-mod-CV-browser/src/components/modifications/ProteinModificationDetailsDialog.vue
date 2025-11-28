@@ -27,7 +27,7 @@
                 <tbody>
                   <tr v-for="(xr, idx) in detailsXrefs" :key="idx">
                     <td>
-                      <span class="font-weight-medium">{{ xr.database }}</span>
+                      <span class="font-weight-medium">{{ mapDatabaseName(xr.database) }}</span>
                     </td>
                     <td>
                       <span>{{ xr.value }}</span>
@@ -295,6 +295,7 @@
     if (!num) return ''
     return `https://www.unimod.org/modifications_view.php?editid1=${encodeURIComponent(num)}`
   }
+
   function buildChebiUrl (x: string): string {
     const v = String(x ?? '').trim()
     if (!v) return ''
@@ -304,6 +305,20 @@
     if (!num) return ''
     return `https://www.ebi.ac.uk/chebi/searchId.do?chebiId=${encodeURIComponent(num)}`
   }
+
+  const databaseMapping = new Map<string, string>([
+    ['DiffAvg', 'Average Delta Mass'],
+    ['DiffFormula', 'Delta Formula'],
+    ['DiffMono', 'Monoisotopic Delta Mass'],
+    ['MassAvg', 'Average Residue Mass'],
+    ['MassMono', 'Monoisotopic Residue Mass'],
+    ['Origin', 'Origin Residue'],
+    ['TermSpec', 'Terminal Specification']
+  ]);
+
+  const mapDatabaseName = (db: string): string => {
+    return databaseMapping.get(db) || db;
+  };
 </script>
 
 <style scoped>

@@ -76,7 +76,7 @@
                 density="comfortable"
                 hide-details
                 :items="originOptions"
-                label="Filter by Origin (amino acid)"
+                label="Filter by Origin Residue"
                 multiple
               />
               <div class="text-caption text-medium-emphasis">
@@ -93,7 +93,7 @@
                 density="comfortable"
                 hide-details
                 :items="termSpecOptions"
-                label="Filter by TermSpec"
+                label="Filter by Terminal Specification"
                 multiple
               />
               <div class="text-caption text-medium-emphasis">
@@ -106,7 +106,7 @@
             <RangeSliderInput
               v-model="diffMonoRange"
               description="Difference in monoisotopic mass relative to the unmodified residue (in Da). Move the handles or enter values to restrict modifications by mass delta."
-              label="Filter by DiffMono"
+              label="Filter by Monoisotopic Delta Mass"
               :max="diffMonoMinMax.max"
               :min="diffMonoMinMax.min"
               :step="10"
@@ -114,8 +114,8 @@
 
             <RangeSliderInput
               v-model="massMonoRange"
-              description="Absolute monoisotopic mass of the modified residue or moiety (in Da). Move the handles or enter values to limit the mass window."
-              label="Filter by MassMono"
+              description="Absolute monoisotopic mass of the modified residue (in Da). Move the handles or enter values to limit the mass window."
+              label="Filter by Monoisotopic Mass"
               :max="massMonoMinMax.max"
               :min="massMonoMinMax.min"
               :step="10"
