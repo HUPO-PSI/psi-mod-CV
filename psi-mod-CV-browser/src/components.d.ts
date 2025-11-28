@@ -11,6 +11,7 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AboutDialog: typeof import('./components/AboutDialog.vue')['default']
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     ProteinModificationDetailsDialog: typeof import('./components/modifications/ProteinModificationDetailsDialog.vue')['default']
     ProteinModificationsDataTable: typeof import('./components/modifications/ProteinModificationsDataTable.vue')['default']
