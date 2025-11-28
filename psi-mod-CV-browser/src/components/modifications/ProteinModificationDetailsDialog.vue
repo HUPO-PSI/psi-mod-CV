@@ -185,7 +185,7 @@
                 :smiles="smiles"
                 theme="light"
               />
-              <div v-else class="text-medium-emphasis">No SMILES available in xrefs.</div>
+              <div v-else class="text-medium-emphasis">No SMILES available for this residue modification.</div>
             </div>
           </v-col>
         </v-row>

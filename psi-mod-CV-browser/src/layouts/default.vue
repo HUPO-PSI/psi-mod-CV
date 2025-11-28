@@ -6,7 +6,7 @@
       </template>
 
       <v-app-bar-title class="font-weight-bold">
-        PSI-MOD Peptide Modifications Browser
+        PSI-MOD Residue Modifications Browser
       </v-app-bar-title>
 
       <!-- Spacer pushes status to right side -->

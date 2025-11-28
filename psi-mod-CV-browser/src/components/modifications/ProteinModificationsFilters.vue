@@ -3,7 +3,7 @@
     <v-card-title class="bg-primary text-white d-flex align-end">
       <v-icon class="mr-2">mdi-magnify</v-icon>
       <div class="font-weight-bold">
-        Filter peptide modifications
+        Filter residue modifications
       </div>
       <v-spacer />
       <v-btn
