@@ -13,7 +13,7 @@
           :custom-key-sort="customKeySort"
           fixed-header
           :headers="headers"
-          height="min(600px, max(300px, calc(100vh - 500px)))"
+          :height="lgAndUp ? 'calc(100vh - 200px)': ''"
           hover
           item-value="id"
           :items="augmentedItems"
@@ -35,7 +35,6 @@
             <span class="font-weight-medium">{{ item.name }}</span>
           </template>
 
-          <!-- New columns: ChEBI ID and Unimod ID from definition xrefs -->
           <template #item.chebiId="{ item }">
             <template v-if="getChebiInfo(item)">
               <v-chip
@@ -125,6 +124,9 @@
   import ProteinModificationDetailsDialog from '@/components/modifications/ProteinModificationDetailsDialog.vue'
   import { useProteinModificationsFilters } from '@/composables/useProteinModificationsFilters'
   import { useOboStore } from '@/stores/obo'
+  import { useDisplay } from 'vuetify'
+
+  const { lgAndUp } = useDisplay();
 
   const {
     error,

@@ -18,8 +18,8 @@
       </v-btn>
     </v-card-title>
 
-    <v-card-text>
-      <v-col cols="12" md="12">
+    <v-card-text class="overflow-y-scroll d-flex flex-column" :style="lgAndUp ? 'height: calc(100vh - 200px);': ''">
+      <v-col sm="12" lg="12">
         <div class="text-xl-body-1 mb-4">
           Search and filter peptide modifications by ID, name, or definition.
           You can also view cross-references and SMILES structure for each modification.
@@ -41,7 +41,7 @@
 
         <!-- Additional filters -->
         <v-row>
-          <v-col cols="12" md="6">
+          <v-col sm="12" md="6" lg="12">
             <div class="mb-4">
               <v-checkbox
                 v-model="leafOnly"
@@ -68,7 +68,7 @@
             </div>
 
             <!-- Origin filter -->
-            <div class="mt-4">
+            <div class="mt-4" style="width: 100%;">
               <v-select
                 v-model="selectedOrigin"
                 chips
@@ -102,7 +102,7 @@
             </div>
           </v-col>
 
-          <v-col cols="12" md="6">
+          <v-col cols="12" md="6" lg="12" class="mb-4">
             <RangeSliderInput
               v-model="diffMonoRange"
               description="Difference in monoisotopic mass relative to the unmodified residue (in Da). Move the handles or enter values to restrict modifications by mass delta."
@@ -110,6 +110,7 @@
               :max="diffMonoMinMax.max"
               :min="diffMonoMinMax.min"
               :step="10"
+              class="mt-4"
             />
 
             <RangeSliderInput
@@ -121,15 +122,12 @@
               :step="10"
             />
           </v-col>
-
-          <!-- Small summary -->
-          <v-col cols="12">
-            <div class="text-caption text-medium-emphasis">
-              Showing {{ filteredItems.length }} of {{ totalCount }} terms after applying filters.
-            </div>
-          </v-col>
         </v-row>
       </v-col>
+<!--      <v-spacer></v-spacer>-->
+      <div :class="lgAndUp ? 'text-caption text-medium-emphasis mt-n6' : 'text-caption text-medium-emphasis'">
+        Showing {{ filteredItems.length }} of {{ totalCount }} terms after applying filters.
+      </div>
     </v-card-text>
   </v-card>
 </template>
@@ -137,6 +135,9 @@
 <script lang="ts" setup>
   import RangeSliderInput from '@/components/common/RangeSliderInput.vue'
   import { useProteinModificationsFilters } from '@/composables/useProteinModificationsFilters'
+  import { useDisplay } from 'vuetify'
+
+  const { lgAndUp } = useDisplay();
 
   const {
     search,

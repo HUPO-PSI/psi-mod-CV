@@ -1,8 +1,10 @@
 <template>
   <v-container class="pa-6" fluid>
     <v-row justify="center">
-      <v-col cols="12">
+      <v-col sm="12" lg="4">
         <ProteinModificationsFilters />
+      </v-col>
+      <v-col sm="12" lg="8">
         <ProteinModificationsDataTable />
       </v-col>
     </v-row>
