@@ -1,0 +1,243 @@
+// Web Worker for parsing OBO content off the main thread
+import type { OboTerm } from '@/system/obo/OboTerm.ts'
+import type { OboSynonym } from '@/system/obo/OboSynonym.ts'
+import type { OboXref } from '@/system/obo/OboXRef.ts'
+
+function stripQuotes (s: string): string {
+  const bang = s.indexOf(' ! ')
+  if (bang !== -1) {
+    s = s.slice(0, Math.max(0, bang)).trim()
+  }
+  if ((s.startsWith('"') && s.endsWith('"')) || (s.startsWith('\'') && s.endsWith('\''))) {
+    return s.substring(1, s.length - 1)
+  }
+  return s
+}
+
+function unescapeQuotes (s: string): string {
+  return s.replace(/\\\"/g, '"')
+}
+
+function splitBracketList (contentInsideBrackets: string): string[] {
+  return contentInsideBrackets
+    .split(',')
+    .map(t => t.trim())
+    .filter(t => t.length > 0)
+}
+
+function parseTerms (input: string): OboTerm[] {
+  const lines = input.split(/\r?\n/)
+
+  const terms: OboTerm[] = []
+  const idToTerm = new Map<string, OboTerm>()
+  const childToParents = new Map<string, string[]>()
+  let inTerm = false
+
+  // Working buffers for the current term
+  let id: string | undefined
+  let name: string | undefined
+  let definition: string | undefined
+  let definitionXrefs: string[] | undefined
+  let synonyms: OboSynonym[] = []
+  let xrefs: OboXref[] = []
+  let isObsolete = false
+  let comment: string | undefined
+  let subset: string[] | undefined
+
+  function pushCurrent () {
+    // Skip obsolete terms entirely (do not include or link them)
+    if (isObsolete) {
+      reset()
+      return
+    }
+    if (!id || !name || !definition) {
+      // Incomplete [Term] block; skip.
+      reset()
+      return
+    }
+    const term: OboTerm = {
+      id,
+      name,
+      definition,
+      synonyms: synonyms.slice(),
+      xrefs: xrefs.slice(),
+      parents: [],
+      children: [],
+    }
+    if (definitionXrefs && definitionXrefs.length > 0) {
+      term.definitionXrefs = definitionXrefs.slice()
+    }
+    if (comment) {
+      term.comment = comment
+    }
+    if (subset && subset.length > 0) {
+      term.subset = subset.slice()
+    }
+    terms.push(term)
+    idToTerm.set(term.id, term)
+    reset()
+  }
+
+  function reset () {
+    inTerm = false
+    id = undefined
+    name = undefined
+    definition = undefined
+    definitionXrefs = undefined
+    synonyms = []
+    xrefs = []
+    isObsolete = false
+    comment = undefined
+    subset = undefined
+  }
+
+  const defRe = /^def:\s+"([\s\S]*?)"\s*(?:\[(.*)\])?\s*$/ // capture text and optional [xrefs]
+  const synRe = /^synonym:\s+"([\s\S]*?)"\s+(EXACT|BROAD|NARROW|RELATED)\s+([^\s]+)\s*(?:\[(.*)\])?\s*$/
+
+  for (const rawLine of lines) {
+    const line = rawLine.replace(/\r$/, '').trimEnd()
+    if (!line) {
+      continue
+    }
+
+    if (line === '[Term]') {
+      if (inTerm) {
+        pushCurrent()
+      }
+      inTerm = true
+      continue
+    }
+
+    if (!inTerm) {
+      continue
+    }
+
+    if (line.startsWith('!')) {
+      continue
+    }
+
+    if (line.startsWith('id:')) {
+      id = line.slice(3).trim()
+      continue
+    }
+
+    if (line.startsWith('name:')) {
+      name = line.slice(5).trim()
+      continue
+    }
+
+    if (line.startsWith('def:')) {
+      const m = line.match(defRe)
+      if (m && m.length >= 2 && m[1]) {
+        definition = unescapeQuotes(m[1])
+        const refs = m[2]
+        definitionXrefs = refs && refs.trim().length > 0 ? splitBracketList(refs) : undefined
+      } else {
+        throw new Error(`Invalid definition format in line: ${line}`)
+      }
+      continue
+    }
+
+    if (line.startsWith('synonym:')) {
+      const m = line.match(synRe)
+      if (m) {
+        if (!m[1] || !m[3]) {
+          throw new Error(`Invalid synonym format in line: ${line}`)
+        }
+
+        const text = unescapeQuotes(m[1])
+        const scopeValue = m[2]
+        if (!scopeValue || !['EXACT', 'BROAD', 'NARROW', 'RELATED'].includes(scopeValue)) {
+          throw new Error(`Invalid scope value "${scopeValue}" in line: ${line}`)
+        }
+        const scope = scopeValue as OboSynonym['scope']
+        const type = m[3]
+        const refs = m[4]
+        const xrefList = refs && refs.trim().length > 0 ? splitBracketList(refs) : undefined
+        synonyms.push({ text, scope, type, xrefs: xrefList })
+      }
+      continue
+    }
+
+    if (line.startsWith('xref:')) {
+      const rest = line.slice(5).trim()
+      const colonIdx = rest.indexOf(':')
+      if (colonIdx > 0) {
+        const database = rest.slice(0, Math.max(0, colonIdx)).trim()
+        let value = rest.slice(Math.max(0, colonIdx + 1)).trim()
+        value = stripQuotes(value)
+        xrefs.push({ database, value })
+      }
+      continue
+    }
+
+    if (line.startsWith('subset:')) {
+      const val = line.slice(7).trim()
+      if (!subset) {
+        subset = []
+      }
+      if (val) {
+        subset.push(val)
+      }
+      continue
+    }
+
+    if (line.startsWith('comment:')) {
+      comment = line.slice(8).trim()
+      continue
+    }
+
+    if (line.startsWith('is_obsolete:')) {
+      const val = line.slice(12).trim().toLowerCase()
+      isObsolete = val === 'true' || val === 't' || val === '1'
+      continue
+    }
+
+    if (line.startsWith('is_a:')) {
+      const rest = line.slice(5).trim()
+      if (!rest.includes('!')) {
+        throw new Error(`Missing required ! separator in is_a line: ${line}`)
+      }
+      const beforeBang = rest.split('!')[0]!.trim()
+      const parentId = beforeBang.split(/\s+/)[0]
+      if (id && parentId) {
+        const list = childToParents.get(id) ?? []
+        list.push(parentId)
+        childToParents.set(id, list)
+      }
+      continue
+    }
+  }
+
+  if (inTerm) {
+    pushCurrent()
+  }
+
+  for (const [childId, parentIds] of childToParents.entries()) {
+    const child = idToTerm.get(childId)
+    if (!child) continue
+    for (const parentId of parentIds) {
+      const parent = idToTerm.get(parentId)
+      if (!parent) continue
+      if (!child.parents) child.parents = []
+      if (!parent.children) parent.children = []
+      if (!child.parents.some(p => p.id === parent.id)) child.parents.push(parent)
+      if (!parent.children.some(c => c.id === child.id)) parent.children.push(child)
+    }
+  }
+
+  return terms
+}
+
+self.onmessage = (ev: MessageEvent) => {
+  const { type, payload } = ev.data || {}
+  if (type === 'parse' && typeof payload === 'string') {
+    try {
+      const result = parseTerms(payload)
+      // Structured clone should handle plain objects/arrays
+      ;(self as any).postMessage({ type: 'result', payload: result })
+    } catch (e: any) {
+      ;(self as any).postMessage({ type: 'error', error: e?.message ?? String(e) })
+    }
+  }
+}

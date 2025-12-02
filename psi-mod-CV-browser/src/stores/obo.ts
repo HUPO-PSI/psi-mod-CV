@@ -48,8 +48,8 @@ export const useOboStore = defineStore('obo', () => {
       // Use OboParser to extract data-version
       dataVersion.value = OboParser.parseDataVersion(oboText)
 
-      // Parse terms
-      terms.value = OboParser.parse(oboText)
+      // Parse terms in a Web Worker via OboParser
+      terms.value = await OboParser.parse(oboText)
       loaded.value = true
     } catch (error_: any) {
       console.error('Failed to load/parse OBO file:', error_)
