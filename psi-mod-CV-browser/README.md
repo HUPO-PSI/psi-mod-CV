@@ -1,97 +1,120 @@
-# Vuetify (Default)
+# PSI-MOD Residue Modifications Browser
 
-This is the official scaffolding tool for Vuetify, designed to give you a head start in building your new Vuetify application. It sets up a base template with all the necessary configurations and standard directory structure, enabling you to begin development without the hassle of setting up the project from scratch.
+A lightweight, modern web application to explore the PSI-MOD controlled vocabulary (CV) of protein residue modifications. It lets you quickly search, filter, and inspect modification terms, view cross‑references, and visualize chemical structures (SMILES) in your browser. The app is built with Vue 3, Vite, Pinia, and Vuetify, and parses the PSI‑MOD ontology (OBO) to present a fast, user‑friendly browsing experience for proteomics and bioinformatics users.
 
-## ❗️ Important Links
+Key capabilities:
+- Browse and search PSI‑MOD terms (names, accessions, synonyms)
+- Filter by residue, mass shift, and various cross‑references (e.g., ChEBI, UniMod)
+- Inspect rich details for each modification, including definitions and relationships
+- Visualize SMILES structures using smiles‑drawer
 
-- 📄 [Docs](https://vuetifyjs.com/)
-- 🚨 [Issues](https://issues.vuetifyjs.com/)
-- 🏬 [Store](https://store.vuetifyjs.com/)
-- 🎮 [Playground](https://play.vuetifyjs.com/)
-- 💬 [Discord](https://community.vuetifyjs.com)
 
-## 💿 Install
+## Quick start
 
-Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:
+### Prerequisites
+- Node.js 18 or newer (Node 20+ recommended)
+  - Check your version: `node -v`
+- A package manager:
+  - Yarn (recommended for this project): `npm i -g yarn`
 
-| Package Manager                                                | Command        |
-|---------------------------------------------------------------|----------------|
-| [yarn](https://yarnpkg.com/getting-started)                   | `yarn install` |
-| [npm](https://docs.npmjs.com/cli/v7/commands/npm-install)     | `npm install`  |
-| [pnpm](https://pnpm.io/installation)                          | `pnpm install` |
-| [bun](https://bun.sh/#getting-started)                        | `bun install`  |
+### 1) Install dependencies
+From the project root (this folder), install the required packages:
 
-After completing the installation, your environment is ready for Vuetify development.
+- With Yarn: `yarn install`
 
-## ✨ Features
 
-- 🖼️ **Optimized Front-End Stack**: Leverage the latest Vue 3 and Vuetify 3 for a modern, reactive UI development experience. [Vue 3](https://v3.vuejs.org/) | [Vuetify 3](https://vuetifyjs.com/en/)
-- 🗃️ **State Management**: Integrated with [Pinia](https://pinia.vuejs.org/), the intuitive, modular state management solution for Vue.
-- 🚦 **Routing and Layouts**: Utilizes Vue Router for SPA navigation and vite-plugin-vue-layouts-next for organizing Vue file layouts. [Vue Router](https://router.vuejs.org/) | [vite-plugin-vue-layouts-next](https://github.com/loicduong/vite-plugin-vue-layouts-next)
-- 💻 **Enhanced Development Experience**: Benefit from TypeScript's static type checking and the ESLint plugin suite for Vue, ensuring code quality and consistency. [TypeScript](https://www.typescriptlang.org/) | [ESLint Plugin Vue](https://eslint.vuejs.org/)
-- ⚡ **Next-Gen Tooling**: Powered by Vite, experience fast cold starts and instant HMR (Hot Module Replacement). [Vite](https://vitejs.dev/)
-- 🧩 **Automated Component Importing**: Streamline your workflow with unplugin-vue-components, automatically importing components as you use them. [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
-- 🛠️ **Strongly-Typed Vue**: Use vue-tsc for type-checking your Vue components, and enjoy a robust development experience. [vue-tsc](https://github.com/johnsoncodehk/volar/tree/master/packages/vue-tsc)
+## Run in development mode
+Development mode runs a local web server with hot‑reload. When you edit files, the browser updates automatically.
 
-These features are curated to provide a seamless development experience from setup to deployment, ensuring that your Vuetify application is both powerful and maintainable.
+Commands:
+- Yarn: `yarn dev`
 
-## 💡 Usage
+What to expect:
+- The dev server starts on http://localhost:3000 (default configured in `vite.config.mts`).
+- Open that URL in your browser. If port 3000 is busy, Vite may prompt to use another port; accept it and use the new URL.
 
-This section covers how to start the development server and build your project for production.
 
-### Starting the Development Server
+## Build for production
+This creates an optimized, static build you can deploy to any static hosting service.
 
-To start the development server with hot-reload, run the following command. The server will be accessible at [http://localhost:3000](http://localhost:3000):
+Commands:
+- Yarn: `yarn build`
 
-```bash
-yarn dev
-```
+The output appears in the `dist/` folder.
 
-(Repeat for npm, pnpm, and bun with respective commands.)
+Optional: preview the production build locally to test it as it will run in production.
+- Yarn: `yarn preview`
 
-> Add NODE_OPTIONS='--no-warnings' to suppress the JSON import warnings that happen as part of the Vuetify import mapping. If you are on Node [v21.3.0](https://nodejs.org/en/blog/release/v21.3.0) or higher, you can change this to NODE_OPTIONS='--disable-warning=5401'. If you don't mind the warning, you can remove this from your package.json dev script.
+This serves the `dist/` folder at a local URL that Vite prints in the terminal.
 
-### Building for Production
+## Running tests
+This project does not include automated tests yet. If you are looking to validate the codebase right now, you can run:
+- Type checking: `yarn type-check` or `npm run type-check`
+- Linting (auto‑fix style issues): `yarn lint` or `npm run lint`
 
-To build your project for production, use:
+If you want to add unit tests, Vitest is a great fit for Vite + Vue projects. A minimal setup would look like:
+1) Install dev dependencies: `yarn add -D vitest @vitest/ui @vue/test-utils happy-dom` (or `npm i -D ...`)
+2) Create a `vitest.config.ts` and a `src/__tests__/` folder with your test files.
+3) Add scripts to `package.json`, for example:
+   - `"test": "vitest"`
+   - `"test:ui": "vitest --ui"`
+4) Run tests: `yarn test` or `npm test`
 
-```bash
-yarn build
-```
 
-(Repeat for npm, pnpm, and bun with respective commands.)
+## Project structure and tech
+- Vue 3 (Composition API)
+- Vite 7 for dev server and build
+- Vuetify 3 for UI components
+- Pinia for state management
+- smiles‑drawer for SMILES rendering
+- Custom OBO parsing (see `src/system/obo/OboParser.ts`)
 
-Once the build process is completed, your application will be ready for deployment in a production environment.
+Notable entry points:
+- `index.html`: base HTML template
+- `src/`: application source code
+- `vite.config.mts`: Vite, plugins, dev server port (3000)
+- `package.json`: scripts and dependencies
 
-## 💪 Support Vuetify Development
 
-This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library with a comprehensive collection of Vue components. Vuetify is an MIT licensed Open Source project that has been made possible due to the generous contributions by our [sponsors and backers](https://vuetifyjs.com/introduction/sponsors-and-backers/). If you are interested in supporting this project, please consider:
+## How OBO parsing works (Web Worker)
 
-- [Requesting Enterprise Support](https://support.vuetifyjs.com/)
-- [Sponsoring John on Github](https://github.com/users/johnleider/sponsorship)
-- [Sponsoring Kael on Github](https://github.com/users/kaelwd/sponsorship)
-- [Supporting the team on Open Collective](https://opencollective.com/vuetify)
-- [Becoming a sponsor on Patreon](https://www.patreon.com/vuetify)
-- [Becoming a subscriber on Tidelift](https://tidelift.com/subscription/npm/vuetify)
-- [Making a one-time donation with Paypal](https://paypal.me/vuetify)
+Parsing the PSI‑MOD OBO file is done off the main UI thread using a Web Worker. This keeps the interface responsive while the relatively large ontology file is processed.
 
-## 📑 License
-[MIT](http://opensource.org/licenses/MIT)
+Where to look in the code:
+- `src/system/obo/OboParser.ts` — exposes `OboParser.parse(input: string)` which spins up a Web Worker to do the actual parsing, and `parseDataVersion` to extract the OBO header’s `data-version`.
+- `src/system/obo/OboParser.worker.ts` — the worker implementation that parses the OBO text into structured terms. It posts results back to the main thread when ready.
+- `src/stores/obo.ts` — loads the OBO file as raw text and invokes the parser in the worker. The store also reads and exposes the `dataVersion` from the OBO header.
 
-Copyright (c) 2016-present Vuetify, LLC
+What this means for you:
+- On slower machines or in the browser, the UI won’t “freeze” while parsing the OBO file; the work happens in a separate thread.
+- In development, this works out of the box with Vite — the worker is referenced via `new URL('./OboParser.worker.ts', import.meta.url)` which Vite understands and bundles correctly.
 
-## SMILES Annotation Coverage Indicator
 
-The application displays a circular progress indicator in the top app bar showing the percentage of PSI-MOD terms annotated with a SMILES structure. The percentage is computed as:
+## Common tasks
+- Update dependencies: `yarn upgrade-interactive` or `yarn upgrade` (or `npm update`)
+- Fix lint issues automatically: `yarn lint` (or `npm run lint`)
 
-```
-SMILES % = (# terms having at least one xref with database === 'SMILES') / (total non‑obsolete terms) * 100
-```
 
-Behavior:
-- While the OBO file is loading: indeterminate spinner.
-- On error: red chip stating "SMILES error".
-- After load: circular progress with percentage label (precision 1 by default; values <0.1% shown as <0.1%).
-- Tooltip shows raw counts, e.g. `37 of 120 terms have SMILES structures (30.8%)`.
+## Troubleshooting
+- Port already in use (3000):
+  - Stop the other service using the port, or let Vite choose another port when prompted.
+  - You can also change the port in `vite.config.mts` under `server.port`.
+- Clean install issues:
+  - Delete `node_modules/` and `yarn.lock` (or `package-lock.json`), then reinstall: `yarn install` or `npm install`.
+- Node version problems:
+  - Ensure Node 18+; consider installing via nvm (Node Version Manager) to switch versions easily.
 
-Customization: Adjust precision via the `precision` prop on `<SmilesStatus />`.
+
+## Continuous deployment to GitHub Pages and OBO sourcing
+
+This app is automatically built and published to GitHub Pages via a GitHub Actions workflow in the main repository. As part of that workflow:
+- The most recent PSI‑MOD OBO file present in the main repository is copied into this app before the build, so the deployed site always serves the latest ontology.
+- The app then runs a production build (`vite build`) and publishes the contents of `dist/` to the Pages branch.
+
+Notes for contributors:
+- Locally, the app loads the OBO file from `src/assets/data/PSI-MOD.obo` (imported as raw text). In CI, the workflow places the latest file at that same path before building.
+- The store extracts the OBO `data-version` and can display it in the UI, which helps verify that a deployment contains the expected OBO release.
+
+
+## License and contributions
+Contributions and feedback are welcome. If you plan significant changes, consider opening an issue or discussion first to align on approach.
