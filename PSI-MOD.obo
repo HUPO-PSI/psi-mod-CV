@@ -897,6 +897,7 @@ synonym: "Pyro-glu from Q" RELATED Unimod-description []
 synonym: "pyroglutamic acid" EXACT RESID-alternate []
 synonym: "Pyroglutamic Acid formed from Gln" EXACT DeltaMass-label []
 synonym: "Pyroglutamyl" EXACT DeltaMass-label []
+xref: SMILES: "*-C(=O)[C@@H]1CCC(=O)N1"
 xref: DiffAvg: "-17.03"
 xref: DiffFormula: "C 0 H -3 N -1 O 0"
 xref: DiffMono: "-17.026549"
@@ -4227,6 +4228,7 @@ synonym: "L-DOPA" EXACT RESID-alternate []
 synonym: "levodopa" EXACT RESID-alternate []
 synonym: "mod194" EXACT OMSSA-label []
 synonym: "MOD_RES 3',4'-dihydroxyphenylalanine" EXACT UniProt-feature []
+xref: SMILES: "*N[C@@H](Cc1ccc(O)c(O)c1)C(*)=O"
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 1"
 xref: DiffMono: "15.994915"
@@ -4236,6 +4238,7 @@ xref: MassMono: "179.058243"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "none"
+xref: ChEBI:141815
 xref: Unimod: "Unimod:35"
 xref: uniprot.ptm:PTM-0023
 is_a: MOD:00425 ! monohydroxylated residue
@@ -8479,6 +8482,7 @@ synonym: "3-hydroxytryptophan" EXACT RESID-alternate []
 synonym: "3HyTrp" EXACT PSI-MOD-label []
 synonym: "beta-hydroxytryptophan" EXACT RESID-alternate []
 synonym: "MOD_RES 3-hydroxytryptophan" EXACT UniProt-feature []
+xref: SMILES: "*N[C@H](C(*)=O)C(O)c1cnc2ccccc12"
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 1"
 xref: DiffMono: "15.994915"
@@ -8489,6 +8493,7 @@ xref: Origin: "W"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: uniprot.ptm:PTM-0031
+xref: ChEBI:141794
 is_a: MOD:01622 ! monohydroxylated tryptophan
 
 [Term]
@@ -10677,6 +10682,7 @@ synonym: "PyrGlu(Glu)" EXACT PSI-MOD-label []
 synonym: "Pyro-glu from E" RELATED Unimod-description []
 synonym: "pyroglutamic acid" EXACT RESID-alternate []
 synonym: "Pyroglutamic Acid formed from Glutamic Acid" EXACT DeltaMass-label []
+xref: SMILES: "*-C(=O)[C@@H]1CCC(=O)N1"
 xref: DiffAvg: "-18.02"
 xref: DiffFormula: "C 0 H -2 N 0 O -1"
 xref: DiffMono: "-18.010565"
@@ -11427,6 +11433,7 @@ synonym: "cysteine sulphonic acid" EXACT RESID-alternate []
 synonym: "L-cysteine sulfonic acid" EXACT RESID-name []
 synonym: "Trioxidation" RELATED PSI-MS-label []
 synonym: "MOD_RES Cysteine sulfonic acid (-SO3H)" EXACT UniProt-feature []
+xref: SMILES: "OS(=O)(=O)C[C@H](N-*)C(-*)=O"
 xref: DiffAvg: "48.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 3 S 0"
 xref: DiffMono: "47.984744"
@@ -11505,7 +11512,7 @@ is_a: MOD:00918 ! modified L-tryptophan residue
 [Term]
 id: MOD:00464
 name: N'-formyl-L-kynurenine
-def: "A protein modification that effectively converts an L-tryptophan residue to N'-formyl-L-kynurenine." [DeltaMass:356, OMSSA:45, PubMed:12124932, PubMed:12686488, PubMed:9252331, Unimod:425#W]
+def: "A protein modification that effectively converts an L-tryptophan residue to N'-formyl-L-kynurenine." [DeltaMass:356, OMSSA:45, PubMed:12124932, PubMed:12686488, PubMed:9252331, Unimod:425#W, CHEBI:30249]
 comment: From DeltaMass: References:Willy V. Bienvenut, Catherine Déon, Carla Pasquarello, Jennifer M. Campbell, Jean-Charles Sanchez, Marvin L. Vestal, Denis F. Hochstrasser Matrix-assisted laser desorption/ionization-tandemmass spectrometry with high resolution andsensitivity for identification and characterizationof proteins. Proteomics 2002, 2, 868-876 Notes: A double oxidation of tryptophan for which the N-formylkynurenine (+32) structure can be proposed. Many minor peaks accompanying the main peak might also be attributed to other oxidation products of the tryptophan such as kynurenine (+4), an unknown by-product found in all oxidized tryptophan patterns (+13), hydroxytryptophan (+16), 3-hydroxykynurenine (+20) and hydroxy-N-formylkynurenine (+48). See proposed structures at http://www.abrf.org/images/misc/dmass32.jpg.
 subset: PSI-MOD-slim
 synonym: "dihydroxy" RELATED Unimod-description []
@@ -11513,6 +11520,7 @@ synonym: "Dioxidation" RELATED PSI-MS-label []
 synonym: "Double oxidation of Trp" EXACT DeltaMass-label []
 synonym: "formylkynureninw" EXACT OMSSA-label []
 synonym: "tryptophan oxidation to formylkynurenin" RELATED Unimod-alternate []
+xref: SMILES: "[H]C(=O)Nc1ccccc1C(=O)C[C@H](N-*)C(-*)=O"
 xref: DiffAvg: "32.00"
 xref: DiffFormula: "O 2"
 xref: DiffMono: "31.989829"
@@ -13530,6 +13538,7 @@ synonym: "Pro->pyro-Glu" RELATED PSI-MS-label []
 synonym: "PyrGlu(Pro)" EXACT PSI-MOD-label []
 synonym: "Pyroglutamic" RELATED Unimod-interim []
 synonym: "pyroglutamicp" EXACT OMSSA-label []
+xref: SMILES: "*C(=O)[C@@H]1CCC(=O)N1*"
 xref: DiffAvg: "13.98"
 xref: DiffFormula: "H -2 O 1"
 xref: DiffMono: "13.979265"
@@ -21384,6 +21393,7 @@ def: "A protein modification that effectively converts a source amino acid resid
 comment: From DeltaMass: Average Mass: -18 Average Mass Change: -18.01 References:The conversion of glutamic acid to pyroglutamic was reported for the beta-amiloid protein. Miller et al. Arch. Biochem. Biophy. (1993) 301, 41-52.
 subset: PSI-MOD-slim
 synonym: "PyrGlu" EXACT PSI-MOD-label []
+xref: SMILES: "*-C(=O)[C@@H]1CCC(=O)N1"
 xref: DiffAvg: "none"
 xref: DiffFormula: "none"
 xref: DiffMono: "none"
@@ -24563,6 +24573,7 @@ def: "A protein modification that effectively converts an L-threonine residue to
 comment: From Unimod: Can occur under CNBr cleavage conditions (70% HCOOH).
 synonym: "Formyl" RELATED PSI-MS-label []
 synonym: "Formylation" RELATED Unimod-description []
+xref: SMILES: "C[C@@H](OC=O)[C@H](N-*)C(-*)=O"
 xref: DiffAvg: "28.01"
 xref: DiffFormula: "C 1 O 1"
 xref: DiffMono: "27.994915"
@@ -24583,6 +24594,7 @@ def: "A protein modification that effectively converts an L-serine residue to O-
 comment: From Unimod: Can occur under CNBr cleavage conditions (70% HCOOH).
 synonym: "Formyl" RELATED PSI-MS-label []
 synonym: "Formylation" RELATED Unimod-description []
+xref: SMILES: "*-N[C@@H](COC=O)C(-*)=O"
 xref: DiffAvg: "28.01"
 xref: DiffFormula: "C 1 O 1"
 xref: DiffMono: "27.994915"
@@ -24710,6 +24722,7 @@ synonym: "I1Tyr" EXACT PSI-MOD-label []
 synonym: "Iodination" RELATED Unimod-description []
 synonym: "iodinationy" EXACT OMSSA-label []
 synonym: "Iodo" RELATED PSI-MS-label []
+xref: SMILES: "Oc1ccc(C[C@H](N-*)C(-*)=O)cc1I"
 xref: DiffAvg: "125.90"
 xref: DiffFormula: "H -1 I 1"
 xref: DiffMono: "125.896648"
@@ -33563,6 +33576,7 @@ synonym: "homocitrulline" EXACT PSI-MOD-alternate []
 synonym: "N6-(aminocarbonyl)-L-lysine" EXACT PSI-MOD-alternate []
 synonym: "N6CbmLys" EXACT PSI-MOD-label []
 synonym: "MOD_RES N6-carbamoyllysine" EXACT UniProt-feature []
+xref: SMILES: "*N[C@@H](CCCCNC(N)=O)C(*)=O"
 xref: DiffAvg: "43.02"
 xref: DiffFormula: "C 1 H 1 N 1 O 1"
 xref: DiffMono: "43.005814"
@@ -33574,6 +33588,7 @@ xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:5"
 xref: uniprot.ptm:PTM-0675
+xref: ChEBI:144369
 is_a: MOD:00912 ! modified L-lysine residue
 is_a: MOD:00398 ! carbamoylated residue
 
