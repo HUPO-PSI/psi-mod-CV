@@ -1,0 +1,19 @@
+name: Trigger browser deployment on PSI-MOD.obo Update
+on:
+    push:
+        paths:
+            - "PSI-MOD.obo"
+        branches:
+            - master
+
+jobs:
+    trigger-browser-deployment:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Trigger psi-mod-browser deployment
+              run: |
+                  curl -X POST \
+                    -H "Accept: application/vnd.github.v3+json" \
+                    -H "Authorization: token ${{ secrets.PSI_MOD_BROWSER_PAT }}" \
+                    https://api.github.com/repos/HUPO-PSI/psi-mod-browser/dispatches \
+                    -d '{"event_type":"psi-mod-updated"}'

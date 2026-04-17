@@ -1,7 +1,7 @@
 format-version: 1.2
 ontology: mod
-date: 13:06:2021 12:12
-saved-by: Joshua Klein
+date: 20:03:2026 12:00
+saved-by: Patrick Garrett
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
 synonymtypedef: OMSSA-label "Short label from OMSSA" EXACT
@@ -17,8 +17,8 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-data-version: 1.031.6
-remark: PSI-MOD version: 1.031.6
+data-version: 1.032.5
+remark: PSI-MOD version: 1.032.5
 remark: RESID release: 75.00
 remark: ISO-8601 date: 2022-06-13 12:12Z
 remark: Annotation note 01 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
@@ -6181,7 +6181,6 @@ is_a: MOD:01163 ! guanylated residue
 id: MOD:00234
 name: L-cysteine glutathione disulfide
 def: "A protein modification that effectively converts an L-cysteine residue to S-glutathionyl-L-cysteine." [ChEBI:21264, DeltaMass:0, OMSSA:51, PubMed:3083866, PubMed:8344916, RESID:AA0229, Unimod:55]
-comment: From DeltaMass: Average Mass: 305
 comment: Glutamyl-transpeptidase cleaves glutathione into cysteinylglycine (Cys-Gly) and a Glu residue. [PubMed: 28537416]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-((2S)-2-((4R)-4-amino-4-carboxyl-1-oxobutyl)amino-3-(carboxylmethyl)amino-3-oxo-propyl)dithio-propanoic acid" EXACT RESID-systematic []
@@ -27793,6 +27792,9 @@ synonym: "beta-phenylserine" EXACT RESID-alternate []
 synonym: "hydroxylationf" EXACT OMSSA-label []
 synonym: "L-threo-3-phenylserine" EXACT RESID-alternate []
 synonym: "MOD_RES 3-hydroxyphenylalanine" EXACT UniProt-feature []
+synonym: "L-m-Tyrosine" EXACT PSI-MOD-label []
+synonym: "(S)-2-amino-3-(3-hydroxyphenyl)propanoic acid" EXACT PSI-MOD-label []
+synonym: "Meta-Tyrosine" EXACT PSI-MOD-label []
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "C 0 H 0 N 0 O 1"
 xref: DiffMono: "15.994915"
@@ -27805,6 +27807,7 @@ xref: TermSpec: "none"
 xref: uniprot.ptm:PTM-0346
 is_a: MOD:00677 ! hydroxylated residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02116 ! monohydroxylated phenylalanine
 
 [Term]
 id: MOD:01386
@@ -41406,6 +41409,322 @@ def: "A protein modification that modifies a D-asparagine residue." [PubMed:1868
 subset: PSI-MOD-slim
 synonym: "ModDAsn" EXACT PSI-MOD-label []
 is_a: MOD:00203 ! D-asparagine
+
+[Term]
+id: MOD:02106
+name: 4-hydroxy-L-tryptophan
+def: "A protein modification that effectively converts an L-tryptophan residue to a 4-hydroxy-L-tryptophan." [PMID:32911085]
+synonym: "(S)-2-Amino-3-(4-hydroxy-1H-indol-3-yl)propanoic acid" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "16.00"
+xref: DiffFormula: "C 0 H 0 N 0 O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 11 H 10 N 2 O 2"
+xref: MassAvg: "202.21"
+xref: MassMono: "202.074228"
+xref: Origin: "W"
+xref: Source: "hypothetical"
+xref: TermSpec: "none"
+is_a: MOD:01622 ! monohydroxylated tryptophan
+
+[Term]
+id: MOD:02107
+name: 5-hydroxy-L-tryptophan
+def: "A protein modification that effectively converts an L-tryptophan residue to a 5-hydroxy-L-tryptophan." [PMID:32911085]
+synonym: "(S)-2-Amino-3-(5-hydroxy-1H-indol-3-yl)propanoic acid" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "16.00"
+xref: DiffFormula: "C 0 H 0 N 0 O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 11 H 10 N 2 O 2"
+xref: MassAvg: "202.21"
+xref: MassMono: "202.074228"
+xref: Origin: "W"
+xref: Source: "hypothetical"
+xref: TermSpec: "none"
+is_a: MOD:01622 ! monohydroxylated tryptophan
+
+[Term]
+id: MOD:02108
+name: 6-hydroxy-L-tryptophan
+def: "A protein modification that effectively converts an L-tryptophan residue to a 6-hydroxy-L-tryptophan." [PMID:32911085]
+synonym: "(S)-2-Amino-3-(4-hydroxy-1H-indol-3-yl)propanoic acid" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "16.00"
+xref: DiffFormula: "C 0 H 0 N 0 O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 11 H 10 N 2 O 2"
+xref: MassAvg: "202.21"
+xref: MassMono: "202.074228"
+xref: Origin: "W"
+xref: Source: "hypothetical"
+xref: TermSpec: "none"
+is_a: MOD:01622 ! monohydroxylated tryptophan
+
+[Term]
+id: MOD:02109
+name: oxindolylalanine
+def: "A protein modification that effectively converts an L-tryptophan residue to a oxindolylalanine." [PMID:32911085]
+synonym: "Oxindolyl-L-alanine" EXACT PSI-MOD-alternate []
+synonym:"2-amino-3-(2-oxoindolin-3-yl)propanoic acid" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "16.00"
+xref: DiffFormula: "C 0 H 0 N 0 O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 11 H 10 N 2 O 2"
+xref: MassAvg: "202.21"
+xref: MassMono: "202.074228"
+xref: Origin: "W"
+xref: Source: "hypothetical"
+xref: TermSpec: "none"
+is_a: MOD:01622 ! monohydroxylated tryptophan
+
+[Term]
+id: MOD:02110
+name: 5-hydroxy-L-proline
+def: "A protein modification that effectively converts an L-proline residue to 5-hydroxy-L-proline" [ChEBI:18095, PubMed:11292863, PubMed:2400108, PubMed:3734192, RESID:AA0030]
+subset: PSI-MOD-slim
+synonym: "(2S,5S)-5-hydroxypyrrolidine-2-carboxylic acid" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "16.00"
+xref: DiffFormula: "C 0 H 0 N 0 O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 5 H 7 N 1 O 2"
+xref: MassAvg: "113.12"
+xref: MassMono: "113.047678"
+xref: Origin: "P"
+xref: Source: "natural"
+xref: TermSpec: "none"
+is_a: MOD:01024 ! monohydroxylated proline
+
+[Term]
+id: MOD:02111
+name: (2S,4S)-5-hydroxyleucine
+def: "A protein modification that effectively converts an L-leucine residue to a (2S,4S)-5-hydroxyleucine." [PubMed:9164839]
+synonym: "(2S,4S)-2-amino-5-hydroxy-4-methylpentanoic acid" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "16.00"
+xref: DiffFormula: "C 0 H 0 N 0 O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 6 H 11 N 1 O 2"
+xref: MassAvg: "129.16"
+xref: MassMono: "129.078979"
+xref: Origin: "L"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:01411 ! monohydroxylated leucine
+
+[Term]
+id: MOD:02112
+name: 4,5-Dihydroxytryptophan
+def: "A protein modification that converts an L-tryptophan residue to 4,5-Dihydroxytryptophan." [PubMed:16046449, PubMed:30267362]
+subset: PSI-MOD-slim
+synonym: "dihydroxy" RELATED Unimod-description []
+synonym: "Dioxidation" RELATED PSI-MS-label []
+synonym: "Double oxidation of Trp" EXACT DeltaMass-label []
+synonym: "(2S)-2-amino-3-(4,5-dihydroxy-1H-indol-3-yl)propanoic acid" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "32.00"
+xref: DiffFormula: "O 2"
+xref: DiffMono: "31.989829"
+xref: Formula: "C 11 H 10 N 2 O 3"
+xref: MassAvg: "218.21"
+xref: MassMono: "218.069142"
+xref: Origin: "W"
+xref: Source: "hypothetical"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:425"
+is_a: MOD:00918 ! modified L-tryptophan residue
+
+[Term]
+id: MOD:02113
+name: 5,6-Dihydroxytryptophan
+def: "A protein modification that converts an L-tryptophan residue to 5,6-Dihydroxytryptophan." [PubMed:16046449, PubMed:30267362]
+subset: PSI-MOD-slim
+synonym: "dihydroxy" RELATED Unimod-description []
+synonym: "Dioxidation" RELATED PSI-MS-label []
+synonym: "Double oxidation of Trp" EXACT DeltaMass-label []
+synonym: "(2S)-2-amino-3-(5,6-dihydroxy-1H-indol-3-yl)propanoic acid" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "32.00"
+xref: DiffFormula: "O 2"
+xref: DiffMono: "31.989829"
+xref: Formula: "C 11 H 10 N 2 O 3"
+xref: MassAvg: "218.21"
+xref: MassMono: "218.069142"
+xref: Origin: "W"
+xref: Source: "hypothetical"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:425"
+is_a: MOD:00918 ! modified L-tryptophan residue
+
+[Term]
+id: MOD:02114
+name: 5,7-Dihydroxytryptophan
+def: "A protein modification that converts an L-tryptophan residue to 5,7-Dihydroxytryptophan." [PubMed:16046449, PubMed:30267362]
+subset: PSI-MOD-slim
+synonym: "dihydroxy" RELATED Unimod-description []
+synonym: "Dioxidation" RELATED PSI-MS-label []
+synonym: "Double oxidation of Trp" EXACT DeltaMass-label []
+synonym: "(2S)-2-amino-3-(5,7-dihydroxy-1H-indol-3-yl)propanoic acid" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "32.00"
+xref: DiffFormula: "O 2"
+xref: DiffMono: "31.989829"
+xref: Formula: "C 11 H 10 N 2 O 3"
+xref: MassAvg: "218.21"
+xref: MassMono: "218.069142"
+xref: Origin: "W"
+xref: Source: "hypothetical"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:425"
+is_a: MOD:00918 ! modified L-tryptophan residue
+
+[Term]
+id: MOD:02115
+name: Dioxindolylalanine
+def: "A protein modification that converts an L-tryptophan residue to dioxindolylalanine." [PubMed:10554268, PubMed:32911085]
+subset: PSI-MOD-slim
+synonym: "dihydroxy" RELATED Unimod-description []
+synonym: "Dioxidation" RELATED PSI-MS-label []
+synonym: "Double oxidation of Trp" EXACT DeltaMass-label []
+synonym: "(alphaS)-alpha-Amino-2,3-dihydro-3-hydroxy-2-oxo-1H-indole-3-propanoic acid" EXACT PSI-MOD-alternate []
+synonym: "(2S)-2-amino-3-(3-hydroxy-2-oxo-1H-indol-3-yl)propanoic acid" EXACT PSI-MOD-alternate []
+synonym: "Dioxindolyl-L-alanine" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "32.00"
+xref: DiffFormula: "O 2"
+xref: DiffMono: "31.989829"
+xref: Formula: "C 11 H 10 N 2 O 3"
+xref: MassAvg: "218.21"
+xref: MassMono: "218.069142"
+xref: Origin: "W"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:425"
+is_a: MOD:00918 ! modified L-tryptophan residue
+
+[Term]
+id: MOD:02098
+name: residue modified by radical mechanism
+def: "A chemical transformation driven by a radical reaction." [PubMed:14670063, doi:https://pubs.acs.org/doi/10.1021/ac035104h]
+
+[Term]
+id: MOD:02099
+name: residue modified by radical hydroxylation
+def: "A hydroxyl substition induced by a radical reaction." [PubMed:17683160]
+is_a: MOD:02098 ! residue modified by radical mechanism
+
+[Term]
+id: MOD:02100
+name: N2-Formyl-L-asparagine
+def: "A protein modification that effectively transforms an L-histidine residue to N2-formyl asparagine" [osti.article:6518101, doi:10.1016/0040-4039(91)80099-R]
+synonym: "Nω-formyl asparagine" EXACT PSI-MOD-label []
+synonym: "(2S)-4-amino-2-formamido-4-oxobutanoic acid" EXACT PSI-MOD-label []
+synonym: "Formylasparagine" EXACT PSI-MOD-label []
+subset: PSI-MOD-slim
+xref: DiffAvg: "4.97"
+xref: DiffFormula: "H -1 C -1 N -1 O 2"
+xref: DiffMono: "4.978930"
+xref: Formula: "C 5 H 6 N 2 O 3"
+xref: MassAvg: "142.04"
+xref: MassMono: "142.03784"
+xref: Origin: "H"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:1917"
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02099 ! residue modified by radical hydroxylation
+
+[Term]
+id: MOD:02101
+name: 2-Amino-4,5-dioxopentanoic acid
+def: "A protein modification that effectively transforms a histidine side chain to that of 2-Amino-4,5-dioxopentanoic acid" [PubMed:14670063]
+subset: PSI-MOD-slim
+xref: DiffAvg: "-10.04"
+xref: DiffFormula: "H -2 C -1 N -2 O 2"
+xref: DiffMono: "-10.031969"
+xref: Formula: "C 5 H 5 N 1 O 3"
+xref: MassAvg: "127.03"
+xref: MassMono: "127.026941"
+xref: Origin: "H"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02099 ! residue modified by radical hydroxylation
+
+[Term]
+id: MOD:02102
+name: 2-hydroxy-L-phenylalanine
+def: "A protein modification that effectively converts a L-Phenylalanine residue to 2-hydroxy-L-phenylalanine." [PubMed:8509373]
+synonym: "DL-o-Tyrosine" EXACT PSI-MOD-label []
+synonym: "2-amino-3-(2-hydroxyphenyl)propanoic acid" EXACT PSI-MOD-label []
+synonym: "O-Tyrosine" EXACT PSI-MOD-label []
+synonym: "o-tyrosine" EXACT PSI-MOD-alternate []
+subset: PSI-MOD-slim
+xref: DiffAvg: "16.0"
+xref: DiffFormula: "O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 9 H 9 N 1 O 2"
+xref: MassAvg: "163.06"
+xref: MassMono: "163.063325"
+xref: Origin: "F"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:35"
+is_a: MOD:02116 ! monohydroxylated phenylalanine
+is_a: MOD:02099 ! residue modified by radical hydroxylation
+
+[Term]
+id: MOD:02104
+name: 4-hydroxy-L-phenylalanine
+def: "A protein modification that effectively substitutes a hydroxy group at position 4 of L-phenylalanine" [PubMed:7408053]
+synonym: "L-tyrosine" EXACT PSI-MOD-alternate []
+synonym: "L-Tyrosine" EXACT PSI-MOD-alternate []
+synonym: "(2S)-2-amino-3-(4-hydroxyphenyl)propanoic acid" EXACT PSI-MOD-alternate []
+synonym: "Phe->Tyr" EXACT PSI-MOD-alternate []
+subset: PSI-MOD-slim
+xref: DiffFormula: "O 1"
+xref: Origin: "F"
+xref: Unimod: "Unimod:35"
+xref: DiffAvg: "16.00"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 9 H 9 N 1 O 2"
+xref: MassAvg: "163.18"
+xref: MassMono: "163.063329"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02116 ! monohydroxylated phenylalanine
+
+[Term]
+id: MOD:02105
+name: L-2,5-dihydroxyphenylalanine (Phe)
+def: "A protein modification that effectively converts an L-tyrosine residue to L-2',5'-dihydroxyphenylalanine." [doi:10.1016/j.radphyschem.2003.11.008]
+subset: PSI-MOD-slim
+synonym: "2-amino-3-(2,5-dihydroxyphenyl)propanoic acid" EXACT PSI-MOD-label []
+synonym: "2,5-Dihydroxyphenylalanine" EXACT PSI-MOD-label []
+synonym: "2,5-Dioxyphenylalanine" EXACT PSI-MOD-label []
+xref: DiffAvg: "32.00"
+xref: DiffFormula: "C 0 H 0 N 0 O 2"
+xref: DiffMono: "31.989828"
+xref: Formula: "C 9 H 9 N 1 O 3"
+xref: MassAvg: "179.18"
+xref: MassMono: "179.058243"
+xref: Origin: "F"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:00428 ! dihydroxylated residue
+is_a: MOD:00914 ! modified L-phenylalanine residue
+
+[Term]
+id: MOD:02116
+name: monohydroxylated phenylalanine
+def: "A protein modification that effectively converts an L-phenylalanine residue to a monohydroxylated phenylalanine." [Unimod:35#F]
+subset: PSI-MOD-slim
+synonym: "Oxidation" RELATED PSI-MS-label []
+xref: DiffAvg: "16.00"
+xref: DiffFormula: "C 0 H 0 N 0 O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 6 H 12 N 2 O 2"
+xref: MassAvg: "144.17"
+xref: MassMono: "144.089878"
+xref: Origin: "F"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:35"
+is_a: MOD:00425 ! monohydroxylated residue
+is_a: MOD:00914 ! modified L-phenylalanine residue
 
 [Typedef]
 id: contains

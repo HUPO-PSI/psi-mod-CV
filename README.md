@@ -2,7 +2,7 @@
 
 This repository contains the Human Proteome Organization (HUPO) Proteomics Standards Initiative (PSI) Protein Modifications Ontology (PSI-MOD). It is the source repository of the PSI-MOD obo file, main deliverable PSI-MOD.
 
-## The PSI working group PSI-MOD  
+## The PSI working group PSI-MOD
 The description of the joint activities of the PSI-MOD working group can be found [here](http://www.psidev.info/groups/protein-modifications).
 
 If you would like to comment on the PSI-MOD document, please submit a new issue through [GitHub](https://github.com/HUPO-PSI/psi-mod-CV/issues).
