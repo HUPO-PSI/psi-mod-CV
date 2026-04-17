@@ -1,7 +1,7 @@
 format-version: 1.2
 ontology: mod
-date: 17:11:2025 12:12
-saved-by: Eric Deutsch
+date: 20:03:2026 12:00
+saved-by: Patrick Garrett
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
 synonymtypedef: OMSSA-label "Short label from OMSSA" EXACT
@@ -17,8 +17,8 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-data-version: 1.032.4
-remark: PSI-MOD version: 1.032.4
+data-version: 1.032.5
+remark: PSI-MOD version: 1.032.5
 remark: RESID release: 75.00
 remark: ISO-8601 date: 2022-06-13 12:12Z
 remark: Annotation note 01 - \"[PSI-MOD:ref]\" has been replaced by PubMed:18688235.
@@ -37785,7 +37785,7 @@ synonym: "2-amino-3-(2,5-dihydroxyphenyl)propanoic acid" EXACT PSI-MOD-label []
 synonym: "2,5-Dihydroxyphenylalanine" EXACT PSI-MOD-label []
 synonym: "2,5-Dioxyphenylalanine" EXACT PSI-MOD-label []
 property_value: DiffAvg "32.00" xsd:float
-property_value: DiffFormula "C 0 H 0 N 0 O 1" xsd:string
+property_value: DiffFormula "C 0 H 0 N 0 O 2" xsd:string
 property_value: DiffMono "31.989828" xsd:float
 property_value: Formula "C 9 H 9 N 1 O 3" xsd:string
 property_value: MassAvg "179.18" xsd:float
