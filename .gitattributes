@@ -1,0 +1,7 @@
+# Normalize text files to LF in git storage by default
+* text=auto eol=lf
+
+# PSI-MOD.obo has used CRLF since its initial import from SourceForge CVS.
+# Mark as -text (no normalization) to preserve CRLF in git storage and prevent
+# spurious whole-file diffs when editing on Windows with autocrlf=true.
+PSI-MOD.obo -text
