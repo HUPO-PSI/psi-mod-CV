@@ -10,11 +10,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mod.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mod/1.033.0/mod.owl"/>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17:04:2026 12:00</oboInOwl:date>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mod/1.034.0/mod.owl"/>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22:05:2026 17:00</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI-MOD</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ralf Gabriels</oboInOwl:saved-by>
+        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patrick Garrett</oboInOwl:saved-by>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annotation note 01 - &quot;[PSI-MOD:ref]&quot; has been replaced by PubMed:18688235.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annotation note 02 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol &quot;#&quot; and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag &quot;#var&quot;.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annotation note 03 - When an entry in the Unimod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the Unimod cross-reference followed by a hash symbol and an amino acid code, &quot;N-term&quot; or &quot;C-term&quot;.</rdfs:comment>
@@ -26,7 +26,7 @@
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annotation note 09 - The Open Mass Spectrometry Search Algorithm, OMSSA, enumerated list of modifications are being incorporated. The string values are synonyms with the synonymtypedef &quot;OMSSA-label&quot;, and their integer values (which are supposed to be stable) are definition cross-references.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annotation note 10 - GNOme is the Glycan Naming and Subsumption Ontology (https://gnome.glyomics.org/), an ontology for the support of glycomics.  PSI-MOD does not have all possible glycans in its entries, just the ones that are noted to be on proteins and have been requested for addition.  GNOme uses GlyTouCan (http://glytoucan.org/) to provide stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations).</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISO-8601 date: 2022-06-13 12:12Z</rdfs:comment>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI-MOD version: 1.033.0</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI-MOD version: 1.034.0</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESID release: 75.00</rdfs:comment>
     </owl:Ontology>
     
@@ -9981,7 +9981,7 @@
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
         <mod:TermSpec rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-term</mod:TermSpec>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0164</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0173</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-4-(methylsulfanyl)butanamide</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-4-(methylthio)butanamide</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-methionine amide</oboInOwl:hasExactSynonym>
@@ -17454,7 +17454,7 @@
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">263.98984</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimod:398</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimod:340</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0051</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-3-(6-bromo-1H-indol-3-yl)propanoic acid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6&apos;-BrTrp</oboInOwl:hasExactSynonym>
@@ -18038,7 +18038,7 @@
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimod:402</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0034</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0033</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(S)-2-amino-3-oxopropanoic acid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-3-oxopropionic acid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-3-oxoalanine</oboInOwl:hasExactSynonym>
@@ -21866,7 +21866,7 @@
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimod:34</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0636</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0279</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(R)-2-amino-3-(methylsulfanyl)propanoic acid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACT_SITE S-methylcysteine intermediate</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-3-(methylthio)alanine</oboInOwl:hasExactSynonym>
@@ -27371,7 +27371,7 @@
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">170.11676</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypothetical</mod:Source>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0185</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0184</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-5-(N-methylcarbamimidamido)pentanoic acid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD_RES N5-methylarginine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N5-carbamimidoyl-N5-methyl-L-ornithine</oboInOwl:hasExactSynonym>
@@ -53901,7 +53901,7 @@
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">274.1165</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0553</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0554</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-3-(2-acetamido-2-deoxy-beta-D-fucopyranosyloxy)propanoic acid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARBOHYD O-linked (FucNAc) serine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O-(2-acetylamino-2-deoxy-beta-D-fucopyranosyl)-L-serine</oboInOwl:hasExactSynonym>
@@ -53997,6 +53997,7 @@
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimod:401</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0034</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(S)-2-amino-3-oxopropanoic acid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-3-oxopropionic acid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-3-oxoalanine</oboInOwl:hasExactSynonym>
@@ -97528,7 +97529,7 @@
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">370.14297</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">W, W</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0544</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0445</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S,2&apos;S)-3,3&apos;-(3&apos;H-1,3&apos;-biindole-3,3&apos;-diyl)bis(2-aminopropanoic acid)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-(L-tryptophan-3-yl)-L-tryptophan</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-amino-3-[2-[2-amino-3-(2-carboxyethyl)-1H-indol-4-yl]-1H-indol-3-yl]propanoic acid</oboInOwl:hasExactSynonym>
@@ -100547,6 +100548,7 @@
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">199.16846</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimod:1041</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0684</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-6-[(4-aminobutyl)amino]hexanoic acid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-deoxyhypusine</oboInOwl:hasExactSynonym>
@@ -100564,6 +100566,7 @@
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ChEBI:50038</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed:16452303</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RESID:AA0564</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimod:1041#K</oboInOwl:hasDbXref>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/MOD_01880"/>
@@ -105502,7 +105505,7 @@
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">359.18048</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0518</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniprot.ptm:PTM-0519</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-5-[(amino[(2-N-acetylamino-2-deoxy-D-glucopyranosyl)amino]methylidene)amino]pentanoic acid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CARBOHYD N-linked (GlcNAc) arginine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N(omega)-(2-N-acetylaminoglucosyl)arginine</oboInOwl:hasExactSynonym>
