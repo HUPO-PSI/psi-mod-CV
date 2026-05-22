@@ -1,7 +1,7 @@
 format-version: 1.2
 ontology: mod
-date: 17:04:2026 12:00
-saved-by: Ralf Gabriels
+date: 22:05:2026 17:00
+saved-by: Patrick Garrett
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
 synonymtypedef: OMSSA-label "Short label from OMSSA" EXACT
@@ -17,8 +17,8 @@ synonymtypedef: Unimod-description "Description (full_name) from Unimod" RELATED
 synonymtypedef: Unimod-interim "Interim label from Unimod" RELATED
 synonymtypedef: UniProt-feature "Protein feature description from UniProtKB" EXACT
 default-namespace: PSI-MOD
-data-version: 1.033.0
-remark: PSI-MOD version: 1.033.0
+data-version: 1.034.0
+remark: PSI-MOD version: 1.034.0
 remark: RESID release: 75.00
 remark: ISO-8601 date: 2022-06-13 12:12Z
 remark: Annotation note 01 - "[PSI-MOD:ref]" has been replaced by PubMed:18688235.
@@ -2655,7 +2655,7 @@ xref: MassMono: "147.059209"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
-xref: uniprot.ptm:PTM-0164
+xref: uniprot.ptm:PTM-0173
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00913 ! modified L-methionine residue
 
@@ -4886,7 +4886,7 @@ xref: MassMono: "263.989825"
 xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: Unimod: "Unimod:398"
+xref: Unimod: "Unimod:340"
 xref: uniprot.ptm:PTM-0051
 is_a: MOD:01068 ! halogenated tryptophan
 is_a: MOD:01912 ! monobrominated residue
@@ -5045,7 +5045,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:402"
-xref: uniprot.ptm:PTM-0034
+xref: uniprot.ptm:PTM-0033
 is_a: MOD:01169 ! L-3-oxoalanine
 
 [Term]
@@ -6166,7 +6166,7 @@ xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:34"
-xref: uniprot.ptm:PTM-0636
+xref: uniprot.ptm:PTM-0279
 is_a: MOD:00654 ! S-methylated residue
 is_a: MOD:01682 ! monomethylated L-cysteine
 
@@ -7883,7 +7883,7 @@ xref: MassMono: "170.116761"
 xref: Origin: "R"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
-xref: uniprot.ptm:PTM-0185
+xref: uniprot.ptm:PTM-0184
 is_a: MOD:00414 ! monomethylated L-arginine
 is_a: MOD:00602 ! N-methylated residue
 
@@ -17801,7 +17801,7 @@ xref: MassMono: "274.116486"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: uniprot.ptm:PTM-0553
+xref: uniprot.ptm:PTM-0554
 is_a: MOD:00002 ! O-glycosyl-L-serine
 
 [Term]
@@ -17831,6 +17831,7 @@ xref: MassMono: "85.016378"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "none"
+xref: uniprot.ptm:PTM-0034
 xref: Unimod: "Unimod:401"
 is_a: MOD:00916 ! modified L-serine residue
 is_a: MOD:01169 ! L-3-oxoalanine
@@ -36178,7 +36179,7 @@ xref: MassMono: "370.142976"
 xref: Origin: "W, W"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: uniprot.ptm:PTM-0544
+xref: uniprot.ptm:PTM-0445
 is_a: MOD:00692 ! uncategorized crosslinked residues
 is_a: MOD:02057 ! crosslinked L-tryptophan residue
 
@@ -37330,7 +37331,7 @@ is_a: MOD:02067 ! metal or metal cluster coordinated L-cysteine residue
 [Term]
 id: MOD:01880
 name: L-deoxyhypusine
-def: "modification from RESID" [ChEBI:50038, PubMed:16452303, RESID:AA0564]
+def: "modification from RESID" [ChEBI:50038, PubMed:16452303, RESID:AA0564, Unimod:1041#K]
 synonym: "(2S)-2-amino-6-[(4-aminobutyl)amino]hexanoic acid" EXACT RESID-systematic []
 synonym: "deoxyhypusine" EXACT RESID-alternate []
 synonym: "L-deoxyhypusine" EXACT RESID-name []
@@ -37346,6 +37347,7 @@ xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm:PTM-0684
+xref: Unimod: "Unimod:1041"
 is_a: MOD:00912 ! modified L-lysine residue
 is_a: MOD:01884 ! 4-aminobutylated residue
 
@@ -39138,7 +39140,7 @@ xref: MassMono: "359.180484"
 xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "none"
-xref: uniprot.ptm:PTM-0518
+xref: uniprot.ptm:PTM-0519
 is_a: MOD:00448 ! mono-N-acetylaminoglucosylated residue
 is_a: MOD:01980 ! omega-N-glycosyl-L-arginine
 
