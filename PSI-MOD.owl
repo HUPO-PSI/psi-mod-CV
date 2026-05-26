@@ -44462,9 +44462,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00725"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod N-linked glycosylation</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1443.33</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 56 H 90 N 4 O 39</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 56 H 92 N 4 O 39</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1442.5182</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 60 H 96 N 6 O 41</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 60 H 98 N 6 O 41</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1557.43</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1556.5612</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N</mod:Origin>
