@@ -1,8 +1,8 @@
 format-version: 1.2
 ontology: mod
-date: 22:05:2026 18:00
-data-version: 1.035.0
-saved-by: Douwe Schulte
+date: 28:05:2026 17:00
+data-version: 1.036.0
+saved-by: Ryan Fellers
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
 synonymtypedef: OMSSA-label "Short label from OMSSA" EXACT
@@ -14279,12 +14279,12 @@ name: fucosylated biantennary (-2 galactose) N4-glycosylated asparagine
 def: "modification from Unimod N-linked glycosylation" [Unimod:305]
 synonym: "dHex(1)Hex(3)HexNAc(4)" RELATED PSI-MS-label []
 synonym: "Fucosylated biantennary (-2 galactose)" RELATED Unimod-description []
-xref: DiffAvg: "1443.33"
-xref: DiffFormula: "C 56 H 90 N 4 O 39"
-xref: DiffMono: "1442.518219"
-xref: Formula: "C 60 H 96 N 6 O 41"
-xref: MassAvg: "1557.43"
-xref: MassMono: "1556.561147"
+xref: DiffAvg: "1445.33"
+xref: DiffFormula: "C 56 H 92 N 4 O 39"
+xref: DiffMono: "1444.533869"
+xref: Formula: "C 60 H 98 N 6 O 41"
+xref: MassAvg: "1559.43"
+xref: MassMono: "1558.576797"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "none"
