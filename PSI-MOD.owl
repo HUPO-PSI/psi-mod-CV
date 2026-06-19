@@ -10,11 +10,11 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mod.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mod/1.036.0/mod.owl"/>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28:05:2026 17:00</oboInOwl:date>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mod/1.037.0/mod.owl"/>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19:06:2026 11:00</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI-MOD</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ryan Fellers</oboInOwl:saved-by>
+        <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Douwe Schulte</oboInOwl:saved-by>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annotation note 01 - &quot;[PSI-MOD:ref]&quot; has been replaced by PubMed:18688235.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annotation note 02 - When an entry in the RESID Database is annotated with different sources because the same modification can arise from different encoded amino acids, then the PSI-MOD definition for each different source instance carries the RESID cross-reference followed by a hash symbol &quot;#&quot; and a 3 or 4 character label. When an entry in the RESID Database is annotated as a general modification with the same enzymatic activity producing different chemical structures depending on natural variation in the nonproteinaceous substrate, on secondary modifications that do not change the nature of the primary modification, or on a combination of a primary and one or more secondary modifications on the same residue, then the PSI-MOD definition for each different instance carries the RESID cross-reference followed by the special tag &quot;#var&quot;.</rdfs:comment>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Annotation note 03 - When an entry in the Unimod database is annotated as a general modification, and one or more instance sites are listed, then the PSI-MOD definition for each different site instance carries the Unimod cross-reference followed by a hash symbol and an amino acid code, &quot;N-term&quot; or &quot;C-term&quot;.</rdfs:comment>
@@ -33340,7 +33340,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-methionyl-L-tyrosyl-2-keto-5-iminopiperazine</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI-MOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:00382</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carboxamidine; cross-link 1. This is a deprecated entry in RESID. It probably does not occur naturally [JSG].</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carboxamidine. This is a deprecated entry in RESID. It probably does not occur naturally [JSG].</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-(2-methylthio)ethyl-6-(4-hydroxybenzylidene)-5-iminopiperazin-2-one</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -33411,7 +33411,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">para-hydroxybenzylidene-imidazolidinone chromophore</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI-MOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:00383</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-link 2; carboxamidine; cross-link 1; incidental to RESID:AA0183; incidental to RESID:AA0365.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-link 2; carboxamidine; incidental to RESID:AA0183; incidental to RESID:AA0365.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-imino-glutamic acid 5-imidazolinone glycine</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -33500,7 +33500,7 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">red fluorescent protein eqFP611 chromophore</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI-MOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:00384</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-link 2; carboxamidine; cross-link 1; incidental to RESID:AA0183; incidental to RESID:AA0365.</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-link 2; carboxamidine; incidental to RESID:AA0183; incidental to RESID:AA0365.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-imino-methionine 5-imidazolinone glycine</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -78080,7 +78080,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_01425">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00033"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that crosslinks three residues by formation of a pyridinyl ring, such as pyridine-2,5-dicarboxylic acid or 5-aminopiperideine-2,5-dicarboxylic acid.</obo:IAO_0000115>
-        <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
+        <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X, X, X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI-MOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:01425</oboInOwl:id>
@@ -100501,7 +100501,6 @@
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methanobactin SB2 copper complex</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI-MOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:01879</oboInOwl:id>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross-link 2.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">methanobactin SB2 copper complex</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -103195,7 +103194,7 @@
         <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 H 7 N 2 O 3</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">155.13</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">155.04567</mod:MassMono>
-        <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">G</mod:Origin>
+        <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B, G</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
         <mod:TermSpec rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-term</mod:TermSpec>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-4-(carboxymethyl)amino-4-oxobutanoic acid</oboInOwl:hasExactSynonym>
@@ -103272,7 +103271,7 @@
         <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 10 H 15 N 3 O 3</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">225.25</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">225.11134</mod:MassMono>
-        <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
+        <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B, K</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2S)-2-amino-6-([(3S)-3-amino-3-carboxypropanoyl]amino)hexanoic acid</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CROSSLNK Isoaspartyl lysine isopeptide (Lys-Asn)</oboInOwl:hasExactSynonym>
@@ -104141,7 +104140,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00033"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00859"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that forms (2-aminosuccinimidyl)acetic acid by crosslinking either an aspartic acid residue or an asparagine residue with the following residue.</obo:IAO_0000115>
-        <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
+        <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">B, X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypothetical</mod:Source>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI-MOD</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:01944</oboInOwl:id>
