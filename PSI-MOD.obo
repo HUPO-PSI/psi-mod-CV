@@ -1,8 +1,8 @@
 format-version: 1.2
 ontology: mod
-date: 28:05:2026 17:00
-data-version: 1.036.0
-saved-by: Ryan Fellers
+date: 19:06:2026 11:00
+data-version: 1.037.0
+saved-by: Douwe Schulte
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
 synonymtypedef: OMSSA-label "Short label from OMSSA" EXACT
@@ -9682,7 +9682,7 @@ is_a: MOD:02073 ! metal or metal cluster coordinated L-selenocysteine residue
 id: MOD:00382
 name: 3-(2-methylthio)ethyl-6-(4-hydroxybenzylidene)-5-iminopiperazin-2-one
 def: "A protein modification that effectively crosslinks an L-methionyl-L-tyrosine dipeptide to form 3-(2-methylthio)ethyl-6-(4-hydroxybenzylidene)-5-iminopiperazin-2-one." [PubMed:10852900, PubMed:11259412, PubMed:15491166, RESID:AA0377]
-comment: carboxamidine; cross-link 1. This is a deprecated entry in RESID. It probably does not occur naturally [JSG].
+comment: carboxamidine. This is a deprecated entry in RESID. It probably does not occur naturally [JSG].
 synonym: "3-(2-methylsulfanyl)ethyl-6-(4-hydroxybenzylidene)-5-iminopiperazin-2-one" EXACT RESID-systematic []
 synonym: "3-(2-methylthio)ethyl-6-(4-hydroxybenzylidene)-5-amino-3,6-didehydropyrazin-2-ol" EXACT RESID-alternate []
 synonym: "3-(2-methylthio)ethyl-6-(4-hydroxybenzylidene)-5-iminopiperazin-2-one" EXACT RESID-name []
@@ -9704,7 +9704,7 @@ is_a: MOD:02058 ! crosslinked L-tyrosine residue
 id: MOD:00383
 name: 2-imino-glutamic acid 5-imidazolinone glycine
 def: "A protein modification that effectively crosslinks an L-glutamic acid residue and a glycine residue to form 2-imino-glutamic acid 5-imidazolinone glycine." [PubMed:11682051, RESID:AA0378]
-comment: Cross-link 2; carboxamidine; cross-link 1; incidental to RESID:AA0183; incidental to RESID:AA0365.
+comment: Cross-link 2; carboxamidine; incidental to RESID:AA0183; incidental to RESID:AA0365.
 synonym: "2,N-didehydroglutamyl-5-imidazolinone glycine" EXACT RESID-alternate []
 synonym: "2-(3-carboxy-1-iminopropyl)-1-carboxymethyl-1-imidazolin-5-one" EXACT RESID-alternate []
 synonym: "2-imino-glutamic acid 5-imidazolinone glycine" EXACT RESID-name []
@@ -9731,7 +9731,7 @@ is_a: MOD:01882 ! 5-imidazolinone ring crosslinked residues (Gly)
 id: MOD:00384
 name: 2-imino-methionine 5-imidazolinone glycine
 def: "A protein modification that effectively crosslinks an L-methionine residue and a glycine residue to form 2-imino-methionine 5-imidazolinone glycine." [PubMed:10852900, PubMed:12185250, PubMed:12909624, PubMed:15542608, RESID:AA0379]
-comment: Cross-link 2; carboxamidine; cross-link 1; incidental to RESID:AA0183; incidental to RESID:AA0365.
+comment: Cross-link 2; carboxamidine; incidental to RESID:AA0183; incidental to RESID:AA0365.
 synonym: "(2-[1-imino-3-(methylsulfanyl)propyl]-5-oxo-4,5-dihydro-imidazol-1-yl)acetic acid" EXACT RESID-alternate []
 synonym: "(2-[3-(methylsulfanyl)propanimidoyl]-5-oxo-4,5-dihydro-1H-imidazol-1-yl)acetic acid" EXACT RESID-systematic []
 synonym: "2,N-didehydromethionyl-5-imidazolinone glycine" EXACT RESID-alternate []
@@ -28357,7 +28357,7 @@ xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
-xref: Origin: "X"
+xref: Origin: "X, X, X"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00033 ! crosslinked residues
@@ -37310,7 +37310,6 @@ is_a: MOD:01856 ! oxazole/oxazoline ring crosslinked residues (Cys)
 id: MOD:01879
 name: methanobactin SB2 copper complex
 def: "A protein modification that effectively converts two L-cysteine residues, an L-arginine residue, an L-threonine residue and a copper atom to the methanobactin SB2 copper complex." [PubMed:20961038, RESID:AA0555]
-comment: Cross-link 2.
 synonym: "[5-(hydroxy[sulfanyl-kappaS]methylene)-3,5-dihydro-4H-imidazol-4-onato-kappaN1][4-(hydroxy[sulfanyl-kappaS]methylene)-1,3-oxazol-5(4H)-onato-kappaN]copper" EXACT RESID-systematic []
 synonym: "METAL copper [Cu-methanobactin SB2 complex]" EXACT UniProt-feature []
 synonym: "methanobactin SB2 copper complex" EXACT RESID-name []
@@ -38308,7 +38307,7 @@ xref: DiffMono: "none"
 xref: Formula: "C 6 H 7 N 2 O 3"
 xref: MassAvg: "155.13"
 xref: MassMono: "155.045667"
-xref: Origin: "G"
+xref: Origin: "B, G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 is_a: MOD:00688 ! isopeptide crosslinked residues
@@ -38333,7 +38332,7 @@ xref: DiffMono: "none"
 xref: Formula: "C 10 H 15 N 3 O 3"
 xref: MassAvg: "225.25"
 xref: MassMono: "225.111341"
-xref: Origin: "K"
+xref: Origin: "B, K"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00688 ! isopeptide crosslinked residues
@@ -38634,7 +38633,7 @@ xref: DiffMono: "none"
 xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
-xref: Origin: "X"
+xref: Origin: "B, X"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 is_a: MOD:00033 ! crosslinked residues
