@@ -1,7 +1,7 @@
 format-version: 1.2
 ontology: mod
-date: 28:05:2026 17:00
-data-version: 1.036.0
+date: 22:06:2026 13:00
+data-version: 1.037.0
 saved-by: Ryan Fellers
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
@@ -849,7 +849,6 @@ is_a: MOD:01024 ! monohydroxylated proline
 id: MOD:00040
 name: 2-pyrrolidone-5-carboxylic acid (Gln)
 def: "A protein modification that effectively converts an L-glutamine residue to 2-pyrrolidone-5-carboxylic acid." [ChEBI:30652, DeltaMass:123, OMSSA:110, PubMed:10214721, PubMed:1836357, PubMed:26343, PubMed:3473473, RESID:AA0031#GLN, Unimod:28#Q]
-comment: DeltaMass gives a formula C 5 H 5 N 1 O 2 with mass 111.1
 subset: PSI-MOD-slim
 synonym: "(2S)-5-oxo-2-pyrrolidinecarboxylic acid" EXACT RESID-systematic []
 synonym: "2-oxopyrrolidine-5-carboxylic acid" EXACT RESID-alternate []
@@ -868,11 +867,11 @@ synonym: "pyroglutamic acid" EXACT RESID-alternate []
 synonym: "Pyroglutamic Acid formed from Gln" EXACT DeltaMass-label []
 synonym: "Pyroglutamyl" EXACT DeltaMass-label []
 xref: DiffAvg: "-17.03"
-xref: DiffFormula: "C 0 H -3 N -1 O 0"
+xref: DiffFormula: "H -3 N -1"
 xref: DiffMono: "-17.026549"
-xref: Formula: "C 5 H 6 N 1 O 2"
-xref: MassAvg: "112.11"
-xref: MassMono: "112.039853"
+xref: Formula: "C 5 H 5 N 1 O 2"
+xref: MassAvg: "111.10"
+xref: MassMono: "111.032028"
 xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
@@ -13476,7 +13475,7 @@ synonym: "Delta:H(4)C(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "28.05"
 xref: DiffFormula: "C 2 H 4"
 xref: DiffMono: "28.031300"
-xref: Formula: "C "
+xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
