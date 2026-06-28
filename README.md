@@ -55,7 +55,7 @@ oxidized residue -> hydroxylated residue -> hydroxylated arginine -> 4-hydroxy-L
 | Formula | Molecular formula or `none` | The full molecular formula of the modified residue (amino acid + modification(s)) | `C 6 H 10 N 2 O 2` `C 3 H 5 N 1 O 1 Se 1` |
 | MassAvg | Number (2 decimal places) or `none` | The full average mass of the modified residue (amino acid + modification(s)). | `142.16` |
 | MassMono | Number (6 decimal places) or `none` | The full monoisotopic mass of the modified residue (amino acid + modification(s)). | `142.074228` |
-| FormalCharge | Number followed by sign | The formal charge of the modification | `1+` `2-` |
+| FormalCharge | Number followed by sign | The intrinsic charge of a modification, so not any pH dependent or labile proton (or other adducts) based charges. | `1+` `2-` |
 | Origin | string or `none` | The source amino acid residue(s) from which the modified residue is derived. The `DiffFormula`, `DiffMono`, and `DiffAvg` values are defined relative to the composition of these source residue(s). For canonical amino acids, the one-letter code is used. For non-canonical source residues, the PSI-MOD accession is used instead. For cross-linking modifications, all participating residues are listed, separated by commas. | `N` `C, Q` `C, C, C, C` `MOD:00047` `H, MOD:00030` |
 | Smiles | string | An OpenSMILES string encoding the full modified residue (residue + modification(s)) with `*` to indicate the backbone bonds. | `C(*)(=O)[C@H](COP(O)(=O)O)N*` |
 | Source | string | One of `natural`, `artifact`, `hypothetical`, or `none`, if multiple are applicable take the first from this list. | `natural` |
