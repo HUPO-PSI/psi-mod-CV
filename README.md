@@ -39,7 +39,7 @@ oxidized residue -> hydroxylated residue -> hydroxylated arginine -> 4-hydroxy-L
   - `A protein modification that crosslinks two cysteine residues by formation of a chain of two or more bonded sulfur atoms.`
   - `A protein modification that effectively crosslinks an N-formyl-L-methionine residue and an L-histidine residue to form N-[(L-histidin-1'-yl)methyl]-L-methionine.`
   - `A protein modification that effectively converts four L-cysteine residues and a four-iron four-sulfur cluster to tetrakis-L-cysteinyl tetrairon tetrasulfide.`
-- `is_a` the parent terms. Each entry should be a member of two child terms, one of each main branch: _by amino acid modified_ (`MOD:01157`, e.g. `MOD:00916 ! modified L-serine residue`) and _by chemical process_ (`MOD:01156`, e.g. `MOD:01685 ! alpha-amino palmitoylated residue`).
+- `is_a` the parent terms. Each entry should be a child of two parent terms, one of each main branch: _by amino acid modified_ (`MOD:01157`, e.g. `MOD:00916 ! modified L-serine residue`) and _by chemical process_ (`MOD:01156`, e.g. `MOD:01685 ! alpha-amino palmitoylated residue`).
 
 ## Optional keys
 - `comment` a comment for human readers of the OBO file. If this modification is a cross-linker it needs to start with `cross-link NUM` to indicate the number of residues involved.
@@ -55,7 +55,7 @@ oxidized residue -> hydroxylated residue -> hydroxylated arginine -> 4-hydroxy-L
 | Formula | Molecular formula or `none` | The full molecular formula of the modified residue (amino acid + modification(s)) | `C 6 H 10 N 2 O 2` `C 3 H 5 N 1 O 1 Se 1` |
 | MassAvg | Number (2 decimal places) or `none` | The full average mass of the modified residue (amino acid + modification(s)). | `142.16` |
 | MassMono | Number (6 decimal places) or `none` | The full monoisotopic mass of the modified residue (amino acid + modification(s)). | `142.074228` |
-| FormalCharge | Number followed by sign | The intrinsic charge of a modification, so not any pH dependent or labile proton (or other adducts) based charges. | `1+` `2-` |
+| FormalCharge | Number followed by sign | The intrinsic charge contributed by a modification due to its fixed structure (e.g., a permanently charged quaternary amine), excluding any charge arising from pH-dependent (de)protonation or from labile protons or other adducts. | `1+` `2-` |
 | Origin | string or `none` | The source amino acid residue(s) from which the modified residue is derived. The `DiffFormula`, `DiffMono`, and `DiffAvg` values are defined relative to the composition of these source residue(s). For canonical amino acids, the one-letter code is used. For non-canonical source residues, the PSI-MOD accession is used instead. For cross-linking modifications, all participating residues are listed, separated by commas. | `N` `C, Q` `C, C, C, C` `MOD:00047` `H, MOD:00030` |
 | Smiles | string | An OpenSMILES string encoding the full modified residue (residue + modification(s)) with `*` to indicate the backbone bonds. | `C(*)(=O)[C@H](COP(O)(=O)O)N*` |
 | Source | string | One of `natural`, `artifact`, `hypothetical`, or `none`, if multiple are applicable take the first from this list. | `natural` |
