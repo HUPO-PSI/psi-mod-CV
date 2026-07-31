@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/mod.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mod/1.037.0/mod.owl"/>
-        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19:06:2026 11:00</oboInOwl:date>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/mod/1.038.0/mod.owl"/>
+        <oboInOwl:date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31:07:2026 15:00</oboInOwl:date>
         <oboInOwl:default-namespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PSI-MOD</oboInOwl:default-namespace>
         <oboInOwl:hasOBOFormatVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:saved-by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Douwe Schulte</oboInOwl:saved-by>
@@ -3350,11 +3350,11 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01160"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-glutamine residue to 2-pyrrolidone-5-carboxylic acid.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-17.03</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 0 H -3 N -1 O 0</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H -3 N -1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">-17.026548</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 5 H 6 N 1 O 2</mod:Formula>
-        <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.11</mod:MassAvg>
-        <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">112.039856</mod:MassMono>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 5 H 5 N 1 O 2</mod:Formula>
+        <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">111.1</mod:MassAvg>
+        <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">111.03203</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Q</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">natural</mod:Source>
         <mod:TermSpec rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-term</mod:TermSpec>
@@ -3379,7 +3379,6 @@
         <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pyro-glu from Q</oboInOwl:hasRelatedSynonym>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:00040</oboInOwl:id>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/mod#PSI-MOD-slim"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DeltaMass gives a formula C 5 H 5 N 1 O 2 with mass 111.1</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-pyrrolidone-5-carboxylic acid (Gln)</rdfs:label>
     </owl:Class>
     <owl:Axiom>
@@ -34628,9 +34627,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01820"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that is produced by formation of an adduct of a cysteine residue with the Gygi isotope-coded affinity tag d8 reagent.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">494.3</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 22 (1)H 30 (2)H 8 N 4 O 6 S 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 22 H 30 (2)H 8 N 4 O 6 S 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">494.30142</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 25 (1)H 35 (2)H 8 N 5 O 7 S 2</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 25 H 35 (2)H 8 N 5 O 7 S 2</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">597.31</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">597.3106</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mod:Origin>
@@ -34785,9 +34784,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01820"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that is produced by formation of an adduct of a cysteine residue with the Applied Biosystems original isotope-coded affinity tag d8 reagent.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">450.28</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 20 (1)H 26 (2)H 8 N 4 O 5 S 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 20 H 26 (2)H 8 N 4 O 5 S 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">450.2752</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 23 (1)H 31 (2)H 8 N 5 O 6 S 2</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 23 H 31 (2)H 8 N 5 O 6 S 2</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">553.28</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">553.28436</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mod:Origin>
@@ -34828,9 +34827,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01820"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that is produced by formation of an adduct of a cysteine residue with the Applied Biosystems original isotope-coded affinity tag d0 reagent.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">442.22</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 20 (1)H 34 N 4 O 5 S 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 20 H 34 N 4 O 5 S 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">442.225</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 23 (1)H 39 N 5 O 6 S 2</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 23 H 39 N 5 O 6 S 2</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">545.23</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">545.2342</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mod:Origin>
@@ -36884,7 +36883,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01431"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.03</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 2 (1)H -1 (2)H 3 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 2 H -1 (2)H 3 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.029396</mod:DiffMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</mod:Source>
@@ -36925,7 +36924,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/MOD_00450">
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBSOLETE because this isotopic label from Unimod entry 57 is deprecated</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">42.01</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 2 (1)H 2 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 2 H 2 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">42.010567</mod:DiffMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</mod:Source>
@@ -37000,7 +36999,7 @@
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">59.04</mod:DiffAvg>
         <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13)C 3 H 4 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">59.036278</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 6 (13)C 3 H 16 N 2 O 2</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 (13)C 3 H 16 N 2 O 2</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">187.13</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">187.13124</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
@@ -37082,9 +37081,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01426"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a residue alpha-amino- or alpha-imino-hydrogen with a quaternary amine reagent heavy (+3amu) form group.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">130.12</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 7 (1)H 10 (2)H 3 N 1 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 7 H 10 (2)H 3 N 1 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">130.11855</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 13 (1)H 22 (2)H 3 N 3 O 2</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 13 H 22 (2)H 3 N 3 O 2</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">258.21</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">258.2135</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
@@ -37163,9 +37162,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01426"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a residue alpha-amino- or alpha-imino-hydrogen with a quaternary amine reagent heavy (+9amu) form group.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">136.16</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 7 (1)H 4 (2)H 9 N 1 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 7 H 4 (2)H 9 N 1 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">136.1562</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 13 (1)H 16 (2)H 9 N 3 O 2</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 13 H 16 (2)H 9 N 3 O 2</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">264.25</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">264.25116</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
@@ -37877,7 +37876,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01431"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">348.24</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 16 (1)H 16 (2)H 10 N 4 O 2 S 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 16 H 16 (2)H 10 N 4 O 2 S 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">348.24042</mod:DiffMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</mod:Source>
@@ -37989,7 +37988,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01426"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">68.04</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 (1)H 4 N 2</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 H 4 N 2</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">68.037445</mod:DiffMono>
         <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 H 16 N 4 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">196.13</mod:MassAvg>
@@ -38034,7 +38033,7 @@
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">72.06</mod:DiffAvg>
         <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 (2)H 4 N 2</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">72.06255</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 (1)H 12 (2)H 4 N 4 O 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 H 12 (2)H 4 N 4 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.16</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.15752</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -38081,9 +38080,9 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-cysteine residue to S-(1,1,2-(2)H3)-propanamide-L-cysteine.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">74.06</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 (1)H 2 (2)H 3 N 1 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 H 2 (2)H 3 N 1 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">74.05595</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 (1)H 7 (2)H 3 N 2 O 2 S 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 H 7 (2)H 3 N 2 O 2 S 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">177.07</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">177.06512</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mod:Origin>
@@ -41552,9 +41551,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01431"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">174.17</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 (1)H 16 (2)H 3 N 2 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 H 16 (2)H 3 N 2 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">174.16856</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 12 (1)H 21 (2)H 3 N 3 O 2 S 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 12 H 21 (2)H 3 N 3 O 2 S 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">277.18</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">277.17776</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mod:Origin>
@@ -41643,9 +41642,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01431"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">189.19</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 10 (1)H 15 (2)H 5 N 2 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 10 H 15 (2)H 5 N 2 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">189.18895</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 13 (1)H 20 (2)H 5 N 3 O 2 S 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 13 H 20 (2)H 5 N 3 O 2 S 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">292.2</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">292.19812</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mod:Origin>
@@ -42066,7 +42065,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01431"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.08</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 4 (1)H 2 (2)H 5 N 1 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 4 H 2 (2)H 5 N 1 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.084145</mod:DiffMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</mod:Source>
@@ -42684,7 +42683,6 @@
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">28.05</mod:DiffAvg>
         <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 2 H 4</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">28.0313</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C </mod:Formula>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</mod:Source>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unimod:255</oboInOwl:hasDbXref>
@@ -42968,7 +42966,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00786"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively substitutes three (2)H deuterium atoms for three (1)H protium atoms.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.02</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)H -3 (2)H 3</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H -3 (2)H 3</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.01883</mod:DiffMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</mod:Source>
@@ -43706,7 +43704,7 @@
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.03</mod:DiffAvg>
         <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 1 (2)H 2</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">16.028204</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 7 (1)H 12 (2)H 2 N 2 O 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 7 H 12 (2)H 2 N 2 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">144.12</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">144.12317</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -44209,7 +44207,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00839"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts a residue containing common isotopes to a 3x(2)H labeled residue methyl ester.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.03</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 1 (1)H -1 (2)H 3</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 1 H -1 (2)H 3</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.03448</mod:DiffMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</mod:Source>
@@ -45008,9 +45006,9 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces one hydrogen atom of an L-arginine residue with a (13)C,3x(2)H labeled methyl group to form a 1x(13)C,3x(2)H labeled monomethylated L-arginine.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.04</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13)C 1 (1)H -1 (2)H 3</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13)C 1 H -1 (2)H 3</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.037834</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 6 (13)C 1 (1)H 11 (2)H 3 N 4 O 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 6 (13)C 1 H 11 (2)H 3 N 4 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">174.14</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">174.13895</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R</mod:Origin>
@@ -45057,9 +45055,9 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces two hydrogen atoms of an L-arginine residue with two (13)C,3x(2)H labeled methyl groups to form a 2x(13)C,6x(2)H labeled dimethylated L-arginine.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.08</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13)C 2 (1)H -2 (2)H 6</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13)C 2 H -2 (2)H 6</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">36.07567</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 6 (13)C 2 (1)H 10 (2)H 6 N 4 O 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 6 (13)C 2 H 10 (2)H 6 N 4 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">192.18</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">192.17679</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R</mod:Origin>
@@ -54166,9 +54164,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00911"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively substitutes three (1)H protium atoms with three (2)H deuterium atoms to produce 3x(2)H labeled L-leucine.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.02</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)H -3 (2)H 3</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H -3 (2)H 3</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">3.01883</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 (1)H 8 (2)H 3 N 1 O 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 H 8 (2)H 3 N 1 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">116.1</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">116.1029</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L</mod:Origin>
@@ -57905,9 +57903,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00912"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively substitutes four (1)H protium atoms with four (2)H deuterium atoms to produce (4,4,5,5-(2)H4)-L-lysine.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.03</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(1)H -4 (2)H 4</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H -4 (2)H 4</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.025107</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 (1)H 8 (2)H 4 N 2 O 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 H 8 (2)H 4 N 2 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">132.12</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">132.12007</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -58007,7 +58005,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">137.16</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 7 (1)H 5 (2)H 9 N 1 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 7 H 5 (2)H 9 N 1 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">137.16403</mod:DiffMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</mod:Source>
@@ -66801,9 +66799,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00562"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label -</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.08</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 4 (1)H 2 (2)H 5 N 1 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 4 H 2 (2)H 5 N 1 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.084145</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 13 (1)H 11 (2)H 5 N 2 O 3</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 13 H 11 (2)H 5 N 2 O 3</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">253.15</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">253.14748</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Y</mod:Origin>
@@ -66846,9 +66844,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00562"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label -</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.08</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 4 (1)H 2 (2)H 5 N 1 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 4 H 2 (2)H 5 N 1 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">90.084145</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 7 (1)H 7 (2)H 5 N 2 O 2 S 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 7 H 7 (2)H 5 N 2 O 2 S 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">193.09</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">193.09334</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C</mod:Origin>
@@ -68903,9 +68901,9 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-lysine residue to 3x(2)H labeled N6-acetyl-L-lysine.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.03</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 2 (1)H -1 (2)H 3 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 2 H -1 (2)H 3 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">45.029396</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 8 (1)H 11 (2)H 3 N 2 O 2</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 8 H 11 (2)H 3 N 2 O 2</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">173.12</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">173.12436</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -69274,9 +69272,9 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-lysine residue to 3x(2)H labeled L-aspartic acid 4-methyl ester.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.03</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 1 (1)H -1 (2)H 3</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 1 H -1 (2)H 3</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.03448</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 5 (1)H 4 (2)H 3 N 1 O 3</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 5 H 4 (2)H 3 N 1 O 3</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">132.06</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">132.06142</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D</mod:Origin>
@@ -69331,9 +69329,9 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-lysine residue to 3x(2)H labeled L-glutamic acid 5-methyl ester.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.03</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 1 (1)H -1 (2)H 3</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 1 H -1 (2)H 3</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">17.03448</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 (1)H 6 (2)H 3 N 1 O 3</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 H 6 (2)H 3 N 1 O 3</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">146.08</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">146.07707</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">E</mod:Origin>
@@ -72348,9 +72346,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01426"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a lysine N6-hydrogen with a quaternary amine reagent light form group.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">59.07</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 (1)H 9 N 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 H 9 N 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">59.073498</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 (1)H 21 N 3 O 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 H 21 N 3 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">187.17</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">187.16846</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -72391,9 +72389,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01426"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a lysine N6-hydrogen with a quaternary amine reagent heavy (+3amu) form group.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">62.09</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 (1)H 6 (2)H 3 N 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 H 6 (2)H 3 N 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">62.09233</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 (1)H 18 (2)H 3 N 3 O 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 H 18 (2)H 3 N 3 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">190.19</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">190.18729</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -72436,9 +72434,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01426"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces a lysine N6-hydrogen with a quaternary amine reagent heavy (+6amu) form group.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">65.11</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 (1)H 3 (2)H 6 N 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 H 3 (2)H 6 N 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">65.11116</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 (1)H 15 (2)H 6 N 3 O 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 H 15 (2)H 6 N 3 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">193.21</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">193.20612</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -72482,7 +72480,7 @@
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">68.13</mod:DiffAvg>
         <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 3 (2)H 9 N 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">68.12999</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 (1)H 12 (2)H 9 N 3 O 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 9 H 12 (2)H 9 N 3 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">196.22</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">196.22496</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -72582,7 +72580,7 @@
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">104.04</mod:DiffAvg>
         <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 4 (2)H 4 O 3</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">104.04115</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 10 (1)H 12 (2)H 4 N 2 O 4</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 10 H 12 (2)H 4 N 2 O 4</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">232.14</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">232.13611</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -73697,9 +73695,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00912"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label -</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">348.24</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 16 (1)H 16 (2)H 10 N 4 O 2 S 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 16 H 16 (2)H 10 N 4 O 2 S 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">348.24042</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 22 (1)H 28 (2)H 10 N 6 O 3 S 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 22 H 28 (2)H 10 N 6 O 3 S 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">476.34</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">476.3354</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -74487,7 +74485,7 @@
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">34.06</mod:DiffAvg>
         <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13)C 2 (2)H 4</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">34.063118</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 6 (13)C 2 (1)H 12 (2)H 4 N 2 O 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 6 (13)C 2 H 12 (2)H 4 N 2 O 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">162.16</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">162.15808</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -74528,7 +74526,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01426"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label - Use when labelling post-digest</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">109.05</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 (1)H -1 (2)H 4 N 1 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 H -1 (2)H 4 N 1 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">109.04657</mod:DiffMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</mod:Source>
@@ -74569,9 +74567,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_01426"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">modification from Unimod Isotopic label - Use when labelling post-digest</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">109.05</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 (1)H -1 (2)H 4 N 1 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 6 H -1 (2)H 4 N 1 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">109.04657</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 12 (1)H 11 (2)H 4 N 3 O 2</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C 12 H 11 (2)H 4 N 3 O 2</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">237.14</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">237.14154</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
@@ -96433,7 +96431,7 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00842"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively replaces the methyl group of a residue containing common isotopes with a 1x(13)C,3x(2)H labeled monomethylated residue.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.04</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13)C 1 (1)H -1 (2)H 3</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13)C 1 H -1 (2)H 3</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">18.037834</mod:DiffMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</mod:Source>
@@ -96465,9 +96463,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00913"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-methionine residue containing common isotopes to 1x(13)C,3x(2)H C(6)-labeled L-methionine.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.02</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C -1 (13)C 1 (1)H -3 (2)H 3</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C -1 (13)C 1 H -3 (2)H 3</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.022185</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 4 (13)C 1 (1)H 6 (2)H 3 N 1 O 1 S 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 4 (13)C 1 H 6 (2)H 3 N 1 O 1 S 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">135.06</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">135.06267</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</mod:Origin>
@@ -96500,9 +96498,9 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MOD_00913"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-methionine residue containing common isotopes to 1x(13)C,3x(2)H C(6)-labeled L-methionine sulfoxide.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.02</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C -1 (13)C 1 (1)H -3 (2)H 3 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C -1 (13)C 1 H -3 (2)H 3 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0171</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 4 (13)C 1 (1)H 6 (2)H 3 N 1 O 2 S 1</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 4 (13)C 1 H 6 (2)H 3 N 1 O 2 S 1</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">151.06</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">151.05759</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">M</mod:Origin>
@@ -100336,7 +100334,7 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OBSOLETE because identical to MOD:00457</obo:IAO_0000115>
         <obo:IAO_0100001 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MOD:00457</obo:IAO_0100001>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.02</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 4 (1)H 4 O 3</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 4 H 4 O 3</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">100.016045</mod:DiffMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X</mod:Origin>
         <mod:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">artifact</mod:Source>
@@ -105395,9 +105393,9 @@
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A protein modification that effectively converts an L-lysine residue to 2xC(13),3x(2)H labeled N6-acetyl-L-lysine.</obo:IAO_0000115>
         <mod:DiffAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">47.04</mod:DiffAvg>
-        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13)C 2 (1)H -1 (2)H 3 O 1</mod:DiffFormula>
+        <mod:DiffFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(13)C 2 H -1 (2)H 3 O 1</mod:DiffFormula>
         <mod:DiffMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">47.036106</mod:DiffMono>
-        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 6 (13)C 2 (1)H 11 (2)H 3 N 2 O 2</mod:Formula>
+        <mod:Formula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(12)C 6 (13)C 2 H 11 (2)H 3 N 2 O 2</mod:Formula>
         <mod:MassAvg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">175.13</mod:MassAvg>
         <mod:MassMono rdf:datatype="http://www.w3.org/2001/XMLSchema#float">175.13107</mod:MassMono>
         <mod:Origin rdf:datatype="http://www.w3.org/2001/XMLSchema#string">K</mod:Origin>
