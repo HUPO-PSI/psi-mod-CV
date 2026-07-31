@@ -1,7 +1,7 @@
 format-version: 1.2
 ontology: mod
-date: 19:06:2026 11:00
-data-version: 1.037.0
+date: 31:07:2026 15:00
+data-version: 1.038.0
 saved-by: Douwe Schulte
 subsetdef: PSI-MOD-slim "subset of protein modifications"
 synonymtypedef: DeltaMass-label "Label from MS DeltaMass" EXACT
@@ -849,7 +849,6 @@ is_a: MOD:01024 ! monohydroxylated proline
 id: MOD:00040
 name: 2-pyrrolidone-5-carboxylic acid (Gln)
 def: "A protein modification that effectively converts an L-glutamine residue to 2-pyrrolidone-5-carboxylic acid." [ChEBI:30652, DeltaMass:123, OMSSA:110, PubMed:10214721, PubMed:1836357, PubMed:26343, PubMed:3473473, RESID:AA0031#GLN, Unimod:28#Q]
-comment: DeltaMass gives a formula C 5 H 5 N 1 O 2 with mass 111.1
 subset: PSI-MOD-slim
 synonym: "(2S)-5-oxo-2-pyrrolidinecarboxylic acid" EXACT RESID-systematic []
 synonym: "2-oxopyrrolidine-5-carboxylic acid" EXACT RESID-alternate []
@@ -868,11 +867,11 @@ synonym: "pyroglutamic acid" EXACT RESID-alternate []
 synonym: "Pyroglutamic Acid formed from Gln" EXACT DeltaMass-label []
 synonym: "Pyroglutamyl" EXACT DeltaMass-label []
 xref: DiffAvg: "-17.03"
-xref: DiffFormula: "C 0 H -3 N -1 O 0"
+xref: DiffFormula: "H -3 N -1"
 xref: DiffMono: "-17.026549"
-xref: Formula: "C 5 H 6 N 1 O 2"
-xref: MassAvg: "112.11"
-xref: MassMono: "112.039853"
+xref: Formula: "C 5 H 5 N 1 O 2"
+xref: MassAvg: "111.10"
+xref: MassMono: "111.032028"
 xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
@@ -10116,9 +10115,9 @@ def: "A protein modification that is produced by formation of an adduct of a cys
 synonym: "Gygi ICAT(TM) d8" RELATED Unimod-description []
 synonym: "ICAT-G:2H(8)" RELATED PSI-MS-label []
 xref: DiffAvg: "494.30"
-xref: DiffFormula: "C 22 (1)H 30 (2)H 8 N 4 O 6 S 1"
+xref: DiffFormula: "C 22 H 30 (2)H 8 N 4 O 6 S 1"
 xref: DiffMono: "494.301420"
-xref: Formula: "C 25 (1)H 35 (2)H 8 N 5 O 7 S 2"
+xref: Formula: "C 25 H 35 (2)H 8 N 5 O 7 S 2"
 xref: MassAvg: "597.31"
 xref: MassMono: "597.310605"
 xref: Origin: "C"
@@ -10180,9 +10179,9 @@ subset: PSI-MOD-slim
 synonym: "Applied Biosystems original ICAT(TM) d8" RELATED Unimod-description []
 synonym: "ICAT-D:2H(8)" RELATED PSI-MS-label []
 xref: DiffAvg: "450.28"
-xref: DiffFormula: "C 20 (1)H 26 (2)H 8 N 4 O 5 S 1"
+xref: DiffFormula: "C 20 H 26 (2)H 8 N 4 O 5 S 1"
 xref: DiffMono: "450.275205"
-xref: Formula: "C 23 (1)H 31 (2)H 8 N 5 O 6 S 2"
+xref: Formula: "C 23 H 31 (2)H 8 N 5 O 6 S 2"
 xref: MassAvg: "553.28"
 xref: MassMono: "553.284390"
 xref: Origin: "C"
@@ -10201,9 +10200,9 @@ subset: PSI-MOD-slim
 synonym: "Applied Biosystems original ICAT(TM) d0" RELATED Unimod-description []
 synonym: "ICAT-D" RELATED PSI-MS-label []
 xref: DiffAvg: "442.22"
-xref: DiffFormula: "C 20 (1)H 34 N 4 O 5 S 1"
+xref: DiffFormula: "C 20 H 34 N 4 O 5 S 1"
 xref: DiffMono: "442.224991"
-xref: Formula: "C 23 (1)H 39 N 5 O 6 S 2"
+xref: Formula: "C 23 H 39 N 5 O 6 S 2"
 xref: MassAvg: "545.23"
 xref: MassMono: "545.234176"
 xref: Origin: "C"
@@ -11024,7 +11023,7 @@ def: "modification from Unimod Isotopic label" [PubMed:11857757, PubMed:11999733
 synonym: "Acetate labeling reagent (N-term & K) (heavy form, +3amu)" RELATED Unimod-description []
 synonym: "Acetyl:2H(3)" RELATED PSI-MS-label []
 xref: DiffAvg: "45.03"
-xref: DiffFormula: "C 2 (1)H -1 (2)H 3 O 1"
+xref: DiffFormula: "C 2 H -1 (2)H 3 O 1"
 xref: DiffMono: "45.029395"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -11040,7 +11039,7 @@ id: MOD:00450
 name: acetate labeling reagent light form (K)
 def: "OBSOLETE because this isotopic label from Unimod entry 57 is deprecated" [PubMed:11857757]
 xref: DiffAvg: "42.01"
-xref: DiffFormula: "C 2 (1)H 2 O 1"
+xref: DiffFormula: "C 2 H 2 O 1"
 xref: DiffMono: "42.010565"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -11077,7 +11076,7 @@ synonym: "Propionyl:13C(3)" RELATED PSI-MS-label []
 xref: DiffAvg: "59.04"
 xref: DiffFormula: "(13)C 3 H 4 O 1"
 xref: DiffMono: "59.036279"
-xref: Formula: "(12)C 6 (13)C 3 H 16 N 2 O 2"
+xref: Formula: "C 6 (13)C 3 H 16 N 2 O 2"
 xref: MassAvg: "187.13"
 xref: MassMono: "187.131242"
 xref: Origin: "X"
@@ -11114,9 +11113,9 @@ def: "A protein modification that effectively replaces a residue alpha-amino- or
 synonym: "GIST-Quat:2H(3)" RELATED PSI-MS-label []
 synonym: "Quaternary amine labeling reagent heavy (+3amu) form, N-term & K" RELATED Unimod-description []
 xref: DiffAvg: "130.12"
-xref: DiffFormula: "C 7 (1)H 10 (2)H 3 N 1 O 1"
+xref: DiffFormula: "C 7 H 10 (2)H 3 N 1 O 1"
 xref: DiffMono: "130.118544"
-xref: Formula: "C 13 (1)H 22 (2)H 3 N 3 O 2"
+xref: Formula: "C 13 H 22 (2)H 3 N 3 O 2"
 xref: MassAvg: "258.21"
 xref: MassMono: "258.213507"
 xref: Origin: "X"
@@ -11150,9 +11149,9 @@ def: "A protein modification that effectively replaces a residue alpha-amino- or
 synonym: "GIST-Quat:2H(9)" RELATED PSI-MS-label []
 synonym: "Quaternary amine labeling reagent heavy form (+9amu), N-term & K" RELATED Unimod-description []
 xref: DiffAvg: "136.16"
-xref: DiffFormula: "C 7 (1)H 4 (2)H 9 N 1 O 1"
+xref: DiffFormula: "C 7 H 4 (2)H 9 N 1 O 1"
 xref: DiffMono: "136.156205"
-xref: Formula: "C 13 (1)H 16 (2)H 9 N 3 O 2"
+xref: Formula: "C 13 H 16 (2)H 9 N 3 O 2"
 xref: MassAvg: "264.25"
 xref: MassMono: "264.251168"
 xref: Origin: "X"
@@ -11413,7 +11412,7 @@ def: "modification from Unimod Isotopic label" [Unimod:91]
 synonym: "ESP-Tag heavy d10" RELATED Unimod-description []
 synonym: "ESP:2H(10)" RELATED PSI-MS-label []
 xref: DiffAvg: "348.24"
-xref: DiffFormula: "C 16 (1)H 16 (2)H 10 N 4 O 2 S 1"
+xref: DiffFormula: "C 16 H 16 (2)H 10 N 4 O 2 S 1"
 xref: DiffMono: "348.240415"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -11467,7 +11466,7 @@ def: "modification from Unimod Isotopic label" [PubMed:11746907, Unimod:94, URL:
 synonym: "IMID" RELATED PSI-MS-label []
 synonym: "IMID d0" RELATED Unimod-description []
 xref: DiffAvg: "68.04"
-xref: DiffFormula: "C 3 (1)H 4 N 2"
+xref: DiffFormula: "C 3 H 4 N 2"
 xref: DiffMono: "68.037448"
 xref: Formula: "C 9 H 16 N 4 O 1"
 xref: MassAvg: "196.13"
@@ -11487,7 +11486,7 @@ synonym: "IMID:2H(4)" RELATED PSI-MS-label []
 xref: DiffAvg: "72.06"
 xref: DiffFormula: "C 3 (2)H 4 N 2"
 xref: DiffMono: "72.062555"
-xref: Formula: "C 9 (1)H 12 (2)H 4 N 4 O 1"
+xref: Formula: "C 9 H 12 (2)H 4 N 4 O 1"
 xref: MassAvg: "200.16"
 xref: MassMono: "200.157518"
 xref: Origin: "K"
@@ -11506,9 +11505,9 @@ synonym: "S-([1,1,2-(2)H3]-3-amino-3-oxopropyl)cysteine" EXACT PSI-MOD-alternate
 synonym: "S-([1,1,2-(2)H3]-carbamoylethyl)-L-cysteine" EXACT PSI-MOD-alternate []
 synonym: "S-([1,1,2-(2)H3]-propanamide)-L-cysteine" EXACT PSI-MOD-alternate []
 xref: DiffAvg: "74.06"
-xref: DiffFormula: "C 3 (1)H 2 (2)H 3 N 1 O 1"
+xref: DiffFormula: "C 3 H 2 (2)H 3 N 1 O 1"
 xref: DiffMono: "74.055944"
-xref: Formula: "C 6 (1)H 7 (2)H 3 N 2 O 2 S 1"
+xref: Formula: "C 6 H 7 (2)H 3 N 2 O 2 S 1"
 xref: MassAvg: "177.07"
 xref: MassMono: "177.065129"
 xref: Origin: "C"
@@ -12964,9 +12963,9 @@ synonym: "(3-acrylamidopropyl)trimethylammonium" RELATED Unimod-description []
 synonym: "APTA d3" RELATED Unimod-description []
 synonym: "QAT:2H(3)" RELATED PSI-MS-label []
 xref: DiffAvg: "174.17"
-xref: DiffFormula: "C 9 (1)H 16 (2)H 3 N 2 O 1"
+xref: DiffFormula: "C 9 H 16 (2)H 3 N 2 O 1"
 xref: DiffMono: "174.168568"
-xref: Formula: "C 12 (1)H 21 (2)H 3 N 3 O 2 S 1"
+xref: Formula: "C 12 H 21 (2)H 3 N 3 O 2 S 1"
 xref: MassAvg: "277.18"
 xref: MassMono: "277.177753"
 xref: Origin: "C"
@@ -13000,9 +12999,9 @@ def: "modification from Unimod Isotopic label" [Unimod:198]
 synonym: "EAPTA d5" RELATED Unimod-description []
 synonym: "EQAT:2H(5)" RELATED PSI-MS-label []
 xref: DiffAvg: "189.19"
-xref: DiffFormula: "C 10 (1)H 15 (2)H 5 N 2 O 1"
+xref: DiffFormula: "C 10 H 15 (2)H 5 N 2 O 1"
 xref: DiffMono: "189.188947"
-xref: Formula: "C 13 (1)H 20 (2)H 5 N 3 O 2 S 1"
+xref: Formula: "C 13 H 20 (2)H 5 N 3 O 2 S 1"
 xref: MassAvg: "292.20"
 xref: MassMono: "292.198132"
 xref: Origin: "C"
@@ -13200,7 +13199,7 @@ def: "modification from Unimod Isotopic label" [PubMed:12766232, Unimod:212]
 synonym: "N-ethyl iodoacetamide-d5" RELATED Unimod-description []
 synonym: "NEIAA:2H(5)" RELATED PSI-MS-label []
 xref: DiffAvg: "90.08"
-xref: DiffFormula: "C 4 (1)H 2 (2)H 5 N 1 O 1"
+xref: DiffFormula: "C 4 H 2 (2)H 5 N 1 O 1"
 xref: DiffMono: "90.084148"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -13476,7 +13475,7 @@ synonym: "Delta:H(4)C(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "28.05"
 xref: DiffFormula: "C 2 H 4"
 xref: DiffMono: "28.031300"
-xref: Formula: "C "
+xref: Formula: "none"
 xref: MassAvg: "none"
 xref: MassMono: "none"
 xref: Origin: "X"
@@ -13606,7 +13605,7 @@ synonym: "D(H)3Res" EXACT PSI-MOD-label []
 synonym: "Label:2H(3)" RELATED PSI-MS-label []
 synonym: "Trideuteration" RELATED Unimod-description []
 xref: DiffAvg: "3.02"
-xref: DiffFormula: "(1)H -3 (2)H 3"
+xref: DiffFormula: "H -3 (2)H 3"
 xref: DiffMono: "3.018830"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -13934,7 +13933,7 @@ synonym: "Methyl:2H(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "16.03"
 xref: DiffFormula: "C 1 (2)H 2"
 xref: DiffMono: "16.028204"
-xref: Formula: "C 7 (1)H 12 (2)H 2 N 2 O 1"
+xref: Formula: "C 7 H 12 (2)H 2 N 2 O 1"
 xref: MassAvg: "144.12"
 xref: MassMono: "144.123167"
 xref: Origin: "K"
@@ -14166,7 +14165,7 @@ synonym: "ctermpeptrideuteromethyl" EXACT OMSSA-label []
 synonym: "deuterated methyl ester" RELATED Unimod-description []
 synonym: "Methyl:2H(3)" RELATED PSI-MS-label []
 xref: DiffAvg: "17.03"
-xref: DiffFormula: "C 1 (1)H -1 (2)H 3"
+xref: DiffFormula: "C 1 H -1 (2)H 3"
 xref: DiffMono: "17.034480"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -14534,9 +14533,9 @@ def: "A protein modification that effectively replaces one hydrogen atom of an L
 synonym: "Methyl:2H(3)13C(1)" RELATED PSI-MS-label []
 synonym: "monomethylated arginine" RELATED Unimod-description []
 xref: DiffAvg: "18.04"
-xref: DiffFormula: "(13)C 1 (1)H -1 (2)H 3"
+xref: DiffFormula: "(13)C 1 H -1 (2)H 3"
 xref: DiffMono: "18.037835"
-xref: Formula: "(12)C 6 (13)C 1 (1)H 11 (2)H 3 N 4 O 1"
+xref: Formula: "(12)C 6 (13)C 1 H 11 (2)H 3 N 4 O 1"
 xref: MassAvg: "174.14"
 xref: MassMono: "174.138946"
 xref: Origin: "R"
@@ -14555,9 +14554,9 @@ def: "A protein modification that effectively replaces two hydrogen atoms of an 
 synonym: "Dimethyl:2H(6)13C(2)" RELATED PSI-MS-label []
 synonym: "dimethylated arginine" RELATED Unimod-description []
 xref: DiffAvg: "36.08"
-xref: DiffFormula: "(13)C 2 (1)H -2 (2)H 6"
+xref: DiffFormula: "(13)C 2 H -2 (2)H 6"
 xref: DiffMono: "36.075670"
-xref: Formula: "(12)C 6 (13)C 2 (1)H 10 (2)H 6 N 4 O 1"
+xref: Formula: "(12)C 6 (13)C 2 H 10 (2)H 6 N 4 O 1"
 xref: MassAvg: "192.18"
 xref: MassMono: "192.176781"
 xref: Origin: "R"
@@ -17858,9 +17857,9 @@ synonym: "D(H)3Leu" EXACT PSI-MOD-label []
 synonym: "Label:2H(3)" RELATED PSI-MS-label []
 synonym: "Trideuteration" RELATED Unimod-description []
 xref: DiffAvg: "3.02"
-xref: DiffFormula: "(1)H -3 (2)H 3"
+xref: DiffFormula: "H -3 (2)H 3"
 xref: DiffMono: "3.018830"
-xref: Formula: "C 6 (1)H 8 (2)H 3 N 1 O 1"
+xref: Formula: "C 6 H 8 (2)H 3 N 1 O 1"
 xref: MassAvg: "116.10"
 xref: MassMono: "116.102894"
 xref: Origin: "L"
@@ -19403,9 +19402,9 @@ synonym: "4,4,5,5-tetradeuterolysine" EXACT PSI-MOD-alternate []
 synonym: "Label:2H(4)" RELATED Unimod-interim []
 synonym: "lys-2H4" EXACT OMSSA-label []
 xref: DiffAvg: "4.03"
-xref: DiffFormula: "(1)H -4 (2)H 4"
+xref: DiffFormula: "H -4 (2)H 4"
 xref: DiffMono: "4.025107"
-xref: Formula: "C 6 (1)H 8 (2)H 4 N 2 O 1"
+xref: Formula: "C 6 H 8 (2)H 4 N 2 O 1"
 xref: MassAvg: "132.12"
 xref: MassMono: "132.120070"
 xref: Origin: "K"
@@ -19440,7 +19439,7 @@ def: "modification from Unimod Isotopic label" [Unimod:477]
 synonym: "d9-4-trimethyllammoniumbutyryl-" RELATED Unimod-description []
 synonym: "TMAB:2H(9)" RELATED Unimod-interim []
 xref: DiffAvg: "137.16"
-xref: DiffFormula: "C 7 (1)H 5 (2)H 9 N 1 O 1"
+xref: DiffFormula: "C 7 H 5 (2)H 9 N 1 O 1"
 xref: DiffMono: "137.164030"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -23708,9 +23707,9 @@ def: "modification from Unimod Isotopic label -" [PubMed:11710128, PubMed:127662
 synonym: "N-ethyl iodoacetamide-d5" RELATED Unimod-description []
 synonym: "NEIAA:2H(5)" RELATED PSI-MS-label []
 xref: DiffAvg: "90.08"
-xref: DiffFormula: "C 4 (1)H 2 (2)H 5 N 1 O 1"
+xref: DiffFormula: "C 4 H 2 (2)H 5 N 1 O 1"
 xref: DiffMono: "90.084148"
-xref: Formula: "C 13 (1)H 11 (2)H 5 N 2 O 3"
+xref: Formula: "C 13 H 11 (2)H 5 N 2 O 3"
 xref: MassAvg: "253.15"
 xref: MassMono: "253.147476"
 xref: Origin: "Y"
@@ -23726,9 +23725,9 @@ def: "modification from Unimod Isotopic label -" [PubMed:12766232, Unimod:212#C]
 synonym: "N-ethyl iodoacetamide-d5" RELATED Unimod-description []
 synonym: "NEIAA:2H(5)" RELATED PSI-MS-label []
 xref: DiffAvg: "90.08"
-xref: DiffFormula: "C 4 (1)H 2 (2)H 5 N 1 O 1"
+xref: DiffFormula: "C 4 H 2 (2)H 5 N 1 O 1"
 xref: DiffMono: "90.084148"
-xref: Formula: "C 7 (1)H 7 (2)H 5 N 2 O 2 S 1"
+xref: Formula: "C 7 H 7 (2)H 5 N 2 O 2 S 1"
 xref: MassAvg: "193.09"
 xref: MassMono: "193.093332"
 xref: Origin: "C"
@@ -24586,9 +24585,9 @@ subset: PSI-MOD-slim
 synonym: "Acetate labeling reagent (N-term & K) (heavy form, +3amu)" RELATED Unimod-description []
 synonym: "Acetyl:2H(3)" RELATED PSI-MS-label []
 xref: DiffAvg: "45.03"
-xref: DiffFormula: "C 2 (1)H -1 (2)H 3 O 1"
+xref: DiffFormula: "C 2 H -1 (2)H 3 O 1"
 xref: DiffMono: "45.029395"
-xref: Formula: "C 8 (1)H 11 (2)H 3 N 2 O 2"
+xref: Formula: "C 8 H 11 (2)H 3 N 2 O 2"
 xref: MassAvg: "173.12"
 xref: MassMono: "173.124358"
 xref: Origin: "K"
@@ -24744,9 +24743,9 @@ synonym: "deuterated methyl ester" RELATED Unimod-description []
 synonym: "Methyl:2H(3)" RELATED PSI-MS-label []
 synonym: "trideuteromethyld" EXACT OMSSA-label []
 xref: DiffAvg: "17.03"
-xref: DiffFormula: "C 1 (1)H -1 (2)H 3"
+xref: DiffFormula: "C 1 H -1 (2)H 3"
 xref: DiffMono: "17.034480"
-xref: Formula: "C 5 (1)H 4 (2)H 3 N 1 O 3"
+xref: Formula: "C 5 H 4 (2)H 3 N 1 O 3"
 xref: MassAvg: "132.06"
 xref: MassMono: "132.061423"
 xref: Origin: "D"
@@ -24765,9 +24764,9 @@ synonym: "deuterated methyl ester" RELATED Unimod-description []
 synonym: "Methyl:2H(3)" RELATED PSI-MS-label []
 synonym: "trideuteromethyle" EXACT OMSSA-label []
 xref: DiffAvg: "17.03"
-xref: DiffFormula: "C 1 (1)H -1 (2)H 3"
+xref: DiffFormula: "C 1 H -1 (2)H 3"
 xref: DiffMono: "17.034480"
-xref: Formula: "C 6 (1)H 6 (2)H 3 N 1 O 3"
+xref: Formula: "C 6 H 6 (2)H 3 N 1 O 3"
 xref: MassAvg: "146.08"
 xref: MassMono: "146.077073"
 xref: Origin: "E"
@@ -26065,9 +26064,9 @@ def: "A protein modification that effectively replaces a lysine N6-hydrogen with
 synonym: "GIST-Quat" RELATED PSI-MS-label []
 synonym: "Quaternary amine labeling reagent light form (N-term & K)" RELATED Unimod-description []
 xref: DiffAvg: "59.07"
-xref: DiffFormula: "C 3 (1)H 9 N 1"
+xref: DiffFormula: "C 3 H 9 N 1"
 xref: DiffMono: "59.073499"
-xref: Formula: "C 9 (1)H 21 N 3 O 1"
+xref: Formula: "C 9 H 21 N 3 O 1"
 xref: MassAvg: "187.17"
 xref: MassMono: "187.168462"
 xref: Origin: "K"
@@ -26084,9 +26083,9 @@ def: "A protein modification that effectively replaces a lysine N6-hydrogen with
 synonym: "GIST-Quat:2H(3)" RELATED PSI-MS-label []
 synonym: "Quaternary amine labeling reagent heavy (+3amu) form, N-term & K" RELATED Unimod-description []
 xref: DiffAvg: "62.09"
-xref: DiffFormula: "C 3 (1)H 6 (2)H 3 N 1"
+xref: DiffFormula: "C 3 H 6 (2)H 3 N 1"
 xref: DiffMono: "62.092330"
-xref: Formula: "C 9 (1)H 18 (2)H 3 N 3 O 1"
+xref: Formula: "C 9 H 18 (2)H 3 N 3 O 1"
 xref: MassAvg: "190.19"
 xref: MassMono: "190.187293"
 xref: Origin: "K"
@@ -26104,9 +26103,9 @@ comment: Apparently incorrect parent [JSG].
 synonym: "GIST-Quat:2H(6)" RELATED PSI-MS-label []
 synonym: "Quaternary amine labeling reagent heavy form (+6amu), N-term & K" RELATED Unimod-description []
 xref: DiffAvg: "65.11"
-xref: DiffFormula: "C 3 (1)H 3 (2)H 6 N 1"
+xref: DiffFormula: "C 3 H 3 (2)H 6 N 1"
 xref: DiffMono: "65.111160"
-xref: Formula: "C 9 (1)H 15 (2)H 6 N 3 O 1"
+xref: Formula: "C 9 H 15 (2)H 6 N 3 O 1"
 xref: MassAvg: "193.21"
 xref: MassMono: "193.206123"
 xref: Origin: "K"
@@ -26125,7 +26124,7 @@ synonym: "Quaternary amine labeling reagent heavy form (+9amu), N-term & K" RELA
 xref: DiffAvg: "68.13"
 xref: DiffFormula: "C 3 (2)H 9 N 1"
 xref: DiffMono: "68.129990"
-xref: Formula: "C 9 (1)H 12 (2)H 9 N 3 O 1"
+xref: Formula: "C 9 H 12 (2)H 9 N 3 O 1"
 xref: MassAvg: "196.22"
 xref: MassMono: "196.224953"
 xref: Origin: "K"
@@ -26164,7 +26163,7 @@ synonym: "Succinyl:2H(4)" RELATED PSI-MS-label []
 xref: DiffAvg: "104.04"
 xref: DiffFormula: "C 4 (2)H 4 O 3"
 xref: DiffMono: "104.041151"
-xref: Formula: "C 10 (1)H 12 (2)H 4 N 2 O 4"
+xref: Formula: "C 10 H 12 (2)H 4 N 2 O 4"
 xref: MassAvg: "232.14"
 xref: MassMono: "232.136114"
 xref: Origin: "K"
@@ -26647,9 +26646,9 @@ def: "modification from Unimod Isotopic label -" [PubMed:11078590, PubMed:110854
 synonym: "ESP-Tag heavy d10" RELATED Unimod-description []
 synonym: "ESP:2H(10)" RELATED PSI-MS-label []
 xref: DiffAvg: "348.24"
-xref: DiffFormula: "C 16 (1)H 16 (2)H 10 N 4 O 2 S 1"
+xref: DiffFormula: "C 16 H 16 (2)H 10 N 4 O 2 S 1"
 xref: DiffMono: "348.240415"
-xref: Formula: "C 22 (1)H 28 (2)H 10 N 6 O 3 S 1"
+xref: Formula: "C 22 H 28 (2)H 10 N 6 O 3 S 1"
 xref: MassAvg: "476.34"
 xref: MassMono: "476.335378"
 xref: Origin: "K"
@@ -26983,7 +26982,7 @@ synonym: "Dimethyl:2H(4)13C(2)" RELATED PSI-MS-label []
 xref: DiffAvg: "34.06"
 xref: DiffFormula: "(13)C 2 (2)H 4"
 xref: DiffMono: "34.063117"
-xref: Formula: "(12)C 6 (13)C 2 (1)H 12 (2)H 4 N 2 O 1"
+xref: Formula: "(12)C 6 (13)C 2 H 12 (2)H 4 N 2 O 1"
 xref: MassAvg: "162.16"
 xref: MassMono: "162.158080"
 xref: Origin: "K"
@@ -27001,7 +27000,7 @@ def: "modification from Unimod Isotopic label - Use when labelling post-digest" 
 synonym: "Bruker Daltonics SERVA-ICPL(TM) quantification chemistry, medium form" RELATED Unimod-description []
 synonym: "ICPL:2H(4)" RELATED PSI-MS-label []
 xref: DiffAvg: "109.05"
-xref: DiffFormula: "C 6 (1)H -1 (2)H 4 N 1 O 1"
+xref: DiffFormula: "C 6 H -1 (2)H 4 N 1 O 1"
 xref: DiffMono: "109.046571"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -27019,9 +27018,9 @@ def: "modification from Unimod Isotopic label - Use when labelling post-digest" 
 synonym: "Bruker Daltonics SERVA-ICPL(TM) quantification chemistry, medium form" RELATED Unimod-description []
 synonym: "ICPL:2H(4)" RELATED PSI-MS-label []
 xref: DiffAvg: "109.05"
-xref: DiffFormula: "C 6 (1)H -1 (2)H 4 N 1 O 1"
+xref: DiffFormula: "C 6 H -1 (2)H 4 N 1 O 1"
 xref: DiffMono: "109.046571"
-xref: Formula: "C 12 (1)H 11 (2)H 4 N 3 O 2"
+xref: Formula: "C 12 H 11 (2)H 4 N 3 O 2"
 xref: MassAvg: "237.14"
 xref: MassMono: "237.141534"
 xref: Origin: "K"
@@ -35725,7 +35724,7 @@ name: 1x(13)C,3x(2)H labeled monomethylated residue
 def: "A protein modification that effectively replaces the methyl group of a residue containing common isotopes with a 1x(13)C,3x(2)H labeled monomethylated residue." [PubMed:18688235]
 synonym: "Methyl:2H(3)13C(1)" RELATED PSI-MS-label []
 xref: DiffAvg: "18.04"
-xref: DiffFormula: "(13)C 1 (1)H -1 (2)H 3"
+xref: DiffFormula: "(13)C 1 H -1 (2)H 3"
 xref: DiffMono: "18.037835"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -35742,9 +35741,9 @@ name: 1x(13)C,3x(2)H C(6)-labeled L-methionine
 def: "A protein modification that effectively converts an L-methionine residue containing common isotopes to 1x(13)C,3x(2)H C(6)-labeled L-methionine." [PubMed:15782174, PubMed:18688235]
 synonym: "Methyl:2H(3)13C(1)" RELATED PSI-MS-label []
 xref: DiffAvg: "4.02"
-xref: DiffFormula: "(12)C -1 (13)C 1 (1)H -3 (2)H 3"
+xref: DiffFormula: "(12)C -1 (13)C 1 H -3 (2)H 3"
 xref: DiffMono: "4.022185"
-xref: Formula: "(12)C 4 (13)C 1 (1)H 6 (2)H 3 N 1 O 1 S 1"
+xref: Formula: "(12)C 4 (13)C 1 H 6 (2)H 3 N 1 O 1 S 1"
 xref: MassAvg: "135.06"
 xref: MassMono: "135.062670"
 xref: Origin: "M"
@@ -35759,9 +35758,9 @@ id: MOD:01796
 name: 1x(13)C,3x(2)H C(6)-labeled L-methionine sulfoxide
 def: "A protein modification that effectively converts an L-methionine residue containing common isotopes to 1x(13)C,3x(2)H C(6)-labeled L-methionine sulfoxide." [PubMed:15782174, PubMed:18688235]
 xref: DiffAvg: "20.02"
-xref: DiffFormula: "(12)C -1 (13)C 1 (1)H -3 (2)H 3 O 1"
+xref: DiffFormula: "(12)C -1 (13)C 1 H -3 (2)H 3 O 1"
 xref: DiffMono: "20.017100"
-xref: Formula: "(12)C 4 (13)C 1 (1)H 6 (2)H 3 N 1 O 2 S 1"
+xref: Formula: "(12)C 4 (13)C 1 H 6 (2)H 3 N 1 O 2 S 1"
 xref: MassAvg: "151.06"
 xref: MassMono: "151.057585"
 xref: Origin: "M"
@@ -37248,7 +37247,7 @@ id: MOD:01876
 name: 4x(1)H,4x(12)C-labeled alpha-amino succinylated residue
 def: "OBSOLETE because identical to MOD:00457" [PubMed:18688235]
 xref: DiffAvg: "100.02"
-xref: DiffFormula: "(12)C 4 (1)H 4 O 3"
+xref: DiffFormula: "(12)C 4 H 4 O 3"
 xref: DiffMono: "100.016044"
 xref: Formula: "none"
 xref: MassAvg: "none"
@@ -39080,9 +39079,9 @@ def: "A protein modification that effectively converts an L-lysine residue to 2x
 synonym: "Acetate labeling reagent (K) (heavy form, +5amu)" EXACT PSI-MOD-alternate []
 synonym: "COFRADIC heavy acetyl 13C2 2H3" EXACT PSI-MOD-alternate []
 xref: DiffAvg: "47.04"
-xref: DiffFormula: "(13)C 2 (1)H -1 (2)H 3 O 1"
+xref: DiffFormula: "(13)C 2 H -1 (2)H 3 O 1"
 xref: DiffMono: "47.036105"
-xref: Formula: "(12)C 6 (13)C 2 (1)H 11 (2)H 3 N 2 O 2"
+xref: Formula: "(12)C 6 (13)C 2 H 11 (2)H 3 N 2 O 2"
 xref: MassAvg: "175.13"
 xref: MassMono: "175.131068"
 xref: Origin: "K"
