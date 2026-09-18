@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 1.038.0
-date: 31:07:2026 15:00
+data-version: 1.039.0
+date: 18:09:2026 18:00
 ontology: mod
 saved-by: Douwe Schulte
 subsetdef: PSI-MOD-slim "subset of protein modifications"
