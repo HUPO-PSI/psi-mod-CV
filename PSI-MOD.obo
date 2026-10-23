@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 1.039.0
-date: 18:09:2026 18:00
+data-version: 1.040.0
+date: 23:10:2026 21:00
 ontology: mod
 saved-by: Douwe Schulte
 subsetdef: PSI-MOD-slim "subset of protein modifications"
@@ -231,6 +231,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
 is_a: MOD:01441 ! natural, standard, encoded residue
+is_a: MOD:02117 ! ambiguous L-aspartic acid
 
 [Term]
 id: MOD:00014
@@ -15236,6 +15237,7 @@ xref: Unimod: "Unimod:7"
 xref: uniprot.ptm: "PTM-0116"
 is_a: MOD:00400 ! deamidated residue
 is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:02117 ! ambiguous L-aspartic acid
 
 [Term]
 id: MOD:00685
@@ -41435,6 +41437,21 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
 is_a: MOD:00425 ! monohydroxylated residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
+
+[Term]
+id: MOD:02117
+name: ambiguous L-aspartic acid
+def: "An L-aspartic acid that is either a natural aspartic acid or resulted from deamidation from asparagine. This can be used to indicate uncertainty about the origin of the aspartic acid in de novo data." []
+xref: DiffAvg: "0"
+xref: DiffFormula: ""
+xref: DiffMono: "0"
+xref: Formula: "C 4 H 5 N 1 O 3"
+xref: MassAvg: "115.09"
+xref: MassMono: "115.026943"
+xref: Origin: "D"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:00032 ! uncategorized protein modification
 
 [Typedef]
 id: contains
