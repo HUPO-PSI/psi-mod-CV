@@ -1,0 +1,69 @@
+name: obo-robo-pr
+
+on:
+  pull_request:
+    branches:
+      - master
+      - main
+    paths:
+      - 'PSI-MOD.obo'
+      - '.github/binaries/*'
+
+permissions: 
+  contents: write
+  pull-requests: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+
+    steps:    
+    - uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
+    
+    - name: Checkout PR
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: gh pr checkout ${{ github.event.pull_request.number }}
+
+    - name: Get oldest commit
+      id: commit
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "oldest=$(gh pr view ${{ github.event.pull_request.number }} --json 'commits' | jq '.commits.[0].oid' -r)" >> $GITHUB_OUTPUT 
+
+    - name: Get changed lines
+      id: detect_changes
+      run: |
+        echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix -r ${{ steps.commit.outputs.oldest }} HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT 
+
+    - name: Lint main OBO file
+      id: lint
+      run: |
+        echo "result=$(./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr)" >> $GITHUB_OUTPUT
+
+    - name: Fix & format OBO file
+      id: fix
+      run: |
+        echo "result=$(./.github/binaries/obo-robo fix PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr)" >> $GITHUB_OUTPUT
+
+    - name: Check for Changes
+      id: check_changes
+      run: echo "has_changes=$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)" >> $GITHUB_OUTPUT
+
+    - name: Push changes
+      if: steps.check_changes.outputs.has_changes == 'true'
+      run: |
+        git config --global user.name 'OboRobo'
+        git config --global user.email 'oborobo@users.noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}
+        git commit -am "Fix & format"
+        git push
+    
+    - name: Comment
+      run: gh pr comment ${{ github.event.number }} -b '${{ steps.lint.outputs.result }}${{ steps.fix.outputs.result }}'
+      env:
+        GH_TOKEN: ${{ github.token }}
+
