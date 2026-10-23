@@ -39,7 +39,7 @@ jobs:
 
     - name: Fix, format, and version bump main OBO file
       run: |
-        ./.github/binaries/obo-robo fix PSI-MOD.obo --bump "${{ github.actor }}" --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}'
+        ./.github/binaries/obo-robo fix PSI-MOD.obo --bump "${{ github.actor }}" --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }} --fix-all'
 
     - name: Create newstyle Obo (for Owl conversion)
       run: ./.github/binaries/obo-robo newfmt PSI-MOD.obo PSI-MOD-newstyle.obo
