@@ -1,6 +1,6 @@
 format-version: 1.2
 data-version: 1.040.0
-date: 23:10:2026 21:00
+date: 27:10:2026 10:00
 ontology: mod
 saved-by: Douwe Schulte
 subsetdef: PSI-MOD-slim "subset of protein modifications"
@@ -389,6 +389,7 @@ xref: Origin: "I"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
+is_a: MOD:00306 ! residues isobaric at 113.084064 Da
 
 [Term]
 id: MOD:00020
@@ -412,6 +413,7 @@ xref: Origin: "L"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
+is_a: MOD:00306 ! residues isobaric at 113.084064 Da
 
 [Term]
 id: MOD:00021
@@ -7760,7 +7762,7 @@ is_a: MOD:02072 ! metal or metal cluster coordinated L-serine residue
 [Term]
 id: MOD:00306
 name: residues isobaric at 113.084064 Da
-def: "Natural or modified residues with a mass of 113.084064 Da." [PubMed:10523135, RESID:AA0301]
+def: "An L-isoleucine or L-leucine amino acid." [PubMed:10523135, RESID:AA0301]
 subset: PSI-MOD-slim
 synonym: "L-isoleucine or L-leucine" EXACT RESID-name []
 synonym: "Xle" EXACT PSI-MOD-label []
@@ -7770,10 +7772,10 @@ xref: DiffMono: "0.000000"
 xref: Formula: "C 6 H 11 N 1 O 1"
 xref: MassAvg: "113.16"
 xref: MassMono: "113.084064"
-xref: Origin: "X"
+xref: Origin: "J"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_obsolete: true
+is_a: MOD:02117 ! protein modification categorized by isomeric sets
 
 [Term]
 id: MOD:00307
@@ -12769,7 +12771,7 @@ id: MOD:00538
 name: protein modification categorized by isobaric sets
 def: "Modified amino acid residues groups into isobaric sets at particular mass resolution cut-offs." [PubMed:18688235]
 subset: PSI-MOD-slim
-is_obsolete: true
+is_a: MOD:00000
 
 [Term]
 id: MOD:00539
@@ -41451,7 +41453,13 @@ xref: MassMono: "115.026943"
 xref: Origin: "D"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:00032 ! uncategorized protein modification
+is_a: MOD:02117 ! protein modification categorized by isomeric sets
+
+[Term]
+id: MOD:02117
+name: protein modification categorized by isomeric sets
+def: "Modified amino acid residues groups into isomerics sets to explicitely signal uncertainty." []
+is_a: MOD:00538 ! protein modification categorized by isobaric sets
 
 [Typedef]
 id: contains
