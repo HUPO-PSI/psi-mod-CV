@@ -7775,7 +7775,7 @@ xref: MassMono: "113.084064"
 xref: Origin: "J"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:02117 ! protein modification categorized by isomeric sets
+is_a: MOD:02118 ! protein modification categorized by isomeric sets
 
 [Term]
 id: MOD:00307
@@ -41453,10 +41453,10 @@ xref: MassMono: "115.026943"
 xref: Origin: "D"
 xref: Source: "artifact"
 xref: TermSpec: "none"
-is_a: MOD:02117 ! protein modification categorized by isomeric sets
+is_a: MOD:02118 ! protein modification categorized by isomeric sets
 
 [Term]
-id: MOD:02117
+id: MOD:02118
 name: protein modification categorized by isomeric sets
 def: "Modified amino acid residues groups into isomerics sets to explicitely signal uncertainty." []
 is_a: MOD:00538 ! protein modification categorized by isobaric sets
