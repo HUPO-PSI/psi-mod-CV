@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 1.039.0
-date: 18:09:2026 18:00
+data-version: 1.040.0
+date: 27:10:2026 10:00
 ontology: mod
 saved-by: Douwe Schulte
 subsetdef: PSI-MOD-slim "subset of protein modifications"
@@ -231,6 +231,7 @@ xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
 is_a: MOD:01441 ! natural, standard, encoded residue
+is_a: MOD:02117 ! L-aspartic acid isomer
 
 [Term]
 id: MOD:00014
@@ -388,6 +389,7 @@ xref: Origin: "I"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
+is_a: MOD:00306 ! residues isobaric at 113.084064 Da
 
 [Term]
 id: MOD:00020
@@ -411,6 +413,7 @@ xref: Origin: "L"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
+is_a: MOD:00306 ! residues isobaric at 113.084064 Da
 
 [Term]
 id: MOD:00021
@@ -7759,7 +7762,7 @@ is_a: MOD:02072 ! metal or metal cluster coordinated L-serine residue
 [Term]
 id: MOD:00306
 name: residues isobaric at 113.084064 Da
-def: "Natural or modified residues with a mass of 113.084064 Da." [PubMed:10523135, RESID:AA0301]
+def: "An L-isoleucine or L-leucine amino acid." [PubMed:10523135, RESID:AA0301]
 subset: PSI-MOD-slim
 synonym: "L-isoleucine or L-leucine" EXACT RESID-name []
 synonym: "Xle" EXACT PSI-MOD-label []
@@ -7769,10 +7772,10 @@ xref: DiffMono: "0.000000"
 xref: Formula: "C 6 H 11 N 1 O 1"
 xref: MassAvg: "113.16"
 xref: MassMono: "113.084064"
-xref: Origin: "X"
+xref: Origin: "J"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_obsolete: true
+is_a: MOD:02118 ! protein modification categorized by isomeric sets
 
 [Term]
 id: MOD:00307
@@ -12768,7 +12771,7 @@ id: MOD:00538
 name: protein modification categorized by isobaric sets
 def: "Modified amino acid residues groups into isobaric sets at particular mass resolution cut-offs." [PubMed:18688235]
 subset: PSI-MOD-slim
-is_obsolete: true
+is_a: MOD:00000
 
 [Term]
 id: MOD:00539
@@ -15236,6 +15239,7 @@ xref: Unimod: "Unimod:7"
 xref: uniprot.ptm: "PTM-0116"
 is_a: MOD:00400 ! deamidated residue
 is_a: MOD:00903 ! modified L-asparagine residue
+is_a: MOD:02117 ! L-aspartic acid isomer
 
 [Term]
 id: MOD:00685
@@ -41435,6 +41439,27 @@ xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
 is_a: MOD:00425 ! monohydroxylated residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
+
+[Term]
+id: MOD:02117
+name: L-aspartic acid isomer
+def: "An L-aspartic acid that is either a natural aspartic acid or resulted from deamidation from asparagine. This can be used to indicate uncertainty about the origin of the aspartic acid in de novo data." []
+xref: DiffAvg: "0"
+xref: DiffFormula: ""
+xref: DiffMono: "0"
+xref: Formula: "C 4 H 5 N 1 O 3"
+xref: MassAvg: "115.09"
+xref: MassMono: "115.026943"
+xref: Origin: "D"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:02118 ! protein modification categorized by isomeric sets
+
+[Term]
+id: MOD:02118
+name: protein modification categorized by isomeric sets
+def: "Modified amino acid residues groups into isomerics sets to explicitely signal uncertainty." []
+is_a: MOD:00538 ! protein modification categorized by isobaric sets
 
 [Typedef]
 id: contains
