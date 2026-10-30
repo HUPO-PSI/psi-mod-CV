@@ -1,0 +1,77 @@
+name: obo-robo
+
+on:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - 'PSI-MOD.obo'
+      - '.github/binaries/obo-robo'
+
+permissions: 
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v6
+      with:
+        fetch-depth: ${{ github.event_name == 'pull_request' && 2 || 0 }}
+
+    - name: Get changed lines
+      id: detect_changes
+      run: |
+          if ${{ github.event_name == 'pull_request' }}; then
+            echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix -r HEAD^1 HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT
+          else
+            echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix ${{ github.event.before }} ${{ github.event.after }} PSI-MOD.obo  | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT
+          fi
+
+    - name: Lint main OBO file
+      id: lint
+      run: |
+        OUTPUT=`./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}'`
+        echo "${OUTPUT}"
+        echo "changed_items=$(echo "${OUTPUT}" | head -n 1)" >> $GITHUB_OUTPUT
+
+    - name: Fix, format, and version bump main OBO file
+      run: |
+        ./.github/binaries/obo-robo fix PSI-MOD.obo --bump "${{ github.actor }}" --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }} --fix-all'
+
+    - name: Create newstyle Obo (for Owl conversion)
+      run: ./.github/binaries/obo-robo newfmt PSI-MOD.obo PSI-MOD-newstyle.obo
+
+    - name: Generate Owl
+      run: |
+        docker pull obolibrary/robot:v1.9.10
+        # Replace the imports of the UO and PATO ontology .obo files with the equivalent .owl files
+        export JAVA_TOOL_OPTIONS=-Xmx4G
+        docker run --rm -v ${{ github.workspace }}:/work obolibrary/robot:v1.9.10 robot convert -vvv -i /work/PSI-MOD-newstyle.obo -o /work/PSI-MOD.owl --format owl
+
+    - name: Extract version number from Obo
+      id: extract_version
+      run: |
+        CV_VERSION=`grep data-version PSI-MOD.obo | grep -oP "(\d+.\d+.\d+)"`
+        echo cv_version=${CV_VERSION}
+        echo "cv_version=${CV_VERSION}" >> $GITHUB_OUTPUT
+
+    - name: Check for Changes
+      id: check_changes
+      run: echo "has_changes=$(if [ -n "$(git status --porcelain)" ]; then echo "true"; else echo "false"; fi)" >> $GITHUB_OUTPUT
+
+    - name: Push changes
+      if: steps.check_changes.outputs.has_changes == 'true'
+      run: |
+        git config --global user.name 'OboRobo'
+        git config --global user.email 'oborobo@users.noreply.github.com'
+        git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}
+        git commit -am "Formatting and version bump"
+        git push
+
+    - name: Create release
+      run: gh release create "v${{ steps.extract_version.outputs.cv_version }}" --title "v${{ steps.extract_version.outputs.cv_version }}" --notes "${{ steps.lint.outputs.changed_items }}"
+      env:
+        GH_TOKEN: ${{ github.token }}
