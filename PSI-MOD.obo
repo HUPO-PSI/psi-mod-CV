@@ -41436,6 +41436,24 @@ xref: Unimod: "Unimod:35"
 is_a: MOD:00425 ! monohydroxylated residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
 
+[Term]
+id: MOD:02119
+name: Ammonium adduct
+def: "A protein modification that effectively substitutes one Ammonium molecule for one proton." [Unimod:989]
+subset: PSI-MOD-slim
+synonym: "Ammonium adduct" RELATED PSI-MS-label []
+xref: DiffAvg: "17.03"
+xref: DiffFormula: "H 3 N 1"
+xref: DiffMono: "17.026549"
+xref: Formula: "H 3 N 1"
+xref: MassAvg: "17.03"
+xref: MassMono: "17.026549"
+xref: Origin: "X"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:989"
+is_a: MOD:01156 ! protein modification categorized by chemical process
+
 [Typedef]
 id: contains
 name: contains
