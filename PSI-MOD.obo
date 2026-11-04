@@ -896,6 +896,7 @@ xref: Formula: "C 5 H 5 N 1 O 2"
 xref: MassAvg: "111.10"
 xref: MassMono: "111.032028"
 xref: Origin: "Q"
+xref: Smiles: "*-C(=O)[C@@H]1CCC(=O)N1"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:28"
@@ -4213,6 +4214,7 @@ synonym: "MOD_RES 3',4'-dihydroxyphenylalanine" EXACT UniProt-feature []
 synonym: "hydroxylationy" EXACT OMSSA-label []
 synonym: "levodopa" EXACT RESID-alternate []
 synonym: "mod194" EXACT OMSSA-label []
+xref: ChEBI:141815
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "O 1"
 xref: DiffMono: "15.994915"
@@ -4220,6 +4222,7 @@ xref: Formula: "C 9 H 9 N 1 O 3"
 xref: MassAvg: "179.17"
 xref: MassMono: "179.058243"
 xref: Origin: "Y"
+xref: Smiles: "*N[C@@H](Cc1ccc(O)c(O)c1)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
@@ -8456,6 +8459,7 @@ synonym: "3-hydroxytryptophan" EXACT RESID-alternate []
 synonym: "3HyTrp" EXACT PSI-MOD-label []
 synonym: "MOD_RES 3-hydroxytryptophan" EXACT UniProt-feature []
 synonym: "beta-hydroxytryptophan" EXACT RESID-alternate []
+xref: ChEBI:141794
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "O 1"
 xref: DiffMono: "15.994915"
@@ -8463,6 +8467,7 @@ xref: Formula: "C 11 H 10 N 2 O 2"
 xref: MassAvg: "202.21"
 xref: MassMono: "202.074228"
 xref: Origin: "W"
+xref: Smiles: "*N[C@H](C(*)=O)C(O)c1cnc2ccccc12"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0031"
@@ -10657,6 +10662,7 @@ xref: Formula: "C 5 H 6 N 1 O 2"
 xref: MassAvg: "112.11"
 xref: MassMono: "112.039853"
 xref: Origin: "E"
+xref: Smiles: "*-C(=O)[C@@H]1CCC(=O)N1"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:27"
@@ -11406,6 +11412,7 @@ xref: Formula: "C 3 H 5 N 1 O 4 S 1"
 xref: MassAvg: "151.14"
 xref: MassMono: "150.993929"
 xref: Origin: "C"
+xref: Smiles: "OS(=O)(=O)C[C@H](N-*)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:345"
@@ -11477,7 +11484,7 @@ is_a: MOD:00918 ! modified L-tryptophan residue
 [Term]
 id: MOD:00464
 name: N'-formyl-L-kynurenine
-def: "A protein modification that effectively converts an L-tryptophan residue to N'-formyl-L-kynurenine." [DeltaMass:356, OMSSA:45, PubMed:12124932, PubMed:12686488, PubMed:9252331, Unimod:425#W]
+def: "A protein modification that effectively converts an L-tryptophan residue to N'-formyl-L-kynurenine." [DeltaMass:356, OMSSA:45, PubMed:12124932, PubMed:12686488, PubMed:9252331, Unimod:425#W, CHEBI:30249]
 comment: From DeltaMass: References:Willy V. Bienvenut, Catherine Déon, Carla Pasquarello, Jennifer M. Campbell, Jean-Charles Sanchez, Marvin L. Vestal, Denis F. Hochstrasser Matrix-assisted laser desorption/ionization-tandemmass spectrometry with high resolution andsensitivity for identification and characterizationof proteins. Proteomics 2002, 2, 868-876 Notes: A double oxidation of tryptophan for which the N-formylkynurenine (+32) structure can be proposed. Many minor peaks accompanying the main peak might also be attributed to other oxidation products of the tryptophan such as kynurenine (+4), an unknown by-product found in all oxidized tryptophan patterns (+13), hydroxytryptophan (+16), 3-hydroxykynurenine (+20) and hydroxy-N-formylkynurenine (+48). See proposed structures at http://www.abrf.org/images/misc/dmass32.jpg.
 subset: PSI-MOD-slim
 synonym: "Dioxidation" RELATED PSI-MS-label []
@@ -11492,6 +11499,7 @@ xref: Formula: "C 11 H 10 N 2 O 3"
 xref: MassAvg: "218.21"
 xref: MassMono: "218.069142"
 xref: Origin: "W"
+xref: Smiles: "[H]C(=O)Nc1ccccc1C(=O)C[C@H](N-*)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
@@ -13507,6 +13515,7 @@ xref: Formula: "C 5 H 6 N 1 O 2"
 xref: MassAvg: "112.11"
 xref: MassMono: "112.039853"
 xref: Origin: "P"
+xref: Smiles: "*C(=O)[C@@H]1CCC(=O)N1*"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:359"
@@ -21357,6 +21366,7 @@ xref: Formula: "C 5 H 6 N 1 O 2"
 xref: MassAvg: "112.11"
 xref: MassMono: "112.039853"
 xref: Origin: "X"
+xref: Smiles: "*-C(=O)[C@@H]1CCC(=O)N1"
 xref: Source: "none"
 xref: TermSpec: "N-term"
 is_a: MOD:00601 ! cyclized residue
@@ -24535,6 +24545,7 @@ xref: Formula: "C 5 H 7 N 1 O 3"
 xref: MassAvg: "129.11"
 xref: MassMono: "129.042593"
 xref: Origin: "T"
+xref: Smiles: "C[C@@H](OC=O)[C@H](N-*)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:122"
@@ -24555,6 +24566,7 @@ xref: Formula: "C 4 H 5 N 1 O 3"
 xref: MassAvg: "115.09"
 xref: MassMono: "115.026943"
 xref: Origin: "S"
+xref: Smiles: "*-N[C@@H](COC=O)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:122"
@@ -24682,6 +24694,7 @@ xref: Formula: "C 9 H 8 N 1 O 2 I 1"
 xref: MassAvg: "289.07"
 xref: MassMono: "288.959976"
 xref: Origin: "Y"
+xref: Smiles: "Oc1ccc(C[C@H](N-*)C(-*)=O)cc1I"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:129"
@@ -33516,6 +33529,7 @@ synonym: "N6-(aminocarbonyl)-L-lysine" EXACT PSI-MOD-alternate []
 synonym: "N6CbmLys" EXACT PSI-MOD-label []
 synonym: "carbamylk" EXACT OMSSA-label []
 synonym: "homocitrulline" EXACT PSI-MOD-alternate []
+xref: ChEBI:144369
 xref: DiffAvg: "43.02"
 xref: DiffFormula: "C 1 H 1 N 1 O 1"
 xref: DiffMono: "43.005814"
@@ -33523,6 +33537,7 @@ xref: Formula: "C 7 H 13 N 3 O 2"
 xref: MassAvg: "171.20"
 xref: MassMono: "171.100777"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC(N)=O)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:5"
