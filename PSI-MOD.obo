@@ -828,7 +828,7 @@ synonym: "3HyPro" EXACT PSI-MOD-label []
 synonym: "L-threo-3-hydroxyproline" EXACT RESID-alternate []
 synonym: "MOD_RES 3-hydroxyproline" EXACT UniProt-feature []
 synonym: "beta-hydroxypyrrolidine-alpha-carboxylic acid" EXACT RESID-alternate []
-xref: ChEBI:141835
+xref: ChEBI: 141835
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "O 1"
 xref: DiffMono: "15.994915"
@@ -2033,7 +2033,7 @@ is_a: MOD:00783 ! dimethylated L-arginine
 [Term]
 id: MOD:00078
 name: omega-N-methyl-L-arginine
-def: "A protein modification that effectively converts an L-arginine residue to N(omega)-methyl-L-arginine." [PubMed:11875433, PubMed:15835918, PubMed:2426402, PubMed:5128665, RESID:AA0069, ChEBI:28229]
+def: "A protein modification that effectively converts an L-arginine residue to N(omega)-methyl-L-arginine." [ChEBI:28229, PubMed:11875433, PubMed:15835918, PubMed:2426402, PubMed:5128665, RESID:AA0069]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-5-[(imino(methylamino)methyl)amino]pentanoic acid" EXACT RESID-systematic []
 synonym: "MOD_RES Omega-N-methylarginine" EXACT UniProt-feature []
@@ -2189,7 +2189,7 @@ is_a: MOD:02038 ! monomethylated L-histidine
 [Term]
 id: MOD:00083
 name: N6,N6,N6-trimethyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6,N6,N6-trimethyl-L-lysine." [PubMed:12590383, PubMed:3145979, PubMed:4304194, PubMed:6778808, PubMed:7093227, PubMed:8453381, RESID:AA0074, ChEBI:17311]
+def: "A protein modification that effectively converts an L-lysine residue to N6,N6,N6-trimethyl-L-lysine." [ChEBI:17311, PubMed:12590383, PubMed:3145979, PubMed:4304194, PubMed:6778808, PubMed:7093227, PubMed:8453381, RESID:AA0074]
 comment: DeltaMass calculates the mass difference from protonated lysine rather than neutral lysine; for trimethylated lysine starting from protonated lysine see MOD:00855
 subset: PSI-MOD-slim
 synonym: "(5S)-5-amino-5-carboxy-N,N,N-trimethylpentan-1-aminium" EXACT RESID-systematic []
@@ -4234,7 +4234,7 @@ synonym: "MOD_RES 3',4'-dihydroxyphenylalanine" EXACT UniProt-feature []
 synonym: "hydroxylationy" EXACT OMSSA-label []
 synonym: "levodopa" EXACT RESID-alternate []
 synonym: "mod194" EXACT OMSSA-label []
-xref: ChEBI:141815
+xref: ChEBI: 141815
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "O 1"
 xref: DiffMono: "15.994915"
@@ -7242,7 +7242,7 @@ is_a: MOD:02074 ! metal or metal cluster coordinated L-lysine residue
 [Term]
 id: MOD:00277
 name: 5-methyl-L-arginine
-def: "A protein modification that effectively converts an L-arginine residue to 5-methyl-L-arginine." [PubMed:10660523, PubMed:11875433, PubMed:9367957, RESID:AA0272, ChEBI:20604]
+def: "A protein modification that effectively converts an L-arginine residue to 5-methyl-L-arginine." [ChEBI:20604, PubMed:10660523, PubMed:11875433, PubMed:9367957, RESID:AA0272]
 synonym: "(2S,5S)-2-amino-5-carbamimidamidohexanoic acid" EXACT RESID-systematic []
 synonym: "2-amino-5-guanidinohexanoic acid" EXACT RESID-alternate []
 synonym: "4-methylarginine" RELATED RESID-misnomer []
@@ -8054,7 +8054,7 @@ is_a: MOD:01152 ! carboxylated residue
 [Term]
 id: MOD:00310
 name: N5-methyl-L-arginine
-def: "A protein modification that effectively converts an L-arginine residue to N5-methyl-L-arginine." [PubMed:11875433, PubMed:9792625, PubMed:9873020, RESID:AA0305, ChEBI:21848]
+def: "A protein modification that effectively converts an L-arginine residue to N5-methyl-L-arginine." [ChEBI:21848, PubMed:11875433, PubMed:9792625, PubMed:9873020, RESID:AA0305]
 synonym: "(2S)-2-amino-5-(N-methylcarbamimidamido)pentanoic acid" EXACT RESID-systematic []
 synonym: "MOD_RES N5-methylarginine" EXACT UniProt-feature []
 synonym: "Methyl" RELATED PSI-MS-label []
@@ -8494,7 +8494,7 @@ synonym: "3-hydroxytryptophan" EXACT RESID-alternate []
 synonym: "3HyTrp" EXACT PSI-MOD-label []
 synonym: "MOD_RES 3-hydroxytryptophan" EXACT UniProt-feature []
 synonym: "beta-hydroxytryptophan" EXACT RESID-alternate []
-xref: ChEBI:141794
+xref: ChEBI: 141794
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "O 1"
 xref: DiffMono: "15.994915"
@@ -11521,7 +11521,7 @@ is_a: MOD:00918 ! modified L-tryptophan residue
 [Term]
 id: MOD:00464
 name: N'-formyl-L-kynurenine
-def: "A protein modification that effectively converts an L-tryptophan residue to N'-formyl-L-kynurenine." [DeltaMass:356, OMSSA:45, PubMed:12124932, PubMed:12686488, PubMed:9252331, Unimod:425#W, CHEBI:30249]
+def: "A protein modification that effectively converts an L-tryptophan residue to N'-formyl-L-kynurenine." [CHEBI:30249, DeltaMass:356, OMSSA:45, PubMed:12124932, PubMed:12686488, PubMed:9252331, Unimod:425#W]
 comment: From DeltaMass: References:Willy V. Bienvenut, Catherine Déon, Carla Pasquarello, Jennifer M. Campbell, Jean-Charles Sanchez, Marvin L. Vestal, Denis F. Hochstrasser Matrix-assisted laser desorption/ionization-tandemmass spectrometry with high resolution andsensitivity for identification and characterizationof proteins. Proteomics 2002, 2, 868-876 Notes: A double oxidation of tryptophan for which the N-formylkynurenine (+32) structure can be proposed. Many minor peaks accompanying the main peak might also be attributed to other oxidation products of the tryptophan such as kynurenine (+4), an unknown by-product found in all oxidized tryptophan patterns (+13), hydroxytryptophan (+16), 3-hydroxykynurenine (+20) and hydroxy-N-formylkynurenine (+48). See proposed structures at http://www.abrf.org/images/misc/dmass32.jpg.
 subset: PSI-MOD-slim
 synonym: "Dioxidation" RELATED PSI-MS-label []
@@ -11789,7 +11789,7 @@ synonym: "Oxidation or Hydroxylation" RELATED Unimod-description []
 synonym: "gamma-glutamyl semialdehyde" EXACT PSI-MOD-alternate []
 synonym: "glutamyl 5-semialdehyde" EXACT PSI-MOD-alternate []
 synonym: "glutamyl aldehyde" EXACT PSI-MOD-alternate []
-xref: ChEBI:41433
+xref: ChEBI: 41433
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "O 1"
 xref: DiffMono: "15.994915"
@@ -11813,7 +11813,7 @@ comment: From DeltaMass: Average Mass: -27 Monoisotopic Mass Change:-27.06 Avera
 synonym: "Arg->GluSA" RELATED PSI-MS-label []
 synonym: "Arginine oxidation to glutamic semialdehyde" RELATED Unimod-description []
 synonym: "Oxidation of arginine (to glutamic acid)" EXACT DeltaMass-label []
-xref: ChEBI:41433
+xref: ChEBI: 41433
 xref: DiffAvg: "-43.07"
 xref: DiffFormula: "C -1 H -5 N -3 O 1"
 xref: DiffMono: "-43.053433"
@@ -12067,7 +12067,7 @@ is_a: MOD:00905 ! modified L-cysteine residue
 [Term]
 id: MOD:00492
 name: ubiquitination signature dipeptidyl lysine
-def: "A protein modification that crosslinks the N6-amino of a peptidyl lysine with the carboxyl of glycylglycine, the two glycine residues left after tryptic digestion of ubiquitin." [OMSSA:52, PubMed:11125103, PubMed:12612601, PubMed:12872131, RESID:AA0125#var, Unimod:121#K, ChEBI:71254]
+def: "A protein modification that crosslinks the N6-amino of a peptidyl lysine with the carboxyl of glycylglycine, the two glycine residues left after tryptic digestion of ubiquitin." [ChEBI:71254, OMSSA:52, PubMed:11125103, PubMed:12612601, PubMed:12872131, RESID:AA0125#var, Unimod:121#K]
 synonym: "GlyGly" RELATED PSI-MS-label []
 synonym: "N6-(glycylglycyl)lysine" EXACT PSI-MOD-alternate []
 synonym: "N6-glycylglycyl-L-lysine" EXACT PSI-MOD-alternate []
@@ -18250,7 +18250,7 @@ is_a: MOD:01699 ! protonated residue
 [Term]
 id: MOD:00855
 name: N6,N6,N6-trimethyl-L-lysine (from L-lysinium residue)
-def: "A protein modification that effectively converts an L-lysinium (N6-protonated L-lysine) residue to an N6,N6,N6-trimethyl-L-lysine." [DeltaMass:0, OMSSA:15, PubMed:12590383, PubMed:3145979, PubMed:4304194, PubMed:6778808, PubMed:7093227, PubMed:8453381, Unimod:37#K, ChEBI:17311]
+def: "A protein modification that effectively converts an L-lysinium (N6-protonated L-lysine) residue to an N6,N6,N6-trimethyl-L-lysine." [ChEBI:17311, DeltaMass:0, OMSSA:15, PubMed:12590383, PubMed:3145979, PubMed:4304194, PubMed:6778808, PubMed:7093227, PubMed:8453381, Unimod:37#K]
 comment: For amino acids residues, amine trimethylation can effectively only be accomplished with an aminium, protonated primary amino, group. This process accounts only for trimethylation and not protonation. The alternative N6Me3+Lys process (MOD:00083) accounts for both protonation and trimethylation.
 subset: PSI-MOD-slim
 synonym: "N6Me3Lys" EXACT PSI-MOD-label []
@@ -33580,7 +33580,7 @@ synonym: "N6-(aminocarbonyl)-L-lysine" EXACT PSI-MOD-alternate []
 synonym: "N6CbmLys" EXACT PSI-MOD-label []
 synonym: "carbamylk" EXACT OMSSA-label []
 synonym: "homocitrulline" EXACT PSI-MOD-alternate []
-xref: ChEBI:144369
+xref: ChEBI: 144369
 xref: DiffAvg: "43.02"
 xref: DiffFormula: "C 1 H 1 N 1 O 1"
 xref: DiffMono: "43.005814"
@@ -35827,7 +35827,7 @@ synonym: "Nitro" RELATED Unimod-interim []
 synonym: "Oxidation to nitro" RELATED Unimod-description []
 synonym: "m-nitrotyrosine" EXACT RESID-alternate []
 synonym: "meta-nitrotyrosine" EXACT RESID-alternate []
-xref: ChEBI:155899
+xref: ChEBI: 155899
 xref: DiffAvg: "45.00"
 xref: DiffFormula: "H -1 N 1 O 2"
 xref: DiffMono: "44.985078"
