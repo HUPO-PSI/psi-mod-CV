@@ -29,7 +29,7 @@ remark: Annotation note 07 - The synonym cross-reference "MOD:old name" has been
 remark: Annotation note 08 - The DeltaMass listings for free amino acids have been removed. Most Unimod entries that have not been "approved" have by general agreement not been incorporated unless there has been a request for a specific term by a PRIDE submitter.
 remark: Annotation note 09 - The Open Mass Spectrometry Search Algorithm, OMSSA, enumerated list of modifications are being incorporated. The string values are synonyms with the synonymtypedef "OMSSA-label", and their integer values (which are supposed to be stable) are definition cross-references.
 remark: Annotation note 10 - GNOme is the Glycan Naming and Subsumption Ontology (https://gnome.glyomics.org/), an ontology for the support of glycomics.  PSI-MOD does not have all possible glycans in its entries, just the ones that are noted to be on proteins and have been requested for addition.  GNOme uses GlyTouCan (http://glytoucan.org/) to provide stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations).
-idspace: uniprot.ptm https://bioregistry.io/uniprot.ptm: "UniProt Post-Translational Modification"
+idspace: uniprot.ptm https://bioregistry.io/uniprot.ptm "UniProt Post-Translational Modification"
 
 [Term]
 id: MOD:00000
@@ -149,6 +149,7 @@ xref: Formula: "C 3 H 5 N 1 O 1"
 xref: MassAvg: "71.08"
 xref: MassMono: "71.037114"
 xref: Origin: "A"
+xref: Smiles: "C[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
@@ -175,6 +176,7 @@ xref: Formula: "C 6 H 12 N 4 O 1"
 xref: MassAvg: "156.19"
 xref: MassMono: "156.101111"
 xref: Origin: "R"
+xref: Smiles: "NC(N)=NCCC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -205,6 +207,7 @@ xref: Formula: "C 4 H 6 N 2 O 2"
 xref: MassAvg: "114.10"
 xref: MassMono: "114.042927"
 xref: Origin: "N"
+xref: Smiles: "NC(=O)C[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
@@ -227,6 +230,7 @@ xref: Formula: "C 4 H 5 N 1 O 3"
 xref: MassAvg: "115.09"
 xref: MassMono: "115.026943"
 xref: Origin: "D"
+xref: Smiles: "OC(=O)C[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
@@ -261,6 +265,7 @@ xref: Formula: "C 3 H 5 N 1 O 1 S 1"
 xref: MassAvg: "103.15"
 xref: MassMono: "103.009185"
 xref: Origin: "C"
+xref: Smiles: "SC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
@@ -286,6 +291,7 @@ xref: Formula: "C 5 H 7 N 1 O 3"
 xref: MassAvg: "129.11"
 xref: MassMono: "129.042593"
 xref: Origin: "E"
+xref: Smiles: "OC(=O)CC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
@@ -314,6 +320,7 @@ xref: Formula: "C 5 H 8 N 2 O 2"
 xref: MassAvg: "128.13"
 xref: MassMono: "128.058578"
 xref: Origin: "Q"
+xref: Smiles: "NC(=O)CC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -336,6 +343,7 @@ xref: Formula: "C 2 H 3 N 1 O 1"
 xref: MassAvg: "57.05"
 xref: MassMono: "57.021464"
 xref: Origin: "G"
+xref: Smiles: "*-NCC(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -361,6 +369,7 @@ xref: Formula: "C 6 H 7 N 3 O 1"
 xref: MassAvg: "137.14"
 xref: MassMono: "137.058912"
 xref: Origin: "H"
+xref: Smiles: "*-N[C@@H](Cc1cnc[nH]1)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -385,6 +394,7 @@ xref: Formula: "C 6 H 11 N 1 O 1"
 xref: MassAvg: "113.16"
 xref: MassMono: "113.084064"
 xref: Origin: "I"
+xref: Smiles: "CC[C@H](C)[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -408,6 +418,7 @@ xref: Formula: "C 6 H 11 N 1 O 1"
 xref: MassAvg: "113.16"
 xref: MassMono: "113.084064"
 xref: Origin: "L"
+xref: Smiles: "CC(C)C[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -431,6 +442,7 @@ xref: Formula: "C 6 H 12 N 2 O 1"
 xref: MassAvg: "128.17"
 xref: MassMono: "128.094963"
 xref: Origin: "K"
+xref: Smiles: "NCCCCC(N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -459,6 +471,7 @@ xref: Formula: "C 5 H 9 N 1 O 1 S 1"
 xref: MassAvg: "131.20"
 xref: MassMono: "131.040485"
 xref: Origin: "M"
+xref: Smiles: "CSCC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -480,6 +493,7 @@ xref: Formula: "C 9 H 9 N 1 O 1"
 xref: MassAvg: "147.17"
 xref: MassMono: "147.068414"
 xref: Origin: "F"
+xref: Smiles: "*-N[C@@H](Cc1ccccc1)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -500,6 +514,7 @@ xref: Formula: "C 5 H 7 N 1 O 1"
 xref: MassAvg: "97.12"
 xref: MassMono: "97.052764"
 xref: Origin: "P"
+xref: Smiles: "*-N1CCC[C@H]1C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -523,6 +538,7 @@ xref: Formula: "C 3 H 5 N 1 O 2"
 xref: MassAvg: "87.08"
 xref: MassMono: "87.032028"
 xref: Origin: "S"
+xref: Smiles: "OCC(N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -546,6 +562,7 @@ xref: Formula: "C 4 H 7 N 1 O 2"
 xref: MassAvg: "101.10"
 xref: MassMono: "101.047678"
 xref: Origin: "T"
+xref: Smiles: "C[C@@H](O)[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -568,6 +585,7 @@ xref: Formula: "C 11 H 10 N 2 O 1"
 xref: MassAvg: "186.21"
 xref: MassMono: "186.079313"
 xref: Origin: "W"
+xref: Smiles: "*-N[C@@H](Cc1c[nH]c2ccccc12)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -591,6 +609,7 @@ xref: Formula: "C 9 H 9 N 1 O 2"
 xref: MassAvg: "163.17"
 xref: MassMono: "163.063329"
 xref: Origin: "Y"
+xref: Smiles: "Oc1ccc(C[C@H](N-*)C(-*)=O)cc1"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -613,6 +632,7 @@ xref: Formula: "C 5 H 9 N 1 O 1"
 xref: MassAvg: "99.13"
 xref: MassMono: "99.068414"
 xref: Origin: "V"
+xref: Smiles: "CC(C)[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
@@ -789,6 +809,7 @@ xref: Formula: "C 6 H 12 N 2 O 2"
 xref: MassAvg: "144.17"
 xref: MassMono: "144.089878"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCC(O)CN)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0044"
@@ -797,7 +818,7 @@ is_a: MOD:01047 ! monohydroxylated lysine
 [Term]
 id: MOD:00038
 name: 3-hydroxy-L-proline
-def: "A protein modification that effectively converts an L-proline residue to 3-hydroxy-L-proline." [ChEBI:16889, PubMed:2400108, PubMed:3734192, PubMed:4343807, RESID:AA0029]
+def: "A protein modification that effectively converts an L-proline residue to 3-hydroxy-L-proline." [ChEBI:141835, PubMed:2400108, PubMed:3734192, PubMed:4343807, RESID:AA0029, Unimod:35#P]
 subset: PSI-MOD-slim
 synonym: "(2S,3S)-3-hydroxypyrrolidine-2-carboxylic acid" EXACT RESID-systematic []
 synonym: "3-hydroxy-L-proline" EXACT RESID-name []
@@ -807,6 +828,7 @@ synonym: "3HyPro" EXACT PSI-MOD-label []
 synonym: "L-threo-3-hydroxyproline" EXACT RESID-alternate []
 synonym: "MOD_RES 3-hydroxyproline" EXACT UniProt-feature []
 synonym: "beta-hydroxypyrrolidine-alpha-carboxylic acid" EXACT RESID-alternate []
+xref: ChEBI: 141835
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "O 1"
 xref: DiffMono: "15.994915"
@@ -814,6 +836,7 @@ xref: Formula: "C 5 H 7 N 1 O 2"
 xref: MassAvg: "113.11"
 xref: MassMono: "113.047678"
 xref: Origin: "P"
+xref: Smiles: "*C(=O)[C@@H]1C(O)CCN1*"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0030"
@@ -822,7 +845,7 @@ is_a: MOD:01024 ! monohydroxylated proline
 [Term]
 id: MOD:00039
 name: 4-hydroxy-L-proline
-def: "A protein modification that effectively converts an L-proline residue to 4-hydroxy-L-proline" [ChEBI:18095, PubMed:11292863, PubMed:2400108, PubMed:3734192, RESID:AA0030]
+def: "A protein modification that effectively converts an L-proline residue to 4-hydroxy-L-proline" [ChEBI:90860, PubMed:11292863, PubMed:2400108, PubMed:3734192, RESID:AA0030, Unimod:35#P]
 subset: PSI-MOD-slim
 synonym: "(2S,4R)-4-hydroxypyrrolidine-2-carboxylic acid" EXACT RESID-systematic []
 synonym: "4-hydroxy-L-proline" EXACT RESID-name []
@@ -840,6 +863,7 @@ xref: Formula: "C 5 H 7 N 1 O 2"
 xref: MassAvg: "113.11"
 xref: MassMono: "113.047678"
 xref: Origin: "P"
+xref: Smiles: "*C(=O)[C@@H]1CC(O)CN1*"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0043"
@@ -873,6 +897,7 @@ xref: Formula: "C 5 H 5 N 1 O 2"
 xref: MassAvg: "111.10"
 xref: MassMono: "111.032028"
 xref: Origin: "Q"
+xref: Smiles: "*-C(=O)[C@@H]1CCC(=O)N1"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:28"
@@ -909,6 +934,7 @@ xref: Formula: "C 6 H 7 N 1 O 5"
 xref: MassAvg: "173.12"
 xref: MassMono: "173.032422"
 xref: Origin: "E"
+xref: Smiles: "*N[C@@H](CC(C(=O)O)C(=O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:299"
@@ -1005,6 +1031,7 @@ xref: Formula: "C 6 H 8 N 3 O 4 P 1"
 xref: MassAvg: "217.12"
 xref: MassMono: "217.025243"
 xref: Origin: "H"
+xref: Smiles: "*N[C@@H](Cc1cn(P(=O)(O)O)cn1)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0325"
@@ -1038,6 +1065,7 @@ xref: Formula: "C 6 H 8 N 3 O 4 P 1"
 xref: MassAvg: "217.12"
 xref: MassMono: "217.025243"
 xref: Origin: "H"
+xref: Smiles: "*N[C@@H](Cc1cncn1P(=O)(O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0260"
@@ -1046,7 +1074,7 @@ is_a: MOD:00890 ! phosphorylated L-histidine
 [Term]
 id: MOD:00046
 name: O-phospho-L-serine
-def: "A protein modification that effectively converts an L-serine residue to O-phospho-L-serine." [ChEBI:15811, DeltaMass:0, OMSSA:6, PubMed:12923550, PubMed:4065410, PubMed:8061611, RESID:AA0037, Unimod:21#S]
+def: "A protein modification that effectively converts an L-serine residue to O-phospho-L-serine." [ChEBI:45522, DeltaMass:0, OMSSA:6, PubMed:12923550, PubMed:4065410, PubMed:8061611, RESID:AA0037, Unimod:21#S]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-(phosphonooxy)propanoic acid" EXACT RESID-systematic []
 synonym: "2-amino-3-hydroxypropanoic acid 3-phosphate" EXACT RESID-alternate []
@@ -1070,6 +1098,7 @@ xref: Formula: "C 3 H 6 N 1 O 5 P 1"
 xref: MassAvg: "167.06"
 xref: MassMono: "166.998359"
 xref: Origin: "S"
+xref: Smiles: "*N[C@@H](COP(=O)(O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:21"
@@ -1080,7 +1109,7 @@ is_a: MOD:01455 ! O-phosphorylated residue
 [Term]
 id: MOD:00047
 name: O-phospho-L-threonine
-def: "A protein modification that effectively converts an L-threonine residue to O-phospho-L-threonine." [ChEBI:21967, DeltaMass:0, OMSSA:7, PubMed:12923550, PubMed:7678926, RESID:AA0038, Unimod:21#T]
+def: "A protein modification that effectively converts an L-threonine residue to O-phospho-L-threonine." [ChEBI:61971, DeltaMass:0, OMSSA:7, PubMed:12923550, PubMed:7678926, RESID:AA0038, Unimod:21#T]
 subset: PSI-MOD-slim
 synonym: "(2S,3R)-2-amino-3-(phosphonooxy)butanoic acid" EXACT RESID-systematic []
 synonym: "2-amino-3-hydroxybutanoic acid 3-phosphate" EXACT RESID-alternate []
@@ -1102,6 +1131,7 @@ xref: Formula: "C 4 H 8 N 1 O 5 P 1"
 xref: MassAvg: "181.08"
 xref: MassMono: "181.014009"
 xref: Origin: "T"
+xref: Smiles: "*N[C@H](C(*)=O)[C@@H](C)OP(=O)(O)O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:21"
@@ -1112,7 +1142,7 @@ is_a: MOD:01455 ! O-phosphorylated residue
 [Term]
 id: MOD:00048
 name: O4'-phospho-L-tyrosine
-def: "A protein modification that effectively converts an L-tyrosine residue to O4'-phospho-L-tyrosine." [DeltaMass:0, OMSSA:8, PubMed:10226369, PubMed:1725475, RESID:AA0039, Unimod:21#Y]
+def: "A protein modification that effectively converts an L-tyrosine residue to O4'-phospho-L-tyrosine." [ChEBI:61972, DeltaMass:0, OMSSA:8, PubMed:10226369, PubMed:1725475, RESID:AA0039, Unimod:21#Y]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-(4-phosphonooxyphenyl)propanoic acid" EXACT RESID-systematic []
 synonym: "2-amino-3-(4-hydroxyphenyl)propanoic acid 4'-phosphate" EXACT RESID-alternate []
@@ -1134,6 +1164,7 @@ xref: Formula: "C 9 H 10 N 1 O 5 P 1"
 xref: MassAvg: "243.15"
 xref: MassMono: "243.029659"
 xref: Origin: "Y"
+xref: Smiles: "*N[C@@H](Cc1ccc(OP(=O)(O)O)cc1)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:21"
@@ -1183,6 +1214,8 @@ synonym: "(2S)-2-(acetamido)propanoic acid" EXACT RESID-systematic []
 synonym: "2-(acetylamino)propanoic acid" EXACT RESID-alternate []
 synonym: "2-(acetylazanyl)propanoic acid" EXACT RESID-alternate []
 synonym: "AcAla" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES N-acetylalanine" EXACT UniProt-feature []
 synonym: "N-acetyl-L-alanine" EXACT RESID-name []
 synonym: "N-acetylated L-alanine" EXACT PSI-MOD-alternate []
@@ -1194,8 +1227,10 @@ xref: Formula: "C 5 H 8 N 1 O 2"
 xref: MassAvg: "114.12"
 xref: MassMono: "114.055503"
 xref: Origin: "A"
+xref: Smiles: "C[C@H](NC(C)=O)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0199"
 is_a: MOD:00901 ! modified L-alanine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1209,6 +1244,8 @@ synonym: "(2S)-2-(acetamido)butanedioic acid" EXACT RESID-systematic []
 synonym: "2-(acetylamino)butanedioic acid" EXACT RESID-alternate []
 synonym: "2-(acetylazanyl)butanedioic acid" EXACT RESID-alternate []
 synonym: "AcAsp" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES N-acetylaspartate" EXACT UniProt-feature []
 synonym: "N-acetyl-L-aspartic acid" EXACT RESID-name []
 synonym: "N-acetylated L-aspartic acid" EXACT PSI-MOD-alternate []
@@ -1222,6 +1259,7 @@ xref: MassMono: "158.045333"
 xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0200"
 is_a: MOD:00904 ! modified L-aspartic acid residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1237,6 +1275,7 @@ synonym: "2-acetylamino-3-mercaptopropanoic acid" EXACT RESID-alternate []
 synonym: "2-acetylamino-3-sulfanylpropanoic acid" EXACT RESID-alternate []
 synonym: "2-acetylazanyl-3-sulfanylpropanoic acid" EXACT RESID-alternate []
 synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES N-acetylcysteine" EXACT UniProt-feature []
 synonym: "N-acetyl-L-cysteine" EXACT RESID-name []
 synonym: "N-acetylated cysteine" EXACT PSI-MOD-alternate []
@@ -1251,6 +1290,7 @@ xref: MassMono: "146.027575"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0201"
 is_a: MOD:00646 ! acetylated L-cysteine
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1264,6 +1304,8 @@ synonym: "(2S)-2-(acetamido)pentanedioic acid" EXACT RESID-systematic []
 synonym: "2-(acetylamino)pentanedioic acid" EXACT RESID-alternate []
 synonym: "2-(acetylazanyl)pentanedioic acid" EXACT RESID-alternate []
 synonym: "AcGlu" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES N-acetylglutamate" EXACT UniProt-feature []
 synonym: "N-acetyl-L-glutamic acid" EXACT RESID-name []
 synonym: "N-acetylated L-glutamic acid" EXACT PSI-MOD-alternate []
@@ -1277,6 +1319,7 @@ xref: MassMono: "172.060983"
 xref: Origin: "E"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0202"
 is_a: MOD:00906 ! modified L-glutamic acid residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1291,6 +1334,8 @@ synonym: "2-acetylamino-5-amino-5-oxopentanoic acid" EXACT RESID-alternate []
 synonym: "2-acetylamino-5-pentanediamic acid" EXACT RESID-alternate []
 synonym: "2-acetylazanyl-5-azanyl-5-oxopentanoic acid" EXACT RESID-alternate []
 synonym: "AcGln" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "N-acetyl-L-glutamine" EXACT RESID-name []
 synonym: "N-acetylated L-glutamine" EXACT PSI-MOD-alternate []
 synonym: "acetylglutamine" EXACT RESID-alternate []
@@ -1303,6 +1348,7 @@ xref: MassMono: "171.076967"
 xref: Origin: "Q"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 is_a: MOD:00907 ! modified L-glutamine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1316,6 +1362,8 @@ synonym: "(acetylazanyl)ethanoic acid" EXACT RESID-alternate []
 synonym: "2-(acetamido)ethanoic acid" EXACT RESID-systematic []
 synonym: "2-(acetylamino)ethanoic acid" EXACT RESID-alternate []
 synonym: "AcGly" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES N-acetylglycine" EXACT UniProt-feature []
 synonym: "N-acetylated glycine" EXACT PSI-MOD-alternate []
 synonym: "N-acetylglycine" EXACT RESID-name []
@@ -1329,6 +1377,7 @@ xref: MassMono: "100.039853"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0203"
 is_a: MOD:00908 ! modified glycine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1342,6 +1391,8 @@ synonym: "(2S,3S)-2-acetamido-3-methylpentanoic acid" EXACT RESID-systematic []
 synonym: "2-acetylamino-3-methylpentanoic acid" EXACT RESID-alternate []
 synonym: "2-acetylazanyl-3-methylpentanoic acid" EXACT RESID-alternate []
 synonym: "AcIle" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "N-acetyl-L-isoleucine" EXACT RESID-name []
 synonym: "N-acetylated L-isoleucine" EXACT PSI-MOD-alternate []
 synonym: "acetylisoleucine" EXACT RESID-alternate []
@@ -1354,6 +1405,7 @@ xref: MassMono: "156.102454"
 xref: Origin: "I"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0204"
 is_a: MOD:00910 ! modified L-isoleucine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1367,6 +1419,7 @@ synonym: "(2S)-2-acetamido-6-aminohexanoic acid" EXACT RESID-systematic []
 synonym: "2-acetylamino-6-aminohexanoic acid" EXACT RESID-alternate []
 synonym: "2-acetylazanyl-6-azanylhexanoic acid" EXACT RESID-alternate []
 synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "N2-acetyl-L-lysine" EXACT RESID-name []
 synonym: "N2-acetylated L-lysine" EXACT PSI-MOD-alternate []
 synonym: "N2-acetyllysine" EXACT RESID-alternate []
@@ -1378,8 +1431,10 @@ xref: Formula: "C 8 H 15 N 2 O 2"
 xref: MassAvg: "171.22"
 xref: MassMono: "171.113353"
 xref: Origin: "K"
+xref: Smiles: "CC(=O)N[C@@H](CCCCN)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 is_a: MOD:00723 ! N-acetylated L-lysine
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -1393,6 +1448,8 @@ synonym: "2-acetylamino-4-(methylsulfanyl)butanoic acid" EXACT RESID-alternate [
 synonym: "2-acetylamino-4-(methylthio)butanoic acid" EXACT RESID-alternate []
 synonym: "2-acetylazanyl-4-(methylsulfanyl)butanoic acid" EXACT RESID-alternate []
 synonym: "AcMet" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES N-acetylmethionine" EXACT UniProt-feature []
 synonym: "N-acetyl-L-methionine" EXACT RESID-name []
 synonym: "N-acetylated L-methionine" EXACT PSI-MOD-alternate []
@@ -1407,6 +1464,7 @@ xref: MassMono: "174.058875"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0205"
 is_a: MOD:00913 ! modified L-methionine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1418,6 +1476,8 @@ def: "A protein modification that effectively converts an L-proline residue to N
 subset: PSI-MOD-slim
 synonym: "(2S)-1-acetyl-2-pyrrolidinecarboxylic acid" EXACT RESID-systematic []
 synonym: "1-acetylproline" EXACT RESID-alternate []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES N-acetylproline" EXACT UniProt-feature []
 synonym: "N-acetyl-L-proline" EXACT RESID-name []
 synonym: "N-acetylated L-proline" EXACT PSI-MOD-alternate []
@@ -1431,8 +1491,10 @@ xref: Formula: "C 7 H 10 N 1 O 2"
 xref: MassAvg: "140.16"
 xref: MassMono: "140.071154"
 xref: Origin: "P"
+xref: Smiles: "CC(=O)N1CCC[C@H]1C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0206"
 is_a: MOD:00915 ! modified L-proline residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1446,6 +1508,7 @@ synonym: "(2S)-2-acetamido-3-hydroxypropanoic acid" EXACT RESID-systematic []
 synonym: "2-acetylamino-3-hydroxypropanoic acid" EXACT RESID-alternate []
 synonym: "2-acetylazanyl-3-hydroxypropanoic acid" EXACT RESID-alternate []
 synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES N-acetylserine" EXACT UniProt-feature []
 synonym: "N-acetyl-L-serine" EXACT RESID-name []
 synonym: "N-acetylated L-serine" EXACT PSI-MOD-alternate []
@@ -1460,6 +1523,7 @@ xref: MassMono: "130.050418"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0207"
 is_a: MOD:00647 ! acetylated L-serine
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1489,6 +1553,7 @@ xref: MassMono: "144.066068"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0208"
 is_a: MOD:01186 ! acetylated L-threonine
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1502,6 +1567,7 @@ synonym: "2-acetylamino-3-(4-hydoxyphenyl)propanoic acid" EXACT RESID-alternate 
 synonym: "2-acetylazanyl-3-(4-hydoxyphenyl)propanoic acid" EXACT RESID-alternate []
 synonym: "AcTyr" EXACT PSI-MOD-label []
 synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES N-acetyltyrosine" EXACT UniProt-feature []
 synonym: "N-acetyl-L-tyrosine" EXACT RESID-name []
 synonym: "N-acetylated L-tyrosine" EXACT PSI-MOD-alternate []
@@ -1515,6 +1581,7 @@ xref: MassMono: "206.081718"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0209"
 is_a: MOD:00919 ! modified L-tyrosine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1528,6 +1595,8 @@ synonym: "(2S)-2-acetamido-3-methylbutanoic acid" EXACT RESID-systematic []
 synonym: "2-acetylamino-3-methylbutanoic acid" EXACT RESID-alternate []
 synonym: "2-acetylazanyl-3-methylbutanoic acid" EXACT RESID-alternate []
 synonym: "AcVal" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES N-acetylvaline" EXACT UniProt-feature []
 synonym: "N-acetyl-L-valine" EXACT RESID-name []
 synonym: "N-acetylated L-valine" EXACT PSI-MOD-alternate []
@@ -1541,6 +1610,7 @@ xref: MassMono: "142.086804"
 xref: Origin: "V"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0210"
 is_a: MOD:00920 ! modified L-valine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -1548,7 +1618,7 @@ is_a: MOD:01458 ! alpha-amino acetylated residue
 [Term]
 id: MOD:00064
 name: N6-acetyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-acetyl-L-lysine." [ChEBI:17752, DeltaMass:214, OMSSA:24, PubMed:11369851, PubMed:11857757, PubMed:11999733, PubMed:12175151, PubMed:14730666, PubMed:15350136, PubMed:1680872, PubMed:670159, RESID:AA0055, Unimod:1#K]
+def: "A protein modification that effectively converts an L-lysine residue to N6-acetyl-L-lysine." [ChEBI:29967, DeltaMass:214, OMSSA:24, PubMed:11369851, PubMed:11857757, PubMed:11999733, PubMed:12175151, PubMed:14730666, PubMed:15350136, PubMed:1680872, PubMed:670159, RESID:AA0055, Unimod:1#K]
 subset: PSI-MOD-slim
 synonym: "(2S)-6-acetamido-2-aminohexanoic acid" EXACT RESID-systematic []
 synonym: "6-acetylamino-2-aminohexanoic acid" EXACT RESID-alternate []
@@ -1569,6 +1639,7 @@ xref: Formula: "C 8 H 14 N 2 O 2"
 xref: MassAvg: "170.21"
 xref: MassMono: "170.105528"
 xref: Origin: "K"
+xref: Smiles: "CC(=O)NCCCC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1"
@@ -1598,6 +1669,7 @@ xref: Formula: "C 5 H 7 N 1 O 2 S 1"
 xref: MassAvg: "145.18"
 xref: MassMono: "145.019750"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSC(C)=O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1"
@@ -1898,7 +1970,7 @@ is_a: MOD:01462 ! N-methylated proline
 [Term]
 id: MOD:00076
 name: symmetric dimethyl-L-arginine
-def: "A protein modification that effectively converts an L-arginine residue to symmetric dimethylarginine, N(omega),N'(omega)-dimethyl-L-arginine." [PubMed:12964758, PubMed:14570711, PubMed:15835918, PubMed:2426402, PubMed:5128665, RESID:AA0067, Unimod:36#R]
+def: "A protein modification that effectively converts an L-arginine residue to symmetric dimethylarginine, N(omega),N'(omega)-dimethyl-L-arginine." [ChEBI:88221, PubMed:12964758, PubMed:14570711, PubMed:15835918, PubMed:2426402, PubMed:5128665, RESID:AA0067, Unimod:36#R]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-5-[((methylamino)(methylimino)methyl)amino]pentanoic acid" EXACT RESID-systematic []
 synonym: "Dimethyl" RELATED PSI-MS-label []
@@ -1919,6 +1991,7 @@ xref: Formula: "C 8 H 16 N 4 O 1"
 xref: MassAvg: "184.24"
 xref: MassMono: "184.132411"
 xref: Origin: "R"
+xref: Smiles: "*N[C@@H](CCCNC(=NC)NC)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:36"
@@ -1929,7 +2002,7 @@ is_a: MOD:00783 ! dimethylated L-arginine
 [Term]
 id: MOD:00077
 name: asymmetric dimethyl-L-arginine
-def: "A protein modification that effectively converts an L-arginine residue to asymmetric dimethylarginine, N(omega),N(omega)-dimethyl-L-arginine." [ChEBI:17929, PubMed:11152131, PubMed:12964758, PubMed:14570711, PubMed:15835918, PubMed:3032834, RESID:AA0068, Unimod:36#R]
+def: "A protein modification that effectively converts an L-arginine residue to asymmetric dimethylarginine, N(omega),N(omega)-dimethyl-L-arginine." [ChEBI:61897, PubMed:11152131, PubMed:12964758, PubMed:14570711, PubMed:15835918, PubMed:3032834, RESID:AA0068, Unimod:36#R]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-5-([(dimethylamino)(imino)methyl]amino)pentanoic acid" EXACT RESID-systematic []
 synonym: "Dimethyl" RELATED PSI-MS-label []
@@ -1949,6 +2022,7 @@ xref: Formula: "C 8 H 16 N 4 O 1"
 xref: MassAvg: "184.24"
 xref: MassMono: "184.132411"
 xref: Origin: "R"
+xref: Smiles: "*N[C@@H](CCCNC(=N)N(C)C)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:36"
@@ -1959,7 +2033,7 @@ is_a: MOD:00783 ! dimethylated L-arginine
 [Term]
 id: MOD:00078
 name: omega-N-methyl-L-arginine
-def: "A protein modification that effectively converts an L-arginine residue to N(omega)-methyl-L-arginine." [PubMed:11875433, PubMed:15835918, PubMed:2426402, PubMed:5128665, RESID:AA0069]
+def: "A protein modification that effectively converts an L-arginine residue to N(omega)-methyl-L-arginine." [ChEBI:28229, PubMed:11875433, PubMed:15835918, PubMed:2426402, PubMed:5128665, RESID:AA0069]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-5-[(imino(methylamino)methyl)amino]pentanoic acid" EXACT RESID-systematic []
 synonym: "MOD_RES Omega-N-methylarginine" EXACT UniProt-feature []
@@ -1977,6 +2051,7 @@ xref: Formula: "C 7 H 14 N 4 O 1"
 xref: MassAvg: "170.21"
 xref: MassMono: "170.116761"
 xref: Origin: "R"
+xref: Smiles: "CNC(=N)NCCC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0237"
@@ -2038,6 +2113,7 @@ xref: Formula: "C 6 H 10 N 2 O 2"
 xref: MassAvg: "142.16"
 xref: MassMono: "142.074228"
 xref: Origin: "Q"
+xref: Smiles: "*N[C@@H](CCC(=O)NC)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0185"
@@ -2103,6 +2179,7 @@ xref: Formula: "C 7 H 9 N 3 O 1"
 xref: MassAvg: "151.17"
 xref: MassMono: "151.074562"
 xref: Origin: "H"
+xref: Smiles: "*N[C@@H](Cc1cncn1C)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0259"
@@ -2137,9 +2214,11 @@ xref: Formula: "C 9 H 19 N 2 O 1"
 xref: MassAvg: "171.26"
 xref: MassMono: "171.149738"
 xref: Origin: "K"
+xref: Smiles: "C[N+](C)(C)CCCC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0187"
+is_a: MOD:00430 ! trimethylated residue; note: not sure about this...
 is_a: MOD:00602 ! N-methylated residue
 is_a: MOD:00663 ! methylated lysine
 is_a: MOD:00711 ! trimethylated protonated-residue
@@ -2147,7 +2226,7 @@ is_a: MOD:00711 ! trimethylated protonated-residue
 [Term]
 id: MOD:00084
 name: N6,N6-dimethyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6,N6-dimethyl-L-lysine." [OMSSA:36, PubMed:10550045, PubMed:12964758, PubMed:14570711, PubMed:3100523, PubMed:8453381, RESID:AA0075, Unimod:36#K]
+def: "A protein modification that effectively converts an L-lysine residue to N6,N6-dimethyl-L-lysine." [ChEBI:61969, OMSSA:36, PubMed:10550045, PubMed:12964758, PubMed:14570711, PubMed:3100523, PubMed:8453381, RESID:AA0075, Unimod:36#K]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-6-(dimethylamino)hexanoic acid" EXACT RESID-systematic []
 synonym: "Dimethyl" RELATED PSI-MS-label []
@@ -2167,6 +2246,7 @@ xref: Formula: "C 8 H 16 N 2 O 1"
 xref: MassAvg: "156.23"
 xref: MassMono: "156.126263"
 xref: Origin: "K"
+xref: Smiles: "C(N(C)C)CCC[C@@H](C(*)=O)N*"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:36"
@@ -2178,7 +2258,7 @@ is_a: MOD:00663 ! methylated lysine
 [Term]
 id: MOD:00085
 name: N6-methyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-methyl-L-lysine." [ChEBI:17604, DeltaMass:165, PubMed:11875433, PubMed:3926756, RESID:AA0076, Unimod:34#K]
+def: "A protein modification that effectively converts an L-lysine residue to N6-methyl-L-lysine." [ChEBI:61928, DeltaMass:165, PubMed:11875433, PubMed:3926756, RESID:AA0076, Unimod:34#K]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-6-methylaminohexanoic acid" EXACT RESID-systematic []
 synonym: "MOD_RES N6-methyllysine" EXACT UniProt-feature []
@@ -2197,6 +2277,7 @@ xref: Formula: "C 7 H 14 N 2 O 1"
 xref: MassAvg: "142.20"
 xref: MassMono: "142.110613"
 xref: Origin: "K"
+xref: Smiles: "CNCCCC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:34"
@@ -2229,6 +2310,7 @@ xref: Formula: "C 22 H 42 N 2 O 2"
 xref: MassAvg: "366.58"
 xref: MassMono: "366.324629"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC(=O)CCCCCCCCCCCCCCC)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:47"
@@ -2261,6 +2343,7 @@ xref: Formula: "C 20 H 38 N 2 O 2"
 xref: MassAvg: "338.53"
 xref: MassMono: "338.293328"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC(=O)CCCCCCCCCCCCC)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:45"
@@ -2292,6 +2375,7 @@ xref: Formula: "C 20 H 37 N 1 O 3"
 xref: MassAvg: "339.51"
 xref: MassMono: "339.277344"
 xref: Origin: "T"
+xref: Smiles: "*N[C@H](C(*)=O)[C@@H](C)OC(=O)CCCCCCCCCCCCCCC"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:47"
@@ -2324,6 +2408,7 @@ xref: Formula: "C 19 H 35 N 1 O 3"
 xref: MassAvg: "325.49"
 xref: MassMono: "325.261694"
 xref: Origin: "S"
+xref: Smiles: "*N[C@@H](COC(=O)CCCCCCCCCCCCCCC)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:47"
@@ -2338,6 +2423,9 @@ def: "A protein modification that effectively converts an L-alanine residue to L
 subset: PSI-MOD-slim
 synonym: "(2S)-2-aminopropanamide" EXACT RESID-systematic []
 synonym: "AlaN" EXACT PSI-MOD-label []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "L-alanine amide" EXACT RESID-name []
 synonym: "MOD_RES Alanine amide" EXACT UniProt-feature []
 synonym: "alaninamide" EXACT RESID-alternate []
@@ -2351,6 +2439,7 @@ xref: MassMono: "87.055838"
 xref: Origin: "A"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0057"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00901 ! modified L-alanine residue
@@ -2363,6 +2452,9 @@ subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-5-[(diaminomethylidene)amino]pentanamide" EXACT RESID-systematic []
 synonym: "2-amino-5-carbamimidamidopentanamide" EXACT RESID-alternate []
 synonym: "2-amino-5-guanidinopentanamide" EXACT RESID-alternate []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "ArgN" EXACT PSI-MOD-label []
 synonym: "L-arginine amide" EXACT RESID-name []
 synonym: "MOD_RES Arginine amide" EXACT UniProt-feature []
@@ -2377,6 +2469,7 @@ xref: MassMono: "172.119835"
 xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0060"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00902 ! modified L-arginine residue
@@ -2387,6 +2480,9 @@ name: L-asparagine amide
 def: "A protein modification that effectively converts an L-asparagine residue to L-asparagine amide." [ChEBI:145898, PubMed:2753132, PubMed:279902, PubMed:3415690, RESID:AA0083]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-aminobutanediamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "AsnN" EXACT PSI-MOD-label []
 synonym: "L-asparagine amide" EXACT RESID-name []
 synonym: "MOD_RES Asparagine amide" EXACT UniProt-feature []
@@ -2401,6 +2497,7 @@ xref: MassMono: "130.061652"
 xref: Origin: "N"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0062"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00903 ! modified L-asparagine residue
@@ -2414,6 +2511,9 @@ synonym: "(2S)-2-amino-1-butanediamic acid" EXACT RESID-systematic []
 synonym: "1-amidated L-aspartic acid" EXACT PSI-MOD-alternate []
 synonym: "3,4-diamino-4-oxobutanoic acid" EXACT RESID-alternate []
 synonym: "3-amino-succinamic acid" EXACT RESID-alternate []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "AspN" EXACT PSI-MOD-label []
 synonym: "L-aspartic acid 1-amide" EXACT RESID-name []
 synonym: "MOD_RES Aspartic acid 1-amide" EXACT UniProt-feature []
@@ -2428,6 +2528,7 @@ xref: MassMono: "131.045667"
 xref: Origin: "D"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0063"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00904 ! modified L-aspartic acid residue
@@ -2439,6 +2540,9 @@ def: "A protein modification that effectively converts an L-cysteine residue to 
 subset: PSI-MOD-slim
 synonym: "(2R)-2-amino-3-sulfanylpropanamide" EXACT RESID-systematic []
 synonym: "2-amino-3-mercaptopropanamide" EXACT RESID-alternate []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "CysN" EXACT PSI-MOD-label []
 synonym: "L-cysteine amide" EXACT RESID-name []
 synonym: "MOD_RES Cysteine amide" EXACT UniProt-feature []
@@ -2453,6 +2557,7 @@ xref: MassMono: "119.027909"
 xref: Origin: "C"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0102"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00905 ! modified L-cysteine residue
@@ -2463,6 +2568,9 @@ name: L-glutamine amide
 def: "A protein modification that effectively converts an L-glutamine residue to L-glutamine amide." [PubMed:7673220, PubMed:9048550, RESID:AA0086]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-aminopentanediamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "GlnN" EXACT PSI-MOD-label []
 synonym: "L-glutamine amide" EXACT RESID-name []
 synonym: "MOD_RES Glutamine amide" EXACT UniProt-feature []
@@ -2477,6 +2585,7 @@ xref: MassMono: "144.077302"
 xref: Origin: "Q"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0130"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00907 ! modified L-glutamine residue
@@ -2489,6 +2598,9 @@ subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-1-pentanediamic acid" EXACT RESID-systematic []
 synonym: "1-amidated L-glutamic acid" EXACT PSI-MOD-alternate []
 synonym: "4,5-diamino-5-oxopentanoic acid" EXACT RESID-alternate []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "GluN" EXACT PSI-MOD-label []
 synonym: "L-glutamic acid 1-amide" EXACT RESID-name []
 synonym: "MOD_RES Glutamic acid 1-amide" EXACT UniProt-feature []
@@ -2500,8 +2612,10 @@ xref: Formula: "C 5 H 9 N 2 O 3"
 xref: MassAvg: "145.14"
 xref: MassMono: "145.061317"
 xref: Origin: "E"
+xref: Smiles: "NC(=O)[C@H](CCC(O)=O)N-*"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0129"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00906 ! modified L-glutamic acid residue
@@ -2514,6 +2628,9 @@ subset: PSI-MOD-slim
 synonym: "2-aminoacetamide" EXACT RESID-alternate []
 synonym: "2-aminoethanamide" EXACT RESID-systematic []
 synonym: "2-azanylethanamide" EXACT RESID-alternate []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "GlyN" EXACT PSI-MOD-label []
 synonym: "MOD_RES Glycine amide" EXACT UniProt-feature []
 synonym: "amidated glycine" EXACT PSI-MOD-alternate []
@@ -2528,6 +2645,7 @@ xref: MassMono: "73.040188"
 xref: Origin: "G"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0132"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00908 ! modified glycine residue
@@ -2538,6 +2656,9 @@ name: L-histidine amide
 def: "A protein modification that effectively converts an L-histidine residue to L-histidine amide." [PubMed:2153586, PubMed:2307683, PubMed:2839478, RESID:AA0089]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-(1H-imidazol-4-yl)propanamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "HisN" EXACT PSI-MOD-label []
 synonym: "L-histidine amide" EXACT RESID-name []
 synonym: "MOD_RES Histidine amide" EXACT UniProt-feature []
@@ -2552,6 +2673,7 @@ xref: MassMono: "153.077636"
 xref: Origin: "H"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0148"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00909 ! modified L-histidine residue
@@ -2562,6 +2684,9 @@ name: L-isoleucine amide
 def: "A protein modification that effectively converts an L-isoleucine residue to L-isoleucine amide." [RESID:AA0090]
 subset: PSI-MOD-slim
 synonym: "(2S,3S)-2-amino-3-methylpentanamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "IleN" EXACT PSI-MOD-label []
 synonym: "L-isoleucine amide" EXACT RESID-name []
 synonym: "MOD_RES Isoleucine amide" EXACT UniProt-feature []
@@ -2576,6 +2701,7 @@ xref: MassMono: "129.102788"
 xref: Origin: "I"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0161"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00910 ! modified L-isoleucine residue
@@ -2588,6 +2714,9 @@ subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-4-methylpentanamide" EXACT RESID-systematic []
 synonym: "2-amino-4-methylvaleramide" EXACT RESID-alternate []
 synonym: "2-azanyl-4-methylpentanamide" EXACT RESID-alternate []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "L-leucine amide" EXACT RESID-name []
 synonym: "LeuN" EXACT PSI-MOD-label []
 synonym: "MOD_RES Leucine amide" EXACT UniProt-feature []
@@ -2603,6 +2732,7 @@ xref: MassMono: "129.102788"
 xref: Origin: "L"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0166"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00911 ! modified L-leucine residue
@@ -2613,6 +2743,9 @@ name: L-lysine amide
 def: "A protein modification that effectively converts an L-lysine residue to L-lysine amide." [PubMed:6579533, RESID:AA0092]
 subset: PSI-MOD-slim
 synonym: "(2S)-2,6-diaminohexanamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "L-lysine amide" EXACT RESID-name []
 synonym: "LysN" EXACT PSI-MOD-label []
 synonym: "MOD_RES Lysine amide" EXACT UniProt-feature []
@@ -2627,6 +2760,7 @@ xref: MassMono: "144.113687"
 xref: Origin: "K"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0168"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00912 ! modified L-lysine residue
@@ -2638,6 +2772,9 @@ def: "A protein modification that effectively converts an L-methionine residue t
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-4-(methylsulfanyl)butanamide" EXACT RESID-systematic []
 synonym: "2-amino-4-(methylthio)butanamide" EXACT RESID-alternate []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "L-methionine amide" EXACT RESID-name []
 synonym: "MOD_RES Methionine amide" EXACT UniProt-feature []
 synonym: "MetN" EXACT PSI-MOD-label []
@@ -2652,6 +2789,7 @@ xref: MassMono: "147.059209"
 xref: Origin: "M"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0173"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00913 ! modified L-methionine residue
@@ -2662,6 +2800,9 @@ name: L-phenylalanine amide
 def: "A protein modification that effectively converts an L-phenylalanine residue to L-phenylalanine amide." [PubMed:2905621, PubMed:8868490, RESID:AA0094]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-phenylpropanamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "L-phenylalanine amide" EXACT RESID-name []
 synonym: "MOD_RES Phenylalanine amide" EXACT UniProt-feature []
 synonym: "PheN" EXACT PSI-MOD-label []
@@ -2676,6 +2817,7 @@ xref: MassMono: "163.087138"
 xref: Origin: "F"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0248"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
@@ -2686,6 +2828,9 @@ name: L-proline amide
 def: "A protein modification that effectively converts an L-proline residue to L-proline amide." [PubMed:4982117, PubMed:5760861, RESID:AA0095]
 subset: PSI-MOD-slim
 synonym: "(2S)-pyrrolidine-2-carboxamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "L-proline amide" EXACT RESID-name []
 synonym: "MOD_RES Proline amide" EXACT UniProt-feature []
 synonym: "ProN" EXACT PSI-MOD-label []
@@ -2700,6 +2845,7 @@ xref: MassMono: "113.071488"
 xref: Origin: "P"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0257"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00915 ! modified L-proline residue
@@ -2710,6 +2856,9 @@ name: L-serine amide
 def: "A protein modification that effectively converts an L-serine residue to L-serine amide." [PubMed:743209, RESID:AA0096]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-hydroxypropanamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "L-serine amide" EXACT RESID-name []
 synonym: "MOD_RES Serine amide" EXACT UniProt-feature []
 synonym: "SerN" EXACT PSI-MOD-label []
@@ -2724,6 +2873,7 @@ xref: MassMono: "103.050752"
 xref: Origin: "S"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0275"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00916 ! modified L-serine residue
@@ -2734,6 +2884,9 @@ name: L-threonine amide
 def: "A protein modification that effectively converts an L-threonine residue to L-threonine amide." [PubMed:1390774, RESID:AA0097]
 subset: PSI-MOD-slim
 synonym: "(2S,3R)-2-amino-3-hydroxybutanamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "L-threonine amide" EXACT RESID-name []
 synonym: "MOD_RES Threonine amide" EXACT UniProt-feature []
 synonym: "ThrN" EXACT PSI-MOD-label []
@@ -2748,6 +2901,7 @@ xref: MassMono: "117.066403"
 xref: Origin: "T"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0293"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00917 ! modified L-threonine residue
@@ -2758,6 +2912,9 @@ name: L-tryptophan amide
 def: "A protein modification that effectively converts an L-tryptophan residue to L-tryptophan amide." [PubMed:3947348, RESID:AA0098]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-(1H-indol-3-yl)propanamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "L-tryptophan amide" EXACT RESID-name []
 synonym: "MOD_RES Tryptophan amide" EXACT UniProt-feature []
 synonym: "TrpN" EXACT PSI-MOD-label []
@@ -2772,6 +2929,7 @@ xref: MassMono: "202.098037"
 xref: Origin: "W"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0296"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00918 ! modified L-tryptophan residue
@@ -2782,6 +2940,9 @@ name: L-tyrosine amide
 def: "A protein modification that effectively converts an L-tyrosine residue to L-tyrosine amide." [PubMed:1377792, PubMed:3562898, PubMed:6509012, RESID:AA0099]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-(4-hydoxyphenyl)propanamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "L-tyrosine amide" EXACT RESID-name []
 synonym: "MOD_RES Tyrosine amide" EXACT UniProt-feature []
 synonym: "TyrN" EXACT PSI-MOD-label []
@@ -2796,6 +2957,7 @@ xref: MassMono: "179.082053"
 xref: Origin: "Y"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0302"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00919 ! modified L-tyrosine residue
@@ -2806,6 +2968,9 @@ name: L-valine amide
 def: "A protein modification that effectively converts an L-valine residue to L-valine amide." [PubMed:2578459, PubMed:5465996, RESID:AA0100]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-3-methylbutanamide" EXACT RESID-systematic []
+synonym: "Amidated" RELATED PSI-MS-label []
+synonym: "Amidation" RELATED Unimod-description []
+synonym: "Amide" RELATED Unimod-interim []
 synonym: "L-valine amide" EXACT RESID-name []
 synonym: "MOD_RES Valine amide" EXACT UniProt-feature []
 synonym: "ValN" EXACT PSI-MOD-label []
@@ -2819,6 +2984,7 @@ xref: MassMono: "115.087138"
 xref: Origin: "V"
 xref: Source: "natural"
 xref: TermSpec: "C-term"
+xref: Unimod: "Unimod:2"
 xref: uniprot.ptm: "PTM-0303"
 is_a: MOD:00883 ! C1-amidated residue
 is_a: MOD:00920 ! modified L-valine residue
@@ -2882,6 +3048,7 @@ xref: Formula: "C 18 H 29 N 1 O 1 S 1"
 xref: MassAvg: "307.50"
 xref: MassMono: "307.196986"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSC/C=C(/CC/C=C(/CCC=C(C)C)C)C)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:44"
@@ -2935,6 +3102,7 @@ xref: Formula: "C 23 H 37 N 1 O 1 S 1"
 xref: MassAvg: "375.61"
 xref: MassMono: "375.259586"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSC/C=C(/CC/C=C(/CC/C=C(/CCC=C(C)C)C)C)C)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:48"
@@ -2999,6 +3167,7 @@ xref: Formula: "C 19 H 35 N 1 O 2 S 1"
 xref: MassAvg: "341.55"
 xref: MassMono: "341.238851"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSC(=O)CCCCCCCCCCCCCCC)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:47"
@@ -3218,6 +3387,7 @@ xref: Formula: "C 7 H 12 N 2 O 3"
 xref: MassAvg: "172.18"
 xref: MassMono: "172.084792"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC(=O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:299"
@@ -3245,6 +3415,7 @@ xref: Formula: "C 9 H 16 N 2 O 3"
 xref: MassAvg: "200.23"
 xref: MassMono: "200.116092"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCN[C@@H](C)C(=O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:378"
@@ -3275,6 +3446,7 @@ xref: Formula: "C 10 H 21 N 3 O 2"
 xref: MassAvg: "215.29"
 xref: MassMono: "215.163377"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC[C@H](O)CCN)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:379"
@@ -3286,7 +3458,7 @@ relationship: derives_from MOD:01880 ! L-deoxyhypusine
 [Term]
 id: MOD:00126
 name: N6-biotinyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-biotinyl-L-lysine." [DeltaMass:305, PubMed:16109483, PubMed:3178228, PubMed:7948875, PubMed:8747466, RESID:AA0117, Unimod:3#K]
+def: "A protein modification that effectively converts an L-lysine residue to N6-biotinyl-L-lysine." [ChEBI:83144, DeltaMass:305, PubMed:16109483, PubMed:3178228, PubMed:7948875, PubMed:8747466, RESID:AA0117, Unimod:3#K]
 comment: From DeltaMass: Average Mass: 354 Formula:C 16 H 26 O 4 N 3 S 1 (formula incorrect, N and O reversed) Monoisotopic Mass Change:354.172 Average Mass Change:354.471 References:PE Sciex.
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-6-(5-[(3aS,4S,6aR)-2-oxohexahydro-1H-thieno[3,4-d]imidazol-4-yl]pentanoylamino)hexanoic acid" EXACT RESID-systematic []
@@ -3308,6 +3480,7 @@ xref: Formula: "C 16 H 26 N 4 O 3 S 1"
 xref: MassAvg: "354.47"
 xref: MassMono: "354.172562"
 xref: Origin: "K"
+xref: Smiles: "*-N[C@@H](CCCCNC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@H]12)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:3"
@@ -3340,6 +3513,7 @@ xref: Formula: "C 14 H 24 N 2 O 2 S 2"
 xref: MassAvg: "316.49"
 xref: MassMono: "316.127920"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC(=O)CCCC[C@@H]1CCSS1)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:42"
@@ -3366,6 +3540,7 @@ xref: Formula: "C 14 H 20 N 3 O 6 P 1"
 xref: MassAvg: "357.30"
 xref: MassMono: "357.108972"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCN=Cc1c(COP(=O)(O)O)cnc(C)c1O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:46"
@@ -3426,6 +3601,7 @@ xref: Formula: "C 6 H 9 N 1 O 2"
 xref: MassAvg: "127.14"
 xref: MassMono: "127.063329"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCC=O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:352"
@@ -4058,6 +4234,7 @@ synonym: "MOD_RES 3',4'-dihydroxyphenylalanine" EXACT UniProt-feature []
 synonym: "hydroxylationy" EXACT OMSSA-label []
 synonym: "levodopa" EXACT RESID-alternate []
 synonym: "mod194" EXACT OMSSA-label []
+xref: ChEBI: 141815
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "O 1"
 xref: DiffMono: "15.994915"
@@ -4065,6 +4242,7 @@ xref: Formula: "C 9 H 9 N 1 O 3"
 xref: MassAvg: "179.17"
 xref: MassMono: "179.058243"
 xref: Origin: "Y"
+xref: Smiles: "*N[C@@H](Cc1ccc(O)c(O)c1)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
@@ -4585,6 +4763,7 @@ xref: Formula: "C 21 H 33 N 9 O 14 P 2"
 xref: MassAvg: "697.49"
 xref: MassMono: "697.162221"
 xref: Origin: "R"
+xref: Smiles: "*N[C@@H](CCCNC(=N)N[C@H]1O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]2O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]2O)[C@@H](O)[C@H]1O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
@@ -4614,6 +4793,7 @@ xref: Formula: "C 18 H 26 N 6 O 14 P 2 S 1"
 xref: MassAvg: "644.45"
 xref: MassMono: "644.070295"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CS[C@H]1O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]2O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]2O)[C@@H](O)[C@H]1O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
@@ -4704,6 +4884,7 @@ xref: Formula: "C 9 H 9 N 1 O 5 S 1"
 xref: MassAvg: "243.24"
 xref: MassMono: "243.020144"
 xref: Origin: "Y"
+xref: Smiles: "*N[C@@H](Cc1ccc(OS(=O)(=O)O)cc1)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:40"
@@ -5441,6 +5622,7 @@ xref: Formula: "C 3 H 5 N 1 O 2 S 1"
 xref: MassAvg: "119.14"
 xref: MassMono: "119.004100"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSO)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
@@ -5540,7 +5722,7 @@ is_a: MOD:00002 ! O-glycosyl-L-serine
 [Term]
 id: MOD:00216
 name: N6-formyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-formyl-L-lysine." [OMSSA:43, PubMed:15799070, RESID:AA0211, Unimod:122#K]
+def: "A protein modification that effectively converts an L-lysine residue to N6-formyl-L-lysine." [ChEBI:156064, OMSSA:43, PubMed:15799070, RESID:AA0211, Unimod:122#K]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-6-(formylamino)hexanoic acid" EXACT RESID-systematic []
 synonym: "Formyl" RELATED PSI-MS-label []
@@ -5559,6 +5741,7 @@ xref: Formula: "C 7 H 12 N 2 O 2"
 xref: MassAvg: "156.18"
 xref: MassMono: "156.089878"
 xref: Origin: "K"
+xref: Smiles: "C(*)([C@@H](N*)CCCCNC([H])=O)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:122"
@@ -5614,7 +5797,7 @@ is_a: MOD:00916 ! modified L-serine residue
 [Term]
 id: MOD:00219
 name: L-citrulline
-def: "A protein modification that effectively converts an L-arginine residue to L-citrulline." [DeltaMass:0, OMSSA:33, PubMed:2466844, RESID:AA0214, Unimod:7#R]
+def: "A protein modification that effectively converts an L-arginine residue to L-citrulline." [ChEBI:83397, DeltaMass:0, OMSSA:33, PubMed:2466844, RESID:AA0214, Unimod:7#R]
 comment: This modification is not the result of deamidation, instead the guanidino group is replaced with an ureido group.
 subset: PSI-MOD-slim
 synonym: "(S)-2-amino-5-(carbamoylamino)pentanoic acid" EXACT RESID-systematic []
@@ -5639,6 +5822,7 @@ xref: Formula: "C 6 H 11 N 3 O 2"
 xref: MassAvg: "157.17"
 xref: MassMono: "157.085127"
 xref: Origin: "R"
+xref: Smiles: "*N[C@@H](CCCNC(N)=O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:7"
@@ -5717,6 +5901,7 @@ xref: Formula: "C 17 H 20 N 2 O 6"
 xref: MassAvg: "348.35"
 xref: MassMono: "348.132136"
 xref: Origin: "W"
+xref: Smiles: "*N[C@@H](Cc1c(C2O[C@H](CO)[C@@H](O)[C@H](O)[C@@H]2O)[nH]c2ccccc12)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:41"
@@ -5836,6 +6021,7 @@ xref: Formula: "C 6 H 13 N 4 O 4 P 1"
 xref: MassAvg: "236.17"
 xref: MassMono: "236.067442"
 xref: Origin: "R"
+xref: Smiles: "*N[C@@H](CCCNC(=N)NP(=O)(O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:21"
@@ -6022,6 +6208,7 @@ xref: Formula: "C 13 H 20 N 4 O 7 S 2"
 xref: MassAvg: "408.46"
 xref: MassMono: "408.077341"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSSC[C@H](NC(=O)CC[C@H](N)C(=O)O)C(=O)NCC(=O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:55"
@@ -6050,6 +6237,7 @@ xref: Formula: "C 3 H 4 N 2 O 2 S 1"
 xref: MassAvg: "132.14"
 xref: MassMono: "131.999349"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSN=O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:275"
@@ -6237,6 +6425,7 @@ xref: Formula: "C 18 H 26 N 6 O 15 P 2"
 xref: MassAvg: "628.38"
 xref: MassMono: "628.093138"
 xref: Origin: "S"
+xref: Smiles: "*N[C@@H](CO[C@H]1O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]2O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]2O)[C@@H](O)[C@H]1O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:213"
@@ -6537,6 +6726,7 @@ xref: Formula: "C 5 H 9 N 1 O 3 S 1"
 xref: MassAvg: "163.20"
 xref: MassMono: "163.030314"
 xref: Origin: "M"
+xref: Smiles: "*N[C@@H](CCS(C)(=O)=O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
@@ -6794,6 +6984,7 @@ xref: Formula: "C 3 H 5 N 1 O 3 S 1"
 xref: MassAvg: "135.14"
 xref: MassMono: "134.999014"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CS(=O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
@@ -6991,6 +7182,7 @@ xref: Formula: "C 3 H 5 N 1 O 1 S 2"
 xref: MassAvg: "135.21"
 xref: MassMono: "134.981256"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSS)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:421"
@@ -7050,7 +7242,7 @@ is_a: MOD:02074 ! metal or metal cluster coordinated L-lysine residue
 [Term]
 id: MOD:00277
 name: 5-methyl-L-arginine
-def: "A protein modification that effectively converts an L-arginine residue to 5-methyl-L-arginine." [PubMed:10660523, PubMed:11875433, PubMed:9367957, RESID:AA0272]
+def: "A protein modification that effectively converts an L-arginine residue to 5-methyl-L-arginine." [ChEBI:20604, PubMed:10660523, PubMed:11875433, PubMed:9367957, RESID:AA0272]
 synonym: "(2S,5S)-2-amino-5-carbamimidamidohexanoic acid" EXACT RESID-systematic []
 synonym: "2-amino-5-guanidinohexanoic acid" EXACT RESID-alternate []
 synonym: "4-methylarginine" RELATED RESID-misnomer []
@@ -7068,6 +7260,7 @@ xref: Formula: "C 7 H 14 N 4 O 1"
 xref: MassAvg: "170.21"
 xref: MassMono: "170.116761"
 xref: Origin: "R"
+xref: Smiles: "CC(CC[C@H](N-*)C(-*)=O)NC(N)=N"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0050"
@@ -7499,6 +7692,7 @@ xref: Formula: "C 11 H 19 N 1 O 3"
 xref: MassAvg: "213.27"
 xref: MassMono: "213.136493"
 xref: Origin: "S"
+xref: Smiles: "*N[C@@H](COC(=O)CCCCCCC)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:426"
@@ -7860,7 +8054,7 @@ is_a: MOD:01152 ! carboxylated residue
 [Term]
 id: MOD:00310
 name: N5-methyl-L-arginine
-def: "A protein modification that effectively converts an L-arginine residue to N5-methyl-L-arginine." [PubMed:11875433, PubMed:9792625, PubMed:9873020, RESID:AA0305]
+def: "A protein modification that effectively converts an L-arginine residue to N5-methyl-L-arginine." [ChEBI:21848, PubMed:11875433, PubMed:9792625, PubMed:9873020, RESID:AA0305]
 synonym: "(2S)-2-amino-5-(N-methylcarbamimidamido)pentanoic acid" EXACT RESID-systematic []
 synonym: "MOD_RES N5-methylarginine" EXACT UniProt-feature []
 synonym: "Methyl" RELATED PSI-MS-label []
@@ -7877,6 +8071,7 @@ xref: Formula: "C 7 H 14 N 4 O 1"
 xref: MassAvg: "170.21"
 xref: MassMono: "170.116761"
 xref: Origin: "R"
+xref: Smiles: "CN(CCC[C@H](N-*)C(-*)=O)C(N)=N"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0184"
@@ -7901,6 +8096,7 @@ xref: Formula: "C 24 H 39 N 8 O 17 P 3 S 2"
 xref: MassAvg: "868.67"
 xref: MassMono: "868.108745"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSSCCNC(=O)CCNC(=O)[C@H](O)C(C)(C)COP(=O)(O)OP(=O)(O)OC[C@H]1O[C@@H](n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1OP(=O)(O)O)C(*)=O"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:281"
@@ -8181,6 +8377,7 @@ xref: Formula: "C 7 H 9 N 3 O 1"
 xref: MassAvg: "151.17"
 xref: MassMono: "151.074562"
 xref: Origin: "H"
+xref: Smiles: "*N[C@@H](Cc1cn(C)cn1)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0290"
@@ -8297,6 +8494,7 @@ synonym: "3-hydroxytryptophan" EXACT RESID-alternate []
 synonym: "3HyTrp" EXACT PSI-MOD-label []
 synonym: "MOD_RES 3-hydroxytryptophan" EXACT UniProt-feature []
 synonym: "beta-hydroxytryptophan" EXACT RESID-alternate []
+xref: ChEBI: 141794
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "O 1"
 xref: DiffMono: "15.994915"
@@ -8304,6 +8502,7 @@ xref: Formula: "C 11 H 10 N 2 O 2"
 xref: MassAvg: "202.21"
 xref: MassMono: "202.074228"
 xref: Origin: "W"
+xref: Smiles: "*N[C@H](C(*)=O)[C@@H](O)c1c[nH]c2ccccc12"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0031"
@@ -9084,6 +9283,8 @@ synonym: "(S)-2-acetamido-5-carbamimidamidopentanoic acid" EXACT RESID-systemati
 synonym: "2-acetamido-5-guanidinopentanoic acid" EXACT RESID-alternate []
 synonym: "2-acetylamino-5-guanidinopentanoic acid" EXACT RESID-alternate []
 synonym: "AcArg" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES N2-acetylarginine" EXACT UniProt-feature []
 synonym: "N(alpha)-acetylarginine" EXACT RESID-alternate []
 synonym: "N2-acetyl-L-arginine" EXACT RESID-name []
@@ -9099,6 +9300,7 @@ xref: MassMono: "199.119501"
 xref: Origin: "R"
 xref: Source: "natural"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 xref: uniprot.ptm: "PTM-0180"
 is_a: MOD:00902 ! modified L-arginine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
@@ -9359,6 +9561,7 @@ xref: Formula: "C 5 H 7 N 1 O 3"
 xref: MassAvg: "129.11"
 xref: MassMono: "129.042593"
 xref: Origin: "S"
+xref: Smiles: "*N[C@@H](COC(C)=O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1"
@@ -10495,6 +10698,7 @@ xref: Formula: "C 5 H 6 N 1 O 2"
 xref: MassAvg: "112.11"
 xref: MassMono: "112.039853"
 xref: Origin: "E"
+xref: Smiles: "*-C(=O)[C@@H]1CCC(=O)N1"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 xref: Unimod: "Unimod:27"
@@ -11244,6 +11448,7 @@ xref: Formula: "C 3 H 5 N 1 O 4 S 1"
 xref: MassAvg: "151.14"
 xref: MassMono: "150.993929"
 xref: Origin: "C"
+xref: Smiles: "OS(=O)(=O)C[C@H](N-*)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:345"
@@ -11286,6 +11491,7 @@ xref: Formula: "C 10 H 10 N 2 O 2"
 xref: MassAvg: "190.20"
 xref: MassMono: "190.074228"
 xref: Origin: "W"
+xref: Smiles: "*N[C@@H](CC(=O)c1ccccc1N)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:351"
@@ -11315,7 +11521,7 @@ is_a: MOD:00918 ! modified L-tryptophan residue
 [Term]
 id: MOD:00464
 name: N'-formyl-L-kynurenine
-def: "A protein modification that effectively converts an L-tryptophan residue to N'-formyl-L-kynurenine." [DeltaMass:356, OMSSA:45, PubMed:12124932, PubMed:12686488, PubMed:9252331, Unimod:425#W]
+def: "A protein modification that effectively converts an L-tryptophan residue to N'-formyl-L-kynurenine." [CHEBI:30249, DeltaMass:356, OMSSA:45, PubMed:12124932, PubMed:12686488, PubMed:9252331, Unimod:425#W]
 comment: From DeltaMass: References:Willy V. Bienvenut, Catherine Déon, Carla Pasquarello, Jennifer M. Campbell, Jean-Charles Sanchez, Marvin L. Vestal, Denis F. Hochstrasser Matrix-assisted laser desorption/ionization-tandemmass spectrometry with high resolution andsensitivity for identification and characterizationof proteins. Proteomics 2002, 2, 868-876 Notes: A double oxidation of tryptophan for which the N-formylkynurenine (+32) structure can be proposed. Many minor peaks accompanying the main peak might also be attributed to other oxidation products of the tryptophan such as kynurenine (+4), an unknown by-product found in all oxidized tryptophan patterns (+13), hydroxytryptophan (+16), 3-hydroxykynurenine (+20) and hydroxy-N-formylkynurenine (+48). See proposed structures at http://www.abrf.org/images/misc/dmass32.jpg.
 subset: PSI-MOD-slim
 synonym: "Dioxidation" RELATED PSI-MS-label []
@@ -11330,6 +11536,7 @@ xref: Formula: "C 11 H 10 N 2 O 3"
 xref: MassAvg: "218.21"
 xref: MassMono: "218.069142"
 xref: Origin: "W"
+xref: Smiles: "[H]C(=O)Nc1ccccc1C(=O)C[C@H](N-*)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:425"
@@ -11565,6 +11772,7 @@ xref: Formula: "C 4 H 6 N 1 O 1"
 xref: MassAvg: "84.10"
 xref: MassMono: "84.044939"
 xref: Origin: "P"
+xref: Smiles: "*N1CCCC1=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:360"
@@ -11581,6 +11789,7 @@ synonym: "Oxidation or Hydroxylation" RELATED Unimod-description []
 synonym: "gamma-glutamyl semialdehyde" EXACT PSI-MOD-alternate []
 synonym: "glutamyl 5-semialdehyde" EXACT PSI-MOD-alternate []
 synonym: "glutamyl aldehyde" EXACT PSI-MOD-alternate []
+xref: ChEBI: 41433
 xref: DiffAvg: "16.00"
 xref: DiffFormula: "O 1"
 xref: DiffMono: "15.994915"
@@ -11588,6 +11797,7 @@ xref: Formula: "C 5 H 7 N 1 O 2"
 xref: MassAvg: "113.11"
 xref: MassMono: "113.047678"
 xref: Origin: "P"
+xref: Smiles: "*N[C@@H](CCC([H])=O)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
@@ -11603,6 +11813,7 @@ comment: From DeltaMass: Average Mass: -27 Monoisotopic Mass Change:-27.06 Avera
 synonym: "Arg->GluSA" RELATED PSI-MS-label []
 synonym: "Arginine oxidation to glutamic semialdehyde" RELATED Unimod-description []
 synonym: "Oxidation of arginine (to glutamic acid)" EXACT DeltaMass-label []
+xref: ChEBI: 41433
 xref: DiffAvg: "-43.07"
 xref: DiffFormula: "C -1 H -5 N -3 O 1"
 xref: DiffMono: "-43.053433"
@@ -11610,6 +11821,7 @@ xref: Formula: "C 5 H 7 N 1 O 2"
 xref: MassAvg: "113.11"
 xref: MassMono: "113.047678"
 xref: Origin: "R"
+xref: Smiles: "*N[C@@H](CCC([H])=O)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:344"
@@ -11855,7 +12067,7 @@ is_a: MOD:00905 ! modified L-cysteine residue
 [Term]
 id: MOD:00492
 name: ubiquitination signature dipeptidyl lysine
-def: "A protein modification that crosslinks the N6-amino of a peptidyl lysine with the carboxyl of glycylglycine, the two glycine residues left after tryptic digestion of ubiquitin." [OMSSA:52, PubMed:11125103, PubMed:12612601, PubMed:12872131, RESID:AA0125#var, Unimod:121#K]
+def: "A protein modification that crosslinks the N6-amino of a peptidyl lysine with the carboxyl of glycylglycine, the two glycine residues left after tryptic digestion of ubiquitin." [ChEBI:71254, OMSSA:52, PubMed:11125103, PubMed:12612601, PubMed:12872131, RESID:AA0125#var, Unimod:121#K]
 synonym: "GlyGly" RELATED PSI-MS-label []
 synonym: "N6-(glycylglycyl)lysine" EXACT PSI-MOD-alternate []
 synonym: "N6-glycylglycyl-L-lysine" EXACT PSI-MOD-alternate []
@@ -11868,6 +12080,7 @@ xref: Formula: "C 10 H 18 N 4 O 3"
 xref: MassAvg: "242.28"
 xref: MassMono: "242.137890"
 xref: Origin: "K"
+xref: Smiles: "NCC(=O)NCC(=O)NCCCC[C@H](N-*)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:121"
@@ -13339,6 +13552,7 @@ xref: Formula: "C 5 H 6 N 1 O 2"
 xref: MassAvg: "112.11"
 xref: MassMono: "112.039853"
 xref: Origin: "P"
+xref: Smiles: "*C(=O)[C@@H]1CCC(=O)N1*"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:359"
@@ -14745,6 +14959,7 @@ xref: Formula: "C 7 H 10 N 1 O 4"
 xref: MassAvg: "172.16"
 xref: MassMono: "172.060983"
 xref: Origin: "S"
+xref: Smiles: "CC(=O)N[C@@H](COC(C)=O)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
 is_a: MOD:02080 ! diacetylated L-serine
@@ -15672,7 +15887,7 @@ is_a: MOD:00919 ! modified L-tyrosine residue
 [Term]
 id: MOD:00719
 name: L-methionine sulfoxide
-def: "A protein modification that oxygenates an L-methionine residue to one of the diastereomeric L-methionine sulfoxide residues." [DeltaMass:177, OMSSA:1, PubMed:21406390, PubMed:22116028, RESID:AA0581, Unimod:35#M]
+def: "A protein modification that oxygenates an L-methionine residue to one of the diastereomeric L-methionine sulfoxide residues." [ChEBI:15989, DeltaMass:177, OMSSA:1, PubMed:21406390, PubMed:22116028, RESID:AA0581, Unimod:35#M]
 comment: From DeltaMass: Average Mass: 147 Formula:C5H9O1N2S Monoisotopic Mass Change:147.035 Average Mass Change:147.195 (formula incorrect, N and O reversed) References:PE Sciex.
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-4-[(R)-methylsulfinyl]butanoic acid" EXACT RESID-systematic []
@@ -15692,6 +15907,7 @@ xref: Formula: "C 5 H 9 N 1 O 2 S 1"
 xref: MassAvg: "147.20"
 xref: MassMono: "147.035400"
 xref: Origin: "M"
+xref: Smiles: "CS(=O)CC[C@H](N-*)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
@@ -15715,6 +15931,7 @@ xref: Formula: "C 5 H 9 N 1 O 2 S 1"
 xref: MassAvg: "147.20"
 xref: MassMono: "147.035400"
 xref: Origin: "M"
+xref: Smiles: "C(*)(=O)[C@@H](N*)CC[S@](=O)C"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0480"
@@ -15723,7 +15940,7 @@ is_a: MOD:00719 ! L-methionine sulfoxide
 [Term]
 id: MOD:00721
 name: L-methionine (S)-sulfoxide
-def: "A protein modification that effectively oxygenates an L-methionine residue to L-methionine sulfoxide S-diastereomer." [PubMed:18688235]
+def: "A protein modification that effectively oxygenates an L-methionine residue to L-methionine sulfoxide S-diastereomer." [ChEBI:44120, PubMed:18688235]
 synonym: "MOD_RES Methionine (S)-sulfoxide" EXACT UniProt-feature []
 synonym: "S-MetO" EXACT PSI-MOD-label []
 xref: DiffAvg: "16.00"
@@ -15733,6 +15950,7 @@ xref: Formula: "C 5 H 9 N 1 O 2 S 1"
 xref: MassAvg: "147.20"
 xref: MassMono: "147.035400"
 xref: Origin: "M"
+xref: Smiles: "C(*)(=O)[C@@H](N*)CC[S@@](=O)C"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0481"
@@ -16370,6 +16588,7 @@ xref: Formula: "C 6 H 10 N 2 O 3 S 2"
 xref: MassAvg: "222.29"
 xref: MassMono: "222.013285"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSSC[C@H](N)C(=O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:312"
@@ -16539,6 +16758,8 @@ name: N-acetyl-L-asparagine
 def: "A protein modification that effectively converts an L-asparagine residue to N-acetyl-L-asparagine." [PubMed:18688235]
 comment: This modification has not been observed to occur naturally.
 synonym: "AcAsn" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 xref: DiffAvg: "42.04"
 xref: DiffFormula: "C 2 H 2 O 1"
 xref: DiffMono: "42.010565"
@@ -16548,6 +16769,7 @@ xref: MassMono: "156.053492"
 xref: Origin: "N"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 is_a: MOD:00903 ! modified L-asparagine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -16557,6 +16779,8 @@ name: N2-acetyl-L-histidine
 def: "A protein modification that effectively converts an L-histidine residue to N2-acetyl-L-histidine." [PubMed:18688235]
 comment: This modification has not been observed to occur naturally.
 synonym: "AcHis" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 xref: DiffAvg: "42.04"
 xref: DiffFormula: "C 2 H 2 O 1"
 xref: DiffMono: "42.010565"
@@ -16566,6 +16790,7 @@ xref: MassMono: "179.069477"
 xref: Origin: "H"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 is_a: MOD:00909 ! modified L-histidine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -16575,6 +16800,8 @@ name: N-acetyl-L-leucine
 def: "A protein modification that effectively converts an L-leucine residue to N-acetyl-L-leucine." [PubMed:18688235]
 comment: This modification has not been observed to occur naturally.
 synonym: "AcLeu" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 xref: DiffAvg: "42.04"
 xref: DiffFormula: "C 2 H 2 O 1"
 xref: DiffMono: "42.010565"
@@ -16584,6 +16811,7 @@ xref: MassMono: "156.102454"
 xref: Origin: "L"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 is_a: MOD:00911 ! modified L-leucine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -16615,6 +16843,8 @@ name: N-acetyl-L-phenylalanine
 def: "A protein modification that effectively converts an L-phenylalanine residue to N-acetyl-L-phenylalanine." [PubMed:18688235]
 comment: This modification has not been observed to occur naturally.
 synonym: "AcPhe" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 xref: DiffAvg: "42.04"
 xref: DiffFormula: "C 2 H 2 O 1"
 xref: DiffMono: "42.010565"
@@ -16624,6 +16854,7 @@ xref: MassMono: "189.078979"
 xref: Origin: "F"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 is_a: MOD:00914 ! modified L-phenylalanine residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -16633,6 +16864,8 @@ name: N2-acetyl-L-tryptophan
 def: "A protein modification that effectively converts an L-tryptophan residue to N2-acetyl-L-tryptophan." [PubMed:18688235]
 comment: This modification has not been observed to occur naturally.
 synonym: "AcTrp" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 xref: DiffAvg: "42.04"
 xref: DiffFormula: "C 2 H 2 O 1"
 xref: DiffMono: "42.010565"
@@ -16642,6 +16875,7 @@ xref: MassMono: "228.089878"
 xref: Origin: "W"
 xref: Source: "artifact"
 xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:1"
 is_a: MOD:00918 ! modified L-tryptophan residue
 is_a: MOD:01458 ! alpha-amino acetylated residue
 
@@ -17342,6 +17576,7 @@ xref: Formula: "C 21 H 39 N 1 O 2 S 1"
 xref: MassAvg: "369.61"
 xref: MassMono: "369.270151"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSC(=O)CCCCCCCCCCCCCCCCC)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0283"
@@ -18015,7 +18250,7 @@ is_a: MOD:01699 ! protonated residue
 [Term]
 id: MOD:00855
 name: N6,N6,N6-trimethyl-L-lysine (from L-lysinium residue)
-def: "A protein modification that effectively converts an L-lysinium (N6-protonated L-lysine) residue to an N6,N6,N6-trimethyl-L-lysine." [DeltaMass:0, OMSSA:15, PubMed:12590383, PubMed:3145979, PubMed:4304194, PubMed:6778808, PubMed:7093227, PubMed:8453381, Unimod:37#K]
+def: "A protein modification that effectively converts an L-lysinium (N6-protonated L-lysine) residue to an N6,N6,N6-trimethyl-L-lysine." [ChEBI:17311, DeltaMass:0, OMSSA:15, PubMed:12590383, PubMed:3145979, PubMed:4304194, PubMed:6778808, PubMed:7093227, PubMed:8453381, Unimod:37#K]
 comment: For amino acids residues, amine trimethylation can effectively only be accomplished with an aminium, protonated primary amino, group. This process accounts only for trimethylation and not protonation. The alternative N6Me3+Lys process (MOD:00083) accounts for both protonation and trimethylation.
 subset: PSI-MOD-slim
 synonym: "N6Me3Lys" EXACT PSI-MOD-label []
@@ -18028,6 +18263,7 @@ xref: Formula: "C 9 H 19 N 2 O 1"
 xref: MassAvg: "171.26"
 xref: MassMono: "171.149738"
 xref: Origin: "MOD:00854"
+xref: Smiles: "C[N+](C)(C)CCCC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:37"
@@ -19235,6 +19471,7 @@ xref: Formula: "C 9 H 14 N 4 O 2"
 xref: MassAvg: "210.23"
 xref: MassMono: "210.111676"
 xref: Origin: "R"
+xref: Smiles: "*N[C@@H](CCCNC1=NC(C)C(=O)N1)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:319"
@@ -21128,6 +21365,7 @@ xref: Formula: "C 9 H 8 N 1 O 2 Cl 1"
 xref: MassAvg: "197.62"
 xref: MassMono: "197.024356"
 xref: Origin: "Y"
+xref: Smiles: "*N[C@@H](Cc1ccc(O)c(Cl)c1)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:01028 ! monochlorinated L-tyrosine
@@ -21169,6 +21407,7 @@ xref: Formula: "C 5 H 6 N 1 O 2"
 xref: MassAvg: "112.11"
 xref: MassMono: "112.039853"
 xref: Origin: "X"
+xref: Smiles: "*-C(=O)[C@@H]1CCC(=O)N1"
 xref: Source: "none"
 xref: TermSpec: "N-term"
 is_a: MOD:00601 ! cyclized residue
@@ -21358,7 +21597,7 @@ relationship: derives_from MOD:01023 ! 3',5'-dibromo-L-tyrosine
 [Term]
 id: MOD:01060
 name: S-carboxamidomethyl-L-cysteine
-def: "A protein modification that effectively converts an L-cysteine residue to S-carboxamidomethyl-L-cysteine." [DeltaMass:196, DeltaMass:337, OMSSA:3, PubMed:10504701, PubMed:11510821, PubMed:12422359, PubMed:18306178, Unimod:4#C]
+def: "A protein modification that effectively converts an L-cysteine residue to S-carboxamidomethyl-L-cysteine." [ChEBI:29950, DeltaMass:196, DeltaMass:337, OMSSA:3, PubMed:10504701, PubMed:11510821, PubMed:12422359, PubMed:18306178, Unimod:4#C]
 comment: From DeltaMass: (name misspelled "Carboxyamidomethyl Cystenyl") [JSG].
 subset: PSI-MOD-slim
 synonym: "CamC" EXACT PSI-MOD-alternate []
@@ -21378,6 +21617,7 @@ xref: Formula: "C 5 H 8 N 2 O 2 S 1"
 xref: MassAvg: "160.20"
 xref: MassMono: "160.030649"
 xref: Origin: "C"
+xref: Smiles: "NC(=O)CSC[C@H](N-*)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:4"
@@ -21951,6 +22191,7 @@ xref: Formula: "C 8 H 14 N 2 O 3"
 xref: MassAvg: "186.21"
 xref: MassMono: "186.100442"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNCC(=O)O)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:6"
@@ -23282,6 +23523,7 @@ def: "A protein modification that effectively converts an L-threonine residue to
 subset: PSI-MOD-slim
 synonym: "(2S,3R)-3-(acetyloxy)-2-aminobutanoic acid" EXACT RESID-systematic []
 synonym: "ACT_SITE O-acetylthreonine intermediate" EXACT UniProt-feature []
+synonym: "Acetyl" RELATED PSI-MS-label []
 synonym: "Acetylation" RELATED Unimod-description []
 synonym: "MOD_RES O-acetylthreonine" EXACT UniProt-feature []
 synonym: "O-acetyl-L-threonine" EXACT RESID-name []
@@ -23295,6 +23537,7 @@ xref: Formula: "C 6 H 9 N 1 O 3"
 xref: MassAvg: "143.14"
 xref: MassMono: "143.058243"
 xref: Origin: "T"
+xref: Smiles: "C[C@@H](OC(C)=O)[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1"
@@ -23656,9 +23899,11 @@ is_a: MOD:00904 ! modified L-aspartic acid residue
 [Term]
 id: MOD:01186
 name: monoacetylated L-threonine
-def: "A protein modification that effectively converts an L-threonine residue to either N-acetyl-L-threonne, or O-acetyl-Lthreonine." [PubMed:18688235]
+def: "A protein modification that effectively converts an L-threonine residue to either N-acetyl-L-threonine, or O-acetyl-Lthreonine." [PubMed:18688235]
 subset: PSI-MOD-slim
 synonym: "AcThr" EXACT PSI-MOD-label []
+synonym: "Acetyl" RELATED PSI-MS-label []
+synonym: "Acetylation" RELATED Unimod-description []
 xref: DiffAvg: "42.04"
 xref: DiffFormula: "C 2 H 2 O 1"
 xref: DiffMono: "42.010565"
@@ -24342,6 +24587,7 @@ xref: Formula: "C 5 H 7 N 1 O 3"
 xref: MassAvg: "129.11"
 xref: MassMono: "129.042593"
 xref: Origin: "T"
+xref: Smiles: "C[C@@H](OC=O)[C@H](N-*)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:122"
@@ -24362,6 +24608,7 @@ xref: Formula: "C 4 H 5 N 1 O 3"
 xref: MassAvg: "115.09"
 xref: MassMono: "115.026943"
 xref: Origin: "S"
+xref: Smiles: "*-N[C@@H](COC=O)C(-*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:122"
@@ -24489,6 +24736,7 @@ xref: Formula: "C 9 H 8 N 1 O 2 I 1"
 xref: MassAvg: "289.07"
 xref: MassMono: "288.959976"
 xref: Origin: "Y"
+xref: Smiles: "Oc1ccc(C[C@H](N-*)C(-*)=O)cc1I"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:129"
@@ -24667,6 +24915,7 @@ xref: Formula: "C 12 H 21 N 1 O 3 S 1"
 xref: MassAvg: "259.37"
 xref: MassMono: "259.124215"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSC1CC(O)OC1CCCCC)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:53"
@@ -24686,6 +24935,7 @@ xref: Formula: "C 15 H 28 N 2 O 3"
 xref: MassAvg: "284.39"
 xref: MassMono: "284.209993"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC1CC(O)OC1CCCCC)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:53"
@@ -24705,6 +24955,7 @@ xref: Formula: "C 15 H 23 N 3 O 3"
 xref: MassAvg: "293.36"
 xref: MassMono: "293.173942"
 xref: Origin: "H"
+xref: Smiles: "*N[C@@H](Cc1cn(C2CC(O)OC2CCCCC)cn1)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:53"
@@ -24978,6 +25229,7 @@ xref: Formula: "C 9 H 14 N 2 O 2"
 xref: MassAvg: "182.22"
 xref: MassMono: "182.105528"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC=CC=O)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:319"
@@ -27818,7 +28070,7 @@ xref: Formula: "C 6 H 9 N 1 O 2"
 xref: MassAvg: "127.14"
 xref: MassMono: "127.063329"
 xref: Origin: "P"
-xref: Source: "artifactual"
+xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00915 ! modified L-proline residue
 relationship: has_functional_parent MOD:01024 ! monohydroxylated proline
@@ -27850,7 +28102,7 @@ is_a: MOD:02082 ! didehydrogenated and dehydrated residue
 [Term]
 id: MOD:01398
 name: N6-propanoyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-propanoyl-L-lysine." [PubMed:17267393, PubMed:17684016, PubMed:20715035, RESID:AA0475, Unimod:58#K]
+def: "A protein modification that effectively converts an L-lysine residue to N6-propanoyl-L-lysine." [ChEBI:138019, PubMed:17267393, PubMed:17684016, PubMed:20715035, RESID:AA0475, Unimod:58#K]
 comment: The binding of histone peptides with propanoylated lysine to nuclear bromodomain proteins is non-specific and weaker than binding to the corresponding acetylated lysine peptides [JSG].
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-6-(propanoylamino)hexanoic acid" EXACT RESID-systematic []
@@ -27860,6 +28112,9 @@ synonym: "N(zeta)-propanoyllysine" EXACT RESID-alternate []
 synonym: "N6-(1-oxopropyl)-L-lysine" EXACT RESID-alternate []
 synonym: "N6-propanoyl-L-lysine" EXACT RESID-name []
 synonym: "N6-propionyllysine" EXACT RESID-alternate []
+synonym: "Propionate labeling reagent light form (N-term & K)" RELATED Unimod-description []
+synonym: "Propionyl" RELATED PSI-MS-label []
+synonym: "Propionyl_light" RELATED Unimod-interim []
 synonym: "epsilon-propanoyl-L-lysine" EXACT RESID-alternate []
 synonym: "epsilon-propionyl-L-lysine" EXACT RESID-alternate []
 xref: DiffAvg: "56.06"
@@ -27869,6 +28124,7 @@ xref: Formula: "C 9 H 16 N 2 O 2"
 xref: MassAvg: "184.24"
 xref: MassMono: "184.121178"
 xref: Origin: "K"
+xref: Smiles: "CCC(=O)NCCCC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:58"
@@ -27896,6 +28152,7 @@ xref: Formula: "C 21 H 33 N 7 O 14 P 2"
 xref: MassAvg: "669.47"
 xref: MassMono: "669.156073"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCN[C@H]1O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]2O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]2O)[C@@H](O)[C@H]1O)C(*)=O"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0355"
@@ -32996,6 +33253,7 @@ xref: Formula: "C 19 H 28 N 6 O 15 P 2"
 xref: MassAvg: "642.40"
 xref: MassMono: "642.108788"
 xref: Origin: "T"
+xref: Smiles: "*N[C@H](C(*)=O)[C@@H](C)O[C@H]1O[C@H](COP(=O)(O)OP(=O)(O)OC[C@H]2O[C@@H](n3cnc4c(N)ncnc43)[C@H](O)[C@@H]2O)[C@@H](O)[C@H]1O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00752 ! adenosine diphosphoribosyl (ADP-ribosyl) modified residue
@@ -33220,6 +33478,7 @@ xref: Formula: "C 12 H 19 N 3 O 7"
 xref: MassAvg: "317.30"
 xref: MassMono: "317.122300"
 xref: Origin: "N"
+xref: Smiles: "*N[C@@H](CC(=O)NC1OC(CO)C(O)C(O)C1NC(C)=O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:43"
@@ -33248,6 +33507,7 @@ xref: Formula: "C 11 H 18 N 2 O 7"
 xref: MassAvg: "290.27"
 xref: MassMono: "290.111401"
 xref: Origin: "S"
+xref: Smiles: "*N[C@@H](COC1OC(CO)C(O)C(O)C1NC(C)=O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:43"
@@ -33274,6 +33534,7 @@ xref: Formula: "C 12 H 20 N 2 O 7"
 xref: MassAvg: "304.30"
 xref: MassMono: "304.127051"
 xref: Origin: "T"
+xref: Smiles: "*N[C@H](C(*)=O)[C@@H](C)OC1OC(CO)C(O)C(O)C1NC(C)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:43"
@@ -33319,6 +33580,7 @@ synonym: "N6-(aminocarbonyl)-L-lysine" EXACT PSI-MOD-alternate []
 synonym: "N6CbmLys" EXACT PSI-MOD-label []
 synonym: "carbamylk" EXACT OMSSA-label []
 synonym: "homocitrulline" EXACT PSI-MOD-alternate []
+xref: ChEBI: 144369
 xref: DiffAvg: "43.02"
 xref: DiffFormula: "C 1 H 1 N 1 O 1"
 xref: DiffMono: "43.005814"
@@ -33326,6 +33588,7 @@ xref: Formula: "C 7 H 13 N 3 O 2"
 xref: MassAvg: "171.20"
 xref: MassMono: "171.100777"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC(N)=O)C(*)=O"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:5"
@@ -33549,6 +33812,7 @@ xref: Formula: "C 4 H 6 N 2 O 3"
 xref: MassAvg: "130.10"
 xref: MassMono: "130.037842"
 xref: Origin: "N"
+xref: Smiles: "*N[C@H](C(*)=O)C(O)C(N)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:35"
@@ -35293,6 +35557,7 @@ xref: Formula: "C 14 H 26 N 2 O 2"
 xref: MassAvg: "254.37"
 xref: MassMono: "254.199428"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC(=O)CCCCCCC)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00666 ! octanoylated residue
@@ -35313,6 +35578,7 @@ xref: Formula: "C 15 H 17 N 3 O 3"
 xref: MassAvg: "287.31"
 xref: MassMono: "287.126991"
 xref: Origin: "Q"
+xref: Smiles: "*N[C@@H](CCC(=O)NCCc1c[nH]c2ccc(O)cc12)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00907 ! modified L-glutamine residue
@@ -35427,11 +35693,12 @@ relationship: derives_from MOD:00037 ! 5-hydroxy-L-lysine
 [Term]
 id: MOD:01781
 name: N6-butanoyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-butanoyl-L-lysine." [PubMed:17267393, PubMed:20715035, RESID:AA0532, Unimod:1289]
+def: "A protein modification that effectively converts an L-lysine residue to N6-butanoyl-L-lysine." [ChEBI:137955, PubMed:17267393, PubMed:20715035, RESID:AA0532, Unimod:1289]
 comment: The binding of histone peptides with butanoylated lysine to nuclear bromodomain proteins is non-specific and weaker than binding to the corresponding acetylated lysine peptides [JSG].
 synonym: "(2S)-2-amino-6-(butanoylamino)hexanoic acid" EXACT RESID-systematic []
 synonym: "(2S)-2-azanyl-6-(butanoylamino)hexanoic acid" EXACT RESID-alternate []
 synonym: "2-amino-6-butyrylaminocaproic acid" EXACT RESID-alternate []
+synonym: "Butyryl" RELATED Unimod-description []
 synonym: "MOD_RES N6-butyryllysine" EXACT UniProt-feature []
 synonym: "N(zeta)-butanoyllysine" EXACT RESID-alternate []
 synonym: "N6-(1-oxobutyl)-L-lysine" EXACT RESID-alternate []
@@ -35446,6 +35713,7 @@ xref: Formula: "C 10 H 18 N 2 O 2"
 xref: MassAvg: "198.26"
 xref: MassMono: "198.136828"
 xref: Origin: "K"
+xref: Smiles: "C(*)([C@@H](N*)CCCCNC(CCC)=O)=O"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1289"
@@ -35555,8 +35823,11 @@ synonym: "3'-nitro-L-tyrosine" EXACT RESID-name []
 synonym: "3-nitro-L-tyrosine" EXACT RESID-alternate []
 synonym: "3-nitrotyrosine" EXACT RESID-alternate []
 synonym: "MOD_RES 3'-Nitrotyrosine" EXACT UniProt-feature []
+synonym: "Nitro" RELATED Unimod-interim []
+synonym: "Oxidation to nitro" RELATED Unimod-description []
 synonym: "m-nitrotyrosine" EXACT RESID-alternate []
 synonym: "meta-nitrotyrosine" EXACT RESID-alternate []
+xref: ChEBI: 155899
 xref: DiffAvg: "45.00"
 xref: DiffFormula: "H -1 N 1 O 2"
 xref: DiffMono: "44.985078"
@@ -35564,8 +35835,10 @@ xref: Formula: "C 9 H 8 N 2 O 4"
 xref: MassAvg: "208.17"
 xref: MassMono: "208.048407"
 xref: Origin: "Y"
+xref: Smiles: "*N[C@@H](Cc1ccc(O)c([N+](=O)[O-])c1)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
+xref: Unimod: "Unimod:354"
 xref: uniprot.ptm: "PTM-0434"
 is_a: MOD:01352 ! nitrated L-tyrosine
 
@@ -36179,7 +36452,7 @@ is_a: MOD:02057 ! crosslinked L-tryptophan residue
 [Term]
 id: MOD:01819
 name: N6-succinyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-succinyl-L-lysine." [PubMed:16582421, PubMed:21151122, RESID:AA0545]
+def: "A protein modification that effectively converts an L-lysine residue to N6-succinyl-L-lysine." [PubMed:16582421, PubMed:21151122, RESID:AA0545, Unimod:64#K]
 subset: PSI-MOD-slim
 synonym: "(2S)-2-amino-6-[(3-carboxypropanoyl)amino]hexanoic acid" EXACT RESID-systematic []
 synonym: "2-azanyl-6-[(3-carboxypropanoyl)azanyl]hexanoic acid" EXACT RESID-alternate []
@@ -36187,6 +36460,9 @@ synonym: "4-[[(5S)-5-amino-6-hydroxy-6-oxohexyl]amino]-4-oxobutanoate" EXACT RES
 synonym: "MOD_RES N6-succinyllysine" EXACT UniProt-feature []
 synonym: "N(epsilon)-(succinyl)lysine" EXACT RESID-alternate []
 synonym: "N6-succinyl-L-lysine" EXACT RESID-name []
+synonym: "Suc_anh_light" RELATED Unimod-interim []
+synonym: "Succinic anhydride labeling reagent light form (N-term & K)" RELATED Unimod-description []
+synonym: "Succinyl" RELATED PSI-MS-label []
 synonym: "succinyllysine" EXACT RESID-alternate []
 xref: DiffAvg: "100.07"
 xref: DiffFormula: "C 4 H 4 O 3"
@@ -36195,8 +36471,10 @@ xref: Formula: "C 10 H 16 N 2 O 4"
 xref: MassAvg: "228.24"
 xref: MassMono: "228.111007"
 xref: Origin: "K"
+xref: Smiles: "OC(=O)CCC(=O)NCCCC[C@H](N-*)C(-*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
+xref: Unimod: "Unimod:64"
 xref: uniprot.ptm: "PTM-0438"
 is_a: MOD:01029 ! succinylated residue
 is_a: MOD:01875 ! N6-acylated L-lysine
@@ -37472,6 +37750,7 @@ xref: Formula: "C 7 H 9 N 1 O 5 S 1"
 xref: MassAvg: "219.22"
 xref: MassMono: "219.020144"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CS[C@H](CC(=O)O)C(=O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:957"
@@ -37520,10 +37799,12 @@ is_a: MOD:02052 ! crosslinked L-methionine residue
 [Term]
 id: MOD:01892
 name: N6-crotonyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-crotonyl-L-lysine." [PubMed:21925322, RESID:AA0567]
+def: "A protein modification that effectively converts an L-lysine residue to N6-crotonyl-L-lysine." [ChEBI:137954, PubMed:21925322, RESID:AA0567, Unimod:1363#K]
 synonym: "(2S)-2-amino-6-[(2E)-but-2-enamido]hexanoic acid" EXACT RESID-alternate []
 synonym: "(2S)-2-amino-6-[(2E)-but-2-enoylamino]hexanoic acid" EXACT RESID-systematic []
 synonym: "(2S)-2-azanyl-6-[(2E)-but-2-enoylazanyl]hexanoic acid" EXACT RESID-alternate []
+synonym: "Crotonyl" RELATED Unimod-interim []
+synonym: "Crotonylation" RELATED Unimod-description []
 synonym: "MOD_RES N6-crotonyl-L-lysine" EXACT UniProt-feature []
 synonym: "N(epsilon)-crotonyllysine" EXACT RESID-alternate []
 synonym: "N6-(E)-crotonyllysine" EXACT RESID-alternate []
@@ -37538,18 +37819,22 @@ xref: Formula: "C 10 H 16 N 2 O 2"
 xref: MassAvg: "196.25"
 xref: MassMono: "196.121178"
 xref: Origin: "K"
+xref: Smiles: "CC=CC(=O)NCCCC[C@H](N-*)C(-*)=O"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
+xref: Unimod: "Unimod:1363"
 xref: uniprot.ptm: "PTM-0475"
 is_a: MOD:01875 ! N6-acylated L-lysine
 
 [Term]
 id: MOD:01893
 name: N6-malonyl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-malonyl-L-lysine." [PubMed:21908771, PubMed:8349414, RESID:AA0568]
+def: "A protein modification that effectively converts an L-lysine residue to N6-malonyl-L-lysine." [PubMed:21908771, PubMed:8349414, RESID:AA0568, Unimod:747#K]
 synonym: "(2S)-2-amino-6-[(carboxyacetyl)amino]hexanoic acid" EXACT RESID-systematic []
 synonym: "2-azanyl-6-[(carboxyacetyl)azanyl]hexanoic acid" EXACT RESID-alternate []
 synonym: "MOD_RES N6-malonyllysine" EXACT UniProt-feature []
+synonym: "Malonyl" RELATED Unimod-interim []
+synonym: "Malonylation" RELATED Unimod-description []
 synonym: "N(epsilon)-(malonyl)lysine" EXACT RESID-alternate []
 synonym: "N6-(carboxyacetyl)lysine" EXACT RESID-alternate []
 synonym: "N6-malonyl-L-lysine" EXACT RESID-name []
@@ -37562,8 +37847,10 @@ xref: Formula: "C 9 H 14 N 2 O 4"
 xref: MassAvg: "214.22"
 xref: MassMono: "214.095357"
 xref: Origin: "K"
+xref: Smiles: "OC(=O)CC(=O)NCCCC[C@H](N-*)C(-*)=O"
 xref: Source: "hypothetical"
 xref: TermSpec: "none"
+xref: Unimod: "Unimod:747"
 xref: uniprot.ptm: "PTM-0467"
 is_a: MOD:01875 ! N6-acylated L-lysine
 
@@ -38032,6 +38319,7 @@ xref: Formula: "C 17 H 22 N 2 O 7"
 xref: MassAvg: "366.37"
 xref: MassMono: "366.142701"
 xref: Origin: "Y"
+xref: Smiles: "*N[C@@H](Cc1ccc(OC2O[C@H](CO)[C@H](O)[C@H](O)[C@H]2NC(C)=O)cc1)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0570"
@@ -38150,7 +38438,7 @@ xref: Formula: "C 4 H 5 N 1 O 3"
 xref: MassAvg: "115.09"
 xref: MassMono: "115.026943"
 xref: Origin: "D"
-xref: Source: "artifactual"
+xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00904 ! modified L-aspartic acid residue
 is_a: MOD:01942 ! D-aspartic acid
@@ -38348,7 +38636,7 @@ xref: Formula: "C 4 H 5 N 1 O 3"
 xref: MassAvg: "115.09"
 xref: MassMono: "115.026943"
 xref: Origin: "N"
-xref: Source: "artifactual"
+xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00903 ! modified L-asparagine residue
 is_a: MOD:01942 ! D-aspartic acid
@@ -38605,7 +38893,7 @@ xref: Formula: "C 4 H 5 N 1 O 3"
 xref: MassAvg: "115.09"
 xref: MassMono: "115.026943"
 xref: Origin: "X"
-xref: Source: "artifactual"
+xref: Source: "artifact"
 xref: TermSpec: "none"
 is_a: MOD:00664 ! stereoisomerized residue
 is_a: MOD:00859 ! modified residue that can arise from different natural residues
@@ -38749,6 +39037,7 @@ xref: Formula: "C 10 H 14 N 4 O 2"
 xref: MassAvg: "222.24"
 xref: MassMono: "222.111676"
 xref: Origin: "Q"
+xref: Smiles: "*N[C@@H](CCC(=O)NCCc1c[nH]cn1)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0488"
@@ -39271,6 +39560,7 @@ xref: Formula: "C 9 H 17 N 2 O 7 P 1"
 xref: MassAvg: "296.21"
 xref: MassMono: "296.077338"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC(=O)[C@H](O)COP(=O)(O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:00861 ! phosphorus containing modified residue
@@ -39295,6 +39585,7 @@ xref: Formula: "C 6 H 12 N 1 O 1 S 1"
 xref: MassAvg: "146.23"
 xref: MassMono: "146.063960"
 xref: Origin: "M"
+xref: Smiles: "*N[C@@H](CC[S+](C)C)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0636"
@@ -41032,6 +41323,7 @@ xref: Formula: "C 8 H 11 N 1 O 5 S 1"
 xref: MassAvg: "233.24"
 xref: MassMono: "233.035794"
 xref: Origin: "C"
+xref: Smiles: "*N[C@@H](CSCC(CC(=O)O)C(=O)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: uniprot.ptm: "PTM-0676"
@@ -41042,7 +41334,9 @@ is_a: MOD:00905 ! modified L-cysteine residue
 id: MOD:02093
 name: N6-(2-hydroxyisobutanoyl)-L-lysine
 def: "A protein modification that effectively converts an L-lysine residue to N6-(2-hydroxyisobutanoyl)-L-lysine." [ChEBI:144968, PubMed:24681537, PubMed:29775581, Unimod:1849]
+synonym: "2-hydroxyisobutyrylation" RELATED Unimod-description []
 synonym: "MOD_RES N6-(2-hydroxyisobutyryl)lysine" EXACT UniProt-feature []
+synonym: "hydroxyisobutyryl" RELATED Unimod-interim []
 xref: DiffAvg: "86.09"
 xref: DiffFormula: "C 4 H 6 O 2"
 xref: DiffMono: "86.036779"
@@ -41050,6 +41344,7 @@ xref: Formula: "C 10 H 18 N 2 O 3"
 xref: MassAvg: "214.26"
 xref: MassMono: "214.131742"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC(=O)C(C)(C)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:1849"
@@ -41059,7 +41354,7 @@ is_a: MOD:01875 ! N6-acylated L-lysine
 [Term]
 id: MOD:02094
 name: N6-((3R)-3-hydroxybutanoyl)-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-((3R)-3-hydroxybutanoyl)-L-lysine." [ChEBI:149490, PubMed:27105115]
+def: "A protein modification that effectively converts an L-lysine residue to N6-((3R)-3-hydroxybutanoyl)-L-lysine." [ChEBI:149490, PubMed:27105115, Unimod:1849]
 synonym: "MOD_RES N6-(beta-hydroxybutyryl)lysine" EXACT UniProt-feature []
 xref: DiffAvg: "86.09"
 xref: DiffFormula: "C 4 H 6 O 2"
@@ -41068,15 +41363,20 @@ xref: Formula: "C 10 H 18 N 2 O 3"
 xref: MassAvg: "214.26"
 xref: MassMono: "214.131742"
 xref: Origin: "K"
+xref: Smiles: "*N[C@@H](CCCCNC(=O)C[C@@H](C)O)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
+xref: Unimod: "Unimod:1849"
 xref: uniprot.ptm: "PTM-0499"
 is_a: MOD:01875 ! N6-acylated L-lysine
 
 [Term]
 id: MOD:02095
 name: N6-glutaryl-L-lysine
-def: "A protein modification that effectively converts an L-lysine residue to N6-glutaryl-L-lysine." [ChEBI:87828, PubMed:24703693]
+def: "A protein modification that effectively converts an L-lysine residue to N6-glutaryl-L-lysine." [ChEBI:87828, PubMed:24703693, Unimod:1848#K]
+comment: The Unimod interim name has a typo in it, which should now stay for backwards compatibility.
+synonym: "Gluratylation" RELATED Unimod-interim []
+synonym: "Glutarylation" RELATED Unimod-description []
 synonym: "MOD_RES N6-glutaryllysine" EXACT UniProt-feature []
 xref: DiffAvg: "114.10"
 xref: DiffFormula: "C 5 H 6 O 3"
@@ -41085,8 +41385,10 @@ xref: Formula: "C 11 H 18 N 2 O 4"
 xref: MassAvg: "242.27"
 xref: MassMono: "242.126657"
 xref: Origin: "K"
+xref: Smiles: "OC(=O)CCCC(=O)NCCCC[C@H](N*)C(*)=O"
 xref: Source: "natural"
 xref: TermSpec: "none"
+xref: Unimod: "Unimod:1848"
 xref: uniprot.ptm: "PTM-0487"
 is_a: MOD:01875 ! N6-acylated L-lysine
 
