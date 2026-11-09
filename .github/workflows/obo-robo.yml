@@ -68,7 +68,7 @@ jobs:
         git config --global user.name 'OboRobo'
         git config --global user.email 'oborobo@users.noreply.github.com'
         git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}
-        git commit -am "Formatting and version bump"
+        git commit -am "Formatting, version bump, and Obo newstyle and Owl generation"
         git push
 
     - name: Create release
