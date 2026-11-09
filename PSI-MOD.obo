@@ -1,6 +1,6 @@
 format-version: 1.2
-data-version: 1.040.0
-date: 27:10:2026 10:00
+data-version: 1.039.0
+date: 18:09:2026 18:00
 ontology: mod
 saved-by: Douwe Schulte
 subsetdef: PSI-MOD-slim "subset of protein modifications"
@@ -389,7 +389,7 @@ xref: Origin: "I"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
-is_a: MOD:00306 ! residues isobaric at 113.084064 Da
+is_a: MOD:02119 ! L-leucine isomer
 
 [Term]
 id: MOD:00020
@@ -413,7 +413,7 @@ xref: Origin: "L"
 xref: Source: "natural"
 xref: TermSpec: "none"
 is_a: MOD:01441 ! natural, standard, encoded residue
-is_a: MOD:00306 ! residues isobaric at 113.084064 Da
+is_a: MOD:02119 ! L-leucine isomer
 
 [Term]
 id: MOD:00021
@@ -7762,7 +7762,7 @@ is_a: MOD:02072 ! metal or metal cluster coordinated L-serine residue
 [Term]
 id: MOD:00306
 name: residues isobaric at 113.084064 Da
-def: "An L-isoleucine or L-leucine amino acid." [PubMed:10523135, RESID:AA0301]
+def: "Natural or modified residues with a mass of 113.084064 Da." [PubMed:10523135, RESID:AA0301]
 subset: PSI-MOD-slim
 synonym: "L-isoleucine or L-leucine" EXACT RESID-name []
 synonym: "Xle" EXACT PSI-MOD-label []
@@ -7772,10 +7772,11 @@ xref: DiffMono: "0.000000"
 xref: Formula: "C 6 H 11 N 1 O 1"
 xref: MassAvg: "113.16"
 xref: MassMono: "113.084064"
-xref: Origin: "J"
+xref: Origin: "X"
 xref: Source: "none"
 xref: TermSpec: "none"
-is_a: MOD:02118 ! protein modification categorized by isomeric sets
+is_obsolete: true
+replaced_by: MOD:02119
 
 [Term]
 id: MOD:00307
@@ -41460,6 +41461,22 @@ id: MOD:02118
 name: protein modification categorized by isomeric sets
 def: "Modified amino acid residues groups into isomerics sets to explicitely signal uncertainty." []
 is_a: MOD:00538 ! protein modification categorized by isobaric sets
+
+[Term]
+id: MOD:02119
+name: L-leucine isomer
+def: "An L-isoleucine or L-leucine amino acid." [PubMed:10523135, RESID:AA0301, https://www.insdc.org/submitting-standards/feature-table/#7.4.3]
+subset: PSI-MOD-slim
+xref: DiffAvg: "0.00"
+xref: DiffFormula: ""
+xref: DiffMono: "0.000000"
+xref: Formula: "C 6 H 11 N 1 O 1"
+xref: MassAvg: "113.16"
+xref: MassMono: "113.084064"
+xref: Origin: "J"
+xref: Source: "none"
+xref: TermSpec: "none"
+is_a: MOD:02118 ! protein modification categorized by isomeric sets
 
 [Typedef]
 id: contains
