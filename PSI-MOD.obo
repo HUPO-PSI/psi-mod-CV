@@ -31,6 +31,32 @@ remark: Annotation note 09 - The Open Mass Spectrometry Search Algorithm, OMSSA,
 remark: Annotation note 10 - GNOme is the Glycan Naming and Subsumption Ontology (https://gnome.glyomics.org/), an ontology for the support of glycomics.  PSI-MOD does not have all possible glycans in its entries, just the ones that are noted to be on proteins and have been requested for addition.  GNOme uses GlyTouCan (http://glytoucan.org/) to provide stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations).
 idspace: uniprot.ptm https://bioregistry.io/uniprot.ptm "UniProt Post-Translational Modification"
 
+[Typedef]
+id: contains
+name: contains
+def: "'Entity A' contains 'Entity B' implies that 'Entity B' is a part of the structure of 'Entity A'." [PubMed:18688235]
+comment: The inverse relationship to "part of".
+is_transitive: true
+
+[Typedef]
+id: derives_from
+name: derives from
+def: "'Entity A' derives_from 'Entity B' implies that 'Entity A' is chemically derived from 'Entity B'." [PubMed:18688235]
+is_transitive: true
+
+[Typedef]
+id: has_functional_parent
+name: has functional parent
+def: "'Entity A' has_functional_parent 'Entity B' implies that 'Entity B' has at least one chacteristic group from which 'Entity A' can be derived by functional modification." [PubMed:18688235]
+comment: This relationship indicates that the formula and mass of the child are not inherited from the mass of the parent.
+is_transitive: true
+
+[Typedef]
+id: part_of
+name: part of
+def: "'Entity A' part_of 'Entity B' implies that 'Entity A' is a part of the structure of 'Entity B'." [PubMed:18688235]
+is_transitive: true
+
 [Term]
 id: MOD:00000
 name: protein modification
@@ -41428,6 +41454,119 @@ synonym: "ModDAsn" EXACT PSI-MOD-label []
 is_a: MOD:00203 ! D-asparagine
 
 [Term]
+id: MOD:02098
+name: residue modified by radical mechanism
+def: "A chemical transformation driven by a radical reaction." [PubMed:14670063, doi:https://pubs.acs.org/doi/10.1021/ac035104h]
+
+[Term]
+id: MOD:02099
+name: residue modified by radical hydroxylation
+def: "A hydroxyl substition induced by a radical reaction." [PubMed:17683160]
+is_a: MOD:02098 ! residue modified by radical mechanism
+
+[Term]
+id: MOD:02100
+name: N2-Formyl-L-asparagine
+def: "A protein modification that effectively transforms an L-histidine residue to N2-formyl asparagine" [doi:10.1016/0040-4039(91)80099-R, osti.article:6518101]
+subset: PSI-MOD-slim
+synonym: "(2S)-4-amino-2-formamido-4-oxobutanoic acid" EXACT PSI-MOD-label []
+synonym: "Formylasparagine" EXACT PSI-MOD-label []
+synonym: "Nω-formyl asparagine" EXACT PSI-MOD-label []
+xref: DiffAvg: "4.97"
+xref: DiffFormula: "C -1 H -1 N -1 O 2"
+xref: DiffMono: "4.978930"
+xref: Formula: "C 5 H 6 N 2 O 3"
+xref: MassAvg: "142.11"
+xref: MassMono: "142.037842"
+xref: Origin: "H"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:1917"
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02099 ! residue modified by radical hydroxylation
+
+[Term]
+id: MOD:02101
+name: 2-Amino-4,5-dioxopentanoic acid
+def: "A protein modification that effectively transforms a histidine side chain to that of 2-Amino-4,5-dioxopentanoic acid" [PubMed:14670063]
+subset: PSI-MOD-slim
+xref: DiffAvg: "-10.04"
+xref: DiffFormula: "C -1 H -2 N -2 O 2"
+xref: DiffMono: "-10.031969"
+xref: Formula: "C 5 H 5 N 1 O 3"
+xref: MassAvg: "127.10"
+xref: MassMono: "127.026943"
+xref: Origin: "H"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02099 ! residue modified by radical hydroxylation
+
+[Term]
+id: MOD:02102
+name: 2-hydroxy-L-phenylalanine
+def: "A protein modification that effectively converts a L-Phenylalanine residue to 2-hydroxy-L-phenylalanine." [PubMed:8509373]
+subset: PSI-MOD-slim
+synonym: "2-amino-3-(2-hydroxyphenyl)propanoic acid" EXACT PSI-MOD-label []
+synonym: "DL-o-Tyrosine" EXACT PSI-MOD-label []
+synonym: "O-Tyrosine" EXACT PSI-MOD-label []
+synonym: "o-tyrosine" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "16.00"
+xref: DiffFormula: "O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 9 H 9 N 1 O 2"
+xref: MassAvg: "163.17"
+xref: MassMono: "163.063329"
+xref: Origin: "F"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:35"
+is_a: MOD:02099 ! residue modified by radical hydroxylation
+is_a: MOD:02116 ! monohydroxylated phenylalanine
+
+[Term]
+id: MOD:02104
+name: 4-hydroxy-L-phenylalanine
+def: "A protein modification that effectively substitutes a hydroxy group at position 4 of L-phenylalanine" [PubMed:7408053]
+subset: PSI-MOD-slim
+synonym: "(2S)-2-amino-3-(4-hydroxyphenyl)propanoic acid" EXACT PSI-MOD-alternate []
+synonym: "L-Tyrosine" EXACT PSI-MOD-alternate []
+synonym: "L-tyrosine" EXACT PSI-MOD-alternate []
+synonym: "Phe->Tyr" EXACT PSI-MOD-alternate []
+xref: DiffAvg: "16.00"
+xref: DiffFormula: "O 1"
+xref: DiffMono: "15.994915"
+xref: Formula: "C 9 H 9 N 1 O 2"
+xref: MassAvg: "163.17"
+xref: MassMono: "163.063329"
+xref: Origin: "F"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:35"
+is_a: MOD:00914 ! modified L-phenylalanine residue
+is_a: MOD:02116 ! monohydroxylated phenylalanine
+
+[Term]
+id: MOD:02105
+name: L-2,5-dihydroxyphenylalanine (Phe)
+def: "A protein modification that effectively converts an L-tyrosine residue to L-2',5'-dihydroxyphenylalanine." [doi:10.1016/j.radphyschem.2003.11.008]
+subset: PSI-MOD-slim
+synonym: "2,5-Dihydroxyphenylalanine" EXACT PSI-MOD-label []
+synonym: "2,5-Dioxyphenylalanine" EXACT PSI-MOD-label []
+synonym: "2-amino-3-(2,5-dihydroxyphenyl)propanoic acid" EXACT PSI-MOD-label []
+xref: DiffAvg: "32.00"
+xref: DiffFormula: "O 2"
+xref: DiffMono: "31.989829"
+xref: Formula: "C 9 H 9 N 1 O 3"
+xref: MassAvg: "179.17"
+xref: MassMono: "179.058243"
+xref: Origin: "F"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:00428 ! dihydroxylated residue
+is_a: MOD:00914 ! modified L-phenylalanine residue
+
+[Term]
 id: MOD:02106
 name: 4-hydroxy-L-tryptophan
 def: "A protein modification that effectively converts an L-tryptophan residue to a 4-hydroxy-L-tryptophan." [PMID:32911085]
@@ -41612,119 +41751,6 @@ xref: Unimod: "Unimod:425"
 is_a: MOD:00918 ! modified L-tryptophan residue
 
 [Term]
-id: MOD:02098
-name: residue modified by radical mechanism
-def: "A chemical transformation driven by a radical reaction." [PubMed:14670063, doi:https://pubs.acs.org/doi/10.1021/ac035104h]
-
-[Term]
-id: MOD:02099
-name: residue modified by radical hydroxylation
-def: "A hydroxyl substition induced by a radical reaction." [PubMed:17683160]
-is_a: MOD:02098 ! residue modified by radical mechanism
-
-[Term]
-id: MOD:02100
-name: N2-Formyl-L-asparagine
-def: "A protein modification that effectively transforms an L-histidine residue to N2-formyl asparagine" [doi:10.1016/0040-4039(91)80099-R, osti.article:6518101]
-subset: PSI-MOD-slim
-synonym: "(2S)-4-amino-2-formamido-4-oxobutanoic acid" EXACT PSI-MOD-label []
-synonym: "Formylasparagine" EXACT PSI-MOD-label []
-synonym: "Nω-formyl asparagine" EXACT PSI-MOD-label []
-xref: DiffAvg: "4.97"
-xref: DiffFormula: "C -1 H -1 N -1 O 2"
-xref: DiffMono: "4.978930"
-xref: Formula: "C 5 H 6 N 2 O 3"
-xref: MassAvg: "142.11"
-xref: MassMono: "142.037842"
-xref: Origin: "H"
-xref: Source: "artifact"
-xref: TermSpec: "none"
-xref: Unimod: "Unimod:1917"
-is_a: MOD:00909 ! modified L-histidine residue
-is_a: MOD:02099 ! residue modified by radical hydroxylation
-
-[Term]
-id: MOD:02101
-name: 2-Amino-4,5-dioxopentanoic acid
-def: "A protein modification that effectively transforms a histidine side chain to that of 2-Amino-4,5-dioxopentanoic acid" [PubMed:14670063]
-subset: PSI-MOD-slim
-xref: DiffAvg: "-10.04"
-xref: DiffFormula: "C -1 H -2 N -2 O 2"
-xref: DiffMono: "-10.031969"
-xref: Formula: "C 5 H 5 N 1 O 3"
-xref: MassAvg: "127.10"
-xref: MassMono: "127.026943"
-xref: Origin: "H"
-xref: Source: "artifact"
-xref: TermSpec: "none"
-is_a: MOD:00909 ! modified L-histidine residue
-is_a: MOD:02099 ! residue modified by radical hydroxylation
-
-[Term]
-id: MOD:02102
-name: 2-hydroxy-L-phenylalanine
-def: "A protein modification that effectively converts a L-Phenylalanine residue to 2-hydroxy-L-phenylalanine." [PubMed:8509373]
-subset: PSI-MOD-slim
-synonym: "2-amino-3-(2-hydroxyphenyl)propanoic acid" EXACT PSI-MOD-label []
-synonym: "DL-o-Tyrosine" EXACT PSI-MOD-label []
-synonym: "O-Tyrosine" EXACT PSI-MOD-label []
-synonym: "o-tyrosine" EXACT PSI-MOD-alternate []
-xref: DiffAvg: "16.00"
-xref: DiffFormula: "O 1"
-xref: DiffMono: "15.994915"
-xref: Formula: "C 9 H 9 N 1 O 2"
-xref: MassAvg: "163.17"
-xref: MassMono: "163.063329"
-xref: Origin: "F"
-xref: Source: "artifact"
-xref: TermSpec: "none"
-xref: Unimod: "Unimod:35"
-is_a: MOD:02099 ! residue modified by radical hydroxylation
-is_a: MOD:02116 ! monohydroxylated phenylalanine
-
-[Term]
-id: MOD:02104
-name: 4-hydroxy-L-phenylalanine
-def: "A protein modification that effectively substitutes a hydroxy group at position 4 of L-phenylalanine" [PubMed:7408053]
-subset: PSI-MOD-slim
-synonym: "(2S)-2-amino-3-(4-hydroxyphenyl)propanoic acid" EXACT PSI-MOD-alternate []
-synonym: "L-Tyrosine" EXACT PSI-MOD-alternate []
-synonym: "L-tyrosine" EXACT PSI-MOD-alternate []
-synonym: "Phe->Tyr" EXACT PSI-MOD-alternate []
-xref: DiffAvg: "16.00"
-xref: DiffFormula: "O 1"
-xref: DiffMono: "15.994915"
-xref: Formula: "C 9 H 9 N 1 O 2"
-xref: MassAvg: "163.17"
-xref: MassMono: "163.063329"
-xref: Origin: "F"
-xref: Source: "artifact"
-xref: TermSpec: "none"
-xref: Unimod: "Unimod:35"
-is_a: MOD:00914 ! modified L-phenylalanine residue
-is_a: MOD:02116 ! monohydroxylated phenylalanine
-
-[Term]
-id: MOD:02105
-name: L-2,5-dihydroxyphenylalanine (Phe)
-def: "A protein modification that effectively converts an L-tyrosine residue to L-2',5'-dihydroxyphenylalanine." [doi:10.1016/j.radphyschem.2003.11.008]
-subset: PSI-MOD-slim
-synonym: "2,5-Dihydroxyphenylalanine" EXACT PSI-MOD-label []
-synonym: "2,5-Dioxyphenylalanine" EXACT PSI-MOD-label []
-synonym: "2-amino-3-(2,5-dihydroxyphenyl)propanoic acid" EXACT PSI-MOD-label []
-xref: DiffAvg: "32.00"
-xref: DiffFormula: "O 2"
-xref: DiffMono: "31.989829"
-xref: Formula: "C 9 H 9 N 1 O 3"
-xref: MassAvg: "179.17"
-xref: MassMono: "179.058243"
-xref: Origin: "F"
-xref: Source: "artifact"
-xref: TermSpec: "none"
-is_a: MOD:00428 ! dihydroxylated residue
-is_a: MOD:00914 ! modified L-phenylalanine residue
-
-[Term]
 id: MOD:02116
 name: monohydroxylated phenylalanine
 def: "A protein modification that effectively converts an L-phenylalanine residue to a monohydroxylated phenylalanine." [Unimod:35#F]
@@ -41779,29 +41805,3 @@ xref: Origin: "J"
 xref: Source: "none"
 xref: TermSpec: "none"
 is_a: MOD:02118 ! protein modification categorized by isomeric sets
-
-[Typedef]
-id: contains
-name: contains
-def: "'Entity A' contains 'Entity B' implies that 'Entity B' is a part of the structure of 'Entity A'." [PubMed:18688235]
-comment: The inverse relationship to "part of".
-is_transitive: true
-
-[Typedef]
-id: derives_from
-name: derives from
-def: "'Entity A' derives_from 'Entity B' implies that 'Entity A' is chemically derived from 'Entity B'." [PubMed:18688235]
-is_transitive: true
-
-[Typedef]
-id: has_functional_parent
-name: has functional parent
-def: "'Entity A' has_functional_parent 'Entity B' implies that 'Entity B' has at least one chacteristic group from which 'Entity A' can be derived by functional modification." [PubMed:18688235]
-comment: This relationship indicates that the formula and mass of the child are not inherited from the mass of the parent.
-is_transitive: true
-
-[Typedef]
-id: part_of
-name: part of
-def: "'Entity A' part_of 'Entity B' implies that 'Entity A' is a part of the structure of 'Entity B'." [PubMed:18688235]
-is_transitive: true
