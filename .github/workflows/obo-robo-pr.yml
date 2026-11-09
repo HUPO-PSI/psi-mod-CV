@@ -39,12 +39,7 @@ jobs:
       run: |
         echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix -r ${{ steps.commit.outputs.oldest }} HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT 
 
-    - name: Lint main OBO file
-      id: lint
-      run: |
-        echo "result=$(./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr)" >> $GITHUB_OUTPUT
-
-    - name: Fix & format OBO file
+    - name: Lint, fix & format OBO file
       id: fix
       run: |
         echo "result=$(./.github/binaries/obo-robo fix PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr)" >> $GITHUB_OUTPUT
@@ -63,7 +58,7 @@ jobs:
         git push
     
     - name: Comment
-      run: gh pr comment ${{ github.event.number }} -b '${{ steps.lint.outputs.result }}${{ steps.fix.outputs.result }}'
+      run: gh pr comment ${{ github.event.number }} -b '${{ steps.fix.outputs.result }}'
       env:
         GH_TOKEN: ${{ github.token }}
 

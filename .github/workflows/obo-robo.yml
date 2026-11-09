@@ -30,16 +30,12 @@ jobs:
             echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix ${{ github.event.before }} ${{ github.event.after }} PSI-MOD.obo  | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT
           fi
 
-    - name: Lint main OBO file
-      id: lint
+    - name: Fix, format, and version bump main OBO file
+      id: fix
       run: |
-        OUTPUT=`./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}'`
+        OUTPUT=./.github/binaries/obo-robo fix PSI-MOD.obo --bump "${{ github.actor }}" --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }} --fix-all'
         echo "${OUTPUT}"
         echo "changed_items=$(echo "${OUTPUT}" | head -n 1)" >> $GITHUB_OUTPUT
-
-    - name: Fix, format, and version bump main OBO file
-      run: |
-        ./.github/binaries/obo-robo fix PSI-MOD.obo --bump "${{ github.actor }}" --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }} --fix-all'
 
     - name: Create newstyle Obo (for Owl conversion)
       run: ./.github/binaries/obo-robo newfmt PSI-MOD.obo PSI-MOD-newstyle.obo
@@ -72,6 +68,6 @@ jobs:
         git push
 
     - name: Create release
-      run: gh release create "v${{ steps.extract_version.outputs.cv_version }}" --title "v${{ steps.extract_version.outputs.cv_version }}" --notes "${{ steps.lint.outputs.changed_items }}"
+      run: gh release create "v${{ steps.extract_version.outputs.cv_version }}" --title "v${{ steps.extract_version.outputs.cv_version }}" --notes "${{ steps.fix.outputs.changed_items }}"
       env:
         GH_TOKEN: ${{ github.token }}
