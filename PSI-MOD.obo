@@ -16084,6 +16084,7 @@ def: "A protein modification that effectively substitutes a sodium atom for a hy
 subset: PSI-MOD-slim
 synonym: "NaRes" EXACT PSI-MOD-label []
 is_a: MOD:00698 ! metal or metal cluster containing modified residue
+is_a: MOD:02120 ! adduct modification
 
 [Term]
 id: MOD:00748
@@ -17941,6 +17942,7 @@ def: "A protein modification that effectively substitutes a potassium atom for a
 subset: PSI-MOD-slim
 synonym: "KRes" EXACT PSI-MOD-label []
 is_a: MOD:00698 ! metal or metal cluster containing modified residue
+is_a: MOD:02120 ! adduct modification
 
 [Term]
 id: MOD:00850
@@ -41437,9 +41439,17 @@ is_a: MOD:00425 ! monohydroxylated residue
 is_a: MOD:00914 ! modified L-phenylalanine residue
 
 [Term]
-id: MOD:02119
+id: MOD:02120
+name: adduct modification
+def: "A protein modification that effectively substitutes a charged molecule for one or more protons." []
+subset: PSI-MOD-slim
+xref: Source: "artifact"
+is_a: MOD:01156 ! protein modification categorized by chemical process
+
+[Term]
+id: MOD:02121
 name: Ammonium adduct
-def: "A protein modification that effectively substitutes one Ammonium molecule for one proton." [Unimod:989]
+def: "A protein modification that effectively substitutes one Ammonium molecule for one proton, this is generally a very labile modification." [Unimod:989]
 subset: PSI-MOD-slim
 synonym: "Ammonium adduct" RELATED PSI-MS-label []
 xref: DiffAvg: "17.03"
@@ -41452,7 +41462,7 @@ xref: Origin: "X"
 xref: Source: "artifact"
 xref: TermSpec: "none"
 xref: Unimod: "Unimod:989"
-is_a: MOD:01156 ! protein modification categorized by chemical process
+is_a: MOD:02120 ! adduct modification
 
 [Typedef]
 id: contains
