@@ -41780,6 +41780,204 @@ xref: Source: "none"
 xref: TermSpec: "none"
 is_a: MOD:02118 ! protein modification categorized by isomeric sets
 
+[Term]
+id: MOD:02122
+name: TMTpro reporter+balance reagent acylated residue
+def: "A protein modification that effectively replaces a hydrogen atom of a residue with a Proteome Sciences TMTpro reporter+balance group." [PubMed:31738517, PubMed:32203386, PubMed:33900084, Unimod:2016]
+comment: The reagent consists of a reporter group, a balance group and a protein reactive N-oxysuccinimide group. The reporter is an isotopically labeled isobutyl-proline connected to an isotopically labeled balance group. This composition, seven (13)C and two (15)N, is the Unimod:2016 mass used for TMTpro 16plex and for TMTpro 18plex database searches. The two additional TMTpro 18plex channels, reporter ions 134C and 135N, contain eight (13)C and one (15)N and are 0.0063 Da heavier. Intended labeling sites are primary amines. The same reagent also modifies histidine, serine, threonine and tyrosine.
+subset: PSI-MOD-slim
+synonym: "TMTpro" RELATED Unimod-interim []
+synonym: "TMTpro 16plex" RELATED Unimod-alternate []
+synonym: "TMTpro 16plex Tandem Mass Tag" RELATED Unimod-description []
+synonym: "TMTpro 18plex" RELATED Unimod-alternate []
+xref: DiffAvg: "304.21"
+xref: DiffFormula: "(12)C 8 (13)C 7 H 25 (14)N 1 (15)N 2 O 3"
+xref: DiffMono: "304.207146"
+xref: Formula: "(12)C 8 (13)C 7 H 25 (14)N 1 (15)N 2 O 3"
+xref: MassAvg: "304.21"
+xref: MassMono: "304.207146"
+xref: Origin: "X"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:2016"
+is_a: MOD:01426 ! isotope tagged reagent derivatized residue
+is_a: MOD:01428 ! (13)C isotope tagged reagent
+is_a: MOD:01429 ! (15)N isotope tagged reagent
+is_a: MOD:01705 ! isotope tagged reagent acylated residue
+
+[Term]
+id: MOD:02123
+name: TMTpro reporter+balance reagent N-acylated residue
+def: "A protein modification that effectively replaces a residue amino- or imino-hydrogen with a Proteome Sciences TMTpro reporter+balance group." [PubMed:31738517, PubMed:32203386, PubMed:33900084]
+comment: The reagent consists of a reporter group, a balance group and a protein reactive N-oxysuccinimide group. The reporter is an isotopically labeled isobutyl-proline connected to an isotopically labeled balance group. This composition, seven (13)C and two (15)N, is the Unimod:2016 mass used for TMTpro 16plex and for TMTpro 18plex database searches. The two additional TMTpro 18plex channels, reporter ions 134C and 135N, contain eight (13)C and one (15)N and are 0.0063 Da heavier.
+subset: PSI-MOD-slim
+synonym: "TMTpro" RELATED Unimod-interim []
+synonym: "TMTpro 16plex" RELATED Unimod-alternate []
+synonym: "TMTpro 18plex" RELATED Unimod-alternate []
+xref: DiffAvg: "none"
+xref: DiffFormula: "none"
+xref: DiffMono: "none"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:01706 ! isotope tagged reagent N-acylated residue
+
+[Term]
+id: MOD:02124
+name: TMTpro reporter+balance reagent acylated N-terminal
+def: "A protein modification that effectively replaces a hydrogen atom of a protein N-terminal with the Proteome Sciences TMTpro reporter+balance group." [PubMed:32203386, PubMed:33900084, Unimod:2016#N-term]
+comment: The reagent consists of a reporter group, a balance group and a protein reactive N-oxysuccinimide group. The reporter is an isotopically labeled isobutyl-proline connected to an isotopically labeled balance group. This composition, seven (13)C and two (15)N, is the Unimod:2016 mass used for TMTpro 16plex and for TMTpro 18plex database searches. The two additional TMTpro 18plex channels, reporter ions 134C and 135N, contain eight (13)C and one (15)N and are 0.0063 Da heavier.
+subset: PSI-MOD-slim
+synonym: "TMTpro" RELATED Unimod-interim []
+synonym: "TMTpro 16plex" RELATED Unimod-alternate []
+synonym: "TMTpro 18plex" RELATED Unimod-alternate []
+xref: DiffAvg: "304.21"
+xref: DiffFormula: "(12)C 8 (13)C 7 H 25 (14)N 1 (15)N 2 O 3"
+xref: DiffMono: "304.207146"
+xref: Formula: "(12)C 8 (13)C 7 H 25 (14)N 1 (15)N 2 O 3"
+xref: MassAvg: "304.21"
+xref: MassMono: "304.207146"
+xref: Origin: "X"
+xref: Source: "artifact"
+xref: TermSpec: "N-term"
+xref: Unimod: "Unimod:2016"
+is_a: MOD:01708 ! isotope tagged reagent alpha-amino acylated residue
+is_a: MOD:02122 ! TMTpro reporter+balance reagent acylated residue
+is_a: MOD:02123 ! TMTpro reporter+balance reagent N-acylated residue
+
+[Term]
+id: MOD:02125
+name: TMTpro reporter+balance reagent O-acylated residue
+def: "A protein modification that effectively replaces a residue hydroxyl with a Proteome Sciences TMTpro reporter+balance acyloxy group." [PubMed:31738517, PubMed:38637049]
+comment: The reagent consists of a reporter group, a balance group and a protein reactive N-oxysuccinimide group. The reporter is an isotopically labeled isobutyl-proline connected to an isotopically labeled balance group. O-acylation of serine, threonine and tyrosine is a known side reaction of TMTpro labeling.
+synonym: "TMTpro" RELATED Unimod-interim []
+synonym: "TMTpro 16plex" RELATED Unimod-alternate []
+synonym: "TMTpro 18plex" RELATED Unimod-alternate []
+xref: DiffAvg: "none"
+xref: DiffFormula: "none"
+xref: DiffMono: "none"
+xref: Formula: "none"
+xref: MassAvg: "none"
+xref: MassMono: "none"
+xref: Origin: "X"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+is_a: MOD:01707 ! isotope tagged reagent O-acylated residue
+
+[Term]
+id: MOD:02126
+name: TMTpro reporter+balance reagent N6-acylated lysine
+def: "A protein modification that effectively replaces the N6'-hydrogen atom of a lysine residue with the Proteome Sciences TMTpro reporter+balance group." [PubMed:32203386, PubMed:33900084, Unimod:2016#K]
+comment: The reagent consists of a reporter group, a balance group and a protein reactive N-oxysuccinimide group. The reporter is an isotopically labeled isobutyl-proline connected to an isotopically labeled balance group. This composition, seven (13)C and two (15)N, is the Unimod:2016 mass used for TMTpro 16plex and for TMTpro 18plex database searches. The two additional TMTpro 18plex channels, reporter ions 134C and 135N, contain eight (13)C and one (15)N and are 0.0063 Da heavier.
+subset: PSI-MOD-slim
+synonym: "TMTpro" RELATED Unimod-interim []
+synonym: "TMTpro 16plex" RELATED Unimod-alternate []
+synonym: "TMTpro 18plex" RELATED Unimod-alternate []
+xref: DiffAvg: "304.21"
+xref: DiffFormula: "(12)C 8 (13)C 7 H 25 (14)N 1 (15)N 2 O 3"
+xref: DiffMono: "304.207146"
+xref: Formula: "(12)C 14 (13)C 7 H 37 (14)N 3 (15)N 2 O 4"
+xref: MassAvg: "432.30"
+xref: MassMono: "432.302109"
+xref: Origin: "K"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:2016"
+is_a: MOD:01875 ! N6-acylated L-lysine
+is_a: MOD:02122 ! TMTpro reporter+balance reagent acylated residue
+is_a: MOD:02123 ! TMTpro reporter+balance reagent N-acylated residue
+
+[Term]
+id: MOD:02127
+name: TMTpro reporter+balance reagent O4'-acylated tyrosine
+def: "A protein modification that effectively replaces the O4'-hydrogen atom of a tyrosine residue with the Proteome Sciences TMTpro reporter+balance group." [PubMed:38637049, Unimod:2016#Y]
+comment: The reagent consists of a reporter group, a balance group and a protein reactive N-oxysuccinimide group. The reporter is an isotopically labeled isobutyl-proline connected to an isotopically labeled balance group. O-acylation of tyrosine is a known side reaction of TMTpro labeling.
+synonym: "TMTpro" RELATED Unimod-interim []
+synonym: "TMTpro 16plex" RELATED Unimod-alternate []
+synonym: "TMTpro 18plex" RELATED Unimod-alternate []
+xref: DiffAvg: "304.21"
+xref: DiffFormula: "(12)C 8 (13)C 7 H 25 (14)N 1 (15)N 2 O 3"
+xref: DiffMono: "304.207146"
+xref: Formula: "(12)C 17 (13)C 7 H 34 (14)N 2 (15)N 2 O 5"
+xref: MassAvg: "467.27"
+xref: MassMono: "467.270475"
+xref: Origin: "Y"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:2016"
+is_a: MOD:00919 ! modified L-tyrosine residue
+is_a: MOD:02122 ! TMTpro reporter+balance reagent acylated residue
+is_a: MOD:02125 ! TMTpro reporter+balance reagent O-acylated residue
+
+[Term]
+id: MOD:02128
+name: TMTpro reporter+balance reagent N'-acylated histidine
+def: "A protein modification that effectively replaces an N'-hydrogen atom of a histidine residue with the Proteome Sciences TMTpro reporter+balance group." [Unimod:2016#H]
+comment: The reagent consists of a reporter group, a balance group and a protein reactive N-oxysuccinimide group. The reporter is an isotopically labeled isobutyl-proline connected to an isotopically labeled balance group. Histidine acylation is a known side reaction of TMTpro labeling.
+synonym: "TMTpro" RELATED Unimod-interim []
+synonym: "TMTpro 16plex" RELATED Unimod-alternate []
+synonym: "TMTpro 18plex" RELATED Unimod-alternate []
+xref: DiffAvg: "304.21"
+xref: DiffFormula: "(12)C 8 (13)C 7 H 25 (14)N 1 (15)N 2 O 3"
+xref: DiffMono: "304.207146"
+xref: Formula: "(12)C 14 (13)C 7 H 32 (14)N 4 (15)N 2 O 4"
+xref: MassAvg: "441.27"
+xref: MassMono: "441.266058"
+xref: Origin: "H"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:2016"
+is_a: MOD:00909 ! modified L-histidine residue
+is_a: MOD:02122 ! TMTpro reporter+balance reagent acylated residue
+is_a: MOD:02123 ! TMTpro reporter+balance reagent N-acylated residue
+
+[Term]
+id: MOD:02129
+name: TMTpro reporter+balance reagent O3-acylated serine
+def: "A protein modification that effectively replaces an O3-hydrogen atom of a serine residue with the Proteome Sciences TMTpro reporter+balance group." [PubMed:38637049, Unimod:2016#S]
+comment: The reagent consists of a reporter group, a balance group and a protein reactive N-oxysuccinimide group. The reporter is an isotopically labeled isobutyl-proline connected to an isotopically labeled balance group. O-acylation of serine is a known side reaction of TMTpro labeling.
+synonym: "TMTpro" RELATED Unimod-interim []
+synonym: "TMTpro 16plex" RELATED Unimod-alternate []
+synonym: "TMTpro 18plex" RELATED Unimod-alternate []
+xref: DiffAvg: "304.21"
+xref: DiffFormula: "(12)C 8 (13)C 7 H 25 (14)N 1 (15)N 2 O 3"
+xref: DiffMono: "304.207146"
+xref: Formula: "(12)C 11 (13)C 7 H 30 (14)N 2 (15)N 2 O 5"
+xref: MassAvg: "391.24"
+xref: MassMono: "391.239174"
+xref: Origin: "S"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:2016"
+is_a: MOD:02003 ! O3-acylated L-serine
+is_a: MOD:02122 ! TMTpro reporter+balance reagent acylated residue
+is_a: MOD:02125 ! TMTpro reporter+balance reagent O-acylated residue
+
+[Term]
+id: MOD:02130
+name: TMTpro reporter+balance reagent O3-acylated threonine
+def: "A protein modification that effectively replaces an O3-hydrogen atom of a threonine residue with the Proteome Sciences TMTpro reporter+balance group." [PubMed:38637049, Unimod:2016#T]
+comment: The reagent consists of a reporter group, a balance group and a protein reactive N-oxysuccinimide group. The reporter is an isotopically labeled isobutyl-proline connected to an isotopically labeled balance group. O-acylation of threonine is a known side reaction of TMTpro labeling.
+synonym: "TMTpro" RELATED Unimod-interim []
+synonym: "TMTpro 16plex" RELATED Unimod-alternate []
+synonym: "TMTpro 18plex" RELATED Unimod-alternate []
+xref: DiffAvg: "304.21"
+xref: DiffFormula: "(12)C 8 (13)C 7 H 25 (14)N 1 (15)N 2 O 3"
+xref: DiffMono: "304.207146"
+xref: Formula: "(12)C 12 (13)C 7 H 32 (14)N 2 (15)N 2 O 5"
+xref: MassAvg: "405.25"
+xref: MassMono: "405.254824"
+xref: Origin: "T"
+xref: Source: "artifact"
+xref: TermSpec: "none"
+xref: Unimod: "Unimod:2016"
+is_a: MOD:02004 ! O3-acylated L-threonine
+is_a: MOD:02122 ! TMTpro reporter+balance reagent acylated residue
+is_a: MOD:02125 ! TMTpro reporter+balance reagent O-acylated residue
+
 [Typedef]
 id: contains
 name: contains
