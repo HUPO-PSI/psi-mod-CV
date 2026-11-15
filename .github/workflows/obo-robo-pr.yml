@@ -27,17 +27,13 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: gh pr checkout ${{ github.event.pull_request.number }}
 
-    - name: Get oldest commit
-      id: commit
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        echo "oldest=$(gh pr view ${{ github.event.pull_request.number }} --json 'commits' | jq '.commits.[0].oid' -r)" >> $GITHUB_OUTPUT 
-
     - name: Get changed lines
       id: detect_changes
       run: |
-        echo "changed_lines=$(git diff --unified=0 --no-color --no-prefix -r ${{ steps.commit.outputs.oldest }} HEAD PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | tr '\n' ',')" >> $GITHUB_OUTPUT 
+        base="${{ github.event.pull_request.base.sha }}"
+        lines="$(git diff --unified=0 --no-color --no-prefix -r "$base" HEAD -- PSI-MOD.obo | grep -oP '^@@ -\d+(,\d+)? \+\K\d+' | paste -sd, -)"
+        echo "changed_lines=${lines}" >> "$GITHUB_OUTPUT"
+        echo "Changed lines: ${lines}" 
 
     - name: Lint main OBO file
       id: lint
@@ -55,15 +51,44 @@ jobs:
 
     - name: Push changes
       if: steps.check_changes.outputs.has_changes == 'true'
+      env:
+        PAT: ${{ secrets.PAT }}
       run: |
+        git --no-pager diff
+        if [ -z "$PAT" ]; then
+          echo "obo-robo changed PSI-MOD.obo, but this pull request has no PAT so the formatting cannot be pushed."
+          exit 1
+        fi
         git config --global user.name 'OboRobo'
         git config --global user.email 'oborobo@users.noreply.github.com'
-        git remote set-url origin https://x-access-token:${{ secrets.PAT }}@github.com/${{ github.repository }}
+        git remote set-url origin "https://x-access-token:${PAT}@github.com/${{ github.repository }}"
         git commit -am "Fix & format"
         git push
-    
+
     - name: Comment
-      run: gh pr comment ${{ github.event.number }} -b '${{ steps.lint.outputs.result }}${{ steps.fix.outputs.result }}'
       env:
         GH_TOKEN: ${{ github.token }}
+        LINT_RESULT: ${{ steps.lint.outputs.result }}
+        FIX_RESULT: ${{ steps.fix.outputs.result }}
+        HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
+        BASE_REPO: ${{ github.repository }}
+      run: |
+        {
+          printf '%s' "$LINT_RESULT"
+          printf '%s' "$FIX_RESULT"
+        } > /tmp/obo-robo-comment.txt
+        if [ ! -s /tmp/obo-robo-comment.txt ]; then
+          echo "obo-robo did not return a comment."
+          exit 0
+        fi
+        if gh pr comment "${{ github.event.number }}" --body-file /tmp/obo-robo-comment.txt; then
+          exit 0
+        fi
+        echo "Could not comment on the pull request."
+        cat /tmp/obo-robo-comment.txt
+        if [ "$HEAD_REPO" != "$BASE_REPO" ]; then
+          echo "Fork pull requests receive a read-only token, so the comment is skipped."
+          exit 0
+        fi
+        exit 1
 
