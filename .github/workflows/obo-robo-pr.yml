@@ -35,12 +35,7 @@ jobs:
         echo "changed_lines=${lines}" >> "$GITHUB_OUTPUT"
         echo "Changed lines: ${lines}" 
 
-    - name: Lint main OBO file
-      id: lint
-      run: |
-        echo "result=$(./.github/binaries/obo-robo lint PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr)" >> $GITHUB_OUTPUT
-
-    - name: Fix & format OBO file
+    - name: Lint, fix & format OBO file
       id: fix
       run: |
         echo "result=$(./.github/binaries/obo-robo fix PSI-MOD.obo --changed-line-numbers '${{ steps.detect_changes.outputs.changed_lines }}' --gh-pr)" >> $GITHUB_OUTPUT
@@ -68,15 +63,11 @@ jobs:
     - name: Comment
       env:
         GH_TOKEN: ${{ github.token }}
-        LINT_RESULT: ${{ steps.lint.outputs.result }}
         FIX_RESULT: ${{ steps.fix.outputs.result }}
         HEAD_REPO: ${{ github.event.pull_request.head.repo.full_name }}
         BASE_REPO: ${{ github.repository }}
       run: |
-        {
-          printf '%s' "$LINT_RESULT"
-          printf '%s' "$FIX_RESULT"
-        } > /tmp/obo-robo-comment.txt
+        printf '%s' "$FIX_RESULT" > /tmp/obo-robo-comment.txt
         if [ ! -s /tmp/obo-robo-comment.txt ]; then
           echo "obo-robo did not return a comment."
           exit 0
