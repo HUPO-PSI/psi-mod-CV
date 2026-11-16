@@ -13011,7 +13011,7 @@ id: MOD:00538
 name: protein modification categorized by isobaric sets
 def: "Modified amino acid residues groups into isobaric sets at particular mass resolution cut-offs." [PubMed:18688235]
 subset: PSI-MOD-slim
-is_a: MOD:00000
+is_a: MOD:00000 ! protein modification
 
 [Term]
 id: MOD:00539
