@@ -20074,7 +20074,7 @@ is_a: MOD:00918 ! modified L-tryptophan residue
 [Term]
 id: MOD:00967
 name: syndesine
-def: "A protein modification that effectively cross-links two L-lysine residues to form syndesine, hydroxylysinohydroxynorleucine." [DeltaMass:35, PubMed:75151974]
+def: "A protein modification that effectively cross-links two L-lysine residues to form syndesine, hydroxylysinohydroxynorleucine." [DeltaMass:35, PubMed:1127123, PubMed:4331473, doi:10.1016/0006-291x(73)90781-x]
 comment: Cross-link 2; From DeltaMass: Average Mass: 13 Average Mass Change: 13 (incorrect) [JSG].
 synonym: "hydroxylysinohydroxynorleucine" EXACT PSI-MOD-alternate []
 xref: DiffAvg: "16.96"
@@ -41467,7 +41467,7 @@ is_a: MOD:02098 ! residue modified by radical mechanism
 [Term]
 id: MOD:02100
 name: N2-Formyl-L-asparagine
-def: "A protein modification that effectively transforms an L-histidine residue to N2-formyl asparagine" [doi:10.1016/0040-4039(91)80099-R, osti.article:6518101]
+def: "A protein modification that effectively transforms an L-histidine residue to N2-formyl asparagine" [doi:10.1016/0040-4039(91)80099-r, doi:10.1021/jf00093a016]
 subset: PSI-MOD-slim
 synonym: "(2S)-4-amino-2-formamido-4-oxobutanoic acid" EXACT PSI-MOD-label []
 synonym: "Formylasparagine" EXACT PSI-MOD-label []
